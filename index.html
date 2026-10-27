@@ -305,10 +305,10 @@ const exercisesData = {
 
 const getDynamicFontSize = (text) => {
   const len = Array.from(text || '').length;
-  if (len > 7) return 'text-lg';
-  if (len > 4) return 'text-xl';
-  if (len > 2) return 'text-2xl';
-  return 'text-3xl';
+  if (len > 7) return 'text-lg md:text-xl';
+  if (len > 4) return 'text-xl md:text-2xl';
+  if (len > 2) return 'text-2xl md:text-3xl';
+  return 'text-3xl md:text-4xl';
 };
 
 const DrawingPad = ({ sign, isExercise = false }) => {
@@ -363,35 +363,39 @@ const DrawingPad = ({ sign, isExercise = false }) => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
 
+  useEffect(() => {
+    clearPad();
+  }, [sign]);
+
   return (
-    <div className={`flex flex-col items-center w-full bg-white p-4 rounded-xl border border-stone-200 ${isExercise ? 'shadow-sm' : ''}`}>
+    <div className={`flex flex-col items-center w-full bg-white p-4 md:p-6 rounded-2xl border border-stone-200 shadow-sm`}>
       {!isExercise && (
-        <div className="flex items-center gap-2 mb-4 text-slate-700 font-semibold">
+        <div className="flex items-center gap-2 mb-4 text-slate-700 font-bold md:text-lg">
           <Icon name="PenTool" size={20} className="text-amber-600" />
           <span>تدرب على الكتابة (ارسم فوق الحرف)</span>
         </div>
       )}
       
       <div 
-        className={`relative w-full ${isExercise ? 'max-w-full h-40' : 'max-w-[280px] aspect-square'} bg-stone-50 border-2 border-dashed border-stone-300 rounded-xl overflow-hidden touch-none`}
+        className={`relative w-full ${isExercise ? 'max-w-full h-40 md:h-44' : 'max-w-[280px] md:max-w-[320px] aspect-square'} bg-stone-50 border-2 border-dashed border-stone-300 rounded-xl overflow-hidden touch-none hover:border-amber-400 transition-colors`}
         style={{ touchAction: 'none' }}
       >
         {!isExercise && (
-          <div className="absolute inset-0 flex items-center justify-center text-[160px] text-stone-200 pointer-events-none select-none font-['Segoe_UI_Historic'] pb-6">
+          <div className="absolute inset-0 flex items-center justify-center text-[160px] md:text-[180px] text-stone-200 pointer-events-none select-none font-['Segoe_UI_Historic'] pb-6">
             {sign}
           </div>
         )}
         <canvas
           ref={canvasRef}
-          width={isExercise ? 400 : 300}
-          height={isExercise ? 160 : 300}
+          width={isExercise ? 450 : 320}
+          height={isExercise ? 180 : 320}
           className="absolute inset-0 w-full h-full cursor-crosshair z-10"
           onMouseDown={startDraw} onMouseMove={draw} onMouseUp={endDraw} onMouseLeave={endDraw}
           onTouchStart={startDraw} onTouchMove={draw} onTouchEnd={endDraw}
         />
       </div>
 
-      <button onClick={clearPad} className="mt-4 flex items-center gap-2 px-6 py-2 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-full transition-colors font-medium text-sm">
+      <button onClick={clearPad} className="mt-4 flex items-center gap-2 px-6 py-2.5 bg-stone-100 hover:bg-amber-50 hover:text-amber-800 text-stone-700 rounded-full transition-colors font-semibold text-sm">
         <Icon name="Eraser" size={16} /> مسح اللوحة
       </button>
     </div>
@@ -400,18 +404,21 @@ const DrawingPad = ({ sign, isExercise = false }) => {
 
 const VocabularySection = () => {
   return (
-    <div className="max-w-4xl mx-auto p-4 space-y-8 mt-4">
+    <div className="max-w-6xl mx-auto p-4 md:p-6 space-y-8 mt-4">
       {vocabularyData.map((section, secIdx) => (
         <div key={secIdx} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-          <div className="bg-stone-100 border-b border-stone-200 p-4 text-center">
-            <h2 className="text-xl font-bold text-slate-800">قاموس الكلمات ({section.lesson})</h2>
+          <div className="bg-gradient-to-l from-amber-50/80 via-stone-100 to-stone-100 border-b border-stone-200 p-4 md:p-5 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-800">قاموس الكلمات ({section.lesson})</h2>
+            <span className="text-sm font-semibold text-amber-800 bg-amber-100/80 px-3 py-1 rounded-full" dir="ltr">{section.lessonEn} • {section.words.length} Words</span>
           </div>
-          <div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+          <div className="p-4 md:p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
             {section.words.map((word, i) => (
-              <div key={i} className="flex flex-col items-center text-center justify-between bg-stone-50 border border-stone-200 p-3 rounded-xl w-full">
-                <span className={`${getDynamicFontSize(word.h)} text-slate-800 font-['Segoe_UI_Historic'] mb-3 break-all w-full text-center`}>{word.h}</span>
-                <span className="text-xl font-serif text-amber-700 font-bold mb-1 border-b border-stone-200 w-full" dir="ltr">{word.trans}</span>
-                <span className="text-xs text-stone-600 font-medium leading-tight" dir="ltr">{word.mean}</span>
+              <div key={i} className="flex flex-col items-center text-center justify-between bg-stone-50 hover:bg-amber-50/40 hover:border-amber-300 border border-stone-200 p-3 md:p-4 rounded-xl w-full transition-all hover:-translate-y-0.5 hover:shadow-sm">
+                <span className={`${getDynamicFontSize(word.h)} text-slate-800 font-['Segoe_UI_Historic'] mb-3 break-all w-full text-center min-h-[48px] flex items-center justify-center`}>{word.h}</span>
+                <div className="w-full">
+                  <span className="block text-xl md:text-2xl font-serif text-amber-700 font-bold mb-1.5 pb-1 border-b border-stone-200 w-full" dir="ltr">{word.trans}</span>
+                  <span className="block text-xs md:text-sm text-stone-600 font-medium leading-tight" dir="ltr">{word.mean}</span>
+                </div>
               </div>
             ))}
           </div>
@@ -429,18 +436,18 @@ const GrammarSection = () => {
   };
 
   const renderExamples = (examples) => (
-    <div className="flex flex-col gap-3 w-full" dir="ltr">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 w-full" dir="ltr">
       {examples.map((ex, i) => (
-        <div key={i} className="flex flex-col bg-stone-50 border border-stone-200 rounded-lg shadow-sm hover:border-amber-400 transition-colors overflow-hidden w-full">
-          <div className="flex items-center gap-3 p-3 pr-4">
-            <span className={`${getDynamicFontSize(ex.h)} text-slate-800 font-['Segoe_UI_Historic'] break-all min-w-[60px] text-center`}>{ex.h}</span>
+        <div key={i} className="flex flex-col justify-between bg-stone-50 border border-stone-200 rounded-xl shadow-sm hover:border-amber-400 transition-colors overflow-hidden w-full">
+          <div className="flex items-center gap-3 p-3.5 pr-4">
+            <span className={`${getDynamicFontSize(ex.h)} text-slate-800 font-['Segoe_UI_Historic'] break-all min-w-[64px] text-center`}>{ex.h}</span>
             <div className="flex flex-col border-l border-stone-200 pl-3 w-full">
-              <span className="text-md font-serif text-amber-700 font-bold leading-none mb-1">{ex.trans}</span>
-              <span className="text-xs text-stone-600 font-medium">{ex.mean}</span>
+              <span className="text-base md:text-lg font-serif text-amber-700 font-bold leading-none mb-1.5">{ex.trans}</span>
+              <span className="text-xs md:text-sm text-stone-600 font-medium">{ex.mean}</span>
             </div>
           </div>
           {(ex.noteEn || ex.noteAr) && (
-            <div className="bg-amber-100/80 border-t border-amber-200 p-2 text-xs font-bold text-amber-900 flex flex-col gap-1 text-center w-full">
+            <div className="bg-amber-100/80 border-t border-amber-200 p-2.5 text-xs font-bold text-amber-900 flex flex-col gap-1 text-center w-full">
               {ex.noteEn && <span dir="ltr" className="opacity-90">{ex.noteEn}</span>}
               {ex.noteAr && <span dir="rtl">{ex.noteAr}</span>}
             </div>
@@ -451,16 +458,16 @@ const GrammarSection = () => {
   );
 
   return (
-    <div className="max-w-3xl mx-auto p-4 space-y-4 mt-4">
+    <div className="max-w-5xl mx-auto p-4 md:p-6 space-y-4 md:space-y-5 mt-4">
       {grammarData.map((section) => (
         <div key={section.id} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
           
           {/* Accordion Header */}
           <div className="bg-stone-50 border-b border-stone-200 hover:bg-stone-100 transition-colors">
-            <button onClick={() => toggleLesson(section.id)} className="w-full flex items-center justify-between p-4 text-right">
+            <button onClick={() => toggleLesson(section.id)} className="w-full flex items-center justify-between p-4 md:p-5 text-right">
               <div className="flex flex-col gap-1">
-                <h2 className="text-xl font-bold text-slate-800">{section.titleAr}</h2>
-                <h3 className="text-sm font-bold text-stone-500" dir="ltr">{section.titleEn}</h3>
+                <h2 className="text-xl md:text-2xl font-bold text-slate-800">{section.titleAr}</h2>
+                <h3 className="text-sm md:text-base font-bold text-stone-500" dir="ltr">{section.titleEn}</h3>
               </div>
               <Icon name="ChevronDown" className={`text-stone-500 transition-transform duration-300 ${openLessonId === section.id ? 'rotate-180' : ''}`} size={24} />
             </button>
@@ -468,20 +475,20 @@ const GrammarSection = () => {
           
           {/* Accordion Content */}
           {openLessonId === section.id && (
-            <div className="p-4 space-y-4 animate-in slide-in-from-top-2 duration-300 bg-stone-50">
+            <div className="p-4 md:p-6 space-y-4 md:space-y-6 animate-in slide-in-from-top-2 duration-300 bg-stone-50">
               {section.rules.map((rule, idx) => {
                 
                 // Lesson 2 & 3: Explanation Format (Fixed titles layout)
                 if (rule.type === 'explanation') {
                   return (
-                    <div key={idx} className="flex flex-col p-4 bg-white rounded-xl border border-stone-200 shadow-sm">
-                      <div className="bg-amber-50 border-r-4 border-amber-500 p-4 rounded-l-lg mb-4">
+                    <div key={idx} className="flex flex-col p-4 md:p-6 bg-white rounded-xl border border-stone-200 shadow-sm">
+                      <div className="bg-amber-50 border-r-4 border-amber-500 p-4 md:p-5 rounded-l-lg mb-4">
                         <div className="text-center border-b border-amber-200 pb-3 mb-4">
-                          <h3 className="font-bold text-amber-800 text-xl mb-1" dir="ltr">{rule.titleEn}</h3>
-                          <h4 className="font-bold text-amber-700 text-lg" dir="rtl">{rule.titleAr}</h4>
+                          <h3 className="font-bold text-amber-800 text-xl md:text-2xl mb-1" dir="ltr">{rule.titleEn}</h3>
+                          <h4 className="font-bold text-amber-700 text-lg md:text-xl" dir="rtl">{rule.titleAr}</h4>
                         </div>
-                        <p className="text-slate-800 font-medium mb-3 text-left leading-relaxed" dir="ltr">{rule.descEn}</p>
-                        <p className="text-stone-700 font-medium text-right leading-relaxed" dir="rtl">{rule.desc}</p>
+                        <p className="text-slate-800 font-medium mb-3 text-left leading-relaxed md:text-lg" dir="ltr">{rule.descEn}</p>
+                        <p className="text-stone-700 font-medium text-right leading-relaxed md:text-lg" dir="rtl">{rule.desc}</p>
                       </div>
                       {rule.examples && renderExamples(rule.examples)}
                     </div>
@@ -491,22 +498,22 @@ const GrammarSection = () => {
                 // Lesson 2: Grid Format (Generic Determinatives - Fixed layout)
                 if (rule.type === 'grid') {
                   return (
-                    <div key={idx} className="flex flex-col p-4 bg-white rounded-xl border border-stone-200 shadow-sm">
-                      <div className="bg-amber-50 border-r-4 border-amber-500 p-4 rounded-l-lg mb-4">
+                    <div key={idx} className="flex flex-col p-4 md:p-6 bg-white rounded-xl border border-stone-200 shadow-sm">
+                      <div className="bg-amber-50 border-r-4 border-amber-500 p-4 md:p-5 rounded-l-lg mb-4">
                         <div className="text-center border-b border-amber-200 pb-3 mb-4">
-                          <h3 className="font-bold text-amber-800 text-xl mb-1" dir="ltr">{rule.titleEn}</h3>
-                          <h4 className="font-bold text-amber-700 text-lg" dir="rtl">{rule.titleAr}</h4>
+                          <h3 className="font-bold text-amber-800 text-xl md:text-2xl mb-1" dir="ltr">{rule.titleEn}</h3>
+                          <h4 className="font-bold text-amber-700 text-lg md:text-xl" dir="rtl">{rule.titleAr}</h4>
                         </div>
-                        <p className="text-slate-800 font-medium mb-3 text-left leading-relaxed" dir="ltr">{rule.descEn}</p>
-                        <p className="text-stone-700 font-medium text-right leading-relaxed" dir="rtl">{rule.desc}</p>
+                        <p className="text-slate-800 font-medium mb-3 text-left leading-relaxed md:text-lg" dir="ltr">{rule.descEn}</p>
+                        <p className="text-stone-700 font-medium text-right leading-relaxed md:text-lg" dir="rtl">{rule.desc}</p>
                       </div>
                       
                       {/* Fixed Grid for Generic Determinatives */}
-                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3" dir="ltr">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4" dir="ltr">
                         {rule.items.map((item, i) => (
-                          <div key={i} className="flex flex-col items-center justify-center gap-2 bg-stone-50 hover:bg-stone-100 border border-stone-200 p-3 rounded-lg shadow-sm transition-colors overflow-hidden">
-                            <span className="text-4xl text-slate-800 font-['Segoe_UI_Historic'] text-center">{item.h}</span>
-                            <div className="flex flex-col text-xs font-medium text-stone-700 leading-tight gap-1 w-full justify-center items-center">
+                          <div key={i} className="flex flex-col items-center justify-center gap-2 bg-stone-50 hover:bg-amber-50/40 hover:border-amber-300 border border-stone-200 p-3 md:p-4 rounded-xl shadow-sm transition-colors overflow-hidden">
+                            <span className="text-4xl md:text-5xl text-slate-800 font-['Segoe_UI_Historic'] text-center">{item.h}</span>
+                            <div className="flex flex-col text-xs md:text-sm font-medium text-stone-700 leading-tight gap-1 w-full justify-center items-center">
                               <span dir="ltr" className="font-bold text-slate-800 text-center">{item.meanEn}</span>
                               <span dir="rtl" className="whitespace-nowrap text-center text-sm w-full">{item.meanAr}</span>
                             </div>
@@ -520,12 +527,12 @@ const GrammarSection = () => {
 
                 // Lesson 1: Original Format
                 return (
-                  <div key={idx} className="flex flex-col p-4 bg-white rounded-xl border border-stone-200 shadow-sm w-full">
+                  <div key={idx} className="flex flex-col p-4 md:p-6 bg-white rounded-xl border border-stone-200 shadow-sm w-full">
                     <div className="flex items-center justify-center gap-6 mb-4 border-b border-stone-100 pb-4 bg-stone-50 rounded-t-lg pt-2">
-                      <span className="text-5xl text-slate-800 font-['Segoe_UI_Historic']">{rule.h}</span>
-                      <span className="text-3xl font-serif text-amber-700 font-bold" dir="ltr">{rule.trans}</span>
+                      <span className="text-5xl md:text-6xl text-slate-800 font-['Segoe_UI_Historic']">{rule.h}</span>
+                      <span className="text-3xl md:text-4xl font-serif text-amber-700 font-bold" dir="ltr">{rule.trans}</span>
                     </div>
-                    <div className="bg-amber-50 border-r-4 border-amber-500 p-3 rounded-l-lg mb-4 text-slate-800 font-medium text-left" dir="ltr">
+                    <div className="bg-amber-50 border-r-4 border-amber-500 p-3 md:p-4 rounded-l-lg mb-4 text-slate-800 font-medium text-left md:text-lg" dir="ltr">
                       {rule.meaningsEn ? (
                         <ul className="space-y-1">
                           {rule.meaningsEn.map((m, i) => (
@@ -546,7 +553,7 @@ const GrammarSection = () => {
   );
 };
 
-// --- NEW Exercises Section ---
+// --- Exercises Section ---
 const ExercisesSection = () => {
   const [activeExTab, setActiveExTab] = useState('lesson1');
   const [revealedL1, setRevealedL1] = useState({});
@@ -556,67 +563,71 @@ const ExercisesSection = () => {
   const toggleRevealL2 = (index) => setRevealedL2(prev => ({ ...prev, [index]: !prev[index] }));
 
   return (
-    <div className="max-w-3xl mx-auto p-4 mt-4">
-      <div className="flex gap-2 mb-6">
-        <button onClick={() => setActiveExTab('lesson1')} className={`flex-1 py-3 rounded-xl font-bold transition-all ${activeExTab === 'lesson1' ? 'bg-amber-600 text-white shadow-md' : 'bg-white border border-stone-200 text-stone-500'}`}>تدريب الدرس الأول (رسم)</button>
-        <button onClick={() => setActiveExTab('lesson2')} className={`flex-1 py-3 rounded-xl font-bold transition-all ${activeExTab === 'lesson2' ? 'bg-amber-600 text-white shadow-md' : 'bg-white border border-stone-200 text-stone-500'}`}>تدريب الدرس الثاني (ترجمة)</button>
+    <div className="max-w-5xl mx-auto p-4 md:p-6 mt-4">
+      <div className="flex gap-3 mb-6 max-w-xl mx-auto">
+        <button onClick={() => setActiveExTab('lesson1')} className={`flex-1 py-3 px-4 rounded-xl font-bold transition-all ${activeExTab === 'lesson1' ? 'bg-amber-600 text-white shadow-md' : 'bg-white border border-stone-200 text-stone-500 hover:bg-stone-50'}`}>تدريب الدرس الأول (رسم)</button>
+        <button onClick={() => setActiveExTab('lesson2')} className={`flex-1 py-3 px-4 rounded-xl font-bold transition-all ${activeExTab === 'lesson2' ? 'bg-amber-600 text-white shadow-md' : 'bg-white border border-stone-200 text-stone-500 hover:bg-stone-50'}`}>تدريب الدرس الثاني (ترجمة)</button>
       </div>
 
       {activeExTab === 'lesson1' && (
         <div className="space-y-6">
-          <div className="bg-amber-50 border border-amber-200 p-4 rounded-xl mb-4">
-            <h3 className="font-bold text-amber-800 mb-1 flex items-center gap-2"><Icon name="Edit3" size={18}/> تمرين (Lesson I - Exercise)</h3>
-            <p className="text-stone-600 text-sm">ارسم الكلمات الهيروغليفية التالية مع مراعاة الترتيب المتناسق للرموز (Symmetrical arrangement). ثم اضغط على عرض الإجابة لتصحيح رسمك.</p>
+          <div className="bg-amber-50 border border-amber-200 p-4 md:p-5 rounded-xl mb-4">
+            <h3 className="font-bold text-amber-800 md:text-lg mb-1 flex items-center gap-2"><Icon name="Edit3" size={18}/> تمرين (Lesson I - Exercise)</h3>
+            <p className="text-stone-600 text-sm md:text-base">ارسم الكلمات الهيروغليفية التالية مع مراعاة الترتيب المتناسق للرموز (Symmetrical arrangement). ثم اضغط على عرض الإجابة لتصحيح رسمك.</p>
           </div>
           
-          {exercisesData.lesson1.map((item, idx) => (
-            <div key={idx} className="bg-white border border-stone-200 rounded-2xl p-5 shadow-sm">
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-2xl font-serif font-bold text-slate-800 border-b-2 border-amber-400 px-4" dir="ltr">{item.trans}</span>
-                <button type="button" onClick={() => toggleRevealL1(idx)} className="flex items-center gap-2 px-4 py-2 bg-stone-100 hover:bg-stone-200 rounded-lg text-stone-700 font-medium transition-colors text-sm">
-                  <Icon name="Eye" size={16} /> {revealedL1[idx] ? 'إخفاء الإجابة' : 'عرض الإجابة'}
-                </button>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {exercisesData.lesson1.map((item, idx) => (
+              <div key={idx} className="bg-white border border-stone-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-2xl md:text-3xl font-serif font-bold text-slate-800 border-b-2 border-amber-400 px-4" dir="ltr">{item.trans}</span>
+                  <button type="button" onClick={() => toggleRevealL1(idx)} className="flex items-center gap-2 px-4 py-2 bg-stone-100 hover:bg-amber-100 hover:text-amber-900 rounded-lg text-stone-700 font-medium transition-colors text-sm">
+                    <Icon name="Eye" size={16} /> {revealedL1[idx] ? 'إخفاء الإجابة' : 'عرض الإجابة'}
+                  </button>
+                </div>
+                
+                <div className="flex flex-col gap-4 items-center w-full">
+                  <div className="w-full"><DrawingPad isExercise={true} /></div>
+                  {revealedL1[idx] && (
+                    <div className="w-full flex flex-col items-center justify-center p-4 bg-green-50 border border-green-200 rounded-xl mt-2">
+                      <span className="text-sm text-green-700 font-bold mb-2">الإجابة الصحيحة</span>
+                      <span className="text-5xl text-slate-800 font-['Segoe_UI_Historic']">{item.correctH}</span>
+                    </div>
+                  )}
+                </div>
               </div>
-              
-              <div className="flex flex-col gap-4 items-center w-full">
-                <div className="w-full"><DrawingPad isExercise={true} /></div>
-                {revealedL1[idx] && (
-                  <div className="w-full flex flex-col items-center justify-center p-4 bg-green-50 border border-green-200 rounded-xl mt-2">
-                    <span className="text-sm text-green-700 font-bold mb-2">الإجابة الصحيحة</span>
-                    <span className="text-5xl text-slate-800 font-['Segoe_UI_Historic']">{item.correctH}</span>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
 
       {activeExTab === 'lesson2' && (
         <div className="space-y-6">
-          <div className="bg-amber-50 border border-amber-200 p-4 rounded-xl mb-4">
-            <h3 className="font-bold text-amber-800 mb-1 flex items-center gap-2"><Icon name="BookOpen" size={18}/> تمرين (Lesson II - Exercise)</h3>
-            <p className="text-stone-600 text-sm">اقرأ الجمل الهيروغليفية التالية، وحاول ترجمتها. اضغط على الكارت لإظهار النطق (Transliteration) والترجمة (Translation).</p>
+          <div className="bg-amber-50 border border-amber-200 p-4 md:p-5 rounded-xl mb-4">
+            <h3 className="font-bold text-amber-800 md:text-lg mb-1 flex items-center gap-2"><Icon name="BookOpen" size={18}/> تمرين (Lesson II - Exercise)</h3>
+            <p className="text-stone-600 text-sm md:text-base">اقرأ الجمل الهيروغليفية التالية، وحاول ترجمتها. اضغط على الكارت لإظهار النطق (Transliteration) والترجمة (Translation).</p>
           </div>
 
-          {exercisesData.lesson2.map((item, idx) => (
-            <div key={idx} onClick={() => toggleRevealL2(idx)} className="bg-white border border-stone-200 hover:border-amber-400 transition-colors rounded-2xl p-6 shadow-sm cursor-pointer relative overflow-hidden">
-              <div className="text-center mb-4">
-                <span className={`${getDynamicFontSize(item.h)} text-slate-800 font-['Segoe_UI_Historic'] leading-relaxed`}>{item.h}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {exercisesData.lesson2.map((item, idx) => (
+              <div key={idx} onClick={() => toggleRevealL2(idx)} className="bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between">
+                <div className="text-center mb-4 py-2">
+                  <span className={`${getDynamicFontSize(item.h)} text-slate-800 font-['Segoe_UI_Historic'] leading-relaxed`}>{item.h}</span>
+                </div>
+                
+                {revealedL2[idx] ? (
+                  <div className="pt-4 border-t border-stone-100 flex flex-col items-center gap-2 animate-in fade-in slide-in-from-top-2 duration-300" dir="ltr">
+                    <span className="text-xl md:text-2xl font-serif text-amber-700 font-bold">{item.trans}</span>
+                    <span className="text-slate-600 font-medium text-center md:text-lg">{item.mean}</span>
+                  </div>
+                ) : (
+                  <div className="pt-4 border-t border-stone-100 flex justify-center text-stone-400 font-medium text-sm">
+                    اضغط لعرض الترجمة والنطق
+                  </div>
+                )}
               </div>
-              
-              {revealedL2[idx] ? (
-                <div className="pt-4 border-t border-stone-100 flex flex-col items-center gap-2 animate-in fade-in slide-in-from-top-2 duration-300" dir="ltr">
-                  <span className="text-xl font-serif text-amber-700 font-bold">{item.trans}</span>
-                  <span className="text-slate-600 font-medium text-center">{item.mean}</span>
-                </div>
-              ) : (
-                <div className="pt-4 border-t border-stone-100 flex justify-center text-stone-400 font-medium text-sm">
-                  اضغط لعرض الترجمة والنطق
-                </div>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
     </div>
@@ -660,24 +671,27 @@ const QuizSection = () => {
 
   if (!isPlaying) {
     return (
-      <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-2xl shadow-sm border border-stone-200 text-center">
-        <Icon name="Gamepad2" size={48} className="mx-auto text-amber-600 mb-4" />
-        <h2 className="text-2xl font-bold text-slate-800 mb-4">اختبار الأبجدية</h2>
-        <button onClick={startQuiz} className="w-full py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-xl font-bold text-lg transition-colors">ابدأ الاختبار الآن</button>
+      <div className="max-w-lg mx-auto mt-10 p-6 md:p-10 bg-white rounded-2xl shadow-sm border border-stone-200 text-center">
+        <div className="w-20 h-20 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto mb-5 border border-amber-200">
+          <Icon name="Gamepad2" size={44} className="text-amber-600" />
+        </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">اختبار الأبجدية الهيروغليفية</h2>
+        <p className="text-stone-500 mb-6 text-sm md:text-base">اختبر حفظك لرموز الأبجدية الصوتية (Uniliterals) وتعرف على نطقها الصحيح.</p>
+        <button onClick={startQuiz} className="w-full py-3.5 bg-amber-600 hover:bg-amber-700 text-white rounded-xl font-bold text-lg transition-colors shadow-sm">ابدأ الاختبار الآن</button>
       </div>
     );
   }
 
   return (
-    <div className="max-w-md mx-auto mt-6 p-6 bg-white rounded-2xl shadow-sm border border-stone-200 text-center">
-      <div className="flex justify-between text-stone-500 font-medium mb-6">
+    <div className="max-w-lg mx-auto mt-6 md:mt-10 p-6 md:p-8 bg-white rounded-2xl shadow-sm border border-stone-200 text-center">
+      <div className="flex justify-between text-stone-500 font-bold mb-6 md:text-lg">
         <span>السؤال: {rounds + 1}</span><span className="text-amber-600">النتيجة: {score} / {rounds}</span>
       </div>
-      <div className="bg-stone-50 w-32 h-32 mx-auto rounded-2xl flex items-center justify-center border border-stone-200 mb-8"><span className="text-7xl text-slate-800 font-['Segoe_UI_Historic']">{currentQ?.h}</span></div>
-      <div className="grid grid-cols-2 gap-3 mb-6" dir="ltr">
+      <div className="bg-stone-50 w-36 h-36 md:w-44 md:h-44 mx-auto rounded-2xl flex items-center justify-center border border-stone-200 mb-8"><span className="text-7xl md:text-8xl text-slate-800 font-['Segoe_UI_Historic']">{currentQ?.h}</span></div>
+      <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6" dir="ltr">
         {options.map((opt, i) => {
-          let btnClass = "py-4 text-2xl font-serif rounded-xl border-2 transition-all ";
-          if (!feedback) btnClass += "border-stone-200 bg-white hover:border-amber-400 text-slate-700";
+          let btnClass = "py-4 md:py-5 text-2xl md:text-3xl font-serif rounded-xl border-2 transition-all ";
+          if (!feedback) btnClass += "border-stone-200 bg-white hover:border-amber-400 hover:bg-amber-50/30 text-slate-700";
           else if (opt.trans === currentQ.trans) btnClass += "border-green-500 bg-green-50 text-green-700"; 
           else if (!feedback.correct && feedback.selected === opt.trans) btnClass += "border-red-500 bg-red-50 text-red-700"; 
           else btnClass += "border-stone-200 bg-stone-50 text-stone-400 opacity-50";
@@ -685,11 +699,11 @@ const QuizSection = () => {
         })}
       </div>
       {feedback && (
-        <div className={`flex items-center justify-center gap-2 font-bold ${feedback.correct ? 'text-green-600' : 'text-red-600'}`}>
-          <Icon name={feedback.correct ? "CheckCircle2" : "XCircle"} size={20} /> <span>{feedback.correct ? 'صحيح!' : `خطأ! الإجابة: ${feedback.correctTrans}`}</span>
+        <div className={`flex items-center justify-center gap-2 font-bold md:text-lg ${feedback.correct ? 'text-green-600' : 'text-red-600'}`}>
+          <Icon name={feedback.correct ? "CheckCircle2" : "XCircle"} size={22} /> <span>{feedback.correct ? 'صحيح!' : `خطأ! الإجابة: ${feedback.correctTrans}`}</span>
         </div>
       )}
-      <button onClick={() => setIsPlaying(false)} className="mt-8 text-stone-400 font-medium">إنهاء الاختبار</button>
+      <button onClick={() => setIsPlaying(false)} className="mt-8 text-stone-400 hover:text-stone-600 font-medium transition-colors">إنهاء الاختبار</button>
     </div>
   );
 };
@@ -706,20 +720,30 @@ function MainApp() {
   const sortedHieroglyphs = [...hieroglyphsData].sort((a, b) => a.step - b.step);
 
   return (
-    <div dir="rtl" className="min-h-screen bg-stone-100 text-slate-900 font-sans pb-10">
+    <div dir="rtl" className="min-h-screen bg-stone-100 text-slate-900 font-sans pb-12">
       {!selectedSign && (
-        <header className="bg-white border-b border-stone-200 shadow-sm pt-4 sticky top-0 z-20">
-          <h1 className="text-2xl font-bold text-slate-800 mb-4 text-center">المصرية القديمة</h1>
-          <div className="flex justify-between border-b border-stone-200 overflow-x-auto px-2">
-            {[
-              { id: 'path', icon: 'Map', label: 'مسار التعلم' }, { id: 'grid', icon: 'BookOpen', label: 'الأبجدية' },
-              { id: 'vocab', icon: 'Library', label: 'الكلمات' }, { id: 'grammar', icon: 'FileText', label: 'القواعد' },
-              { id: 'exercises', icon: 'Edit3', label: 'التدريبات' }, { id: 'quiz', icon: 'Gamepad2', label: 'الاختبار' }
-            ].map(tab => (
-              <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex-1 min-w-[70px] flex flex-col items-center justify-center gap-1 pb-3 font-medium transition-colors ${activeTab === tab.id ? 'text-amber-600 border-b-2 border-amber-600' : 'text-stone-400'}`}>
-                <Icon name={tab.icon} size={20} /> <span className="text-xs">{tab.label}</span>
-              </button>
-            ))}
+        <header className="bg-white border-b border-stone-200 shadow-sm pt-4 md:pt-6 sticky top-0 z-20">
+          <div className="max-w-5xl mx-auto px-2 sm:px-6">
+            <h1 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4 md:mb-5 text-center tracking-tight">المصرية القديمة</h1>
+            <div className="flex justify-between md:justify-center md:gap-4 overflow-x-auto">
+              {[
+                { id: 'path', icon: 'Map', label: 'مسار التعلم' }, { id: 'grid', icon: 'BookOpen', label: 'الأبجدية' },
+                { id: 'vocab', icon: 'Library', label: 'الكلمات' }, { id: 'grammar', icon: 'FileText', label: 'القواعد' },
+                { id: 'exercises', icon: 'Edit3', label: 'التدريبات' }, { id: 'quiz', icon: 'Gamepad2', label: 'الاختبار' }
+              ].map(tab => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`flex-1 md:flex-initial md:min-w-[125px] min-w-[70px] flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 pb-3 md:pb-3.5 px-2 md:px-4 font-semibold transition-all ${
+                    activeTab === tab.id
+                      ? 'text-amber-600 border-b-2 border-amber-600'
+                      : 'text-stone-400 hover:text-stone-600'
+                  }`}
+                >
+                  <Icon name={tab.icon} size={20} /> <span className="text-xs sm:text-sm md:text-base">{tab.label}</span>
+                </button>
+              ))}
+            </div>
           </div>
         </header>
       )}
@@ -727,24 +751,62 @@ function MainApp() {
       {!selectedSign && (
         <main className="w-full">
           {activeTab === 'path' && (
-            <div className="max-w-3xl mx-auto p-4 mt-4 relative border-r-4 border-amber-200 pr-6 mr-4 space-y-4">
-              {sortedHieroglyphs.map((item, idx) => (
-                <div key={idx} onClick={() => setSelectedSign(item)} className="relative bg-white border border-stone-200 rounded-xl p-4 flex items-center gap-4 cursor-pointer hover:border-amber-500 shadow-sm">
-                  <span className="absolute -right-[37px] w-6 h-6 rounded-full bg-amber-500 border-4 border-stone-50"></span>
-                  <div className="bg-stone-50 text-4xl font-['Segoe_UI_Historic'] w-16 h-16 flex items-center justify-center rounded-lg border border-stone-200">{item.h}</div>
-                  <div>
-                    <div className="font-bold text-slate-800 mb-1 flex items-center gap-2"><span className="text-amber-700 bg-amber-100 text-xs px-2 rounded-full">الدرس {item.step}</span> {item.soundAr}</div>
-                    <div className="text-sm text-stone-500">{item.descAr}</div>
+            <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4">
+              {/* Mobile View: Preserves exact vertical timeline */}
+              <div className="md:hidden relative border-r-4 border-amber-200 pr-6 mr-4 space-y-4">
+                {sortedHieroglyphs.map((item, idx) => (
+                  <div key={idx} onClick={() => setSelectedSign(item)} className="relative bg-white border border-stone-200 rounded-xl p-4 flex items-center gap-4 cursor-pointer hover:border-amber-500 shadow-sm">
+                    <span className="absolute -right-[37px] w-6 h-6 rounded-full bg-amber-500 border-4 border-stone-50"></span>
+                    <div className="bg-stone-50 text-4xl font-['Segoe_UI_Historic'] w-16 h-16 flex items-center justify-center rounded-lg border border-stone-200">{item.h}</div>
+                    <div>
+                      <div className="font-bold text-slate-800 mb-1 flex items-center gap-2"><span className="text-amber-700 bg-amber-100 text-xs px-2 rounded-full">الدرس {item.step}</span> {item.soundAr}</div>
+                      <div className="text-sm text-stone-500">{item.descAr}</div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+
+              {/* Tablet / iPad / PC View: Centered Multi-Column Responsive Cards */}
+              <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+                {sortedHieroglyphs.map((item, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => setSelectedSign(item)}
+                    className="group bg-white border border-stone-200 rounded-2xl p-5 flex items-center justify-between gap-4 cursor-pointer hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="bg-stone-50 group-hover:bg-amber-50/60 text-5xl font-['Segoe_UI_Historic'] w-20 h-20 flex items-center justify-center rounded-xl border border-stone-200 group-hover:border-amber-300 transition-colors shrink-0">
+                        {item.h}
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className="text-amber-800 bg-amber-100 font-bold text-xs px-2.5 py-0.5 rounded-full">الدرس {item.step}</span>
+                          <span className="font-bold text-lg text-slate-800">{item.soundAr}</span>
+                        </div>
+                        <div className="text-sm font-medium text-stone-600">{item.descAr}</div>
+                        <div className="text-xs text-stone-400 mt-0.5" dir="ltr">{item.descEn}</div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center justify-center pl-2 border-r border-stone-100 pr-3">
+                      <span className="text-2xl font-serif font-bold text-amber-700" dir="ltr">{item.trans}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
+
           {activeTab === 'grid' && (
-            <div className="max-w-3xl mx-auto p-4 mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+            <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 md:gap-4">
               {hieroglyphsData.map((item, idx) => (
-                <button key={idx} onClick={() => setSelectedSign(item)} className="bg-white border border-stone-200 rounded-xl p-4 flex flex-col items-center justify-center hover:border-amber-500 shadow-sm">
-                  <span className="text-4xl font-['Segoe_UI_Historic'] mb-2">{item.h}</span><span className="text-xl font-serif text-amber-700" dir="ltr">{item.trans}</span>
+                <button
+                  key={idx}
+                  onClick={() => setSelectedSign(item)}
+                  className="group bg-white border border-stone-200 rounded-2xl p-4 md:p-5 flex flex-col items-center justify-center hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5 transition-all shadow-sm"
+                >
+                  <span className="text-4xl md:text-5xl font-['Segoe_UI_Historic'] mb-2 group-hover:scale-110 transition-transform">{item.h}</span>
+                  <span className="text-xl md:text-2xl font-serif font-bold text-amber-700" dir="ltr">{item.trans}</span>
+                  <span className="hidden sm:block text-xs text-stone-400 mt-1 truncate max-w-full">{item.soundAr}</span>
                 </button>
               ))}
             </div>
@@ -758,38 +820,53 @@ function MainApp() {
 
       {selectedSign && (
         <div className="bg-stone-50 min-h-screen">
-          <header className="bg-white border-b border-stone-200 p-4 sticky top-0 z-20 flex items-center shadow-sm">
-            <button onClick={() => setSelectedSign(null)} className="flex items-center gap-2 text-stone-600 bg-stone-100 p-2 rounded-lg"><Icon name="ArrowRight" size={20} /> رجوع</button>
-          </header>
-          <main className="max-w-2xl mx-auto p-4 space-y-6 mt-4">
-            <div className="bg-white border border-stone-200 rounded-2xl p-6 text-center shadow-sm">
-              <div className="flex justify-center items-center gap-4 mb-4">
-                <span className="text-7xl font-['Segoe_UI_Historic']">{selectedSign.h}</span>
-                <span className="text-5xl text-amber-600 font-serif border-r-2 border-stone-200 pr-4" dir="ltr">{selectedSign.trans}</span>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-800">{selectedSign.descAr}</h3>
+          <header className="bg-white border-b border-stone-200 p-4 sticky top-0 z-20 shadow-sm">
+            <div className="max-w-5xl mx-auto flex items-center justify-between">
+              <button onClick={() => setSelectedSign(null)} className="flex items-center gap-2 text-stone-700 hover:bg-stone-200 bg-stone-100 px-4 py-2 rounded-xl font-semibold transition-colors">
+                <Icon name="ArrowRight" size={20} /> رجوع
+              </button>
+              <span className="text-sm font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full">الدرس {selectedSign.step}</span>
             </div>
-            {selectedSign.examples && (
-              <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 shadow-sm">
-                <h4 className="text-amber-800 font-bold mb-4 flex items-center justify-center gap-2 border-b border-amber-200 pb-2">
-                  <Icon name="BookOpen" size={20} /> أمثلة تطبيقية
-                </h4>
-                <div className="flex flex-col gap-3">
-                  {selectedSign.examples.map((ex, i) => (
-                    <div key={i} className="bg-white p-4 rounded-xl border border-stone-200 shadow-sm flex justify-between items-center hover:border-amber-300 transition-all">
-                      <div className="w-1/2 text-right">
-                        <span className={`${getDynamicFontSize(ex.word)} text-slate-800 font-['Segoe_UI_Historic'] break-all`}>{ex.word}</span>
-                      </div>
-                      <div className="flex flex-col items-start border-r-2 border-stone-100 pr-4 w-1/2" dir="ltr">
-                        <span className="text-2xl font-serif text-amber-700 font-bold leading-none mb-2">{ex.trans}</span>
-                        <span className="text-sm font-medium text-slate-600">{ex.mean}</span>
-                      </div>
-                    </div>
-                  ))}
+          </header>
+
+          <main className="max-w-5xl mx-auto p-4 md:p-6 mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            {/* Right Column on Desktop: Sign Info & Examples */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="bg-white border border-stone-200 rounded-2xl p-6 md:p-8 text-center shadow-sm">
+                <div className="flex justify-center items-center gap-6 mb-4">
+                  <span className="text-7xl md:text-8xl font-['Segoe_UI_Historic']">{selectedSign.h}</span>
+                  <span className="text-5xl md:text-6xl text-amber-600 font-serif font-bold border-r-2 border-stone-200 pr-6" dir="ltr">{selectedSign.trans}</span>
                 </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-1">{selectedSign.descAr}</h3>
+                <p className="text-stone-500 font-medium text-sm md:text-base" dir="ltr">{selectedSign.descEn} • Sound: {selectedSign.soundAr}</p>
               </div>
-            )}
-            <DrawingPad sign={selectedSign.h} />
+
+              {selectedSign.examples && (
+                <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 shadow-sm">
+                  <h4 className="text-amber-800 md:text-lg font-bold mb-4 flex items-center justify-center gap-2 border-b border-amber-200 pb-3">
+                    <Icon name="BookOpen" size={20} /> أمثلة تطبيقية
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
+                    {selectedSign.examples.map((ex, i) => (
+                      <div key={i} className="bg-white p-4 rounded-xl border border-stone-200 shadow-sm flex justify-between items-center hover:border-amber-300 transition-all">
+                        <div className="w-1/2 text-right">
+                          <span className={`${getDynamicFontSize(ex.word)} text-slate-800 font-['Segoe_UI_Historic'] break-all`}>{ex.word}</span>
+                        </div>
+                        <div className="flex flex-col items-start border-r-2 border-stone-100 pr-4 w-1/2" dir="ltr">
+                          <span className="text-2xl font-serif text-amber-700 font-bold leading-none mb-2">{ex.trans}</span>
+                          <span className="text-sm font-medium text-slate-600">{ex.mean}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Left Column on Desktop: Sticky Drawing Pad */}
+            <div className="lg:col-span-5 lg:sticky lg:top-24">
+              <DrawingPad sign={selectedSign.h} />
+            </div>
           </main>
         </div>
       )}
@@ -828,6 +905,7 @@ function App() {
     </ErrorBoundary>
   );
 }
+
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
