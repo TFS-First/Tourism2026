@@ -411,7 +411,7 @@ const VocabularySection = () => {
             <h2 className="text-xl md:text-2xl font-bold text-slate-800">قاموس الكلمات ({section.lesson})</h2>
             <span className="text-sm font-semibold text-amber-800 bg-amber-100/80 px-3 py-1 rounded-full" dir="ltr">{section.lessonEn} • {section.words.length} Words</span>
           </div>
-          <div className="p-4 md:p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
+          <div className="p-4 md:p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4" dir="ltr">
             {section.words.map((word, i) => (
               <div key={i} className="flex flex-col items-center text-center justify-between bg-stone-50 hover:bg-amber-50/40 hover:border-amber-300 border border-stone-200 p-3 md:p-4 rounded-xl w-full transition-all hover:-translate-y-0.5 hover:shadow-sm">
                 <span className={`${getDynamicFontSize(word.h)} text-slate-800 font-['Segoe_UI_Historic'] mb-3 break-all w-full text-center min-h-[48px] flex items-center justify-center`}>{word.h}</span>
@@ -439,9 +439,9 @@ const GrammarSection = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 w-full" dir="ltr">
       {examples.map((ex, i) => (
         <div key={i} className="flex flex-col justify-between bg-stone-50 border border-stone-200 rounded-xl shadow-sm hover:border-amber-400 transition-colors overflow-hidden w-full">
-          <div className="flex items-center gap-3 p-3.5 pr-4">
+          <div className="flex items-center gap-3 p-3.5 pr-4" dir="ltr">
             <span className={`${getDynamicFontSize(ex.h)} text-slate-800 font-['Segoe_UI_Historic'] break-all min-w-[64px] text-center`}>{ex.h}</span>
-            <div className="flex flex-col border-l border-stone-200 pl-3 w-full">
+            <div className="flex flex-col border-l border-stone-200 pl-3 w-full text-left">
               <span className="text-base md:text-lg font-serif text-amber-700 font-bold leading-none mb-1.5">{ex.trans}</span>
               <span className="text-xs md:text-sm text-stone-600 font-medium">{ex.mean}</span>
             </div>
@@ -525,12 +525,12 @@ const GrammarSection = () => {
                   );
                 }
 
-                // Lesson 1: Original Format
+                // Lesson 1: Original Format (Sign on Left -> Transliteration on Right)
                 return (
                   <div key={idx} className="flex flex-col p-4 md:p-6 bg-white rounded-xl border border-stone-200 shadow-sm w-full">
-                    <div className="flex items-center justify-center gap-6 mb-4 border-b border-stone-100 pb-4 bg-stone-50 rounded-t-lg pt-2">
+                    <div className="flex items-center justify-center gap-6 mb-4 border-b border-stone-100 pb-4 bg-stone-50 rounded-t-lg pt-2" dir="ltr">
                       <span className="text-5xl md:text-6xl text-slate-800 font-['Segoe_UI_Historic']">{rule.h}</span>
-                      <span className="text-3xl md:text-4xl font-serif text-amber-700 font-bold" dir="ltr">{rule.trans}</span>
+                      <span className="text-3xl md:text-4xl font-serif text-amber-700 font-bold border-l-2 border-stone-200 pl-6">{rule.trans}</span>
                     </div>
                     <div className="bg-amber-50 border-r-4 border-amber-500 p-3 md:p-4 rounded-l-lg mb-4 text-slate-800 font-medium text-left md:text-lg" dir="ltr">
                       {rule.meaningsEn ? (
@@ -752,43 +752,61 @@ function MainApp() {
         <main className="w-full">
           {activeTab === 'path' && (
             <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4">
-              {/* Mobile View: Preserves exact vertical timeline */}
+              {/* Mobile View: Timeline with Left -> Right inside card (Sign -> Transliteration -> Arabic) */}
               <div className="md:hidden relative border-r-4 border-amber-200 pr-6 mr-4 space-y-4">
                 {sortedHieroglyphs.map((item, idx) => (
-                  <div key={idx} onClick={() => setSelectedSign(item)} className="relative bg-white border border-stone-200 rounded-xl p-4 flex items-center gap-4 cursor-pointer hover:border-amber-500 shadow-sm">
+                  <div
+                    key={idx}
+                    onClick={() => setSelectedSign(item)}
+                    className="relative bg-white border border-stone-200 rounded-xl p-4 flex items-center justify-between gap-3 cursor-pointer hover:border-amber-500 shadow-sm"
+                    dir="ltr"
+                  >
                     <span className="absolute -right-[37px] w-6 h-6 rounded-full bg-amber-500 border-4 border-stone-50"></span>
-                    <div className="bg-stone-50 text-4xl font-['Segoe_UI_Historic'] w-16 h-16 flex items-center justify-center rounded-lg border border-stone-200">{item.h}</div>
-                    <div>
-                      <div className="font-bold text-slate-800 mb-1 flex items-center gap-2"><span className="text-amber-700 bg-amber-100 text-xs px-2 rounded-full">الدرس {item.step}</span> {item.soundAr}</div>
+                    {/* 1. Left: Hieroglyph Drawing */}
+                    <div className="bg-stone-50 text-4xl font-['Segoe_UI_Historic'] w-16 h-16 flex items-center justify-center rounded-lg border border-stone-200 shrink-0">
+                      {item.h}
+                    </div>
+                    {/* 2. Middle: Transliteration */}
+                    <div className="flex items-center justify-center border-l border-r border-stone-100 px-3 min-w-[48px] shrink-0">
+                      <span className="text-2xl font-serif font-bold text-amber-700" dir="ltr">{item.trans}</span>
+                    </div>
+                    {/* 3. Right: Arabic Equivalent & Lesson */}
+                    <div className="flex-1 text-right" dir="rtl">
+                      <div className="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <span className="text-amber-700 bg-amber-100 text-xs px-2 py-0.5 rounded-full">الدرس {item.step}</span>
+                        <span>{item.soundAr}</span>
+                      </div>
                       <div className="text-sm text-stone-500">{item.descAr}</div>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Tablet / iPad / PC View: Centered Multi-Column Responsive Cards */}
+              {/* Tablet / iPad / PC View: Centered Multi-Column Responsive Cards (Left -> Right: Sign -> Transliteration -> Arabic) */}
               <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
                 {sortedHieroglyphs.map((item, idx) => (
                   <div
                     key={idx}
                     onClick={() => setSelectedSign(item)}
-                    className="group bg-white border border-stone-200 rounded-2xl p-5 flex items-center justify-between gap-4 cursor-pointer hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    className="group bg-white border border-stone-200 rounded-2xl p-5 flex items-center justify-between gap-3 cursor-pointer hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    dir="ltr"
                   >
-                    <div className="flex items-center gap-4">
-                      <div className="bg-stone-50 group-hover:bg-amber-50/60 text-5xl font-['Segoe_UI_Historic'] w-20 h-20 flex items-center justify-center rounded-xl border border-stone-200 group-hover:border-amber-300 transition-colors shrink-0">
-                        {item.h}
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-2 mb-1.5">
-                          <span className="text-amber-800 bg-amber-100 font-bold text-xs px-2.5 py-0.5 rounded-full">الدرس {item.step}</span>
-                          <span className="font-bold text-lg text-slate-800">{item.soundAr}</span>
-                        </div>
-                        <div className="text-sm font-medium text-stone-600">{item.descAr}</div>
-                        <div className="text-xs text-stone-400 mt-0.5" dir="ltr">{item.descEn}</div>
-                      </div>
+                    {/* 1. Left: Hieroglyph Drawing */}
+                    <div className="bg-stone-50 group-hover:bg-amber-50/60 text-5xl font-['Segoe_UI_Historic'] w-20 h-20 flex items-center justify-center rounded-xl border border-stone-200 group-hover:border-amber-300 transition-colors shrink-0">
+                      {item.h}
                     </div>
-                    <div className="flex flex-col items-center justify-center pl-2 border-r border-stone-100 pr-3">
-                      <span className="text-2xl font-serif font-bold text-amber-700" dir="ltr">{item.trans}</span>
+                    {/* 2. Middle: Transliteration */}
+                    <div className="flex flex-col items-center justify-center px-3 border-l border-r border-stone-100 min-w-[52px] shrink-0">
+                      <span className="text-3xl font-serif font-bold text-amber-700" dir="ltr">{item.trans}</span>
+                    </div>
+                    {/* 3. Right: Arabic Equivalent & Lesson */}
+                    <div className="flex-1 text-right" dir="rtl">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="text-amber-800 bg-amber-100 font-bold text-xs px-2.5 py-0.5 rounded-full">الدرس {item.step}</span>
+                        <span className="font-bold text-lg text-slate-800">{item.soundAr}</span>
+                      </div>
+                      <div className="text-sm font-medium text-stone-600">{item.descAr}</div>
+                      <div className="text-xs text-stone-400 mt-0.5" dir="ltr">{item.descEn}</div>
                     </div>
                   </div>
                 ))}
@@ -797,7 +815,7 @@ function MainApp() {
           )}
 
           {activeTab === 'grid' && (
-            <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 md:gap-4">
+            <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 md:gap-4" dir="ltr">
               {hieroglyphsData.map((item, idx) => (
                 <button
                   key={idx}
@@ -806,7 +824,7 @@ function MainApp() {
                 >
                   <span className="text-4xl md:text-5xl font-['Segoe_UI_Historic'] mb-2 group-hover:scale-110 transition-transform">{item.h}</span>
                   <span className="text-xl md:text-2xl font-serif font-bold text-amber-700" dir="ltr">{item.trans}</span>
-                  <span className="hidden sm:block text-xs text-stone-400 mt-1 truncate max-w-full">{item.soundAr}</span>
+                  <span className="text-xs text-stone-500 font-medium mt-1 truncate max-w-full" dir="rtl">{item.soundAr}</span>
                 </button>
               ))}
             </div>
@@ -832,13 +850,27 @@ function MainApp() {
           <main className="max-w-5xl mx-auto p-4 md:p-6 mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
             {/* Right Column on Desktop: Sign Info & Examples */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="bg-white border border-stone-200 rounded-2xl p-6 md:p-8 text-center shadow-sm">
-                <div className="flex justify-center items-center gap-6 mb-4">
-                  <span className="text-7xl md:text-8xl font-['Segoe_UI_Historic']">{selectedSign.h}</span>
-                  <span className="text-5xl md:text-6xl text-amber-600 font-serif font-bold border-r-2 border-stone-200 pr-6" dir="ltr">{selectedSign.trans}</span>
+              {/* Top Hero Card: Left = Sign -> Middle = Transliteration -> Right = Arabic Equivalent */}
+              <div className="bg-white border border-stone-200 rounded-2xl p-6 md:p-8 shadow-sm">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6" dir="ltr">
+                  {/* 1. Left: Hieroglyph Drawing */}
+                  <div className="bg-stone-50 w-28 h-28 md:w-32 md:h-32 rounded-2xl border border-stone-200 flex items-center justify-center shrink-0">
+                    <span className="text-7xl md:text-8xl font-['Segoe_UI_Historic'] text-slate-800">{selectedSign.h}</span>
+                  </div>
+                  {/* 2. Middle: Transliteration */}
+                  <div className="flex flex-col items-center justify-center sm:border-l-2 sm:border-r-2 border-stone-100 sm:px-8 shrink-0">
+                    <span className="text-xs uppercase tracking-wider text-stone-400 font-semibold mb-1">Transliteration</span>
+                    <span className="text-5xl md:text-6xl text-amber-600 font-serif font-bold" dir="ltr">{selectedSign.trans}</span>
+                  </div>
+                  {/* 3. Right: Arabic Sound & Description */}
+                  <div className="flex-1 text-center sm:text-right" dir="rtl">
+                    <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold mb-2">
+                      <span>المقابل بالعربي: {selectedSign.soundAr}</span>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-1">{selectedSign.descAr}</h3>
+                    <p className="text-stone-500 font-medium text-sm md:text-base" dir="ltr">{selectedSign.descEn}</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-1">{selectedSign.descAr}</h3>
-                <p className="text-stone-500 font-medium text-sm md:text-base" dir="ltr">{selectedSign.descEn} • Sound: {selectedSign.soundAr}</p>
               </div>
 
               {selectedSign.examples && (
@@ -846,13 +878,16 @@ function MainApp() {
                   <h4 className="text-amber-800 md:text-lg font-bold mb-4 flex items-center justify-center gap-2 border-b border-amber-200 pb-3">
                     <Icon name="BookOpen" size={20} /> أمثلة تطبيقية
                   </h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
+                  {/* Examples: Left = Hieroglyph Word -> Right = Transliteration & Meaning */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3" dir="ltr">
                     {selectedSign.examples.map((ex, i) => (
-                      <div key={i} className="bg-white p-4 rounded-xl border border-stone-200 shadow-sm flex justify-between items-center hover:border-amber-300 transition-all">
-                        <div className="w-1/2 text-right">
+                      <div key={i} className="bg-white p-4 rounded-xl border border-stone-200 shadow-sm flex items-center justify-between gap-4 hover:border-amber-300 transition-all" dir="ltr">
+                        {/* 1. Left: Hieroglyph Word */}
+                        <div className="w-1/2 text-left flex items-center justify-start">
                           <span className={`${getDynamicFontSize(ex.word)} text-slate-800 font-['Segoe_UI_Historic'] break-all`}>{ex.word}</span>
                         </div>
-                        <div className="flex flex-col items-start border-r-2 border-stone-100 pr-4 w-1/2" dir="ltr">
+                        {/* 2. Right: Transliteration & Meaning */}
+                        <div className="flex flex-col items-start border-l-2 border-stone-100 pl-4 w-1/2 text-left" dir="ltr">
                           <span className="text-2xl font-serif text-amber-700 font-bold leading-none mb-2">{ex.trans}</span>
                           <span className="text-sm font-medium text-slate-600">{ex.mean}</span>
                         </div>
