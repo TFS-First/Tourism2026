@@ -22,6 +22,7 @@
   <meta name="twitter:title" content="المصرية القديمة — لغة صنعت حضارة" />
   <meta name="twitter:description" content="تعلّم الهيروغليفية والكلمات والقواعد خطوة بخطوة مع فارس محمد." />
   <meta name="twitter:image" content="https://tfs-first.github.io/Tourism2026/assets/app-share-v3.jpg" />
+  <link rel="preload" as="image" href="assets/nile-hero.webp" imagesrcset="assets/nile-hero-640.webp 640w, assets/nile-hero.webp 1122w" imagesizes="(max-width:480px) calc(100vw - 44px), (max-width:900px) 490px, (max-width:1400px) 44vw, 570px" fetchpriority="high" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
@@ -30,6 +31,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
   <style>
+    .study-shell{overflow-x:clip;background:#f7f6f0}.study-header{position:sticky;top:0;z-index:50;background:rgba(250,247,237,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid #c3ab783d;box-shadow:0 6px 24px #233e3b08;padding-top:env(safe-area-inset-top,0px)}.study-header-inner{max-width:1180px;margin:auto;padding:0 28px 12px}.study-topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:80px}.study-identity{display:flex;align-items:center;gap:12px;min-width:0}.study-emblem{font-family:'Noto Sans Egyptian Hieroglyphs',sans-serif;color:#227b82;font-size:38px;line-height:1.2}.study-identity h1{font-size:23px;font-weight:700;color:#233e3b;line-height:1.4}.study-wordmark{display:block;font-family:Georgia,serif;letter-spacing:3px;font-size:9px;color:#a5824b;margin-top:4px}.study-context{font-size:11px;color:#9b926e}.study-home{display:flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:8px 17px;border:1px solid #c4a66a66;border-radius:28px;background:#fffcf5;color:#836739;font-size:12px;white-space:nowrap;transition:background .2s}.study-home:hover{background:#f1e8d6}.study-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;padding:5px;background:#edece280;border:1px solid #d7cfb94a;border-radius:15px}.study-tab{display:flex;align-items:center;justify-content:center;gap:10px;min-height:45px;padding:10px 7px;border-radius:10px;color:#788277;font-size:13px;font-weight:600;line-height:1.5;transition:background .2s,color .2s}.study-tab svg{flex-shrink:0}.study-tab:hover{background:#fffaf0;color:#236f74}.study-tab.is-active{background:#257b80;color:#fffaf0;box-shadow:0 3px 10px #1b55551a}.study-tab-mobile{display:none}.study-header button:focus-visible{outline:2px solid #b89155;outline-offset:3px}.study-shell main{scroll-margin-top:160px}
+    @media(max-width:800px){.study-header-inner{padding:0 20px 10px}.study-context{display:none}.study-identity h1{font-size:21px}.study-tab{font-size:11px;gap:7px}.study-topbar{min-height:74px}}
+    @media(max-width:600px){.study-header-inner{padding:0 12px 9px}.study-topbar{min-height:67px;gap:10px}.study-identity{gap:8px}.study-emblem{font-size:30px}.study-identity h1{font-size:17px}.study-wordmark{font-size:7px;letter-spacing:2px}.study-home{min-height:38px;padding:7px 12px;font-size:10px;gap:6px}.study-tabs{gap:4px;padding:4px;border-radius:13px}.study-tab{min-height:52px;flex-direction:column;gap:3px;padding:7px 3px;font-size:10px;border-radius:9px}.study-tab svg{width:18px;height:18px}.study-tab-label{display:none}.study-tab-mobile{display:inline}.study-shell main{scroll-margin-top:145px}}
+    @media(prefers-reduced-motion:reduce){.study-header button{transition:none}}
+
     .vocab-glyph-content div { max-width: none; flex-wrap: nowrap; }
     .vocab-glyph-content span { overflow: visible; }
     body {
@@ -986,7 +992,7 @@ const grammarData = [
                 { h: "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖", trans: "sḏm=f rn", mean: "he hears the name" }
               ] },
               { label: "Transitive Sentence", text: "Takes normal direct object", examples: [
-                { h: "𓉔:𓄿*𓃀*𓂻 𓍿:𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀", trans: "h3b ṯ3ty b3k", mean: "the vizier sends the servant" }
+                { h: "𓉔:𓄿*𓃀*𓂻 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀", trans: "h3b ṯ3ty b3k", mean: "the vizier sends the servant" }
               ] }
             ]
           },
@@ -1014,7 +1020,7 @@ const grammarData = [
             indicatorAr: "الفاعل الحقيقي في المجهول يسبق بـ ỉn (بواسطة / من قِبل)",
             subPoints: [
               { label: "Formula", text: "Passive Verb + Subject + ỉn + Agent", examples: [
-                { h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿:𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", mean: "The servant is sent by the vizier" }
+                { h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", mean: "The servant is sent by the vizier" }
               ] },
               { label: "Translation", text: "The servant is sent BY the vizier", examples: [
                 { h: "𓇋*𓈖", trans: "ỉn", mean: "by / by means of" }
@@ -1025,9 +1031,9 @@ const grammarData = [
         examples: [
           { h: "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖", trans: "sḏm.tw rn", meanEn: "The name is heard (Passive Voice).", meanAr: "يُسمَع الاسم (مبني للمجهول)", noteEn: "Verb (sḏm) + Passive formative (.tw) + Subject (rn).", noteAr: "فعل + لاحقة المجهول .tw + نائب فاعل" },
           { h: "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑", trans: "sḏm.tw=f", meanEn: "He is heard (Passive Voice with pronoun).", meanAr: "هو يُسمَع", noteEn: "Verb + .tw + Suffix Pronoun (=f).", noteAr: "فعل + .tw + ضمير نائب فاعل" },
-          { h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿:𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", meanEn: "The servant is sent by the vizier (Passive with Agent).", meanAr: "أُرسِل الخادم بواسطة الوزير", noteEn: "Passive verb (h3b.tw) + Subject (b3k) + Agent introduced by ỉn (by the vizier).", noteAr: "مبني للمجهول + نائب فاعل + الفاعل مسبوق بـ ỉn" },
+          { h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", meanEn: "The servant is sent by the vizier (Passive with Agent).", meanAr: "أُرسِل الخادم بواسطة الوزير", noteEn: "Passive verb (h3b.tw) + Subject (b3k) + Agent introduced by ỉn (by the vizier).", noteAr: "مبني للمجهول + نائب فاعل + الفاعل مسبوق بـ ỉn" },
           { h: "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀", trans: "sḏm.tw rn ỉn s", meanEn: "The name is heard by a man.", meanAr: "يُسمع الاسم بواسطة رجل", noteEn: "Passive verb (sḏm.tw) + Subject (rn) + Agent with ỉn (by a man).", noteAr: "مجهول + نائب فاعل + فاعل مسبوق بـ ỉn" },
-          { h: "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓅓:𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀", trans: "m33.tw msḥ ỉn sš", meanEn: "The crocodile is seen by the scribe.", meanAr: "يُرى التمساح بواسطة الكاتب", noteEn: "Passive verb (m33.tw) + Subject (msḥ) + Agent (ỉn sš).", noteAr: "مجهول + نائب فاعل + فاعل مسبوق بـ ỉn" }
+          { h: "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀", trans: "m33.tw msḥ ỉn sš", meanEn: "The crocodile is seen by the scribe.", meanAr: "يُرى التمساح بواسطة الكاتب", noteEn: "Passive verb (m33.tw) + Subject (msḥ) + Agent (ỉn sš).", noteAr: "مجهول + نائب فاعل + فاعل مسبوق بـ ỉn" }
         ]
       },
       {
@@ -1052,7 +1058,7 @@ const grammarData = [
                 { h: "𓋴*𓄔*𓅓:𓈖:𓆑", trans: "sḏm.n=f", mean: "he heard" }
               ] },
               { label: "With Noun", text: "Verb + .n + Noun Subject", examples: [
-                { h: "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿:𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀", trans: "h3b.n ṯ3ty b3k", mean: "the vizier sent the servant" }
+                { h: "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀", trans: "h3b.n ṯ3ty b3k", mean: "the vizier sent the servant" }
               ] }
             ]
           },
@@ -1073,10 +1079,10 @@ const grammarData = [
         ],
         examples: [
           { h: "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖", trans: "sḏm.n=f rn pn", meanEn: "He heard (has heard) this name.", meanAr: "سَمِعَ هذا الاسم", noteEn: "Verb (sḏm) + Past formative (.n) + Suffix (=f) + Object (rn pn).", noteAr: "فعل + لاحقة الماضي .n + فاعل =f + مفعول به" },
-          { h: "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿:𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀", trans: "h3b.n ṯ3ty b3k", meanEn: "The vizier sent (has sent) the servant.", meanAr: "أرسل الوزيرُ الخادمَ", noteEn: "Verb (h3b) + .n + Subject (ṯ3ty) + Object (b3k).", noteAr: "فعل + .n + فاعل اسم ظاهر + مفعول به" },
+          { h: "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀", trans: "h3b.n ṯ3ty b3k", meanEn: "The vizier sent (has sent) the servant.", meanAr: "أرسل الوزيرُ الخادمَ", noteEn: "Verb (h3b) + .n + Subject (ṯ3ty) + Object (b3k).", noteAr: "فعل + .n + فاعل اسم ظاهر + مفعول به" },
           { h: "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯", trans: "wbn.n rʿ m pt", meanEn: "The sun has risen in the sky.", meanAr: "أشرقت الشمس في السماء", noteEn: "Intransitive verb (wbn) + .n + Subject (rʿ) + Prepositional phrase.", noteAr: "فعل لازم + .n + فاعل + جار ومجرور" },
           { h: "𓌳*𓄿:𓄿*𓈖:𓈖 𓅭:𓏏*𓁐", trans: "m33.n=n s3t", meanEn: "We saw (have seen) the daughter.", meanAr: "رأينا الابنة", noteEn: "Verb (m33) + .n + Suffix (=n 'we') + Object (s3t).", noteAr: "فعل + .n + ضمير =n + مفعول به" },
-          { h: "𓍑:𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛", trans: "d3.n sš m dpt", meanEn: "The scribe crossed in a boat.", meanAr: "عَبَرَ الكاتب في قارب", noteEn: "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.", noteAr: "فعل لازم + .n + فاعل + جار ومجرور" }
+          { h: "𓍑*𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛", trans: "d3.n sš m dpt", meanEn: "The scribe crossed in a boat.", meanAr: "عَبَرَ الكاتب في قارب", noteEn: "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.", noteAr: "فعل لازم + .n + فاعل + جار ومجرور" }
         ]
       }
     ]
@@ -1149,7 +1155,7 @@ const vocabularyData = [
     lesson: "الدرس الثالث", lessonEn: "Lesson III",
     words: [
       { h: "𓌳*𓄿:𓄿*𓁹", trans: "m33", meanEn: "see, look", meanAr: "يرى، ينظر" },
-      { h: "𓍑:𓄿*𓊛", trans: "d3", meanEn: "cross, ferry across", meanAr: "يعبر النهر" },
+      { h: "𓍑*𓄿*𓊛", trans: "d3", meanEn: "cross, ferry across", meanAr: "يعبر النهر" },
       { h: "𓂋:𓈙*𓀠", trans: "rš", meanEn: "rejoice, be glad", meanAr: "يفرح، يُسر" },
       { h: "𓉔:𓄿*𓃀*𓂻", trans: "h3b", meanEn: "send", meanAr: "يرسل" },
       { h: "𓅭*𓀀", trans: "s3", meanEn: "son", meanAr: "ابن" },
@@ -1160,11 +1166,11 @@ const vocabularyData = [
       { h: "𓍯:𓏏*𓈐", trans: "w3t", meanEn: "road, way, side", meanAr: "طريق، جانب" },
       { h: "𓈍:𓉐", trans: "ḫ3", meanEn: "office, hall, diwân", meanAr: "ديوان، قاعة مكتب" },
       { h: "𓂓:𓏏*𓀋", trans: "k3t", meanEn: "work, construction, device", meanAr: "عمل، بناء" },
-      { h: "𓍿:𓄿*𓏏:𓇌*𓀀", trans: "ṯ3ty", meanEn: "vizier", meanAr: "وزير" },
+      { h: "𓍿*𓄿*𓏏:𓇌*𓀀", trans: "ṯ3ty", meanEn: "vizier", meanAr: "وزير" },
       { h: "𓉻*𓃘", trans: "ꜥ3", meanEn: "donkey, ass", meanAr: "حمار" },
       { h: "𓋴*𓈙:𓏏*𓄿*𓏛", trans: "sšt3", meanEn: "secret", meanAr: "سر، أمر خفي" },
       { h: "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)", trans: "ỉtrw", meanEn: "river, the Nile", meanAr: "نهر، نهر النيل" },
-      { h: "𓅓:𓋴*𓎛*𓆊", trans: "msḥ", meanEn: "crocodile", meanAr: "تمساح" },
+      { h: "𓅓*𓋴*𓎛*𓆊", trans: "msḥ", meanEn: "crocodile", meanAr: "تمساح" },
       { h: "𓂋:𓏤", trans: "r", meanEn: "mouth, utterance, speech", meanAr: "فم، قول، كلام" },
       { h: "𓁷:𓏤", trans: "ḥr", meanEn: "face, sight", meanAr: "وجه، رؤية" },
       { h: "𓁷", trans: "ḥr", meanEn: "upon, on; concerning", meanAr: "على، بخصوص (حرف جر)" },
@@ -1203,9 +1209,9 @@ const exercisesData = {
     { h: "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖", trans: "sḏm=f rn pn", meanEn: "He hears this name.", meanAr: "يسمع هذا الاسم (مبني للمعلوم Active Voice)" },
     { h: "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀", trans: "m33=k s3", meanEn: "You (m.) see the son.", meanAr: "ترى الابن (صيغة الفاعل المتصل sḏm=f)" },
     { h: "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀", trans: "sḏm.tw rn ỉn s", meanEn: "The name is heard by a man.", meanAr: "يُسمع الاسم بواسطة رجل (مبني للمجهول Passive مع أداة الفاعل ỉn)" },
-    { h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿:𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", meanEn: "The servant is sent by the vizier.", meanAr: "أُرسل الخادم بواسطة الوزير (Passive with Agent ỉn)" },
+    { h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", meanEn: "The servant is sent by the vizier.", meanAr: "أُرسل الخادم بواسطة الوزير (Passive with Agent ỉn)" },
     { h: "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖", trans: "sḏm.n=f rn pn", meanEn: "He heard (has heard) this name.", meanAr: "سَمِعَ هذا الاسم (صيغة الماضي التام sḏm.n=f)" },
-    { h: "𓍑:𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)", trans: "d3 sš m ỉtrw", meanEn: "The scribe crosses in the river.", meanAr: "يعبر الكاتب في النهر (فعل لازم Intransitive)" },
+    { h: "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)", trans: "d3 sš m ỉtrw", meanEn: "The scribe crosses in the river.", meanAr: "يعبر الكاتب في النهر (فعل لازم Intransitive)" },
     { h: "𓂋:𓐍*𓏛*𓈖 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖", trans: "rḫ.n sš sḫr pn", meanEn: "The scribe has known this counsel.", meanAr: "عَلِمَ الكاتب هذه الخطة (ماضي تام sḏm.n=f)" },
     { h: "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀", trans: "m33.tw pt ỉn s", meanEn: "The sky is seen by a man.", meanAr: "تُرى السماء بواسطة رجل (Passive with Agent ỉn)" }
   ]
@@ -1241,9 +1247,9 @@ const typingQuestionsData = [
   { id: 19, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖", trans: "sḏm=f rn pn", meanEn: "He hears this name.", meanAr: "يسمع هذا الاسم", hint: "Suffix conjugation: sḏm + suffix =f + object rn pn" },
   { id: 20, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀", trans: "m33=k s3", meanEn: "You see the son.", meanAr: "ترى الابن", hint: "Verb m33 + suffix pronoun =k (you m.) + object s3" },
   { id: 21, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀", trans: "sḏm.tw rn ỉn s", meanEn: "The name is heard by a man.", meanAr: "يُسمع الاسم بواسطة رجل", hint: "Passive .tw: sḏm.tw + subject rn + agent (ỉn s)" },
-  { id: 22, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿:𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", meanEn: "The servant is sent by the vizier.", meanAr: "أُرسل الخادم بواسطة الوزير", hint: "Passive form h3b.tw + subject b3k + agent ỉn ṯ3ty" },
+  { id: 22, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀", trans: "h3b.tw b3k ỉn ṯ3ty", meanEn: "The servant is sent by the vizier.", meanAr: "أُرسل الخادم بواسطة الوزير", hint: "Passive form h3b.tw + subject b3k + agent ỉn ṯ3ty" },
   { id: 23, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖", trans: "sḏm.n=f rn pn", meanEn: "He heard this name.", meanAr: "سَمِعَ هذا الاسم", hint: "Past / Perfective tense: sḏm.n=f + object rn pn" },
-  { id: 24, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓍑:𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)", trans: "d3 sš m ỉtrw", meanEn: "The scribe crosses in the river.", meanAr: "يعبر الكاتب في النهر", hint: "Intransitive verb d3 + subject sš + prep phrase m ỉtrw" },
+  { id: 24, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)", trans: "d3 sš m ỉtrw", meanEn: "The scribe crosses in the river.", meanAr: "يعبر الكاتب في النهر", hint: "Intransitive verb d3 + subject sš + prep phrase m ỉtrw" },
   { id: 25, lesson: "الدرس الثالث", lessonEn: "Lesson III", h: "𓂋:𓐍*𓏛*𓈖 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖", trans: "rḫ.n sš sḫr pn", meanEn: "The scribe has known this counsel.", meanAr: "عَلِمَ الكاتب هذه الخطة", hint: "Past / Perfect tense: rḫ.n + subject sš + object sḫr pn" }
 ];
 
@@ -1649,7 +1655,7 @@ const comprehensiveQuizData = [
     categoryLabelAr: "المفردات والكلمات",
     qEn: "What high official does the title 'ṯ3ty' (𓍿𓄿𓏏𓇌𓀀) designate?",
     qAr: "ما هو اللقب الرسمي الرفيع 'ṯ3ty' (𓍿𓄿𓏏𓇌𓀀)؟",
-    hieroglyph: "𓍿:𓄿*𓏏:𓇌*𓀀",
+    hieroglyph: "𓍿*𓄿*𓏏:𓇌*𓀀",
     options: [
       { id: "a", text: "Vizier, prime minister (الوزير)", isCorrect: true },
       { id: "b", text: "Army general (قائد الجيش)", isCorrect: false },
@@ -4491,7 +4497,7 @@ const LandingHero = ({ onStart, onSelectTab }) => (
       <nav className="nile-links" aria-label="التنقل"><button onClick={onStart}>رحلة التعلّم</button><button onClick={() => onSelectTab('learn')}>الرموز الهيروغليفية</button><button onClick={() => onSelectTab('vocab')}>قاموس الكلمات</button></nav>
       <button className="nile-nav-cta" onClick={onStart}>ادخل عالم الأجداد ←</button>
     </header>
-    <main className="nile-main"><div className="nile-copy"><div className="nile-kicker">من ضفاف النيل… بدأت الحكاية</div><h1>لغة صنعت حضارة.<br/><span>وحكايتها تبدأ بيك.</span></h1><p className="nile-description">وراء كل رمز حكاية، وفي كل نقش حياة.<br/>اكتشف جمال اللغة المصرية القديمة، وتعلّم تقرأ أصوات الأجداد… خطوة بخطوة.</p><div className="nile-actions"><button className="nile-start" onClick={onStart}>ابدأ رحلتك <span>←</span></button><button className="nile-sample" onClick={() => onSelectTab('learn')}>استكشف الرموز</button></div><div className="nile-note"><span>✧</span> خد أول خطوة. كل حكاية عظيمة بدأت برمز.</div></div><div className="nile-art"><img src="assets/nile-welcome.png" alt="رسمة فرعونية بألوان رملية لنهر النيل التركوازي بين المعابد والنخيل ومشاهد من الحياة المصرية القديمة"/><div className="nile-art-tag"><span>𓋹</span> حضارة بتتكلم… من آلاف السنين</div></div></main>
+    <main className="nile-main"><div className="nile-copy"><div className="nile-kicker">من ضفاف النيل… بدأت الحكاية</div><h1>لغة صنعت حضارة.<br/><span>وحكايتها تبدأ بيك.</span></h1><p className="nile-description">وراء كل رمز حكاية، وفي كل نقش حياة.<br/>اكتشف جمال اللغة المصرية القديمة، وتعلّم تقرأ أصوات الأجداد… خطوة بخطوة.</p><div className="nile-actions"><button className="nile-start" onClick={onStart}>ابدأ رحلتك <span>←</span></button><button className="nile-sample" onClick={() => onSelectTab('learn')}>استكشف الرموز</button></div><div className="nile-note"><span>✧</span> خد أول خطوة. كل حكاية عظيمة بدأت برمز.</div></div><div className="nile-art"><img src="assets/nile-hero.webp" srcSet="assets/nile-hero-640.webp 640w, assets/nile-hero.webp 1122w" sizes="(max-width:480px) calc(100vw - 44px), (max-width:900px) 490px, (max-width:1400px) 44vw, 570px" width="1122" height="1402" fetchPriority="high" loading="eager" decoding="async" alt="رسمة فرعونية بألوان رملية لنهر النيل التركوازي بين المعابد والنخيل ومشاهد من الحياة المصرية القديمة"/><div className="nile-art-tag"><span>𓋹</span> حضارة بتتكلم… من آلاف السنين</div></div></main>
     <section className="nile-paths" aria-label="مسارات التعلم">{[{id:'learn',glyph:'𓅓',name:'الحروف والرموز',desc:'أول سطر في حكايتك'},{id:'vocab',glyph:'𓏛',name:'الكلمات ومعانيها',desc:'كل كلمة تفتح لك باب'},{id:'grammar',glyph:'𓉐',name:'القواعد والتراكيب',desc:'من الرمز للجملة'},{id:'exercises',glyph:'𓏞',name:'تدرّب واختبر نفسك',desc:'اتعلّم بإيدك، خطوة بخطوة'}].map(p=><button key={p.id} onClick={()=>onSelectTab(p.id)}><span className="glyph">{p.glyph}</span><div><b>{p.name}</b><small>{p.desc}</small></div><span className="path-arrow">↗</span></button>)}</section>
     <footer className="nile-foot"><span>المصرية القديمة — إرث يُقرأ، وحكاية تُروى.</span><div className="nile-credit" aria-label="فارس محمد — Fares Mohamed"><b>فارس محمد</b><small lang="en" dir="ltr">Fares Mohamed</small></div><span>ROOTED IN EGYPT. MADE FOR YOU.</span></footer>
   </div>
@@ -4540,6 +4546,7 @@ function MainApp() {
   // Sync tab changes to URL hash and localStorage so refresh keeps the user right here
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     try {
       localStorage.setItem('tourism2026_active_tab', tabId);
       localStorage.setItem('tourism2026_has_started', 'true');
@@ -4581,57 +4588,27 @@ function MainApp() {
   const sortedHieroglyphs = [...hieroglyphsData].sort((a, b) => a.step - b.step);
 
   return (
-    <div dir="rtl" className="min-h-screen bg-stone-100 text-slate-900 font-sans pb-12 overflow-x-hidden">
+    <div dir="rtl" className="study-shell min-h-screen text-slate-900 font-sans pb-12">
       {!selectedSign && (
-        <header className="bg-white border-b border-stone-200 shadow-sm pt-3 sm:pt-4 sticky top-0 z-20">
-          <div className="max-w-6xl mx-auto px-2 sm:px-6 md:px-8">
-            <div className="flex items-center justify-between mb-3 sm:mb-4">
-              <button
-                onClick={handleReturnToLanding}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold transition-all shadow-sm group cursor-pointer"
-                title="العودة لواجهة البداية الترحيبية"
-              >
-                <Icon name="Home" size={16} className="text-amber-600 group-hover:scale-110 transition-transform" />
-                <span className="hidden sm:inline">الواجهة الرئيسية</span>
-                <span className="sm:hidden">الرئيسية</span>
-              </button>
-
-              <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-slate-800 tracking-tight text-center flex-1">
-                المصرية القديمة
-              </h1>
-
-              <div className="w-auto text-left">
-                <span className="text-[11px] sm:text-xs font-bold text-amber-800 bg-amber-100/80 border border-amber-200/60 px-2.5 py-1 rounded-lg">
-                  2026 𓁹
-                </span>
-              </div>
+        <header className="study-header">
+          <div className="study-header-inner">
+            <div className="study-topbar">
+              <div className="study-identity"><span className="study-emblem" aria-hidden="true">𓆣</span><div><h1>المصرية القديمة</h1><span className="study-wordmark">ANCIENT EGYPTIAN</span></div></div>
+              <span className="study-context">رحلتك لفهم لغة الأجداد</span>
+              <button onClick={handleReturnToLanding} className="study-home" title="العودة للواجهة الرئيسية"><Icon name="Home" size={17} /><span>الرئيسية</span><span aria-hidden="true">↗</span></button>
             </div>
-            
-            {/* Consolidated 4 Primary Tabs - 100% Responsive Grid on Mobile & Flex on Desktop with generous spacing on Laptop */}
-            <div className="grid grid-cols-4 max-w-xl mx-auto sm:max-w-4xl md:max-w-5xl lg:max-w-6xl sm:flex sm:justify-center sm:gap-6 md:gap-10 lg:gap-14">
+            <nav className="study-tabs" aria-label="أقسام التطبيق">
               {[
                 { id: 'learn', icon: 'Compass', label: 'مسار التعلم والرموز', mobileLabel: 'الرموز' },
                 { id: 'vocab', icon: 'BookOpen', label: 'قاموس الكلمات', mobileLabel: 'الكلمات' },
                 { id: 'grammar', icon: 'FileText', label: 'القواعد النحوية', mobileLabel: 'القواعد' },
                 { id: 'exercises', icon: 'Award', label: 'التدريبات والاختبارات', mobileLabel: 'التدريبات' }
               ].map(tab => (
-                <button
-                  key={tab.id}
-                  onClick={() => handleTabChange(tab.id)}
-                  className={`w-full sm:w-auto sm:min-w-[140px] md:min-w-[160px] flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2.5 pb-2.5 sm:pb-3.5 px-1 sm:px-4 md:px-5 font-semibold transition-all text-center ${
-                    activeTab === tab.id
-                      ? 'text-amber-600 border-b-2 border-amber-600 font-bold'
-                      : 'text-stone-400 hover:text-stone-600'
-                  }`}
-                >
-                  <Icon name={tab.icon} size={18} className="sm:w-5 sm:h-5 shrink-0" />
-                  <span className="text-[11px] sm:text-sm md:text-base leading-tight">
-                    <span className="sm:hidden">{tab.mobileLabel}</span>
-                    <span className="hidden sm:inline whitespace-nowrap">{tab.label}</span>
-                  </span>
+                <button key={tab.id} onClick={() => handleTabChange(tab.id)} aria-current={activeTab === tab.id ? 'page' : undefined} className={`study-tab ${activeTab === tab.id ? 'is-active' : ''}`}>
+                  <Icon name={tab.icon} size={19} /><span className="study-tab-label">{tab.label}</span><span className="study-tab-mobile">{tab.mobileLabel}</span>
                 </button>
               ))}
-            </div>
+            </nav>
           </div>
         </header>
       )}
