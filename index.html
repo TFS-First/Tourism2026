@@ -4104,208 +4104,32 @@ const EyeOfHorusSVG = ({ className = "", size = 60 }) => (
 // ==========================================
 // 5.7. Component: LandingHero (Royal Ancient Egyptian Welcome)
 // ==========================================
-const LandingHero = ({ onStart, onSelectTab }) => {
-  const ambientSigns = [
-    { sign: "𓁹", style: { top: "6%", left: "5%" }, anim: "animate-royal-float", size: "text-4xl sm:text-6xl", color: "text-amber-400/25" },
-    { sign: "𓆣", style: { top: "12%", right: "6%" }, anim: "animate-royal-float-delayed", size: "text-5xl sm:text-7xl", color: "text-yellow-400/30" },
-    { sign: "𓇳", style: { top: "62%", left: "7%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-500/25" },
-    { sign: "𓊵", style: { top: "68%", right: "8%" }, anim: "animate-royal-float", size: "text-4xl sm:text-5xl", color: "text-amber-400/25" },
-    { sign: "𓏞", style: { top: "36%", left: "4%" }, anim: "animate-royal-float-delayed", size: "text-3xl sm:text-5xl", color: "text-yellow-500/20" },
-    { sign: "𓅃", style: { top: "32%", right: "4%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-300/25" },
-    { sign: "𓉐", style: { top: "84%", left: "20%" }, anim: "animate-royal-float", size: "text-3xl sm:text-4xl", color: "text-amber-500/20" },
-    { sign: "𓃭", style: { top: "82%", right: "20%" }, anim: "animate-royal-float-delayed", size: "text-4xl sm:text-5xl", color: "text-yellow-400/25" },
-  ];
-
-  const pillarCards = [
-    {
-      id: "learn",
-      title: "الابجدية ومسار التعلم",
-      glyph: "𓏞",
-      badge: "مسار الرموز والـ Phonograms",
-      desc: "تعرف على الرموز الاحادية ونطقها وتصنيف جاردنر ومسار التعلم الزمني المتدرج مع التقطيع الصوتي.",
-      cta: "دخول مسار الرموز",
-    },
-    {
-      id: "vocab",
-      title: "قاموس الكلمات والبرديات",
-      glyph: "𓉐",
-      badge: "معجم الكلمات الملكية",
-      desc: "قاموس معجمي شامل يضم مئات المفردات المصرية القديمة ومخصصاتها وترجماتها ومربعاتها الصوتية.",
-      cta: "تصفح قاموس الكلمات",
-    },
-    {
-      id: "grammar",
-      title: "القواعد والتراكيب النحوية",
-      glyph: "🏛️",
-      badge: "نظام المربعات Quadrat",
-      desc: "دراسة معمقة للجملة الاسمية وحروف الجر واسماء الاشارة بامثلة مقطعة بنظام المربعات الملكي.",
-      cta: "استكشف القواعد النحوية",
-    },
-    {
-      id: "exercises",
-      title: "التدريبات ولوحة الخطاط",
-      glyph: "✍️",
-      badge: "محاكاة الخطاط والاختبارات",
-      desc: "ارسم الرموز الهيروغليفية بيدك كخطاط المعبد، واختبر معلوماتك ببنك اسئلة ذكي مع تقييم درجاتك فوريا.",
-      cta: "خض التحدي والتدريب",
-    },
-  ];
-
-  return (
-    <div dir="rtl" className="relative min-h-screen bg-gradient-to-b from-[#090604] via-[#120d08] to-[#1a120b] text-stone-100 overflow-x-hidden flex flex-col justify-between selection:bg-amber-500 selection:text-black">
-      {/* Top ambient golden auras */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-yellow-600/10 rounded-full blur-[130px] pointer-events-none"></div>
-
-      {/* Floating Hieroglyphs */}
-      {ambientSigns.map((item, idx) => (
-        <div
-          key={idx}
-          style={item.style}
-          className={`absolute font-['Segoe_UI_Historic'] ${item.size} ${item.color} ${item.anim} select-none pointer-events-none hidden sm:block`}
-        >
-          {item.sign}
-        </div>
-      ))}
-
-      {/* Top Bar / Navigation Header */}
-      <header className="relative z-10 max-w-6xl mx-auto w-full px-4 pt-6 pb-2 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <EyeOfHorusSVG size={28} />
-          <span className="font-black text-stone-100 tracking-tight text-sm sm:text-base">المصرية القديمة</span>
-        </div>
-        
-        <button
-          onClick={() => onStart()}
-          className="text-xs sm:text-sm font-bold text-amber-300 hover:text-amber-200 bg-amber-950/60 hover:bg-amber-900/80 border border-amber-500/40 px-3.5 py-1.5 rounded-xl transition-all flex items-center gap-1.5 shadow-sm"
-        >
-          <span>تخطي الى الدروس</span>
-          <Icon name="ArrowRight" size={14} className="rotate-180" />
-        </button>
-      </header>
-
-      {/* Main Hero Container */}
-      <main className="relative z-10 max-w-5xl mx-auto px-4 py-6 sm:py-10 flex-1 flex flex-col items-center justify-center text-center">
-        {/* Egyptian Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-950/70 via-stone-900/90 to-amber-950/70 border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide shadow-[0_0_20px_rgba(245,158,11,0.2)] mb-5">
-          <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓆣</span>
-          <span>بوابة الحضارة المصرية القديمة</span>
-          <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓁹</span>
-        </div>
-
-        {/* Central Pharaoh Head Illustration */}
-        <div className="relative mx-auto mb-4 flex items-center justify-center">
-          <div className="animate-gold-pulse rounded-full">
-            <PharaohHeadSVG className="w-40 h-48 sm:w-56 sm:h-64 drop-shadow-[0_0_30px_rgba(245,158,11,0.35)]" />
-          </div>
-        </div>
-
-        {/* Hero Title */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-4">
-          <span className="block text-sm sm:text-xl font-medium mb-1 tracking-widest text-amber-400/90">
-            رحلة في عمق التاريخ الخالد
-          </span>
-          <span className="gold-gradient-text drop-shadow-[0_4px_25px_rgba(217,119,6,0.35)]">
-            تعلم اللغة المصرية القديمة
-          </span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="max-w-2xl mx-auto text-stone-300 text-sm sm:text-base md:text-lg leading-relaxed px-4 font-normal mb-8">
-          بوابتك التفاعلية الحديثة لفك شفرات البرديات والنقوش الجدارية، ودراسة الابجدية الهيروغليفية الـ 24، واتقان القواعد النحوية ومربعات الكلمات، مع لوحة خطاط المعبد الملكي وبنك الاختبارات الذكية.
-        </p>
-
-        {/* THE ROYAL CTA BUTTON */}
-        <div className="flex flex-col items-center justify-center gap-3 w-full px-4">
-          <button
-            onClick={() => onStart()}
-            className="group relative w-full sm:w-auto px-8 sm:px-14 py-4 sm:py-5 rounded-2xl font-black text-lg sm:text-xl md:text-2xl text-stone-950 gold-shimmer-btn shadow-[0_0_40px_rgba(245,158,11,0.5)] hover:shadow-[0_0_70px_rgba(245,158,11,0.9)] transform hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3.5 border-2 border-yellow-200/90 cursor-pointer"
-          >
-            <span className="font-['Segoe_UI_Historic'] text-2xl sm:text-3xl transition-transform group-hover:scale-125">𓆣</span>
-            <span className="tracking-wide">ابدا رحلتك الملكية • Let's Start</span>
-            <Icon name="ArrowRight" size={24} className="rotate-180 transition-transform group-hover:-translate-x-1" />
-          </button>
-          <p className="text-xs text-amber-300/80 font-medium tracking-wide">
-            ✦ اضغط للانتقال مباشرة الى كافة الاقسام التفاعلية ✦
-          </p>
-        </div>
-
-        {/* Quick Stats Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mt-10 sm:mt-12 w-full">
-          {[
-            { num: "24+", label: "صوت احادي", sub: "الابجدية والتصريف" },
-            { num: "100+", label: "كلمة معجمية", sub: "مفردات ملكية ودينية" },
-            { num: "6", label: "محاور نحوية", sub: "تراكيب ومربعات" },
-            { num: "100%", label: "تفاعلي ومجاني", sub: "لوحة خطاط واختبارات" },
-          ].map((stat, idx) => (
-            <div key={idx} className="bg-stone-900/60 border border-amber-500/20 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center hover:border-amber-500/40 transition-colors">
-              <div className="text-2xl sm:text-3xl font-black text-amber-400 font-serif mb-0.5">{stat.num}</div>
-              <div className="text-xs sm:text-sm font-bold text-stone-200">{stat.label}</div>
-              <div className="text-[10px] text-stone-400">{stat.sub}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Feature Pillar Showcase Cards */}
-        <div className="max-w-5xl mx-auto mt-12 sm:mt-14 w-full">
-          <div className="text-center mb-6">
-            <span className="text-xs font-bold text-amber-400 uppercase tracking-widest block mb-1">اقسام المنصة الملكية</span>
-            <h2 className="text-xl sm:text-2xl font-bold text-stone-100">ماذا ينتظرك داخل الموسوعة؟</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-right">
-            {pillarCards.map((card) => (
-              <div
-                key={card.id}
-                onClick={() => onSelectTab(card.id)}
-                className="group relative bg-gradient-to-br from-stone-900/80 to-[#1c140d]/90 border border-amber-500/25 hover:border-amber-400 rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(245,158,11,0.15)] flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-3xl font-['Segoe_UI_Historic'] text-amber-400 group-hover:scale-110 transition-transform">{card.glyph}</span>
-                    <span className="text-[11px] font-semibold text-amber-300/80 bg-amber-950/60 border border-amber-500/30 px-2.5 py-0.5 rounded-full">{card.badge}</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-stone-100 group-hover:text-amber-300 transition-colors mb-1.5">{card.title}</h3>
-                  <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">{card.desc}</p>
-                </div>
-                <div className="mt-4 pt-3 border-t border-stone-800 flex items-center justify-between text-xs font-bold text-amber-400 group-hover:text-amber-300">
-                  <span>{card.cta}</span>
-                  <Icon name="ArrowRight" size={16} className="rotate-180 transition-transform group-hover:-translate-x-1" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Ancient Egyptian Wisdom Banner */}
-        <div className="max-w-3xl mx-auto mt-10 sm:mt-12 w-full">
-          <div className="relative bg-gradient-to-r from-amber-950/40 via-stone-900/60 to-amber-950/40 border border-amber-500/30 rounded-2xl p-5 text-center">
-            <span className="text-amber-400 text-2xl font-['Segoe_UI_Historic'] block mb-1">𓊵</span>
-            <p className="text-stone-300 text-xs sm:text-sm italic leading-relaxed max-w-xl mx-auto">
-              «لا يدخلنك الكبر بسبب علمك، بل استشر الجاهل كالعالم؛ فما من احد بلغ اقصى حدود اتقان فنه، وليس من فنان ادرك كمال حذقه.»
-            </p>
-            <span className="text-[11px] text-amber-400/90 font-semibold mt-2 block tracking-wider">
-              — من تعاليم الحكيم بتاح حتب (الاسرة الخامسة، الدولة القديمة)
-            </span>
-          </div>
-        </div>
-      </main>
-
-      {/* Pyramids Silhouette at Bottom */}
-      <div className="relative z-0 w-full -mt-8 pointer-events-none">
-        <PyramidsSVG className="w-full h-auto opacity-60" />
-      </div>
-
-      {/* Royal Footer */}
-      <footer className="relative z-10 w-full border-t border-amber-500/20 py-4 text-center text-xs text-stone-500 bg-[#1a120b]">
-        <div className="flex items-center justify-center gap-2">
-          <EyeOfHorusSVG size={20} />
-          <span className="font-sans text-stone-400">المصرية القديمة • كنز الاجداد الخالد • 2026</span>
-          <span className="font-['Segoe_UI_Historic'] text-amber-500/60">𓆣</span>
-        </div>
-      </footer>
-    </div>
-  );
-};
+const LandingHero = ({ onStart, onSelectTab }) => (
+  <div className="nile-welcome" dir="rtl">
+    <style>{`.nile-welcome{--nile-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201250%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M130%2040%20C230%200%20300%2065%20400%2035%20S610%204%20710%2043%20S870%2013%20933%20105%20S962%20260%20933%20355%20S1000%20510%20965%20625%20S922%20765%20955%20870%20S970%201050%20883%201110%20S735%201190%20625%201165%20S450%201250%20335%201205%20S170%201215%2090%201130%20S50%20970%2030%20865%20S85%20700%2044%20590%20S18%20420%2053%20315%20S30%2085%20130%2040%20Z%22%2F%3E%3C%2Fsvg%3E")}
+.nile-welcome{--ink:#233e3b;--teal:#227b82;--sand:#b3884e;min-height:100vh;background:#faf5e9;color:var(--ink);overflow-x:clip}
+.nile-welcome *{box-sizing:border-box}.nile-welcome button{touch-action:manipulation}.nile-nav{max-width:1400px;margin:auto;padding:25px clamp(24px,4.5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #ad8b5025}.nile-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;text-align:right}.nile-brand>span{font-size:40px;color:var(--teal);line-height:1}.nile-brand b{display:block;font-size:20px}.nile-brand small{font-size:9px;letter-spacing:3px;color:#9b7949;display:block;margin-top:3px}.nile-links{display:flex;gap:clamp(16px,2.2vw,32px);font-size:12px}.nile-links button{color:#65726b;min-height:44px}.nile-links button:hover{color:var(--teal)}.nile-nav-cta{border:1px solid #b89a674f!important;padding:10px 20px;border-radius:50px;font-size:12px;color:#6d593a;flex-shrink:0;min-height:44px}
+.nile-main{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,76px);align-items:center;padding:44px clamp(24px,4.5vw,64px) 36px;isolation:isolate}.nile-copy{min-width:0;padding:16px 0}.nile-kicker{display:flex;align-items:center;gap:10px;color:#997640;font-size:12px;line-height:1.8}.nile-kicker:before{content:'';width:27px;height:1px;background:#b89155;flex-shrink:0}.nile-copy h1{font-size:clamp(36px,4.25vw,60px);font-weight:700;line-height:1.65;letter-spacing:-1.4px;margin:22px 0;overflow-wrap:normal}.nile-copy h1 span{color:var(--teal);text-decoration:underline;text-decoration-color:#c5a36b;text-decoration-thickness:1px;text-underline-offset:14px}.nile-description{font-size:15px;color:#768078;line-height:2.3;max-width:410px}.nile-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px 24px;margin:32px 0 23px}.nile-start{background:#277d80;color:#fff9ed;display:flex;align-items:center;justify-content:center;gap:36px;border:1px solid #277d80;border-radius:7px;padding:15px 28px;font-size:15px;min-height:52px;box-shadow:0 8px 0 -4px #1b535321;transition:transform .2s,background .2s;white-space:nowrap}.nile-start:hover{background:#1f686e;transform:translateY(-2px)}.nile-sample{font-size:12px;color:#7d715e;border-bottom:1px solid #bbaa8c;min-height:44px}.nile-note{font-size:11px;line-height:2;color:#8b9487;display:flex;align-items:baseline;gap:8px}.nile-note span{color:#b69155}
+.nile-art{width:100%;min-width:0;max-width:570px;margin:0;justify-self:center;display:flex;flex-direction:column;align-items:center;gap:16px}.nile-art img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;mix-blend-mode:multiply;-webkit-mask-image:var(--nile-mask);mask-image:var(--nile-mask);-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}.nile-art-tag{position:static;display:flex;align-items:center;justify-content:center;gap:9px;max-width:100%;font-size:11px;line-height:1.8;color:#927545;text-align:center}.nile-art-tag span{color:#257b80;font-size:22px;flex-shrink:0}
+.nile-paths{max-width:1272px;margin:0 clamp(24px,4.5vw,64px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:25px 0;border-block:1px solid #b7a67e40}.nile-paths button{display:flex;align-items:center;gap:14px;text-align:right;padding:6px 18px;border-left:1px solid #b7a67e40;min-width:0;min-height:64px}.nile-paths button:last-child{border-left:0}.nile-paths .glyph{font-size:30px;color:#a5824b;flex-shrink:0}.nile-paths b{display:block;font-size:12px;font-weight:600;line-height:1.8}.nile-paths small{font-size:10px;line-height:1.8;color:#8a9184;display:block;margin-top:4px}.nile-paths .path-arrow{margin-right:auto;color:#9aa498;font-size:16px;flex-shrink:0}.nile-foot{max-width:1272px;padding:23px 0;margin:0 clamp(24px,4.5vw,64px);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#a0a18f;font-size:10px;line-height:1.8}.nile-foot span:last-child{font-family:Georgia,serif;letter-spacing:2px}.nile-welcome button:focus-visible{outline:2px solid #277d80;outline-offset:6px}
+@media(min-width:1400px){.nile-paths,.nile-foot{margin-inline:auto}}
+@media(min-width:901px) and (max-width:1100px){.nile-copy h1{font-size:38px}.nile-description{font-size:13px}.nile-links{font-size:11px}.nile-main{gap:36px}.nile-paths button{padding-inline:12px;gap:10px}.nile-paths .glyph{font-size:25px}.nile-paths b{font-size:11px}.nile-paths small{font-size:9px}}
+@media(max-width:900px){.nile-links{display:none}.nile-main{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:40px}.nile-copy{text-align:center;padding:0;max-width:620px;justify-self:center}.nile-kicker,.nile-actions,.nile-note{justify-content:center}.nile-copy h1{font-size:clamp(36px,6vw,52px)}.nile-description{margin-inline:auto;max-width:470px;font-size:14px}.nile-art{max-width:490px}.nile-paths{grid-template-columns:repeat(2,minmax(0,1fr));padding:8px 0}.nile-paths button{padding:18px 20px}.nile-paths button:nth-child(2){border-left:0}.nile-paths button:nth-child(-n+2){border-bottom:1px solid #b7a67e30}}
+@media(max-width:480px){.nile-nav{padding:19px 20px;gap:12px}.nile-brand{gap:8px}.nile-brand b{font-size:15px}.nile-brand>span{font-size:31px}.nile-brand small{font-size:7px;letter-spacing:2px}.nile-nav-cta{padding:9px 12px;font-size:10px}.nile-main{padding:32px 22px 26px;gap:28px}.nile-kicker{font-size:10px}.nile-copy h1{font-size:clamp(29px,8.4vw,39px);letter-spacing:-.8px;line-height:1.75;margin:18px 0 22px}.nile-copy h1 span{text-underline-offset:9px}.nile-description{font-size:12px;line-height:2.2}.nile-actions{gap:15px 22px;margin:25px 0 18px}.nile-start{font-size:13px;padding:13px 23px;gap:27px}.nile-sample{font-size:11px}.nile-note{font-size:9px}.nile-art{max-width:370px}.nile-art-tag{font-size:10px}.nile-paths{margin-inline:22px}.nile-paths button{padding:16px 8px;gap:9px}.nile-paths .glyph{font-size:24px}.nile-paths b{font-size:10px}.nile-paths small{font-size:8px}.nile-paths .path-arrow{font-size:13px}.nile-foot{margin-inline:22px;font-size:9px}.nile-foot span:last-child{font-size:8px;letter-spacing:1px}}
+@media(max-width:350px){.nile-brand b{font-size:13px}.nile-nav-cta{font-size:9px;padding-inline:9px}.nile-copy h1{font-size:28px}.nile-paths button{gap:7px}.nile-paths .path-arrow{display:none}}
+.nile-foot{align-items:center}.nile-credit{text-align:center;color:#687e71;display:flex;flex-direction:column;gap:3px}.nile-credit b{font-size:13px;font-weight:600}.nile-credit small{font-family:Georgia,serif;font-size:11px;letter-spacing:1px;color:#a5824b}@media(max-width:650px){.nile-credit{flex-basis:100%;order:3;padding-top:12px;border-top:1px solid #b7a67e25}.nile-credit b{font-size:12px}.nile-credit small{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.nile-start{transition:none}}
+`}</style>
+    <header className="nile-nav">
+      <button className="nile-brand" onClick={() => window.scrollTo({top:0,behavior:'smooth'})}><span>𓆣</span><div><b>المصرية القديمة</b><small>ANCIENT EGYPTIAN</small></div></button>
+      <nav className="nile-links" aria-label="التنقل"><button onClick={onStart}>رحلة التعلّم</button><button onClick={() => onSelectTab('learn')}>الرموز الهيروغليفية</button><button onClick={() => onSelectTab('vocab')}>قاموس الكلمات</button></nav>
+      <button className="nile-nav-cta" onClick={onStart}>ادخل عالم الأجداد ←</button>
+    </header>
+    <main className="nile-main"><div className="nile-copy"><div className="nile-kicker">من ضفاف النيل… بدأت الحكاية</div><h1>لغة صنعت حضارة.<br/><span>وحكايتها تبدأ بيك.</span></h1><p className="nile-description">وراء كل رمز حكاية، وفي كل نقش حياة.<br/>اكتشف جمال اللغة المصرية القديمة، وتعلّم تقرأ أصوات الأجداد… خطوة بخطوة.</p><div className="nile-actions"><button className="nile-start" onClick={onStart}>ابدأ رحلتك <span>←</span></button><button className="nile-sample" onClick={() => onSelectTab('learn')}>استكشف الرموز</button></div><div className="nile-note"><span>✧</span> خد أول خطوة. كل حكاية عظيمة بدأت برمز.</div></div><div className="nile-art"><img src="assets/nile-welcome.png" alt="رسمة فرعونية بألوان رملية لنهر النيل التركوازي بين المعابد والنخيل ومشاهد من الحياة المصرية القديمة"/><div className="nile-art-tag"><span>𓋹</span> حضارة بتتكلم… من آلاف السنين</div></div></main>
+    <section className="nile-paths" aria-label="مسارات التعلم">{[{id:'learn',glyph:'𓅓',name:'الحروف والرموز',desc:'أول سطر في حكايتك'},{id:'vocab',glyph:'𓏛',name:'الكلمات ومعانيها',desc:'كل كلمة تفتح لك باب'},{id:'grammar',glyph:'𓉐',name:'القواعد والتراكيب',desc:'من الرمز للجملة'},{id:'exercises',glyph:'𓏞',name:'تدرّب واختبر نفسك',desc:'اتعلّم بإيدك، خطوة بخطوة'}].map(p=><button key={p.id} onClick={()=>onSelectTab(p.id)}><span className="glyph">{p.glyph}</span><div><b>{p.name}</b><small>{p.desc}</small></div><span className="path-arrow">↗</span></button>)}</section>
+    <footer className="nile-foot"><span>المصرية القديمة — إرث يُقرأ، وحكاية تُروى.</span><div className="nile-credit" aria-label="فارس محمد — Fares Mohamed"><b>فارس محمد</b><small lang="en" dir="ltr">Fares Mohamed</small></div><span>ROOTED IN EGYPT. MADE FOR YOU.</span></footer>
+  </div>
+);
 
 function MainApp() {
   const [showLanding, setShowLanding] = useState(true);
