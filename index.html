@@ -140,7 +140,10 @@ const Icon = ({ name, size = 24, className = "" }) => {
     Sparkles: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></g>,
     RotateCcw: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></g>,
     ChevronDown: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></g>,
-    Home: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></g>
+    Home: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></g>,
+    X: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></g>,
+    Maximize2: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></g>,
+    Minimize2: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></g>
   };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" className={className} xmlns="http://www.w3.org/2000/svg">
@@ -2757,6 +2760,7 @@ const VocabularyGlyph = ({ code, revealed = false }) => {
 };
 
 const VocabularySection = () => {
+  const [searchQuery, setSearchQuery] = useState('');
   const [revealedWords, setRevealedWords] = useState({});
 
   const toggleWordReveal = (key) => {
@@ -2771,6 +2775,7 @@ const VocabularySection = () => {
     vocabularyData.forEach((sec, sIdx) => {
       sec.words.forEach((_, wIdx) => {
         all[`${sIdx}-${wIdx}`] = true;
+        all[`search-${sIdx}-${wIdx}`] = true;
       });
     });
     setRevealedWords(all);
@@ -2780,98 +2785,235 @@ const VocabularySection = () => {
     setRevealedWords({});
   };
 
+  const normalizeSearchText = (str) => {
+    if (!str) return '';
+    return str
+      .toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[إأآا]/g, 'ا')
+      .replace(/ة/g, 'ه')
+      .replace(/ى/g, 'ي')
+      .replace(/[ḏd]/g, 'd')
+      .replace(/[ṯt]/g, 't')
+      .replace(/[ḥh]/g, 'h')
+      .replace(/[ḫh]/g, 'h')
+      .replace(/[šs]/g, 's')
+      .replace(/[ḳq]/g, 'k')
+      .replace(/[ỉi]/g, 'i')
+      .replace(/[ꜥa]/g, 'a')
+      .replace(/3/g, 'a')
+      .trim();
+  };
+
+  const normalizedQuery = normalizeSearchText(searchQuery);
+  const isSearching = normalizedQuery.length > 0;
+
+  const searchResults = useMemo(() => {
+    if (!isSearching) return [];
+    const results = [];
+    vocabularyData.forEach((sec, secIdx) => {
+      sec.words.forEach((word, wordIdx) => {
+        const matchTrans = normalizeSearchText(word.trans).includes(normalizedQuery);
+        const matchEn = normalizeSearchText(word.meanEn || word.mean).includes(normalizedQuery);
+        const matchAr = normalizeSearchText(word.meanAr).includes(normalizedQuery);
+        const matchH = (word.h || '').includes(searchQuery.trim());
+        if (matchTrans || matchEn || matchAr || matchH) {
+          results.push({
+            word,
+            lesson: sec.lesson,
+            cardKey: `search-${secIdx}-${wordIdx}`
+          });
+        }
+      });
+    });
+    return results;
+  }, [normalizedQuery, isSearching, searchQuery]);
+
+  const totalWordsCount = useMemo(() => {
+    return vocabularyData.reduce((acc, s) => acc + s.words.length, 0);
+  }, []);
+
+  const renderCard = (word, cardKey, lessonBadge = null) => {
+    const isRevealed = !!revealedWords[cardKey];
+    return (
+      <div
+        key={cardKey}
+        onClick={() => toggleWordReveal(cardKey)}
+        className={`group flex flex-col items-center text-center justify-between p-4 rounded-2xl w-full transition-all cursor-pointer shadow-xs select-none min-h-[145px] sm:min-h-[155px] overflow-hidden ${
+          isRevealed
+            ? 'bg-amber-50/30 border-2 border-amber-400 shadow-md ring-1 ring-amber-400/20'
+            : 'bg-white hover:bg-amber-50/40 hover:border-amber-400 border border-stone-200 hover:-translate-y-0.5 hover:shadow-md'
+        }`}
+      >
+        {lessonBadge && (
+          <span className="text-[10px] font-bold text-amber-800 bg-amber-100/80 px-2.5 py-0.5 rounded-full mb-1">
+            {lessonBadge}
+          </span>
+        )}
+        {!isRevealed ? (
+          /* HIDDEN STATE: Large, Crystal-Clear Hieroglyphic Symbol */
+          <div className="my-auto flex flex-col items-center justify-center w-full py-2 overflow-hidden">
+            <VocabularyGlyph code={word.h} />
+            <span className="text-[11px] text-stone-400 group-hover:text-amber-700 font-medium transition-colors mt-2 flex items-center gap-1">
+              <Icon name="Eye" size={13} className="text-amber-600" />
+              <span>انقر لمعرفة النطق والمعنى</span>
+            </span>
+          </div>
+        ) : (
+          /* REVEALED STATE: Shows Hieroglyph + Transliteration + English Meaning + Arabic Meaning */
+          <div className="w-full flex flex-col items-center justify-between h-full animate-in fade-in py-1 overflow-hidden">
+            <VocabularyGlyph code={word.h} revealed />
+            <div className="w-full border-t border-amber-200/60 pt-2 flex flex-col items-center">
+              <span className="block text-2xl font-serif text-amber-700 font-bold mb-1" dir="ltr">
+                {word.trans}
+              </span>
+              <span className="block text-sm md:text-base text-slate-800 font-bold leading-snug text-center" dir="ltr">
+                {word.meanEn || word.mean}
+              </span>
+              {word.meanAr && (
+                <span className="block text-xs text-stone-600 font-medium mt-1 text-center" dir="rtl">
+                  ({word.meanAr})
+                </span>
+              )}
+              <span className="text-[10px] text-stone-400 mt-2 block">
+                (انقر للإخفاء)
+              </span>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div className="max-w-6xl mx-auto p-4 md:p-6 space-y-6 mt-4">
-      {/* Top Flashcard Controls Bar */}
-      <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3">
-        <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-          <Icon name="BookOpen" size={20} className="text-amber-600" />
-          <span>قاموس الكلمات</span>
-        </h2>
-        <div className="flex items-center gap-2 shrink-0">
-          <button
-            onClick={revealAll}
-            className="px-3.5 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors"
-          >
-            <Icon name="Eye" size={14} className="text-amber-600" />
-            <span>كشف الكل</span>
-          </button>
-          <button
-            onClick={hideAll}
-            className="px-3.5 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors"
-          >
-            <Icon name="Lock" size={14} className="text-stone-500" />
-            <span>إخفاء الكل (اختبر نفسك)</span>
-          </button>
+      {/* Top Flashcard Controls Bar with Integrated Search */}
+      <div className="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm space-y-3.5">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5">
+            <span className="p-2 bg-amber-100 text-amber-800 rounded-xl shadow-2xs">
+              <Icon name="BookOpen" size={20} />
+            </span>
+            <div>
+              <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
+                <span>قاموس الكلمات والمفردات</span>
+                <span className="text-xs font-semibold px-2 py-0.5 bg-amber-100/70 text-amber-800 rounded-full">
+                  {totalWordsCount} كلمة
+                </span>
+              </h2>
+              <p className="text-xs text-stone-500">
+                ابحث بنطق الكلمة (مثل sdm, itrw, rn) أو بمعناها بالعربية أو الإنجليزية
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
+            <button
+              onClick={revealAll}
+              className="px-3.5 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors"
+            >
+              <Icon name="Eye" size={14} className="text-amber-600" />
+              <span>كشف الكل</span>
+            </button>
+            <button
+              onClick={hideAll}
+              className="px-3.5 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors"
+            >
+              <Icon name="Lock" size={14} className="text-stone-500" />
+              <span>إخفاء الكل (اختبر نفسك)</span>
+            </button>
+          </div>
         </div>
+
+        {/* Real-time Search Input Box */}
+        <div className="relative w-full">
+          <div className="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-stone-400">
+            <Icon name="Search" size={18} />
+          </div>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="🔍 اكتب نطق الكلمة (مثل: sdm, itrw, rn, pt) أو معناها (مثل: نهر، يسمع، كاتب، سماء)..."
+            className="w-full pr-10 pl-10 py-2.5 sm:py-3 text-sm bg-stone-50 hover:bg-white focus:bg-white border border-stone-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 rounded-xl transition-all outline-hidden text-slate-800 font-medium"
+            dir="auto"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400 hover:text-stone-600 cursor-pointer"
+              title="مسح البحث"
+            >
+              <Icon name="X" size={16} />
+            </button>
+          )}
+        </div>
+
+        {isSearching && (
+          <div className="flex items-center justify-between text-xs text-stone-600 pt-1 border-t border-stone-100">
+            <span>
+              نتائج البحث عن "<strong className="text-amber-700">{searchQuery}</strong>": {searchResults.length} كلمة مطابقة
+            </span>
+            <button
+              onClick={() => setSearchQuery('')}
+              className="text-amber-700 hover:underline font-bold"
+            >
+              عرض جميع الكلمات
+            </button>
+          </div>
+        )}
       </div>
 
-      {vocabularyData.map((section, secIdx) => (
-        <div key={secIdx} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-          <div className="bg-gradient-to-l from-amber-50/80 via-stone-100 to-stone-100 border-b border-stone-200 p-4 md:p-5 flex items-center justify-between">
-            <h2 className="text-lg sm:text-xl font-bold text-slate-800">
-              كلمات {section.lesson}
-            </h2>
-            <span className="text-xs font-bold text-amber-800 bg-amber-100/80 px-3 py-1 rounded-full">
-              {section.words.length} كلمة
-            </span>
+      {isSearching ? (
+        searchResults.length > 0 ? (
+          <div className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
+            <div className="bg-gradient-to-l from-amber-50/80 via-stone-100 to-stone-100 border-b border-stone-200 p-4 md:p-5 flex items-center justify-between">
+              <h3 className="text-base sm:text-lg font-bold text-slate-800">
+                نتائج البحث المكتشفة ({searchResults.length} كلمة)
+              </h3>
+              <span className="text-xs font-bold text-amber-800 bg-amber-100/80 px-3 py-1 rounded-full">
+                مطابقات القاموس
+              </span>
+            </div>
+            <div className="p-4 md:p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4" dir="ltr">
+              {searchResults.map(({ word, cardKey, lesson }) => renderCard(word, cardKey, lesson))}
+            </div>
           </div>
-          <div className="p-4 md:p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4" dir="ltr">
-            {section.words.map((word, i) => {
-              const cardKey = `${secIdx}-${i}`;
-              const isRevealed = !!revealedWords[cardKey];
-              return (
-                <div
-                  key={i}
-                  onClick={() => toggleWordReveal(cardKey)}
-                  className={`group flex flex-col items-center text-center justify-between p-4 rounded-2xl w-full transition-all cursor-pointer shadow-xs select-none min-h-[145px] sm:min-h-[155px] overflow-hidden ${
-                    isRevealed
-                      ? 'bg-amber-50/30 border-2 border-amber-400 shadow-md ring-1 ring-amber-400/20'
-                      : 'bg-white hover:bg-amber-50/40 hover:border-amber-400 border border-stone-200 hover:-translate-y-0.5 hover:shadow-md'
-                  }`}
-                >
-                  {!isRevealed ? (
-                    /* HIDDEN STATE: Large, Crystal-Clear Hieroglyphic Symbol */
-                    <div className="my-auto flex flex-col items-center justify-center w-full py-2 overflow-hidden">
-                      <VocabularyGlyph code={word.h} />
-                      <span className="text-[11px] text-stone-400 group-hover:text-amber-700 font-medium transition-colors mt-2 flex items-center gap-1">
-                        <Icon name="Eye" size={13} className="text-amber-600" />
-                        <span>انقر لمعرفة النطق والمعنى</span>
-                      </span>
-                    </div>
-                  ) : (
-                    /* REVEALED STATE: Shows Hieroglyph + Transliteration + English Meaning + Arabic Meaning */
-                    <div className="w-full flex flex-col items-center justify-between h-full animate-in fade-in py-1 overflow-hidden">
-                      <VocabularyGlyph code={word.h} revealed />
-                      <div className="w-full border-t border-amber-200/60 pt-2 flex flex-col items-center">
-                        <span className="block text-2xl font-serif text-amber-700 font-bold mb-1" dir="ltr">
-                          {word.trans}
-                        </span>
-                        <span className="block text-sm md:text-base text-slate-800 font-bold leading-snug text-center" dir="ltr">
-                          {word.meanEn || word.mean}
-                        </span>
-                        {word.meanAr && (
-                          <span className="block text-xs text-stone-600 font-medium mt-1 text-center" dir="rtl">
-                            ({word.meanAr})
-                          </span>
-                        )}
-                        <span className="text-[10px] text-stone-400 mt-2 block">
-                          (انقر للإخفاء)
-                        </span>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+        ) : (
+          <div className="bg-white border border-stone-200 rounded-2xl p-8 sm:p-12 text-center space-y-3 shadow-sm">
+            <div className="text-4xl">🔍</div>
+            <h3 className="text-base sm:text-lg font-bold text-slate-700">لم يتم العثور على أي كلمة مطابقة</h3>
+            <p className="text-xs sm:text-sm text-stone-500 max-w-md mx-auto leading-relaxed">
+              جرب البحث بنطق آخر مبسط مثل "sdm" أو "itrw" أو باللغة العربية مثل "نهر" أو "يسمع" أو "كاتب".
+            </p>
+            <button
+              onClick={() => setSearchQuery('')}
+              className="mt-2 px-4 py-2 bg-amber-100 text-amber-900 border border-amber-200 rounded-xl text-xs font-bold hover:bg-amber-200 transition-colors"
+            >
+              مسح البحث وعرض كل الكلمات
+            </button>
           </div>
-        </div>
-      ))}
+        )
+      ) : (
+        vocabularyData.map((section, secIdx) => (
+          <div key={secIdx} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
+            <div className="bg-gradient-to-l from-amber-50/80 via-stone-100 to-stone-100 border-b border-stone-200 p-4 md:p-5 flex items-center justify-between">
+              <h2 className="text-lg sm:text-xl font-bold text-slate-800">
+                كلمات {section.lesson}
+              </h2>
+              <span className="text-xs font-bold text-amber-800 bg-amber-100/80 px-3 py-1 rounded-full">
+                {section.words.length} كلمة
+              </span>
+            </div>
+            <div className="p-4 md:p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4" dir="ltr">
+              {section.words.map((word, i) => renderCard(word, `${secIdx}-${i}`))}
+            </div>
+          </div>
+        ))
+      )}
     </div>
   );
 };
-
 
 const IllustrativeExamplesBlock = ({ examples }) => {
   // Map of revealed state for each example card (default: all false / hidden for self-testing)
@@ -3026,14 +3168,21 @@ const IllustrativeExamplesBlock = ({ examples }) => {
 
 const GrammarSection = () => {
   const [selectedLessonTab, setSelectedLessonTab] = useState('all');
-  const [expandedLessons, setExpandedLessons] = useState({
-    lesson1: true,
-    lesson2: true,
-    lesson3: true
-  });
+  // All lessons start folded/collapsed by default on first entry as requested
+  const [expandedLessons, setExpandedLessons] = useState({});
 
   const toggleLesson = (id) => {
     setExpandedLessons(prev => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const expandAllLessons = () => {
+    const all = {};
+    grammarData.forEach(g => { all[g.id] = true; });
+    setExpandedLessons(all);
+  };
+
+  const collapseAllLessons = () => {
+    setExpandedLessons({});
   };
 
   const handleFilterChange = (tabId) => {
@@ -3058,6 +3207,32 @@ const GrammarSection = () => {
     <div className="max-w-5xl mx-auto p-2.5 sm:p-4 md:p-6 space-y-4 sm:space-y-5 mt-2 sm:mt-4">
       {/* Anchor for smooth scroll to top when changing tabs */}
       <div id="grammar-top"></div>
+
+      {/* Lesson Selector Header with Expand/Collapse All buttons */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 max-w-4xl mx-auto px-1" dir="rtl">
+        <div className="text-xs sm:text-sm font-bold text-stone-700 flex items-center gap-1.5">
+          <Icon name="Layers" size={16} className="text-amber-600" />
+          <span>اختر الدرس من القائمة أدناه لفتحه (الدروس مطوية افتراضياً):</span>
+        </div>
+        <div className="flex items-center gap-2 self-end sm:self-auto">
+          <button
+            onClick={expandAllLessons}
+            className="px-2.5 py-1 text-xs font-semibold text-amber-900 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 rounded-lg transition-colors flex items-center gap-1 shadow-2xs cursor-pointer"
+            title="فتح جميع الدروس"
+          >
+            <Icon name="Maximize2" size={12} className="text-amber-700" />
+            <span>فتح الكل</span>
+          </button>
+          <button
+            onClick={collapseAllLessons}
+            className="px-2.5 py-1 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 border border-stone-200 rounded-lg transition-colors flex items-center gap-1 shadow-2xs cursor-pointer"
+            title="طي جميع الدروس"
+          >
+            <Icon name="Minimize2" size={12} className="text-stone-500" />
+            <span>طي الكل</span>
+          </button>
+        </div>
+      </div>
 
       {/* Quick Lesson Filter Tabs - English on top, Arabic underneath */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-2.5 mb-2 sm:mb-3 max-w-4xl mx-auto" dir="ltr">
@@ -4323,10 +4498,36 @@ const LandingHero = ({ onStart, onSelectTab }) => (
 );
 
 function MainApp() {
-  const [showLanding, setShowLanding] = useState(true);
+  const getInitialTab = () => {
+    try {
+      const hash = window.location.hash.replace('#', '');
+      if (['learn', 'vocab', 'grammar', 'exercises'].includes(hash)) {
+        return hash;
+      }
+      const saved = localStorage.getItem('tourism2026_active_tab');
+      if (saved && ['learn', 'vocab', 'grammar', 'exercises'].includes(saved)) {
+        return saved;
+      }
+    } catch (e) {}
+    return 'learn';
+  };
+
+  const getInitialShowLanding = () => {
+    try {
+      const hash = window.location.hash.replace('#', '');
+      if (['learn', 'vocab', 'grammar', 'exercises'].includes(hash)) {
+        return false;
+      }
+      const hasStarted = localStorage.getItem('tourism2026_has_started');
+      return hasStarted !== 'true';
+    } catch (e) {}
+    return true;
+  };
+
+  const [showLanding, setShowLanding] = useState(getInitialShowLanding);
   const [selectedSign, setSelectedSign] = useState(null);
   const [activeDrawingSign, setActiveDrawingSign] = useState(null);
-  const [activeTab, setActiveTab] = useState('learn');
+  const [activeTab, setActiveTab] = useState(getInitialTab);
   const [learnSubTab, setLearnSubTab] = useState('path');
 
   useEffect(() => { if (selectedSign) window.scrollTo(0, 0); }, [selectedSign]);
@@ -4336,9 +4537,35 @@ function MainApp() {
     setActiveDrawingSign(item.forms ? item.forms[0].sign : item.h);
   };
 
+  // Sync tab changes to URL hash and localStorage so refresh keeps the user right here
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
+    try {
+      localStorage.setItem('tourism2026_active_tab', tabId);
+      localStorage.setItem('tourism2026_has_started', 'true');
+      window.location.hash = tabId;
+    } catch (e) {}
+  };
+
   const handleStartFromLanding = (targetTab = 'learn') => {
     setActiveTab(targetTab);
     setShowLanding(false);
+    try {
+      localStorage.setItem('tourism2026_has_started', 'true');
+      localStorage.setItem('tourism2026_active_tab', targetTab);
+      window.location.hash = targetTab;
+    } catch (e) {}
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleReturnToLanding = () => {
+    setShowLanding(true);
+    try {
+      localStorage.setItem('tourism2026_has_started', 'false');
+      if (window.location.hash) {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    } catch (e) {}
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -4360,8 +4587,8 @@ function MainApp() {
           <div className="max-w-6xl mx-auto px-2 sm:px-6 md:px-8">
             <div className="flex items-center justify-between mb-3 sm:mb-4">
               <button
-                onClick={() => { setShowLanding(true); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold transition-all shadow-sm group"
+                onClick={handleReturnToLanding}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold transition-all shadow-sm group cursor-pointer"
                 title="العودة لواجهة البداية الترحيبية"
               >
                 <Icon name="Home" size={16} className="text-amber-600 group-hover:scale-110 transition-transform" />
@@ -4390,7 +4617,7 @@ function MainApp() {
               ].map(tab => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
+                  onClick={() => handleTabChange(tab.id)}
                   className={`w-full sm:w-auto sm:min-w-[140px] md:min-w-[160px] flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2.5 pb-2.5 sm:pb-3.5 px-1 sm:px-4 md:px-5 font-semibold transition-all text-center ${
                     activeTab === tab.id
                       ? 'text-amber-600 border-b-2 border-amber-600 font-bold'
