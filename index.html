@@ -30,6 +30,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
   <style>
+    .vocab-glyph-content div { max-width: none; flex-wrap: nowrap; }
+    .vocab-glyph-content span { overflow: visible; }
     body {
       font-family: 'Cairo', 'Segoe UI Historic', 'Noto Sans Egyptian Hieroglyphs', system-ui, -apple-system, sans-serif;
     }
@@ -2282,6 +2284,7 @@ const HieroglyphBlock = ({ code, size = "normal", boxed = true, className = "" }
 
   // Moderate, natural proportions (authentic Egyptology typography)
   const singleCls = 
+    size === "vocab" ? "text-[length:var(--vocab-sign-size)]" :
     size === "flashcard" ? "text-3xl sm:text-4xl" :
     size === "huge" ? "text-3xl sm:text-4xl md:text-5xl" :
     size === "large" ? "text-2xl sm:text-3xl md:text-4xl" :
@@ -2290,6 +2293,7 @@ const HieroglyphBlock = ({ code, size = "normal", boxed = true, className = "" }
     "text-xl sm:text-2xl";
 
   const stackedCls = 
+    size === "vocab" ? "text-[length:var(--vocab-stacked-size)]" :
     size === "flashcard" ? "text-xl sm:text-2xl" :
     size === "huge" ? "text-xl sm:text-2xl md:text-3xl" :
     size === "large" ? "text-base sm:text-lg md:text-xl" :
@@ -2705,6 +2709,53 @@ const PhonogramsSection = () => {
   );
 };
 
+// Fit each vocabulary word to its own available space, including stacked signs.
+const VocabularyGlyph = ({ code, revealed = false }) => {
+  const frameRef = useRef(null);
+  const contentRef = useRef(null);
+  const [fit, setFit] = useState(1);
+  const count = [...(code || '')].filter(char => {
+    const point = char.codePointAt(0);
+    return point >= 0x13000 && point <= 0x1342f;
+  }).length;
+  const fontSize = revealed
+    ? (count <= 2 ? 54 : count <= 4 ? 48 : count <= 7 ? 44 : 40)
+    : (count <= 2 ? 66 : count <= 4 ? 58 : count <= 7 ? 50 : 44);
+
+  React.useLayoutEffect(() => {
+    let active = true;
+    const measure = () => {
+      const frame = frameRef.current;
+      const content = contentRef.current;
+      if (!active || !frame || !content) return;
+      const width = content.offsetWidth;
+      const height = content.offsetHeight;
+      if (width && height) {
+        setFit(Math.min(1, Math.max(0, frame.clientWidth - 12) / width,
+          Math.max(0, frame.clientHeight - 14) / height));
+      }
+    };
+    const observer = new ResizeObserver(measure);
+    observer.observe(frameRef.current);
+    observer.observe(contentRef.current);
+    measure();
+    document.fonts.ready.then(measure);
+    return () => { active = false; observer.disconnect(); };
+  }, [code, revealed, fontSize]);
+
+  return (
+    <div ref={frameRef} className="vocab-glyph-frame" data-code={code}
+      style={{ position: 'relative', width: '100%', height: revealed ? 94 : 112, overflow: 'hidden', flexShrink: 0 }}>
+      <div ref={contentRef} className="vocab-glyph-content"
+        style={{ position: 'absolute', left: '50%', top: '50%', width: 'max-content',
+          '--vocab-sign-size': `${fontSize}px`, '--vocab-stacked-size': `${fontSize * 0.60}px`,
+          transform: `translate(-50%, -50%) scale(${fit})`, transformOrigin: 'center' }}>
+        <HieroglyphBlock code={code} size="vocab" boxed={false} />
+      </div>
+    </div>
+  );
+};
+
 const VocabularySection = () => {
   const [revealedWords, setRevealedWords] = useState({});
 
@@ -2729,27 +2780,6 @@ const VocabularySection = () => {
     setRevealedWords({});
   };
 
-  // Smart dynamic sizing for vocabulary cards:
-  // - 1-2 signs: prominent ("huge" in hidden state, "large" in revealed)
-  // - 3-4 signs: balanced ("large" in hidden state, "normal" in revealed)
-  // - 5+ signs: compact ("normal" in hidden state, "compact" in revealed)
-  // This scales down long words while keeping small words prominent,
-  // and allows multi-quadrat words to wrap gracefully into two distinct lines with clear separation.
-  const getVocabHieroglyphSize = (hCode, isRevealed) => {
-    if (!hCode) return "normal";
-    const cleanSigns = [...hCode.replace(/[\s\:\*\(\)\,\.\=\_\-]/g, '')];
-    const count = cleanSigns.length;
-
-    if (isRevealed) {
-      if (count <= 2) return "large";
-      if (count <= 4) return "normal";
-      return "compact";
-    }
-
-    if (count <= 2) return "huge";
-    if (count <= 4) return "large";
-    return "normal";
-  };
 
   return (
     <div className="max-w-6xl mx-auto p-4 md:p-6 space-y-6 mt-4">
@@ -2804,9 +2834,7 @@ const VocabularySection = () => {
                   {!isRevealed ? (
                     /* HIDDEN STATE: Large, Crystal-Clear Hieroglyphic Symbol */
                     <div className="my-auto flex flex-col items-center justify-center w-full py-2 overflow-hidden">
-                      <div className="flex items-center justify-center min-h-[80px] sm:min-h-[90px] w-full max-w-[145px] sm:max-w-[165px] mx-auto overflow-hidden px-1">
-                        <HieroglyphBlock code={word.h} size={getVocabHieroglyphSize(word.h, false)} boxed={false} />
-                      </div>
+                      <VocabularyGlyph code={word.h} />
                       <span className="text-[11px] text-stone-400 group-hover:text-amber-700 font-medium transition-colors mt-2 flex items-center gap-1">
                         <Icon name="Eye" size={13} className="text-amber-600" />
                         <span>انقر لمعرفة النطق والمعنى</span>
@@ -2815,9 +2843,7 @@ const VocabularySection = () => {
                   ) : (
                     /* REVEALED STATE: Shows Hieroglyph + Transliteration + English Meaning + Arabic Meaning */
                     <div className="w-full flex flex-col items-center justify-between h-full animate-in fade-in py-1 overflow-hidden">
-                      <div className="flex items-center justify-center min-h-[52px] mb-1 w-full max-w-[145px] sm:max-w-[165px] mx-auto overflow-hidden px-1">
-                        <HieroglyphBlock code={word.h} size={getVocabHieroglyphSize(word.h, true)} boxed={false} />
-                      </div>
+                      <VocabularyGlyph code={word.h} revealed />
                       <div className="w-full border-t border-amber-200/60 pt-2 flex flex-col items-center">
                         <span className="block text-2xl font-serif text-amber-700 font-bold mb-1" dir="ltr">
                           {word.trans}
