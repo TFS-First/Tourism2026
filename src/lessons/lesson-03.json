@@ -1,0 +1,726 @@
+{
+  "id": "lesson3",
+  "number": 3,
+  "titleAr": "الدرس الثالث",
+  "titleEn": "Lesson III",
+  "grammar": {
+    "id": "lesson3",
+    "titleEn": "Lesson III: Suffix Conjugation, Tenses, Active & Passive Voice",
+    "titleAr": "الدرس الثالث: تصريف الأفعال، الأزمنة، والمبني للمعلوم والمجهول",
+    "badges": [
+      {
+        "id": "rule-3-1",
+        "label": "Suffix Conjugation (تصريف الأفعال)"
+      },
+      {
+        "id": "rule-3-2",
+        "label": "Active vs. Passive (المبني للمعلوم والمجهول)"
+      },
+      {
+        "id": "rule-3-3",
+        "label": "Past Tense (الماضي التام)"
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-3-1",
+        "ruleNum": 1,
+        "type": "structured",
+        "badgeEn": "Suffix Conjugation",
+        "badgeAr": "تصريف الأفعال",
+        "titleEn": "Rule 1: The Suffix Conjugation (sḏm=f Form) & Suffix Pronouns",
+        "titleAr": "صيغة الفاعل المتصل sḏm=f وجدول الضمائر المتصلة",
+        "formula": "[ Verb Stem ] + [ Suffix Pronoun (Subject) ]",
+        "summaryEn": "The primary verbal formation in Egyptian is formed by appending a Suffix Pronoun directly to the verb stem as its subject.",
+        "summaryAr": "الصيغة الأساسية للأفعال: إلحاق ضمير الفاعل المتصل مباشرة بجذع الفعل ليكون فاعلاً له.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Concept of the Suffix Conjugation (sḏm=f)",
+            "descEn": "Named after paradigm verb 'sḏm=f' ('he hears'). The suffix pronoun attaches directly to the verb stem and acts as its grammatical subject:",
+            "indicatorAr": "المفهوم: الفعل + ضمير الفاعل المتصل",
+            "subPoints": [
+              {
+                "label": "Direct Attachment",
+                "text": "Pronoun is attached directly without space or break",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓆑",
+                    "trans": "sḏm=f",
+                    "mean": "he hears"
+                  },
+                  {
+                    "h": "𓌳*𓄿:𓄿*𓁹:𓎡",
+                    "trans": "m33=k",
+                    "mean": "you see"
+                  }
+                ]
+              },
+              {
+                "label": "Syntactic Role",
+                "text": "The suffix pronoun functions directly as the subject of the verb",
+                "examples": [
+                  {
+                    "h": "𓉔:𓄿*𓃀*𓂻:𓋴",
+                    "trans": "h3b=s",
+                    "mean": "she sends"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "The 8 Suffix Pronouns Table",
+            "descEn": "Middle Egyptian has 8 standard suffix pronouns covering 1st, 2nd, and 3rd persons, singular and plural (see table below).",
+            "indicatorAr": "جدول الضمائر المتصلة الثمانية"
+          }
+        ],
+        "pronounsTable": [
+          {
+            "num": 1,
+            "person": "1st sing. c. (متكلم مفرد)",
+            "trans": "=ỉ",
+            "h": "𓀀",
+            "meanEn": "I, me, my",
+            "meanAr": "أنا / ياء المتكلم",
+            "ex": "sḏm=ỉ (I hear)"
+          },
+          {
+            "num": 2,
+            "person": "2nd sing. m. (مخاطب مذكر)",
+            "trans": "=k",
+            "h": "𓎡",
+            "meanEn": "you, your (masc.)",
+            "meanAr": "أنتَ / كاف المخاطب",
+            "ex": "sḏm=k (You hear)"
+          },
+          {
+            "num": 3,
+            "person": "2nd sing. f. (مخاطبة مؤنثة)",
+            "trans": "=ṯ",
+            "h": "𓍿",
+            "meanEn": "you, your (fem.)",
+            "meanAr": "أنتِ / كاف المخاطبة",
+            "ex": "sḏm=ṯ (You hear)"
+          },
+          {
+            "num": 4,
+            "person": "3rd sing. m. (غائب مذكر)",
+            "trans": "=f",
+            "h": "𓆑",
+            "meanEn": "he, him, his",
+            "meanAr": "هو / هاء الغائب",
+            "ex": "sḏm=f (He hears)"
+          },
+          {
+            "num": 5,
+            "person": "3rd sing. f. (غائبة مؤنثة)",
+            "trans": "=s",
+            "h": "𓋴",
+            "meanEn": "she, her",
+            "meanAr": "هي / هاء الغائبة",
+            "ex": "sḏm=s (She hears)"
+          },
+          {
+            "num": 6,
+            "person": "1st plur. c. (متكلمون جمع)",
+            "trans": "=n",
+            "h": "𓈖",
+            "meanEn": "we, us, our",
+            "meanAr": "نحن / نا الفاعلين",
+            "ex": "sḏm=n (We hear)"
+          },
+          {
+            "num": 7,
+            "person": "2nd plur. c. (مخاطبون جمع)",
+            "trans": "=tn",
+            "h": "𓏏:𓈖",
+            "meanEn": "you, your (plur.)",
+            "meanAr": "أنتم / كاف الجمع",
+            "ex": "sḏm=tn (You hear)"
+          },
+          {
+            "num": 8,
+            "person": "3rd plur. c. (غائبون جمع)",
+            "trans": "=sn",
+            "h": "𓋴:𓈖",
+            "meanEn": "they, them, their",
+            "meanAr": "هم / هاء الغائبين",
+            "ex": "sḏm=sn (They hear)"
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+            "trans": "sḏm=f rn pn",
+            "meanEn": "He hears this name (Active Voice).",
+            "meanAr": "يسمع هذا الاسم (مبني للمعلوم)",
+            "noteEn": "Verb (sḏm) + Suffix Pronoun (=f 'he') + Object (rn pn).",
+            "noteAr": "فعل + ضمير فاعل =f + مفعول به"
+          },
+          {
+            "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+            "trans": "m33=k s3",
+            "meanEn": "You (m.) see the son.",
+            "meanAr": "ترى الابن",
+            "noteEn": "Verb (m33) + Suffix (=k 'you m.') + Object (s3).",
+            "noteAr": "فعل + ضمير =k + مفعول به"
+          },
+          {
+            "h": "𓉔:𓄿*𓃀*𓂻:𓋴 𓃀*𓄿:𓎡*𓀀",
+            "trans": "h3b=s b3k",
+            "meanEn": "She sends the servant.",
+            "meanAr": "ترسل الخادم",
+            "noteEn": "Verb (h3b) + Suffix (=s 'she') + Object (b3k).",
+            "noteAr": "فعل + ضمير =s + مفعول به"
+          },
+          {
+            "h": "𓋴*𓄔*𓅓:𓈖 𓂋:𓈖 𓊪:𓈖",
+            "trans": "sḏm=n rn pn",
+            "meanEn": "We hear this name.",
+            "meanAr": "نسمع هذا الاسم",
+            "noteEn": "Verb (sḏm) + Suffix (=n 'we') + Object (rn pn).",
+            "noteAr": "فعل + ضمير =n + مفعول به"
+          },
+          {
+            "h": "𓌳*𓄿:𓄿*𓁹:𓋴:𓈖 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+            "trans": "m33=sn ỉtrw",
+            "meanEn": "They see the river.",
+            "meanAr": "يرون النهر",
+            "noteEn": "Verb (m33) + Suffix (=sn 'they') + Object (ỉtrw).",
+            "noteAr": "فعل + ضمير الجمع =sn + مفعول به"
+          }
+        ]
+      },
+      {
+        "id": "rule-3-2",
+        "ruleNum": 2,
+        "type": "structured",
+        "badgeEn": "Active vs. Passive",
+        "badgeAr": "المبني للمعلوم والمجهول",
+        "titleEn": "Rule 2: Active vs. Passive Voice & The Agent Preposition 'ỉn'",
+        "titleAr": "المبني للمعلوم والمجهول وأداة الفاعل ỉn",
+        "formula": "[ Verb ] + [ .tw ] + [ Subject (نائب الفاعل) ] + [ ỉn + Agent (الفاعل الحقيقي) ]",
+        "summaryEn": "Active Voice indicates the subject performs the action. Passive Voice is formed with morpheme '.tw'. When the agent (doer) is expressed, it is strictly introduced by 'ỉn' ('by').",
+        "summaryAr": "المبني للمعلوم يقوم فيه الفاعل بالفعل. والمبني للمجهول يصاغ بإضافة .tw، وإذا ذُكر الفاعل الحقيقي يسبق بـ ỉn.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Active Voice (المبني للمعلوم)",
+            "descEn": "The grammatical subject directly performs the action:",
+            "indicatorAr": "الفاعل المذكور هو الذي يقوم بالحدث",
+            "subPoints": [
+              {
+                "label": "Active Form",
+                "text": "Subject does the action",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖",
+                    "trans": "sḏm=f rn",
+                    "mean": "he hears the name"
+                  }
+                ]
+              },
+              {
+                "label": "Transitive Sentence",
+                "text": "Takes normal direct object",
+                "examples": [
+                  {
+                    "h": "𓉔:𓄿*𓃀*𓂻 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+                    "trans": "h3b ṯ3ty b3k",
+                    "mean": "the vizier sends the servant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Forming the Passive Voice with morpheme '.tw' (المبني للمجهول)",
+            "descEn": "Formed by appending '.tw' (𓏏𓅱) to the verb: [Verb + .tw + Subject]:",
+            "indicatorAr": "يصاغ بإلحاق .tw بعد الفعل، وفي الماضي .w",
+            "subPoints": [
+              {
+                "label": "With Noun Subject",
+                "text": "Verb + .tw + Noun",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖",
+                    "trans": "sḏm.tw rn",
+                    "mean": "The name is heard"
+                  }
+                ]
+              },
+              {
+                "label": "With Suffix Pronoun",
+                "text": "Verb + .tw + Pronoun",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑",
+                    "trans": "sḏm.tw=f",
+                    "mean": "He is heard"
+                  }
+                ]
+              },
+              {
+                "label": "Past Passive (.w)",
+                "text": "In past passive, morpheme '.w' (𓅱) is used",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓅱:𓆑",
+                    "trans": "sḏm.w=f",
+                    "mean": "He was heard"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "titleEn": "The Agent with Preposition 'ỉn' (الفاعل الحقيقي مسبوقاً بـ ỉn)",
+            "descEn": "When the actual agent (the doer) of a passive verb is named, it is strictly introduced by the preposition 'ỉn' (𓇋𓈖) meaning 'by':",
+            "indicatorAr": "الفاعل الحقيقي في المجهول يسبق بـ ỉn (بواسطة / من قِبل)",
+            "subPoints": [
+              {
+                "label": "Formula",
+                "text": "Passive Verb + Subject + ỉn + Agent",
+                "examples": [
+                  {
+                    "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+                    "trans": "h3b.tw b3k ỉn ṯ3ty",
+                    "mean": "The servant is sent by the vizier"
+                  }
+                ]
+              },
+              {
+                "label": "Translation",
+                "text": "The servant is sent BY the vizier",
+                "examples": [
+                  {
+                    "h": "𓇋*𓈖",
+                    "trans": "ỉn",
+                    "mean": "by / by means of"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖",
+            "trans": "sḏm.tw rn",
+            "meanEn": "The name is heard (Passive Voice).",
+            "meanAr": "يُسمَع الاسم (مبني للمجهول)",
+            "noteEn": "Verb (sḏm) + Passive formative (.tw) + Subject (rn).",
+            "noteAr": "فعل + لاحقة المجهول .tw + نائب فاعل"
+          },
+          {
+            "h": "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑",
+            "trans": "sḏm.tw=f",
+            "meanEn": "He is heard (Passive Voice with pronoun).",
+            "meanAr": "هو يُسمَع",
+            "noteEn": "Verb + .tw + Suffix Pronoun (=f).",
+            "noteAr": "فعل + .tw + ضمير نائب فاعل"
+          },
+          {
+            "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+            "trans": "h3b.tw b3k ỉn ṯ3ty",
+            "meanEn": "The servant is sent by the vizier (Passive with Agent).",
+            "meanAr": "أُرسِل الخادم بواسطة الوزير",
+            "noteEn": "Passive verb (h3b.tw) + Subject (b3k) + Agent introduced by ỉn (by the vizier).",
+            "noteAr": "مبني للمجهول + نائب فاعل + الفاعل مسبوق بـ ỉn"
+          },
+          {
+            "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+            "trans": "sḏm.tw rn ỉn s",
+            "meanEn": "The name is heard by a man.",
+            "meanAr": "يُسمع الاسم بواسطة رجل",
+            "noteEn": "Passive verb (sḏm.tw) + Subject (rn) + Agent with ỉn (by a man).",
+            "noteAr": "مجهول + نائب فاعل + فاعل مسبوق بـ ỉn"
+          },
+          {
+            "h": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀",
+            "trans": "m33.tw msḥ ỉn sš",
+            "meanEn": "The crocodile is seen by the scribe.",
+            "meanAr": "يُرى التمساح بواسطة الكاتب",
+            "noteEn": "Passive verb (m33.tw) + Subject (msḥ) + Agent (ỉn sš).",
+            "noteAr": "مجهول + نائب فاعل + فاعل مسبوق بـ ỉn"
+          }
+        ]
+      },
+      {
+        "id": "rule-3-3",
+        "ruleNum": 3,
+        "type": "structured",
+        "badgeEn": "Past / Perfective",
+        "badgeAr": "صيغة الماضي التام",
+        "titleEn": "Rule 3: Past / Perfective Tense (The sḏm.n=f Form)",
+        "titleAr": "صيغة الماضي التام: sḏm.n=f",
+        "formula": "[ Verb Stem ] + [ .n ] + [ Subject ]",
+        "summaryEn": "Formed by inserting the morpheme '.n' between verb stem and subject to indicate completed past action (Past Simple or Present Perfect).",
+        "summaryAr": "تُقحم اللاحقة .n بين جذع الفعل والفاعل للدلالة على حدث ماضٍ وتام (الماضي البسيط أو المضارع التام).",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Morphological Formation with '.n'",
+            "descEn": "Insert the morpheme '.n' (𓈖) directly between the verb stem and its subject: [Verb + .n + Subject]:",
+            "indicatorAr": "الصياغة: إقحام حرف النون .n بين الفعل والفاعل",
+            "subPoints": [
+              {
+                "label": "With Pronoun",
+                "text": "Verb + .n + Suffix Pronoun",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓈖:𓆑",
+                    "trans": "sḏm.n=f",
+                    "mean": "he heard"
+                  }
+                ]
+              },
+              {
+                "label": "With Noun",
+                "text": "Verb + .n + Noun Subject",
+                "examples": [
+                  {
+                    "h": "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+                    "trans": "h3b.n ṯ3ty b3k",
+                    "mean": "the vizier sent the servant"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Tense & English Equivalents",
+            "descEn": "Denotes a completed action in the past. Corresponds in English to:",
+            "indicatorAr": "المقابل الإنجليزي: Past Simple أو Present Perfect",
+            "subPoints": [
+              {
+                "label": "Past Simple",
+                "text": "Action completed at specific past time",
+                "examples": [
+                  {
+                    "h": "𓋴*𓄔*𓅓:𓈖:𓆑",
+                    "trans": "sḏm.n=f",
+                    "mean": "he heard"
+                  }
+                ]
+              },
+              {
+                "label": "Present Perfect",
+                "text": "Completed action with present relevance",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳",
+                    "trans": "wbn.n rʿ",
+                    "mean": "the sun has risen"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+            "trans": "sḏm.n=f rn pn",
+            "meanEn": "He heard (has heard) this name.",
+            "meanAr": "سَمِعَ هذا الاسم",
+            "noteEn": "Verb (sḏm) + Past formative (.n) + Suffix (=f) + Object (rn pn).",
+            "noteAr": "فعل + لاحقة الماضي .n + فاعل =f + مفعول به"
+          },
+          {
+            "h": "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+            "trans": "h3b.n ṯ3ty b3k",
+            "meanEn": "The vizier sent (has sent) the servant.",
+            "meanAr": "أرسل الوزيرُ الخادمَ",
+            "noteEn": "Verb (h3b) + .n + Subject (ṯ3ty) + Object (b3k).",
+            "noteAr": "فعل + .n + فاعل اسم ظاهر + مفعول به"
+          },
+          {
+            "h": "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+            "trans": "wbn.n rʿ m pt",
+            "meanEn": "The sun has risen in the sky.",
+            "meanAr": "أشرقت الشمس في السماء",
+            "noteEn": "Intransitive verb (wbn) + .n + Subject (rʿ) + Prepositional phrase.",
+            "noteAr": "فعل لازم + .n + فاعل + جار ومجرور"
+          },
+          {
+            "h": "𓌳*𓄿:𓄿*𓈖:𓈖 𓅭:𓏏*𓁐",
+            "trans": "m33.n=n s3t",
+            "meanEn": "We saw (have seen) the daughter.",
+            "meanAr": "رأينا الابنة",
+            "noteEn": "Verb (m33) + .n + Suffix (=n 'we') + Object (s3t).",
+            "noteAr": "فعل + .n + ضمير =n + مفعول به"
+          },
+          {
+            "h": "𓍑*𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
+            "trans": "d3.n sš m dpt",
+            "meanEn": "The scribe crossed in a boat.",
+            "meanAr": "عَبَرَ الكاتب في قارب",
+            "noteEn": "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.",
+            "noteAr": "فعل لازم + .n + فاعل + جار ومجرور"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "lesson": "الدرس الثالث",
+    "lessonEn": "Lesson III",
+    "words": [
+      {
+        "h": "𓌳*𓄿:𓄿*𓁹",
+        "trans": "m33",
+        "meanEn": "see, look",
+        "meanAr": "يرى، ينظر"
+      },
+      {
+        "h": "𓍑*𓄿*𓊛",
+        "trans": "d3",
+        "meanEn": "cross, ferry across",
+        "meanAr": "يعبر النهر"
+      },
+      {
+        "h": "𓂋:𓈙*𓀠",
+        "trans": "rš",
+        "meanEn": "rejoice, be glad",
+        "meanAr": "يفرح، يُسر"
+      },
+      {
+        "h": "𓉔:𓄿*𓃀*𓂻",
+        "trans": "h3b",
+        "meanEn": "send",
+        "meanAr": "يرسل"
+      },
+      {
+        "h": "𓅭*𓀀",
+        "trans": "s3",
+        "meanEn": "son",
+        "meanAr": "ابن"
+      },
+      {
+        "h": "𓅭:𓏏*𓁐",
+        "trans": "s3t",
+        "meanEn": "daughter",
+        "meanAr": "ابنة"
+      },
+      {
+        "h": "𓇋:𓏏*𓀀",
+        "trans": "ỉt",
+        "meanEn": "father",
+        "meanAr": "أب"
+      },
+      {
+        "h": "𓃀*𓄿:𓎡*𓀀",
+        "trans": "b3k",
+        "meanEn": "man-servant",
+        "meanAr": "خادم"
+      },
+      {
+        "h": "𓃀*𓄿:𓎡*𓏏*𓁐",
+        "trans": "b3kt",
+        "meanEn": "maid-servant",
+        "meanAr": "خادمة"
+      },
+      {
+        "h": "𓍯:𓏏*𓈐",
+        "trans": "w3t",
+        "meanEn": "road, way, side",
+        "meanAr": "طريق، جانب"
+      },
+      {
+        "h": "𓈍:𓉐",
+        "trans": "ḫ3",
+        "meanEn": "office, hall, diwân",
+        "meanAr": "ديوان، قاعة مكتب"
+      },
+      {
+        "h": "𓂓:𓏏*𓀋",
+        "trans": "k3t",
+        "meanEn": "work, construction, device",
+        "meanAr": "عمل، بناء"
+      },
+      {
+        "h": "𓍿*𓄿*𓏏:𓇌*𓀀",
+        "trans": "ṯ3ty",
+        "meanEn": "vizier",
+        "meanAr": "وزير"
+      },
+      {
+        "h": "𓉻*𓃘",
+        "trans": "ꜥ3",
+        "meanEn": "donkey, ass",
+        "meanAr": "حمار"
+      },
+      {
+        "h": "𓋴*𓈙:𓏏*𓄿*𓏛",
+        "trans": "sšt3",
+        "meanEn": "secret",
+        "meanAr": "سر، أمر خفي"
+      },
+      {
+        "h": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+        "trans": "ỉtrw",
+        "meanEn": "river, the Nile",
+        "meanAr": "نهر، نهر النيل"
+      },
+      {
+        "h": "𓅓*𓋴*𓎛*𓆊",
+        "trans": "msḥ",
+        "meanEn": "crocodile",
+        "meanAr": "تمساح"
+      },
+      {
+        "h": "𓂋:𓏤",
+        "trans": "r",
+        "meanEn": "mouth, utterance, speech",
+        "meanAr": "فم، قول، كلام"
+      },
+      {
+        "h": "𓁷:𓏤",
+        "trans": "ḥr",
+        "meanEn": "face, sight",
+        "meanAr": "وجه، رؤية"
+      },
+      {
+        "h": "𓁷",
+        "trans": "ḥr",
+        "meanEn": "upon, on; concerning",
+        "meanAr": "على، بخصوص (حرف جر)"
+      },
+      {
+        "h": "𓅓",
+        "trans": "m",
+        "meanEn": "in; with; from",
+        "meanAr": "في، بـ، من (حرف جر)"
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "trans": "sḏm=f rn pn",
+      "meanEn": "He hears this name.",
+      "meanAr": "يسمع هذا الاسم (مبني للمعلوم Active Voice)"
+    },
+    {
+      "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "trans": "m33=k s3",
+      "meanEn": "You (m.) see the son.",
+      "meanAr": "ترى الابن (صيغة الفاعل المتصل sḏm=f)"
+    },
+    {
+      "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "trans": "sḏm.tw rn ỉn s",
+      "meanEn": "The name is heard by a man.",
+      "meanAr": "يُسمع الاسم بواسطة رجل (مبني للمجهول Passive مع أداة الفاعل ỉn)"
+    },
+    {
+      "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "trans": "h3b.tw b3k ỉn ṯ3ty",
+      "meanEn": "The servant is sent by the vizier.",
+      "meanAr": "أُرسل الخادم بواسطة الوزير (Passive with Agent ỉn)"
+    },
+    {
+      "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "trans": "sḏm.n=f rn pn",
+      "meanEn": "He heard (has heard) this name.",
+      "meanAr": "سَمِعَ هذا الاسم (صيغة الماضي التام sḏm.n=f)"
+    },
+    {
+      "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "trans": "d3 sš m ỉtrw",
+      "meanEn": "The scribe crosses in the river.",
+      "meanAr": "يعبر الكاتب في النهر (فعل لازم Intransitive)"
+    },
+    {
+      "h": "𓂋:𓐍*𓏛*𓈖 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "trans": "rḫ.n sš sḫr pn",
+      "meanEn": "The scribe has known this counsel.",
+      "meanAr": "عَلِمَ الكاتب هذه الخطة (ماضي تام sḏm.n=f)"
+    },
+    {
+      "h": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀",
+      "trans": "m33.tw pt ỉn s",
+      "meanEn": "The sky is seen by a man.",
+      "meanAr": "تُرى السماء بواسطة رجل (Passive with Agent ỉn)"
+    }
+  ],
+  "typingQuestions": [
+    {
+      "id": 19,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "trans": "sḏm=f rn pn",
+      "meanEn": "He hears this name.",
+      "meanAr": "يسمع هذا الاسم",
+      "hint": "Suffix conjugation: sḏm + suffix =f + object rn pn"
+    },
+    {
+      "id": 20,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "trans": "m33=k s3",
+      "meanEn": "You see the son.",
+      "meanAr": "ترى الابن",
+      "hint": "Verb m33 + suffix pronoun =k (you m.) + object s3"
+    },
+    {
+      "id": 21,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "trans": "sḏm.tw rn ỉn s",
+      "meanEn": "The name is heard by a man.",
+      "meanAr": "يُسمع الاسم بواسطة رجل",
+      "hint": "Passive .tw: sḏm.tw + subject rn + agent (ỉn s)"
+    },
+    {
+      "id": 22,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "trans": "h3b.tw b3k ỉn ṯ3ty",
+      "meanEn": "The servant is sent by the vizier.",
+      "meanAr": "أُرسل الخادم بواسطة الوزير",
+      "hint": "Passive form h3b.tw + subject b3k + agent ỉn ṯ3ty"
+    },
+    {
+      "id": 23,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "trans": "sḏm.n=f rn pn",
+      "meanEn": "He heard this name.",
+      "meanAr": "سَمِعَ هذا الاسم",
+      "hint": "Past / Perfective tense: sḏm.n=f + object rn pn"
+    },
+    {
+      "id": 24,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "trans": "d3 sš m ỉtrw",
+      "meanEn": "The scribe crosses in the river.",
+      "meanAr": "يعبر الكاتب في النهر",
+      "hint": "Intransitive verb d3 + subject sš + prep phrase m ỉtrw"
+    },
+    {
+      "id": 25,
+      "lesson": "الدرس الثالث",
+      "lessonEn": "Lesson III",
+      "h": "𓂋:𓐍*𓏛*𓈖 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "trans": "rḫ.n sš sḫr pn",
+      "meanEn": "The scribe has known this counsel.",
+      "meanAr": "عَلِمَ الكاتب هذه الخطة",
+      "hint": "Past / Perfect tense: rḫ.n + subject sš + object sḫr pn"
+    }
+  ],
+  "quizQuestions": []
+}

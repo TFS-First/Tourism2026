@@ -1,0 +1,1384 @@
+{
+  "id": "lesson2",
+  "number": 2,
+  "titleAr": "الدرس الثاني",
+  "titleEn": "Lesson II",
+  "grammar": {
+    "id": "lesson2",
+    "titleEn": "Lesson II: Nominal & Verbal Sentences, Ideograms & Determinatives",
+    "titleAr": "الدرس الثاني: الجملة الاسمية، الجملة الفعلية، والعلامات والمخصصات",
+    "badges": [
+      {
+        "id": "rule-2-1",
+        "label": "Nominal Sentences (الجملة الاسمية)"
+      },
+      {
+        "id": "rule-2-2",
+        "label": "Verbal Sentences (الجملة الفعلية)"
+      },
+      {
+        "id": "rule-2-3",
+        "label": "Ideograms & Stroke (العلامات والشرطة)"
+      },
+      {
+        "id": "rule-2-4",
+        "label": "Determinatives (المخصصات)"
+      },
+      {
+        "id": "rule-2-5",
+        "label": "Generic Determinatives (المخصصات العامة)"
+      },
+      {
+        "id": "rule-2-6",
+        "label": "Gender (التذكير والتأنيث)"
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-2-1",
+        "ruleNum": 1,
+        "type": "structured",
+        "badgeEn": "Nominal Sentences",
+        "badgeAr": "الجملة الاسمية",
+        "titleEn": "Rule 1: Sentences with Adverbial Predicate (With / Without 'ỉw')",
+        "titleAr": "الجملة الاسمية ذات الخبر شبه الجملة (مع ỉw وبدون ỉw)",
+        "formula": "[ Subject (المبتدأ) ] + [ Adverbial Predicate (خبر شبه جملة: جار ومجرور أو ظرف) ]",
+        "summaryEn": "Non-verbal sentences composed of a Subject and an Adverbial Predicate. Contextual translations without 'ỉw'; emphatic assertion with 'ỉw'.",
+        "summaryAr": "جملة خالية من الأفعال تتكون من مبتدأ وخبر شبه جملة (جار ومجرور أو ظرف).",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Basic Architecture (Subject + Adverbial Predicate)",
+            "descEn": "Consists of two elements without an overt copula verb 'to be':",
+            "indicatorAr": "التركيب: مبتدأ + خبر شبه جملة",
+            "subPoints": [
+              {
+                "label": "1. Subject (المبتدأ)",
+                "text": "Noun, proper name, or pronoun",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳",
+                    "trans": "rʿ",
+                    "mean": "Re"
+                  },
+                  {
+                    "h": "𓏞*𓀀",
+                    "trans": "sš",
+                    "mean": "the scribe"
+                  }
+                ]
+              },
+              {
+                "label": "2. Adverbial Predicate (خبر شبه جملة)",
+                "text": "Prepositional phrase or adverb",
+                "examples": [
+                  {
+                    "h": "𓅓 𓊪:𓏏*𓇯",
+                    "trans": "m pt",
+                    "mean": "in the sky"
+                  },
+                  {
+                    "h": "𓇋*𓅓",
+                    "trans": "ỉm",
+                    "mean": "there"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Without 'ỉw' - Diverse Contextual Meanings",
+            "descEn": "A bare sentence like 'rʿ m pt' expresses diverse contextual nuances:",
+            "indicatorAr": "بدون ỉw: تحتمل الحاضر والماضي والحالية والتمني",
+            "subPoints": [
+              {
+                "label": "1. Present Tense (الحاضر)",
+                "text": "The sun is in the sky",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "rʿ m pt",
+                    "mean": "The sun is in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "2. Past Tense (الماضي)",
+                "text": "The sun was in the sky",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "rʿ m pt",
+                    "mean": "The sun was in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "3. Circumstantial (الحالية)",
+                "text": "When the sun is/was in the sky",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "rʿ m pt",
+                    "mean": "When the sun is in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "4. Optative (التمني والرجاء)",
+                "text": "Let the sun be in the sky",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "rʿ m pt",
+                    "mean": "Let the sun be in the sky"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "titleEn": "With 'ỉw' - Narrowed Emphatic Assertion",
+            "descEn": "When introduced by auxiliary 'ỉw' (𓇋𓅱) as in 'ỉw rʿ m pt':",
+            "indicatorAr": "مع ỉw: جملة رئيسية مستقلة ومؤكدة بـ إنّ",
+            "subPoints": [
+              {
+                "label": "1. Emphatic Assertion",
+                "text": "The sun is in the sky / Indeed, the sun is in the sky",
+                "examples": [
+                  {
+                    "h": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "ỉw rʿ m pt",
+                    "mean": "Indeed, the sun is in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "2. Restriction",
+                "text": "Restricted strictly to independent main clauses",
+                "examples": [
+                  {
+                    "h": "𓇋*𓅱 𓏞*𓀀 𓅓 𓊖:(𓏏*𓏤)",
+                    "trans": "ỉw sš m nỉwt",
+                    "mean": "The scribe is in the city"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+            "trans": "rʿ m pt",
+            "meanEn": "The sun is (was, will be) in the sky / When the sun is in the sky",
+            "meanAr": "الشمس في السماء (أوجه متعددة)",
+            "noteEn": "Without ỉw: Present, Past, Circumstantial, or Optative.",
+            "noteAr": "بدون ỉw: أوجه متعددة حسب السياق"
+          },
+          {
+            "h": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+            "trans": "ỉw rʿ m pt",
+            "meanEn": "The sun is in the sky [Emphatic Statement]",
+            "meanAr": "إنّ الشمس في السماء (توكيدية)",
+            "noteEn": "With ỉw: Narrowed to an independent affirmative main clause.",
+            "noteAr": "مع ỉw: جملة مستقلة ومؤكدة"
+          },
+          {
+            "h": "𓇋*𓅱 𓏞*𓀀 𓅓 𓊖:(𓏏*𓏤)",
+            "trans": "ỉw sš m nỉwt",
+            "meanEn": "The scribe is in the city.",
+            "meanAr": "الكاتب في المدينة",
+            "noteEn": "Particle (ỉw) + Subject (sš) + Prepositional phrase (m nỉwt).",
+            "noteAr": "أداة توكيد + مبتدأ + خبر شبه جملة"
+          },
+          {
+            "h": "𓂋:𓂝*𓇳 𓇋*𓅓",
+            "trans": "rʿ ỉm",
+            "meanEn": "Re is there.",
+            "meanAr": "الإله رع هناك",
+            "noteEn": "Subject (rʿ) + Adverb of place predicate (ỉm).",
+            "noteAr": "مبتدأ + ظرف مكان خبر"
+          },
+          {
+            "h": "𓇋*𓅱 𓂧*𓊪:𓏏*𓊛 𓅓 𓈙:𓈘",
+            "trans": "ỉw dpt m š",
+            "meanEn": "The boat is in the lake.",
+            "meanAr": "المركب في البحيرة",
+            "noteEn": "ỉw + Subject (dpt) + Adverbial phrase (m š).",
+            "noteAr": "جملة اسمية مع ỉw"
+          },
+          {
+            "h": "𓇋*𓅱 𓊃*𓀀 𓅓 𓉐:𓏤",
+            "trans": "ỉw s m pr",
+            "meanEn": "The man is in the house.",
+            "meanAr": "الرجل في البيت",
+            "noteEn": "ỉw + Subject (s) + Adverbial phrase (m pr).",
+            "noteAr": "جملة اسمية مع ỉw"
+          }
+        ]
+      },
+      {
+        "id": "rule-2-2",
+        "ruleNum": 2,
+        "type": "structured",
+        "badgeEn": "Verbal Sentences",
+        "badgeAr": "الجملة الفعلية",
+        "titleEn": "Rule 2: Verbal Sentences (Transitive vs. Intransitive Verbs)",
+        "titleAr": "الجملة الفعلية: الأفعال المتعدية واللازمة وترتيب الكلمات",
+        "formula": "[ 1. Verb ] + [ 2. Subject ] + [ 3. Direct Object ] + [ 4. Adverbial Phrase ]",
+        "summaryEn": "Normal word order is V-S-O-Adv. Transitive verbs require a direct object; intransitive verbs take no object and are followed by prepositions.",
+        "summaryAr": "الترتيب القياسي: فعل + فاعل + مفعول به + شبه جملة. الفعل المتعدي ينصب مفعولاً، واللازم يكتفي بفاعله.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Standard Word Order: V + S + O + Adv",
+            "descEn": "Standard word order in Egyptian verbal sentences follows strict sequence:",
+            "indicatorAr": "الترتيب: فعل + فاعل + مفعول + جار ومجرور",
+            "subPoints": [
+              {
+                "label": "1. Verb (الفعل)",
+                "text": "Initial position in the sentence",
+                "examples": [
+                  {
+                    "h": "𓂋:𓐍*𓏛",
+                    "trans": "rḫ",
+                    "mean": "know"
+                  },
+                  {
+                    "h": "𓋴*𓄔*𓅓",
+                    "trans": "sḏm",
+                    "mean": "hear"
+                  },
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳",
+                    "trans": "wbn",
+                    "mean": "rise"
+                  }
+                ]
+              },
+              {
+                "label": "2. Subject (الفاعل)",
+                "text": "Directly follows the verb",
+                "examples": [
+                  {
+                    "h": "𓏞*𓀀",
+                    "trans": "sš",
+                    "mean": "the scribe"
+                  },
+                  {
+                    "h": "𓂋:𓂝*𓇳",
+                    "trans": "rʿ",
+                    "mean": "Re"
+                  }
+                ]
+              },
+              {
+                "label": "3. Direct Object (المفعول به)",
+                "text": "Follows subject (if transitive)",
+                "examples": [
+                  {
+                    "h": "𓋴*𓐍:𓂋*𓏛",
+                    "trans": "sḫr",
+                    "mean": "a plan"
+                  },
+                  {
+                    "h": "𓂋:𓈖",
+                    "trans": "rn",
+                    "mean": "the name"
+                  }
+                ]
+              },
+              {
+                "label": "4. Adverbial Phrase (شبه الجملة)",
+                "text": "Prepositional phrase or adverb at the end",
+                "examples": [
+                  {
+                    "h": "𓅓 𓉔:𓂋*𓅱:𓇳 𓊪:𓈖",
+                    "trans": "m hrw pn",
+                    "mean": "on this day"
+                  },
+                  {
+                    "h": "𓅓 𓊪:𓏏*𓇯",
+                    "trans": "m pt",
+                    "mean": "in the sky"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Transitive Verbs (Take a Direct Object)",
+            "descEn": "Verbs that require a DIRECT OBJECT (مفعول به مباشر) to complete their meaning:",
+            "indicatorAr": "أفعال متعدية: تنصب مفعولاً به مباشراً",
+            "subPoints": [
+              {
+                "label": "Definition",
+                "text": "Action passes from subject to a direct receiver",
+                "examples": [
+                  {
+                    "h": "𓂋:𓐍*𓏛",
+                    "trans": "rḫ",
+                    "mean": "know"
+                  },
+                  {
+                    "h": "𓋴*𓄔*𓅓",
+                    "trans": "sḏm",
+                    "mean": "hear"
+                  },
+                  {
+                    "h": "𓌳*𓄿:𓄿*𓁹",
+                    "trans": "m33",
+                    "mean": "see"
+                  },
+                  {
+                    "h": "𓉔:𓄿*𓃀*𓂻",
+                    "trans": "h3b",
+                    "mean": "send"
+                  }
+                ]
+              },
+              {
+                "label": "Sentence Example",
+                "text": "Verb + Subject + Direct Object",
+                "examples": [
+                  {
+                    "h": "𓂋:𓐍*𓏛 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛",
+                    "trans": "rḫ sš sḫr",
+                    "mean": "The scribe knows a counsel"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "titleEn": "Intransitive Verbs (Take No Direct Object)",
+            "descEn": "Verbs that do NOT take a direct object and are followed by prepositional phrases:",
+            "indicatorAr": "أفعال لازمة: تكتفي بفاعلها ولا تنصب مفعولاً",
+            "subPoints": [
+              {
+                "label": "Definition",
+                "text": "Verbs of motion, state, or change without direct object",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳",
+                    "trans": "wbn",
+                    "mean": "rise"
+                  },
+                  {
+                    "h": "𓉔*𓄿*𓂻",
+                    "trans": "h3",
+                    "mean": "descend"
+                  },
+                  {
+                    "h": "𓍑*𓄿*𓊛",
+                    "trans": "d3",
+                    "mean": "cross"
+                  },
+                  {
+                    "h": "𓂋:𓈙*𓀠",
+                    "trans": "rš",
+                    "mean": "rejoice"
+                  }
+                ]
+              },
+              {
+                "label": "Sentence Example",
+                "text": "Verb + Subject + Prepositional Phrase",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "The sun rises in the sky"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "4",
+            "titleEn": "Contextual Translations of Bare Verbal Sentences",
+            "descEn": "A bare verbal sentence like 'wbn rʿ m pt' can legitimately express six nuances:",
+            "indicatorAr": "أوجه الترجمة السياقية الستة لجملة wbn rʿ m pt",
+            "subPoints": [
+              {
+                "label": "1. Present (مضارع)",
+                "text": "The sun rises in the sky",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "The sun rises in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "2. Past (ماضٍ)",
+                "text": "The sun rose in the sky",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "The sun rose in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "3. Future (مستقبل)",
+                "text": "The sun will rise in the sky",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "The sun will rise in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "4. Circumstantial (حالية)",
+                "text": "When the sun rises in the sky",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "When the sun rises in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "5. Conditional (شرطية)",
+                "text": "If the sun rise in the sky",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "If the sun rise in the sky"
+                  }
+                ]
+              },
+              {
+                "label": "6. Optative (رجاء وتمنٍ)",
+                "text": "Let the sun rise in the sky",
+                "examples": [
+                  {
+                    "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+                    "trans": "wbn rʿ m pt",
+                    "mean": "Let the sun rise in the sky"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓂋:𓐍*𓏛 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓅓 𓉔:𓂋*𓅱:𓇳 𓊪:𓈖",
+            "trans": "rḫ sš sḫr m hrw pn",
+            "meanEn": "The scribe knows a counsel on this day (Transitive Verb).",
+            "meanAr": "يعرف الكاتب خطة في هذا اليوم",
+            "noteEn": "Transitive Verb (rḫ) + Subject (sš) + Direct Object (sḫr) + Adverbial.",
+            "noteAr": "فعل متعدٍ + فاعل + مفعول به + شبه جملة"
+          },
+          {
+            "h": "𓋴*𓄔*𓅓 𓊃*𓀀 𓊪:𓈖 𓂋:𓈖 𓊪:𓈖",
+            "trans": "sḏm s pn rn pn",
+            "meanEn": "This man hears this name (Transitive Verb).",
+            "meanAr": "يسمع هذا الرجل هذا الاسم",
+            "noteEn": "Transitive Verb (sḏm) + Subject (s pn) + Direct Object (rn pn).",
+            "noteAr": "فعل متعدٍ + فاعل + مفعول به"
+          },
+          {
+            "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+            "trans": "wbn rʿ m pt",
+            "meanEn": "The sun rises / rose / will rise in the sky (Intransitive Verb).",
+            "meanAr": "تشرق الشمس في السماء (أوجه متعددة)",
+            "noteEn": "Intransitive Verb (wbn) + Subject (rʿ) + Prepositional phrase (m pt).",
+            "noteAr": "فعل لازم + فاعل + جار ومجرور"
+          },
+          {
+            "h": "𓉔*𓄿*𓂻 𓏞*𓀀 𓅓 𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+            "trans": "h3 sš m kt dpt",
+            "meanEn": "The scribe goes down into another boat (Intransitive Verb).",
+            "meanAr": "يهبط الكاتب في قارب آخر",
+            "noteEn": "Intransitive Verb (h3) + Subject (sš) + Prepositional phrase.",
+            "noteAr": "فعل لازم + فاعل + جار ومجرور"
+          },
+          {
+            "h": "𓌳*𓄿:𓄿*𓁹 𓅭*𓀀 𓇋:𓏏*𓀀",
+            "trans": "m33 s3 ỉt",
+            "meanEn": "The son sees the father (Transitive Verb).",
+            "meanAr": "يرى الابنُ الأبَ",
+            "noteEn": "Transitive Verb (m33) + Subject (s3) + Direct Object (ỉt).",
+            "noteAr": "فعل متعدٍ + فاعل + مفعول به"
+          },
+          {
+            "h": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛:𓈖*𓂝 𓅭*𓀀:𓆑",
+            "trans": "rš ỉt ḥnʿ s3=f",
+            "meanEn": "The father rejoices with his son (Intransitive Verb).",
+            "meanAr": "يفرح الأب مع ابنه",
+            "noteEn": "Intransitive Verb (rš) + Subject (ỉt) + Prepositional phrase.",
+            "noteAr": "فعل لازم + فاعل + جار ومجرور"
+          }
+        ]
+      },
+      {
+        "id": "rule-2-3",
+        "ruleNum": 3,
+        "type": "structured",
+        "badgeEn": "Ideograms & Stroke",
+        "badgeAr": "العلامات والشرطة",
+        "titleEn": "Rule 3: Ideograms & The Vertical Stroke Determinative (𓏤)",
+        "titleAr": "العلامات التصويرية والشرطة الرأسية المصاحبة",
+        "formula": "[ Ideogram Sign ] + [ Stroke 𓏤 ]",
+        "summaryEn": "When an ideogram depicts the actual concrete object it represents, it is followed by the vertical stroke (𓏤).",
+        "summaryAr": "عندما تدل العلامة التصويرية على ذات الشيء المصور، تتبعها الشرطة الرأسية 𓏤 للتأكيد.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Pure Ideograms (Sense-Signs)",
+            "descEn": "Signs that represent the actual physical object depicted:",
+            "indicatorAr": "علامات تعبر عن الشيء المصور ذاته",
+            "subPoints": [
+              {
+                "label": "Concept",
+                "text": "The sign directly represents the object drawn",
+                "examples": [
+                  {
+                    "h": "𓇳:𓏤",
+                    "trans": "rʿ",
+                    "mean": "sun"
+                  },
+                  {
+                    "h": "𓉐:𓏤",
+                    "trans": "pr",
+                    "mean": "house"
+                  }
+                ]
+              },
+              {
+                "label": "Function",
+                "text": "Provides direct visual and conceptual meaning",
+                "examples": [
+                  {
+                    "h": "𓂋:𓏤",
+                    "trans": "r",
+                    "mean": "mouth"
+                  },
+                  {
+                    "h": "𓇿:𓏤",
+                    "trans": "t3",
+                    "mean": "land, earth"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "The Vertical Stroke (𓏤)",
+            "descEn": "Confirms that the sign stands for the physical object itself:",
+            "indicatorAr": "الشرطة الرأسية 𓏤 لتأكيد المعنى المادي الحقيقي",
+            "subPoints": [
+              {
+                "label": "Purpose",
+                "text": "Tells reader: 'take this sign for what it depicts, not just sound'",
+                "examples": [
+                  {
+                    "h": "𓂋:𓏤",
+                    "trans": "r",
+                    "mean": "mouth (the organ itself)"
+                  }
+                ]
+              },
+              {
+                "label": "Feminine Words",
+                "text": "Feminine nouns insert loaf 't' (𓏏) before the stroke",
+                "examples": [
+                  {
+                    "h": "𓊖:(𓏏*𓏤)",
+                    "trans": "nỉwt",
+                    "mean": "town"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓇳:𓏤",
+            "trans": "rʿ",
+            "meanEn": "Sun (the celestial body itself)",
+            "meanAr": "قرص الشمس نفسه",
+            "noteEn": "The stroke (𓏤) marks the actual sun disk.",
+            "noteAr": "الشرطة تؤكد أن المعنى هو قرص الشمس"
+          },
+          {
+            "h": "𓉐:𓏤",
+            "trans": "pr",
+            "meanEn": "House (the building itself)",
+            "meanAr": "البيت الحقيقي",
+            "noteEn": "The stroke marks the house as an actual building.",
+            "noteAr": "الشرطة تدل على المبنى نفسه"
+          },
+          {
+            "h": "𓊖:(𓏏*𓏤)",
+            "trans": "nỉwt",
+            "meanEn": "Town, city",
+            "meanAr": "المدينة",
+            "noteEn": "Feminine words take loaf 't' before the stroke.",
+            "noteAr": "التاء قبل الشرطة للكلمات المؤنثة"
+          },
+          {
+            "h": "𓂋:𓏤",
+            "trans": "r",
+            "meanEn": "Mouth (the physical organ)",
+            "meanAr": "عضو الفم نفسه",
+            "noteEn": "Stroke confirms the actual mouth.",
+            "noteAr": "الشرطة تؤكد معنى الفم المادي"
+          }
+        ]
+      },
+      {
+        "id": "rule-2-4",
+        "ruleNum": 4,
+        "type": "structured",
+        "badgeEn": "Determinatives",
+        "badgeAr": "المخصصات",
+        "titleEn": "Rule 4: Determinatives (Sense-Signs at Word End)",
+        "titleAr": "المخصصات الدلالية في نهاية الكلمة",
+        "formula": "[ Phonetic Signs ] + [ Determinative (Unpronounced) ]",
+        "summaryEn": "Ideograms placed at the end of words to indicate their general semantic class and mark word boundaries. Determinatives are NOT pronounced.",
+        "summaryAr": "علامات تصويرية توضع في نهاية الكلمة لتحديد المعنى العام ومنع اللبس، ولا تنطق إطلاقاً.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Semantic Classification & Word Boundaries",
+            "descEn": "Placed after phonetic signs to determine the semantic field and mark word endings:",
+            "indicatorAr": "تحديد مجال المعنى وبيان نهاية الكلمة",
+            "subPoints": [
+              {
+                "label": "Function",
+                "text": "Distinguishes homophones (words with same sounds but different meanings)",
+                "examples": [
+                  {
+                    "h": "𓏞*𓀀",
+                    "trans": "sš",
+                    "mean": "scribe (man 𓀀)"
+                  },
+                  {
+                    "h": "𓂧*𓊪:𓏏*𓊛",
+                    "trans": "dpt",
+                    "mean": "boat (boat 𓊛)"
+                  }
+                ]
+              },
+              {
+                "label": "Word Boundary",
+                "text": "Signals where one word ends and the next begins",
+                "example": "essential in script with no spaces"
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Determinatives are NEVER Pronounced",
+            "descEn": "They are strictly visual reading aids and do not contribute sound:",
+            "indicatorAr": "المخصص لا ينطق أبداً ولا يظهر في الترانسليتريشن",
+            "subPoints": [
+              {
+                "label": "Silent Signs",
+                "text": "Omitted entirely in transliteration",
+                "examples": [
+                  {
+                    "h": "𓅱*𓇋*𓄿*𓊛",
+                    "trans": "wỉ3",
+                    "mean": "sacred bark (𓊛 is silent)"
+                  }
+                ]
+              },
+              {
+                "label": "Visual Role",
+                "text": "Aids silent reading and rapid comprehension",
+                "example": "identifies whether word is action, person, or object"
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓅱*𓇋*𓄿*𓊛",
+            "trans": "wỉ3",
+            "meanEn": "Sacred bark (divine boat)",
+            "meanAr": "سفينة مقدسة",
+            "noteEn": "Boat determinative (𓊛) specifies vessel.",
+            "noteAr": "مخصص المركب 𓊛 يحدد نوع السفينة"
+          },
+          {
+            "h": "𓂧*𓊪:𓏏*𓊛",
+            "trans": "dpt",
+            "meanEn": "Boat",
+            "meanAr": "قارب",
+            "noteEn": "Boat determinative confirms boat.",
+            "noteAr": "مخصص المركب 𓊛 يؤكد معنى القارب"
+          },
+          {
+            "h": "𓏞*𓀀",
+            "trans": "sš",
+            "meanEn": "Scribe",
+            "meanAr": "كاتب",
+            "noteEn": "Man determinative (𓀀) indicates profession.",
+            "noteAr": "مخصص الرجل 𓀀 يحدد مهنة الكاتب"
+          },
+          {
+            "h": "𓎼:𓂋*𓎛*𓄛",
+            "trans": "grḥ",
+            "meanEn": "Night",
+            "meanAr": "ليل",
+            "noteEn": "Sky/star determinative indicates night-time.",
+            "noteAr": "مخصص السماء والنجوم يدل على الليل"
+          }
+        ]
+      },
+      {
+        "id": "rule-2-5",
+        "ruleNum": 5,
+        "type": "grid",
+        "badgeEn": "Generic Determinatives",
+        "badgeAr": "المخصصات العامة",
+        "titleEn": "Rule 5: Generic Determinatives Table",
+        "titleAr": "جدول المخصصات العامة الشائعة (34 مخصصاً)",
+        "summaryEn": "List of the 34 most important generic determinatives in Middle Egyptian to learn gradually.",
+        "summaryAr": "قائمة بأهم 34 مخصصاً عاماً في اللغة المصرية لتسهيل القراءة وتحديد المعاني.",
+        "items": [
+          {
+            "h": "𓀀",
+            "meanEn": "man, person",
+            "meanAr": "رجل، شخص"
+          },
+          {
+            "h": "𓁐",
+            "meanEn": "woman",
+            "meanAr": "امرأة"
+          },
+          {
+            "h": "𓀀𓁐𓏥",
+            "meanEn": "people",
+            "meanAr": "الناس"
+          },
+          {
+            "h": "𓀔",
+            "meanEn": "child, young",
+            "meanAr": "طفل، شاب"
+          },
+          {
+            "h": "𓀗",
+            "meanEn": "old man",
+            "meanAr": "رجل عجوز"
+          },
+          {
+            "h": "𓀙",
+            "meanEn": "official, noble",
+            "meanAr": "مسؤول، نبيل"
+          },
+          {
+            "h": "𓀭",
+            "meanEn": "god, king",
+            "meanAr": "إله، ملك"
+          },
+          {
+            "h": "𓀢",
+            "meanEn": "praise, supplicate",
+            "meanAr": "يتعبد، يدعو"
+          },
+          {
+            "h": "𓀁",
+            "meanEn": "eat, drink, speak",
+            "meanAr": "يأكل، يتحدث"
+          },
+          {
+            "h": "𓀐",
+            "meanEn": "weary, weak",
+            "meanAr": "متعب، ضعيف"
+          },
+          {
+            "h": "𓁀",
+            "meanEn": "lie down, death",
+            "meanAr": "يستلقي، الموت"
+          },
+          {
+            "h": "𓁶",
+            "meanEn": "head, nod",
+            "meanAr": "رأس"
+          },
+          {
+            "h": "𓁹",
+            "meanEn": "eye, see",
+            "meanAr": "عين، يرى"
+          },
+          {
+            "h": "𓄔",
+            "meanEn": "ear, hear",
+            "meanAr": "أذن، يسمع"
+          },
+          {
+            "h": "𓂡",
+            "meanEn": "force, effort",
+            "meanAr": "قوة، مجهود"
+          },
+          {
+            "h": "𓂾",
+            "meanEn": "leg, foot",
+            "meanAr": "ساق، قدم"
+          },
+          {
+            "h": "𓂻",
+            "meanEn": "walk, run",
+            "meanAr": "يمشي، يجري"
+          },
+          {
+            "h": "𓅆",
+            "meanEn": "bird, insect",
+            "meanAr": "طائر، حشرة"
+          },
+          {
+            "h": "𓅪",
+            "meanEn": "small, bad, poor",
+            "meanAr": "صغير، رديء، فقير"
+          },
+          {
+            "h": "𓆝",
+            "meanEn": "fish",
+            "meanAr": "سمكة"
+          },
+          {
+            "h": "𓆙",
+            "meanEn": "snake, worm",
+            "meanAr": "ثعبان، دودة"
+          },
+          {
+            "h": "𓆭",
+            "meanEn": "tree",
+            "meanAr": "شجرة"
+          },
+          {
+            "h": "𓈇",
+            "meanEn": "earth, land",
+            "meanAr": "أرض، يابسة"
+          },
+          {
+            "h": "𓈘",
+            "meanEn": "canal, river",
+            "meanAr": "قناة، بحيرة"
+          },
+          {
+            "h": "𓈗",
+            "meanEn": "water, liquid",
+            "meanAr": "ماء، سوائل"
+          },
+          {
+            "h": "𓉐",
+            "meanEn": "house, building",
+            "meanAr": "بيت، مبنى"
+          },
+          {
+            "h": "𓊖",
+            "meanEn": "town, village",
+            "meanAr": "مدينة، قرية"
+          },
+          {
+            "h": "𓊛",
+            "meanEn": "boat, sail",
+            "meanAr": "سفينة، يبحر"
+          },
+          {
+            "h": "𓊮",
+            "meanEn": "fire, cook",
+            "meanAr": "نار، يطبخ"
+          },
+          {
+            "h": "𓏛",
+            "meanEn": "write, abstract idea",
+            "meanAr": "كتابة، تجريد"
+          },
+          {
+            "h": "𓏲",
+            "meanEn": "rope, tie",
+            "meanAr": "حبل، يربط"
+          },
+          {
+            "h": "𓋳",
+            "meanEn": "cloth, garment",
+            "meanAr": "قماش، رداء"
+          },
+          {
+            "h": "𓌙",
+            "meanEn": "foreign land",
+            "meanAr": "بلاد أجنبية"
+          },
+          {
+            "h": "𓊡",
+            "meanEn": "wind, breathe",
+            "meanAr": "ريح، يتنفس"
+          }
+        ]
+      },
+      {
+        "id": "rule-2-6",
+        "ruleNum": 6,
+        "type": "structured",
+        "badgeEn": "Gender",
+        "badgeAr": "التذكير والتأنيث",
+        "titleEn": "Rule 6: Gender: Masculine & Feminine Ending '.t' (𓏏)",
+        "titleAr": "التذكير والتأنيث وتاء التأنيث .t",
+        "formulas": [
+          {
+            "labelEn": "Masculine Noun (المذكر)",
+            "labelAr": "الصيغة الأصلية بدون تاء",
+            "code": "[ Masculine Noun (Unmarked) ] (e.g. s, s3)"
+          },
+          {
+            "labelEn": "Feminine Noun (المؤنث)",
+            "labelAr": "مختوم بتاء التأنيث",
+            "code": "[ Feminine Noun ] + [ Ending .t 𓏏 ] (e.g. st, s3t)"
+          }
+        ],
+        "summaryEn": "Egyptian distinguishes two genders: Masculine (unmarked base form) and Feminine (ending with suffix '.t' 𓏏).",
+        "summaryAr": "تميز اللغة المصرية بين جنسين: المذكر (الأصل بدون علامة)، والمؤنث (ينتهي بتاء التأنيث .t).",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Masculine Nouns (Unmarked)",
+            "descEn": "Standard base form without any special ending:",
+            "indicatorAr": "المذكر: الصيغة الأصلية بدون علامة خاصة",
+            "subPoints": [
+              {
+                "label": "Base Form",
+                "text": "Has no feminine suffix 't'",
+                "examples": [
+                  {
+                    "h": "𓊃*𓀀",
+                    "trans": "s",
+                    "mean": "man"
+                  },
+                  {
+                    "h": "𓅭*𓀀",
+                    "trans": "s3",
+                    "mean": "son"
+                  },
+                  {
+                    "h": "𓂋:𓈖",
+                    "trans": "rn",
+                    "mean": "name"
+                  }
+                ]
+              },
+              {
+                "label": "Syntax",
+                "text": "Takes masculine demonstratives (pn, ky)",
+                "examples": [
+                  {
+                    "h": "𓊃*𓀀 𓊪:𓈖",
+                    "trans": "s pn",
+                    "mean": "this man"
+                  },
+                  {
+                    "h": "𓎡*𓇌 𓊃*𓀀",
+                    "trans": "ky s",
+                    "mean": "another man"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Feminine Nouns with Suffix '.t' (𓏏)",
+            "descEn": "Feminine nouns end with the morpheme '.t' (𓏏) directly before the determinative:",
+            "indicatorAr": "المؤنث: ينتهي بحرف التاء .t قبل المخصص",
+            "subPoints": [
+              {
+                "label": "Suffix '.t'",
+                "text": "Corresponds to Arabic Taa Marbuta",
+                "examples": [
+                  {
+                    "h": "𓊃:𓏏*𓁐",
+                    "trans": "st",
+                    "mean": "woman"
+                  },
+                  {
+                    "h": "𓅭:𓏏*𓁐",
+                    "trans": "s3t",
+                    "mean": "daughter"
+                  },
+                  {
+                    "h": "𓊖:(𓏏*𓏤)",
+                    "trans": "nỉwt",
+                    "mean": "town"
+                  }
+                ]
+              },
+              {
+                "label": "Syntax",
+                "text": "Takes feminine demonstratives (tn, kt)",
+                "examples": [
+                  {
+                    "h": "𓊪:𓏏*𓇯 𓏏:𓈖",
+                    "trans": "pt tn",
+                    "mean": "this sky"
+                  },
+                  {
+                    "h": "𓎡:𓏏 𓐍:𓏏",
+                    "trans": "kt ḫt",
+                    "mean": "another thing"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓊃*𓀀",
+            "trans": "s",
+            "meanEn": "Man (Masculine)",
+            "meanAr": "رجل (مذكر)",
+            "noteEn": "Masculine noun, no 't'.",
+            "noteAr": "اسم مذكر بدون تاء"
+          },
+          {
+            "h": "𓊃:𓏏*𓁐",
+            "trans": "st",
+            "meanEn": "Woman (Feminine)",
+            "meanAr": "امرأة (مؤنث)",
+            "noteEn": "Feminine noun ending in 't'.",
+            "noteAr": "اسم مؤنث ينتهي بالتاء"
+          },
+          {
+            "h": "𓅭*𓀀",
+            "trans": "s3",
+            "meanEn": "Son (Masculine)",
+            "meanAr": "ابن (مذكر)",
+            "noteEn": "Masculine noun (son).",
+            "noteAr": "اسم مذكر"
+          },
+          {
+            "h": "𓅭:𓏏*𓁐",
+            "trans": "s3t",
+            "meanEn": "Daughter (Feminine)",
+            "meanAr": "ابنة (مؤنث)",
+            "noteEn": "Feminine noun ending in 't'.",
+            "noteAr": "اسم مؤنث بزيادة التاء"
+          },
+          {
+            "h": "𓃀*𓄿:𓎡*𓀀",
+            "trans": "b3k",
+            "meanEn": "Man-servant (Masculine)",
+            "meanAr": "خادم (مذكر)",
+            "noteEn": "Masculine noun, no 't'.",
+            "noteAr": "اسم مذكر"
+          },
+          {
+            "h": "𓃀*𓄿:𓎡*𓏏*𓁐",
+            "trans": "b3kt",
+            "meanEn": "Maid-servant (Feminine)",
+            "meanAr": "خادمة (مؤنث)",
+            "noteEn": "Feminine noun ending in 't'.",
+            "noteAr": "اسم مؤنث بزيادة التاء"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "lesson": "الدرس الثاني",
+    "lessonEn": "Lesson II",
+    "words": [
+      {
+        "h": "𓂋:𓐍*𓏛",
+        "trans": "rḫ",
+        "meanEn": "know, learn",
+        "meanAr": "يعرف، يعلم"
+      },
+      {
+        "h": "𓐍*𓅓*𓂜",
+        "trans": "ḫm",
+        "meanEn": "not know, ignore",
+        "meanAr": "يجهل"
+      },
+      {
+        "h": "𓎼:𓂋*𓀁",
+        "trans": "gr",
+        "meanEn": "be silent",
+        "meanAr": "يصمت"
+      },
+      {
+        "h": "𓐍:𓂧*𓊛",
+        "trans": "ḫd",
+        "meanEn": "fare downstream (north)",
+        "meanAr": "يبحر شمالاً"
+      },
+      {
+        "h": "𓉔*𓄿*𓂻",
+        "trans": "h3",
+        "meanEn": "go down, descend",
+        "meanAr": "يهبط، ينزل"
+      },
+      {
+        "h": "𓋴*𓄔*𓅓",
+        "trans": "sḏm",
+        "meanEn": "hear, obey",
+        "meanAr": "يسمع، يطيع"
+      },
+      {
+        "h": "𓅱*𓃀*𓈖:𓇳",
+        "trans": "wbn",
+        "meanEn": "rise, shine forth",
+        "meanAr": "يشرق، يسطع"
+      },
+      {
+        "h": "𓂋:𓂝*𓇳",
+        "trans": "rʿ",
+        "meanEn": "sun, day; Re",
+        "meanAr": "شمس، الإله رع"
+      },
+      {
+        "h": "𓇋:𓂝*𓎛:𓇹",
+        "trans": "ỉʿḥ",
+        "meanEn": "moon",
+        "meanAr": "قمر"
+      },
+      {
+        "h": "𓇿:𓏤",
+        "trans": "t3",
+        "meanEn": "earth, land",
+        "meanAr": "أرض"
+      },
+      {
+        "h": "𓊪:𓏏*𓇯",
+        "trans": "pt",
+        "meanEn": "sky, heaven",
+        "meanAr": "سماء"
+      },
+      {
+        "h": "𓋴*𓐍:𓂋*𓏛",
+        "trans": "sḫr",
+        "meanEn": "plan, counsel",
+        "meanAr": "خطة، نصيحة"
+      },
+      {
+        "h": "𓉔:𓂋*𓅱:𓇳",
+        "trans": "hrw",
+        "meanEn": "day, day-time",
+        "meanAr": "يوم، نهار"
+      },
+      {
+        "h": "𓎼:𓂋*𓎛*𓄛",
+        "trans": "grḥ",
+        "meanEn": "night",
+        "meanAr": "ليل"
+      },
+      {
+        "h": "𓂋:𓈙*𓅱:𓏏*𓏛",
+        "trans": "ršwt",
+        "meanEn": "joy, gladness",
+        "meanAr": "فرح، بهجة"
+      },
+      {
+        "h": "𓂧*𓊪:𓏏*𓊛",
+        "trans": "dpt",
+        "meanEn": "boat",
+        "meanAr": "قارب"
+      },
+      {
+        "h": "𓅱*𓇋*𓄿*𓊛",
+        "trans": "wỉ3",
+        "meanEn": "ship, sacred bark",
+        "meanAr": "سفينة مقدسة"
+      },
+      {
+        "h": "𓈖:𓆓*𓋴*𓅪*𓀀",
+        "trans": "nḏs",
+        "meanEn": "poor man, commoner",
+        "meanAr": "رجل فقير، مواطن"
+      },
+      {
+        "h": "𓊃*𓀀",
+        "trans": "s",
+        "meanEn": "a man",
+        "meanAr": "رجل"
+      },
+      {
+        "h": "𓊃:𓏏*𓁐",
+        "trans": "st",
+        "meanEn": "woman",
+        "meanAr": "امرأة"
+      },
+      {
+        "h": "𓏞*𓀀",
+        "trans": "sš",
+        "meanEn": "scribe",
+        "meanAr": "كاتب"
+      },
+      {
+        "h": "𓈌:𓏏",
+        "trans": "3ḫt",
+        "meanEn": "horizon",
+        "meanAr": "أفق"
+      },
+      {
+        "h": "𓉐:𓏤",
+        "trans": "pr",
+        "meanEn": "house",
+        "meanAr": "بيت"
+      },
+      {
+        "h": "𓊖:(𓏏*𓏤)",
+        "trans": "nỉwt",
+        "meanEn": "town, city",
+        "meanAr": "مدينة"
+      },
+      {
+        "h": "𓈙:𓈘",
+        "trans": "š",
+        "meanEn": "lake, pool",
+        "meanAr": "بحيرة"
+      },
+      {
+        "h": "𓈗",
+        "trans": "mw",
+        "meanEn": "water",
+        "meanAr": "ماء"
+      },
+      {
+        "h": "𓎛:𓏏*𓁐",
+        "trans": "ḥmt",
+        "meanEn": "wife, woman",
+        "meanAr": "زوجة، امرأة"
+      },
+      {
+        "h": "𓊵:𓏏*𓊪",
+        "trans": "ḥtp",
+        "meanEn": "peace, offering, rest",
+        "meanAr": "سلام، قربان"
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "trans": "wbn rʿ m pt",
+      "meanEn": "The sun rises in the sky.",
+      "meanAr": "تشرق الشمس في السماء (فعل لازم Intransitive)"
+    },
+    {
+      "h": "𓋴*𓄔*𓅓 𓊃*𓀀 𓊪:𓈖 𓂋:𓈖 𓊪:𓈖",
+      "trans": "sḏm s pn rn pn",
+      "meanEn": "This man hears this name.",
+      "meanAr": "يسمع هذا الرجل هذا الاسم (فعل متعدٍ Transitive)"
+    },
+    {
+      "h": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "trans": "ỉw rʿ m pt",
+      "meanEn": "The sun is in the sky.",
+      "meanAr": "إنّ الشمس في السماء (جملة اسمية مؤكدة Nominal)"
+    },
+    {
+      "h": "𓉔*𓄿*𓂻 𓏞*𓀀 𓅓 𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "trans": "h3 sš m kt dpt",
+      "meanEn": "The scribe goes down into another boat.",
+      "meanAr": "يهبط الكاتب في قارب آخر (فعل لازم Intransitive)"
+    },
+    {
+      "h": "𓂋:𓐍*𓏛 𓊪:𓏏*𓎛 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "trans": "rḫ Ptḥ sḫr pn",
+      "meanEn": "Ptah knows this counsel.",
+      "meanAr": "يعرف الإله بتاح هذه الخطة (فعل متعدٍ Transitive)"
+    },
+    {
+      "h": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
+      "trans": "sḏm sš r bw pn",
+      "meanEn": "The scribe listens to this place.",
+      "meanAr": "يستمع الكاتب لهذا المكان (فعل لازم + r للأماكن)"
+    },
+    {
+      "h": "𓇋*𓅱 𓊃*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
+      "trans": "ỉw s m dpt",
+      "meanEn": "The man is in a boat.",
+      "meanAr": "الرجل في قارب (جملة اسمية بظرف مكان)"
+    },
+    {
+      "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤",
+      "trans": "s ḥnʿ st m pr",
+      "meanEn": "A man and a woman are in the house.",
+      "meanAr": "رجل مع امرأة في البيت (جملة اسمية)"
+    }
+  ],
+  "typingQuestions": [
+    {
+      "id": 13,
+      "lesson": "الدرس الثاني",
+      "lessonEn": "Lesson II",
+      "h": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "trans": "wbn rʿ m pt",
+      "meanEn": "The sun rises in the sky.",
+      "meanAr": "تشرق الشمس في السماء",
+      "hint": "Intransitive verb wbn + subject rʿ + adv phrase m pt"
+    },
+    {
+      "id": 14,
+      "lesson": "الدرس الثاني",
+      "lessonEn": "Lesson II",
+      "h": "𓋴*𓄔*𓅓 𓊃*𓀀 𓊪:𓈖 𓂋:𓈖 𓊪:𓈖",
+      "trans": "sḏm s pn rn pn",
+      "meanEn": "This man hears this name.",
+      "meanAr": "يسمع هذا الرجل هذا الاسم",
+      "hint": "Transitive verb sḏm + subject (s pn) + object (rn pn)"
+    },
+    {
+      "id": 15,
+      "lesson": "الدرس الثاني",
+      "lessonEn": "Lesson II",
+      "h": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "trans": "ỉw rʿ m pt",
+      "meanEn": "The sun is in the sky.",
+      "meanAr": "إنّ الشمس في السماء",
+      "hint": "Nominal sentence: ỉw + subject rʿ + adverbial predicate"
+    },
+    {
+      "id": 16,
+      "lesson": "الدرس الثاني",
+      "lessonEn": "Lesson II",
+      "h": "𓉔*𓄿*𓂻 𓏞*𓀀 𓅓 𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "trans": "h3 sš m kt dpt",
+      "meanEn": "The scribe goes down into another boat.",
+      "meanAr": "يهبط الكاتب في قارب آخر",
+      "hint": "Intransitive verb h3 + subject sš + adv phrase m kt dpt"
+    },
+    {
+      "id": 17,
+      "lesson": "الدرس الثاني",
+      "lessonEn": "Lesson II",
+      "h": "𓂋:𓐍*𓏛 𓊪:𓏏*𓎛 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "trans": "rḫ Ptḥ sḫr pn",
+      "meanEn": "Ptah knows this counsel.",
+      "meanAr": "يعرف الإله بتاح هذه الخطة",
+      "hint": "Transitive verb rḫ + subject Ptḥ + object sḫr pn"
+    },
+    {
+      "id": 18,
+      "lesson": "الدرس الثاني",
+      "lessonEn": "Lesson II",
+      "h": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
+      "trans": "sḏm sš r bw pn",
+      "meanEn": "The scribe listens to this place.",
+      "meanAr": "يستمع الكاتب لهذا المكان",
+      "hint": "Verb sḏm + subject sš + preposition r + bw pn"
+    }
+  ],
+  "quizQuestions": []
+}

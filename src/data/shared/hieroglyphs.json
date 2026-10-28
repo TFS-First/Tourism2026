@@ -1,0 +1,647 @@
+[
+  {
+    "h": "𓄿",
+    "gardiner": "G1",
+    "trans": "3",
+    "soundAr": "أ",
+    "descAr": "عقاب (نسر)",
+    "descEn": "Egyptian vulture",
+    "step": 17,
+    "examples": [
+      {
+        "word": "𓄿*𓊪*𓂧*𓅭",
+        "trans": "3pd",
+        "mean": "bird, fowl"
+      },
+      {
+        "word": "𓅱*𓇋*𓄿*𓊛",
+        "trans": "wỉ3",
+        "mean": "divine bark"
+      },
+      {
+        "word": "𓇋:𓂝*𓎛:𓇹",
+        "trans": "ỉʿḥ",
+        "mean": "moon"
+      }
+    ]
+  },
+  {
+    "h": "𓇋",
+    "gardiner": "M17",
+    "trans": "ỉ",
+    "soundAr": "ي / إ",
+    "descAr": "نبات البردي",
+    "descEn": "Flowering reed",
+    "step": 12,
+    "examples": [
+      {
+        "word": "𓇋*𓅱",
+        "trans": "ỉw",
+        "mean": "is, are"
+      },
+      {
+        "word": "𓇋*𓅓",
+        "trans": "ỉm",
+        "mean": "there"
+      },
+      {
+        "word": "𓇋:𓂝*𓎛:𓇹",
+        "trans": "ỉʿḥ",
+        "mean": "moon"
+      }
+    ]
+  },
+  {
+    "h": "𓇌",
+    "gardiner": "M17A",
+    "forms": [
+      {
+        "sign": "𓇌",
+        "num": 1,
+        "name": "ورقتان بردي",
+        "descEn": "Two reed-flowers"
+      },
+      {
+        "sign": "𓏭",
+        "num": 2,
+        "name": "شرطتان مائلتان (\\\\)",
+        "descEn": "Two oblique strokes"
+      }
+    ],
+    "trans": "y",
+    "soundAr": "ي (مشددة)",
+    "descAr": "ورقتان بردي / شرطتان مائلتان",
+    "descEn": "Two reed-flowers / Two oblique strokes",
+    "step": 18,
+    "examples": [
+      {
+        "word": "𓎡*𓇌",
+        "trans": "ky",
+        "mean": "other (m)"
+      },
+      {
+        "word": "𓎡:𓏭",
+        "trans": "ky",
+        "mean": "other (m) [بالشكل 2]"
+      },
+      {
+        "word": "𓇋:𓏠*𓈖:𓇌",
+        "trans": "ỉmny",
+        "mean": "Ameny (name)"
+      },
+      {
+        "word": "𓇋:𓏠*𓈖:𓏭",
+        "trans": "ỉmny",
+        "mean": "Ameny (name) [بالشكل 2]"
+      }
+    ]
+  },
+  {
+    "h": "𓂝",
+    "gardiner": "D36",
+    "trans": "ʿ",
+    "soundAr": "ع",
+    "descAr": "ذراع",
+    "descEn": "Forearm",
+    "step": 8,
+    "examples": [
+      {
+        "word": "𓂋:𓂝*𓇳",
+        "trans": "rʿ",
+        "mean": "sun, Re"
+      },
+      {
+        "word": "𓎛:𓈖*𓂝",
+        "trans": "ḥnʿ",
+        "mean": "together with"
+      },
+      {
+        "word": "𓇋:𓂝*𓎛:𓇹",
+        "trans": "ỉʿḥ",
+        "mean": "moon"
+      }
+    ]
+  },
+  {
+    "h": "𓅱",
+    "gardiner": "G43",
+    "forms": [
+      {
+        "sign": "𓅱",
+        "num": 1,
+        "name": "فرخ السمان",
+        "descEn": "Quail chick"
+      },
+      {
+        "sign": "𓏲",
+        "num": 2,
+        "name": "حبل ملفوف (مختصر)",
+        "descEn": "Coil of rope"
+      }
+    ],
+    "trans": "w",
+    "soundAr": "و",
+    "descAr": "فرخ السمان / حبل ملفوف",
+    "descEn": "Quail chick / Coil of rope",
+    "step": 4,
+    "examples": [
+      {
+        "word": "𓃀*𓅱",
+        "trans": "bw",
+        "mean": "place"
+      },
+      {
+        "word": "𓃀*𓏲",
+        "trans": "bw",
+        "mean": "place [بالشكل 2]"
+      },
+      {
+        "word": "𓇋*𓅱",
+        "trans": "ỉw",
+        "mean": "is, are"
+      },
+      {
+        "word": "𓅱*𓃀*𓈖:𓇳",
+        "trans": "wbn",
+        "mean": "rise, shine"
+      }
+    ]
+  },
+  {
+    "h": "𓃀",
+    "gardiner": "D58",
+    "trans": "b",
+    "soundAr": "ب",
+    "descAr": "قدم",
+    "descEn": "Foot",
+    "step": 5,
+    "examples": [
+      {
+        "word": "𓃀*𓅱",
+        "trans": "bw",
+        "mean": "place"
+      },
+      {
+        "word": "𓅱*𓃀*𓈖:𓇳",
+        "trans": "wbn",
+        "mean": "rise, shine"
+      },
+      {
+        "word": "𓋴*𓈖:𓃀",
+        "trans": "snb",
+        "mean": "health"
+      }
+    ]
+  },
+  {
+    "h": "𓊪",
+    "gardiner": "Q3",
+    "trans": "p",
+    "soundAr": "پ",
+    "descAr": "كرسي",
+    "descEn": "Stool",
+    "step": 6,
+    "examples": [
+      {
+        "word": "𓊪:𓈖",
+        "trans": "pn",
+        "mean": "this (m)"
+      },
+      {
+        "word": "𓊪:𓏏*𓇯",
+        "trans": "pt",
+        "mean": "sky"
+      },
+      {
+        "word": "𓊪:𓏏*𓎛",
+        "trans": "Ptḥ",
+        "mean": "Ptah"
+      }
+    ]
+  },
+  {
+    "h": "𓆑",
+    "gardiner": "I9",
+    "trans": "f",
+    "soundAr": "ف",
+    "descAr": "أفعى",
+    "descEn": "Horned viper",
+    "step": 13,
+    "examples": [
+      {
+        "word": "𓆑",
+        "trans": "f",
+        "mean": "he, his"
+      },
+      {
+        "word": "𓋴*𓆑:𓏏",
+        "trans": "sft",
+        "mean": "slaughter"
+      }
+    ]
+  },
+  {
+    "h": "𓅓",
+    "gardiner": "G17",
+    "forms": [
+      {
+        "sign": "𓅓",
+        "num": 1,
+        "name": "بومة",
+        "descEn": "Owl"
+      },
+      {
+        "sign": "𓐝",
+        "num": 2,
+        "name": "قطعة ضلع",
+        "descEn": "Rib / piece of meat"
+      }
+    ],
+    "trans": "m",
+    "soundAr": "م",
+    "descAr": "بومة / قطعة ضلع",
+    "descEn": "Owl / Rib",
+    "step": 3,
+    "examples": [
+      {
+        "word": "𓅓",
+        "trans": "m",
+        "mean": "in, with"
+      },
+      {
+        "word": "𓐝",
+        "trans": "m",
+        "mean": "in, with [بالشكل 2]"
+      },
+      {
+        "word": "𓐍*𓅓*𓂜",
+        "trans": "ḫm",
+        "mean": "not know"
+      },
+      {
+        "word": "𓋴*𓄔*𓅓",
+        "trans": "sḏm",
+        "mean": "hear"
+      }
+    ]
+  },
+  {
+    "h": "𓈖",
+    "gardiner": "N35",
+    "trans": "n",
+    "soundAr": "ن",
+    "descAr": "موجة ماء",
+    "descEn": "Water",
+    "step": 1,
+    "examples": [
+      {
+        "word": "𓈖",
+        "trans": "n",
+        "mean": "to, for"
+      },
+      {
+        "word": "𓂋:𓈖",
+        "trans": "rn",
+        "mean": "name"
+      },
+      {
+        "word": "𓊪:𓈖",
+        "trans": "pn",
+        "mean": "this (m)"
+      }
+    ]
+  },
+  {
+    "h": "𓂋",
+    "gardiner": "D21",
+    "trans": "r",
+    "soundAr": "ر",
+    "descAr": "فم",
+    "descEn": "Mouth",
+    "step": 2,
+    "examples": [
+      {
+        "word": "𓂋",
+        "trans": "r",
+        "mean": "to, towards"
+      },
+      {
+        "word": "𓂋:𓈖",
+        "trans": "rn",
+        "mean": "name"
+      },
+      {
+        "word": "𓂋:𓂝*𓇳",
+        "trans": "rʿ",
+        "mean": "sun"
+      }
+    ]
+  },
+  {
+    "h": "𓉔",
+    "gardiner": "O4",
+    "trans": "h",
+    "soundAr": "هـ",
+    "descAr": "مأوى (خيمة)",
+    "descEn": "Reed shelter",
+    "step": 9,
+    "examples": [
+      {
+        "word": "𓉔*𓄿*𓂻",
+        "trans": "h3",
+        "mean": "go down"
+      },
+      {
+        "word": "𓉔:𓂋*𓅱:𓇳",
+        "trans": "hrw",
+        "mean": "day"
+      },
+      {
+        "word": "𓊪:𓏏*𓎛",
+        "trans": "Ptḥ",
+        "mean": "Ptah (variant)"
+      }
+    ]
+  },
+  {
+    "h": "𓎛",
+    "gardiner": "V28",
+    "trans": "ḥ",
+    "soundAr": "ح",
+    "descAr": "فتيل كتان",
+    "descEn": "Wick of twisted flax",
+    "step": 10,
+    "examples": [
+      {
+        "word": "𓎛:𓈖*𓂝",
+        "trans": "ḥnʿ",
+        "mean": "together with"
+      },
+      {
+        "word": "𓊪:𓏏*𓎛",
+        "trans": "Ptḥ",
+        "mean": "Ptah"
+      },
+      {
+        "word": "𓎼:𓂋*𓎛*𓄛",
+        "trans": "grḥ",
+        "mean": "night"
+      }
+    ]
+  },
+  {
+    "h": "𓐍",
+    "gardiner": "Aa1",
+    "trans": "ḫ",
+    "soundAr": "خ",
+    "descAr": "مشيمة",
+    "descEn": "Placenta",
+    "step": 11,
+    "examples": [
+      {
+        "word": "𓐍:𓏏",
+        "trans": "ḫt",
+        "mean": "thing"
+      },
+      {
+        "word": "𓂋:𓐍*𓏛",
+        "trans": "rḫ",
+        "mean": "know"
+      },
+      {
+        "word": "𓐍*𓅓*𓂜",
+        "trans": "ḫm",
+        "mean": "not know"
+      }
+    ]
+  },
+  {
+    "h": "𓄡",
+    "gardiner": "F32",
+    "trans": "ẖ",
+    "soundAr": "خ (خفيفة)",
+    "descAr": "بطن حيوان",
+    "descEn": "Animal's belly",
+    "step": 19,
+    "examples": [
+      {
+        "word": "𓄡:𓂋*𓂧*𓀔",
+        "trans": "ẖrd",
+        "mean": "child"
+      }
+    ]
+  },
+  {
+    "h": "𓋴",
+    "gardiner": "S29",
+    "forms": [
+      {
+        "sign": "𓊃",
+        "num": 1,
+        "name": "مزلاج الباب",
+        "descEn": "Door bolt"
+      },
+      {
+        "sign": "𓋴",
+        "num": 2,
+        "name": "قماش مطوي",
+        "descEn": "Folded cloth"
+      }
+    ],
+    "trans": "s",
+    "soundAr": "س (أصلها ز)",
+    "descAr": "مزلاج الباب / قماش مطوي",
+    "descEn": "Door bolt / Folded cloth",
+    "step": 14,
+    "examples": [
+      {
+        "word": "𓋴*𓀀",
+        "trans": "s",
+        "mean": "man"
+      },
+      {
+        "word": "𓊃*𓀀",
+        "trans": "s",
+        "mean": "man [بالمزلاج]"
+      },
+      {
+        "word": "𓋴:𓏏*𓁐",
+        "trans": "st",
+        "mean": "woman"
+      },
+      {
+        "word": "𓊃:𓏏*𓁐",
+        "trans": "st",
+        "mean": "woman [بالمزلاج]"
+      },
+      {
+        "word": "𓋴*𓄔*𓅓",
+        "trans": "sḏm",
+        "mean": "hear"
+      }
+    ]
+  },
+  {
+    "h": "𓈙",
+    "gardiner": "N37",
+    "trans": "š",
+    "soundAr": "ش",
+    "descAr": "بركة",
+    "descEn": "Pool",
+    "step": 20,
+    "examples": [
+      {
+        "word": "𓈙:𓈘",
+        "trans": "š",
+        "mean": "lake"
+      },
+      {
+        "word": "𓂋:𓈙*𓅱:𓏏*𓏛",
+        "trans": "ršwt",
+        "mean": "joy"
+      }
+    ]
+  },
+  {
+    "h": "𓈎",
+    "gardiner": "N29",
+    "trans": "ḳ",
+    "soundAr": "ق",
+    "descAr": "تل",
+    "descEn": "Hill-slope",
+    "step": 21,
+    "examples": [
+      {
+        "word": "𓂝:𓂋*𓈎",
+        "trans": "ʿrḳ",
+        "mean": "swear"
+      }
+    ]
+  },
+  {
+    "h": "𓎡",
+    "gardiner": "V31",
+    "trans": "k",
+    "soundAr": "ك",
+    "descAr": "سلة",
+    "descEn": "Basket",
+    "step": 15,
+    "examples": [
+      {
+        "word": "𓎡*𓇌",
+        "trans": "ky",
+        "mean": "other (m)"
+      },
+      {
+        "word": "𓎡:𓏏",
+        "trans": "kt",
+        "mean": "other (f)"
+      }
+    ]
+  },
+  {
+    "h": "𓎼",
+    "gardiner": "W11",
+    "trans": "g",
+    "soundAr": "ج (قاهرية)",
+    "descAr": "حامل جرة",
+    "descEn": "Stand for jar",
+    "step": 22,
+    "examples": [
+      {
+        "word": "𓎼:𓂋*𓀁",
+        "trans": "gr",
+        "mean": "be silent"
+      },
+      {
+        "word": "𓎼:𓂋*𓎛*𓄛",
+        "trans": "grḥ",
+        "mean": "night"
+      }
+    ]
+  },
+  {
+    "h": "𓏏",
+    "gardiner": "X1",
+    "trans": "t",
+    "soundAr": "ت",
+    "descAr": "رغيف خبز",
+    "descEn": "Loaf",
+    "step": 7,
+    "examples": [
+      {
+        "word": "𓏏:𓈖",
+        "trans": "tn",
+        "mean": "this (f)"
+      },
+      {
+        "word": "𓎡:𓏏",
+        "trans": "kt",
+        "mean": "other (f)"
+      },
+      {
+        "word": "𓊪:𓏏*𓇯",
+        "trans": "pt",
+        "mean": "sky"
+      }
+    ]
+  },
+  {
+    "h": "𓍿",
+    "gardiner": "V13",
+    "trans": "ṯ",
+    "soundAr": "تش",
+    "descAr": "حبل ربط",
+    "descEn": "Tethering rope",
+    "step": 23,
+    "examples": [
+      {
+        "word": "𓍿:𓋴*𓅓*𓃡",
+        "trans": "ṯsm",
+        "mean": "hound"
+      }
+    ]
+  },
+  {
+    "h": "𓂧",
+    "gardiner": "D46",
+    "trans": "d",
+    "soundAr": "د",
+    "descAr": "يد",
+    "descEn": "Hand",
+    "step": 16,
+    "examples": [
+      {
+        "word": "𓂧*𓊪:𓏏*𓊛",
+        "trans": "dpt",
+        "mean": "boat"
+      },
+      {
+        "word": "𓋴*𓄔*𓅓",
+        "trans": "sḏm",
+        "mean": "hear"
+      }
+    ]
+  },
+  {
+    "h": "𓆓",
+    "gardiner": "I10",
+    "trans": "ḏ",
+    "soundAr": "ج",
+    "descAr": "أفعى كوبرا",
+    "descEn": "Snake",
+    "step": 24,
+    "examples": [
+      {
+        "word": "𓆓:𓂧",
+        "trans": "ḏd",
+        "mean": "say, speak"
+      },
+      {
+        "word": "𓈖:𓆓*𓋴*𓅪*𓀀",
+        "trans": "nḏs",
+        "mean": "poor man"
+      }
+    ]
+  }
+]

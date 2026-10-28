@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "a1",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What is the phonetic transliteration for the Egyptian vulture sign (𓄿)?",
+    "qAr": "ما هو النطق الصوتي (Transliteration) لرمز طائر العقاب المصري (𓄿)؟",
+    "hieroglyph": "𓄿",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 (Alef - طائر العقاب)",
+        "desc": "Glottal stop / ألف حلقية",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "ỉ (Flowering reed - قصبة)",
+        "desc": "Light yod / ياء خفيفة",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "ʿ (Forearm - ذراع)",
+        "desc": "Pharyngeal fricative / عين",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "w (Quail chick - كتكوت)",
+        "desc": "Semivowel / واو",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The Egyptian vulture (Gardiner G1) represents the uniliteral glottal stop '3' (Alef - ألف حلقية)."
+  },
+  {
+    "id": "a2",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "Which hieroglyphic sign represents the uniliteral sound 'm' (Owl)?",
+    "qAr": "أي رمز هيروغليفي يمثل الرمز الأحادي 'm' (طائر البومة)؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓅓",
+        "desc": "Owl (m) / بومة",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓈖",
+        "desc": "Water ripple (n) / موجة ماء",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓂋",
+        "desc": "Mouth (r) / فم",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓊪",
+        "desc": "Reed stool (p) / مقعد حصير",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The owl (Gardiner G17) is the standard uniliteral sign for 'm' (ميم)."
+  },
+  {
+    "id": "a3",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What sound does the 'foot and leg' sign (𓃀) represent?",
+    "qAr": "ما هو الصوت الذي يمثله رمز 'الساق والقدم' (𓃀)؟",
+    "hieroglyph": "𓃀",
+    "options": [
+      {
+        "id": "a",
+        "text": "b (Foot & leg / ساق وقدم)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "p (Stool / مقعد)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "d (Hand / كف يد)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "g (Jar-stand / حامل جرة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The human foot and lower leg (Gardiner D58) represents the uniliteral sound 'b' (باء)."
+  },
+  {
+    "id": "a4",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What is the transliteration for the horned viper (𓆑)?",
+    "qAr": "ما هو النطق الصوتي لرمز 'الحية المقرنة' (𓆑)؟",
+    "hieroglyph": "𓆑",
+    "options": [
+      {
+        "id": "a",
+        "text": "f (Horned viper / حية مقرنة)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "s (Folded cloth / قطعة قماش)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "ḏ (Cobra / أفعى كوبرا)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "ḳ (Hill-slope / تل رملي)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The horned viper (Gardiner I9) represents 'f' (فاء) and serves as the 3rd person masculine singular suffix pronoun '=f' (he / his / هو)."
+  },
+  {
+    "id": "a5",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What sound does the water ripple sign (𓈖) represent?",
+    "qAr": "ما هو الصوت/الرمز الذي تمثله تموجات الماء (𓈖)؟",
+    "hieroglyph": "𓈖",
+    "options": [
+      {
+        "id": "a",
+        "text": "n (Water ripple / موجة ماء)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "r (Mouth / فم)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "m (Owl / بومة)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "ḥ (Twisted flax / حبل كتان)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The horizontal water ripple (Gardiner N35) represents 'n' (نون) and functions as preposition 'to/for' before persons."
+  },
+  {
+    "id": "a6",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What is the transliteration for the human mouth sign (𓂋)?",
+    "qAr": "ما هو النطق الصوتي لرمز 'الفم' (𓂋)؟",
+    "hieroglyph": "𓂋",
+    "options": [
+      {
+        "id": "a",
+        "text": "r (Mouth / فم)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "d (Hand / يد)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "t (Bread loaf / رغيف خبز)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "k (Basket / سلة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The human mouth (Gardiner D21) is 'r' (راء) and functions as preposition 'to/towards' before places."
+  },
+  {
+    "id": "a7",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "Which sign represents the biliteral phonogram 'pr' (House, estate)?",
+    "qAr": "أي رمز يمثل العلامة ثنائية الصوت 'pr' (بيت / دار)؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓉐",
+        "desc": "pr (House plan / مخطط دار)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓏠",
+        "desc": "mn (Senet board / لعبة سنت)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓎟",
+        "desc": "nb (Basket / سلة)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓅨",
+        "desc": "wr (Swallow / خطاف)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The ground plan of a house (Gardiner O1) is the biliteral sign 'pr' meaning 'house' (بيت) or 'estate'."
+  },
+  {
+    "id": "a8",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What does the triliteral sign 'ʿnḫ' (𓋹) mean?",
+    "qAr": "ما معنى العلامة ثلاثية الصوت 'عنخ' (𓋹)؟",
+    "hieroglyph": "𓋹",
+    "options": [
+      {
+        "id": "a",
+        "text": "Life / To live (الحياة / يعيش)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Beauty / Goodness (الجمال / الخير)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Peace / Offering (السلام / قربان)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Power / Might (القوة / العظمة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The 'Ankh' sign (Gardiner S34) is the triliteral 'ʿnḫ' meaning 'life' or verb 'to live' (يحيا)."
+  },
+  {
+    "id": "a9",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What is the transliteration for the placenta/sieve sign (𓐍)?",
+    "qAr": "ما هو النطق الصوتي لرمز المشيمة أو الغربال (𓐍)؟",
+    "hieroglyph": "𓐍",
+    "options": [
+      {
+        "id": "a",
+        "text": "ḫ (Velar fricative / خاء مفخمة)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "ẖ (Palatal fricative / خاء مرققة)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "ḥ (Pharyngeal / حاء)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "h (Reed shelter / هاء)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The striped disc / placenta (Gardiner Aa1) represents the velar fricative 'ḫ' (خاء مفخمة)."
+  },
+  {
+    "id": "a10",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What does the triliteral sign 'ḥtp' (𓊵) signify?",
+    "qAr": "إلى ماذا تشير العلامة ثلاثية الصوت 'حتب' (𓊵)؟",
+    "hieroglyph": "𓊵",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peace, rest, offering (يرضى / يستريح / قربان)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Eternity / Everlasting (الخلود والدوام)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Scribe's palette (الكتابة والقلم)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Sunlight & Dawn (الشمس والنور)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The offering mat with bread loaf (Gardiner R4) is 'ḥtp', meaning 'peace', 'to be pleased', or 'an offering' (قربان)."
+  },
+  {
+    "id": "a11",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "Which sign represents the biliteral 'mn' (endure, be firm)?",
+    "qAr": "أي رمز يمثل العلامة ثنائية الصوت 'mn' (يثبت / يدوم)؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓏠",
+        "desc": "mn (Senet board / لوحة لعبة سنت)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓌸",
+        "desc": "mr (Hoe / فأس زراعية)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓂓",
+        "desc": "k3 (Raised arms / ذراعان)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓄣",
+        "desc": "ỉb (Heart / قلب)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The Senet gaming board (Gardiner Y5) is the biliteral 'mn' (يثبت / يدوم), as in the deity Amun (ỉmn)."
+  },
+  {
+    "id": "a12",
+    "category": "alphabet",
+    "categoryLabel": "Hieroglyphic Signs (الرموز الهيروغليفية)",
+    "categoryLabelEn": "Hieroglyphic Signs",
+    "categoryLabelAr": "الرموز الهيروغليفية",
+    "qEn": "What sound does the basket with handle (𓎡) represent?",
+    "qAr": "ما هو الصوت الذي يمثله رمز 'السلة ذات المقبض' (𓎡)؟",
+    "hieroglyph": "𓎡",
+    "options": [
+      {
+        "id": "a",
+        "text": "k (Basket with handle / كاف)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "ḳ (Hill-slope / قاف)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "g (Jar-stand / جيم)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "t (Bread loaf / تاء)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The basket with a handle (Gardiner V31) is 'k' (كاف) and serves as the 2nd person masculine singular suffix pronoun '=k' (you / your / أنتَ)."
+  },
+  {
+    "id": "v1",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What is the English meaning of the word 's' (𓊃𓀀)?",
+    "qAr": "ما معنى الكلمة المصرية 's' (𓊃𓀀)؟",
+    "hieroglyph": "𓊃*𓀀",
+    "options": [
+      {
+        "id": "a",
+        "text": "A man, someone (رجل / شخص)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "A scribe (كاتب)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "A son (ابن)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "A deity, god (إله)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The word 's' (Gardiner O34 + A1 determinative) means 'a man' or 'someone' (رجل)."
+  },
+  {
+    "id": "v2",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What is the English meaning of 'st' (𓊃𓏏𓁐)?",
+    "qAr": "ما معنى الكلمة المصرية 'st' (𓊃𓏏𓁐)؟",
+    "hieroglyph": "𓊃:𓏏*𓁐",
+    "options": [
+      {
+        "id": "a",
+        "text": "A woman (امرأة)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "A daughter (ابنة)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "A sister (أخت)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "A queen (ملكة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The noun 'st' ends with feminine ending '.t' (𓏏) and woman determinative (𓁐) meaning 'a woman' (امرأة)."
+  },
+  {
+    "id": "v3",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What is the correct hieroglyphic spelling for 'boat, ship' (dpt)?",
+    "qAr": "ما هو الرسم الهيروغليفي الصحيح لكلمة 'قارب / سفينة' (dpt)؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓂧:𓊪*𓏏:𓊛",
+        "desc": "dpt (Boat with ship determinative)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓊪:𓏏*𓇯",
+        "desc": "pt (Sky / سماء)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓂋:𓈖",
+        "desc": "rn (Name / اسم)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓈙:𓈘",
+        "desc": "š (Lake / بحيرة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The word 'dpt' is written with phonograms d-p-t followed by the boat determinative 𓊛 (قارب)."
+  },
+  {
+    "id": "v4",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does 'rn' (𓂋𓈖) mean?",
+    "qAr": "ما معنى الكلمة 'rn' (𓂋𓈖)؟",
+    "hieroglyph": "𓂋:𓈖",
+    "options": [
+      {
+        "id": "a",
+        "text": "Name (اسم)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "The sun (شمس)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Plan, counsel (خطة / تدبير)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "River (نهر)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The word 'rn' (mouth r + water ripple n) means 'name' (اسم)."
+  },
+  {
+    "id": "v5",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does 'pt' (𓊪𓏏𓇯) mean?",
+    "qAr": "ما معنى الكلمة 'pt' (𓊪𓏏𓇯)؟",
+    "hieroglyph": "𓊪:𓏏*𓇯",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sky, heaven (سماء)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Earth, land (أرض)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Lake, pool (بحيرة)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "House (بيت)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The word 'pt' means 'sky' or 'heaven' (سماء) with the ceiling of heaven determinative 𓇯."
+  },
+  {
+    "id": "v6",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does 'sš' (𓏞𓀀) mean?",
+    "qAr": "ما معنى الكلمة 'sš' (𓏞𓀀)؟",
+    "hieroglyph": "𓏞*𓀀",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scribe (كاتب)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Vizier (وزير)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Priest (كاهن)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Servant (خادم)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The sign 𓏞 represents the scribe's kit (palette, ink, reed holder) with man determinative 𓀀 = 'scribe' (كاتب)."
+  },
+  {
+    "id": "v7",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does the common verb 'sḏm' (𓋴𓄔𓅓) mean?",
+    "qAr": "ما معنى الفعل المصري الشهير 'sḏm' (𓋴𓄔𓅓)؟",
+    "hieroglyph": "𓋴*𓄔*𓅓",
+    "options": [
+      {
+        "id": "a",
+        "text": "To hear, listen (يسمع / يستمع)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "To see, look (يرى / يبصر)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "To write (يكتب)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "To know (يعرف)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The verb 'sḏm' means 'to hear' or 'to listen' (يسمع), containing the ox-ear sign 𓄔."
+  },
+  {
+    "id": "v8",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does the verb 'wbn' (𓅱𓃀𓈖𓇳) mean?",
+    "qAr": "ما معنى الفعل 'wbn' (𓅱𓃀𓈖𓇳)؟",
+    "hieroglyph": "𓅱*𓃀*𓈖:𓇳",
+    "options": [
+      {
+        "id": "a",
+        "text": "To rise, shine (يشرق / يتألق)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "To set, go down (يغرب / يهبط)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "To walk (يمشي)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "To cross (يعبر)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The verb 'wbn' means 'to rise' or 'to shine' (يشرق) with the sun-disc determinative 𓇳."
+  },
+  {
+    "id": "v9",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does 'sḫr' (𓋴𓐍𓂋𓏛) mean?",
+    "qAr": "ما معنى الكلمة 'sḫr' (𓋴𓐍𓂋𓏛)؟",
+    "hieroglyph": "𓋴*𓐍:𓂋*𓏛",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plan, counsel, scheme (خطة / تدبير / مشورة)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Battle, fight (معركة)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Castle, mansion (قصر)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Large boat (سفينة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The noun 'sḫr' means 'plan', 'counsel', or 'scheme' (خطة / تدبير), with the papyrus scroll determinative 𓏛 for abstract concepts."
+  },
+  {
+    "id": "v10",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What is the meaning of 'ỉtrw' (𓇋𓏏𓂋𓅱(𓈘:𓈘:𓈘))?",
+    "qAr": "ما معنى الكلمة 'ỉtrw' (𓇋𓏏𓂋𓅱(𓈘:𓈘:𓈘))؟",
+    "hieroglyph": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+    "options": [
+      {
+        "id": "a",
+        "text": "River, the Nile (نهر / النيل)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Lake (بحيرة)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Sky (سماء)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Mountain (جبل)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The noun 'ỉtrw' means 'the river' (نهر النيل) with the triple water-channel determinative (𓈘:𓈘:𓈘)."
+  },
+  {
+    "id": "v11",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What does 'b3k' (𓃀𓄿𓎡𓀀) mean?",
+    "qAr": "ما معنى الكلمة 'b3k' (𓃀𓄿𓎡𓀀)؟",
+    "hieroglyph": "𓃀*𓄿:𓎡*𓀀",
+    "options": [
+      {
+        "id": "a",
+        "text": "Servant (خادم)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Lord, master (سيد)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Scribe (كاتب)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Vizier (وزير)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The noun 'b3k' means 'servant' (خادم), commonly used in formal letters (b3k ỉm = this humble servant)."
+  },
+  {
+    "id": "v12",
+    "category": "vocabulary",
+    "categoryLabel": "Vocabulary & Words (المفردات والكلمات)",
+    "categoryLabelEn": "Vocabulary & Words",
+    "categoryLabelAr": "المفردات والكلمات",
+    "qEn": "What high official does the title 'ṯ3ty' (𓍿𓄿𓏏𓇌𓀀) designate?",
+    "qAr": "ما هو اللقب الرسمي الرفيع 'ṯ3ty' (𓍿𓄿𓏏𓇌𓀀)؟",
+    "hieroglyph": "𓍿*𓄿*𓏏:𓇌*𓀀",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vizier, prime minister (الوزير)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Army general (قائد الجيش)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "High Priest (رئيس الكهنة)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "City Mayor (عمدة المدينة)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The official title 'ṯ3ty' denotes the 'Vizier' (الوزير), the chief administrator of Ancient Egypt below Pharaoh."
+  },
+  {
+    "id": "g1",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "In the sentence 'wbn rʿ m pt' (𓅱𓃀𓈖 𓂋𓂝 𓅓 𓊪𓏏), what syntactic type of verb is 'wbn'?",
+    "qAr": "في جملة 'wbn rʿ m pt' (تشرق الشمس في السماء)، ما نوع الفعل 'wbn'؟",
+    "hieroglyph": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intransitive Verb (فعل لازم - takes no direct object)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Transitive Verb (فعل متعدٍ - requires a direct object)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Passive Verb (مبني للمجهول)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Participle (اسم فاعل)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The verb 'wbn' (to rise) is Intransitive (فعل لازم): it takes only a subject (rʿ 'the sun') and an adverbial phrase (m pt 'in the sky'), with no direct object."
+  },
+  {
+    "id": "g2",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "In 'sḏm s pn rn pn', what grammatical function does 'rn pn' have?",
+    "qAr": "في جملة 'sḏm s pn rn pn' (يسمع هذا الرجل هذا الاسم)، ما هو الموقع الإعرابي لـ 'rn pn'؟",
+    "hieroglyph": "𓋴*𓄔*𓅓 𓊃*𓀀 𓊪:𓈖 𓂋:𓈖 𓊪:𓈖",
+    "options": [
+      {
+        "id": "a",
+        "text": "Direct Object (مفعول به مباشر)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Subject (فاعل)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Adverbial Phrase (شبه جملة ظرفية)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Nominal Predicate (خبر المبتدأ)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Standard Egyptian verbal word order: Verb (sḏm) + Subject (s pn 'this man') + Direct Object (rn pn 'this name' - مفعول به)."
+  },
+  {
+    "id": "g3",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "Where does the masculine demonstrative 'pn' (this) appear in relation to its noun?",
+    "qAr": "أين يقع اسم الإشارة للمفرد المذكر 'pn' (هذا) بالنسبة للاسم الموصوف؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "Post-positive: strictly follows the noun (تأتي بعد الاسم مباشرة)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Pre-positive: precedes the noun (تأتي قبل الاسم مباشرة)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Sentence-initial only (في بداية الجملة فقط)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Attached directly to the verb (ملحقة بالفعل)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Proximity demonstratives 'pn' (masc.) and 'tn' (fem.) are post-positive (تأتي بعد الاسم): e.g. rn pn (this name)."
+  },
+  {
+    "id": "g4",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "Where does the demonstrative of otherness 'ky' (other, another) appear?",
+    "qAr": "أين يقع اسم الإشارة للمغايرة 'ky' (آخر) بالنسبة للاسم؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pre-positive: strictly precedes the noun (تأتي قبل الاسم مباشرة)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Post-positive: strictly follows the noun (تأتي بعد الاسم دائماً)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "At sentence end only (في نهاية الجملة)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Never used with singular nouns",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Demonstratives of otherness 'ky' (masc.) and 'kt' (fem.) are pre-positive (تأتي قبل الاسم): e.g. ky s (another man), kt dpt (another boat)."
+  },
+  {
+    "id": "g5",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "Which preposition is strictly used for motion towards or dative to PERSONS & DEITIES?",
+    "qAr": "أي حرف جر يُستخدم تحديداً للاتجاه نحو الأشخاص والآلهة (العاقل)؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓈖 (n) - to, for (used only for persons / للعاقل والأشخاص)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓂋 (r) - to, into (used for places / للأماكن والجمادات)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓅓 (m) - in, from (مكان)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓎛𓈖𓂝 (ḥnʿ) - together with (مع)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Crucial rule: Preposition 'n' (𓈖) is used towards living persons and deities (n s 'to a man', n Ptḥ 'to Ptah')."
+  },
+  {
+    "id": "g6",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "Which preposition is strictly used for motion towards PLACES or THINGS?",
+    "qAr": "أي حرف جر يُستخدم للاتجاه نحو الأماكن والجمادات؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓂋 (r) - to, towards (used for places / للأماكن والجمادات)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓈖 (n) - to, for (persons only / للأشخاص)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓇋𓅓 (ỉm) - there, therein (ظرف مكان)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓇋𓈖 (ỉn) - agent marker (أداة الفاعل)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Preposition 'r' (𓂋) denotes motion or direction towards places and celestial bodies (r š 'to a lake', r pt 'to the sky')."
+  },
+  {
+    "id": "g7",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "How is the passive voice typically formed in Middle Egyptian suffix conjugation?",
+    "qAr": "كيف تُصاغ صيغة المبني للمجهول (Passive Voice) في تصريف الفعل المصري؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "By appending suffix morpheme '.tw' to the verb stem (بإضافة .tw)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "By adding prefix 'n-' before the verb",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "By omitting the subject with no morpheme change",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "By doubling the final consonant of the root",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The passive voice is formed by attaching morpheme '.tw' to the verb (المبني للمجهول): e.g. sḏm.tw rn = 'the name is heard'."
+  },
+  {
+    "id": "g8",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "In the passive sentence 'sḏm.tw rn ỉn s', what is the role of the particle 'ỉn'?",
+    "qAr": "في الجملة المبنية للمجهول 'sḏm.tw rn ỉn s'، ما هو دور الأداة 'ỉn'؟",
+    "hieroglyph": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agent marker: introduces the agent 'by a man' (تقديم الفاعل الحقيقي)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Sentence negation marker (أداة نفي)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Locative preposition meaning 'in' (ظرف مكان)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Direct object marker (علامة مفعول به)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "In passive sentences, preposition 'ỉn' introduces the real agent (الفاعل الحقيقي): ỉn s = 'by a man'."
+  },
+  {
+    "id": "g9",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "What tense does the 'sḏm.n=f' form express in Middle Egyptian?",
+    "qAr": "ما هو الزمن الذي تعبر عنه صيغة 'sḏm.n=f' في اللغة المصرية الكلاسيكية؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "Past / Perfective: completed action (الماضي التام: 'He heard')",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Present Continuous (المضارع المستمر)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Simple Future (المستقبل البسيط)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Imperative mood (صيغة الأمر)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The 'sḏm.n=f' form indicates past / completed action (صيغة الماضي التام): e.g. sḏm.n=f = 'he heard / has heard'."
+  },
+  {
+    "id": "g10",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "Which of the following is an asserted Nominal Sentence with Adverbial Predicate?",
+    "qAr": "أي الجمل التالية جملة اسمية مؤكدة ذات خبر ظرفي؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯 (ỉw rʿ m pt)",
+        "desc": "Asserted Nominal: The sun is in the sky",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯 (wbn rʿ m pt)",
+        "desc": "Verbal sentence: The sun rises",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)",
+        "desc": "Verbal sentence: He hears this name",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "𓉔*𓄿*𓂻 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛 (h3 sš m dpt)",
+        "desc": "Verbal sentence: The scribe goes down",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "An asserted nominal sentence with adverbial predicate begins with particle 'ỉw' + Subject (rʿ) + Adverbial phrase (m pt)."
+  },
+  {
+    "id": "g11",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "Which sentence correctly expresses 'A man together with a woman'?",
+    "qAr": "أي جملة تعبر عن التركيب الصحيح لـ 'رجل مع امرأة'؟",
+    "options": [
+      {
+        "id": "a",
+        "text": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 (s ḥnʿ st)",
+        "desc": "Noun + ḥnʿ (with) + Noun",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "s r st (Incorrect: r denotes direction)",
+        "desc": "Wrong preposition",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "s m st (Incorrect: m denotes in/from)",
+        "desc": "Wrong preposition",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "s n st (Incorrect: n denotes to/for)",
+        "desc": "Wrong preposition",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Preposition 'ḥnʿ' (𓎛𓈖𓂝) connects two nouns meaning 'together with' or 'and' (مع / بصحبة)."
+  },
+  {
+    "id": "g12",
+    "category": "grammar",
+    "categoryLabel": "Grammar & Syntax (القواعد وصحة الجمل)",
+    "categoryLabelEn": "Grammar & Syntax",
+    "categoryLabelAr": "القواعد وصحة الجمل",
+    "qEn": "What does the adverb 'ỉm' (𓇋𓅓) mean when functioning as an adverbial predicate?",
+    "qAr": "ما معنى الظرف 'ỉm' (𓇋𓅓) عندما يأتي كخبر ظرفي؟",
+    "hieroglyph": "𓇋*𓅓",
+    "options": [
+      {
+        "id": "a",
+        "text": "There, therein (هناك / فيه)",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Now, at present (الآن)",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Not, no (أداة نفي)",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Tomorrow (غداً)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The adverb 'ỉm' means 'there' or 'therein' (هناك / فيه) and functions as predicate: e.g. ỉw s ỉm = 'a man is there'."
+  }
+]

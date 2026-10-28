@@ -1,0 +1,970 @@
+{
+  "id": "lesson1",
+  "number": 1,
+  "titleAr": "الدرس الأول",
+  "titleEn": "Lesson I",
+  "grammar": {
+    "id": "lesson1",
+    "titleEn": "Lesson I: Prepositions, Demonstratives & Sentence Particles",
+    "titleAr": "الدرس الأول: حروف الجر، أسماء الإشارة، وأدوات الجملة",
+    "badges": [
+      {
+        "id": "rule-1-1",
+        "label": "Prepositions (حروف الجر)"
+      },
+      {
+        "id": "rule-1-2",
+        "label": "Demonstratives (أسماء الإشارة)"
+      },
+      {
+        "id": "rule-1-3",
+        "label": "Adverb ỉm (الظرف)"
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-1-1",
+        "ruleNum": 1,
+        "type": "structured",
+        "badgeEn": "Prepositions",
+        "badgeAr": "حروف الجر",
+        "titleEn": "Rule 1: Egyptian Prepositions & Syntax",
+        "titleAr": "حروف الجر وموضعها قبل الاسم المجرور",
+        "formula": "[ Preposition ] + [ Noun ]",
+        "summaryEn": "Prepositions in Ancient Egyptian always directly precede the noun they govern.",
+        "summaryAr": "تأتي حروف الجر في اللغة المصرية القديمة دائماً قبل الاسم المجرور مباشرة.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "The Preposition 'm' (𓅓): in, with, from",
+            "descEn": "Has three main contextual meanings depending on the sentence:",
+            "indicatorAr": "حرف الجر m: في / بواسطة / من",
+            "subPoints": [
+              {
+                "label": "1. Locative (المكانية)",
+                "text": "in",
+                "examples": [
+                  {
+                    "h": "𓅓 𓊪:𓏏*𓇯",
+                    "trans": "m pt",
+                    "mean": "in the sky"
+                  },
+                  {
+                    "h": "𓅓 𓂧*𓊪:𓏏*𓊛",
+                    "trans": "m dpt",
+                    "mean": "in a boat"
+                  }
+                ]
+              },
+              {
+                "label": "2. Instrumental (الوسيلة والأداة)",
+                "text": "by means of, with",
+                "examples": [
+                  {
+                    "h": "𓅓 𓐍:𓏏 𓏏:𓈖",
+                    "trans": "m ḫt tn",
+                    "mean": "with this thing"
+                  }
+                ]
+              },
+              {
+                "label": "3. Separative (الانفصال والابتداء)",
+                "text": "from, out of",
+                "examples": [
+                  {
+                    "h": "𓅓 𓃀*𓅱 𓊪:𓈖",
+                    "trans": "m bw pn",
+                    "mean": "from this place"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "The Preposition 'n' (𓈖): to, for (Dative - To Persons)",
+            "descEn": "Strictly used for people, deities, and living beings (العاقل):",
+            "indicatorAr": "يختص بالعاقل والأشخاص والآلهة",
+            "subPoints": [
+              {
+                "label": "1. Direction to Persons (الاتجاه نحو العاقل)",
+                "text": "to a person or deity",
+                "examples": [
+                  {
+                    "h": "𓈖 𓊃*𓀀",
+                    "trans": "n s",
+                    "mean": "to a man"
+                  },
+                  {
+                    "h": "𓈖 𓊪:𓏏*𓎛",
+                    "trans": "n Ptḥ",
+                    "mean": "to Ptah"
+                  }
+                ]
+              },
+              {
+                "label": "2. Dative of Interest (المفعول لأجله)",
+                "text": "for, on behalf of",
+                "examples": [
+                  {
+                    "h": "𓈖 𓇋*𓏏*𓀀",
+                    "trans": "n ỉt",
+                    "mean": "for the father"
+                  },
+                  {
+                    "h": "𓈖 𓊃:𓏏*𓁐",
+                    "trans": "n st",
+                    "mean": "for a woman"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "titleEn": "The Preposition 'r' (𓂋): to, towards, into (To Places / Things)",
+            "descEn": "Denotes motion or direction toward places, celestial bodies, and inanimate things:",
+            "indicatorAr": "يختص بالأماكن والجمادات والاتجاهات",
+            "subPoints": [
+              {
+                "label": "1. Direction to Places (الاتجاه نحو الأماكن)",
+                "text": "to, into, towards a place",
+                "examples": [
+                  {
+                    "h": "𓂋 𓈙:𓈘",
+                    "trans": "r š",
+                    "mean": "to a lake"
+                  },
+                  {
+                    "h": "𓂋 𓊪:𓏏*𓇯",
+                    "trans": "r pt",
+                    "mean": "to the sky"
+                  }
+                ]
+              },
+              {
+                "label": "2. Destination / Inanimate (نحو الجمادات)",
+                "text": "towards a physical location",
+                "examples": [
+                  {
+                    "h": "𓂋 𓃀*𓅱 𓊪:𓈖",
+                    "trans": "r bw pn",
+                    "mean": "to this place"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "4",
+            "titleEn": "The Preposition 'ḥnʿ' (𓎛𓈖𓂝): together with, and",
+            "descEn": "Connects two nouns together indicating company or association:",
+            "indicatorAr": "يربط بين اسمين بمعنى: مع / بصحبة / و",
+            "subPoints": [
+              {
+                "label": "1. Association (المصاحبة والمعية)",
+                "text": "together with, along with",
+                "examples": [
+                  {
+                    "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+                    "trans": "s ḥnʿ st",
+                    "mean": "a man with a woman"
+                  }
+                ]
+              },
+              {
+                "label": "2. Nominal Conjunction (العطف بين الأسماء)",
+                "text": "and (joining nouns)",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+                    "trans": "rʿ ḥnʿ ỉʿḥ",
+                    "mean": "sun and moon"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "5",
+            "titleEn": "Distinction between 'n' and 'r'",
+            "descEn": "Essential rule for identifying prepositions correctly:",
+            "indicatorAr": "الفرق بين حرفي الجر n و r",
+            "subPoints": [
+              {
+                "label": "Use 'n' (𓈖)",
+                "text": "when motion or dative is toward a PERSON or DEITY",
+                "examples": [
+                  {
+                    "h": "𓈖 𓊃*𓀀",
+                    "trans": "n s",
+                    "mean": "to a man"
+                  },
+                  {
+                    "h": "𓈖 𓊪:𓏏*𓎛",
+                    "trans": "n Ptḥ",
+                    "mean": "to Ptah"
+                  }
+                ]
+              },
+              {
+                "label": "Use 'r' (𓂋)",
+                "text": "when motion is toward a PLACE or INANIMATE THING",
+                "examples": [
+                  {
+                    "h": "𓂋 𓈙:𓈘",
+                    "trans": "r š",
+                    "mean": "to a lake"
+                  },
+                  {
+                    "h": "𓂋 𓊪:𓏏*𓇯",
+                    "trans": "r pt",
+                    "mean": "to the sky"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓅓 𓊪:𓏏*𓇯",
+            "trans": "m pt",
+            "meanEn": "In the sky",
+            "meanAr": "في السماء",
+            "noteEn": "Preposition (m) 'in' + Noun (pt).",
+            "noteAr": "حرف الجر m يسبق الاسم"
+          },
+          {
+            "h": "𓅓 𓂧*𓊪:𓏏*𓊛",
+            "trans": "m dpt",
+            "meanEn": "In a boat",
+            "meanAr": "في قارب",
+            "noteEn": "Preposition (m) 'in' + Noun (dpt).",
+            "noteAr": "حرف الجر m يسبق الاسم"
+          },
+          {
+            "h": "𓈖 𓊃*𓀀",
+            "trans": "n s",
+            "meanEn": "To a man",
+            "meanAr": "إلى رجل",
+            "noteEn": "Preposition (n) 'to' used before person.",
+            "noteAr": "حرف الجر n للعاقل"
+          },
+          {
+            "h": "𓈖 𓊪:𓏏*𓎛",
+            "trans": "n Ptḥ",
+            "meanEn": "To Ptah",
+            "meanAr": "إلى الإله بتاح",
+            "noteEn": "Preposition (n) 'to' before deity.",
+            "noteAr": "حرف الجر n للآلهة"
+          },
+          {
+            "h": "𓂋 𓈙:𓈘",
+            "trans": "r š",
+            "meanEn": "To a lake",
+            "meanAr": "إلى بحيرة",
+            "noteEn": "Preposition (r) 'to' before place.",
+            "noteAr": "حرف الجر r للأماكن"
+          },
+          {
+            "h": "𓂋 𓊪:𓏏*𓇯",
+            "trans": "r pt",
+            "meanEn": "To the sky",
+            "meanAr": "إلى السماء",
+            "noteEn": "Preposition (r) 'to' before celestial place.",
+            "noteAr": "حرف الجر r للأماكن"
+          },
+          {
+            "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+            "trans": "s ḥnʿ st",
+            "meanEn": "A man together with a woman",
+            "meanAr": "رجل مع امرأة",
+            "noteEn": "Preposition (ḥnʿ) connecting two nouns.",
+            "noteAr": "ḥnʿ يربط اسمين بمعنى مع"
+          },
+          {
+            "h": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+            "trans": "rʿ ḥnʿ ỉʿḥ",
+            "meanEn": "The sun together with the moon",
+            "meanAr": "الشمس بصحبة القمر",
+            "noteEn": "Preposition (ḥnʿ) connecting celestial bodies.",
+            "noteAr": "ḥnʿ للعطف والمصاحبة"
+          }
+        ]
+      },
+      {
+        "id": "rule-1-2",
+        "ruleNum": 2,
+        "type": "structured",
+        "badgeEn": "Demonstratives",
+        "badgeAr": "أسماء الإشارة",
+        "titleEn": "Rule 2: Demonstratives (Post-positive vs. Pre-positive)",
+        "titleAr": "أسماء الإشارة وموضعها في الجملة",
+        "formulas": [
+          {
+            "titleEn": "Post-positive (After Noun)",
+            "titleAr": "تأتي بعد الاسم مباشرة",
+            "formula": "[ Noun ] + [ pn / tn (this) ]"
+          },
+          {
+            "titleEn": "Pre-positive (Before Noun)",
+            "titleAr": "تأتي قبل الاسم مباشرة",
+            "formula": "[ ky / kt (other) ] + [ Noun ]"
+          }
+        ],
+        "summaryEn": "Demonstratives meaning 'this' follow the noun; demonstratives meaning 'other' precede the noun.",
+        "summaryAr": "أسماء الإشارة للقريب (هذا/هذه) تتبع الاسم، وأسماء الإشارة للمغايرة (آخر/أخرى) تسبق الاسم.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "'pn' (𓊪𓈖) - 'this' (Masculine Singular) [Post-positive]",
+            "descEn": "Masculine demonstrative meaning 'this'. It strictly FOLLOWS the noun it qualifies:",
+            "indicatorAr": "مفرد مذكر: يأتي دائماً بعد الاسم",
+            "subPoints": [
+              {
+                "label": "Word Order",
+                "text": "Noun + pn",
+                "examples": [
+                  {
+                    "h": "𓂋:𓈖 𓊪:𓈖",
+                    "trans": "rn pn",
+                    "mean": "this name"
+                  },
+                  {
+                    "h": "𓊃*𓀀 𓊪:𓈖",
+                    "trans": "s pn",
+                    "mean": "this man"
+                  }
+                ]
+              },
+              {
+                "label": "Agreement",
+                "text": "Agrees in gender (masculine) with its noun",
+                "examples": [
+                  {
+                    "h": "𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+                    "trans": "sḫr pn",
+                    "mean": "this plan"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "'tn' (𓏏𓈖) - 'this' (Feminine Singular) [Post-positive]",
+            "descEn": "Feminine demonstrative meaning 'this'. It strictly FOLLOWS the noun it qualifies:",
+            "indicatorAr": "مفرد مؤنث: يأتي دائماً بعد الاسم",
+            "subPoints": [
+              {
+                "label": "Word Order",
+                "text": "Noun + tn",
+                "examples": [
+                  {
+                    "h": "𓊪:𓏏*𓇯 𓏏:𓈖",
+                    "trans": "pt tn",
+                    "mean": "this sky"
+                  },
+                  {
+                    "h": "𓐍:𓏏 𓏏:𓈖",
+                    "trans": "ḫt tn",
+                    "mean": "this thing"
+                  }
+                ]
+              },
+              {
+                "label": "Agreement",
+                "text": "Agrees in gender (feminine) with its noun",
+                "examples": [
+                  {
+                    "h": "𓂧*𓊪:𓏏*𓊛 𓏏:𓈖",
+                    "trans": "dpt tn",
+                    "mean": "this boat"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "titleEn": "'ky' (𓎡𓇌) - 'other, another' (Masculine Singular) [Pre-positive]",
+            "descEn": "Masculine demonstrative meaning 'other / another'. It strictly PRECEDES the noun:",
+            "indicatorAr": "مفرد مذكر: يأتي دائماً قبل الاسم",
+            "subPoints": [
+              {
+                "label": "Word Order",
+                "text": "ky + Noun",
+                "examples": [
+                  {
+                    "h": "𓎡*𓇌 𓃀*𓅱",
+                    "trans": "ky bw",
+                    "mean": "another place"
+                  },
+                  {
+                    "h": "𓎡*𓇌 𓊃*𓀀",
+                    "trans": "ky s",
+                    "mean": "another man"
+                  }
+                ]
+              },
+              {
+                "label": "Usage",
+                "text": "Placed before masculine singular nouns",
+                "examples": [
+                  {
+                    "h": "𓎡*𓇌 𓂋:𓈖",
+                    "trans": "ky rn",
+                    "mean": "another name"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "4",
+            "titleEn": "'kt' (𓎡𓏏) - 'other, another' (Feminine Singular) [Pre-positive]",
+            "descEn": "Feminine demonstrative meaning 'other / another'. It strictly PRECEDES the noun:",
+            "indicatorAr": "مفرد مؤنث: يأتي دائماً قبل الاسم",
+            "subPoints": [
+              {
+                "label": "Word Order",
+                "text": "kt + Noun",
+                "examples": [
+                  {
+                    "h": "𓎡:𓏏 𓐍:𓏏",
+                    "trans": "kt ḫt",
+                    "mean": "another thing"
+                  },
+                  {
+                    "h": "𓎡:𓏏 𓊃:𓏏*𓁐",
+                    "trans": "kt st",
+                    "mean": "another woman"
+                  }
+                ]
+              },
+              {
+                "label": "Usage",
+                "text": "Placed before feminine singular nouns",
+                "examples": [
+                  {
+                    "h": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+                    "trans": "kt dpt",
+                    "mean": "another boat"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "5",
+            "titleEn": "Position Summary",
+            "descEn": "Quick reference guide to demonstrative positions:",
+            "indicatorAr": "ملخص موضع أسماء الإشارة",
+            "subPoints": [
+              {
+                "label": "Proximity ('this')",
+                "text": "pn (m.) and tn (f.) are Post-positive (come AFTER the noun)",
+                "examples": [
+                  {
+                    "h": "𓂋:𓈖 𓊪:𓈖",
+                    "trans": "rn pn",
+                    "mean": "this name"
+                  },
+                  {
+                    "h": "𓊪:𓏏*𓇯 𓏏:𓈖",
+                    "trans": "pt tn",
+                    "mean": "this sky"
+                  }
+                ]
+              },
+              {
+                "label": "Alterity ('other')",
+                "text": "ky (m.) and kt (f.) are Pre-positive (come BEFORE the noun)",
+                "examples": [
+                  {
+                    "h": "𓎡*𓇌 𓃀*𓅱",
+                    "trans": "ky bw",
+                    "mean": "another place"
+                  },
+                  {
+                    "h": "𓎡:𓏏 𓐍:𓏏",
+                    "trans": "kt ḫt",
+                    "mean": "another thing"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓂋:𓈖 𓊪:𓈖",
+            "trans": "rn pn",
+            "meanEn": "This name",
+            "meanAr": "هذا الاسم",
+            "noteEn": "Demonstrative (pn) follows masculine noun.",
+            "noteAr": "اسم الإشارة pn بعد الاسم المذكر"
+          },
+          {
+            "h": "𓊃*𓀀 𓊪:𓈖",
+            "trans": "s pn",
+            "meanEn": "This man",
+            "meanAr": "هذا الرجل",
+            "noteEn": "Demonstrative (pn) follows noun (s).",
+            "noteAr": "اسم الإشارة pn بعد الاسم"
+          },
+          {
+            "h": "𓊪:𓏏*𓇯 𓏏:𓈖",
+            "trans": "pt tn",
+            "meanEn": "This sky",
+            "meanAr": "هذه السماء",
+            "noteEn": "Demonstrative (tn) follows feminine noun.",
+            "noteAr": "اسم الإشارة tn بعد الاسم المؤنث"
+          },
+          {
+            "h": "𓐍:𓏏 𓏏:𓈖",
+            "trans": "ḫt tn",
+            "meanEn": "This thing",
+            "meanAr": "هذا الشيء",
+            "noteEn": "Demonstrative (tn) follows feminine noun.",
+            "noteAr": "اسم الإشارة tn بعد الاسم المؤنث"
+          },
+          {
+            "h": "𓎡*𓇌 𓃀*𓅱",
+            "trans": "ky bw",
+            "meanEn": "Another place",
+            "meanAr": "مكان آخر",
+            "noteEn": "Demonstrative (ky) precedes noun (bw).",
+            "noteAr": "اسم الإشارة ky قبل الاسم المذكر"
+          },
+          {
+            "h": "𓎡*𓇌 𓊃*𓀀",
+            "trans": "ky s",
+            "meanEn": "Another man",
+            "meanAr": "رجل آخر",
+            "noteEn": "Demonstrative (ky) precedes noun (s).",
+            "noteAr": "اسم الإشارة ky قبل الاسم المذكر"
+          },
+          {
+            "h": "𓎡:𓏏 𓐍:𓏏",
+            "trans": "kt ḫt",
+            "meanEn": "Another thing",
+            "meanAr": "شيء آخر",
+            "noteEn": "Demonstrative (kt) precedes noun (ḫt).",
+            "noteAr": "اسم الإشارة kt قبل الاسم المؤنث"
+          },
+          {
+            "h": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+            "trans": "kt dpt",
+            "meanEn": "Another boat",
+            "meanAr": "قارب آخر",
+            "noteEn": "Demonstrative (kt) precedes noun (dpt).",
+            "noteAr": "اسم الإشارة kt قبل الاسم المؤنث"
+          }
+        ]
+      },
+      {
+        "id": "rule-1-3",
+        "ruleNum": 3,
+        "type": "structured",
+        "badgeEn": "Adverb of Place",
+        "badgeAr": "ظرف المكان",
+        "titleEn": "Rule 3: The Adverb 'ỉm' as Adverbial Predicate",
+        "titleAr": "الظرف المكاني ỉm كخبر ظرفي تام",
+        "formula": "[ Subject (المبتدأ) ] + [ ỉm (there / هناك) ]",
+        "summaryEn": "The word 'ỉm' is an adverb of place meaning 'there / therein', functioning directly as the predicate.",
+        "summaryAr": "الكلمة ỉm ظرف مكان بمعنى 'هناك'، وتعمل مباشرة كخبر شبه جملة.",
+        "points": [
+          {
+            "num": "1",
+            "titleEn": "Semantic Meaning: 'there / therein'",
+            "descEn": "Corresponds to English 'there' or 'in that place' without requiring a preposition:",
+            "indicatorAr": "المعنى: هناك / فيها",
+            "subPoints": [
+              {
+                "label": "1. Meaning",
+                "text": "Refers to a place previously mentioned or understood",
+                "examples": [
+                  {
+                    "h": "𓇋*𓅓",
+                    "trans": "ỉm",
+                    "mean": "there / in that place"
+                  }
+                ]
+              },
+              {
+                "label": "2. Form",
+                "text": "Written with flowering reed and owl",
+                "examples": [
+                  {
+                    "h": "𓇋*𓅓",
+                    "trans": "ỉm",
+                    "mean": "adverb of place"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "titleEn": "Syntactic Function as Predicate",
+            "descEn": "Functions as a complete Adverbial Predicate in non-verbal sentences:",
+            "indicatorAr": "الوظيفة: خبر شبه جملة تام",
+            "subPoints": [
+              {
+                "label": "1. Position",
+                "text": "Follows the Subject directly",
+                "examples": [
+                  {
+                    "h": "𓊃*𓀀 𓇋*𓅓",
+                    "trans": "s ỉm",
+                    "mean": "a man is there"
+                  }
+                ]
+              },
+              {
+                "label": "2. Predicate Role",
+                "text": "Replaces prepositional phrases like 'in that place'",
+                "examples": [
+                  {
+                    "h": "𓂋:𓂝*𓇳 𓇋*𓅓",
+                    "trans": "rʿ ỉm",
+                    "mean": "Re is there"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "h": "𓊃*𓀀 𓇋*𓅓",
+            "trans": "s ỉm",
+            "meanEn": "A man is there",
+            "meanAr": "رجلٌ هناك",
+            "noteEn": "Subject (s) + Adverbial Predicate (ỉm).",
+            "noteAr": "مبتدأ (رجل) + خبر ظرفي (هناك)"
+          },
+          {
+            "h": "𓂋:𓂝*𓇳 𓇋*𓅓",
+            "trans": "rʿ ỉm",
+            "meanEn": "Re is there",
+            "meanAr": "الإله رع هناك",
+            "noteEn": "Subject (rʿ) + Adverb of place (ỉm).",
+            "noteAr": "مبتدأ (رع) + خبر ظرفي (هناك)"
+          },
+          {
+            "h": "𓏞*𓀀 𓇋*𓅓",
+            "trans": "sš ỉm",
+            "meanEn": "The scribe is there",
+            "meanAr": "الكاتب هناك",
+            "noteEn": "Subject (sš) + Adverb of place (ỉm).",
+            "noteAr": "مبتدأ (الكاتب) + خبر ظرفي (هناك)"
+          }
+        ]
+      }
+    ]
+  },
+  "vocabulary": {
+    "lesson": "الدرس الأول",
+    "lessonEn": "Lesson I",
+    "words": [
+      {
+        "h": "𓅓",
+        "trans": "m",
+        "meanEn": "in, with, from",
+        "meanAr": "في، بواسطة، من"
+      },
+      {
+        "h": "𓈖",
+        "trans": "n",
+        "meanEn": "to, for (persons)",
+        "meanAr": "إلى، لـ (للأشخاص)"
+      },
+      {
+        "h": "𓂋",
+        "trans": "r",
+        "meanEn": "to, towards (places)",
+        "meanAr": "إلى، نحو (للأماكن)"
+      },
+      {
+        "h": "𓊪:𓈖",
+        "trans": "pn",
+        "meanEn": "this (masculine)",
+        "meanAr": "هذا (مذكر)"
+      },
+      {
+        "h": "𓏏:𓈖",
+        "trans": "tn",
+        "meanEn": "this (feminine)",
+        "meanAr": "هذه (مؤنث)"
+      },
+      {
+        "h": "𓎡*𓇌",
+        "trans": "ky",
+        "meanEn": "other, another (masc.)",
+        "meanAr": "آخر (مذكر)"
+      },
+      {
+        "h": "𓎡:𓏏",
+        "trans": "kt",
+        "meanEn": "other, another (fem.)",
+        "meanAr": "أخرى (مؤنث)"
+      },
+      {
+        "h": "𓇋*𓅓",
+        "trans": "ỉm",
+        "meanEn": "there, therein",
+        "meanAr": "هناك، فيها"
+      },
+      {
+        "h": "𓃀*𓅱",
+        "trans": "bw",
+        "meanEn": "place",
+        "meanAr": "مكان"
+      },
+      {
+        "h": "𓐍:𓏏",
+        "trans": "ḫt",
+        "meanEn": "thing",
+        "meanAr": "شيء"
+      },
+      {
+        "h": "𓊪:𓏏*𓎛",
+        "trans": "Ptḥ",
+        "meanEn": "Ptah (god)",
+        "meanAr": "الإله بتاح"
+      },
+      {
+        "h": "𓇋*𓅱",
+        "trans": "ỉw",
+        "meanEn": "is, are (particle)",
+        "meanAr": "أداة خبرية توكيدية"
+      },
+      {
+        "h": "𓂋:𓈖",
+        "trans": "rn",
+        "meanEn": "name",
+        "meanAr": "اسم"
+      },
+      {
+        "h": "𓆓:𓂧",
+        "trans": "ḏd",
+        "meanEn": "say, speak",
+        "meanAr": "يقول"
+      },
+      {
+        "h": "𓎛:𓈖*𓂝",
+        "trans": "ḥnʿ",
+        "meanEn": "together with, and",
+        "meanAr": "مع، بصحبة"
+      },
+      {
+        "h": "𓉔:𓈖",
+        "trans": "hn",
+        "meanEn": "box, chest; command",
+        "meanAr": "صندوق، أمر"
+      },
+      {
+        "h": "𓂝:𓂋*𓈎",
+        "trans": "ʿrḳ",
+        "meanEn": "swear; bind",
+        "meanAr": "يقسم، يربط"
+      },
+      {
+        "h": "𓋴*𓆑:𓏏",
+        "trans": "sft",
+        "meanEn": "slaughter, butcher",
+        "meanAr": "يذبح"
+      },
+      {
+        "h": "𓊪:𓏏*𓂋",
+        "trans": "ptr",
+        "meanEn": "behold, see; who?",
+        "meanAr": "انظر، من؟"
+      },
+      {
+        "h": "𓋴*𓈖:𓃀",
+        "trans": "snb",
+        "meanEn": "health, be sound",
+        "meanAr": "صحة، سليم"
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "trans": "hn",
+      "correctH": "𓉔:𓈖",
+      "meanEn": "box, command"
+    },
+    {
+      "trans": "ʿrḳ",
+      "correctH": "𓂝:𓂋*𓈎",
+      "meanEn": "swear, bind"
+    },
+    {
+      "trans": "grḥ",
+      "correctH": "𓎼:𓂋*𓎛*𓄛",
+      "meanEn": "night"
+    },
+    {
+      "trans": "sft",
+      "correctH": "𓋴*𓆑:𓏏",
+      "meanEn": "slaughter"
+    },
+    {
+      "trans": "ptr",
+      "correctH": "𓊪:𓏏*𓂋",
+      "meanEn": "behold, see"
+    },
+    {
+      "trans": "snb",
+      "correctH": "𓋴*𓈖:𓃀",
+      "meanEn": "health"
+    },
+    {
+      "trans": "ỉʿḥ",
+      "correctH": "𓇋:𓂝*𓎛:𓇹",
+      "meanEn": "moon"
+    },
+    {
+      "trans": "wỉ3",
+      "correctH": "𓅱*𓇋*𓄿*𓊛",
+      "meanEn": "sacred bark"
+    },
+    {
+      "trans": "dpt",
+      "correctH": "𓂧*𓊪:𓏏*𓊛",
+      "meanEn": "boat"
+    },
+    {
+      "trans": "rn",
+      "correctH": "𓂋:𓈖",
+      "meanEn": "name"
+    }
+  ],
+  "typingQuestions": [
+    {
+      "id": 1,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓅓 𓊪:𓏏*𓇯",
+      "trans": "m pt",
+      "meanEn": "In the sky",
+      "meanAr": "في السماء",
+      "hint": "Preposition m (in) + noun pt (sky)"
+    },
+    {
+      "id": 2,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓅓 𓂧*𓊪:𓏏*𓊛",
+      "trans": "m dpt",
+      "meanEn": "In a boat",
+      "meanAr": "في قارب",
+      "hint": "Preposition m (in) + noun dpt (boat)"
+    },
+    {
+      "id": 3,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓈖 𓊃*𓀀",
+      "trans": "n s",
+      "meanEn": "To a man",
+      "meanAr": "إلى رجل",
+      "hint": "Preposition n (to, for persons) + s (man)"
+    },
+    {
+      "id": 4,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓈖 𓊪:𓏏*𓎛",
+      "trans": "n Ptḥ",
+      "meanEn": "To Ptah",
+      "meanAr": "إلى الإله بتاح",
+      "hint": "Preposition n used for deities and persons"
+    },
+    {
+      "id": 5,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓂋 𓈙:𓈘",
+      "trans": "r š",
+      "meanEn": "To a lake",
+      "meanAr": "إلى بحيرة",
+      "hint": "Preposition r (to, for places/inanimates) + š (lake)"
+    },
+    {
+      "id": 6,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓂋 𓊪:𓏏*𓇯",
+      "trans": "r pt",
+      "meanEn": "To the sky",
+      "meanAr": "إلى السماء",
+      "hint": "Preposition r for direction towards places/sky"
+    },
+    {
+      "id": 7,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "trans": "s ḥnʿ st",
+      "meanEn": "A man together with a woman",
+      "meanAr": "رجل مع امرأة",
+      "hint": "Noun + preposition ḥnʿ (together with) + noun"
+    },
+    {
+      "id": 8,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓂋:𓈖 𓊪:𓈖",
+      "trans": "rn pn",
+      "meanEn": "This name",
+      "meanAr": "هذا الاسم",
+      "hint": "Post-positive demonstrative pn follows masculine noun"
+    },
+    {
+      "id": 9,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓊃:𓏏*𓁐 𓏏:𓈖",
+      "trans": "st tn",
+      "meanEn": "This woman",
+      "meanAr": "هذه المرأة",
+      "hint": "Post-positive demonstrative tn follows feminine noun"
+    },
+    {
+      "id": 10,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓎡*𓇌 𓊃*𓀀",
+      "trans": "ky s",
+      "meanEn": "Another man",
+      "meanAr": "رجل آخر",
+      "hint": "Pre-positive demonstrative ky precedes masculine noun"
+    },
+    {
+      "id": 11,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "trans": "kt dpt",
+      "meanEn": "Another boat",
+      "meanAr": "قارب آخر",
+      "hint": "Pre-positive demonstrative kt precedes feminine noun"
+    },
+    {
+      "id": 12,
+      "lesson": "الدرس الأول",
+      "lessonEn": "Lesson I",
+      "h": "𓇋*𓅱 𓊃*𓀀 𓇋*𓅓",
+      "trans": "ỉw s ỉm",
+      "meanEn": "A man is there.",
+      "meanAr": "رجلٌ هناك",
+      "hint": "Sentence particle ỉw + subject s + adverbial predicate ỉm"
+    }
+  ],
+  "quizQuestions": []
+}

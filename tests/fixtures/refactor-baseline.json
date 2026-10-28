@@ -1,0 +1,59 @@
+{
+  "commit": "cfb9a60",
+  "datasets": {
+    "hieroglyphsData": {
+      "sha256": "2861c04e1b6d213ef9e2d1d7cf590dce44e9c7213400a15c824c261f67781afc",
+      "count": 24
+    },
+    "grammarData": {
+      "sha256": "6efa9550297068cf4c54c0e048714c650678dbb00a1d7752fabe47fa883ba0cb",
+      "count": 3
+    },
+    "vocabularyData": {
+      "sha256": "85d6682ddb0a062d560cc187b0de1054ee7299de052f37a970b8f6991d75a22f",
+      "count": 3
+    },
+    "exercisesData": {
+      "sha256": "07d1918cfed2bfacf8e01bc76b35252a54a836f2500463ec088bc1f35b9cd4e9",
+      "count": 3
+    },
+    "typingQuestionsData": {
+      "sha256": "cefafb93736aed31970f56237353973e2cbcf5f51ae9d7dacd21919328c992a8",
+      "count": 25
+    },
+    "comprehensiveQuizData": {
+      "sha256": "c0d01ba3e4249b7872c896c65b7c6714057b3000210bffbff0345b51f0040690",
+      "count": 36
+    },
+    "phonogramsData": {
+      "sha256": "ad09805efe385c73d1011e19ffe9c43d1270da441d99306169c20efdc3d7acbf",
+      "count": 38
+    }
+  },
+  "sourceFiles": {
+    "src/app/hooks.js": "7c963c047e00543ad678fc187ba8ff8227190edf43758585cc28f459f0996629",
+    "src/components/Icon.jsx": "01040d76ede0bb1f4dfd67722743025f26ca6c95276395866ad89ffaf75a190c",
+    "src/lib/hieroglyphs.js": "6e1327a998919c9438408c0b92b456baa4961fcafc6dcf31229cc346f9c05e54",
+    "src/components/HieroglyphBlock.jsx": "61dd80aa5407254e73dd9a64470090a3440071435516dcbc05b9d7928dd20704",
+    "src/components/DrawingPad.jsx": "a25ceacfc5ecde15595a521c16e1211bc7e63770a1bbec699011d482f0aa2552",
+    "src/sections/PhonogramsSection.jsx": "96f26c9d6bf6e3bfc5b72d89743a9bfae667b37278df9e580f1a04b2994b820c",
+    "src/components/VocabularyGlyph.jsx": "233a01f8ecc39dd93a37315609ba9971ff34683390158976854b2348f7a54e16",
+    "src/lib/search.js": "68b05e8f7f2f8abfb75bea29ea0f9cc19b4a4f507ba8b4dcd028580fa7b91321",
+    "src/sections/VocabularySection.jsx": "99798f75bf9c0bb59e845e037df9c3e40e5788b165fe10cc1867d1696bfed4a1",
+    "src/components/IllustrativeExamplesBlock.jsx": "3e0f200b3e233b4252b532014d61a0d7143b42f9baf6b5fd245c663f3ad98db0",
+    "src/sections/GrammarSection.jsx": "4dac6e1f0403efb1ddac90c841c5054e9a39d99514a5d233b67efe48ac9d4412",
+    "src/sections/TypingExercise.jsx": "883acd1d167ede45a4aa834f566609ae2bb704a85d08eb238d93715a529232be",
+    "src/sections/QuizSection.jsx": "16dc35f0b24349a1cff608f42017044b263f1c0506e9d0e5e9fa0e36efb237e6",
+    "src/sections/ExercisesSection.jsx": "fb9524fbce7671263689cd281cc37f9a01feeaec4c79891420e694cfc82668f0",
+    "src/components/SignCardFace.jsx": "6ecc0108d1094904959b79670084e3876a9967dda6a9447dadbedf6583af5d5a",
+    "src/components/legacy-illustrations.jsx": "5f709a34844c7f56c4e51934b026984db79cc27ca86559c6d7bb9ea8720d19b6",
+    "src/components/LandingHero.jsx": "98b16d5165a6bef03c7e92933a682cf8e4cc4beb592977faf6438fe84d6ff2c3",
+    "src/lib/exercise-navigation.js": "dedc5fb2a3414e252e17aeb881faff821a28ce4e6a43f2fbe4bf6b2f1380b5a8",
+    "src/components/ContentDrawer.jsx": "6842a6a20f4e2e2d850003d7b3a999103856f3aafd6b1c51ac43d42362e0af92",
+    "src/app/MainApp.jsx": "f991057c564af7c4578992d7bb5adbf59a3e11a800bdf7b5f1e837340dc0a13f",
+    "src/components/ErrorBoundary.jsx": "daff627af3a717d5e6e4b61dc3a2d09190bb5f1c8f4afe4678bddc8a7955d04d",
+    "src/app/App.jsx": "2f404778a1b2be392268e2fa3eacbfb1ae20272d96cffb87fad3728b1ea5958b",
+    "src/app/mount.jsx": "b6aa61d1c9d578226e6d9f6e5452bc42c9d4c3a57f4f9ada3c1e4b18b8b70cce"
+  },
+  "cssSha256": "f31ab26c648e54be074046ec86ec37f56a40089e0ddadc371e8c4a2cc52a6746"
+}

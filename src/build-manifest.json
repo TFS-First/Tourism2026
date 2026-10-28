@@ -1,0 +1,107 @@
+[
+  {
+    "kind": "code",
+    "path": "src/app/hooks.js"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/Icon.jsx"
+  },
+  {
+    "kind": "data",
+    "name": "hieroglyphsData",
+    "path": "src/data/shared/hieroglyphs.json"
+  },
+  {
+    "kind": "lessons"
+  },
+  {
+    "kind": "data",
+    "name": "phonogramsData",
+    "path": "src/data/shared/phonograms.json"
+  },
+  {
+    "kind": "code",
+    "path": "src/lib/hieroglyphs.js"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/HieroglyphBlock.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/DrawingPad.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/sections/PhonogramsSection.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/VocabularyGlyph.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/lib/search.js"
+  },
+  {
+    "kind": "code",
+    "path": "src/sections/VocabularySection.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/IllustrativeExamplesBlock.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/sections/GrammarSection.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/sections/TypingExercise.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/sections/QuizSection.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/sections/ExercisesSection.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/SignCardFace.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/legacy-illustrations.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/LandingHero.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/lib/exercise-navigation.js"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/ContentDrawer.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/app/MainApp.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/ErrorBoundary.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/app/App.jsx"
+  },
+  {
+    "kind": "code",
+    "path": "src/app/mount.jsx"
+  }
+]
