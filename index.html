@@ -716,8 +716,8 @@ const grammarData = [
                 { h: "𓉐:𓏤", trans: "pr", mean: "house" }
               ] },
               { label: "Function", text: "Provides direct visual and conceptual meaning", examples: [
-                { h: "𓇳:𓏤", trans: "rʿ", mean: "sun" },
-                { h: "𓉐:𓏤", trans: "pr", mean: "house" }
+                { h: "𓂋:𓏤", trans: "r", mean: "mouth" },
+                { h: "𓇿:𓏤", trans: "t3", mean: "land, earth" }
               ] }
             ]
           },
@@ -737,7 +737,7 @@ const grammarData = [
           }
         ],
         examples: [
-          { h: "𓂋:𓂝*𓇳:𓏤", trans: "rʿ", meanEn: "Sun (the celestial body itself)", meanAr: "قرص الشمس نفسه", noteEn: "The stroke (𓏤) marks the actual sun disk.", noteAr: "الشرطة تؤكد أن المعنى هو قرص الشمس" },
+          { h: "𓇳:𓏤", trans: "rʿ", meanEn: "Sun (the celestial body itself)", meanAr: "قرص الشمس نفسه", noteEn: "The stroke (𓏤) marks the actual sun disk.", noteAr: "الشرطة تؤكد أن المعنى هو قرص الشمس" },
           { h: "𓉐:𓏤", trans: "pr", meanEn: "House (the building itself)", meanAr: "البيت الحقيقي", noteEn: "The stroke marks the house as an actual building.", noteAr: "الشرطة تدل على المبنى نفسه" },
           { h: "𓊖:(𓏏*𓏤)", trans: "nỉwt", meanEn: "Town, city", meanAr: "المدينة", noteEn: "Feminine words take loaf 't' before the stroke.", noteAr: "التاء قبل الشرطة للكلمات المؤنثة" },
           { h: "𓂋:𓏤", trans: "r", meanEn: "Mouth (the physical organ)", meanAr: "عضو الفم نفسه", noteEn: "Stroke confirms the actual mouth.", noteAr: "الشرطة تؤكد معنى الفم المادي" }
@@ -2830,6 +2830,25 @@ const IllustrativeExamplesBlock = ({ examples }) => {
     }));
   };
 
+  // Dynamic hieroglyph sizing: large if few symbols, compact if long sentence to never overflow
+  const getExampleHieroglyphSize = (hCode) => {
+    if (!hCode) return "normal";
+    const words = hCode.trim().split(/\s+/);
+    const cleanSigns = hCode.replace(/[\s\:\*\(\)\,\.\=]/g, '');
+    const signCount = cleanSigns.length;
+
+    if (words.length === 1) {
+      return "large";
+    }
+    if (words.length <= 2 && signCount <= 5) {
+      return "large";
+    }
+    if (words.length <= 3 && signCount <= 8) {
+      return "normal";
+    }
+    return "compact";
+  };
+
   return (
     <div className="mt-4 pt-4 border-t border-stone-200">
       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -2848,13 +2867,15 @@ const IllustrativeExamplesBlock = ({ examples }) => {
           className="text-xs font-semibold px-2.5 py-1.5 rounded-xl border border-amber-300/80 bg-amber-50 hover:bg-amber-100 text-amber-900 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
         >
           <Icon name={isAllRevealed ? "EyeOff" : "Eye"} size={14} className="text-amber-700" />
-          <span>{isAllRevealed ? "إخفاء الكل (وضع الاختبار الذاتي)" : "إظهار كل الإجابات"}</span>
+          <span>{isAllRevealed ? "إخفاء كل الإجابات (اختبار ذاتي)" : "إظهار كل الإجابات"}</span>
         </button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 md:gap-4 w-full" dir="ltr">
         {examples.map((ex, i) => {
           const isRevealed = !!revealedMap[i];
+          const hieroSize = getExampleHieroglyphSize(ex.h);
+
           return (
             <div 
               key={i}
@@ -2867,27 +2888,18 @@ const IllustrativeExamplesBlock = ({ examples }) => {
                   : 'bg-white border-amber-300 shadow-md ring-1 ring-amber-400/25'
               }`}
             >
-              {/* Hieroglyphic quadrat sentence - ALWAYS VISIBLE with compact sizing so it never breaks out */}
-              <div className="w-full flex items-center justify-center p-2 sm:p-2.5 bg-stone-50/90 rounded-xl border border-stone-200/80 mb-2.5 min-h-[50px] overflow-hidden">
-                <HieroglyphBlock code={ex.h} size="compact" />
+              {/* Hieroglyphic quadrat sentence - Dynamic sizing: large for short words, compact for long sentences */}
+              <div className="w-full flex items-center justify-center p-2.5 sm:p-3 bg-stone-50/90 rounded-xl border border-stone-200/80 mb-2.5 min-h-[56px] sm:min-h-[64px] overflow-hidden">
+                <HieroglyphBlock code={ex.h} size={hieroSize} />
               </div>
 
               {/* Body: Hidden vs Revealed */}
               {!isRevealed ? (
-                <div className="flex-1 flex flex-col items-center justify-center py-3 sm:py-4 px-2 text-center select-none">
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleSingle(i);
-                    }}
-                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-50 to-amber-100/90 hover:from-amber-100 hover:to-amber-200 border border-amber-300/80 text-amber-900 text-xs font-bold transition-all shadow-xs group cursor-pointer"
-                  >
-                    <Icon name="Eye" size={15} className="text-amber-600 group-hover:scale-110 transition-transform" />
-                    <span>إظهار النطق والمعنى</span>
-                  </button>
-                  <span className="text-[11px] text-stone-400 mt-2 font-medium" dir="rtl">
-                    اقرأ الرموز وخمّن المعنى أولاً، ثم اضغط للتحقق 💡
-                  </span>
+                <div className="flex-1 flex items-center justify-center py-5 sm:py-6 px-3 text-center select-none">
+                  <p className="text-xs sm:text-sm text-stone-500 font-medium hover:text-amber-700 transition-colors flex items-center justify-center gap-1.5 leading-relaxed" dir="rtl">
+                    <span>💡</span>
+                    <span>اقرأ الرموز وخمّن المعنى أولاً، ثم اضغط للتحقق</span>
+                  </p>
                 </div>
               ) : (
                 <div className="flex-1 flex flex-col justify-between">
