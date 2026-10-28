@@ -31,6 +31,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
   <style>
+    .content-context{display:flex;align-items:center;gap:12px;min-height:39px;padding-top:7px;line-height:1.5}.content-open{display:flex;align-items:center;gap:7px;flex-shrink:0;color:#257b80;font-size:12px;font-weight:700;background:#e7eee6;border:1px solid #c4d4c5;border-radius:9px;padding:7px 12px;min-height:34px}.content-location{display:flex;align-items:center;gap:9px;min-width:0;font-size:11px;color:#768277;overflow:hidden;white-space:nowrap}.content-location b{font-weight:600;color:#3c5d53;overflow:hidden;text-overflow:ellipsis}.content-location span{overflow:hidden;text-overflow:ellipsis}.content-context .context-count{font-family:Georgia,serif;font-size:10px;margin-right:auto;color:#9b865a;white-space:nowrap}.content-drawer{position:fixed;inset:0 0 0 auto;margin:0;width:min(440px,95vw);max-width:none;height:100dvh;max-height:none;padding:0;background:#faf7ed;color:#233e3b;border:0;border-left:1px solid #c9b68055;box-shadow:-12px 0 70px #071d2022;overflow:hidden}.content-drawer[open]{display:flex;flex-direction:column}.content-drawer::backdrop{background:#142f3559;backdrop-filter:blur(4px)}.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:26px 25px 19px;gap:15px}.drawer-head h2{font-size:21px;font-weight:700;margin-top:5px}.drawer-eyebrow{font-size:10px;color:#a5824b}.drawer-close{width:38px;height:38px;display:grid;place-items:center;background:#eeebdf;border-radius:50%;flex-shrink:0}.drawer-search{margin:0 24px;display:flex;align-items:center;gap:10px;border:1px solid #cbbd9d;border-radius:12px;padding:0 12px;background:#fffdf7;color:#257b80}.drawer-search:focus-within{outline:2px solid #257b802a}.drawer-search input{background:transparent;width:100%;min-width:0;padding:12px 0;border:0;outline:0;font:inherit;font-size:13px;color:#233e3b}.drawer-count{padding:16px 25px 12px;display:flex;align-items:center;gap:10px;font-size:10px;color:#8d7b55}.drawer-count span{color:#939b8c;margin-right:auto}.drawer-list{overflow-y:auto;overscroll-behavior:contain;flex:1;min-height:0;padding:0 18px 24px;scrollbar-width:thin;scrollbar-color:#bac8bc transparent}.drawer-group{border:1px solid #ded9c9;border-radius:13px;background:#fffdf8;margin-bottom:9px;overflow:hidden}.drawer-group.is-current{border-color:#5c9a91;background:#f3f8f0}.drawer-group-head{display:flex;align-items:stretch}.drawer-destination{display:flex;align-items:center;gap:11px;text-align:right;padding:13px 12px;flex:1;min-width:0;line-height:1.7}.drawer-destination>span:nth-child(2){min-width:0}.drawer-destination b{font-size:12px;display:block;font-weight:700;overflow-wrap:anywhere}.drawer-destination small{font-size:10px;display:block;color:#8b9182;margin-top:2px}.drawer-index{display:grid;place-items:center;width:29px;height:29px;flex-shrink:0;border-radius:9px;background:#f0eadc;color:#a5824b;font:13px Georgia,serif}.is-current .drawer-index{background:#257b80;color:#fff9ee}.drawer-expand{width:44px;min-height:46px;display:grid;place-items:center;color:#7b8b78;flex-shrink:0}.drawer-current-dot{width:6px;height:6px;background:#257b80;border-radius:50%;margin-right:auto;flex-shrink:0}.drawer-children{padding:2px 17px 12px 10px;border-top:1px solid #e0e7d7;margin:0 10px}.drawer-children button{display:grid;grid-template-columns:1fr auto;gap:3px 8px;width:100%;text-align:right;padding:10px 9px;border-radius:8px;line-height:1.8}.drawer-children button:hover,.drawer-destination:hover{background:#eaf0e3}.drawer-children button>span:first-child{font-size:11px;overflow-wrap:anywhere}.drawer-children small{font-size:9px;color:#8b9182;grid-column:1;overflow-wrap:anywhere}.drawer-child-arrow{grid-column:2;grid-row:1;color:#a89468}.drawer-foot{padding:15px 25px;border-top:1px solid #d5c9ab55;color:#9c967b;font-size:10px;background:#faf7ed}.drawer-empty{padding:35px 15px;text-align:center;color:#8c927f;font-size:12px}.content-drawer button:focus-visible,.content-open:focus-visible{outline:2px solid #257b80;outline-offset:-3px}.content-target,[data-nav-target]{scroll-margin-top:var(--study-content-offset,190px)}.lesson-quick-select{display:flex;gap:9px;align-items:center;padding:12px 15px;background:#fffdf6;border:1px solid #dfd6bd;border-radius:13px;color:#426056;font-size:12px}.lesson-quick-select select{flex:1;min-width:0;background:transparent;border:0;font:inherit;color:#257b80;padding:6px;outline-offset:3px}
+    @media(max-width:600px){.content-context{gap:9px;min-height:38px;padding-top:5px}.content-open{font-size:11px;padding:6px 10px}.content-location{font-size:10px;gap:6px}.content-context .context-count{display:none}.content-drawer{inset:auto 0 0;width:100%;height:85dvh;max-height:85dvh;border-radius:24px 24px 0 0;border:0;border-top:1px solid #d0bd94;padding-top:12px}.content-drawer:before{content:'';position:absolute;top:8px;left:calc(50% - 22px);width:44px;height:4px;border-radius:4px;background:#c9ccb9}.drawer-head{padding:15px 20px}.drawer-head h2{font-size:19px}.drawer-search{margin:0 19px}.drawer-search input{font-size:16px;padding:11px 0}.drawer-count{padding-inline:20px}.drawer-list{padding-inline:13px}.drawer-foot{padding-bottom:max(16px,env(safe-area-inset-bottom))}}
+
     .study-topbar{max-height:90px;overflow:hidden;opacity:1;transition:max-height .22s ease,min-height .22s ease,opacity .18s ease}.study-header.is-compact .study-topbar{min-height:0;max-height:0;opacity:0;pointer-events:none}.study-header.is-compact .study-header-inner{padding-top:7px;padding-bottom:7px}.study-tab-row{display:flex;align-items:center;gap:9px}.study-tab-row .study-tabs{flex:1;min-width:0}.study-search-toggle{width:44px;height:44px;flex-shrink:0;display:grid;place-items:center;border:1px solid #b9c8bd;border-radius:12px;background:#fffcf5;color:#257b80;position:relative}.study-search-toggle:hover,.study-search-toggle[aria-expanded="true"]{background:#e4efea;border-color:#257b80}.study-search-dot{position:absolute;top:6px;right:6px;width:6px;height:6px;border-radius:50%;background:#b48a46}.study-quick-search{display:flex;align-items:center;gap:10px;margin-top:9px;background:#fffdf7;border:1px solid #c5b48666;border-radius:12px;padding:5px 12px;color:#257b80}.study-quick-search input{width:100%;min-width:0;background:transparent;border:0;outline:0;color:#233e3b;font:inherit;font-size:13px;padding:9px 0;line-height:1.5}.study-quick-search:focus-within{outline:2px solid #257b8040}.study-search-clear{min-width:34px;min-height:38px;display:grid;place-items:center;color:#847b62}.study-search-open .vocabulary-toolbar{display:none}
     @media(max-width:600px){.study-header.is-compact .study-header-inner{padding-top:5px;padding-bottom:5px}.study-tab-row{gap:6px}.study-search-toggle{width:38px;height:44px;border-radius:10px}.study-quick-search{padding:4px 9px}.study-quick-search input{font-size:16px}.study-header.is-compact .study-tab{min-height:44px;padding-block:5px}.study-header.is-compact .study-tabs{padding:3px}}
     @media(prefers-reduced-motion:reduce){.study-topbar{transition:none}}
@@ -2615,6 +2618,7 @@ const PhonogramsSection = () => {
           return (
             <div
               key={item.id}
+              data-nav-target={`phonogram-${item.id}`} data-content-id="learn-phonograms" data-content-detail={item.trans}
               onClick={() => toggleReveal(item.id)}
               className={`group bg-white rounded-2xl border transition-all duration-200 cursor-pointer overflow-hidden relative flex flex-col justify-between ${
                 isRevealed 
@@ -2847,6 +2851,7 @@ const VocabularySection = ({ searchQuery, setSearchQuery }) => {
     return (
       <div
         key={cardKey}
+        data-nav-target={`word-${cardKey}`}
         onClick={() => toggleWordReveal(cardKey)}
         className={`group flex flex-col items-center text-center justify-between p-4 rounded-2xl w-full transition-all cursor-pointer shadow-xs select-none min-h-[145px] sm:min-h-[155px] overflow-hidden ${
           isRevealed
@@ -3005,7 +3010,7 @@ const VocabularySection = ({ searchQuery, setSearchQuery }) => {
         )
       ) : (
         vocabularyData.map((section, secIdx) => (
-          <div key={secIdx} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
+          <div key={secIdx} data-nav-target={`vocab-${secIdx}`} data-content-id={`vocab-${secIdx}`} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
             <div className="bg-gradient-to-l from-amber-50/80 via-stone-100 to-stone-100 border-b border-stone-200 p-4 md:p-5 flex items-center justify-between">
               <h2 className="text-lg sm:text-xl font-bold text-slate-800">
                 كلمات {section.lesson}
@@ -3175,10 +3180,7 @@ const IllustrativeExamplesBlock = ({ examples }) => {
   );
 };
 
-const GrammarSection = () => {
-  const [selectedLessonTab, setSelectedLessonTab] = useState('all');
-  // All lessons start folded/collapsed by default on first entry as requested
-  const [expandedLessons, setExpandedLessons] = useState({});
+const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLessons, setExpandedLessons }) => {
 
   const toggleLesson = (id) => {
     setExpandedLessons(prev => ({ ...prev, [id]: !prev[id] }));
@@ -3243,59 +3245,13 @@ const GrammarSection = () => {
         </div>
       </div>
 
-      {/* Quick Lesson Filter Tabs - English on top, Arabic underneath */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-2.5 mb-2 sm:mb-3 max-w-4xl mx-auto" dir="ltr">
-        <button 
-          onClick={() => handleFilterChange('all')} 
-          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl transition-all flex flex-col items-center justify-center text-center ${
-            selectedLessonTab === 'all' 
-              ? 'bg-amber-600 text-white shadow-md' 
-              : 'bg-white border border-stone-200 text-stone-700 hover:bg-stone-50'
-          }`}
-        >
-          <span className="font-bold text-xs sm:text-sm whitespace-nowrap">🌟 All Lessons</span>
-          <span className="text-[11px] sm:text-xs opacity-80 whitespace-nowrap font-medium" dir="rtl">عرض جميع الدروس</span>
-        </button>
-        <button 
-          onClick={() => handleFilterChange('lesson1')} 
-          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl transition-all flex flex-col items-center justify-center text-center ${
-            selectedLessonTab === 'lesson1' 
-              ? 'bg-amber-600 text-white shadow-md' 
-              : 'bg-white border border-stone-200 text-stone-700 hover:bg-stone-50'
-          }`}
-        >
-          <span className="font-bold text-xs sm:text-sm whitespace-nowrap">📘 Lesson I</span>
-          <span className="text-[11px] sm:text-xs opacity-80 whitespace-nowrap font-medium" dir="rtl">حروف الجر وأسماء الإشارة</span>
-        </button>
-        <button 
-          onClick={() => handleFilterChange('lesson2')} 
-          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl transition-all flex flex-col items-center justify-center text-center ${
-            selectedLessonTab === 'lesson2' 
-              ? 'bg-amber-600 text-white shadow-md' 
-              : 'bg-white border border-stone-200 text-stone-700 hover:bg-stone-50'
-          }`}
-        >
-          <span className="font-bold text-xs sm:text-sm whitespace-nowrap">🏛️ Lesson II</span>
-          <span className="text-[11px] sm:text-xs opacity-80 whitespace-nowrap font-medium" dir="rtl">الجمل الاسمية والفعلية</span>
-        </button>
-        <button 
-          onClick={() => handleFilterChange('lesson3')} 
-          className={`py-2 sm:py-2.5 px-2 sm:px-3 rounded-xl transition-all flex flex-col items-center justify-center text-center ${
-            selectedLessonTab === 'lesson3' 
-              ? 'bg-amber-600 text-white shadow-md' 
-              : 'bg-white border border-stone-200 text-stone-700 hover:bg-stone-50'
-          }`}
-        >
-          <span className="font-bold text-xs sm:text-sm whitespace-nowrap">⚡ Lesson III</span>
-          <span className="text-[11px] sm:text-xs opacity-80 whitespace-nowrap font-medium" dir="rtl">صيغ الأفعال والمبني للمجهول</span>
-        </button>
-      </div>
+      <label className="lesson-quick-select" htmlFor="grammar-lesson-select"><Icon name="Layers" size={17}/><span>الدرس</span><select id="grammar-lesson-select" value={selectedLessonTab} onChange={e=>handleFilterChange(e.target.value)}><option value="all">عرض جميع الدروس</option>{grammarData.map(g=><option key={g.id} value={g.id}>{g.titleAr}</option>)}</select></label>
 
       {visibleSections.map((section) => (
-        <div key={section.id} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
+        <div key={section.id} data-nav-target={`grammar-${section.id}`} data-content-id={section.id} className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
           {/* Section Accordion Header: Centered Titles & Clickable Sub-badges */}
           <div className="bg-stone-50 border-b border-stone-200 hover:bg-stone-100 transition-colors">
-            <button onClick={() => toggleLesson(section.id)} className="w-full flex items-center justify-between p-3.5 sm:p-4 md:p-5 text-left" dir="ltr">
+            <div role="button" tabIndex={0} aria-expanded={!!expandedLessons[section.id]} onKeyDown={e=>{if(e.target===e.currentTarget&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggleLesson(section.id);}}} onClick={() => toggleLesson(section.id)} className="w-full flex items-center justify-between p-3.5 sm:p-4 md:p-5 text-left cursor-pointer" dir="ltr">
               <div className="flex-1 flex flex-col items-center justify-center text-center gap-1 px-1 sm:px-2">
                 <h2 className="text-base sm:text-xl md:text-2xl font-bold text-slate-800 tracking-tight leading-snug">{section.titleEn}</h2>
                 <span className="text-xs sm:text-sm font-semibold text-stone-500" dir="rtl">{section.titleAr}</span>
@@ -3333,7 +3289,7 @@ const GrammarSection = () => {
                 )}
               </div>
               <Icon name="ChevronDown" className={`text-stone-500 transition-transform duration-300 shrink-0 ml-2 ${expandedLessons[section.id] ? 'rotate-180' : ''}`} size={22} />
-            </button>
+            </div>
           </div>
 
           {/* Section Content */}
@@ -3344,7 +3300,7 @@ const GrammarSection = () => {
                 // Generic Determinatives Grid
                 if (rule.type === 'grid') {
                   return (
-                    <div key={idx} id={rule.id} className="bg-white rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm p-3.5 sm:p-5 md:p-6 space-y-3.5 sm:space-y-4 scroll-mt-20">
+                    <div key={idx} id={rule.id} data-nav-target={rule.id} data-content-id={section.id} data-content-detail={rule.badgeAr || rule.titleAr} className="bg-white rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm p-3.5 sm:p-5 md:p-6 space-y-3.5 sm:space-y-4 scroll-mt-20">
                       {/* Rule Header */}
                       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-100 pb-3">
                         <div className="flex items-center gap-2">
@@ -3384,7 +3340,7 @@ const GrammarSection = () => {
 
                 // Standard Structured Rule (English-First)
                 return (
-                  <div key={idx} id={rule.id} className="bg-white rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm p-3.5 sm:p-5 md:p-6 space-y-3.5 sm:space-y-4 scroll-mt-20">
+                  <div key={idx} id={rule.id} data-nav-target={rule.id} data-content-id={section.id} data-content-detail={rule.badgeAr || rule.titleAr} className="bg-white rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm p-3.5 sm:p-5 md:p-6 space-y-3.5 sm:space-y-4 scroll-mt-20">
                     {/* Rule Top Header */}
                     <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-100 pb-3">
                       <div className="flex items-center gap-2">
@@ -4059,8 +4015,7 @@ const QuizSection = () => {
   );
 };
 
-const ExercisesSection = () => {
-  const [activeExTab, setActiveExTab] = useState('lesson1');
+const ExercisesSection = ({ activeExTab, setActiveExTab }) => {
   const [revealedL1, setRevealedL1] = useState({});
   const [revealedL2, setRevealedL2] = useState({});
   const [revealedL3, setRevealedL3] = useState({});
@@ -4071,37 +4026,10 @@ const ExercisesSection = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-2.5 sm:p-4 md:p-6 mt-2 sm:mt-4 space-y-4 sm:space-y-6">
-      {/* 5 Sub-Tabs - Responsive segmented bar: scrollable on mobile, 5-col on desktop */}
-      <div className="flex overflow-x-auto no-scrollbar gap-1.5 sm:gap-2 mb-3 sm:mb-6 max-w-4xl mx-auto p-1 bg-stone-200/50 sm:bg-transparent rounded-2xl sm:rounded-none sm:grid sm:grid-cols-5" dir="ltr">
-        {[
-          { id: 'lesson1', icon: '✍️', title: 'Lesson I', sub: 'رسم الرموز' },
-          { id: 'lesson2', icon: '🏛️', title: 'Lesson II', sub: 'إعراب الجمل' },
-          { id: 'lesson3', icon: '⚡', title: 'Lesson III', sub: 'الأفعال والمجهول' },
-          { id: 'typing', icon: '⌨️', title: 'Typing', sub: 'تدريب كتابة' },
-          { id: 'quiz', icon: '🏆', title: 'Exam', sub: 'الاختبار الشامل' }
-        ].map(tab => (
-          <button 
-            key={tab.id}
-            onClick={() => setActiveExTab(tab.id)} 
-            className={`shrink-0 sm:shrink py-2 px-3 sm:px-2 rounded-xl transition-all flex items-center sm:flex-col justify-center gap-1.5 sm:gap-0.5 text-center whitespace-nowrap ${
-              activeExTab === tab.id 
-                ? 'bg-amber-600 text-white shadow-md' 
-                : 'bg-white border border-stone-200 text-stone-700 hover:bg-stone-50'
-            }`}
-          >
-            <div className="flex items-center gap-1">
-              <span>{tab.icon}</span>
-              <span className="font-bold text-xs sm:text-sm">{tab.title}</span>
-            </div>
-            <span className={`text-[10px] sm:text-[11px] ${activeExTab === tab.id ? 'text-amber-100' : 'text-stone-400 font-medium'}`} dir="rtl">
-              ({tab.sub})
-            </span>
-          </button>
-        ))}
-      </div>
+      <label className="lesson-quick-select" htmlFor="exercise-content-select"><Icon name="Award" size={17}/><span>التدريب</span><select id="exercise-content-select" value={activeExTab} onChange={e=>setActiveExTab(e.target.value)}>{exerciseNavigation().map(g=><option key={g.id} value={g.id}>{g.label} — {g.detail}</option>)}</select></label>
 
       {activeExTab === 'lesson1' && (
-        <div className="space-y-4 sm:space-y-6">
+        <div data-nav-target="exercise-lesson1" data-content-id="lesson1" className="space-y-4 sm:space-y-6">
           <div className="bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs" dir="ltr">
             <div className="flex items-start gap-2.5 mb-1.5">
               <span className="p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs">
@@ -4125,7 +4053,7 @@ const ExercisesSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6">
             {exercisesData.lesson1.map((item, idx) => (
-              <div key={idx} className="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm flex flex-col justify-between">
+              <div key={idx} data-nav-target={`exercise-lesson1-${idx}`} data-content-id="lesson1" data-content-detail={item.trans} className="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm flex flex-col justify-between">
                 <div className="flex items-center justify-between border-b border-stone-100 pb-3 mb-4" dir="ltr">
                   <div>
                     <span className="text-xl sm:text-2xl font-serif text-amber-700 font-bold block">{item.trans}</span>
@@ -4156,7 +4084,7 @@ const ExercisesSection = () => {
       )}
 
       {activeExTab === 'lesson2' && (
-        <div className="space-y-4 sm:space-y-6">
+        <div data-nav-target="exercise-lesson2" data-content-id="lesson2" className="space-y-4 sm:space-y-6">
           <div className="bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs" dir="ltr">
             <div className="flex items-start gap-2.5 mb-1.5">
               <span className="p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs">
@@ -4180,7 +4108,7 @@ const ExercisesSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6">
             {exercisesData.lesson2.map((item, idx) => (
-              <div key={idx} onClick={() => toggleRevealL2(idx)} className="group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between">
+              <div key={idx} data-nav-target={`exercise-lesson2-${idx}`} data-content-id="lesson2" data-content-detail={item.trans} onClick={() => toggleRevealL2(idx)} className="group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between">
                 <div className="text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100">
                   <HieroglyphBlock code={item.h} size="large" />
                 </div>
@@ -4208,7 +4136,7 @@ const ExercisesSection = () => {
       )}
 
       {activeExTab === 'lesson3' && (
-        <div className="space-y-4 sm:space-y-6">
+        <div data-nav-target="exercise-lesson3" data-content-id="lesson3" className="space-y-4 sm:space-y-6">
           <div className="bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs" dir="ltr">
             <div className="flex items-start gap-2.5 mb-1.5">
               <span className="p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs">
@@ -4232,7 +4160,7 @@ const ExercisesSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6">
             {exercisesData.lesson3.map((item, idx) => (
-              <div key={idx} onClick={() => toggleRevealL3(idx)} className="group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between">
+              <div key={idx} data-nav-target={`exercise-lesson3-${idx}`} data-content-id="lesson3" data-content-detail={item.trans} onClick={() => toggleRevealL3(idx)} className="group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between">
                 <div className="text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100">
                   <HieroglyphBlock code={item.h} size="large" />
                 </div>
@@ -4259,8 +4187,9 @@ const ExercisesSection = () => {
         </div>
       )}
 
-      {activeExTab === 'typing' && <TypingExercise />}
-      {activeExTab === 'quiz' && <QuizSection />}
+      {!['lesson1','lesson2','lesson3','typing','quiz'].includes(activeExTab) && Array.isArray(exercisesData[activeExTab]) && <div data-nav-target={`exercise-${activeExTab}`} data-content-id={activeExTab} className="grid grid-cols-1 md:grid-cols-2 gap-4">{exercisesData[activeExTab].map((item,index)=><div key={index} data-nav-target={`exercise-${activeExTab}-${index}`} data-content-id={activeExTab} data-content-detail={item.trans} className="bg-white border border-stone-200 rounded-2xl p-5"><h3 className="font-bold text-amber-800">{item.trans}</h3><p className="text-sm text-stone-500 my-3">{item.meanAr || item.meanEn || item.mean}</p>{item.correctH && <DrawingPad isExercise={true}/>}<details className="mt-3"><summary className="cursor-pointer text-sm text-amber-700">كشف الحل</summary><HieroglyphBlock code={item.correctH || item.h} size="large"/></details></div>)}</div>}
+      {activeExTab === 'typing' && <div data-nav-target="exercise-typing" data-content-id="typing"><TypingExercise /></div>}
+      {activeExTab === 'quiz' && <div data-nav-target="exercise-quiz" data-content-id="quiz"><QuizSection /></div>}
     </div>
   );
 };
@@ -4506,6 +4435,54 @@ const LandingHero = ({ onStart, onSelectTab }) => (
   </div>
 );
 
+// Catalogs are derived from the lesson data so the drawer has no lesson-count limit.
+const exerciseNavigation = () => [
+  ...Object.entries(exercisesData).filter(([,items]) => Array.isArray(items)).map(([id,items],index) => ({
+    id, label: grammarData.find(g => g.id === id)?.titleAr.split(':')[0] || `الدرس ${index + 1}`,
+    detail: `${items.length} تدريب`, children: items.map((item,i) => ({
+      id: `exercise-${id}-${i}`, label: item.trans || `التدريب ${i + 1}`, detail: item.meanAr || item.meanEn || item.mean || '', anchor: `exercise-${id}-${i}`
+    }))
+  })),
+  { id:'typing', label:'تدريب الكتابة', detail:'اكتب وتحقق من إجابتك', children:[] },
+  { id:'quiz', label:'الاختبار الشامل', detail:'اختبر ما تعلمته', children:[] }
+];
+
+const ContentDrawer = ({ open, onClose, groups, current, onChoose, sectionName }) => {
+  const dialogRef = useRef(null);
+  const searchRef = useRef(null);
+  const [query,setQuery] = useState('');
+  const [expanded,setExpanded] = useState({});
+  const normalize = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[أإآ]/g,'ا').toLowerCase();
+  const q = normalize(query.trim());
+  const shown = groups.filter(g => !q || normalize(g.label+' '+g.detail).includes(q) || g.children.some(c => normalize(c.label+' '+c.detail).includes(q)));
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!open) { if (dialog.open) dialog.close(); return; }
+    setQuery(''); setExpanded({[current]:true});
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    dialog.showModal(); searchRef.current?.focus();
+    return () => { document.body.style.overflow = previous; if (dialog.open) dialog.close(); };
+  },[open]);
+  return (
+    <dialog ref={dialogRef} className="content-drawer" aria-labelledby="content-drawer-title" dir="rtl" onCancel={e=>{e.preventDefault();onClose();}} onClick={e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)onClose();}}}>
+      <div className="drawer-head"><div><span className="drawer-eyebrow">كل شيء في مكانه</span><h2 id="content-drawer-title">محتوى {sectionName}</h2></div><button className="drawer-close" onClick={onClose} aria-label="إغلاق المحتوى"><Icon name="X" size={20}/></button></div>
+      <div className="drawer-search"><Icon name="Search" size={18}/><input ref={searchRef} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث عن درس أو عنوان…" aria-label="البحث في المحتوى"/></div>
+      <div className="drawer-count" aria-live="polite">{shown.length} من {groups.length} <span>اختر درسًا، أو افتح عناوينه</span></div>
+      <div className="drawer-list">
+        {shown.map((group,index)=>{const expandedNow=!!q||expanded[group.id];const matchesParent=normalize(group.label+' '+group.detail).includes(q);const children=group.children.filter(c=>!q||matchesParent||normalize(c.label+' '+c.detail).includes(q));return(
+          <section key={group.id} className={`drawer-group ${group.id===current?'is-current':''}`}>
+            <div className="drawer-group-head"><button className="drawer-destination" onClick={()=>onChoose(group)} aria-current={group.id===current?'location':undefined}><span className="drawer-index">{groups.indexOf(group)+1}</span><span><b>{group.label}</b>{group.detail&&<small>{group.detail}</small>}</span>{group.id===current&&<span className="drawer-current-dot" aria-label="المحتوى الحالي"/>}</button>{group.children.length>0&&<button className="drawer-expand" aria-label={`عناوين ${group.label}`} aria-expanded={!!expandedNow} aria-controls={`drawer-children-${group.id}`} onClick={()=>setExpanded(p=>({...p,[group.id]:!p[group.id]}))}><Icon name="ChevronDown" size={18} className={expandedNow?'rotate-180':''}/></button>}</div>
+            {expandedNow&&children.length>0&&<div className="drawer-children" id={`drawer-children-${group.id}`}>{children.map(child=><button key={child.id} onClick={()=>onChoose(group,child)}><span>{child.label}</span>{child.detail&&<small>{child.detail}</small>}<span className="drawer-child-arrow" aria-hidden="true">←</span></button>)}</div>}
+          </section>
+        );})}
+        {!shown.length&&<p className="drawer-empty">مفيش نتائج بالاسم ده. جرّب عنوانًا تاني.</p>}
+      </div>
+      <div className="drawer-foot">اختار مكانك… وكمّل رحلتك.</div>
+    </dialog>
+  );
+};
+
 function MainApp() {
   const getInitialTab = () => {
     try {
@@ -4538,6 +4515,54 @@ function MainApp() {
   const [activeDrawingSign, setActiveDrawingSign] = useState(null);
   const [activeTab, setActiveTab] = useState(getInitialTab);
   const [learnSubTab, setLearnSubTab] = useState('path');
+  const [contentOpen,setContentOpen] = useState(false);
+  const [grammarSelection,setGrammarSelection] = useState('all');
+  const [grammarExpanded,setGrammarExpanded] = useState({});
+  const [exerciseSelection,setExerciseSelection] = useState('lesson1');
+  const [contentJump,setContentJump] = useState(null);
+  const [contentLocation,setContentLocation] = useState({id:'',detail:''});
+  const contentTriggerRef = useRef(null);
+  const sectionNames = {learn:'الرموز',vocab:'الكلمات',grammar:'القواعد',exercises:'التدريبات'};
+  const contentGroups = useMemo(() => {
+    if(activeTab==='grammar') return [{id:'all',label:'جميع الدروس',detail:`${grammarData.length} درس`,children:[]},...grammarData.map(g=>({id:g.id,label:g.titleAr.split(':')[0],detail:g.titleAr.split(':').slice(1).join(':').trim(),children:g.rules.map((r,i)=>({id:r.id || `${g.id}-rule-${i}`,label:r.badgeAr || r.titleAr || r.badgeEn,detail:r.titleEn,anchor:r.id}))}))];
+    if(activeTab==='vocab') return vocabularyData.map((g,i)=>({id:`vocab-${i}`,label:g.lesson,detail:`${g.words.length} كلمة`,children:g.words.map((w,j)=>({id:`word-${i}-${j}`,label:w.meanAr || w.meanEn || w.trans,detail:w.trans,anchor:`word-${i}-${j}`}))}));
+    if(activeTab==='exercises') return exerciseNavigation();
+    return [{id:'learn-path',label:'مسار الرموز',detail:'بالترتيب خطوة بخطوة',sub:'path',children:[...hieroglyphsData].sort((a,b)=>a.step-b.step).map(h=>({id:`learn-sign-${h.step}`,label:`${h.step}. ${h.soundAr || h.trans}`,detail:h.descAr || h.meaning,anchor:`learn-sign-${h.step}`}))},{id:'learn-grid',label:'جدول الرموز',detail:'كل الرموز في مكان واحد',sub:'grid',children:hieroglyphsData.map(h=>({id:`grid-sign-${h.step}`,label:`${h.step}. ${h.soundAr || h.trans}`,detail:h.descAr || h.meaning,anchor:`grid-sign-${h.step}`}))},{id:'learn-phonograms',label:'العلامات الصوتية',detail:'ثنائية وثلاثية ورباعية الصوت',sub:'phonograms',children:phonogramsData.map(h=>({id:`phonogram-${h.id}`,label:h.trans,detail:h.meanAr || h.typeAr,anchor:`phonogram-${h.id}`}))}];
+  },[activeTab]);
+  const closeContent = () => {setContentOpen(false);};
+  const chooseContent = (group,child) => {
+    setContentOpen(false); setQuickSearchOpen(false);
+    let anchor = child?.anchor;
+    if(activeTab==='grammar') {setGrammarSelection(group.id);if(group.id==='all'){setGrammarExpanded(Object.fromEntries(grammarData.map(g=>[g.id,true])));anchor='grammar-top';}else{setGrammarExpanded(p=>({...p,[group.id]:true}));anchor=anchor || `grammar-${group.id}`;}}
+    else if(activeTab==='vocab'){setVocabQuery('');anchor=anchor || group.id;}
+    else if(activeTab==='exercises'){setExerciseSelection(group.id);anchor=anchor || `exercise-${group.id}`;}
+    else {setLearnSubTab(group.sub);anchor=anchor || group.id;}
+    setContentLocation({id:group.id,detail:child?.label || ''});
+    setContentJump({anchor,stamp:Date.now()});
+  };
+  useEffect(()=>{
+    if(!contentJump || showLanding) return;
+    let timer;
+    const frame=requestAnimationFrame(()=>{
+      const targets=[...document.querySelectorAll('[data-nav-target]')];
+      const node=targets.find(n=>n.dataset.navTarget===contentJump.anchor && n.getBoundingClientRect().width>0) || document.getElementById(contentJump.anchor);
+      if(!node)return;
+      const move=()=>{const header=document.querySelector('.study-header');window.scrollTo({top:Math.max(0,node.getBoundingClientRect().top+scrollY-(header?.getBoundingClientRect().height || 0)-14),behavior:'instant'});};
+      move();timer=setTimeout(move,280);
+    });
+    return()=>{cancelAnimationFrame(frame);clearTimeout(timer);};
+  },[contentJump,showLanding]);
+  useEffect(()=>{
+    if(showLanding || selectedSign)return;
+    const header=document.querySelector('.study-header');if(!header)return;
+    const resize=new ResizeObserver(()=>document.documentElement.style.setProperty('--study-content-offset',`${header.getBoundingClientRect().height+14}px`));resize.observe(header);
+    let frame=null;
+    const update=()=>{frame=null;const edge=header.getBoundingClientRect().bottom+65;const nodes=[...document.querySelectorAll('main [data-content-id]')].filter(n=>n.getBoundingClientRect().width>0);let chosen=nodes[0];for(const n of nodes){if(n.getBoundingClientRect().top<=edge)chosen=n;}if(chosen){const id=chosen.dataset.contentId,detail=chosen.dataset.contentDetail || '';setContentLocation(p=>p.id===id&&p.detail===detail?p:{id,detail});}};
+    const schedule=()=>{if(frame===null)frame=requestAnimationFrame(update);};
+    const mutations=new MutationObserver(schedule);mutations.observe(document.querySelector('.study-shell main'),{childList:true,subtree:true});window.addEventListener('scroll',schedule,{passive:true});schedule();
+    return()=>{resize.disconnect();mutations.disconnect();window.removeEventListener('scroll',schedule);if(frame!==null)cancelAnimationFrame(frame);};
+  },[activeTab,learnSubTab,showLanding,selectedSign]);
+
   const [compactNav, setCompactNav] = useState(false);
   const [quickSearchOpen, setQuickSearchOpen] = useState(false);
   const [vocabQuery, setVocabQuery] = useState('');
@@ -4584,6 +4609,7 @@ function MainApp() {
 
   // Sync tab changes to URL hash and localStorage so refresh keeps the user right here
   const handleTabChange = (tabId) => {
+    setContentOpen(false); setContentLocation({id:'',detail:''});
     setQuickSearchOpen(false);
     setActiveTab(tabId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -4657,6 +4683,7 @@ function MainApp() {
               </button>
             )}
             </div>
+            <div className="content-context"><button ref={contentTriggerRef} className="content-open" aria-haspopup="dialog" aria-expanded={contentOpen} onClick={()=>setContentOpen(true)}><Icon name="Layers" size={16}/><span>المحتوى</span><Icon name="ChevronDown" size={13}/></button><div className="content-location"><b>{contentGroups.find(g=>g.id===contentLocation.id)?.label || (activeTab==='learn'?contentGroups.find(g=>g.sub===learnSubTab)?.label:activeTab==='exercises'?contentGroups.find(g=>g.id===exerciseSelection)?.label:activeTab==='grammar'&&grammarSelection!=='all'?contentGroups.find(g=>g.id===grammarSelection)?.label:'اختر مكانك من المحتوى')}</b>{contentLocation.detail&&<><span aria-hidden="true">·</span><span>{contentLocation.detail}</span></>}</div><span className="context-count">{contentGroups.length} وجهات</span></div>
             {compactNav && quickSearchOpen && activeTab === 'vocab' && (
               <div className="study-quick-search" id="quick-vocab-search" role="search" aria-label="البحث في الكلمات">
                 <Icon name="Search" size={18} />
@@ -4668,6 +4695,7 @@ function MainApp() {
         </header>
       )}
 
+      {!selectedSign && <ContentDrawer open={contentOpen} onClose={closeContent} groups={contentGroups} current={contentLocation.id} onChoose={chooseContent} sectionName={sectionNames[activeTab]}/>}
       {!selectedSign && (
         <main className="w-full">
           {/* TAB 1: Learn Path & Signs (Timeline, Full Alphabet, Phonograms) */}
@@ -4712,12 +4740,13 @@ function MainApp() {
 
               {/* View 1: Timeline Path */}
               {learnSubTab === 'path' && (
-                <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4">
+                <div data-nav-target="learn-path" data-content-id="learn-path" className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4">
                   {/* Mobile View: Timeline with Symbol Only (Self-testing) */}
                   <div className="md:hidden relative border-r-4 border-amber-200 pr-5 mr-3 space-y-3">
                     {sortedHieroglyphs.map((item, idx) => (
                       <div
                         key={idx}
+                        data-nav-target={`learn-sign-${item.step}`} data-content-id="learn-path" data-content-detail={item.soundAr || item.trans}
                         onClick={() => handleSelectSign(item)}
                         className="relative bg-white border border-stone-200 rounded-xl p-3 flex items-center justify-between cursor-pointer hover:border-amber-500 shadow-sm transition-all"
                         dir="ltr"
@@ -4743,6 +4772,7 @@ function MainApp() {
                     {sortedHieroglyphs.map((item, idx) => (
                       <div
                         key={idx}
+                        data-nav-target={`learn-sign-${item.step}`} data-content-id="learn-path" data-content-detail={item.soundAr || item.trans}
                         onClick={() => handleSelectSign(item)}
                         className="group bg-white border border-stone-200 rounded-2xl p-5 flex flex-col items-center justify-center cursor-pointer hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5 transition-all relative min-h-[140px]"
                       >
@@ -4765,10 +4795,11 @@ function MainApp() {
 
               {/* View 2: Full Alphabet Grid */}
               {learnSubTab === 'grid' && (
-                <div className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2.5 sm:gap-3 md:gap-4" dir="ltr">
+                <div data-nav-target="learn-grid" data-content-id="learn-grid" className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2.5 sm:gap-3 md:gap-4" dir="ltr">
                   {hieroglyphsData.map((item, idx) => (
                     <button
                       key={idx}
+                      data-nav-target={`grid-sign-${item.step}`} data-content-id="learn-grid" data-content-detail={item.soundAr || item.trans}
                       onClick={() => handleSelectSign(item)}
                       className="group bg-white border border-stone-200 rounded-2xl p-3 sm:p-4 aspect-square flex flex-col items-center justify-center hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5 transition-all shadow-sm relative overflow-hidden"
                       title="انقر لاختبار معلوماتك ومعرفة التفاصيل"
@@ -4788,7 +4819,7 @@ function MainApp() {
               )}
 
               {/* View 3: Phonograms */}
-              {learnSubTab === 'phonograms' && <PhonogramsSection />}
+              {learnSubTab === 'phonograms' && <div data-nav-target="learn-phonograms" data-content-id="learn-phonograms"><PhonogramsSection key={contentJump?.stamp}/></div>}
             </div>
           )}
 
@@ -4796,10 +4827,10 @@ function MainApp() {
           {activeTab === 'vocab' && <VocabularySection searchQuery={vocabQuery} setSearchQuery={setVocabQuery} />}
 
           {/* TAB 3: Grammar */}
-          {activeTab === 'grammar' && <GrammarSection />}
+          {activeTab === 'grammar' && <GrammarSection selectedLessonTab={grammarSelection} setSelectedLessonTab={setGrammarSelection} expandedLessons={grammarExpanded} setExpandedLessons={setGrammarExpanded} />}
 
           {/* TAB 4: Exercises & Quizzes */}
-          {activeTab === 'exercises' && <ExercisesSection />}
+          {activeTab === 'exercises' && <ExercisesSection activeExTab={exerciseSelection} setActiveExTab={setExerciseSelection} />}
         </main>
       )}
 
