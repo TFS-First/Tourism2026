@@ -3920,29 +3920,209 @@ const SignCardFace = ({ item, isGrid = false }) => {
 };
 
 // ==========================================
-// 5.6. Component: LandingHero (Royal Ancient Egyptian Welcome)
+// 5.6. SVG Vector Illustrations for Landing
+// ==========================================
+const PharaohHeadSVG = ({ className = "" }) => (
+  <svg viewBox="0 0 300 380" className={className} xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="goldSkin" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#f5c842"/>
+        <stop offset="50%" stopColor="#d4a030"/>
+        <stop offset="100%" stopColor="#a67c25"/>
+      </linearGradient>
+      <linearGradient id="nemes1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#2563eb"/>
+        <stop offset="100%" stopColor="#1e40af"/>
+      </linearGradient>
+      <linearGradient id="nemesGold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#fbbf24"/>
+        <stop offset="100%" stopColor="#d97706"/>
+      </linearGradient>
+      <linearGradient id="goldCollar" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#fde68a"/>
+        <stop offset="40%" stopColor="#f59e0b"/>
+        <stop offset="100%" stopColor="#b45309"/>
+      </linearGradient>
+      <radialGradient id="faceShadow" cx="0.5" cy="0.3" r="0.6">
+        <stop offset="0%" stopColor="#f5c842" stopOpacity="1"/>
+        <stop offset="100%" stopColor="#8b6914" stopOpacity="1"/>
+      </radialGradient>
+      <filter id="pharaohGlow">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feFlood floodColor="#f59e0b" floodOpacity="0.3"/>
+        <feComposite in2="blur" operator="in"/>
+        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <g filter="url(#pharaohGlow)">
+      {/* Nemes Headdress - Left side drape */}
+      <path d="M70,160 Q60,200 55,260 Q52,300 65,340 L95,340 Q90,300 92,260 Q95,220 100,180 Z" fill="url(#nemes1)" stroke="#1e3a5f" strokeWidth="1"/>
+      {/* Nemes stripes left */}
+      <path d="M66,200 Q70,240 72,280" stroke="#fbbf24" strokeWidth="2.5" fill="none" opacity="0.7"/>
+      <path d="M74,195 Q78,235 79,275" stroke="#fbbf24" strokeWidth="2.5" fill="none" opacity="0.7"/>
+      <path d="M82,190 Q85,230 86,265" stroke="#fbbf24" strokeWidth="2.5" fill="none" opacity="0.7"/>
+      {/* Nemes Headdress - Right side drape */}
+      <path d="M230,160 Q240,200 245,260 Q248,300 235,340 L205,340 Q210,300 208,260 Q205,220 200,180 Z" fill="url(#nemes1)" stroke="#1e3a5f" strokeWidth="1"/>
+      {/* Nemes stripes right */}
+      <path d="M234,200 Q230,240 228,280" stroke="#fbbf24" strokeWidth="2.5" fill="none" opacity="0.7"/>
+      <path d="M226,195 Q222,235 221,275" stroke="#fbbf24" strokeWidth="2.5" fill="none" opacity="0.7"/>
+      <path d="M218,190 Q215,230 214,265" stroke="#fbbf24" strokeWidth="2.5" fill="none" opacity="0.7"/>
+      {/* Nemes top */}
+      <path d="M70,160 Q80,80 150,55 Q220,80 230,160 Q200,140 150,135 Q100,140 70,160 Z" fill="url(#nemes1)" stroke="#1e3a5f" strokeWidth="1.5"/>
+      {/* Nemes top stripes */}
+      <path d="M100,120 Q130,95 150,88" stroke="#fbbf24" strokeWidth="3" fill="none" opacity="0.6"/>
+      <path d="M110,135 Q135,110 150,100" stroke="#fbbf24" strokeWidth="3" fill="none" opacity="0.6"/>
+      <path d="M200,120 Q170,95 150,88" stroke="#fbbf24" strokeWidth="3" fill="none" opacity="0.6"/>
+      <path d="M190,135 Q165,110 150,100" stroke="#fbbf24" strokeWidth="3" fill="none" opacity="0.6"/>
+      {/* Golden band across forehead */}
+      <path d="M80,150 Q150,130 220,150" stroke="url(#nemesGold)" strokeWidth="8" fill="none"/>
+      <path d="M82,150 Q150,132 218,150" stroke="#fde68a" strokeWidth="2" fill="none" opacity="0.5"/>
+      {/* Face */}
+      <ellipse cx="150" cy="210" rx="60" ry="75" fill="url(#faceShadow)"/>
+      {/* Eyes */}
+      <g>
+        {/* Left eye */}
+        <path d="M115,195 Q130,185 140,195 Q130,202 115,195 Z" fill="#1a1a1a"/>
+        <ellipse cx="128" cy="195" rx="5" ry="4" fill="#3b2506"/>
+        <ellipse cx="128" cy="194" rx="2" ry="2" fill="white" opacity="0.6"/>
+        {/* Kohl line left */}
+        <path d="M112,195 Q105,198 100,205" stroke="#1a1a1a" strokeWidth="2.5" fill="none"/>
+        {/* Right eye */}
+        <path d="M160,195 Q175,185 185,195 Q175,202 160,195 Z" fill="#1a1a1a"/>
+        <ellipse cx="172" cy="195" rx="5" ry="4" fill="#3b2506"/>
+        <ellipse cx="172" cy="194" rx="2" ry="2" fill="white" opacity="0.6"/>
+        {/* Kohl line right */}
+        <path d="M188,195 Q195,198 200,205" stroke="#1a1a1a" strokeWidth="2.5" fill="none"/>
+      </g>
+      {/* Eyebrows */}
+      <path d="M112,183 Q128,173 142,183" stroke="#5c3d10" strokeWidth="2.5" fill="none"/>
+      <path d="M158,183 Q172,173 188,183" stroke="#5c3d10" strokeWidth="2.5" fill="none"/>
+      {/* Nose */}
+      <path d="M148,200 Q145,220 140,232 Q148,236 155,232 Q152,220 150,200" stroke="#a67c25" strokeWidth="1.5" fill="none"/>
+      {/* Lips */}
+      <path d="M130,248 Q140,242 150,244 Q160,242 170,248" stroke="#c4873a" strokeWidth="2" fill="none"/>
+      <path d="M132,249 Q150,258 168,249" stroke="#a8703a" strokeWidth="1.5" fill="none"/>
+      {/* Chin/Jaw line */}
+      <path d="M95,230 Q100,270 150,285 Q200,270 205,230" stroke="#a67c25" strokeWidth="1" fill="none" opacity="0.4"/>
+      {/* Royal false beard (braided) */}
+      <path d="M140,280 Q142,300 143,330 Q150,340 157,330 Q158,300 160,280" fill="url(#nemesGold)" stroke="#b45309" strokeWidth="1"/>
+      <line x1="145" y1="290" x2="155" y2="290" stroke="#a67c25" strokeWidth="1" opacity="0.5"/>
+      <line x1="145" y1="300" x2="155" y2="300" stroke="#a67c25" strokeWidth="1" opacity="0.5"/>
+      <line x1="145" y1="310" x2="155" y2="310" stroke="#a67c25" strokeWidth="1" opacity="0.5"/>
+      <line x1="145" y1="320" x2="155" y2="320" stroke="#a67c25" strokeWidth="1" opacity="0.5"/>
+      {/* Uraeus (cobra on forehead) */}
+      <g>
+        <path d="M150,146 Q148,130 145,118 Q143,108 148,100 Q152,95 155,100 Q158,108 156,118 Q153,130 150,146" fill="#d4a030" stroke="#b45309" strokeWidth="1.2"/>
+        <circle cx="151" cy="100" r="5" fill="#d4a030" stroke="#b45309" strokeWidth="1"/>
+        <ellipse cx="149" cy="98" rx="1.5" ry="2" fill="#1a1a1a"/>
+        <ellipse cx="153" cy="98" rx="1.5" ry="2" fill="#1a1a1a"/>
+        {/* Cobra hood */}
+        <path d="M143,105 Q150,93 157,105" stroke="#b45309" strokeWidth="1.5" fill="url(#nemesGold)"/>
+      </g>
+      {/* Usekh Collar (broad collar) */}
+      <path d="M85,270 Q150,300 215,270 Q210,285 150,310 Q90,285 85,270 Z" fill="url(#goldCollar)" stroke="#b45309" strokeWidth="1"/>
+      {/* Collar detail rows */}
+      <path d="M92,275 Q150,298 208,275" stroke="#fde68a" strokeWidth="1.5" fill="none" opacity="0.5"/>
+      <path d="M95,282 Q150,303 205,282" stroke="#92400e" strokeWidth="1" fill="none" opacity="0.4"/>
+      <path d="M98,289 Q150,307 202,289" stroke="#fde68a" strokeWidth="1" fill="none" opacity="0.3"/>
+      {/* Collar gems */}
+      <circle cx="120" cy="282" r="3" fill="#dc2626" opacity="0.7"/>
+      <circle cx="150" cy="290" r="3" fill="#2563eb" opacity="0.7"/>
+      <circle cx="180" cy="282" r="3" fill="#16a34a" opacity="0.7"/>
+    </g>
+  </svg>
+);
+
+const PyramidsSVG = ({ className = "" }) => (
+  <svg viewBox="0 0 800 200" className={className} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+    <defs>
+      <linearGradient id="pyramidFace1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#d4a030"/>
+        <stop offset="100%" stopColor="#8b6914"/>
+      </linearGradient>
+      <linearGradient id="pyramidFace2" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#a67c25"/>
+        <stop offset="100%" stopColor="#6b4f15"/>
+      </linearGradient>
+      <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#c4873a"/>
+        <stop offset="100%" stopColor="#8b6914"/>
+      </linearGradient>
+    </defs>
+    {/* Sand ground */}
+    <path d="M0,180 Q200,168 400,175 Q600,168 800,180 L800,200 L0,200 Z" fill="url(#sand)" opacity="0.4"/>
+    {/* Great Pyramid (Khufu) */}
+    <polygon points="350,40 270,180 350,180" fill="url(#pyramidFace1)" opacity="0.9"/>
+    <polygon points="350,40 350,180 430,180" fill="url(#pyramidFace2)" opacity="0.9"/>
+    {/* Medium Pyramid (Khafre) */}
+    <polygon points="480,60 420,180 480,180" fill="url(#pyramidFace1)" opacity="0.8"/>
+    <polygon points="480,60 480,180 540,180" fill="url(#pyramidFace2)" opacity="0.8"/>
+    {/* Small Pyramid (Menkaure) */}
+    <polygon points="570,95 535,180 570,180" fill="url(#pyramidFace1)" opacity="0.7"/>
+    <polygon points="570,95 570,180 605,180" fill="url(#pyramidFace2)" opacity="0.7"/>
+    {/* Stars */}
+    <circle cx="100" cy="30" r="1.5" fill="#fde68a" opacity="0.5"/>
+    <circle cx="200" cy="60" r="1" fill="#fde68a" opacity="0.4"/>
+    <circle cx="680" cy="25" r="1.5" fill="#fde68a" opacity="0.5"/>
+    <circle cx="720" cy="70" r="1" fill="#fde68a" opacity="0.3"/>
+    <circle cx="50" cy="80" r="1" fill="#fde68a" opacity="0.3"/>
+    <circle cx="750" cy="50" r="1.2" fill="#fde68a" opacity="0.4"/>
+    <circle cx="300" cy="15" r="1" fill="#fde68a" opacity="0.4"/>
+    <circle cx="620" cy="45" r="1" fill="#fde68a" opacity="0.3"/>
+    {/* Moon crescent */}
+    <g opacity="0.35">
+      <circle cx="650" cy="35" r="18" fill="#fde68a"/>
+      <circle cx="656" cy="30" r="16" fill="#1a120b"/>
+    </g>
+  </svg>
+);
+
+const EyeOfHorusSVG = ({ className = "", size = 60 }) => (
+  <svg viewBox="0 0 100 80" width={size} height={size * 0.8} className={className} xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="eyeGold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#fde68a"/>
+        <stop offset="100%" stopColor="#d97706"/>
+      </linearGradient>
+    </defs>
+    {/* Outer eye shape */}
+    <path d="M10,35 Q30,10 55,20 Q80,10 95,35 Q80,55 55,48 Q30,55 10,35 Z" fill="none" stroke="url(#eyeGold)" strokeWidth="3"/>
+    {/* Iris */}
+    <circle cx="55" cy="33" r="12" fill="url(#eyeGold)" opacity="0.3"/>
+    <circle cx="55" cy="33" r="7" fill="url(#eyeGold)"/>
+    <circle cx="55" cy="33" r="3.5" fill="#1a1a1a"/>
+    <circle cx="53" cy="31" r="1.5" fill="white" opacity="0.5"/>
+    {/* Teardrop marking */}
+    <path d="M48,42 Q44,55 40,70" stroke="url(#eyeGold)" strokeWidth="3" fill="none" strokeLinecap="round"/>
+    {/* Spiral curl */}
+    <path d="M40,70 Q35,75 42,78 Q48,75 45,70" stroke="url(#eyeGold)" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+    {/* Eyebrow line top */}
+    <path d="M8,30 Q30,5 55,15 Q80,5 97,30" stroke="url(#eyeGold)" strokeWidth="2" fill="none" opacity="0.5"/>
+  </svg>
+);
+
+// ==========================================
+// 5.7. Component: LandingHero (Royal Ancient Egyptian Welcome)
 // ==========================================
 const LandingHero = ({ onStart, onSelectTab }) => {
   const ambientSigns = [
-    { sign: "𓋹", style: { top: "6%", left: "5%" }, anim: "animate-royal-float", size: "text-4xl sm:text-6xl", color: "text-amber-400/25" },
-    { sign: "𓁹", style: { top: "12%", right: "6%" }, anim: "animate-royal-float-delayed", size: "text-5xl sm:text-7xl", color: "text-yellow-400/30" },
-    { sign: "𓆣", style: { top: "62%", left: "7%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-500/25" },
+    { sign: "𓁹", style: { top: "6%", left: "5%" }, anim: "animate-royal-float", size: "text-4xl sm:text-6xl", color: "text-amber-400/25" },
+    { sign: "𓆣", style: { top: "12%", right: "6%" }, anim: "animate-royal-float-delayed", size: "text-5xl sm:text-7xl", color: "text-yellow-400/30" },
+    { sign: "𓇳", style: { top: "62%", left: "7%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-500/25" },
     { sign: "𓊵", style: { top: "68%", right: "8%" }, anim: "animate-royal-float", size: "text-4xl sm:text-5xl", color: "text-amber-400/25" },
     { sign: "𓏞", style: { top: "36%", left: "4%" }, anim: "animate-royal-float-delayed", size: "text-3xl sm:text-5xl", color: "text-yellow-500/20" },
-    { sign: "𓇳", style: { top: "32%", right: "4%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-300/25" },
+    { sign: "𓅃", style: { top: "32%", right: "4%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-300/25" },
     { sign: "𓉐", style: { top: "84%", left: "20%" }, anim: "animate-royal-float", size: "text-3xl sm:text-4xl", color: "text-amber-500/20" },
-    { sign: "𓎛", style: { top: "82%", right: "20%" }, anim: "animate-royal-float-delayed", size: "text-4xl sm:text-5xl", color: "text-yellow-400/25" },
-    { sign: "𓃭", style: { top: "48%", left: "6%" }, anim: "animate-royal-float", size: "text-3xl sm:text-4xl", color: "text-amber-400/20" },
-    { sign: "𓅃", style: { top: "50%", right: "7%" }, anim: "animate-royal-float-reverse", size: "text-3xl sm:text-5xl", color: "text-yellow-500/20" },
+    { sign: "𓃭", style: { top: "82%", right: "20%" }, anim: "animate-royal-float-delayed", size: "text-4xl sm:text-5xl", color: "text-yellow-400/25" },
   ];
 
   const pillarCards = [
     {
       id: "learn",
-      title: "الأبجدية ومسار التعلم",
+      title: "الابجدية ومسار التعلم",
       glyph: "𓏞",
       badge: "مسار الرموز والـ Phonograms",
-      desc: "تعرف على الرموز الأحادية ونطقها وتصنيف جاردنر ومسار التعلم الزمني المتدرج مع التقطيع الصوتي.",
+      desc: "تعرف على الرموز الاحادية ونطقها وتصنيف جاردنر ومسار التعلم الزمني المتدرج مع التقطيع الصوتي.",
       cta: "دخول مسار الرموز",
     },
     {
@@ -3958,7 +4138,7 @@ const LandingHero = ({ onStart, onSelectTab }) => {
       title: "القواعد والتراكيب النحوية",
       glyph: "🏛️",
       badge: "نظام المربعات Quadrat",
-      desc: "دراسة معمقة للجملة الاسمية، سجم-إن-إف، حروف الجر، وأسماء الإشارة بأمثلة مقطعة بنظام المربعات الملكي.",
+      desc: "دراسة معمقة للجملة الاسمية وحروف الجر واسماء الاشارة بامثلة مقطعة بنظام المربعات الملكي.",
       cta: "استكشف القواعد النحوية",
     },
     {
@@ -3966,8 +4146,8 @@ const LandingHero = ({ onStart, onSelectTab }) => {
       title: "التدريبات ولوحة الخطاط",
       glyph: "✍️",
       badge: "محاكاة الخطاط والاختبارات",
-      desc: "ارسم الرموز الهيروغليفية بيدك كخطاط المعبد، واختبر معلوماتك ببنك أسئلة ذكي مع تقييم درجاتك فورياً.",
-      cta: "خُض التحدي والتدريب",
+      desc: "ارسم الرموز الهيروغليفية بيدك كخطاط المعبد، واختبر معلوماتك ببنك اسئلة ذكي مع تقييم درجاتك فوريا.",
+      cta: "خض التحدي والتدريب",
     },
   ];
 
@@ -3991,7 +4171,7 @@ const LandingHero = ({ onStart, onSelectTab }) => {
       {/* Top Bar / Navigation Header */}
       <header className="relative z-10 max-w-6xl mx-auto w-full px-4 pt-6 pb-2 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-['Segoe_UI_Historic'] text-2xl text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.6)]">𓋹</span>
+          <EyeOfHorusSVG size={28} />
           <span className="font-black text-stone-100 tracking-tight text-sm sm:text-base">المصرية القديمة</span>
         </div>
         
@@ -3999,76 +4179,64 @@ const LandingHero = ({ onStart, onSelectTab }) => {
           onClick={() => onStart()}
           className="text-xs sm:text-sm font-bold text-amber-300 hover:text-amber-200 bg-amber-950/60 hover:bg-amber-900/80 border border-amber-500/40 px-3.5 py-1.5 rounded-xl transition-all flex items-center gap-1.5 shadow-sm"
         >
-          <span>تخطي إلى الدروس</span>
+          <span>تخطي الى الدروس</span>
           <Icon name="ArrowRight" size={14} className="rotate-180" />
         </button>
       </header>
 
       {/* Main Hero Container */}
-      <main className="relative z-10 max-w-5xl mx-auto px-4 py-8 sm:py-12 flex-1 flex flex-col items-center justify-center text-center">
+      <main className="relative z-10 max-w-5xl mx-auto px-4 py-6 sm:py-10 flex-1 flex flex-col items-center justify-center text-center">
         {/* Egyptian Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-950/70 via-stone-900/90 to-amber-950/70 border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide shadow-[0_0_20px_rgba(245,158,11,0.2)] mb-5">
-          <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓋹</span>
-          <span>بَوّابَةُ الحَضَارَة المِصْرِيَّة القَدِيمَة</span>
+          <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓆣</span>
+          <span>بوابة الحضارة المصرية القديمة</span>
           <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓁹</span>
         </div>
 
-        {/* Central Royal Medallion / Cartouche with Pulse */}
-        <div className="relative mx-auto mb-6 w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center">
-          {/* Outer dashed spinning celestial ring */}
-          <div className="absolute inset-0 rounded-full border border-dashed border-amber-500/35 animate-spin-slow"></div>
-          {/* Inner ring */}
-          <div className="absolute inset-2.5 rounded-full border border-amber-400/20"></div>
-          {/* Pulsing Core Medallion */}
-          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-b from-amber-900/70 via-stone-900 to-black border-2 border-amber-400/90 shadow-[0_0_35px_rgba(245,158,11,0.4)] flex flex-col items-center justify-center animate-gold-pulse relative">
-            <span className="text-4xl sm:text-5xl font-['Segoe_UI_Historic'] text-amber-300 drop-shadow-[0_0_15px_rgba(251,191,36,0.9)]">
-              𓋹
-            </span>
-            <div className="flex items-center gap-1.5 text-xs text-amber-300/80 mt-1 font-['Segoe_UI_Historic']">
-              <span>𓁹</span>
-              <span className="text-[10px] font-sans font-bold text-amber-200 tracking-wider">عَنْخ</span>
-              <span>𓆣</span>
-            </div>
+        {/* Central Pharaoh Head Illustration */}
+        <div className="relative mx-auto mb-4 flex items-center justify-center">
+          <div className="animate-gold-pulse rounded-full">
+            <PharaohHeadSVG className="w-40 h-48 sm:w-56 sm:h-64 drop-shadow-[0_0_30px_rgba(245,158,11,0.35)]" />
           </div>
         </div>
 
         {/* Hero Title */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-4">
-          <span className="block text-stone-300 text-sm sm:text-xl font-medium mb-1 tracking-widest text-amber-400/90">
-            رِحْلَةٌ فِي عُمْقِ التَّارِيخِ الخَالِد
+          <span className="block text-sm sm:text-xl font-medium mb-1 tracking-widest text-amber-400/90">
+            رحلة في عمق التاريخ الخالد
           </span>
           <span className="gold-gradient-text drop-shadow-[0_4px_25px_rgba(217,119,6,0.35)]">
-            تَعَلَّم اللُّغَةَ المِصْرِيَّةَ القَدِيمَة
+            تعلم اللغة المصرية القديمة
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="max-w-2xl mx-auto text-stone-300 text-sm sm:text-base md:text-lg leading-relaxed px-4 font-normal mb-8">
-          بوابتك التفاعلية الحديثة لفك شفرات البرديات والنقوش الجدارية، ودراسة الأبجدية الهيروغليفية الـ 24، وإتقان القواعد النحوية ومربعات الكلمات، مع لوحة خطاط المعبد الملكي وبنك الاختبارات الذكية.
+          بوابتك التفاعلية الحديثة لفك شفرات البرديات والنقوش الجدارية، ودراسة الابجدية الهيروغليفية الـ 24، واتقان القواعد النحوية ومربعات الكلمات، مع لوحة خطاط المعبد الملكي وبنك الاختبارات الذكية.
         </p>
 
-        {/* THE ROYAL CTA BUTTON: Let's Start */}
+        {/* THE ROYAL CTA BUTTON */}
         <div className="flex flex-col items-center justify-center gap-3 w-full px-4">
           <button
             onClick={() => onStart()}
             className="group relative w-full sm:w-auto px-8 sm:px-14 py-4 sm:py-5 rounded-2xl font-black text-lg sm:text-xl md:text-2xl text-stone-950 gold-shimmer-btn shadow-[0_0_40px_rgba(245,158,11,0.5)] hover:shadow-[0_0_70px_rgba(245,158,11,0.9)] transform hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3.5 border-2 border-yellow-200/90 cursor-pointer"
           >
-            <span className="font-['Segoe_UI_Historic'] text-2xl sm:text-3xl transition-transform group-hover:scale-125">𓋹</span>
-            <span className="tracking-wide">ابدأ رحلتك الملكية • Let's Start</span>
+            <span className="font-['Segoe_UI_Historic'] text-2xl sm:text-3xl transition-transform group-hover:scale-125">𓆣</span>
+            <span className="tracking-wide">ابدا رحلتك الملكية • Let's Start</span>
             <Icon name="ArrowRight" size={24} className="rotate-180 transition-transform group-hover:-translate-x-1" />
           </button>
           <p className="text-xs text-amber-300/80 font-medium tracking-wide">
-            ✦ اضغط للانتقال مباشرة إلى كافة الأقسام التفاعلية ✦
+            ✦ اضغط للانتقال مباشرة الى كافة الاقسام التفاعلية ✦
           </p>
         </div>
 
         {/* Quick Stats Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mt-10 sm:mt-12 w-full">
           {[
-            { num: "24+", label: "صوتاً أحادياً", sub: "الأبجدية والتصريف", icon: "𓏞" },
-            { num: "100+", label: "كلمة معجمية", sub: "مفردات ملكية ودينية", icon: "𓉐" },
-            { num: "6", label: "محاور نحوية", sub: "تراكيب ومربعات", icon: "🏛️" },
-            { num: "100%", label: "تفاعلي ومجاني", sub: "لوحة خطاط واختبارات", icon: "𓋹" },
+            { num: "24+", label: "صوت احادي", sub: "الابجدية والتصريف" },
+            { num: "100+", label: "كلمة معجمية", sub: "مفردات ملكية ودينية" },
+            { num: "6", label: "محاور نحوية", sub: "تراكيب ومربعات" },
+            { num: "100%", label: "تفاعلي ومجاني", sub: "لوحة خطاط واختبارات" },
           ].map((stat, idx) => (
             <div key={idx} className="bg-stone-900/60 border border-amber-500/20 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center hover:border-amber-500/40 transition-colors">
               <div className="text-2xl sm:text-3xl font-black text-amber-400 font-serif mb-0.5">{stat.num}</div>
@@ -4081,7 +4249,7 @@ const LandingHero = ({ onStart, onSelectTab }) => {
         {/* Feature Pillar Showcase Cards */}
         <div className="max-w-5xl mx-auto mt-12 sm:mt-14 w-full">
           <div className="text-center mb-6">
-            <span className="text-xs font-bold text-amber-400 uppercase tracking-widest block mb-1">أقسام المنصة الملكية</span>
+            <span className="text-xs font-bold text-amber-400 uppercase tracking-widest block mb-1">اقسام المنصة الملكية</span>
             <h2 className="text-xl sm:text-2xl font-bold text-stone-100">ماذا ينتظرك داخل الموسوعة؟</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-right">
@@ -4113,21 +4281,26 @@ const LandingHero = ({ onStart, onSelectTab }) => {
           <div className="relative bg-gradient-to-r from-amber-950/40 via-stone-900/60 to-amber-950/40 border border-amber-500/30 rounded-2xl p-5 text-center">
             <span className="text-amber-400 text-2xl font-['Segoe_UI_Historic'] block mb-1">𓊵</span>
             <p className="text-stone-300 text-xs sm:text-sm italic leading-relaxed max-w-xl mx-auto">
-              «لا يدخلنك الكبر بسبب علمك، بل استشر الجاهل كالعالِم؛ فما من أحد بلغ أقصى حدود إتقان فنه، وليس من فنان أدرك كمال حذقه.»
+              «لا يدخلنك الكبر بسبب علمك، بل استشر الجاهل كالعالم؛ فما من احد بلغ اقصى حدود اتقان فنه، وليس من فنان ادرك كمال حذقه.»
             </p>
             <span className="text-[11px] text-amber-400/90 font-semibold mt-2 block tracking-wider">
-              — من تعاليم الحكيم بتاح حتب (الأسرة الخامسة، الدولة القديمة)
+              — من تعاليم الحكيم بتاح حتب (الاسرة الخامسة، الدولة القديمة)
             </span>
           </div>
         </div>
       </main>
 
+      {/* Pyramids Silhouette at Bottom */}
+      <div className="relative z-0 w-full -mt-8 pointer-events-none">
+        <PyramidsSVG className="w-full h-auto opacity-60" />
+      </div>
+
       {/* Royal Footer */}
-      <footer className="relative z-10 w-full border-t border-amber-500/20 py-4 text-center text-xs text-stone-500">
-        <div className="flex items-center justify-center gap-2 text-amber-500/60 font-['Segoe_UI_Historic']">
-          <span>𓋹</span>
-          <span className="font-sans text-stone-400">المصرية القديمة • كنز الأجداد الخالد • 2026</span>
-          <span>𓁹</span>
+      <footer className="relative z-10 w-full border-t border-amber-500/20 py-4 text-center text-xs text-stone-500 bg-[#1a120b]">
+        <div className="flex items-center justify-center gap-2">
+          <EyeOfHorusSVG size={20} />
+          <span className="font-sans text-stone-400">المصرية القديمة • كنز الاجداد الخالد • 2026</span>
+          <span className="font-['Segoe_UI_Historic'] text-amber-500/60">𓆣</span>
         </div>
       </footer>
     </div>
@@ -4176,7 +4349,7 @@ function MainApp() {
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold transition-all shadow-sm group"
                 title="العودة لواجهة البداية الترحيبية"
               >
-                <span className="font-['Segoe_UI_Historic'] text-base text-amber-600 group-hover:scale-110 transition-transform">𓋹</span>
+                <Icon name="Home" size={16} className="text-amber-600 group-hover:scale-110 transition-transform" />
                 <span className="hidden sm:inline">الواجهة الرئيسية</span>
                 <span className="sm:hidden">الرئيسية</span>
               </button>
