@@ -2267,6 +2267,7 @@ const HieroglyphBlock = ({ code, size = "normal", boxed = true, className = "" }
     size === "flashcard" ? "text-4xl sm:text-5xl md:text-6xl" :
     size === "huge" ? "text-3xl sm:text-4xl md:text-5xl" :
     size === "large" ? "text-2xl sm:text-3xl md:text-4xl" :
+    size === "compact" ? "text-base sm:text-lg" :
     size === "small" ? "text-sm sm:text-base" :
     "text-xl sm:text-2xl";
 
@@ -2274,11 +2275,14 @@ const HieroglyphBlock = ({ code, size = "normal", boxed = true, className = "" }
     size === "flashcard" ? "text-2xl sm:text-3xl md:text-4xl" :
     size === "huge" ? "text-xl sm:text-2xl md:text-3xl" :
     size === "large" ? "text-base sm:text-lg md:text-xl" :
+    size === "compact" ? "text-[10px] sm:text-xs" :
     size === "small" ? "text-[10px] sm:text-xs" :
     "text-xs sm:text-sm";
 
   const wordBoxCls = boxed 
-    ? "bg-stone-50 hover:bg-amber-50/60 px-2 sm:px-2.5 py-1 rounded-xl border border-stone-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.02)]" 
+    ? ((size === "compact" || size === "small")
+        ? "bg-stone-50 hover:bg-amber-50/60 px-1.5 sm:px-2 py-0.5 rounded-lg border border-stone-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.02)]" 
+        : "bg-stone-50 hover:bg-amber-50/60 px-2 sm:px-2.5 py-1 rounded-xl border border-stone-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.02)]")
     : "px-0.5 py-0.5";
 
   const renderNode = (node, key, isStacked = false) => {
@@ -2314,7 +2318,7 @@ const HieroglyphBlock = ({ code, size = "normal", boxed = true, className = "" }
   };
 
   return (
-    <div className={`inline-flex items-center justify-center gap-1.5 font-['Segoe_UI_Historic'] py-0.5 ${className}`} dir="ltr">
+    <div className={`inline-flex flex-wrap items-center justify-center ${size === 'compact' ? 'gap-1' : 'gap-1.5'} font-['Segoe_UI_Historic'] py-0.5 max-w-full ${className}`} dir="ltr">
       {words.map((word, wIdx) => {
         const parsed = parseHieroglyphWord(word);
         return (
@@ -2803,6 +2807,143 @@ const VocabularySection = () => {
 };
 
 
+const IllustrativeExamplesBlock = ({ examples }) => {
+  // Map of revealed state for each example card (default: all false / hidden for self-testing)
+  const [revealedMap, setRevealedMap] = useState({});
+
+  const isAllRevealed = examples.length > 0 && examples.every((_, i) => revealedMap[i]);
+
+  const toggleAll = () => {
+    if (isAllRevealed) {
+      setRevealedMap({});
+    } else {
+      const all = {};
+      examples.forEach((_, i) => { all[i] = true; });
+      setRevealedMap(all);
+    }
+  };
+
+  const toggleSingle = (idx) => {
+    setRevealedMap(prev => ({
+      ...prev,
+      [idx]: !prev[idx]
+    }));
+  };
+
+  return (
+    <div className="mt-4 pt-4 border-t border-stone-200">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <div className="flex items-center gap-2">
+          <span className="p-1.5 bg-amber-100 text-amber-800 rounded-lg shadow-2xs">
+            <Icon name="BookOpen" size={16} />
+          </span>
+          <h4 className="text-sm md:text-base font-bold text-slate-800" dir="ltr">
+            📌 Illustrative Examples & Analysis
+          </h4>
+        </div>
+        
+        {/* Toggle All / Self-Test Mode Button */}
+        <button
+          onClick={toggleAll}
+          className="text-xs font-semibold px-2.5 py-1.5 rounded-xl border border-amber-300/80 bg-amber-50 hover:bg-amber-100 text-amber-900 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
+        >
+          <Icon name={isAllRevealed ? "EyeOff" : "Eye"} size={14} className="text-amber-700" />
+          <span>{isAllRevealed ? "إخفاء الكل (وضع الاختبار الذاتي)" : "إظهار كل الإجابات"}</span>
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 md:gap-4 w-full" dir="ltr">
+        {examples.map((ex, i) => {
+          const isRevealed = !!revealedMap[i];
+          return (
+            <div 
+              key={i}
+              onClick={() => {
+                if (!isRevealed) toggleSingle(i);
+              }}
+              className={`flex flex-col justify-between rounded-2xl shadow-sm transition-all overflow-hidden p-3.5 sm:p-4 border ${
+                !isRevealed 
+                  ? 'bg-gradient-to-b from-white to-stone-50/70 border-stone-200 hover:border-amber-400 hover:shadow-md cursor-pointer' 
+                  : 'bg-white border-amber-300 shadow-md ring-1 ring-amber-400/25'
+              }`}
+            >
+              {/* Hieroglyphic quadrat sentence - ALWAYS VISIBLE with compact sizing so it never breaks out */}
+              <div className="w-full flex items-center justify-center p-2 sm:p-2.5 bg-stone-50/90 rounded-xl border border-stone-200/80 mb-2.5 min-h-[50px] overflow-hidden">
+                <HieroglyphBlock code={ex.h} size="compact" />
+              </div>
+
+              {/* Body: Hidden vs Revealed */}
+              {!isRevealed ? (
+                <div className="flex-1 flex flex-col items-center justify-center py-3 sm:py-4 px-2 text-center select-none">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleSingle(i);
+                    }}
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-50 to-amber-100/90 hover:from-amber-100 hover:to-amber-200 border border-amber-300/80 text-amber-900 text-xs font-bold transition-all shadow-xs group cursor-pointer"
+                  >
+                    <Icon name="Eye" size={15} className="text-amber-600 group-hover:scale-110 transition-transform" />
+                    <span>إظهار النطق والمعنى</span>
+                  </button>
+                  <span className="text-[11px] text-stone-400 mt-2 font-medium" dir="rtl">
+                    اقرأ الرموز وخمّن المعنى أولاً، ثم اضغط للتحقق 💡
+                  </span>
+                </div>
+              ) : (
+                <div className="flex-1 flex flex-col justify-between">
+                  {/* Transliteration & English / Arabic Meaning */}
+                  <div className="flex flex-col items-center text-center space-y-1 my-1">
+                    <span className="text-lg sm:text-xl font-serif text-amber-700 font-bold" dir="ltr">
+                      {ex.trans}
+                    </span>
+                    {/* Primary English Meaning */}
+                    <span className="text-sm sm:text-base text-slate-800 font-bold leading-snug" dir="ltr">
+                      {ex.meanEn || ex.mean}
+                    </span>
+                    {/* Clarifying Arabic Meaning underneath */}
+                    {ex.meanAr && (
+                      <span className="text-xs text-stone-600 font-medium" dir="rtl">
+                        ({ex.meanAr})
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Note badge: English Primary + Brief Arabic indicator */}
+                  {(ex.noteEn || ex.noteAr) && (
+                    <div className="mt-2 bg-amber-50/80 border border-amber-200/80 rounded-xl p-2 sm:p-2.5 text-xs text-amber-950 flex flex-col gap-1 text-center w-full">
+                      {ex.noteEn && <span dir="ltr" className="text-amber-900 font-bold">{ex.noteEn}</span>}
+                      {ex.noteAr && <span dir="rtl" className="text-stone-600 font-medium text-[11px]">{ex.noteAr}</span>}
+                    </div>
+                  )}
+
+                  {/* Re-hide toggle button */}
+                  <div className="mt-2.5 pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-400">
+                    <span className="text-emerald-700 font-semibold flex items-center gap-1">
+                      <Icon name="Check" size={12} />
+                      <span>تم الإظهار</span>
+                    </span>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleSingle(i);
+                      }}
+                      className="hover:text-amber-700 font-medium flex items-center gap-1 p-0.5 rounded transition-colors cursor-pointer"
+                      title="إخفاء لإعادة الاختبار"
+                    >
+                      <Icon name="EyeOff" size={13} />
+                      <span>إخفاء</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 const GrammarSection = () => {
   const [selectedLessonTab, setSelectedLessonTab] = useState('all');
   const [expandedLessons, setExpandedLessons] = useState({
@@ -2826,41 +2967,7 @@ const GrammarSection = () => {
   };
 
   const renderExamples = (examples) => (
-    <div className="mt-4 pt-4 border-t border-stone-200">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="p-1.5 bg-amber-100 text-amber-800 rounded-lg"><Icon name="BookOpen" size={16} /></span>
-        <h4 className="text-sm md:text-base font-bold text-slate-800" dir="ltr">📌 Illustrative Examples & Analysis</h4>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 md:gap-4 w-full" dir="ltr">
-        {examples.map((ex, i) => (
-          <div key={i} className="flex flex-col justify-between bg-white border border-stone-200 rounded-2xl shadow-sm hover:border-amber-400 hover:shadow-md transition-all overflow-hidden p-4">
-            {/* Hieroglyphic quadrat sentence */}
-            <div className="w-full flex items-center justify-center p-2.5 sm:p-3 bg-stone-50/90 rounded-xl border border-stone-200/80 mb-2.5 min-h-[56px] sm:min-h-[60px]">
-              <HieroglyphBlock code={ex.h} size="normal" />
-            </div>
-
-            {/* Transliteration & English / Arabic Meaning */}
-            <div className="flex flex-col items-center text-center space-y-1 mb-2">
-              <span className="text-xl sm:text-2xl font-serif text-amber-700 font-bold" dir="ltr">{ex.trans}</span>
-              {/* Primary English Meaning */}
-              <span className="text-sm sm:text-base text-slate-800 font-bold leading-snug" dir="ltr">{ex.meanEn || ex.mean}</span>
-              {/* Clarifying Arabic Meaning underneath */}
-              {ex.meanAr && (
-                <span className="text-xs text-stone-500 font-medium" dir="rtl">({ex.meanAr})</span>
-              )}
-            </div>
-
-            {/* Note badge: English Primary + Brief Arabic indicator */}
-            {(ex.noteEn || ex.noteAr) && (
-              <div className="mt-2 bg-amber-50/80 border border-amber-200/80 rounded-xl p-2.5 text-xs text-amber-950 flex flex-col gap-1 text-center w-full">
-                {ex.noteEn && <span dir="ltr" className="text-amber-900 font-bold">{ex.noteEn}</span>}
-                {ex.noteAr && <span dir="rtl" className="text-stone-600 font-medium text-[11px]">{ex.noteAr}</span>}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+    <IllustrativeExamplesBlock examples={examples} />
   );
 
   const visibleSections = grammarData.filter(section => 
