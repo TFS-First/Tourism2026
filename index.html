@@ -18,6 +18,71 @@
     .font-\['Segoe_UI_Historic'\] {
       font-family: 'Segoe UI Historic', 'Noto Sans Egyptian Hieroglyphs', sans-serif;
     }
+    @keyframes royalFloat {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-16px) rotate(2deg);
+      }
+    }
+    @keyframes royalFloatReverse {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(16px) rotate(-2deg);
+      }
+    }
+    @keyframes goldPulseAura {
+      0%, 100% {
+        box-shadow: 0 0 25px rgba(245, 158, 11, 0.35), 0 0 60px rgba(217, 119, 6, 0.15);
+      }
+      50% {
+        box-shadow: 0 0 50px rgba(245, 158, 11, 0.65), 0 0 95px rgba(217, 119, 6, 0.35);
+      }
+    }
+    @keyframes shimmerGold {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+    @keyframes spinVerySlow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .animate-royal-float {
+      animation: royalFloat 6s ease-in-out infinite;
+    }
+    .animate-royal-float-delayed {
+      animation: royalFloat 7.5s ease-in-out 1.5s infinite;
+    }
+    .animate-royal-float-reverse {
+      animation: royalFloatReverse 8s ease-in-out infinite;
+    }
+    .animate-gold-pulse {
+      animation: goldPulseAura 3.5s ease-in-out infinite;
+    }
+    .animate-spin-slow {
+      animation: spinVerySlow 45s linear infinite;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fffbeb 0%, #fde68a 25%, #f59e0b 60%, #b45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-shimmer-btn {
+      background: linear-gradient(90deg, #b45309, #f59e0b, #fef08a, #f59e0b, #b45309);
+      background-size: 250% auto;
+      animation: shimmerGold 5s linear infinite;
+    }
   </style>
 </head>
 <body class="bg-stone-100 text-slate-900 overflow-x-hidden">
@@ -54,7 +119,8 @@ const Icon = ({ name, size = 24, className = "" }) => {
     Search: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></g>,
     Sparkles: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></g>,
     RotateCcw: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></g>,
-    ChevronDown: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></g>
+    ChevronDown: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></g>,
+    Home: <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></g>
   };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" className={className} xmlns="http://www.w3.org/2000/svg">
@@ -3853,7 +3919,223 @@ const SignCardFace = ({ item, isGrid = false }) => {
   );
 };
 
+// ==========================================
+// 5.6. Component: LandingHero (Royal Ancient Egyptian Welcome)
+// ==========================================
+const LandingHero = ({ onStart, onSelectTab }) => {
+  const ambientSigns = [
+    { sign: "𓋹", style: { top: "6%", left: "5%" }, anim: "animate-royal-float", size: "text-4xl sm:text-6xl", color: "text-amber-400/25" },
+    { sign: "𓁹", style: { top: "12%", right: "6%" }, anim: "animate-royal-float-delayed", size: "text-5xl sm:text-7xl", color: "text-yellow-400/30" },
+    { sign: "𓆣", style: { top: "62%", left: "7%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-500/25" },
+    { sign: "𓊵", style: { top: "68%", right: "8%" }, anim: "animate-royal-float", size: "text-4xl sm:text-5xl", color: "text-amber-400/25" },
+    { sign: "𓏞", style: { top: "36%", left: "4%" }, anim: "animate-royal-float-delayed", size: "text-3xl sm:text-5xl", color: "text-yellow-500/20" },
+    { sign: "𓇳", style: { top: "32%", right: "4%" }, anim: "animate-royal-float-reverse", size: "text-4xl sm:text-6xl", color: "text-amber-300/25" },
+    { sign: "𓉐", style: { top: "84%", left: "20%" }, anim: "animate-royal-float", size: "text-3xl sm:text-4xl", color: "text-amber-500/20" },
+    { sign: "𓎛", style: { top: "82%", right: "20%" }, anim: "animate-royal-float-delayed", size: "text-4xl sm:text-5xl", color: "text-yellow-400/25" },
+    { sign: "𓃭", style: { top: "48%", left: "6%" }, anim: "animate-royal-float", size: "text-3xl sm:text-4xl", color: "text-amber-400/20" },
+    { sign: "𓅃", style: { top: "50%", right: "7%" }, anim: "animate-royal-float-reverse", size: "text-3xl sm:text-5xl", color: "text-yellow-500/20" },
+  ];
+
+  const pillarCards = [
+    {
+      id: "learn",
+      title: "الأبجدية ومسار التعلم",
+      glyph: "𓏞",
+      badge: "مسار الرموز والـ Phonograms",
+      desc: "تعرف على الرموز الأحادية ونطقها وتصنيف جاردنر ومسار التعلم الزمني المتدرج مع التقطيع الصوتي.",
+      cta: "دخول مسار الرموز",
+    },
+    {
+      id: "vocab",
+      title: "قاموس الكلمات والبرديات",
+      glyph: "𓉐",
+      badge: "معجم الكلمات الملكية",
+      desc: "قاموس معجمي شامل يضم مئات المفردات المصرية القديمة ومخصصاتها وترجماتها ومربعاتها الصوتية.",
+      cta: "تصفح قاموس الكلمات",
+    },
+    {
+      id: "grammar",
+      title: "القواعد والتراكيب النحوية",
+      glyph: "🏛️",
+      badge: "نظام المربعات Quadrat",
+      desc: "دراسة معمقة للجملة الاسمية، سجم-إن-إف، حروف الجر، وأسماء الإشارة بأمثلة مقطعة بنظام المربعات الملكي.",
+      cta: "استكشف القواعد النحوية",
+    },
+    {
+      id: "exercises",
+      title: "التدريبات ولوحة الخطاط",
+      glyph: "✍️",
+      badge: "محاكاة الخطاط والاختبارات",
+      desc: "ارسم الرموز الهيروغليفية بيدك كخطاط المعبد، واختبر معلوماتك ببنك أسئلة ذكي مع تقييم درجاتك فورياً.",
+      cta: "خُض التحدي والتدريب",
+    },
+  ];
+
+  return (
+    <div dir="rtl" className="relative min-h-screen bg-gradient-to-b from-[#090604] via-[#120d08] to-[#1a120b] text-stone-100 overflow-x-hidden flex flex-col justify-between selection:bg-amber-500 selection:text-black">
+      {/* Top ambient golden auras */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-yellow-600/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+      {/* Floating Hieroglyphs */}
+      {ambientSigns.map((item, idx) => (
+        <div
+          key={idx}
+          style={item.style}
+          className={`absolute font-['Segoe_UI_Historic'] ${item.size} ${item.color} ${item.anim} select-none pointer-events-none hidden sm:block`}
+        >
+          {item.sign}
+        </div>
+      ))}
+
+      {/* Top Bar / Navigation Header */}
+      <header className="relative z-10 max-w-6xl mx-auto w-full px-4 pt-6 pb-2 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <span className="font-['Segoe_UI_Historic'] text-2xl text-amber-400 drop-shadow-[0_0_8px_rgba(251,191,36,0.6)]">𓋹</span>
+          <span className="font-black text-stone-100 tracking-tight text-sm sm:text-base">المصرية القديمة</span>
+        </div>
+        
+        <button
+          onClick={() => onStart()}
+          className="text-xs sm:text-sm font-bold text-amber-300 hover:text-amber-200 bg-amber-950/60 hover:bg-amber-900/80 border border-amber-500/40 px-3.5 py-1.5 rounded-xl transition-all flex items-center gap-1.5 shadow-sm"
+        >
+          <span>تخطي إلى الدروس</span>
+          <Icon name="ArrowRight" size={14} className="rotate-180" />
+        </button>
+      </header>
+
+      {/* Main Hero Container */}
+      <main className="relative z-10 max-w-5xl mx-auto px-4 py-8 sm:py-12 flex-1 flex flex-col items-center justify-center text-center">
+        {/* Egyptian Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-950/70 via-stone-900/90 to-amber-950/70 border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide shadow-[0_0_20px_rgba(245,158,11,0.2)] mb-5">
+          <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓋹</span>
+          <span>بَوّابَةُ الحَضَارَة المِصْرِيَّة القَدِيمَة</span>
+          <span className="font-['Segoe_UI_Historic'] text-base text-amber-400">𓁹</span>
+        </div>
+
+        {/* Central Royal Medallion / Cartouche with Pulse */}
+        <div className="relative mx-auto mb-6 w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center">
+          {/* Outer dashed spinning celestial ring */}
+          <div className="absolute inset-0 rounded-full border border-dashed border-amber-500/35 animate-spin-slow"></div>
+          {/* Inner ring */}
+          <div className="absolute inset-2.5 rounded-full border border-amber-400/20"></div>
+          {/* Pulsing Core Medallion */}
+          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-b from-amber-900/70 via-stone-900 to-black border-2 border-amber-400/90 shadow-[0_0_35px_rgba(245,158,11,0.4)] flex flex-col items-center justify-center animate-gold-pulse relative">
+            <span className="text-4xl sm:text-5xl font-['Segoe_UI_Historic'] text-amber-300 drop-shadow-[0_0_15px_rgba(251,191,36,0.9)]">
+              𓋹
+            </span>
+            <div className="flex items-center gap-1.5 text-xs text-amber-300/80 mt-1 font-['Segoe_UI_Historic']">
+              <span>𓁹</span>
+              <span className="text-[10px] font-sans font-bold text-amber-200 tracking-wider">عَنْخ</span>
+              <span>𓆣</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Title */}
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-4">
+          <span className="block text-stone-300 text-sm sm:text-xl font-medium mb-1 tracking-widest text-amber-400/90">
+            رِحْلَةٌ فِي عُمْقِ التَّارِيخِ الخَالِد
+          </span>
+          <span className="gold-gradient-text drop-shadow-[0_4px_25px_rgba(217,119,6,0.35)]">
+            تَعَلَّم اللُّغَةَ المِصْرِيَّةَ القَدِيمَة
+          </span>
+        </h1>
+
+        {/* Subtitle */}
+        <p className="max-w-2xl mx-auto text-stone-300 text-sm sm:text-base md:text-lg leading-relaxed px-4 font-normal mb-8">
+          بوابتك التفاعلية الحديثة لفك شفرات البرديات والنقوش الجدارية، ودراسة الأبجدية الهيروغليفية الـ 24، وإتقان القواعد النحوية ومربعات الكلمات، مع لوحة خطاط المعبد الملكي وبنك الاختبارات الذكية.
+        </p>
+
+        {/* THE ROYAL CTA BUTTON: Let's Start */}
+        <div className="flex flex-col items-center justify-center gap-3 w-full px-4">
+          <button
+            onClick={() => onStart()}
+            className="group relative w-full sm:w-auto px-8 sm:px-14 py-4 sm:py-5 rounded-2xl font-black text-lg sm:text-xl md:text-2xl text-stone-950 gold-shimmer-btn shadow-[0_0_40px_rgba(245,158,11,0.5)] hover:shadow-[0_0_70px_rgba(245,158,11,0.9)] transform hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3.5 border-2 border-yellow-200/90 cursor-pointer"
+          >
+            <span className="font-['Segoe_UI_Historic'] text-2xl sm:text-3xl transition-transform group-hover:scale-125">𓋹</span>
+            <span className="tracking-wide">ابدأ رحلتك الملكية • Let's Start</span>
+            <Icon name="ArrowRight" size={24} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+          </button>
+          <p className="text-xs text-amber-300/80 font-medium tracking-wide">
+            ✦ اضغط للانتقال مباشرة إلى كافة الأقسام التفاعلية ✦
+          </p>
+        </div>
+
+        {/* Quick Stats Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mt-10 sm:mt-12 w-full">
+          {[
+            { num: "24+", label: "صوتاً أحادياً", sub: "الأبجدية والتصريف", icon: "𓏞" },
+            { num: "100+", label: "كلمة معجمية", sub: "مفردات ملكية ودينية", icon: "𓉐" },
+            { num: "6", label: "محاور نحوية", sub: "تراكيب ومربعات", icon: "🏛️" },
+            { num: "100%", label: "تفاعلي ومجاني", sub: "لوحة خطاط واختبارات", icon: "𓋹" },
+          ].map((stat, idx) => (
+            <div key={idx} className="bg-stone-900/60 border border-amber-500/20 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center hover:border-amber-500/40 transition-colors">
+              <div className="text-2xl sm:text-3xl font-black text-amber-400 font-serif mb-0.5">{stat.num}</div>
+              <div className="text-xs sm:text-sm font-bold text-stone-200">{stat.label}</div>
+              <div className="text-[10px] text-stone-400">{stat.sub}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Feature Pillar Showcase Cards */}
+        <div className="max-w-5xl mx-auto mt-12 sm:mt-14 w-full">
+          <div className="text-center mb-6">
+            <span className="text-xs font-bold text-amber-400 uppercase tracking-widest block mb-1">أقسام المنصة الملكية</span>
+            <h2 className="text-xl sm:text-2xl font-bold text-stone-100">ماذا ينتظرك داخل الموسوعة؟</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-right">
+            {pillarCards.map((card) => (
+              <div
+                key={card.id}
+                onClick={() => onSelectTab(card.id)}
+                className="group relative bg-gradient-to-br from-stone-900/80 to-[#1c140d]/90 border border-amber-500/25 hover:border-amber-400 rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(245,158,11,0.15)] flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-3xl font-['Segoe_UI_Historic'] text-amber-400 group-hover:scale-110 transition-transform">{card.glyph}</span>
+                    <span className="text-[11px] font-semibold text-amber-300/80 bg-amber-950/60 border border-amber-500/30 px-2.5 py-0.5 rounded-full">{card.badge}</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-stone-100 group-hover:text-amber-300 transition-colors mb-1.5">{card.title}</h3>
+                  <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">{card.desc}</p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-stone-800 flex items-center justify-between text-xs font-bold text-amber-400 group-hover:text-amber-300">
+                  <span>{card.cta}</span>
+                  <Icon name="ArrowRight" size={16} className="rotate-180 transition-transform group-hover:-translate-x-1" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Ancient Egyptian Wisdom Banner */}
+        <div className="max-w-3xl mx-auto mt-10 sm:mt-12 w-full">
+          <div className="relative bg-gradient-to-r from-amber-950/40 via-stone-900/60 to-amber-950/40 border border-amber-500/30 rounded-2xl p-5 text-center">
+            <span className="text-amber-400 text-2xl font-['Segoe_UI_Historic'] block mb-1">𓊵</span>
+            <p className="text-stone-300 text-xs sm:text-sm italic leading-relaxed max-w-xl mx-auto">
+              «لا يدخلنك الكبر بسبب علمك، بل استشر الجاهل كالعالِم؛ فما من أحد بلغ أقصى حدود إتقان فنه، وليس من فنان أدرك كمال حذقه.»
+            </p>
+            <span className="text-[11px] text-amber-400/90 font-semibold mt-2 block tracking-wider">
+              — من تعاليم الحكيم بتاح حتب (الأسرة الخامسة، الدولة القديمة)
+            </span>
+          </div>
+        </div>
+      </main>
+
+      {/* Royal Footer */}
+      <footer className="relative z-10 w-full border-t border-amber-500/20 py-4 text-center text-xs text-stone-500">
+        <div className="flex items-center justify-center gap-2 text-amber-500/60 font-['Segoe_UI_Historic']">
+          <span>𓋹</span>
+          <span className="font-sans text-stone-400">المصرية القديمة • كنز الأجداد الخالد • 2026</span>
+          <span>𓁹</span>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
 function MainApp() {
+  const [showLanding, setShowLanding] = useState(true);
   const [selectedSign, setSelectedSign] = useState(null);
   const [activeDrawingSign, setActiveDrawingSign] = useState(null);
   const [activeTab, setActiveTab] = useState('learn');
@@ -3866,14 +4148,49 @@ function MainApp() {
     setActiveDrawingSign(item.forms ? item.forms[0].sign : item.h);
   };
 
+  const handleStartFromLanding = (targetTab = 'learn') => {
+    setActiveTab(targetTab);
+    setShowLanding(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  if (showLanding) {
+    return (
+      <LandingHero
+        onStart={() => handleStartFromLanding('learn')}
+        onSelectTab={(tabId) => handleStartFromLanding(tabId)}
+      />
+    );
+  }
+
   const sortedHieroglyphs = [...hieroglyphsData].sort((a, b) => a.step - b.step);
 
   return (
     <div dir="rtl" className="min-h-screen bg-stone-100 text-slate-900 font-sans pb-12 overflow-x-hidden">
       {!selectedSign && (
-        <header className="bg-white border-b border-stone-200 shadow-sm pt-3 sm:pt-5 sticky top-0 z-20">
+        <header className="bg-white border-b border-stone-200 shadow-sm pt-3 sm:pt-4 sticky top-0 z-20">
           <div className="max-w-6xl mx-auto px-2 sm:px-6 md:px-8">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-800 mb-3 sm:mb-4 text-center tracking-tight">المصرية القديمة</h1>
+            <div className="flex items-center justify-between mb-3 sm:mb-4">
+              <button
+                onClick={() => { setShowLanding(true); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold transition-all shadow-sm group"
+                title="العودة لواجهة البداية الترحيبية"
+              >
+                <span className="font-['Segoe_UI_Historic'] text-base text-amber-600 group-hover:scale-110 transition-transform">𓋹</span>
+                <span className="hidden sm:inline">الواجهة الرئيسية</span>
+                <span className="sm:hidden">الرئيسية</span>
+              </button>
+
+              <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-slate-800 tracking-tight text-center flex-1">
+                المصرية القديمة
+              </h1>
+
+              <div className="w-auto text-left">
+                <span className="text-[11px] sm:text-xs font-bold text-amber-800 bg-amber-100/80 border border-amber-200/60 px-2.5 py-1 rounded-lg">
+                  2026 𓁹
+                </span>
+              </div>
+            </div>
             
             {/* Consolidated 4 Primary Tabs - 100% Responsive Grid on Mobile & Flex on Desktop with generous spacing on Laptop */}
             <div className="grid grid-cols-4 max-w-xl mx-auto sm:max-w-4xl md:max-w-5xl lg:max-w-6xl sm:flex sm:justify-center sm:gap-6 md:gap-10 lg:gap-14">
