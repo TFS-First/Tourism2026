@@ -2773,6 +2773,12 @@ const VocabularyGlyph = ({ code, revealed = false }) => {
   );
 };
 
+// Use the first actual letter to align Arabic and Latin queries naturally.
+const searchTextDirection = value => {
+  const first = String(value || '').match(/[\p{Script=Arabic}\p{Script=Latin}]/u)?.[0];
+  return first && /\p{Script=Latin}/u.test(first) ? 'ltr' : 'rtl';
+};
+
 const VocabularySection = ({ searchQuery, setSearchQuery }) => {
   const [revealedWords, setRevealedWords] = useState({});
 
@@ -2948,9 +2954,11 @@ const VocabularySection = ({ searchQuery, setSearchQuery }) => {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="🔍 اكتب نطق الكلمة (مثل: sdm, itrw, rn, pt) أو معناها (مثل: نهر، يسمع، كاتب، سماء)..."
+            placeholder="ابحث بنطق الكلمة أو معناها بالعربي أو الإنجليزي…"
+            aria-label="البحث في قاموس الكلمات"
             className="w-full pr-10 pl-10 py-2.5 sm:py-3 text-sm bg-stone-50 hover:bg-white focus:bg-white border border-stone-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 rounded-xl transition-all outline-hidden text-slate-800 font-medium"
-            dir="auto"
+            dir={searchTextDirection(searchQuery)}
+            style={{textAlign: 'start'}}
           />
           {searchQuery && (
             <button
@@ -4467,7 +4475,7 @@ const ContentDrawer = ({ open, onClose, groups, current, onChoose, sectionName }
   return (
     <dialog ref={dialogRef} className="content-drawer" aria-labelledby="content-drawer-title" dir="rtl" onCancel={e=>{e.preventDefault();onClose();}} onClick={e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)onClose();}}}>
       <div className="drawer-head"><div><span className="drawer-eyebrow">كل شيء في مكانه</span><h2 id="content-drawer-title">محتوى {sectionName}</h2></div><button className="drawer-close" onClick={onClose} aria-label="إغلاق المحتوى"><Icon name="X" size={20}/></button></div>
-      <div className="drawer-search"><Icon name="Search" size={18}/><input ref={searchRef} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث عن درس أو عنوان…" aria-label="البحث في المحتوى"/></div>
+      <div className="drawer-search"><Icon name="Search" size={18}/><input ref={searchRef} type="search" dir={searchTextDirection(query)} style={{textAlign:'start'}} value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث عن درس أو عنوان…" aria-label="البحث في المحتوى"/></div>
       <div className="drawer-count" aria-live="polite">{shown.length} من {groups.length} <span>اختر درسًا، أو افتح عناوينه</span></div>
       <div className="drawer-list">
         {shown.map((group,index)=>{const expandedNow=!!q||expanded[group.id];const matchesParent=normalize(group.label+' '+group.detail).includes(q);const children=group.children.filter(c=>!q||matchesParent||normalize(c.label+' '+c.detail).includes(q));return(
@@ -4687,7 +4695,7 @@ function MainApp() {
             {compactNav && quickSearchOpen && activeTab === 'vocab' && (
               <div className="study-quick-search" id="quick-vocab-search" role="search" aria-label="البحث في الكلمات">
                 <Icon name="Search" size={18} />
-                <input ref={quickSearchRef} type="search" dir="auto" aria-label="ابحث بنطق الكلمة أو معناها" placeholder="ابحث بنطق الكلمة أو معناها…" value={vocabQuery} onChange={e => updateQuickSearch(e.target.value)} onKeyDown={e => { if (e.key === 'Escape') setQuickSearchOpen(false); }} />
+                <input ref={quickSearchRef} type="search" dir={searchTextDirection(vocabQuery)} style={{textAlign:'start'}} aria-label="ابحث بنطق الكلمة أو معناها" placeholder="ابحث بنطق الكلمة أو معناها…" value={vocabQuery} onChange={e => updateQuickSearch(e.target.value)} onKeyDown={e => { if (e.key === 'Escape') setQuickSearchOpen(false); }} />
                 {vocabQuery && <button className="study-search-clear" aria-label="مسح البحث السريع" onClick={() => updateQuickSearch('')}><Icon name="X" size={17} /></button>}
               </div>
             )}
