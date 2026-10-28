@@ -31,6 +31,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
   <style>
+    .study-topbar{max-height:90px;overflow:hidden;opacity:1;transition:max-height .22s ease,min-height .22s ease,opacity .18s ease}.study-header.is-compact .study-topbar{min-height:0;max-height:0;opacity:0;pointer-events:none}.study-header.is-compact .study-header-inner{padding-top:7px;padding-bottom:7px}.study-tab-row{display:flex;align-items:center;gap:9px}.study-tab-row .study-tabs{flex:1;min-width:0}.study-search-toggle{width:44px;height:44px;flex-shrink:0;display:grid;place-items:center;border:1px solid #b9c8bd;border-radius:12px;background:#fffcf5;color:#257b80;position:relative}.study-search-toggle:hover,.study-search-toggle[aria-expanded="true"]{background:#e4efea;border-color:#257b80}.study-search-dot{position:absolute;top:6px;right:6px;width:6px;height:6px;border-radius:50%;background:#b48a46}.study-quick-search{display:flex;align-items:center;gap:10px;margin-top:9px;background:#fffdf7;border:1px solid #c5b48666;border-radius:12px;padding:5px 12px;color:#257b80}.study-quick-search input{width:100%;min-width:0;background:transparent;border:0;outline:0;color:#233e3b;font:inherit;font-size:13px;padding:9px 0;line-height:1.5}.study-quick-search:focus-within{outline:2px solid #257b8040}.study-search-clear{min-width:34px;min-height:38px;display:grid;place-items:center;color:#847b62}.study-search-open .vocabulary-toolbar{display:none}
+    @media(max-width:600px){.study-header.is-compact .study-header-inner{padding-top:5px;padding-bottom:5px}.study-tab-row{gap:6px}.study-search-toggle{width:38px;height:44px;border-radius:10px}.study-quick-search{padding:4px 9px}.study-quick-search input{font-size:16px}.study-header.is-compact .study-tab{min-height:44px;padding-block:5px}.study-header.is-compact .study-tabs{padding:3px}}
+    @media(prefers-reduced-motion:reduce){.study-topbar{transition:none}}
+
     .study-shell{overflow-x:clip;background:#f7f6f0}.study-header{position:sticky;top:0;z-index:50;background:rgba(250,247,237,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid #c3ab783d;box-shadow:0 6px 24px #233e3b08;padding-top:env(safe-area-inset-top,0px)}.study-header-inner{max-width:1180px;margin:auto;padding:0 28px 12px}.study-topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:80px}.study-identity{display:flex;align-items:center;gap:12px;min-width:0}.study-emblem{font-family:'Noto Sans Egyptian Hieroglyphs',sans-serif;color:#227b82;font-size:38px;line-height:1.2}.study-identity h1{font-size:23px;font-weight:700;color:#233e3b;line-height:1.4}.study-wordmark{display:block;font-family:Georgia,serif;letter-spacing:3px;font-size:9px;color:#a5824b;margin-top:4px}.study-context{font-size:11px;color:#9b926e}.study-home{display:flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:8px 17px;border:1px solid #c4a66a66;border-radius:28px;background:#fffcf5;color:#836739;font-size:12px;white-space:nowrap;transition:background .2s}.study-home:hover{background:#f1e8d6}.study-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;padding:5px;background:#edece280;border:1px solid #d7cfb94a;border-radius:15px}.study-tab{display:flex;align-items:center;justify-content:center;gap:10px;min-height:45px;padding:10px 7px;border-radius:10px;color:#788277;font-size:13px;font-weight:600;line-height:1.5;transition:background .2s,color .2s}.study-tab svg{flex-shrink:0}.study-tab:hover{background:#fffaf0;color:#236f74}.study-tab.is-active{background:#257b80;color:#fffaf0;box-shadow:0 3px 10px #1b55551a}.study-tab-mobile{display:none}.study-header button:focus-visible{outline:2px solid #b89155;outline-offset:3px}.study-shell main{scroll-margin-top:160px}
     @media(max-width:800px){.study-header-inner{padding:0 20px 10px}.study-context{display:none}.study-identity h1{font-size:21px}.study-tab{font-size:11px;gap:7px}.study-topbar{min-height:74px}}
     @media(max-width:600px){.study-header-inner{padding:0 12px 9px}.study-topbar{min-height:67px;gap:10px}.study-identity{gap:8px}.study-emblem{font-size:30px}.study-identity h1{font-size:17px}.study-wordmark{font-size:7px;letter-spacing:2px}.study-home{min-height:38px;padding:7px 12px;font-size:10px;gap:6px}.study-tabs{gap:4px;padding:4px;border-radius:13px}.study-tab{min-height:52px;flex-direction:column;gap:3px;padding:7px 3px;font-size:10px;border-radius:9px}.study-tab svg{width:18px;height:18px}.study-tab-label{display:none}.study-tab-mobile{display:inline}.study-shell main{scroll-margin-top:145px}}
@@ -2765,8 +2769,7 @@ const VocabularyGlyph = ({ code, revealed = false }) => {
   );
 };
 
-const VocabularySection = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+const VocabularySection = ({ searchQuery, setSearchQuery }) => {
   const [revealedWords, setRevealedWords] = useState({});
 
   const toggleWordReveal = (key) => {
@@ -2894,7 +2897,7 @@ const VocabularySection = () => {
   return (
     <div className="max-w-6xl mx-auto p-4 md:p-6 space-y-6 mt-4">
       {/* Top Flashcard Controls Bar with Integrated Search */}
-      <div className="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm space-y-3.5">
+      <div className="vocabulary-toolbar bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm space-y-3.5">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2.5">
             <span className="p-2 bg-amber-100 text-amber-800 rounded-xl shadow-2xs">
@@ -4535,6 +4538,42 @@ function MainApp() {
   const [activeDrawingSign, setActiveDrawingSign] = useState(null);
   const [activeTab, setActiveTab] = useState(getInitialTab);
   const [learnSubTab, setLearnSubTab] = useState('path');
+  const [compactNav, setCompactNav] = useState(false);
+  const [quickSearchOpen, setQuickSearchOpen] = useState(false);
+  const [vocabQuery, setVocabQuery] = useState('');
+  const quickSearchRef = useRef(null);
+
+  useEffect(() => {
+    if (showLanding) { setCompactNav(false); return; }
+    let frame = null;
+    const update = () => {
+      frame = null;
+      if (quickSearchOpen) return;
+      // Separate thresholds prevent oscillation when the top row collapses.
+      if (window.scrollY > 120) setCompactNav(true);
+      else if (window.scrollY < 20) setCompactNav(false);
+    };
+    const onScroll = () => {
+      if (frame === null) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (frame !== null) cancelAnimationFrame(frame);
+    };
+  }, [showLanding, quickSearchOpen]);
+
+  useEffect(() => {
+    if (quickSearchOpen) quickSearchRef.current?.focus();
+  }, [quickSearchOpen]);
+
+  const updateQuickSearch = (value) => {
+    setVocabQuery(value);
+    // Filtering can shorten the page; show the matches directly below the search.
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
 
   useEffect(() => { if (selectedSign) window.scrollTo(0, 0); }, [selectedSign]);
 
@@ -4545,6 +4584,7 @@ function MainApp() {
 
   // Sync tab changes to URL hash and localStorage so refresh keeps the user right here
   const handleTabChange = (tabId) => {
+    setQuickSearchOpen(false);
     setActiveTab(tabId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     try {
@@ -4588,15 +4628,16 @@ function MainApp() {
   const sortedHieroglyphs = [...hieroglyphsData].sort((a, b) => a.step - b.step);
 
   return (
-    <div dir="rtl" className="study-shell min-h-screen text-slate-900 font-sans pb-12">
+    <div dir="rtl" className={`study-shell min-h-screen text-slate-900 font-sans pb-12 ${quickSearchOpen ? "study-search-open" : ""}`}>
       {!selectedSign && (
-        <header className="study-header">
+        <header className={`study-header ${compactNav ? "is-compact" : ""}`}>
           <div className="study-header-inner">
-            <div className="study-topbar">
+            <div className="study-topbar" aria-hidden={compactNav} inert={compactNav ? "" : undefined}>
               <div className="study-identity"><span className="study-emblem" aria-hidden="true">𓆣</span><div><h1>المصرية القديمة</h1><span className="study-wordmark">ANCIENT EGYPTIAN</span></div></div>
               <span className="study-context">رحلتك لفهم لغة الأجداد</span>
               <button onClick={handleReturnToLanding} className="study-home" title="العودة للواجهة الرئيسية"><Icon name="Home" size={17} /><span>الرئيسية</span><span aria-hidden="true">↗</span></button>
             </div>
+            <div className="study-tab-row">
             <nav className="study-tabs" aria-label="أقسام التطبيق">
               {[
                 { id: 'learn', icon: 'Compass', label: 'مسار التعلم والرموز', mobileLabel: 'الرموز' },
@@ -4609,6 +4650,20 @@ function MainApp() {
                 </button>
               ))}
             </nav>
+            {compactNav && activeTab === 'vocab' && (
+              <button className="study-search-toggle" aria-label={quickSearchOpen ? 'إغلاق بحث الكلمات' : 'البحث عن كلمة'} aria-expanded={quickSearchOpen} aria-controls="quick-vocab-search" onClick={() => setQuickSearchOpen(open => !open)}>
+                <Icon name={quickSearchOpen ? 'X' : 'Search'} size={20} />
+                {vocabQuery && !quickSearchOpen && <span className="study-search-dot" aria-hidden="true" />}
+              </button>
+            )}
+            </div>
+            {compactNav && quickSearchOpen && activeTab === 'vocab' && (
+              <div className="study-quick-search" id="quick-vocab-search" role="search" aria-label="البحث في الكلمات">
+                <Icon name="Search" size={18} />
+                <input ref={quickSearchRef} type="search" dir="auto" aria-label="ابحث بنطق الكلمة أو معناها" placeholder="ابحث بنطق الكلمة أو معناها…" value={vocabQuery} onChange={e => updateQuickSearch(e.target.value)} onKeyDown={e => { if (e.key === 'Escape') setQuickSearchOpen(false); }} />
+                {vocabQuery && <button className="study-search-clear" aria-label="مسح البحث السريع" onClick={() => updateQuickSearch('')}><Icon name="X" size={17} /></button>}
+              </div>
+            )}
           </div>
         </header>
       )}
@@ -4738,7 +4793,7 @@ function MainApp() {
           )}
 
           {/* TAB 2: Vocabulary */}
-          {activeTab === 'vocab' && <VocabularySection />}
+          {activeTab === 'vocab' && <VocabularySection searchQuery={vocabQuery} setSearchQuery={setVocabQuery} />}
 
           {/* TAB 3: Grammar */}
           {activeTab === 'grammar' && <GrammarSection />}
