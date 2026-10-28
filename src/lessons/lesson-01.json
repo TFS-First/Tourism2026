@@ -966,5 +966,13 @@
       "hint": "Sentence particle ỉw + subject s + adverbial predicate ỉm"
     }
   ],
-  "quizQuestions": []
+  "quizQuestions": [],
+  "exercisePresentation": {
+    "kind": "drawing",
+    "titleEn": "Lesson I: Hieroglyph Drawing Exercise",
+    "titleAr": "تمرين رسم الكلمات",
+    "description": "Draw the following hieroglyphic words adhering to balanced quadrat arrangement. Click 'Show Answer' to check your drawing.",
+    "icon": "Edit3"
+  },
+  "typingIcon": "📘"
 }

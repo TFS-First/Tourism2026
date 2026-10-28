@@ -1380,5 +1380,13 @@
       "hint": "Verb sḏm + subject sš + preposition r + bw pn"
     }
   ],
-  "quizQuestions": []
+  "quizQuestions": [],
+  "exercisePresentation": {
+    "kind": "reading",
+    "titleEn": "Lesson II: Reading & Syntax Exercise",
+    "titleAr": "تمرين قراءة وإعراب الجمل",
+    "description": "Read the hieroglyphic sentences and determine their syntactic structure (Nominal vs. Verbal, Transitive vs. Intransitive). Click any card to reveal transliteration, translation, and grammar breakdown.",
+    "icon": "BookOpen"
+  },
+  "typingIcon": "🏛️"
 }

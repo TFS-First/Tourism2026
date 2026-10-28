@@ -988,17 +988,41 @@ const lessonRegistry = [{
   "id": "lesson1",
   "number": 1,
   "titleAr": "الدرس الأول",
-  "titleEn": "Lesson I"
+  "titleEn": "Lesson I",
+  "exercisePresentation": {
+    "kind": "drawing",
+    "titleEn": "Lesson I: Hieroglyph Drawing Exercise",
+    "titleAr": "تمرين رسم الكلمات",
+    "description": "Draw the following hieroglyphic words adhering to balanced quadrat arrangement. Click 'Show Answer' to check your drawing.",
+    "icon": "Edit3"
+  },
+  "typingIcon": "📘"
 }, {
   "id": "lesson2",
   "number": 2,
   "titleAr": "الدرس الثاني",
-  "titleEn": "Lesson II"
+  "titleEn": "Lesson II",
+  "exercisePresentation": {
+    "kind": "reading",
+    "titleEn": "Lesson II: Reading & Syntax Exercise",
+    "titleAr": "تمرين قراءة وإعراب الجمل",
+    "description": "Read the hieroglyphic sentences and determine their syntactic structure (Nominal vs. Verbal, Transitive vs. Intransitive). Click any card to reveal transliteration, translation, and grammar breakdown.",
+    "icon": "BookOpen"
+  },
+  "typingIcon": "🏛️"
 }, {
   "id": "lesson3",
   "number": 3,
   "titleAr": "الدرس الثالث",
-  "titleEn": "Lesson III"
+  "titleEn": "Lesson III",
+  "exercisePresentation": {
+    "kind": "reading",
+    "titleEn": "Lesson III: Verb Conjugation & Passive Voice",
+    "titleAr": "تمرين صيغ الأفعال والمجهول",
+    "description": "Practice reading suffix conjugation forms (sḏm=f), passive voice with agent marker (sḏm.tw rn ỉn s), and past tense (sḏm.n=f). Click card to reveal answer.",
+    "icon": "Award"
+  },
+  "typingIcon": "⚡"
 }];
 const grammarData = [{
   "id": "lesson1",
@@ -6321,6 +6345,13 @@ const TypingExercise = () => {
   const [showSolution, setShowSolution] = useState(false);
   const [score, setScore] = useState(0);
   const [answeredCount, setAnsweredCount] = useState(0);
+  const lessonFilters = [{
+    id: 'all',
+    label: `🌟 All Lessons (${typingQuestionsData.length})`
+  }, ...[...new Set(typingQuestionsData.map(question => question.lessonEn))].map(title => ({
+    id: title,
+    label: `${lessonRegistry.find(lesson => lesson.titleEn === title)?.typingIcon || '📘'} ${title} (${typingQuestionsData.filter(question => question.lessonEn === title).length})`
+  }))];
   const filteredQuestions = useMemo(() => {
     if (selectedLesson === 'all') return typingQuestionsData;
     return typingQuestionsData.filter(q => q.lessonEn === selectedLesson);
@@ -6399,22 +6430,20 @@ const TypingExercise = () => {
     dir: "ltr"
   }, "Score"), /*#__PURE__*/React.createElement("span", {
     className: "text-base sm:text-lg font-bold text-amber-700"
-  }, score, " / ", answeredCount)))), /*#__PURE__*/React.createElement("div", {
+  }, score, " / ", answeredCount)))), lessonFilters.length > 7 ? /*#__PURE__*/React.createElement("label", {
+    className: "lesson-quick-select",
+    htmlFor: "typing-lesson-select"
+  }, /*#__PURE__*/React.createElement("span", null, "\u062F\u0631\u0633 \u0627\u0644\u0643\u062A\u0627\u0628\u0629"), /*#__PURE__*/React.createElement("select", {
+    id: "typing-lesson-select",
+    value: selectedLesson,
+    onChange: event => handleFilter(event.target.value)
+  }, lessonFilters.map(tab => /*#__PURE__*/React.createElement("option", {
+    key: tab.id,
+    value: tab.id
+  }, tab.label)))) : /*#__PURE__*/React.createElement("div", {
     className: "flex flex-wrap justify-center gap-2",
     dir: "ltr"
-  }, [{
-    id: 'all',
-    label: '🌟 All Lessons (25)'
-  }, {
-    id: 'Lesson I',
-    label: '📘 Lesson I (12)'
-  }, {
-    id: 'Lesson II',
-    label: '🏛️ Lesson II (6)'
-  }, {
-    id: 'Lesson III',
-    label: '⚡ Lesson III (7)'
-  }].map(tab => /*#__PURE__*/React.createElement("button", {
+  }, lessonFilters.map(tab => /*#__PURE__*/React.createElement("button", {
     key: tab.id,
     onClick: () => handleFilter(tab.id),
     className: `py-1.5 px-3.5 rounded-xl font-bold text-xs sm:text-sm transition-all ${selectedLesson === tab.id ? 'bg-amber-600 text-white shadow-xs' : 'bg-white border border-stone-200 text-stone-600 hover:bg-stone-50'}`
@@ -6787,21 +6816,87 @@ const ExercisesSection = ({
   activeExTab,
   setActiveExTab
 }) => {
-  const [revealedL1, setRevealedL1] = useState({});
-  const [revealedL2, setRevealedL2] = useState({});
-  const [revealedL3, setRevealedL3] = useState({});
-  const toggleRevealL1 = index => setRevealedL1(prev => ({
-    ...prev,
-    [index]: !prev[index]
-  }));
-  const toggleRevealL2 = index => setRevealedL2(prev => ({
-    ...prev,
-    [index]: !prev[index]
-  }));
-  const toggleRevealL3 = index => setRevealedL3(prev => ({
-    ...prev,
-    [index]: !prev[index]
-  }));
+  const [revealed, setRevealed] = useState({});
+  const isRevealed = index => !!revealed[activeExTab + '-' + index];
+  const toggleReveal = index => {
+    const key = activeExTab + '-' + index;
+    setRevealed(previous => ({
+      ...previous,
+      [key]: !previous[key]
+    }));
+  };
+  const lesson = lessonRegistry.find(entry => entry.id === activeExTab);
+  const items = exercisesData[activeExTab];
+  const presentation = lesson?.exercisePresentation || {
+    kind: items?.some(item => item.correctH) ? 'drawing' : 'reading',
+    titleEn: lesson?.titleEn || activeExTab,
+    titleAr: lesson?.titleAr || '',
+    description: '',
+    icon: 'BookOpen'
+  };
+  const renderDrawingCard = (item, idx) => /*#__PURE__*/React.createElement("div", {
+    key: idx,
+    "data-nav-target": `exercise-${activeExTab}-${idx}`,
+    "data-content-id": activeExTab,
+    "data-content-detail": item.trans,
+    className: "bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm flex flex-col justify-between"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center justify-between border-b border-stone-100 pb-3 mb-4",
+    dir: "ltr"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    className: "text-xl sm:text-2xl font-serif text-amber-700 font-bold block"
+  }, item.trans), /*#__PURE__*/React.createElement("span", {
+    className: "text-xs text-stone-500 font-medium"
+  }, item.meanEn)), /*#__PURE__*/React.createElement("button", {
+    onClick: () => toggleReveal(idx),
+    className: "flex items-center gap-1.5 px-3 py-1 bg-amber-50 border border-amber-200 text-amber-800 rounded-xl font-bold text-xs hover:bg-amber-100 transition-colors"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "Eye",
+    size: 14
+  }), /*#__PURE__*/React.createElement("span", null, isRevealed(idx) ? 'إخفاء الحل' : 'كشف الحل'))), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col gap-4 items-center w-full"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "w-full"
+  }, /*#__PURE__*/React.createElement(DrawingPad, {
+    isExercise: true
+  })), isRevealed(idx) && /*#__PURE__*/React.createElement("div", {
+    className: "w-full flex flex-col items-center justify-center p-4 bg-green-50 border border-green-200 rounded-xl mt-2 animate-in fade-in",
+    dir: "ltr"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-xs text-green-900 font-bold mb-2"
+  }, "Model Arrangement:"), /*#__PURE__*/React.createElement(HieroglyphBlock, {
+    code: item.correctH,
+    size: "large"
+  }))));
+  const renderReadingCard = (item, idx) => /*#__PURE__*/React.createElement("div", {
+    key: idx,
+    "data-nav-target": `exercise-${activeExTab}-${idx}`,
+    "data-content-id": activeExTab,
+    "data-content-detail": item.trans,
+    onClick: () => toggleReveal(idx),
+    className: "group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100"
+  }, /*#__PURE__*/React.createElement(HieroglyphBlock, {
+    code: item.h,
+    size: "large"
+  })), isRevealed(idx) ? /*#__PURE__*/React.createElement("div", {
+    className: "pt-3.5 border-t border-amber-200/80 flex flex-col items-center gap-1.5 animate-in fade-in slide-in-from-top-2 duration-300 text-center",
+    dir: "ltr"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-xl sm:text-2xl font-serif text-amber-700 font-bold"
+  }, item.trans), /*#__PURE__*/React.createElement("span", {
+    className: "text-slate-900 font-bold text-sm sm:text-base md:text-lg leading-snug"
+  }, item.meanEn || item.mean), item.meanAr && /*#__PURE__*/React.createElement("span", {
+    className: "text-xs sm:text-sm text-stone-600 bg-amber-50/80 border border-amber-200/60 px-3 py-1 rounded-xl font-medium mt-0.5",
+    dir: "rtl"
+  }, item.meanAr)) : /*#__PURE__*/React.createElement("div", {
+    className: "pt-3 border-t border-dashed border-stone-200 flex items-center justify-center gap-1.5 text-xs text-amber-700 font-bold group-hover:text-amber-800 transition-colors"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "Eye",
+    size: 14,
+    className: "text-amber-600"
+  }), /*#__PURE__*/React.createElement("span", null, "\u0627\u0646\u0642\u0631 \u0644\u0645\u0639\u0631\u0641\u0629 \u0627\u0644\u0646\u0637\u0642 \u0648\u0627\u0644\u062A\u0631\u062C\u0645\u0629 \u0648\u0627\u0644\u0625\u0639\u0631\u0627\u0628")));
   return /*#__PURE__*/React.createElement("div", {
     className: "max-w-5xl mx-auto p-2.5 sm:p-4 md:p-6 mt-2 sm:mt-4 space-y-4 sm:space-y-6"
   }, /*#__PURE__*/React.createElement("label", {
@@ -6817,200 +6912,35 @@ const ExercisesSection = ({
   }, exerciseNavigation().map(g => /*#__PURE__*/React.createElement("option", {
     key: g.id,
     value: g.id
-  }, g.label, " \u2014 ", g.detail)))), activeExTab === 'lesson1' && /*#__PURE__*/React.createElement("div", {
-    "data-nav-target": "exercise-lesson1",
-    "data-content-id": "lesson1",
-    className: "space-y-4 sm:space-y-6"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-start gap-2.5 mb-1.5"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "Edit3",
-    size: 16
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "font-bold text-slate-900 text-sm sm:text-base md:text-lg leading-snug"
-  }, "Lesson I: Hieroglyph Drawing Exercise"), /*#__PURE__*/React.createElement("span", {
-    className: "text-xs font-semibold text-amber-800 self-start sm:self-auto bg-amber-100/70 px-2 py-0.5 rounded-md",
-    dir: "rtl"
-  }, "\u062A\u0645\u0631\u064A\u0646 \u0631\u0633\u0645 \u0627\u0644\u0643\u0644\u0645\u0627\u062A")), /*#__PURE__*/React.createElement("p", {
-    className: "text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5"
-  }, "Draw the following hieroglyphic words adhering to balanced quadrat arrangement. Click 'Show Answer' to check your drawing.")))), /*#__PURE__*/React.createElement("div", {
-    className: "grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6"
-  }, exercisesData.lesson1.map((item, idx) => /*#__PURE__*/React.createElement("div", {
-    key: idx,
-    "data-nav-target": `exercise-lesson1-${idx}`,
-    "data-content-id": "lesson1",
-    "data-content-detail": item.trans,
-    className: "bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm flex flex-col justify-between"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center justify-between border-b border-stone-100 pb-3 mb-4",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
-    className: "text-xl sm:text-2xl font-serif text-amber-700 font-bold block"
-  }, item.trans), /*#__PURE__*/React.createElement("span", {
-    className: "text-xs text-stone-500 font-medium"
-  }, item.meanEn)), /*#__PURE__*/React.createElement("button", {
-    onClick: () => toggleRevealL1(idx),
-    className: "flex items-center gap-1.5 px-3 py-1 bg-amber-50 border border-amber-200 text-amber-800 rounded-xl font-bold text-xs hover:bg-amber-100 transition-colors"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "Eye",
-    size: 14
-  }), /*#__PURE__*/React.createElement("span", null, revealedL1[idx] ? 'إخفاء الحل' : 'كشف الحل'))), /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col gap-4 items-center w-full"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-full"
-  }, /*#__PURE__*/React.createElement(DrawingPad, {
-    isExercise: true
-  })), revealedL1[idx] && /*#__PURE__*/React.createElement("div", {
-    className: "w-full flex flex-col items-center justify-center p-4 bg-green-50 border border-green-200 rounded-xl mt-2 animate-in fade-in",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-xs text-green-900 font-bold mb-2"
-  }, "Model Arrangement:"), /*#__PURE__*/React.createElement(HieroglyphBlock, {
-    code: item.correctH,
-    size: "large"
-  }))))))), activeExTab === 'lesson2' && /*#__PURE__*/React.createElement("div", {
-    "data-nav-target": "exercise-lesson2",
-    "data-content-id": "lesson2",
-    className: "space-y-4 sm:space-y-6"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-start gap-2.5 mb-1.5"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "BookOpen",
-    size: 16
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "font-bold text-slate-900 text-sm sm:text-base md:text-lg leading-snug"
-  }, "Lesson II: Reading & Syntax Exercise"), /*#__PURE__*/React.createElement("span", {
-    className: "text-xs font-semibold text-amber-800 self-start sm:self-auto bg-amber-100/70 px-2 py-0.5 rounded-md",
-    dir: "rtl"
-  }, "\u062A\u0645\u0631\u064A\u0646 \u0642\u0631\u0627\u0621\u0629 \u0648\u0625\u0639\u0631\u0627\u0628 \u0627\u0644\u062C\u0645\u0644")), /*#__PURE__*/React.createElement("p", {
-    className: "text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5"
-  }, "Read the hieroglyphic sentences and determine their syntactic structure (Nominal vs. Verbal, Transitive vs. Intransitive). Click any card to reveal transliteration, translation, and grammar breakdown.")))), /*#__PURE__*/React.createElement("div", {
-    className: "grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6"
-  }, exercisesData.lesson2.map((item, idx) => /*#__PURE__*/React.createElement("div", {
-    key: idx,
-    "data-nav-target": `exercise-lesson2-${idx}`,
-    "data-content-id": "lesson2",
-    "data-content-detail": item.trans,
-    onClick: () => toggleRevealL2(idx),
-    className: "group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100"
-  }, /*#__PURE__*/React.createElement(HieroglyphBlock, {
-    code: item.h,
-    size: "large"
-  })), revealedL2[idx] ? /*#__PURE__*/React.createElement("div", {
-    className: "pt-3.5 border-t border-amber-200/80 flex flex-col items-center gap-1.5 animate-in fade-in slide-in-from-top-2 duration-300 text-center",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-xl sm:text-2xl font-serif text-amber-700 font-bold"
-  }, item.trans), /*#__PURE__*/React.createElement("span", {
-    className: "text-slate-900 font-bold text-sm sm:text-base md:text-lg leading-snug"
-  }, item.meanEn || item.mean), item.meanAr && /*#__PURE__*/React.createElement("span", {
-    className: "text-xs sm:text-sm text-stone-600 bg-amber-50/80 border border-amber-200/60 px-3 py-1 rounded-xl font-medium mt-0.5",
-    dir: "rtl"
-  }, item.meanAr)) : /*#__PURE__*/React.createElement("div", {
-    className: "pt-3 border-t border-dashed border-stone-200 flex items-center justify-center gap-1.5 text-xs text-amber-700 font-bold group-hover:text-amber-800 transition-colors"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "Eye",
-    size: 14,
-    className: "text-amber-600"
-  }), /*#__PURE__*/React.createElement("span", null, "\u0627\u0646\u0642\u0631 \u0644\u0645\u0639\u0631\u0641\u0629 \u0627\u0644\u0646\u0637\u0642 \u0648\u0627\u0644\u062A\u0631\u062C\u0645\u0629 \u0648\u0627\u0644\u0625\u0639\u0631\u0627\u0628")))))), activeExTab === 'lesson3' && /*#__PURE__*/React.createElement("div", {
-    "data-nav-target": "exercise-lesson3",
-    "data-content-id": "lesson3",
-    className: "space-y-4 sm:space-y-6"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-start gap-2.5 mb-1.5"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "Award",
-    size: 16
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 min-w-0"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "font-bold text-slate-900 text-sm sm:text-base md:text-lg leading-snug"
-  }, "Lesson III: Verb Conjugation & Passive Voice"), /*#__PURE__*/React.createElement("span", {
-    className: "text-xs font-semibold text-amber-800 self-start sm:self-auto bg-amber-100/70 px-2 py-0.5 rounded-md",
-    dir: "rtl"
-  }, "\u062A\u0645\u0631\u064A\u0646 \u0635\u064A\u063A \u0627\u0644\u0623\u0641\u0639\u0627\u0644 \u0648\u0627\u0644\u0645\u062C\u0647\u0648\u0644")), /*#__PURE__*/React.createElement("p", {
-    className: "text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5"
-  }, "Practice reading suffix conjugation forms (s\u1E0Fm=f), passive voice with agent marker (s\u1E0Fm.tw rn \u1EC9n s), and past tense (s\u1E0Fm.n=f). Click card to reveal answer.")))), /*#__PURE__*/React.createElement("div", {
-    className: "grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6"
-  }, exercisesData.lesson3.map((item, idx) => /*#__PURE__*/React.createElement("div", {
-    key: idx,
-    "data-nav-target": `exercise-lesson3-${idx}`,
-    "data-content-id": "lesson3",
-    "data-content-detail": item.trans,
-    onClick: () => toggleRevealL3(idx),
-    className: "group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100"
-  }, /*#__PURE__*/React.createElement(HieroglyphBlock, {
-    code: item.h,
-    size: "large"
-  })), revealedL3[idx] ? /*#__PURE__*/React.createElement("div", {
-    className: "pt-3.5 border-t border-amber-200/80 flex flex-col items-center gap-1.5 animate-in fade-in slide-in-from-top-2 duration-300 text-center",
-    dir: "ltr"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-xl sm:text-2xl font-serif text-amber-700 font-bold"
-  }, item.trans), /*#__PURE__*/React.createElement("span", {
-    className: "text-slate-900 font-bold text-sm sm:text-base md:text-lg leading-snug"
-  }, item.meanEn || item.mean), item.meanAr && /*#__PURE__*/React.createElement("span", {
-    className: "text-xs sm:text-sm text-stone-600 bg-amber-50/80 border border-amber-200/60 px-3 py-1 rounded-xl font-medium mt-0.5",
-    dir: "rtl"
-  }, item.meanAr)) : /*#__PURE__*/React.createElement("div", {
-    className: "pt-3 border-t border-dashed border-stone-200 flex items-center justify-center gap-1.5 text-xs text-amber-700 font-bold group-hover:text-amber-800 transition-colors"
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: "Eye",
-    size: 14,
-    className: "text-amber-600"
-  }), /*#__PURE__*/React.createElement("span", null, "\u0627\u0646\u0642\u0631 \u0644\u0645\u0639\u0631\u0641\u0629 \u0627\u0644\u0646\u0637\u0642 \u0648\u0627\u0644\u062A\u0631\u062C\u0645\u0629 \u0648\u0627\u0644\u0625\u0639\u0631\u0627\u0628")))))), !['lesson1', 'lesson2', 'lesson3', 'typing', 'quiz'].includes(activeExTab) && Array.isArray(exercisesData[activeExTab]) && /*#__PURE__*/React.createElement("div", {
+  }, g.label, " \u2014 ", g.detail)))), Array.isArray(items) && /*#__PURE__*/React.createElement("div", {
+    key: activeExTab,
     "data-nav-target": `exercise-${activeExTab}`,
     "data-content-id": activeExTab,
-    className: "grid grid-cols-1 md:grid-cols-2 gap-4"
-  }, exercisesData[activeExTab].map((item, index) => /*#__PURE__*/React.createElement("div", {
-    key: index,
-    "data-nav-target": `exercise-${activeExTab}-${index}`,
-    "data-content-id": activeExTab,
-    "data-content-detail": item.trans,
-    className: "bg-white border border-stone-200 rounded-2xl p-5"
+    className: "space-y-4 sm:space-y-6"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-gradient-to-l from-amber-500/10 via-amber-50 to-white border border-amber-200/80 p-3.5 sm:p-5 rounded-2xl mb-3 sm:mb-4 shadow-xs",
+    dir: "ltr"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-start gap-2.5 mb-1.5"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "p-1.5 bg-amber-500 text-white rounded-xl shrink-0 mt-0.5 shadow-xs"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: presentation.icon || 'BookOpen',
+    size: 16
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex-1 min-w-0"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1"
   }, /*#__PURE__*/React.createElement("h3", {
-    className: "font-bold text-amber-800"
-  }, item.trans), /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-stone-500 my-3"
-  }, item.meanAr || item.meanEn || item.mean), item.correctH && /*#__PURE__*/React.createElement(DrawingPad, {
-    isExercise: true
-  }), /*#__PURE__*/React.createElement("details", {
-    className: "mt-3"
-  }, /*#__PURE__*/React.createElement("summary", {
-    className: "cursor-pointer text-sm text-amber-700"
-  }, "\u0643\u0634\u0641 \u0627\u0644\u062D\u0644"), /*#__PURE__*/React.createElement(HieroglyphBlock, {
-    code: item.correctH || item.h,
-    size: "large"
-  }))))), activeExTab === 'typing' && /*#__PURE__*/React.createElement("div", {
+    className: "font-bold text-slate-900 text-sm sm:text-base md:text-lg leading-snug"
+  }, presentation.titleEn), /*#__PURE__*/React.createElement("span", {
+    className: "text-xs font-semibold text-amber-800 self-start sm:self-auto bg-amber-100/70 px-2 py-0.5 rounded-md",
+    dir: "rtl"
+  }, presentation.titleAr)), /*#__PURE__*/React.createElement("p", {
+    className: "text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5"
+  }, presentation.description)))), /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6"
+  }, items.map(presentation.kind === 'drawing' ? renderDrawingCard : renderReadingCard))), activeExTab === 'typing' && /*#__PURE__*/React.createElement("div", {
     "data-nav-target": "exercise-typing",
     "data-content-id": "typing"
   }, /*#__PURE__*/React.createElement(TypingExercise, null)), activeExTab === 'quiz' && /*#__PURE__*/React.createElement("div", {

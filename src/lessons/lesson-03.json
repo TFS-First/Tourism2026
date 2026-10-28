@@ -722,5 +722,13 @@
       "hint": "Past / Perfect tense: rḫ.n + subject sš + object sḫr pn"
     }
   ],
-  "quizQuestions": []
+  "quizQuestions": [],
+  "exercisePresentation": {
+    "kind": "reading",
+    "titleEn": "Lesson III: Verb Conjugation & Passive Voice",
+    "titleAr": "تمرين صيغ الأفعال والمجهول",
+    "description": "Practice reading suffix conjugation forms (sḏm=f), passive voice with agent marker (sḏm.tw rn ỉn s), and past tense (sḏm.n=f). Click card to reveal answer.",
+    "icon": "Award"
+  },
+  "typingIcon": "⚡"
 }

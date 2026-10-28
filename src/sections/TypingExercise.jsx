@@ -8,6 +8,14 @@ const TypingExercise = () => {
   const [score, setScore] = useState(0);
   const [answeredCount, setAnsweredCount] = useState(0);
 
+  const lessonFilters = [
+          { id: 'all', label: `🌟 All Lessons (${typingQuestionsData.length})` },
+          ...[...new Set(typingQuestionsData.map(question => question.lessonEn))].map(title => ({
+            id: title,
+            label: `${lessonRegistry.find(lesson => lesson.titleEn === title)?.typingIcon || '📘'} ${title} (${typingQuestionsData.filter(question => question.lessonEn === title).length})`
+          }))
+        ];
+
   const filteredQuestions = useMemo(() => {
     if (selectedLesson === 'all') return typingQuestionsData;
     return typingQuestionsData.filter(q => q.lessonEn === selectedLesson);
@@ -98,13 +106,10 @@ const TypingExercise = () => {
       </div>
 
       {/* Lesson Filter Pills */}
-      <div className="flex flex-wrap justify-center gap-2" dir="ltr">
-        {[
-          { id: 'all', label: '🌟 All Lessons (25)' },
-          { id: 'Lesson I', label: '📘 Lesson I (12)' },
-          { id: 'Lesson II', label: '🏛️ Lesson II (6)' },
-          { id: 'Lesson III', label: '⚡ Lesson III (7)' }
-        ].map(tab => (
+      {lessonFilters.length > 7 ? (
+        <label className="lesson-quick-select" htmlFor="typing-lesson-select"><span>درس الكتابة</span><select id="typing-lesson-select" value={selectedLesson} onChange={event=>handleFilter(event.target.value)}>{lessonFilters.map(tab=><option key={tab.id} value={tab.id}>{tab.label}</option>)}</select></label>
+      ) : <div className="flex flex-wrap justify-center gap-2" dir="ltr">
+        {lessonFilters.map(tab => (
           <button
             key={tab.id}
             onClick={() => handleFilter(tab.id)}
@@ -117,7 +122,7 @@ const TypingExercise = () => {
             {tab.label}
           </button>
         ))}
-      </div>
+      </div>}
 
       {/* Question Card */}
       {currentQ && (

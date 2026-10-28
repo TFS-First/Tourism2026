@@ -1,0 +1,14 @@
+{
+  "id": "lesson4",
+  "number": 4,
+  "titleAr": "الدرس الرابع",
+  "titleEn": "Lesson IV",
+  "source": { "book": "", "edition": "", "pages": "" },
+  "grammar": { "id": "lesson4", "titleAr": "", "titleEn": "", "badges": [], "rules": [] },
+  "vocabulary": { "lesson": "الدرس الرابع", "lessonEn": "Lesson IV", "words": [] },
+  "exercises": [],
+  "exercisePresentation": { "kind": "reading", "titleAr": "", "titleEn": "", "description": "", "icon": "BookOpen" },
+  "typingIcon": "📘",
+  "typingQuestions": [],
+  "quizQuestions": []
+}
