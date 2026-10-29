@@ -4,7 +4,7 @@
     "gardiner": "G1",
     "trans": "3",
     "soundAr": "أ",
-    "descAr": "عقاب (نسر)",
+    "descAr": "نسر مصري (رخمة)",
     "descEn": "Egyptian vulture",
     "step": 17,
     "examples": [
@@ -19,7 +19,7 @@
         "mean": "divine bark"
       },
       {
-        "word": "𓇋:𓂝*𓎛:𓇹",
+        "word": "𓇋*𓂝*𓎛*𓇹",
         "trans": "ỉʿḥ",
         "mean": "moon"
       }
@@ -30,7 +30,7 @@
     "gardiner": "M17",
     "trans": "ỉ",
     "soundAr": "ي / إ",
-    "descAr": "نبات البردي",
+    "descAr": "قصبة مزهرة",
     "descEn": "Flowering reed",
     "step": 12,
     "examples": [
@@ -45,7 +45,7 @@
         "mean": "there"
       },
       {
-        "word": "𓇋:𓂝*𓎛:𓇹",
+        "word": "𓇋*𓂝*𓎛*𓇹",
         "trans": "ỉʿḥ",
         "mean": "moon"
       }
@@ -58,19 +58,21 @@
       {
         "sign": "𓇌",
         "num": 1,
-        "name": "ورقتان بردي",
-        "descEn": "Two reed-flowers"
+        "name": "قصبتان مزهرتان",
+        "descEn": "Two reed-flowers",
+        "gardiner": "M17A"
       },
       {
         "sign": "𓏭",
         "num": 2,
         "name": "شرطتان مائلتان (\\\\)",
-        "descEn": "Two oblique strokes"
+        "descEn": "Two oblique strokes",
+        "gardiner": "Z4"
       }
     ],
     "trans": "y",
-    "soundAr": "ي (مشددة)",
-    "descAr": "ورقتان بردي / شرطتان مائلتان",
+    "soundAr": "ي",
+    "descAr": "قصبتان مزهرتان / شرطتان مائلتان",
     "descEn": "Two reed-flowers / Two oblique strokes",
     "step": 18,
     "examples": [
@@ -111,12 +113,12 @@
         "mean": "sun, Re"
       },
       {
-        "word": "𓎛:𓈖*𓂝",
+        "word": "𓎛*(𓈖:𓂝)",
         "trans": "ḥnʿ",
         "mean": "together with"
       },
       {
-        "word": "𓇋:𓂝*𓎛:𓇹",
+        "word": "𓇋*𓂝*𓎛*𓇹",
         "trans": "ỉʿḥ",
         "mean": "moon"
       }
@@ -130,13 +132,15 @@
         "sign": "𓅱",
         "num": 1,
         "name": "فرخ السمان",
-        "descEn": "Quail chick"
+        "descEn": "Quail chick",
+        "gardiner": "G43"
       },
       {
         "sign": "𓏲",
         "num": 2,
         "name": "حبل ملفوف (مختصر)",
-        "descEn": "Coil of rope"
+        "descEn": "Coil of rope",
+        "gardiner": "Z7"
       }
     ],
     "trans": "w",
@@ -248,19 +252,21 @@
         "sign": "𓅓",
         "num": 1,
         "name": "بومة",
-        "descEn": "Owl"
+        "descEn": "Owl",
+        "gardiner": "G17"
       },
       {
         "sign": "𓐝",
         "num": 2,
-        "name": "قطعة ضلع",
-        "descEn": "Rib / piece of meat"
+        "name": "شكل بديل متأخر لـ m (Aa15)",
+        "descEn": "Later alternative m sign (Aa15; object uncertain)",
+        "gardiner": "Aa15"
       }
     ],
     "trans": "m",
     "soundAr": "م",
-    "descAr": "بومة / قطعة ضلع",
-    "descEn": "Owl / Rib",
+    "descAr": "بومة / شكل بديل متأخر لـ m",
+    "descEn": "Owl / later alternative m sign",
     "step": 3,
     "examples": [
       {
@@ -357,9 +363,9 @@
         "mean": "day"
       },
       {
-        "word": "𓊪:𓏏*𓎛",
-        "trans": "Ptḥ",
-        "mean": "Ptah (variant)"
+        "word": "𓉔*𓄿*𓃀*𓂻",
+        "trans": "h3b",
+        "mean": "send (يرسل)"
       }
     ]
   },
@@ -373,7 +379,7 @@
     "step": 10,
     "examples": [
       {
-        "word": "𓎛:𓈖*𓂝",
+        "word": "𓎛*(𓈖:𓂝)",
         "trans": "ḥnʿ",
         "mean": "together with"
       },
@@ -383,7 +389,7 @@
         "mean": "Ptah"
       },
       {
-        "word": "𓎼:𓂋*𓎛*𓄛",
+        "word": "𓎼:𓂋*𓎛*𓇰",
         "trans": "grḥ",
         "mean": "night"
       }
@@ -394,8 +400,8 @@
     "gardiner": "Aa1",
     "trans": "ḫ",
     "soundAr": "خ",
-    "descAr": "مشيمة",
-    "descEn": "Placenta",
+    "descAr": "مشيمة؟ (تفسير غير مؤكد عند جاردنر)",
+    "descEn": "Placenta? (identification uncertain)",
     "step": 11,
     "examples": [
       {
@@ -419,7 +425,7 @@
     "h": "𓄡",
     "gardiner": "F32",
     "trans": "ẖ",
-    "soundAr": "خ (خفيفة)",
+    "soundAr": "خ مرققة (تقريب تعليمي)",
     "descAr": "بطن حيوان",
     "descEn": "Animal's belly",
     "step": 19,
@@ -439,18 +445,20 @@
         "sign": "𓊃",
         "num": 1,
         "name": "مزلاج الباب",
-        "descEn": "Door bolt"
+        "descEn": "Door bolt",
+        "gardiner": "O34"
       },
       {
         "sign": "𓋴",
         "num": 2,
         "name": "قماش مطوي",
-        "descEn": "Folded cloth"
+        "descEn": "Folded cloth",
+        "gardiner": "S29"
       }
     ],
     "trans": "s",
-    "soundAr": "س (أصلها ز)",
-    "descAr": "مزلاج الباب / قماش مطوي",
+    "soundAr": "س",
+    "descAr": "مزلاج باب / قماش مطوي؛ كانا z وs قديمًا",
     "descEn": "Door bolt / Folded cloth",
     "step": 14,
     "examples": [
@@ -554,7 +562,7 @@
         "mean": "be silent"
       },
       {
-        "word": "𓎼:𓂋*𓎛*𓄛",
+        "word": "𓎼:𓂋*𓎛*𓇰",
         "trans": "grḥ",
         "mean": "night"
       }
@@ -617,9 +625,9 @@
         "mean": "boat"
       },
       {
-        "word": "𓋴*𓄔*𓅓",
-        "trans": "sḏm",
-        "mean": "hear"
+        "word": "𓆓:𓂧",
+        "trans": "ḏd",
+        "mean": "say, speak (يقول)"
       }
     ]
   },

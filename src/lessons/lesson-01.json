@@ -755,16 +755,16 @@
         "meanAr": "يقول"
       },
       {
-        "h": "𓎛:𓈖*𓂝",
+        "h": "𓎛*(𓈖:𓂝)",
         "trans": "ḥnʿ",
         "meanEn": "together with, and",
         "meanAr": "مع، بصحبة"
       },
       {
-        "h": "𓉔:𓈖",
+        "h": "𓉔:𓈖*𓊬",
         "trans": "hn",
-        "meanEn": "box, chest; command",
-        "meanAr": "صندوق، أمر"
+        "meanEn": "box, chest",
+        "meanAr": "صندوق"
       },
       {
         "h": "𓂝:𓂋*𓈎",
@@ -795,8 +795,8 @@
   "exercises": [
     {
       "trans": "hn",
-      "correctH": "𓉔:𓈖",
-      "meanEn": "box, command"
+      "correctH": "𓉔:𓈖*𓊬",
+      "meanEn": "box, chest"
     },
     {
       "trans": "ʿrḳ",
@@ -805,7 +805,7 @@
     },
     {
       "trans": "grḥ",
-      "correctH": "𓎼:𓂋*𓎛*𓄛",
+      "correctH": "𓎼:𓂋*𓎛*𓇰",
       "meanEn": "night"
     },
     {
@@ -825,7 +825,7 @@
     },
     {
       "trans": "ỉʿḥ",
-      "correctH": "𓇋:𓂝*𓎛:𓇹",
+      "correctH": "𓇋*𓂝*𓎛*𓇹",
       "meanEn": "moon"
     },
     {
@@ -909,7 +909,7 @@
       "id": 7,
       "lesson": "الدرس الأول",
       "lessonEn": "Lesson I",
-      "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "h": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐",
       "trans": "s ḥnʿ st",
       "meanEn": "A man together with a woman",
       "meanAr": "رجل مع امرأة",

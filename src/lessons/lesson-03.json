@@ -544,10 +544,10 @@
           },
           {
             "h": "𓍑*𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
-            "trans": "d3.n sš m dpt",
+            "trans": "ḏ3.n sš m dpt",
             "meanEn": "The scribe crossed in a boat.",
             "meanAr": "عَبَرَ الكاتب في قارب",
-            "noteEn": "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.",
+            "noteEn": "Intransitive verb (ḏ3) + .n + Subject (sš) + Prepositional phrase.",
             "noteAr": "فعل لازم + .n + فاعل + جار ومجرور"
           }
         ],
@@ -654,14 +654,14 @@
     "lessonEn": "Lesson III",
     "words": [
       {
-        "h": "𓌳*𓄿:𓄿*𓁹",
+        "h": "(𓌳:𓁹)*𓄿*𓄿",
         "trans": "m33",
         "meanEn": "see, look",
         "meanAr": "يرى، ينظر"
       },
       {
         "h": "𓍑*𓄿*𓊛",
-        "trans": "d3",
+        "trans": "ḏ3",
         "meanEn": "cross, ferry across",
         "meanAr": "يعبر النهر"
       },
@@ -672,7 +672,7 @@
         "meanAr": "يفرح، يُسر"
       },
       {
-        "h": "𓉔:𓄿*𓃀*𓂻",
+        "h": "𓉔*𓄿*𓃀*𓂻",
         "trans": "h3b",
         "meanEn": "send",
         "meanAr": "يرسل"
@@ -714,7 +714,7 @@
         "meanAr": "طريق، جانب"
       },
       {
-        "h": "𓈍:𓉐",
+        "h": "𓆼*𓄿*𓉹",
         "trans": "ḫ3",
         "meanEn": "office, hall, diwân",
         "meanAr": "ديوان، قاعة مكتب"
@@ -744,7 +744,7 @@
         "meanAr": "سر، أمر خفي"
       },
       {
-        "h": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+        "h": "𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
         "trans": "ỉtrw",
         "meanEn": "river, the Nile",
         "meanAr": "نهر، نهر النيل"
@@ -783,38 +783,38 @@
   },
   "exercises": [
     {
-      "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "h": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
       "trans": "sḏm=f rn pn",
       "meanEn": "He hears this name.",
       "meanAr": "يسمع هذا الاسم (مبني للمعلوم Active Voice)"
     },
     {
-      "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "h": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
       "trans": "m33=k s3",
       "meanEn": "You (m.) see the son.",
       "meanAr": "ترى الابن (صيغة الفاعل المتصل sḏm=f)"
     },
     {
-      "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
       "trans": "sḏm.tw rn ỉn s",
       "meanEn": "The name is heard by a man.",
       "meanAr": "يُسمع الاسم بواسطة رجل (مبني للمجهول Passive مع أداة الفاعل ỉn)"
     },
     {
-      "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "h": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
       "trans": "h3b.tw b3k ỉn ṯ3ty",
       "meanEn": "The servant is sent by the vizier.",
-      "meanAr": "أُرسل الخادم بواسطة الوزير (Passive with Agent ỉn)"
+      "meanAr": "يُرسَل الخادم بواسطة الوزير (Passive with Agent ỉn)"
     },
     {
-      "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "h": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
       "trans": "sḏm.n=f rn pn",
       "meanEn": "He heard (has heard) this name.",
-      "meanAr": "سَمِعَ هذا الاسم (صيغة الماضي التام sḏm.n=f)"
+      "meanAr": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)"
     },
     {
-      "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
-      "trans": "d3 sš m ỉtrw",
+      "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
+      "trans": "ḏ3 sš m ỉtrw",
       "meanEn": "The scribe crosses in the river.",
       "meanAr": "يعبر الكاتب في النهر (فعل لازم Intransitive)"
     },
@@ -822,10 +822,10 @@
       "h": "𓂋:𓐍*𓏛*𓈖 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
       "trans": "rḫ.n sš sḫr pn",
       "meanEn": "The scribe has known this counsel.",
-      "meanAr": "عَلِمَ الكاتب هذه الخطة (ماضي تام sḏm.n=f)"
+      "meanAr": "عَلِمَ الكاتب هذه الخطة (حدث ماضٍ بصيغة sḏm.n=f)"
     },
     {
-      "h": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀",
+      "h": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀",
       "trans": "m33.tw pt ỉn s",
       "meanEn": "The sky is seen by a man.",
       "meanAr": "تُرى السماء بواسطة رجل (Passive with Agent ỉn)"
@@ -836,7 +836,7 @@
       "id": 19,
       "lesson": "الدرس الثالث",
       "lessonEn": "Lesson III",
-      "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "h": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
       "trans": "sḏm=f rn pn",
       "meanEn": "He hears this name.",
       "meanAr": "يسمع هذا الاسم",
@@ -846,7 +846,7 @@
       "id": 20,
       "lesson": "الدرس الثالث",
       "lessonEn": "Lesson III",
-      "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "h": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
       "trans": "m33=k s3",
       "meanEn": "You see the son.",
       "meanAr": "ترى الابن",
@@ -856,7 +856,7 @@
       "id": 21,
       "lesson": "الدرس الثالث",
       "lessonEn": "Lesson III",
-      "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
       "trans": "sḏm.tw rn ỉn s",
       "meanEn": "The name is heard by a man.",
       "meanAr": "يُسمع الاسم بواسطة رجل",
@@ -866,17 +866,17 @@
       "id": 22,
       "lesson": "الدرس الثالث",
       "lessonEn": "Lesson III",
-      "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "h": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
       "trans": "h3b.tw b3k ỉn ṯ3ty",
       "meanEn": "The servant is sent by the vizier.",
-      "meanAr": "أُرسل الخادم بواسطة الوزير",
+      "meanAr": "يُرسَل الخادم بواسطة الوزير",
       "hint": "Passive form h3b.tw + subject b3k + agent ỉn ṯ3ty"
     },
     {
       "id": 23,
       "lesson": "الدرس الثالث",
       "lessonEn": "Lesson III",
-      "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "h": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
       "trans": "sḏm.n=f rn pn",
       "meanEn": "He heard this name.",
       "meanAr": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)",
@@ -886,11 +886,11 @@
       "id": 24,
       "lesson": "الدرس الثالث",
       "lessonEn": "Lesson III",
-      "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
-      "trans": "d3 sš m ỉtrw",
+      "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
+      "trans": "ḏ3 sš m ỉtrw",
       "meanEn": "The scribe crosses in the river.",
       "meanAr": "يعبر الكاتب في النهر",
-      "hint": "Intransitive verb d3 + subject sš + prep phrase m ỉtrw"
+      "hint": "Intransitive verb ḏ3 + subject sš + prep phrase m ỉtrw"
     },
     {
       "id": 25,

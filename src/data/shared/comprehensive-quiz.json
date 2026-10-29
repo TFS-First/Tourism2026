@@ -6,12 +6,12 @@
     "categoryLabelEn": "Hieroglyphic Signs",
     "categoryLabelAr": "الرموز الهيروغليفية",
     "qEn": "What is the phonetic transliteration for the Egyptian vulture sign (𓄿)?",
-    "qAr": "ما هو النطق الصوتي (Transliteration) لرمز طائر العقاب المصري (𓄿)؟",
+    "qAr": "ما هو النقحرة (القيمة الصوتية المكتوبة) لرمز النسر المصري (𓄿)؟",
     "hieroglyph": "𓄿",
     "options": [
       {
         "id": "a",
-        "text": "3 (Alef - طائر العقاب)",
+        "text": "3 (Alef - النسر المصري)",
         "desc": "Glottal stop / ألف حلقية",
         "isCorrect": true
       },
@@ -716,7 +716,7 @@
     "categoryLabelAr": "المفردات والكلمات",
     "qEn": "What is the meaning of 'ỉtrw' (𓇋𓏏𓂋𓅱(𓈘:𓈘:𓈘))?",
     "qAr": "ما معنى الكلمة 'ỉtrw' (𓇋𓏏𓂋𓅱(𓈘:𓈘:𓈘))؟",
-    "hieroglyph": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+    "hieroglyph": "𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
     "options": [
       {
         "id": "a",
@@ -772,7 +772,7 @@
         "isCorrect": false
       }
     ],
-    "explanation": "The noun 'b3k' means 'servant' (خادم), commonly used in formal letters (b3k ỉm = this humble servant)."
+    "explanation": "b3k means man-servant (خادم). Its precise reference depends on context; ỉm means there/therein and does not by itself mean this."
   },
   {
     "id": "v12",
@@ -948,7 +948,7 @@
     "options": [
       {
         "id": "a",
-        "text": "𓈖 (n) - to, for (used only for persons / للعاقل والأشخاص)",
+        "text": "𓈖 (n) - to, for a person (إلى / لـ شخص في هذا المثال)",
         "isCorrect": true
       },
       {
@@ -967,7 +967,7 @@
         "isCorrect": false
       }
     ],
-    "explanation": "Crucial rule: Preposition 'n' (𓈖) is used towards living persons and deities (n s 'to a man', n Ptḥ 'to Ptah')."
+    "explanation": "In n s (to a man) and n Ptḥ (to Ptah), n introduces the person addressed. This lesson uses these basic directional examples; it is not a claim that n can only occur with persons in every Egyptian construction."
   },
   {
     "id": "g6",
@@ -985,7 +985,7 @@
       },
       {
         "id": "b",
-        "text": "𓈖 (n) - to, for (persons only / للأشخاص)",
+        "text": "𓈖 (n) - to, for (إلى / لـ شخص في أمثلة الدرس)",
         "isCorrect": false
       },
       {
@@ -1031,7 +1031,7 @@
         "isCorrect": false
       }
     ],
-    "explanation": "The passive voice is formed by attaching morpheme '.tw' to the verb (المبني للمجهول): e.g. sḏm.tw rn = 'the name is heard'."
+    "explanation": "One passive construction appends .tw to the stem, e.g. sḏm.tw rn. Egyptian also has other passive formations; see Gardiner §§39, 67, 419–420."
   },
   {
     "id": "g8",
@@ -1041,7 +1041,7 @@
     "categoryLabelAr": "القواعد وصحة الجمل",
     "qEn": "In the passive sentence 'sḏm.tw rn ỉn s', what is the role of the particle 'ỉn'?",
     "qAr": "في الجملة المبنية للمجهول 'sḏm.tw rn ỉn s'، ما هو دور الأداة 'ỉn'؟",
-    "hieroglyph": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+    "hieroglyph": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
     "options": [
       {
         "id": "a",
@@ -1121,7 +1121,7 @@
       },
       {
         "id": "c",
-        "text": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)",
+        "text": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)",
         "desc": "Verbal sentence: He hears this name",
         "isCorrect": false
       },
@@ -1145,7 +1145,7 @@
     "options": [
       {
         "id": "a",
-        "text": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 (s ḥnʿ st)",
+        "text": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐 (s ḥnʿ st)",
         "desc": "Noun + ḥnʿ (with) + Noun",
         "isCorrect": true
       },

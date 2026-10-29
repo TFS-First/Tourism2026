@@ -468,7 +468,7 @@ const hieroglyphsData = [{
   "gardiner": "G1",
   "trans": "3",
   "soundAr": "أ",
-  "descAr": "عقاب (نسر)",
+  "descAr": "نسر مصري (رخمة)",
   "descEn": "Egyptian vulture",
   "step": 17,
   "examples": [{
@@ -480,7 +480,7 @@ const hieroglyphsData = [{
     "trans": "wỉ3",
     "mean": "divine bark"
   }, {
-    "word": "𓇋:𓂝*𓎛:𓇹",
+    "word": "𓇋*𓂝*𓎛*𓇹",
     "trans": "ỉʿḥ",
     "mean": "moon"
   }]
@@ -489,7 +489,7 @@ const hieroglyphsData = [{
   "gardiner": "M17",
   "trans": "ỉ",
   "soundAr": "ي / إ",
-  "descAr": "نبات البردي",
+  "descAr": "قصبة مزهرة",
   "descEn": "Flowering reed",
   "step": 12,
   "examples": [{
@@ -501,7 +501,7 @@ const hieroglyphsData = [{
     "trans": "ỉm",
     "mean": "there"
   }, {
-    "word": "𓇋:𓂝*𓎛:𓇹",
+    "word": "𓇋*𓂝*𓎛*𓇹",
     "trans": "ỉʿḥ",
     "mean": "moon"
   }]
@@ -511,17 +511,19 @@ const hieroglyphsData = [{
   "forms": [{
     "sign": "𓇌",
     "num": 1,
-    "name": "ورقتان بردي",
-    "descEn": "Two reed-flowers"
+    "name": "قصبتان مزهرتان",
+    "descEn": "Two reed-flowers",
+    "gardiner": "M17A"
   }, {
     "sign": "𓏭",
     "num": 2,
     "name": "شرطتان مائلتان (\\\\)",
-    "descEn": "Two oblique strokes"
+    "descEn": "Two oblique strokes",
+    "gardiner": "Z4"
   }],
   "trans": "y",
-  "soundAr": "ي (مشددة)",
-  "descAr": "ورقتان بردي / شرطتان مائلتان",
+  "soundAr": "ي",
+  "descAr": "قصبتان مزهرتان / شرطتان مائلتان",
   "descEn": "Two reed-flowers / Two oblique strokes",
   "step": 18,
   "examples": [{
@@ -554,11 +556,11 @@ const hieroglyphsData = [{
     "trans": "rʿ",
     "mean": "sun, Re"
   }, {
-    "word": "𓎛:𓈖*𓂝",
+    "word": "𓎛*(𓈖:𓂝)",
     "trans": "ḥnʿ",
     "mean": "together with"
   }, {
-    "word": "𓇋:𓂝*𓎛:𓇹",
+    "word": "𓇋*𓂝*𓎛*𓇹",
     "trans": "ỉʿḥ",
     "mean": "moon"
   }]
@@ -569,12 +571,14 @@ const hieroglyphsData = [{
     "sign": "𓅱",
     "num": 1,
     "name": "فرخ السمان",
-    "descEn": "Quail chick"
+    "descEn": "Quail chick",
+    "gardiner": "G43"
   }, {
     "sign": "𓏲",
     "num": 2,
     "name": "حبل ملفوف (مختصر)",
-    "descEn": "Coil of rope"
+    "descEn": "Coil of rope",
+    "gardiner": "Z7"
   }],
   "trans": "w",
   "soundAr": "و",
@@ -664,17 +668,19 @@ const hieroglyphsData = [{
     "sign": "𓅓",
     "num": 1,
     "name": "بومة",
-    "descEn": "Owl"
+    "descEn": "Owl",
+    "gardiner": "G17"
   }, {
     "sign": "𓐝",
     "num": 2,
-    "name": "قطعة ضلع",
-    "descEn": "Rib / piece of meat"
+    "name": "شكل بديل متأخر لـ m (Aa15)",
+    "descEn": "Later alternative m sign (Aa15; object uncertain)",
+    "gardiner": "Aa15"
   }],
   "trans": "m",
   "soundAr": "م",
-  "descAr": "بومة / قطعة ضلع",
-  "descEn": "Owl / Rib",
+  "descAr": "بومة / شكل بديل متأخر لـ m",
+  "descEn": "Owl / later alternative m sign",
   "step": 3,
   "examples": [{
     "word": "𓅓",
@@ -752,9 +758,9 @@ const hieroglyphsData = [{
     "trans": "hrw",
     "mean": "day"
   }, {
-    "word": "𓊪:𓏏*𓎛",
-    "trans": "Ptḥ",
-    "mean": "Ptah (variant)"
+    "word": "𓉔*𓄿*𓃀*𓂻",
+    "trans": "h3b",
+    "mean": "send (يرسل)"
   }]
 }, {
   "h": "𓎛",
@@ -765,7 +771,7 @@ const hieroglyphsData = [{
   "descEn": "Wick of twisted flax",
   "step": 10,
   "examples": [{
-    "word": "𓎛:𓈖*𓂝",
+    "word": "𓎛*(𓈖:𓂝)",
     "trans": "ḥnʿ",
     "mean": "together with"
   }, {
@@ -773,7 +779,7 @@ const hieroglyphsData = [{
     "trans": "Ptḥ",
     "mean": "Ptah"
   }, {
-    "word": "𓎼:𓂋*𓎛*𓄛",
+    "word": "𓎼:𓂋*𓎛*𓇰",
     "trans": "grḥ",
     "mean": "night"
   }]
@@ -782,8 +788,8 @@ const hieroglyphsData = [{
   "gardiner": "Aa1",
   "trans": "ḫ",
   "soundAr": "خ",
-  "descAr": "مشيمة",
-  "descEn": "Placenta",
+  "descAr": "مشيمة؟ (تفسير غير مؤكد عند جاردنر)",
+  "descEn": "Placenta? (identification uncertain)",
   "step": 11,
   "examples": [{
     "word": "𓐍:𓏏",
@@ -802,7 +808,7 @@ const hieroglyphsData = [{
   "h": "𓄡",
   "gardiner": "F32",
   "trans": "ẖ",
-  "soundAr": "خ (خفيفة)",
+  "soundAr": "خ مرققة (تقريب تعليمي)",
   "descAr": "بطن حيوان",
   "descEn": "Animal's belly",
   "step": 19,
@@ -818,16 +824,18 @@ const hieroglyphsData = [{
     "sign": "𓊃",
     "num": 1,
     "name": "مزلاج الباب",
-    "descEn": "Door bolt"
+    "descEn": "Door bolt",
+    "gardiner": "O34"
   }, {
     "sign": "𓋴",
     "num": 2,
     "name": "قماش مطوي",
-    "descEn": "Folded cloth"
+    "descEn": "Folded cloth",
+    "gardiner": "S29"
   }],
   "trans": "s",
-  "soundAr": "س (أصلها ز)",
-  "descAr": "مزلاج الباب / قماش مطوي",
+  "soundAr": "س",
+  "descAr": "مزلاج باب / قماش مطوي؛ كانا z وs قديمًا",
   "descEn": "Door bolt / Folded cloth",
   "step": 14,
   "examples": [{
@@ -911,7 +919,7 @@ const hieroglyphsData = [{
     "trans": "gr",
     "mean": "be silent"
   }, {
-    "word": "𓎼:𓂋*𓎛*𓄛",
+    "word": "𓎼:𓂋*𓎛*𓇰",
     "trans": "grḥ",
     "mean": "night"
   }]
@@ -962,9 +970,9 @@ const hieroglyphsData = [{
     "trans": "dpt",
     "mean": "boat"
   }, {
-    "word": "𓋴*𓄔*𓅓",
-    "trans": "sḏm",
-    "mean": "hear"
+    "word": "𓆓:𓂧",
+    "trans": "ḏd",
+    "mean": "say, speak (يقول)"
   }]
 }, {
   "h": "𓆓",
@@ -2109,7 +2117,7 @@ const grammarData = [{
       "noteEn": "Man determinative (𓀀) indicates profession.",
       "noteAr": "مخصص الرجل 𓀀 يحدد مهنة الكاتب"
     }, {
-      "h": "𓎼:𓂋*𓎛*𓄛",
+      "h": "𓎼:𓂋*𓎛*𓇰",
       "trans": "grḥ",
       "meanEn": "Night",
       "meanAr": "ليل",
@@ -2247,7 +2255,7 @@ const grammarData = [{
       "meanEn": "write, abstract idea",
       "meanAr": "كتابة، تجريد"
     }, {
-      "h": "𓏲",
+      "h": "𓍱",
       "meanEn": "rope, tie",
       "meanAr": "حبل، يربط"
     }, {
@@ -2833,10 +2841,10 @@ const grammarData = [{
       "noteAr": "فعل + .n + ضمير =n + مفعول به"
     }, {
       "h": "𓍑*𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
-      "trans": "d3.n sš m dpt",
+      "trans": "ḏ3.n sš m dpt",
       "meanEn": "The scribe crossed in a boat.",
       "meanAr": "عَبَرَ الكاتب في قارب",
-      "noteEn": "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.",
+      "noteEn": "Intransitive verb (ḏ3) + .n + Subject (sš) + Prepositional phrase.",
       "noteAr": "فعل لازم + .n + فاعل + جار ومجرور"
     }],
     "learningGuide": {
@@ -2994,15 +3002,15 @@ const vocabularyData = [{
     "meanEn": "say, speak",
     "meanAr": "يقول"
   }, {
-    "h": "𓎛:𓈖*𓂝",
+    "h": "𓎛*(𓈖:𓂝)",
     "trans": "ḥnʿ",
     "meanEn": "together with, and",
     "meanAr": "مع، بصحبة"
   }, {
-    "h": "𓉔:𓈖",
+    "h": "𓉔:𓈖*𓊬",
     "trans": "hn",
-    "meanEn": "box, chest; command",
-    "meanAr": "صندوق، أمر"
+    "meanEn": "box, chest",
+    "meanAr": "صندوق"
   }, {
     "h": "𓂝:𓂋*𓈎",
     "trans": "ʿrḳ",
@@ -3031,7 +3039,7 @@ const vocabularyData = [{
     "h": "𓂋:𓐍*𓏛",
     "trans": "rḫ",
     "meanEn": "know, learn",
-    "meanAr": "يعرف، يعلم"
+    "meanAr": "يعرف، يَعلَم"
   }, {
     "h": "𓐍*𓅓*𓂜",
     "trans": "ḫm",
@@ -3068,7 +3076,7 @@ const vocabularyData = [{
     "meanEn": "sun, day; Re",
     "meanAr": "شمس، الإله رع"
   }, {
-    "h": "𓇋:𓂝*𓎛:𓇹",
+    "h": "𓇋*𓂝*𓎛*𓇹",
     "trans": "ỉʿḥ",
     "meanEn": "moon",
     "meanAr": "قمر"
@@ -3093,7 +3101,7 @@ const vocabularyData = [{
     "meanEn": "day, day-time",
     "meanAr": "يوم، نهار"
   }, {
-    "h": "𓎼:𓂋*𓎛*𓄛",
+    "h": "𓎼:𓂋*𓎛*𓇰",
     "trans": "grḥ",
     "meanEn": "night",
     "meanAr": "ليل"
@@ -3158,7 +3166,7 @@ const vocabularyData = [{
     "meanEn": "water",
     "meanAr": "ماء"
   }, {
-    "h": "𓎛:𓏏*𓁐",
+    "h": "𓎛*𓅓*𓏏*𓁐",
     "trans": "ḥmt",
     "meanEn": "wife, woman",
     "meanAr": "زوجة، امرأة"
@@ -3172,13 +3180,13 @@ const vocabularyData = [{
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
   "words": [{
-    "h": "𓌳*𓄿:𓄿*𓁹",
+    "h": "(𓌳:𓁹)*𓄿*𓄿",
     "trans": "m33",
     "meanEn": "see, look",
     "meanAr": "يرى، ينظر"
   }, {
     "h": "𓍑*𓄿*𓊛",
-    "trans": "d3",
+    "trans": "ḏ3",
     "meanEn": "cross, ferry across",
     "meanAr": "يعبر النهر"
   }, {
@@ -3187,7 +3195,7 @@ const vocabularyData = [{
     "meanEn": "rejoice, be glad",
     "meanAr": "يفرح، يُسر"
   }, {
-    "h": "𓉔:𓄿*𓃀*𓂻",
+    "h": "𓉔*𓄿*𓃀*𓂻",
     "trans": "h3b",
     "meanEn": "send",
     "meanAr": "يرسل"
@@ -3222,7 +3230,7 @@ const vocabularyData = [{
     "meanEn": "road, way, side",
     "meanAr": "طريق، جانب"
   }, {
-    "h": "𓈍:𓉐",
+    "h": "𓆼*𓄿*𓉹",
     "trans": "ḫ3",
     "meanEn": "office, hall, diwân",
     "meanAr": "ديوان، قاعة مكتب"
@@ -3247,7 +3255,7 @@ const vocabularyData = [{
     "meanEn": "secret",
     "meanAr": "سر، أمر خفي"
   }, {
-    "h": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+    "h": "𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
     "trans": "ỉtrw",
     "meanEn": "river, the Nile",
     "meanAr": "نهر، نهر النيل"
@@ -3281,15 +3289,15 @@ const vocabularyData = [{
 const exercisesData = {
   "lesson1": [{
     "trans": "hn",
-    "correctH": "𓉔:𓈖",
-    "meanEn": "box, command"
+    "correctH": "𓉔:𓈖*𓊬",
+    "meanEn": "box, chest"
   }, {
     "trans": "ʿrḳ",
     "correctH": "𓂝:𓂋*𓈎",
     "meanEn": "swear, bind"
   }, {
     "trans": "grḥ",
-    "correctH": "𓎼:𓂋*𓎛*𓄛",
+    "correctH": "𓎼:𓂋*𓎛*𓇰",
     "meanEn": "night"
   }, {
     "trans": "sft",
@@ -3305,7 +3313,7 @@ const exercisesData = {
     "meanEn": "health"
   }, {
     "trans": "ỉʿḥ",
-    "correctH": "𓇋:𓂝*𓎛:𓇹",
+    "correctH": "𓇋*𓂝*𓎛*𓇹",
     "meanEn": "moon"
   }, {
     "trans": "wỉ3",
@@ -3346,58 +3354,58 @@ const exercisesData = {
     "meanEn": "Ptah knows this counsel.",
     "meanAr": "يعرف الإله بتاح هذه الخطة (فعل متعدٍ Transitive)"
   }, {
-    "h": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
-    "trans": "sḏm sš r bw pn",
-    "meanEn": "The scribe listens to this place.",
-    "meanAr": "يستمع الكاتب لهذا المكان (فعل لازم + r للأماكن)"
+    "h": "𓄔*𓅓 𓊃:𓏏*𓁐 𓏏:𓈖 𓈖 𓏞*𓀀",
+    "trans": "sḏm st tn n sš",
+    "meanEn": "This woman hearkens to the scribe.",
+    "meanAr": "تستمع هذه المرأة إلى الكاتب"
   }, {
     "h": "𓇋*𓅱 𓊃*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
     "trans": "ỉw s m dpt",
     "meanEn": "The man is in a boat.",
     "meanAr": "الرجل في قارب (جملة اسمية بظرف مكان)"
   }, {
-    "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤",
+    "h": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤",
     "trans": "s ḥnʿ st m pr",
     "meanEn": "A man and a woman are in the house.",
     "meanAr": "رجل مع امرأة في البيت (جملة اسمية)"
   }],
   "lesson3": [{
-    "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+    "h": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
     "trans": "sḏm=f rn pn",
     "meanEn": "He hears this name.",
     "meanAr": "يسمع هذا الاسم (مبني للمعلوم Active Voice)"
   }, {
-    "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+    "h": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
     "trans": "m33=k s3",
     "meanEn": "You (m.) see the son.",
     "meanAr": "ترى الابن (صيغة الفاعل المتصل sḏm=f)"
   }, {
-    "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+    "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
     "trans": "sḏm.tw rn ỉn s",
     "meanEn": "The name is heard by a man.",
     "meanAr": "يُسمع الاسم بواسطة رجل (مبني للمجهول Passive مع أداة الفاعل ỉn)"
   }, {
-    "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+    "h": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
     "trans": "h3b.tw b3k ỉn ṯ3ty",
     "meanEn": "The servant is sent by the vizier.",
-    "meanAr": "أُرسل الخادم بواسطة الوزير (Passive with Agent ỉn)"
+    "meanAr": "يُرسَل الخادم بواسطة الوزير (Passive with Agent ỉn)"
   }, {
-    "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+    "h": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
     "trans": "sḏm.n=f rn pn",
     "meanEn": "He heard (has heard) this name.",
-    "meanAr": "سَمِعَ هذا الاسم (صيغة الماضي التام sḏm.n=f)"
+    "meanAr": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)"
   }, {
-    "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
-    "trans": "d3 sš m ỉtrw",
+    "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
+    "trans": "ḏ3 sš m ỉtrw",
     "meanEn": "The scribe crosses in the river.",
     "meanAr": "يعبر الكاتب في النهر (فعل لازم Intransitive)"
   }, {
     "h": "𓂋:𓐍*𓏛*𓈖 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
     "trans": "rḫ.n sš sḫr pn",
     "meanEn": "The scribe has known this counsel.",
-    "meanAr": "عَلِمَ الكاتب هذه الخطة (ماضي تام sḏm.n=f)"
+    "meanAr": "عَلِمَ الكاتب هذه الخطة (حدث ماضٍ بصيغة sḏm.n=f)"
   }, {
-    "h": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀",
+    "h": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀",
     "trans": "m33.tw pt ỉn s",
     "meanEn": "The sky is seen by a man.",
     "meanAr": "تُرى السماء بواسطة رجل (Passive with Agent ỉn)"
@@ -3461,7 +3469,7 @@ const typingQuestionsData = [{
   "id": 7,
   "lesson": "الدرس الأول",
   "lessonEn": "Lesson I",
-  "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+  "h": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐",
   "trans": "s ḥnʿ st",
   "meanEn": "A man together with a woman",
   "meanAr": "رجل مع امرأة",
@@ -3560,16 +3568,16 @@ const typingQuestionsData = [{
   "id": 18,
   "lesson": "الدرس الثاني",
   "lessonEn": "Lesson II",
-  "h": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
-  "trans": "sḏm sš r bw pn",
-  "meanEn": "The scribe listens to this place.",
-  "meanAr": "يستمع الكاتب لهذا المكان",
-  "hint": "Verb sḏm + subject sš + preposition r + bw pn"
+  "h": "𓄔*𓅓 𓊃:𓏏*𓁐 𓏏:𓈖 𓈖 𓏞*𓀀",
+  "trans": "sḏm st tn n sš",
+  "meanEn": "This woman hearkens to the scribe.",
+  "meanAr": "تستمع هذه المرأة إلى الكاتب",
+  "hint": "Gardiner Exercise II(b)8: sḏm + subject st tn + n + sš (the person listened to)"
 }, {
   "id": 19,
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
-  "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+  "h": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
   "trans": "sḏm=f rn pn",
   "meanEn": "He hears this name.",
   "meanAr": "يسمع هذا الاسم",
@@ -3578,7 +3586,7 @@ const typingQuestionsData = [{
   "id": 20,
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
-  "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+  "h": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
   "trans": "m33=k s3",
   "meanEn": "You see the son.",
   "meanAr": "ترى الابن",
@@ -3587,7 +3595,7 @@ const typingQuestionsData = [{
   "id": 21,
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
-  "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+  "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
   "trans": "sḏm.tw rn ỉn s",
   "meanEn": "The name is heard by a man.",
   "meanAr": "يُسمع الاسم بواسطة رجل",
@@ -3596,16 +3604,16 @@ const typingQuestionsData = [{
   "id": 22,
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
-  "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+  "h": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
   "trans": "h3b.tw b3k ỉn ṯ3ty",
   "meanEn": "The servant is sent by the vizier.",
-  "meanAr": "أُرسل الخادم بواسطة الوزير",
+  "meanAr": "يُرسَل الخادم بواسطة الوزير",
   "hint": "Passive form h3b.tw + subject b3k + agent ỉn ṯ3ty"
 }, {
   "id": 23,
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
-  "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+  "h": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
   "trans": "sḏm.n=f rn pn",
   "meanEn": "He heard this name.",
   "meanAr": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)",
@@ -3614,11 +3622,11 @@ const typingQuestionsData = [{
   "id": 24,
   "lesson": "الدرس الثالث",
   "lessonEn": "Lesson III",
-  "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
-  "trans": "d3 sš m ỉtrw",
+  "h": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
+  "trans": "ḏ3 sš m ỉtrw",
   "meanEn": "The scribe crosses in the river.",
   "meanAr": "يعبر الكاتب في النهر",
-  "hint": "Intransitive verb d3 + subject sš + prep phrase m ỉtrw"
+  "hint": "Intransitive verb ḏ3 + subject sš + prep phrase m ỉtrw"
 }, {
   "id": 25,
   "lesson": "الدرس الثالث",
@@ -3636,11 +3644,11 @@ const comprehensiveQuizData = [{
   "categoryLabelEn": "Hieroglyphic Signs",
   "categoryLabelAr": "الرموز الهيروغليفية",
   "qEn": "What is the phonetic transliteration for the Egyptian vulture sign (𓄿)?",
-  "qAr": "ما هو النطق الصوتي (Transliteration) لرمز طائر العقاب المصري (𓄿)؟",
+  "qAr": "ما هو النقحرة (القيمة الصوتية المكتوبة) لرمز النسر المصري (𓄿)؟",
   "hieroglyph": "𓄿",
   "options": [{
     "id": "a",
-    "text": "3 (Alef - طائر العقاب)",
+    "text": "3 (Alef - النسر المصري)",
     "desc": "Glottal stop / ألف حلقية",
     "isCorrect": true
   }, {
@@ -4220,7 +4228,7 @@ const comprehensiveQuizData = [{
   "categoryLabelAr": "المفردات والكلمات",
   "qEn": "What is the meaning of 'ỉtrw' (𓇋𓏏𓂋𓅱(𓈘:𓈘:𓈘))?",
   "qAr": "ما معنى الكلمة 'ỉtrw' (𓇋𓏏𓂋𓅱(𓈘:𓈘:𓈘))؟",
-  "hieroglyph": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+  "hieroglyph": "𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
   "options": [{
     "id": "a",
     "text": "River, the Nile (نهر / النيل)",
@@ -4265,7 +4273,7 @@ const comprehensiveQuizData = [{
     "text": "Vizier (وزير)",
     "isCorrect": false
   }],
-  "explanation": "The noun 'b3k' means 'servant' (خادم), commonly used in formal letters (b3k ỉm = this humble servant)."
+  "explanation": "b3k means man-servant (خادم). Its precise reference depends on context; ỉm means there/therein and does not by itself mean this."
 }, {
   "id": "v12",
   "category": "vocabulary",
@@ -4409,7 +4417,7 @@ const comprehensiveQuizData = [{
   "qAr": "أي حرف جر يُستخدم تحديداً للاتجاه نحو الأشخاص والآلهة (العاقل)؟",
   "options": [{
     "id": "a",
-    "text": "𓈖 (n) - to, for (used only for persons / للعاقل والأشخاص)",
+    "text": "𓈖 (n) - to, for a person (إلى / لـ شخص في هذا المثال)",
     "isCorrect": true
   }, {
     "id": "b",
@@ -4424,7 +4432,7 @@ const comprehensiveQuizData = [{
     "text": "𓎛𓈖𓂝 (ḥnʿ) - together with (مع)",
     "isCorrect": false
   }],
-  "explanation": "Crucial rule: Preposition 'n' (𓈖) is used towards living persons and deities (n s 'to a man', n Ptḥ 'to Ptah')."
+  "explanation": "In n s (to a man) and n Ptḥ (to Ptah), n introduces the person addressed. This lesson uses these basic directional examples; it is not a claim that n can only occur with persons in every Egyptian construction."
 }, {
   "id": "g6",
   "category": "grammar",
@@ -4439,7 +4447,7 @@ const comprehensiveQuizData = [{
     "isCorrect": true
   }, {
     "id": "b",
-    "text": "𓈖 (n) - to, for (persons only / للأشخاص)",
+    "text": "𓈖 (n) - to, for (إلى / لـ شخص في أمثلة الدرس)",
     "isCorrect": false
   }, {
     "id": "c",
@@ -4476,7 +4484,7 @@ const comprehensiveQuizData = [{
     "text": "By doubling the final consonant of the root",
     "isCorrect": false
   }],
-  "explanation": "The passive voice is formed by attaching morpheme '.tw' to the verb (المبني للمجهول): e.g. sḏm.tw rn = 'the name is heard'."
+  "explanation": "One passive construction appends .tw to the stem, e.g. sḏm.tw rn. Egyptian also has other passive formations; see Gardiner §§39, 67, 419–420."
 }, {
   "id": "g8",
   "category": "grammar",
@@ -4485,7 +4493,7 @@ const comprehensiveQuizData = [{
   "categoryLabelAr": "القواعد وصحة الجمل",
   "qEn": "In the passive sentence 'sḏm.tw rn ỉn s', what is the role of the particle 'ỉn'?",
   "qAr": "في الجملة المبنية للمجهول 'sḏm.tw rn ỉn s'، ما هو دور الأداة 'ỉn'؟",
-  "hieroglyph": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+  "hieroglyph": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
   "options": [{
     "id": "a",
     "text": "Agent marker: introduces the agent 'by a man' (تقديم الفاعل الحقيقي)",
@@ -4550,7 +4558,7 @@ const comprehensiveQuizData = [{
     "isCorrect": false
   }, {
     "id": "c",
-    "text": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)",
+    "text": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)",
     "desc": "Verbal sentence: He hears this name",
     "isCorrect": false
   }, {
@@ -4570,7 +4578,7 @@ const comprehensiveQuizData = [{
   "qAr": "أي جملة تعبر عن التركيب الصحيح لـ 'رجل مع امرأة'؟",
   "options": [{
     "id": "a",
-    "text": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 (s ḥnʿ st)",
+    "text": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐 (s ḥnʿ st)",
     "desc": "Noun + ḥnʿ (with) + Noun",
     "isCorrect": true
   }, {
@@ -4626,7 +4634,7 @@ const phonogramsData = [{
   "gardiner": "O1",
   "trans": "pr",
   "categoryAr": "مخطط منزل أو دار",
-  "meanAr": "بيت / دار / قصر",
+  "meanAr": "بيت / دار / ضيعة",
   "meanEn": "house, estate",
   "complements": "𓂋 (r)",
   "example": {
@@ -4640,11 +4648,11 @@ const phonogramsData = [{
   "type": "biliteral",
   "typeAr": "ثنائي الصوت",
   "h": "𓌸",
-  "gardiner": "U7",
+  "gardiner": "U6",
   "trans": "mr",
-  "categoryAr": "فأس أو مجرفة زراعية",
-  "meanAr": "يحب / يرغب / قناة ماء",
-  "meanEn": "love, wish, channel",
+  "categoryAr": "فأس زراعية (معزقة)",
+  "meanAr": "قيمة mr؛ في mrỉ «يحب»",
+  "meanEn": "mr; in mrỉ, to love",
   "complements": "𓂋 (r)",
   "example": {
     "h": "𓌸*𓂋*𓇋",
@@ -4676,7 +4684,7 @@ const phonogramsData = [{
   "h": "𓎟",
   "gardiner": "V30",
   "trans": "nb",
-  "categoryAr": "سلة خوص بمقبض أو بدونه",
+  "categoryAr": "سلة خوص (نب)",
   "meanAr": "سيد / مالك / كل / جميع",
   "meanEn": "lord, master; every, all",
   "complements": "𓃀 (b)",
@@ -4711,7 +4719,7 @@ const phonogramsData = [{
   "gardiner": "D28",
   "trans": "k3",
   "categoryAr": "ذراعان مرفوعتان للأعلى",
-  "meanAr": "القرين / الروح / الطاقة الحيوية",
+  "meanAr": "الكا / القرين؛ قوة الحياة",
   "meanEn": "Ka, soul, spirit",
   "complements": "𓄿 (3)",
   "example": {
@@ -4779,21 +4787,21 @@ const phonogramsData = [{
   "gardiner": "M23",
   "trans": "sw",
   "categoryAr": "نبات السوت (رمز الجنوب)",
-  "meanAr": "ملك الوجه القبلي / هو",
-  "meanEn": "king of Upper Egypt, he",
+  "meanAr": "قيمة sw؛ تدخل في nsw «ملك»",
+  "meanEn": "sw; in nsw, king",
   "complements": "𓅱 (w)",
   "example": {
     "h": "𓇓:𓏏",
     "trans": "nswt",
     "mean": "ملك"
   },
-  "note": "يُكتب به اللقب الملكي الشهير 'نسوت' (ملك الصعيد)."
+  "note": "M23 علامة السوت ذات القيمة sw؛ لا تترجم العلامة منفردة دائمًا إلى «ملك» أو إلى الضمير «هو»."
 }, {
   "id": "bi_t3",
   "type": "biliteral",
   "typeAr": "ثنائي الصوت",
   "h": "𓇿",
-  "gardiner": "N16",
+  "gardiner": "N17",
   "trans": "t3",
   "categoryAr": "قطاع شريط الأرض مع ذرات الرمل",
   "meanAr": "أرض / بلاد / يابسة",
@@ -4829,7 +4837,7 @@ const phonogramsData = [{
   "h": "𓅭",
   "gardiner": "G39",
   "trans": "s3",
-  "categoryAr": "أنثى البط (بطة صغيرة)",
+  "categoryAr": "بطة طويلة الذيل (Pintail duck)",
   "meanAr": "ابن / سلالة",
   "meanEn": "son",
   "complements": "𓄿 (3)",
@@ -4847,15 +4855,15 @@ const phonogramsData = [{
   "gardiner": "G40",
   "trans": "pꜣ",
   "categoryAr": "طائر يحلق ويفرد جناحيه",
-  "meanAr": "يطير / هذا (أداة إشارة)",
-  "meanEn": "fly; this (demonstrative)",
+  "meanAr": "يطير؛ pꜣ أداة تعريف «الـ» في مراحل لاحقة",
+  "meanEn": "fly; later definite article the",
   "complements": "𓄿 (3)",
   "example": {
     "h": "𓅮",
     "trans": "pꜣ",
     "mean": "هذا / يطير"
   },
-  "note": "تطور لاحقاً في المصرية الوسيطة والمتأخرة ليصبح أداة التعريف (الـ)."
+  "note": "G40 قيمتها pꜣ؛ في جاردنر ترتبط بفعل الطيران وبأداة التعريف اللاحقة، وليست ترجمة ثابتة لـ«هذا» في المصرية الوسطى."
 }, {
   "id": "bi_hr",
   "type": "biliteral",
@@ -4895,7 +4903,7 @@ const phonogramsData = [{
   "type": "biliteral",
   "typeAr": "ثنائي الصوت",
   "h": "𓐪",
-  "gardiner": "Aa27",
+  "gardiner": "Aa28",
   "trans": "qd",
   "categoryAr": "مسطرين البناء (أداة تمليط)",
   "meanAr": "يبني / يشيد / يصوغ / خُلق",
@@ -4982,7 +4990,7 @@ const phonogramsData = [{
   "h": "𓄊",
   "gardiner": "F12",
   "trans": "wsr",
-  "categoryAr": "رأس وقناع ابن آوى (أنوبيس)",
+  "categoryAr": "رأس وعنق حيوان من الكلبيات",
   "meanAr": "قوي / ذو سطوة / عزيز / مقتدر",
   "meanEn": "powerful, strong",
   "complements": "𓋴 (s) و 𓂋 (r)",
@@ -5045,21 +5053,21 @@ const phonogramsData = [{
   "note": "الكلمة الأساسية للدلالة على الإله أو القوة الإلهية، وجمعها 'نثرو' (الآلهة)."
 }, {
   "id": "tri_mAa",
-  "type": "triliteral",
-  "typeAr": "ثلاثي الصوت",
+  "type": "biliteral",
+  "typeAr": "ثنائي الصوت",
   "h": "𓌳",
   "gardiner": "U1",
-  "trans": "mꜣʿ",
+  "trans": "mꜣ",
   "categoryAr": "منجل حصاد الحبوب",
-  "meanAr": "حق / عدل / صدق / مستقيم",
-  "meanEn": "true, real, just",
-  "complements": "𓂝 (ʿ)",
+  "meanAr": "قيمة mꜣ؛ تدخل في mꜣꜣ «يرى»",
+  "meanEn": "mꜣ; in mꜣꜣ, see",
+  "complements": "𓄿 (ꜣ)",
   "example": {
-    "h": "𓌳:𓂝",
-    "trans": "mꜣʿ",
-    "mean": "صادق / حق"
+    "h": "(𓌳:𓁹)*𓄿*𓄿",
+    "trans": "mꜣꜣ",
+    "mean": "يرى"
   },
-  "note": "منه اشتقت الإلهة ماعت (ربة الحق والعدل والنظام الكوني)."
+  "note": "U1 قيمتها mꜣ، وليست وحدها mꜣʿ «حق». كتابة «حق» تحتاج بناء الكلمة المناسب؛ راجع U1 وU4 وAa11 في جاردنر."
 }, {
   "id": "tri_aHa",
   "type": "triliteral",
@@ -5132,112 +5140,112 @@ const phonogramsData = [{
   "id": "tri_hsb",
   "type": "triliteral",
   "typeAr": "ثلاثي الصوت",
-  "h": "𓐮",
+  "h": "𓐎",
   "gardiner": "Aa2",
   "trans": "ḥsb",
-  "categoryAr": "شريط مائل أو قطعة شحم",
+  "categoryAr": "بثرة أو غدة؟ (تفسير غير مؤكد)",
   "meanAr": "يحسب / يعد / يحصي",
   "meanEn": "count, reckon",
   "complements": "𓃀 (b)",
   "example": {
-    "h": "𓐮:𓃀",
+    "h": "𓐎*𓃀",
     "trans": "ḥsb",
     "mean": "يحسب"
   },
-  "note": "أصل كلمة 'حساب' و'يحسب' في اللغة، استعملها الكتبة في الحسابات والضرائب."
+  "note": "Aa2 تُستعمل في ḥsb «يحسب/يحصي»؛ يوردها جاردنر في قائمة العلامات ضمن أمثلة العد والحساب."
 }, {
   "id": "tri_smr",
-  "type": "triliteral",
-  "typeAr": "ثلاثي الصوت",
+  "type": "biliteral",
+  "typeAr": "ثنائي الصوت",
   "h": "𓍋",
-  "gardiner": "T13",
-  "trans": "smr",
-  "categoryAr": "قطعة أثاث خشبية أو مسند",
-  "meanAr": "سمير / جليس الملك ومرافقه",
-  "meanEn": "courtier, companion",
+  "gardiner": "U23",
+  "trans": "mr",
+  "categoryAr": "إزميل؟ (تفسير غير مؤكد)",
+  "meanAr": "قيمة mr؛ في smr «رفيق / جليس»",
+  "meanEn": "mr; in smr, companion or courtier",
   "complements": "𓂋 (r)",
   "example": {
-    "h": "𓍋:𓂋",
+    "h": "𓋴*𓍋",
     "trans": "smr",
-    "mean": "صديق وسمير للملك"
+    "mean": "رفيق / جليس"
   },
-  "note": "لقب بلاطي شرفي رفيع: 'سمر واعتي' (السمير الأوحد / الصديق المقرب للملك)."
+  "note": "U23 قيمتها mr. في كلمة smr تسبقها علامة s؛ الرمز وحده لا يقرأ smr، وليس T13."
 }, {
   "id": "quad_spss",
-  "type": "quadriliteral",
-  "typeAr": "رباعي الصوت",
-  "h": "𓀻",
+  "type": "word",
+  "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
+  "h": "𓀼",
   "gardiner": "A51",
-  "trans": "špss",
-  "categoryAr": "شخص نبيل يرتدي وشاحاً وممسكاً بعصا الشرف",
+  "trans": "šps",
+  "categoryAr": "نبيل جالس يحمل سوطًا",
   "meanAr": "شريف / فخم / عظيم القدر / جليل",
   "meanEn": "noble, august, splendid",
-  "complements": "𓋴 (s)",
+  "complements": "𓊪 (p) و𓋴 (s)",
   "example": {
-    "h": "𓀻:𓋴",
-    "trans": "špss",
+    "h": "𓀼",
+    "trans": "šps",
     "mean": "شريف / نبيل"
   },
-  "note": "يدل على المكانة الاجتماعية العليا والأشياء النفيسة الفاخرة."
+  "note": "A51 رمز/مخصص في الكلمات الدالة على النبل. ليست قراءة šps وحدها دليلًا على علامة رباعية."
 }, {
   "id": "quad_hwnw",
-  "type": "quadriliteral",
-  "typeAr": "رباعي الصوت",
+  "type": "word",
+  "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
   "h": "𓀔",
   "gardiner": "A17",
   "trans": "ḥwnw",
-  "categoryAr": "طفل أو شاب واضع إصبعه في فمه",
+  "categoryAr": "طفل جالس يضع يده إلى فمه (مخصص)",
   "meanAr": "شاب / فتى / طفل يافع",
   "meanEn": "youth, young man, child",
-  "complements": "𓅱 (w)",
+  "complements": "هنا تُكتب حروف الكلمة، ويتبعها مخصص الطفل",
   "example": {
-    "h": "𓀔:𓅱",
+    "h": "𓎛*𓅱*𓈖*𓅱*𓀔",
     "trans": "ḥwnw",
     "mean": "شاب يافع"
   },
-  "note": "العلامة الرباعية الشهيرة التي تعبر عن الصبا والفتوة والشباب."
+  "note": "A17 مخصص للطفل والشاب؛ لا تمثل وحدها حروف ḥwnw الأربعة. المثال يوضح كتابة صوتية تعليمية للكلمة مع المخصص."
 }, {
   "id": "quad_xkrw",
-  "type": "quadriliteral",
-  "typeAr": "رباعي الصوت",
-  "h": "𓐩",
+  "type": "word",
+  "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
+  "h": "𓐬",
   "gardiner": "Aa30",
   "trans": "ẖkrw",
-  "categoryAr": "حلية الزخرفة المعمارية (حزم القصب المزينة)",
+  "categoryAr": "عنصر زخرفي أعلى الجدار",
   "meanAr": "حلية / زينة / زركشة معمارية",
   "meanEn": "ornament, frieze",
   "complements": "𓂋 (r) و 𓅱 (w)",
   "example": {
-    "h": "𓐩:𓂋*𓅱",
+    "h": "𓐬*𓅱",
     "trans": "ẖkrw",
     "mean": "حلي وزينة"
   },
-  "note": "إفريز الخكر المشهور الذي يعلو جدران المقابر والمعابد المصرية القديمة."
+  "note": "Aa30 عنصر زخرفي يُستعمل علامة كلمة أو مخصصًا للزينة؛ ليست Aa27، ولا نعد نهاية الجمع w جزءًا من قيمة رباعية واحدة."
 }, {
   "id": "quad_twtw",
-  "type": "quadriliteral",
-  "typeAr": "رباعي الصوت",
+  "type": "word",
+  "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
   "h": "𓀾",
   "gardiner": "A53",
-  "trans": "twtw",
-  "categoryAr": "تمثال رجل ملكي أو مومياء منتصبة",
+  "trans": "twt",
+  "categoryAr": "مومياء منتصبة؛ مخصص في كلمة تمثال",
   "meanAr": "تمثال / صورة / شبه ومطابقة",
   "meanEn": "statue, likeness, image",
   "complements": "𓏏 (t) و 𓅱 (w)",
   "example": {
-    "h": "𓀾:𓏏*𓅱",
-    "trans": "twtw",
+    "h": "𓏏*𓅱*𓏏*𓀾",
+    "trans": "twt",
     "mean": "تمثال / شبه"
   },
-  "note": "منه اسم 'توت' في 'توت عنخ آمون' بمعنى الصورة الحية للإله آمون."
+  "note": "A53 مخصص للمومياء والتمثال؛ twt «تمثال» كلمة، وليست قيمة رباعية ثابتة للرمز."
 }, {
   "id": "quad_nbty",
-  "type": "quadriliteral",
-  "typeAr": "رباعي الصوت",
+  "type": "word",
+  "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
   "h": "𓅒",
   "gardiner": "G16",
   "trans": "nbty",
-  "categoryAr": "العقاب ونخبت والكوبرا واجيت فوق سلتين",
+  "categoryAr": "نسر نخبت وكوبرا واجيت فوق سلتي nb",
   "meanAr": "السيدتان / ربتي الوجهين البحري والقبلي",
   "meanEn": "The Two Ladies (Nekhbet & Wadjet)",
   "complements": "𓏏 (t) و 𓇌 (y)",
@@ -5246,15 +5254,15 @@ const phonogramsData = [{
     "trans": "nbty",
     "mean": "اللقب النبتي الملكي"
   },
-  "note": "أحد الألقاب الخمسة الرئيسية للفرعون لبيان حماية ربّتي مصر العليا والسفلى له."
+  "note": "لقب ملكي مركب «السيدتان»، وليس أربعة أصوات لعلامة أبجدية واحدة."
 }, {
   "id": "quad_prhd",
-  "type": "quadriliteral",
-  "typeAr": "رباعي الصوت",
+  "type": "word",
+  "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
   "h": "𓉐𓌉",
   "gardiner": "O1+T3",
   "trans": "pr-ḥḏ",
-  "categoryAr": "مركب رمزي من البيت والصرح المضيء",
+  "categoryAr": "مخطط منزل مع رأس صولجان",
   "meanAr": "البيت الأبيض / الخزانة الملكية",
   "meanEn": "treasury (White House)",
   "complements": "𓂋 (r) و 𓆓 (ḏ)",
@@ -5263,7 +5271,7 @@ const phonogramsData = [{
     "trans": "pr-ḥḏ",
     "mean": "الخزانة الملكية"
   },
-  "note": "المصطلح الإداري التاريخي لخزانة الدولة والضرائب في مصر القديمة."
+  "note": "مصطلح pr-ḥḏ «البيت الأبيض / الخزانة» مركب من علامتين؛ لا يُصنّف كعلامة صوتية رباعية واحدة."
 }];
 
 // Source: src/lib/hieroglyphs.js
@@ -5497,7 +5505,7 @@ const PhonogramsSection = () => {
   const totalCount = phonogramsData.length;
   const biCount = phonogramsData.filter(d => d.type === 'biliteral').length;
   const triCount = phonogramsData.filter(d => d.type === 'triliteral').length;
-  const quadCount = phonogramsData.filter(d => d.type === 'quadriliteral').length;
+  const wordCount = phonogramsData.filter(d => d.type === 'word').length;
   const revealedCount = revealedIds.size;
   return /*#__PURE__*/React.createElement("div", {
     className: "max-w-6xl mx-auto p-4 md:p-6 space-y-6 mt-4"
@@ -5515,29 +5523,17 @@ const PhonogramsSection = () => {
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
     className: "text-2xl md:text-3xl font-bold text-slate-800",
     dir: "ltr"
-  }, "Phonograms: Biliterals, Triliterals & Quadriliterals"), /*#__PURE__*/React.createElement("div", {
+  }, "Phonograms, Word Signs & Titles"), /*#__PURE__*/React.createElement("div", {
     className: "text-xs sm:text-sm font-bold text-amber-800 mt-0.5",
     dir: "rtl"
-  }, "\u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0635\u0648\u062A\u064A\u0629 (\u062B\u0646\u0627\u0626\u064A\u0629\u060C \u062B\u0644\u0627\u062B\u064A\u0629\u060C \u0648\u0631\u0628\u0627\u0639\u064A\u0629 \u0627\u0644\u0635\u0648\u062A)"))), /*#__PURE__*/React.createElement("div", {
+  }, "\u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0635\u0648\u062A\u064A\u0629 \u0648\u0627\u0644\u0643\u0644\u0645\u0627\u062A \u0648\u0627\u0644\u0623\u0644\u0642\u0627\u0628"))), /*#__PURE__*/React.createElement("div", {
     className: "mt-2 text-stone-600 text-sm md:text-base leading-relaxed max-w-3xl space-y-1"
   }, /*#__PURE__*/React.createElement("p", {
     dir: "ltr"
-  }, "In Middle Egyptian, writing goes beyond single-consonant signs. Scribes frequently utilized phonograms representing ", /*#__PURE__*/React.createElement("strong", {
-    className: "text-amber-800 font-bold"
-  }, "two consonants (biliterals)"), ", ", /*#__PURE__*/React.createElement("strong", {
-    className: "text-amber-800 font-bold"
-  }, "three consonants (triliterals)"), ", or ", /*#__PURE__*/React.createElement("strong", {
-    className: "text-amber-800 font-bold"
-  }, "four consonants (quadriliterals)"), " in sequence (e.g. ", /*#__PURE__*/React.createElement("span", {
-    className: "font-['Segoe_UI_Historic'] text-lg font-bold text-slate-900"
-  }, "\uD80C\uDD24"), " ", /*#__PURE__*/React.createElement("em", null, "nfr"), ", ", /*#__PURE__*/React.createElement("span", {
-    className: "font-['Segoe_UI_Historic'] text-lg font-bold text-slate-900"
-  }, "\uD80C\uDEF9"), " ", /*#__PURE__*/React.createElement("em", null, "\u02BFn\u1E2B"), ", ", /*#__PURE__*/React.createElement("span", {
-    className: "font-['Segoe_UI_Historic'] text-lg font-bold text-slate-900"
-  }, "\uD80C\uDEB5"), " ", /*#__PURE__*/React.createElement("em", null, "\u1E25tp"), "). These were regularly written with phonetic complements to guarantee clear, accurate reading."), /*#__PURE__*/React.createElement("p", {
+  }, "Phonograms can represent two or three consonants. Word signs, classifiers and compound titles have different functions; a word with four consonants is not automatically a single quadriliteral phonogram."), /*#__PURE__*/React.createElement("p", {
     className: "text-xs text-stone-500 font-medium",
     dir: "rtl"
-  }, "(\u0641\u064A \u0627\u0644\u0644\u063A\u0629 \u0627\u0644\u0645\u0635\u0631\u064A\u0629 \u0627\u0644\u0642\u062F\u064A\u0645\u0629\u060C \u0644\u0627 \u062A\u0642\u062A\u0635\u0631 \u0627\u0644\u0631\u0645\u0648\u0632 \u0639\u0644\u0649 \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0623\u062D\u0627\u062F\u064A\u0629\u060C \u0628\u0644 \u0627\u0633\u062A\u0639\u0645\u0644 \u0627\u0644\u0643\u0627\u062A\u0628 \u0639\u0644\u0627\u0645\u0627\u062A \u062A\u0645\u062B\u0644 \u0635\u0648\u062A\u064A\u0646 \u0623\u0648 \u062B\u0644\u0627\u062B\u0629 \u0623\u0648 \u0623\u0631\u0628\u0639\u0629 \u0623\u0635\u0648\u0627\u062A \u0645\u062A\u0635\u0644\u0629\u060C \u0645\u0639 \u0645\u0643\u0645\u0644 \u0635\u0648\u062A\u064A \u0644\u062A\u0623\u0643\u064A\u062F \u0627\u0644\u0642\u0631\u0627\u0621\u0629)."))), /*#__PURE__*/React.createElement("div", {
+  }, "\u0645\u062E\u062A\u0627\u0631\u0627\u062A \u062A\u0639\u0644\u064A\u0645\u064A\u0629\u060C \u0648\u0644\u064A\u0633\u062A \u0642\u0627\u0626\u0645\u0629 \u062C\u0627\u0631\u062F\u0646\u0631 \u0627\u0644\u0643\u0627\u0645\u0644\u0629. \u0627\u0644\u0639\u0644\u0627\u0645\u0629 \u0627\u0644\u0635\u0648\u062A\u064A\u0629 \u062A\u064F\u0643\u062A\u0628 \u0628\u0642\u064A\u0645\u062A\u0647\u0627\u060C \u0648\u0627\u0644\u0645\u062E\u0635\u0635 \u064A\u0648\u0636\u062D \u0627\u0644\u0645\u0639\u0646\u0649 \u0648\u0644\u0627 \u064A\u064F\u0646\u0637\u0642 \u0639\u0627\u062F\u0629\u064B. \u0627\u0644\u0646\u0642\u062D\u0631\u0629 \u0643\u062A\u0627\u0628\u0629 \u0642\u064A\u0645\u0629 \u0627\u0644\u0631\u0645\u0648\u0632 \u0628\u0627\u0644\u062D\u0631\u0648\u0641 \u0645\u062B\u0644 s\u1E0Fm\u060C \u0648\u0644\u064A\u0633\u062A \u0627\u0644\u062A\u0631\u062C\u0645\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0623\u0648 \u0646\u0637\u0642\u064B\u0627 \u0642\u062F\u064A\u0645\u064B\u0627 \u0645\u0624\u0643\u062F\u064B\u0627."))), /*#__PURE__*/React.createElement("div", {
     className: "bg-white/90 border border-amber-200 rounded-xl p-3 sm:p-4 text-center min-w-[170px] shadow-sm flex flex-col justify-center"
   }, /*#__PURE__*/React.createElement("span", {
     className: "text-xs text-stone-700 font-bold",
@@ -5577,10 +5573,10 @@ const PhonogramsSection = () => {
     labelAr: 'ثلاثية الصوت',
     count: triCount
   }, {
-    id: 'quadriliteral',
-    labelEn: 'Quadriliterals',
-    labelAr: 'رباعية الصوت',
-    count: quadCount
+    id: 'word',
+    labelEn: 'Words & Titles',
+    labelAr: 'كلمات وألقاب',
+    count: wordCount
   }].map(f => /*#__PURE__*/React.createElement("button", {
     key: f.id,
     onClick: () => setActiveFilter(f.id),
@@ -5644,14 +5640,14 @@ const PhonogramsSection = () => {
     }, /*#__PURE__*/React.createElement("span", {
       className: "text-[11px] font-bold text-amber-800 bg-amber-100/80 px-2 py-0.5 rounded-md",
       dir: "ltr"
-    }, item.type === 'biliteral' ? 'Biliteral' : item.type === 'triliteral' ? 'Triliteral' : 'Quadriliteral'), /*#__PURE__*/React.createElement("span", {
+    }, item.type === 'biliteral' ? 'Biliteral' : item.type === 'triliteral' ? 'Triliteral' : 'Word / Title'), /*#__PURE__*/React.createElement("span", {
       className: "text-[10px] text-stone-500 font-medium",
       dir: "rtl"
     }, "(", item.typeAr, ")"))), /*#__PURE__*/React.createElement("div", {
       className: "p-5 flex flex-col items-center justify-center my-auto min-h-[120px]"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-5xl sm:text-6xl font-['Segoe_UI_Historic'] text-slate-800 transition-transform group-hover:scale-105 select-none leading-none"
-    }, item.h), /*#__PURE__*/React.createElement("span", {
+    }, /*#__PURE__*/React.createElement(VocabularyGlyph, {
+      code: item.h
+    }), /*#__PURE__*/React.createElement("span", {
       className: "text-[11px] text-stone-400 mt-2 font-medium",
       dir: "rtl"
     }, item.categoryAr)), !isRevealed ? /*#__PURE__*/React.createElement("div", {
@@ -8123,7 +8119,7 @@ function MainApp() {
     }, {
       id: 'learn-phonograms',
       label: 'العلامات الصوتية',
-      detail: 'ثنائية وثلاثية ورباعية الصوت',
+      detail: 'علامات ثنائية وثلاثية، وكلمات وألقاب',
       sub: 'phonograms',
       children: phonogramsData.map(h => ({
         id: `phonogram-${h.id}`,
@@ -8497,7 +8493,10 @@ function MainApp() {
     className: "sm:hidden"
   }, "\uD80C\uDFE0 \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0635\u0648\u062A\u064A\u0629"), /*#__PURE__*/React.createElement("span", {
     className: "hidden sm:inline"
-  }, "\uD80C\uDFE0 Phonograms / \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0635\u0648\u062A\u064A\u0629"))), learnSubTab === 'path' && /*#__PURE__*/React.createElement("div", {
+  }, "\uD80C\uDFE0 Phonograms / \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0635\u0648\u062A\u064A\u0629"))), /*#__PURE__*/React.createElement("p", {
+    className: "max-w-5xl mx-auto px-4 text-xs text-stone-500 leading-relaxed",
+    dir: "rtl"
+  }, "\u0627\u0644\u0646\u0642\u062D\u0631\u0629: \u0643\u062A\u0627\u0628\u0629 \u0642\u064A\u0645\u0629 \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0628\u062D\u0631\u0648\u0641 \u0645\u062B\u0644 s\u1E0Fm\u060C \u0648\u0644\u064A\u0633\u062A \u062A\u0631\u062C\u0645\u062A\u0647\u0627. \u0627\u0644\u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0639\u0631\u0628\u064A \u062A\u0642\u0631\u064A\u0628 \u062A\u0639\u0644\u064A\u0645\u064A \u0644\u0644\u0635\u0648\u062A. \u0627\u0644\u062C\u062F\u0648\u0644 \u064A\u0636\u0645 \u0645\u062C\u0645\u0648\u0639\u0627\u062A \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0623\u062D\u0627\u062F\u064A\u0629 \u0648\u0623\u0634\u0643\u0627\u0644\u0647\u0627 \u0627\u0644\u0628\u062F\u064A\u0644\u0629\u061B \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A \u0627\u0644\u0645\u062A\u0639\u062F\u062F\u0629 \u0645\u062E\u062A\u0627\u0631\u0627\u062A \u0648\u0644\u064A\u0633\u062A \u0642\u0627\u0626\u0645\u0629 \u062C\u0627\u0631\u062F\u0646\u0631 \u0643\u0627\u0645\u0644\u0629."), learnSubTab === 'path' && /*#__PURE__*/React.createElement("div", {
     "data-nav-target": "learn-path",
     "data-content-id": "learn-path",
     className: "max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4"
@@ -8614,7 +8613,7 @@ function MainApp() {
     className: "flex items-center justify-between border-b border-stone-100 pb-3 mb-4"
   }, /*#__PURE__*/React.createElement("div", {
     className: "inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3.5 py-1 rounded-full text-sm font-bold"
-  }, /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u0645\u0642\u0627\u0628\u0644 \u0628\u0627\u0644\u0639\u0631\u0628\u064A: ", selectedSign.soundAr)), selectedSign.forms && selectedSign.forms.length > 1 && /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0639\u0631\u0628\u064A \u0627\u0644\u062A\u0642\u0631\u064A\u0628\u064A: ", selectedSign.soundAr)), selectedSign.forms && selectedSign.forms.length > 1 && /*#__PURE__*/React.createElement("span", {
     className: "text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200"
   }, "\u0644\u0647 \u0623\u0643\u062B\u0631 \u0645\u0646 \u0634\u0643\u0644 (", selectedSign.forms.length, ")")), /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col sm:flex-row items-center sm:items-stretch gap-4 md:gap-5"

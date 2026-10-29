@@ -38,7 +38,7 @@ const PhonogramsSection = () => {
   const totalCount = phonogramsData.length;
   const biCount = phonogramsData.filter(d => d.type === 'biliteral').length;
   const triCount = phonogramsData.filter(d => d.type === 'triliteral').length;
-  const quadCount = phonogramsData.filter(d => d.type === 'quadriliteral').length;
+  const wordCount = phonogramsData.filter(d => d.type === 'word').length;
   const revealedCount = revealedIds.size;
 
   return (
@@ -53,19 +53,19 @@ const PhonogramsSection = () => {
               </span>
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-slate-800" dir="ltr">
-                  Phonograms: Biliterals, Triliterals & Quadriliterals
+                  Phonograms, Word Signs & Titles
                 </h2>
                 <div className="text-xs sm:text-sm font-bold text-amber-800 mt-0.5" dir="rtl">
-                  العلامات الصوتية (ثنائية، ثلاثية، ورباعية الصوت)
+                  العلامات الصوتية والكلمات والألقاب
                 </div>
               </div>
             </div>
             <div className="mt-2 text-stone-600 text-sm md:text-base leading-relaxed max-w-3xl space-y-1">
               <p dir="ltr">
-                In Middle Egyptian, writing goes beyond single-consonant signs. Scribes frequently utilized phonograms representing <strong className="text-amber-800 font-bold">two consonants (biliterals)</strong>, <strong className="text-amber-800 font-bold">three consonants (triliterals)</strong>, or <strong className="text-amber-800 font-bold">four consonants (quadriliterals)</strong> in sequence (e.g. <span className="font-['Segoe_UI_Historic'] text-lg font-bold text-slate-900">𓄤</span> <em>nfr</em>, <span className="font-['Segoe_UI_Historic'] text-lg font-bold text-slate-900">𓋹</span> <em>ʿnḫ</em>, <span className="font-['Segoe_UI_Historic'] text-lg font-bold text-slate-900">𓊵</span> <em>ḥtp</em>). These were regularly written with phonetic complements to guarantee clear, accurate reading.
+                Phonograms can represent two or three consonants. Word signs, classifiers and compound titles have different functions; a word with four consonants is not automatically a single quadriliteral phonogram.
               </p>
               <p className="text-xs text-stone-500 font-medium" dir="rtl">
-                (في اللغة المصرية القديمة، لا تقتصر الرموز على العلامات الأحادية، بل استعمل الكاتب علامات تمثل صوتين أو ثلاثة أو أربعة أصوات متصلة، مع مكمل صوتي لتأكيد القراءة).
+                مختارات تعليمية، وليست قائمة جاردنر الكاملة. العلامة الصوتية تُكتب بقيمتها، والمخصص يوضح المعنى ولا يُنطق عادةً. النقحرة كتابة قيمة الرموز بالحروف مثل sḏm، وليست الترجمة العربية أو نطقًا قديمًا مؤكدًا.
               </p>
             </div>
           </div>
@@ -94,7 +94,7 @@ const PhonogramsSection = () => {
               { id: 'all', labelEn: 'All', labelAr: 'الكل', count: totalCount },
               { id: 'biliteral', labelEn: 'Biliterals', labelAr: 'ثنائية الصوت', count: biCount },
               { id: 'triliteral', labelEn: 'Triliterals', labelAr: 'ثلاثية الصوت', count: triCount },
-              { id: 'quadriliteral', labelEn: 'Quadriliterals', labelAr: 'رباعية الصوت', count: quadCount }
+              { id: 'word', labelEn: 'Words & Titles', labelAr: 'كلمات وألقاب', count: wordCount }
             ].map(f => (
               <button
                 key={f.id}
@@ -172,7 +172,7 @@ const PhonogramsSection = () => {
               <div className="p-3 border-b border-stone-100 flex items-center justify-between bg-stone-50/60">
                 <div className="flex items-center gap-1.5">
                   <span className="text-[11px] font-bold text-amber-800 bg-amber-100/80 px-2 py-0.5 rounded-md" dir="ltr">
-                    {item.type === 'biliteral' ? 'Biliteral' : item.type === 'triliteral' ? 'Triliteral' : 'Quadriliteral'}
+                    {item.type === 'biliteral' ? 'Biliteral' : item.type === 'triliteral' ? 'Triliteral' : 'Word / Title'}
                   </span>
                   <span className="text-[10px] text-stone-500 font-medium" dir="rtl">
                     ({item.typeAr})
@@ -182,9 +182,7 @@ const PhonogramsSection = () => {
 
               {/* Card Body: The Hieroglyph Graphic */}
               <div className="p-5 flex flex-col items-center justify-center my-auto min-h-[120px]">
-                <span className="text-5xl sm:text-6xl font-['Segoe_UI_Historic'] text-slate-800 transition-transform group-hover:scale-105 select-none leading-none">
-                  {item.h}
-                </span>
+                <VocabularyGlyph code={item.h} />
                 <span className="text-[11px] text-stone-400 mt-2 font-medium" dir="rtl">
                   {item.categoryAr}
                 </span>

@@ -5,6 +5,9 @@ import { getDatasets,loadLessons,validateLessons,assembleSource,json,sha256,read
 const original=json('tests/fixtures/refactor-baseline.json');
 test('original content is unchanged outside the explicit source-reviewed grammar corrections',()=>{
  const lessons=loadLessons().filter(l=>['lesson1','lesson2','lesson3'].includes(l.id));
+ const fullReview=json('tests/fixtures/full-content-review.json');
+ const undo=(target,change)=>{for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);if(change.removed){assert.equal(Object.hasOwn(target,key),false);target[key]=change.before;}else{assert.deepEqual(target[key],change.after,'Full review changed at '+change.file+':'+change.path.join('.'));if(change.added)delete target[key];else target[key]=change.before;}};
+ for(const change of fullReview.changes.filter(c=>c.file.startsWith('src/lessons/'))){const number=Number(change.file.match(/lesson-(\d+)/)[1]);undo(lessons.find(l=>l.number===number),change);}
  // Undo the later inline-guide / glyph review before checking the earlier approved review.
  const glyphReview=json('tests/fixtures/grammar-glyph-review.json');
  for(const change of glyphReview.changes){let target=lessons.find(l=>l.id===change.lessonId);for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);if(change.removed){assert.equal(Object.hasOwn(target,key),false);target[key]=change.before;}else{assert.deepEqual(target[key],change.after,'Reviewed value changed at '+change.path.join('.'));if(change.added)delete target[key];else target[key]=change.before;}}
@@ -13,6 +16,8 @@ test('original content is unchanged outside the explicit source-reviewed grammar
  const lesson3=lessons.find(l=>l.id==='lesson3');
  for(const change of reviewed.changes){let target=lesson3;for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);assert.deepEqual(target[key],change.after,'Reviewed value changed at '+change.path.join('.'));if(change.added)delete target[key];else target[key]=change.before;}
  const datasets=getDatasets(lessons);
+ const sharedNames={'src/data/shared/hieroglyphs.json':'hieroglyphsData','src/data/shared/phonograms.json':'phonogramsData','src/data/shared/comprehensive-quiz.json':'comprehensiveQuizData'};
+ for(const change of fullReview.changes.filter(c=>sharedNames[c.file]))undo(datasets[sharedNames[change.file]],change);
  for(const change of reviewed.sharedQuizChanges){let target=datasets.comprehensiveQuizData;for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);assert.equal(target[key],change.after);target[key]=change.before;}
  for(const [name,value] of Object.entries(datasets)) assert.equal(sha256(value),original.datasets[name].sha256,name+' differs from the approved content.');
 });

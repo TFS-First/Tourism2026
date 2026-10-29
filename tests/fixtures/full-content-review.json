@@ -1,0 +1,1728 @@
+{
+  "baselineCommit": "9de0cc5",
+  "reference": "Gardiner Egyptian Grammar, third edition, §§16–21, 24–32, 39–40, 67, 419–420 and cited sign-list entries; Unicode character names for code identity. See docs/FULL_CONTENT_AUDIT.md.",
+  "changes": [
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        0,
+        "descAr"
+      ],
+      "before": "عقاب (نسر)",
+      "after": "نسر مصري (رخمة)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        0,
+        "examples",
+        2,
+        "word"
+      ],
+      "before": "𓇋:𓂝*𓎛:𓇹",
+      "after": "𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        1,
+        "descAr"
+      ],
+      "before": "نبات البردي",
+      "after": "قصبة مزهرة"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        1,
+        "examples",
+        2,
+        "word"
+      ],
+      "before": "𓇋:𓂝*𓎛:𓇹",
+      "after": "𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        2,
+        "descAr"
+      ],
+      "before": "ورقتان بردي / شرطتان مائلتان",
+      "after": "قصبتان مزهرتان / شرطتان مائلتان"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        2,
+        "forms",
+        0,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "M17A"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        2,
+        "forms",
+        0,
+        "name"
+      ],
+      "before": "ورقتان بردي",
+      "after": "قصبتان مزهرتان"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        2,
+        "forms",
+        1,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "Z4"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        2,
+        "soundAr"
+      ],
+      "before": "ي (مشددة)",
+      "after": "ي"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        3,
+        "examples",
+        1,
+        "word"
+      ],
+      "before": "𓎛:𓈖*𓂝",
+      "after": "𓎛*(𓈖:𓂝)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        3,
+        "examples",
+        2,
+        "word"
+      ],
+      "before": "𓇋:𓂝*𓎛:𓇹",
+      "after": "𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        4,
+        "forms",
+        0,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "G43"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        4,
+        "forms",
+        1,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "Z7"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        8,
+        "descAr"
+      ],
+      "before": "بومة / قطعة ضلع",
+      "after": "بومة / شكل بديل متأخر لـ m"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        8,
+        "descEn"
+      ],
+      "before": "Owl / Rib",
+      "after": "Owl / later alternative m sign"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        8,
+        "forms",
+        0,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "G17"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        8,
+        "forms",
+        1,
+        "descEn"
+      ],
+      "before": "Rib / piece of meat",
+      "after": "Later alternative m sign (Aa15; object uncertain)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        8,
+        "forms",
+        1,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "Aa15"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        8,
+        "forms",
+        1,
+        "name"
+      ],
+      "before": "قطعة ضلع",
+      "after": "شكل بديل متأخر لـ m (Aa15)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        11,
+        "examples",
+        2,
+        "mean"
+      ],
+      "before": "Ptah (variant)",
+      "after": "send (يرسل)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        11,
+        "examples",
+        2,
+        "trans"
+      ],
+      "before": "Ptḥ",
+      "after": "h3b"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        11,
+        "examples",
+        2,
+        "word"
+      ],
+      "before": "𓊪:𓏏*𓎛",
+      "after": "𓉔*𓄿*𓃀*𓂻"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        12,
+        "examples",
+        0,
+        "word"
+      ],
+      "before": "𓎛:𓈖*𓂝",
+      "after": "𓎛*(𓈖:𓂝)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        12,
+        "examples",
+        2,
+        "word"
+      ],
+      "before": "𓎼:𓂋*𓎛*𓄛",
+      "after": "𓎼:𓂋*𓎛*𓇰"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        13,
+        "descAr"
+      ],
+      "before": "مشيمة",
+      "after": "مشيمة؟ (تفسير غير مؤكد عند جاردنر)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        13,
+        "descEn"
+      ],
+      "before": "Placenta",
+      "after": "Placenta? (identification uncertain)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        14,
+        "soundAr"
+      ],
+      "before": "خ (خفيفة)",
+      "after": "خ مرققة (تقريب تعليمي)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        15,
+        "descAr"
+      ],
+      "before": "مزلاج الباب / قماش مطوي",
+      "after": "مزلاج باب / قماش مطوي؛ كانا z وs قديمًا"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        15,
+        "forms",
+        0,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "O34"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        15,
+        "forms",
+        1,
+        "gardiner"
+      ],
+      "added": true,
+      "after": "S29"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        15,
+        "soundAr"
+      ],
+      "before": "س (أصلها ز)",
+      "after": "س"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        19,
+        "examples",
+        1,
+        "word"
+      ],
+      "before": "𓎼:𓂋*𓎛*𓄛",
+      "after": "𓎼:𓂋*𓎛*𓇰"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        22,
+        "examples",
+        1,
+        "mean"
+      ],
+      "before": "hear",
+      "after": "say, speak (يقول)"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        22,
+        "examples",
+        1,
+        "trans"
+      ],
+      "before": "sḏm",
+      "after": "ḏd"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        22,
+        "examples",
+        1,
+        "word"
+      ],
+      "before": "𓋴*𓄔*𓅓",
+      "after": "𓆓:𓂧"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        0,
+        "meanAr"
+      ],
+      "before": "بيت / دار / قصر",
+      "after": "بيت / دار / ضيعة"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        1,
+        "categoryAr"
+      ],
+      "before": "فأس أو مجرفة زراعية",
+      "after": "فأس زراعية (معزقة)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        1,
+        "gardiner"
+      ],
+      "before": "U7",
+      "after": "U6"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        1,
+        "meanAr"
+      ],
+      "before": "يحب / يرغب / قناة ماء",
+      "after": "قيمة mr؛ في mrỉ «يحب»"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        1,
+        "meanEn"
+      ],
+      "before": "love, wish, channel",
+      "after": "mr; in mrỉ, to love"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        3,
+        "categoryAr"
+      ],
+      "before": "سلة خوص بمقبض أو بدونه",
+      "after": "سلة خوص (نب)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        5,
+        "meanAr"
+      ],
+      "before": "القرين / الروح / الطاقة الحيوية",
+      "after": "الكا / القرين؛ قوة الحياة"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        9,
+        "meanAr"
+      ],
+      "before": "ملك الوجه القبلي / هو",
+      "after": "قيمة sw؛ تدخل في nsw «ملك»"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        9,
+        "meanEn"
+      ],
+      "before": "king of Upper Egypt, he",
+      "after": "sw; in nsw, king"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        9,
+        "note"
+      ],
+      "before": "يُكتب به اللقب الملكي الشهير 'نسوت' (ملك الصعيد).",
+      "after": "M23 علامة السوت ذات القيمة sw؛ لا تترجم العلامة منفردة دائمًا إلى «ملك» أو إلى الضمير «هو»."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        10,
+        "gardiner"
+      ],
+      "before": "N16",
+      "after": "N17"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        12,
+        "categoryAr"
+      ],
+      "before": "أنثى البط (بطة صغيرة)",
+      "after": "بطة طويلة الذيل (Pintail duck)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        13,
+        "meanAr"
+      ],
+      "before": "يطير / هذا (أداة إشارة)",
+      "after": "يطير؛ pꜣ أداة تعريف «الـ» في مراحل لاحقة"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        13,
+        "meanEn"
+      ],
+      "before": "fly; this (demonstrative)",
+      "after": "fly; later definite article the"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        13,
+        "note"
+      ],
+      "before": "تطور لاحقاً في المصرية الوسيطة والمتأخرة ليصبح أداة التعريف (الـ).",
+      "after": "G40 قيمتها pꜣ؛ في جاردنر ترتبط بفعل الطيران وبأداة التعريف اللاحقة، وليست ترجمة ثابتة لـ«هذا» في المصرية الوسطى."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        16,
+        "gardiner"
+      ],
+      "before": "Aa27",
+      "after": "Aa28"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        21,
+        "categoryAr"
+      ],
+      "before": "رأس وقناع ابن آوى (أنوبيس)",
+      "after": "رأس وعنق حيوان من الكلبيات"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "complements"
+      ],
+      "before": "𓂝 (ʿ)",
+      "after": "𓄿 (ꜣ)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "example",
+        "h"
+      ],
+      "before": "𓌳:𓂝",
+      "after": "(𓌳:𓁹)*𓄿*𓄿"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "example",
+        "mean"
+      ],
+      "before": "صادق / حق",
+      "after": "يرى"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "example",
+        "trans"
+      ],
+      "before": "mꜣʿ",
+      "after": "mꜣꜣ"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "meanAr"
+      ],
+      "before": "حق / عدل / صدق / مستقيم",
+      "after": "قيمة mꜣ؛ تدخل في mꜣꜣ «يرى»"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "meanEn"
+      ],
+      "before": "true, real, just",
+      "after": "mꜣ; in mꜣꜣ, see"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "note"
+      ],
+      "before": "منه اشتقت الإلهة ماعت (ربة الحق والعدل والنظام الكوني).",
+      "after": "U1 قيمتها mꜣ، وليست وحدها mꜣʿ «حق». كتابة «حق» تحتاج بناء الكلمة المناسب؛ راجع U1 وU4 وAa11 في جاردنر."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "trans"
+      ],
+      "before": "mꜣʿ",
+      "after": "mꜣ"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "type"
+      ],
+      "before": "triliteral",
+      "after": "biliteral"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        25,
+        "typeAr"
+      ],
+      "before": "ثلاثي الصوت",
+      "after": "ثنائي الصوت"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        30,
+        "categoryAr"
+      ],
+      "before": "شريط مائل أو قطعة شحم",
+      "after": "بثرة أو غدة؟ (تفسير غير مؤكد)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        30,
+        "example",
+        "h"
+      ],
+      "before": "𓐮:𓃀",
+      "after": "𓐎*𓃀"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        30,
+        "h"
+      ],
+      "before": "𓐮",
+      "after": "𓐎"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        30,
+        "note"
+      ],
+      "before": "أصل كلمة 'حساب' و'يحسب' في اللغة، استعملها الكتبة في الحسابات والضرائب.",
+      "after": "Aa2 تُستعمل في ḥsb «يحسب/يحصي»؛ يوردها جاردنر في قائمة العلامات ضمن أمثلة العد والحساب."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "categoryAr"
+      ],
+      "before": "قطعة أثاث خشبية أو مسند",
+      "after": "إزميل؟ (تفسير غير مؤكد)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "example",
+        "h"
+      ],
+      "before": "𓍋:𓂋",
+      "after": "𓋴*𓍋"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "example",
+        "mean"
+      ],
+      "before": "صديق وسمير للملك",
+      "after": "رفيق / جليس"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "gardiner"
+      ],
+      "before": "T13",
+      "after": "U23"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "meanAr"
+      ],
+      "before": "سمير / جليس الملك ومرافقه",
+      "after": "قيمة mr؛ في smr «رفيق / جليس»"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "meanEn"
+      ],
+      "before": "courtier, companion",
+      "after": "mr; in smr, companion or courtier"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "note"
+      ],
+      "before": "لقب بلاطي شرفي رفيع: 'سمر واعتي' (السمير الأوحد / الصديق المقرب للملك).",
+      "after": "U23 قيمتها mr. في كلمة smr تسبقها علامة s؛ الرمز وحده لا يقرأ smr، وليس T13."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "trans"
+      ],
+      "before": "smr",
+      "after": "mr"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "type"
+      ],
+      "before": "triliteral",
+      "after": "biliteral"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        31,
+        "typeAr"
+      ],
+      "before": "ثلاثي الصوت",
+      "after": "ثنائي الصوت"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "categoryAr"
+      ],
+      "before": "شخص نبيل يرتدي وشاحاً وممسكاً بعصا الشرف",
+      "after": "نبيل جالس يحمل سوطًا"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "complements"
+      ],
+      "before": "𓋴 (s)",
+      "after": "𓊪 (p) و𓋴 (s)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "example",
+        "h"
+      ],
+      "before": "𓀻:𓋴",
+      "after": "𓀼"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "example",
+        "trans"
+      ],
+      "before": "špss",
+      "after": "šps"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "h"
+      ],
+      "before": "𓀻",
+      "after": "𓀼"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "note"
+      ],
+      "before": "يدل على المكانة الاجتماعية العليا والأشياء النفيسة الفاخرة.",
+      "after": "A51 رمز/مخصص في الكلمات الدالة على النبل. ليست قراءة šps وحدها دليلًا على علامة رباعية."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "trans"
+      ],
+      "before": "špss",
+      "after": "šps"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "type"
+      ],
+      "before": "quadriliteral",
+      "after": "word"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        32,
+        "typeAr"
+      ],
+      "before": "رباعي الصوت",
+      "after": "كلمة / لقب، لا علامة صوتية رباعية"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        33,
+        "categoryAr"
+      ],
+      "before": "طفل أو شاب واضع إصبعه في فمه",
+      "after": "طفل جالس يضع يده إلى فمه (مخصص)"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        33,
+        "complements"
+      ],
+      "before": "𓅱 (w)",
+      "after": "هنا تُكتب حروف الكلمة، ويتبعها مخصص الطفل"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        33,
+        "example",
+        "h"
+      ],
+      "before": "𓀔:𓅱",
+      "after": "𓎛*𓅱*𓈖*𓅱*𓀔"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        33,
+        "note"
+      ],
+      "before": "العلامة الرباعية الشهيرة التي تعبر عن الصبا والفتوة والشباب.",
+      "after": "A17 مخصص للطفل والشاب؛ لا تمثل وحدها حروف ḥwnw الأربعة. المثال يوضح كتابة صوتية تعليمية للكلمة مع المخصص."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        33,
+        "type"
+      ],
+      "before": "quadriliteral",
+      "after": "word"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        33,
+        "typeAr"
+      ],
+      "before": "رباعي الصوت",
+      "after": "كلمة / لقب، لا علامة صوتية رباعية"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        34,
+        "categoryAr"
+      ],
+      "before": "حلية الزخرفة المعمارية (حزم القصب المزينة)",
+      "after": "عنصر زخرفي أعلى الجدار"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        34,
+        "example",
+        "h"
+      ],
+      "before": "𓐩:𓂋*𓅱",
+      "after": "𓐬*𓅱"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        34,
+        "h"
+      ],
+      "before": "𓐩",
+      "after": "𓐬"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        34,
+        "note"
+      ],
+      "before": "إفريز الخكر المشهور الذي يعلو جدران المقابر والمعابد المصرية القديمة.",
+      "after": "Aa30 عنصر زخرفي يُستعمل علامة كلمة أو مخصصًا للزينة؛ ليست Aa27، ولا نعد نهاية الجمع w جزءًا من قيمة رباعية واحدة."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        34,
+        "type"
+      ],
+      "before": "quadriliteral",
+      "after": "word"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        34,
+        "typeAr"
+      ],
+      "before": "رباعي الصوت",
+      "after": "كلمة / لقب، لا علامة صوتية رباعية"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "categoryAr"
+      ],
+      "before": "تمثال رجل ملكي أو مومياء منتصبة",
+      "after": "مومياء منتصبة؛ مخصص في كلمة تمثال"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "example",
+        "h"
+      ],
+      "before": "𓀾:𓏏*𓅱",
+      "after": "𓏏*𓅱*𓏏*𓀾"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "example",
+        "trans"
+      ],
+      "before": "twtw",
+      "after": "twt"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "note"
+      ],
+      "before": "منه اسم 'توت' في 'توت عنخ آمون' بمعنى الصورة الحية للإله آمون.",
+      "after": "A53 مخصص للمومياء والتمثال؛ twt «تمثال» كلمة، وليست قيمة رباعية ثابتة للرمز."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "trans"
+      ],
+      "before": "twtw",
+      "after": "twt"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "type"
+      ],
+      "before": "quadriliteral",
+      "after": "word"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        35,
+        "typeAr"
+      ],
+      "before": "رباعي الصوت",
+      "after": "كلمة / لقب، لا علامة صوتية رباعية"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        36,
+        "categoryAr"
+      ],
+      "before": "العقاب ونخبت والكوبرا واجيت فوق سلتين",
+      "after": "نسر نخبت وكوبرا واجيت فوق سلتي nb"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        36,
+        "note"
+      ],
+      "before": "أحد الألقاب الخمسة الرئيسية للفرعون لبيان حماية ربّتي مصر العليا والسفلى له.",
+      "after": "لقب ملكي مركب «السيدتان»، وليس أربعة أصوات لعلامة أبجدية واحدة."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        36,
+        "type"
+      ],
+      "before": "quadriliteral",
+      "after": "word"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        36,
+        "typeAr"
+      ],
+      "before": "رباعي الصوت",
+      "after": "كلمة / لقب، لا علامة صوتية رباعية"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        37,
+        "categoryAr"
+      ],
+      "before": "مركب رمزي من البيت والصرح المضيء",
+      "after": "مخطط منزل مع رأس صولجان"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        37,
+        "note"
+      ],
+      "before": "المصطلح الإداري التاريخي لخزانة الدولة والضرائب في مصر القديمة.",
+      "after": "مصطلح pr-ḥḏ «البيت الأبيض / الخزانة» مركب من علامتين؛ لا يُصنّف كعلامة صوتية رباعية واحدة."
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        37,
+        "type"
+      ],
+      "before": "quadriliteral",
+      "after": "word"
+    },
+    {
+      "file": "src/data/shared/phonograms.json",
+      "path": [
+        37,
+        "typeAr"
+      ],
+      "before": "رباعي الصوت",
+      "after": "كلمة / لقب، لا علامة صوتية رباعية"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        0,
+        "options",
+        0,
+        "text"
+      ],
+      "before": "3 (Alef - طائر العقاب)",
+      "after": "3 (Alef - النسر المصري)"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        0,
+        "qAr"
+      ],
+      "before": "ما هو النطق الصوتي (Transliteration) لرمز طائر العقاب المصري (𓄿)؟",
+      "after": "ما هو النقحرة (القيمة الصوتية المكتوبة) لرمز النسر المصري (𓄿)؟"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        21,
+        "hieroglyph"
+      ],
+      "before": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        22,
+        "explanation"
+      ],
+      "before": "The noun 'b3k' means 'servant' (خادم), commonly used in formal letters (b3k ỉm = this humble servant).",
+      "after": "b3k means man-servant (خادم). Its precise reference depends on context; ỉm means there/therein and does not by itself mean this."
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        28,
+        "explanation"
+      ],
+      "before": "Crucial rule: Preposition 'n' (𓈖) is used towards living persons and deities (n s 'to a man', n Ptḥ 'to Ptah').",
+      "after": "In n s (to a man) and n Ptḥ (to Ptah), n introduces the person addressed. This lesson uses these basic directional examples; it is not a claim that n can only occur with persons in every Egyptian construction."
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        28,
+        "options",
+        0,
+        "text"
+      ],
+      "before": "𓈖 (n) - to, for (used only for persons / للعاقل والأشخاص)",
+      "after": "𓈖 (n) - to, for a person (إلى / لـ شخص في هذا المثال)"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        29,
+        "options",
+        1,
+        "text"
+      ],
+      "before": "𓈖 (n) - to, for (persons only / للأشخاص)",
+      "after": "𓈖 (n) - to, for (إلى / لـ شخص في أمثلة الدرس)"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        30,
+        "explanation"
+      ],
+      "before": "The passive voice is formed by attaching morpheme '.tw' to the verb (المبني للمجهول): e.g. sḏm.tw rn = 'the name is heard'.",
+      "after": "One passive construction appends .tw to the stem, e.g. sḏm.tw rn. Egyptian also has other passive formations; see Gardiner §§39, 67, 419–420."
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        31,
+        "hieroglyph"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        33,
+        "options",
+        2,
+        "text"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖 (sḏm=f rn pn)"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        34,
+        "options",
+        0,
+        "text"
+      ],
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 (s ḥnʿ st)",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐 (s ḥnʿ st)"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "exercises",
+        0,
+        "correctH"
+      ],
+      "before": "𓉔:𓈖",
+      "after": "𓉔:𓈖*𓊬"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "exercises",
+        0,
+        "meanEn"
+      ],
+      "before": "box, command",
+      "after": "box, chest"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "exercises",
+        2,
+        "correctH"
+      ],
+      "before": "𓎼:𓂋*𓎛*𓄛",
+      "after": "𓎼:𓂋*𓎛*𓇰"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "exercises",
+        6,
+        "correctH"
+      ],
+      "before": "𓇋:𓂝*𓎛:𓇹",
+      "after": "𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "typingQuestions",
+        6,
+        "h"
+      ],
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "vocabulary",
+        "words",
+        14,
+        "h"
+      ],
+      "before": "𓎛:𓈖*𓂝",
+      "after": "𓎛*(𓈖:𓂝)"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "vocabulary",
+        "words",
+        15,
+        "h"
+      ],
+      "before": "𓉔:𓈖",
+      "after": "𓉔:𓈖*𓊬"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "vocabulary",
+        "words",
+        15,
+        "meanAr"
+      ],
+      "before": "صندوق، أمر",
+      "after": "صندوق"
+    },
+    {
+      "file": "src/lessons/lesson-01.json",
+      "path": [
+        "vocabulary",
+        "words",
+        15,
+        "meanEn"
+      ],
+      "before": "box, chest; command",
+      "after": "box, chest"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "exercises",
+        5,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
+      "after": "𓄔*𓅓 𓊃:𓏏*𓁐 𓏏:𓈖 𓈖 𓏞*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "exercises",
+        5,
+        "meanAr"
+      ],
+      "before": "يستمع الكاتب لهذا المكان (فعل لازم + r للأماكن)",
+      "after": "تستمع هذه المرأة إلى الكاتب"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "exercises",
+        5,
+        "meanEn"
+      ],
+      "before": "The scribe listens to this place.",
+      "after": "This woman hearkens to the scribe."
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "exercises",
+        5,
+        "trans"
+      ],
+      "before": "sḏm sš r bw pn",
+      "after": "sḏm st tn n sš"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "exercises",
+        7,
+        "h"
+      ],
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "examples",
+        3,
+        "h"
+      ],
+      "before": "𓎼:𓂋*𓎛*𓄛",
+      "after": "𓎼:𓂋*𓎛*𓇰"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        30,
+        "h"
+      ],
+      "before": "𓏲",
+      "after": "𓍱"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
+      "after": "𓄔*𓅓 𓊃:𓏏*𓁐 𓏏:𓈖 𓈖 𓏞*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "hint"
+      ],
+      "before": "Verb sḏm + subject sš + preposition r + bw pn",
+      "after": "Gardiner Exercise II(b)8: sḏm + subject st tn + n + sš (the person listened to)"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "meanAr"
+      ],
+      "before": "يستمع الكاتب لهذا المكان",
+      "after": "تستمع هذه المرأة إلى الكاتب"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "meanEn"
+      ],
+      "before": "The scribe listens to this place.",
+      "after": "This woman hearkens to the scribe."
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "trans"
+      ],
+      "before": "sḏm sš r bw pn",
+      "after": "sḏm st tn n sš"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "vocabulary",
+        "words",
+        0,
+        "meanAr"
+      ],
+      "before": "يعرف، يعلم",
+      "after": "يعرف، يَعلَم"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "vocabulary",
+        "words",
+        8,
+        "h"
+      ],
+      "before": "𓇋:𓂝*𓎛:𓇹",
+      "after": "𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "vocabulary",
+        "words",
+        13,
+        "h"
+      ],
+      "before": "𓎼:𓂋*𓎛*𓄛",
+      "after": "𓎼:𓂋*𓎛*𓇰"
+    },
+    {
+      "file": "src/lessons/lesson-02.json",
+      "path": [
+        "vocabulary",
+        "words",
+        26,
+        "h"
+      ],
+      "before": "𓎛:𓏏*𓁐",
+      "after": "𓎛*𓅓*𓏏*𓁐"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        1,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        2,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        3,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        3,
+        "meanAr"
+      ],
+      "before": "أُرسل الخادم بواسطة الوزير (Passive with Agent ỉn)",
+      "after": "يُرسَل الخادم بواسطة الوزير (Passive with Agent ỉn)"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        4,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        4,
+        "meanAr"
+      ],
+      "before": "سَمِعَ هذا الاسم (صيغة الماضي التام sḏm.n=f)",
+      "after": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        5,
+        "h"
+      ],
+      "before": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        5,
+        "trans"
+      ],
+      "before": "d3 sš m ỉtrw",
+      "after": "ḏ3 sš m ỉtrw"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        6,
+        "meanAr"
+      ],
+      "before": "عَلِمَ الكاتب هذه الخطة (ماضي تام sḏm.n=f)",
+      "after": "عَلِمَ الكاتب هذه الخطة (حدث ماضٍ بصيغة sḏm.n=f)"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "exercises",
+        7,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓊪:𓏏*𓇯 𓇋*𓈖 𓊃*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        4,
+        "noteEn"
+      ],
+      "before": "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.",
+      "after": "Intransitive verb (ḏ3) + .n + Subject (sš) + Prepositional phrase."
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        4,
+        "trans"
+      ],
+      "before": "d3.n sš m dpt",
+      "after": "ḏ3.n sš m dpt"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        1,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        2,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        3,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        3,
+        "meanAr"
+      ],
+      "before": "أُرسل الخادم بواسطة الوزير",
+      "after": "يُرسَل الخادم بواسطة الوزير"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        4,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "h"
+      ],
+      "before": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "𓍑*𓄿*𓊛 𓏞*𓀀 𓅓 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "hint"
+      ],
+      "before": "Intransitive verb d3 + subject sš + prep phrase m ỉtrw",
+      "after": "Intransitive verb ḏ3 + subject sš + prep phrase m ỉtrw"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "typingQuestions",
+        5,
+        "trans"
+      ],
+      "before": "d3 sš m ỉtrw",
+      "after": "ḏ3 sš m ỉtrw"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "vocabulary",
+        "words",
+        0,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹",
+      "after": "(𓌳:𓁹)*𓄿*𓄿"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "vocabulary",
+        "words",
+        1,
+        "trans"
+      ],
+      "before": "d3",
+      "after": "ḏ3"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "vocabulary",
+        "words",
+        3,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻",
+      "after": "𓉔*𓄿*𓃀*𓂻"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "vocabulary",
+        "words",
+        10,
+        "h"
+      ],
+      "before": "𓈍:𓉐",
+      "after": "𓆼*𓄿*𓉹"
+    },
+    {
+      "file": "src/lessons/lesson-03.json",
+      "path": [
+        "vocabulary",
+        "words",
+        15,
+        "h"
+      ],
+      "before": "𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)"
+    }
+  ]
+}

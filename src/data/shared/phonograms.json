@@ -7,7 +7,7 @@
     "gardiner": "O1",
     "trans": "pr",
     "categoryAr": "مخطط منزل أو دار",
-    "meanAr": "بيت / دار / قصر",
+    "meanAr": "بيت / دار / ضيعة",
     "meanEn": "house, estate",
     "complements": "𓂋 (r)",
     "example": {
@@ -22,11 +22,11 @@
     "type": "biliteral",
     "typeAr": "ثنائي الصوت",
     "h": "𓌸",
-    "gardiner": "U7",
+    "gardiner": "U6",
     "trans": "mr",
-    "categoryAr": "فأس أو مجرفة زراعية",
-    "meanAr": "يحب / يرغب / قناة ماء",
-    "meanEn": "love, wish, channel",
+    "categoryAr": "فأس زراعية (معزقة)",
+    "meanAr": "قيمة mr؛ في mrỉ «يحب»",
+    "meanEn": "mr; in mrỉ, to love",
     "complements": "𓂋 (r)",
     "example": {
       "h": "𓌸*𓂋*𓇋",
@@ -60,7 +60,7 @@
     "h": "𓎟",
     "gardiner": "V30",
     "trans": "nb",
-    "categoryAr": "سلة خوص بمقبض أو بدونه",
+    "categoryAr": "سلة خوص (نب)",
     "meanAr": "سيد / مالك / كل / جميع",
     "meanEn": "lord, master; every, all",
     "complements": "𓃀 (b)",
@@ -97,7 +97,7 @@
     "gardiner": "D28",
     "trans": "k3",
     "categoryAr": "ذراعان مرفوعتان للأعلى",
-    "meanAr": "القرين / الروح / الطاقة الحيوية",
+    "meanAr": "الكا / القرين؛ قوة الحياة",
     "meanEn": "Ka, soul, spirit",
     "complements": "𓄿 (3)",
     "example": {
@@ -169,22 +169,22 @@
     "gardiner": "M23",
     "trans": "sw",
     "categoryAr": "نبات السوت (رمز الجنوب)",
-    "meanAr": "ملك الوجه القبلي / هو",
-    "meanEn": "king of Upper Egypt, he",
+    "meanAr": "قيمة sw؛ تدخل في nsw «ملك»",
+    "meanEn": "sw; in nsw, king",
     "complements": "𓅱 (w)",
     "example": {
       "h": "𓇓:𓏏",
       "trans": "nswt",
       "mean": "ملك"
     },
-    "note": "يُكتب به اللقب الملكي الشهير 'نسوت' (ملك الصعيد)."
+    "note": "M23 علامة السوت ذات القيمة sw؛ لا تترجم العلامة منفردة دائمًا إلى «ملك» أو إلى الضمير «هو»."
   },
   {
     "id": "bi_t3",
     "type": "biliteral",
     "typeAr": "ثنائي الصوت",
     "h": "𓇿",
-    "gardiner": "N16",
+    "gardiner": "N17",
     "trans": "t3",
     "categoryAr": "قطاع شريط الأرض مع ذرات الرمل",
     "meanAr": "أرض / بلاد / يابسة",
@@ -222,7 +222,7 @@
     "h": "𓅭",
     "gardiner": "G39",
     "trans": "s3",
-    "categoryAr": "أنثى البط (بطة صغيرة)",
+    "categoryAr": "بطة طويلة الذيل (Pintail duck)",
     "meanAr": "ابن / سلالة",
     "meanEn": "son",
     "complements": "𓄿 (3)",
@@ -241,15 +241,15 @@
     "gardiner": "G40",
     "trans": "pꜣ",
     "categoryAr": "طائر يحلق ويفرد جناحيه",
-    "meanAr": "يطير / هذا (أداة إشارة)",
-    "meanEn": "fly; this (demonstrative)",
+    "meanAr": "يطير؛ pꜣ أداة تعريف «الـ» في مراحل لاحقة",
+    "meanEn": "fly; later definite article the",
     "complements": "𓄿 (3)",
     "example": {
       "h": "𓅮",
       "trans": "pꜣ",
       "mean": "هذا / يطير"
     },
-    "note": "تطور لاحقاً في المصرية الوسيطة والمتأخرة ليصبح أداة التعريف (الـ)."
+    "note": "G40 قيمتها pꜣ؛ في جاردنر ترتبط بفعل الطيران وبأداة التعريف اللاحقة، وليست ترجمة ثابتة لـ«هذا» في المصرية الوسطى."
   },
   {
     "id": "bi_hr",
@@ -292,7 +292,7 @@
     "type": "biliteral",
     "typeAr": "ثنائي الصوت",
     "h": "𓐪",
-    "gardiner": "Aa27",
+    "gardiner": "Aa28",
     "trans": "qd",
     "categoryAr": "مسطرين البناء (أداة تمليط)",
     "meanAr": "يبني / يشيد / يصوغ / خُلق",
@@ -384,7 +384,7 @@
     "h": "𓄊",
     "gardiner": "F12",
     "trans": "wsr",
-    "categoryAr": "رأس وقناع ابن آوى (أنوبيس)",
+    "categoryAr": "رأس وعنق حيوان من الكلبيات",
     "meanAr": "قوي / ذو سطوة / عزيز / مقتدر",
     "meanEn": "powerful, strong",
     "complements": "𓋴 (s) و 𓂋 (r)",
@@ -451,21 +451,21 @@
   },
   {
     "id": "tri_mAa",
-    "type": "triliteral",
-    "typeAr": "ثلاثي الصوت",
+    "type": "biliteral",
+    "typeAr": "ثنائي الصوت",
     "h": "𓌳",
     "gardiner": "U1",
-    "trans": "mꜣʿ",
+    "trans": "mꜣ",
     "categoryAr": "منجل حصاد الحبوب",
-    "meanAr": "حق / عدل / صدق / مستقيم",
-    "meanEn": "true, real, just",
-    "complements": "𓂝 (ʿ)",
+    "meanAr": "قيمة mꜣ؛ تدخل في mꜣꜣ «يرى»",
+    "meanEn": "mꜣ; in mꜣꜣ, see",
+    "complements": "𓄿 (ꜣ)",
     "example": {
-      "h": "𓌳:𓂝",
-      "trans": "mꜣʿ",
-      "mean": "صادق / حق"
+      "h": "(𓌳:𓁹)*𓄿*𓄿",
+      "trans": "mꜣꜣ",
+      "mean": "يرى"
     },
-    "note": "منه اشتقت الإلهة ماعت (ربة الحق والعدل والنظام الكوني)."
+    "note": "U1 قيمتها mꜣ، وليست وحدها mꜣʿ «حق». كتابة «حق» تحتاج بناء الكلمة المناسب؛ راجع U1 وU4 وAa11 في جاردنر."
   },
   {
     "id": "tri_aHa",
@@ -543,118 +543,118 @@
     "id": "tri_hsb",
     "type": "triliteral",
     "typeAr": "ثلاثي الصوت",
-    "h": "𓐮",
+    "h": "𓐎",
     "gardiner": "Aa2",
     "trans": "ḥsb",
-    "categoryAr": "شريط مائل أو قطعة شحم",
+    "categoryAr": "بثرة أو غدة؟ (تفسير غير مؤكد)",
     "meanAr": "يحسب / يعد / يحصي",
     "meanEn": "count, reckon",
     "complements": "𓃀 (b)",
     "example": {
-      "h": "𓐮:𓃀",
+      "h": "𓐎*𓃀",
       "trans": "ḥsb",
       "mean": "يحسب"
     },
-    "note": "أصل كلمة 'حساب' و'يحسب' في اللغة، استعملها الكتبة في الحسابات والضرائب."
+    "note": "Aa2 تُستعمل في ḥsb «يحسب/يحصي»؛ يوردها جاردنر في قائمة العلامات ضمن أمثلة العد والحساب."
   },
   {
     "id": "tri_smr",
-    "type": "triliteral",
-    "typeAr": "ثلاثي الصوت",
+    "type": "biliteral",
+    "typeAr": "ثنائي الصوت",
     "h": "𓍋",
-    "gardiner": "T13",
-    "trans": "smr",
-    "categoryAr": "قطعة أثاث خشبية أو مسند",
-    "meanAr": "سمير / جليس الملك ومرافقه",
-    "meanEn": "courtier, companion",
+    "gardiner": "U23",
+    "trans": "mr",
+    "categoryAr": "إزميل؟ (تفسير غير مؤكد)",
+    "meanAr": "قيمة mr؛ في smr «رفيق / جليس»",
+    "meanEn": "mr; in smr, companion or courtier",
     "complements": "𓂋 (r)",
     "example": {
-      "h": "𓍋:𓂋",
+      "h": "𓋴*𓍋",
       "trans": "smr",
-      "mean": "صديق وسمير للملك"
+      "mean": "رفيق / جليس"
     },
-    "note": "لقب بلاطي شرفي رفيع: 'سمر واعتي' (السمير الأوحد / الصديق المقرب للملك)."
+    "note": "U23 قيمتها mr. في كلمة smr تسبقها علامة s؛ الرمز وحده لا يقرأ smr، وليس T13."
   },
   {
     "id": "quad_spss",
-    "type": "quadriliteral",
-    "typeAr": "رباعي الصوت",
-    "h": "𓀻",
+    "type": "word",
+    "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
+    "h": "𓀼",
     "gardiner": "A51",
-    "trans": "špss",
-    "categoryAr": "شخص نبيل يرتدي وشاحاً وممسكاً بعصا الشرف",
+    "trans": "šps",
+    "categoryAr": "نبيل جالس يحمل سوطًا",
     "meanAr": "شريف / فخم / عظيم القدر / جليل",
     "meanEn": "noble, august, splendid",
-    "complements": "𓋴 (s)",
+    "complements": "𓊪 (p) و𓋴 (s)",
     "example": {
-      "h": "𓀻:𓋴",
-      "trans": "špss",
+      "h": "𓀼",
+      "trans": "šps",
       "mean": "شريف / نبيل"
     },
-    "note": "يدل على المكانة الاجتماعية العليا والأشياء النفيسة الفاخرة."
+    "note": "A51 رمز/مخصص في الكلمات الدالة على النبل. ليست قراءة šps وحدها دليلًا على علامة رباعية."
   },
   {
     "id": "quad_hwnw",
-    "type": "quadriliteral",
-    "typeAr": "رباعي الصوت",
+    "type": "word",
+    "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
     "h": "𓀔",
     "gardiner": "A17",
     "trans": "ḥwnw",
-    "categoryAr": "طفل أو شاب واضع إصبعه في فمه",
+    "categoryAr": "طفل جالس يضع يده إلى فمه (مخصص)",
     "meanAr": "شاب / فتى / طفل يافع",
     "meanEn": "youth, young man, child",
-    "complements": "𓅱 (w)",
+    "complements": "هنا تُكتب حروف الكلمة، ويتبعها مخصص الطفل",
     "example": {
-      "h": "𓀔:𓅱",
+      "h": "𓎛*𓅱*𓈖*𓅱*𓀔",
       "trans": "ḥwnw",
       "mean": "شاب يافع"
     },
-    "note": "العلامة الرباعية الشهيرة التي تعبر عن الصبا والفتوة والشباب."
+    "note": "A17 مخصص للطفل والشاب؛ لا تمثل وحدها حروف ḥwnw الأربعة. المثال يوضح كتابة صوتية تعليمية للكلمة مع المخصص."
   },
   {
     "id": "quad_xkrw",
-    "type": "quadriliteral",
-    "typeAr": "رباعي الصوت",
-    "h": "𓐩",
+    "type": "word",
+    "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
+    "h": "𓐬",
     "gardiner": "Aa30",
     "trans": "ẖkrw",
-    "categoryAr": "حلية الزخرفة المعمارية (حزم القصب المزينة)",
+    "categoryAr": "عنصر زخرفي أعلى الجدار",
     "meanAr": "حلية / زينة / زركشة معمارية",
     "meanEn": "ornament, frieze",
     "complements": "𓂋 (r) و 𓅱 (w)",
     "example": {
-      "h": "𓐩:𓂋*𓅱",
+      "h": "𓐬*𓅱",
       "trans": "ẖkrw",
       "mean": "حلي وزينة"
     },
-    "note": "إفريز الخكر المشهور الذي يعلو جدران المقابر والمعابد المصرية القديمة."
+    "note": "Aa30 عنصر زخرفي يُستعمل علامة كلمة أو مخصصًا للزينة؛ ليست Aa27، ولا نعد نهاية الجمع w جزءًا من قيمة رباعية واحدة."
   },
   {
     "id": "quad_twtw",
-    "type": "quadriliteral",
-    "typeAr": "رباعي الصوت",
+    "type": "word",
+    "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
     "h": "𓀾",
     "gardiner": "A53",
-    "trans": "twtw",
-    "categoryAr": "تمثال رجل ملكي أو مومياء منتصبة",
+    "trans": "twt",
+    "categoryAr": "مومياء منتصبة؛ مخصص في كلمة تمثال",
     "meanAr": "تمثال / صورة / شبه ومطابقة",
     "meanEn": "statue, likeness, image",
     "complements": "𓏏 (t) و 𓅱 (w)",
     "example": {
-      "h": "𓀾:𓏏*𓅱",
-      "trans": "twtw",
+      "h": "𓏏*𓅱*𓏏*𓀾",
+      "trans": "twt",
       "mean": "تمثال / شبه"
     },
-    "note": "منه اسم 'توت' في 'توت عنخ آمون' بمعنى الصورة الحية للإله آمون."
+    "note": "A53 مخصص للمومياء والتمثال؛ twt «تمثال» كلمة، وليست قيمة رباعية ثابتة للرمز."
   },
   {
     "id": "quad_nbty",
-    "type": "quadriliteral",
-    "typeAr": "رباعي الصوت",
+    "type": "word",
+    "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
     "h": "𓅒",
     "gardiner": "G16",
     "trans": "nbty",
-    "categoryAr": "العقاب ونخبت والكوبرا واجيت فوق سلتين",
+    "categoryAr": "نسر نخبت وكوبرا واجيت فوق سلتي nb",
     "meanAr": "السيدتان / ربتي الوجهين البحري والقبلي",
     "meanEn": "The Two Ladies (Nekhbet & Wadjet)",
     "complements": "𓏏 (t) و 𓇌 (y)",
@@ -663,16 +663,16 @@
       "trans": "nbty",
       "mean": "اللقب النبتي الملكي"
     },
-    "note": "أحد الألقاب الخمسة الرئيسية للفرعون لبيان حماية ربّتي مصر العليا والسفلى له."
+    "note": "لقب ملكي مركب «السيدتان»، وليس أربعة أصوات لعلامة أبجدية واحدة."
   },
   {
     "id": "quad_prhd",
-    "type": "quadriliteral",
-    "typeAr": "رباعي الصوت",
+    "type": "word",
+    "typeAr": "كلمة / لقب، لا علامة صوتية رباعية",
     "h": "𓉐𓌉",
     "gardiner": "O1+T3",
     "trans": "pr-ḥḏ",
-    "categoryAr": "مركب رمزي من البيت والصرح المضيء",
+    "categoryAr": "مخطط منزل مع رأس صولجان",
     "meanAr": "البيت الأبيض / الخزانة الملكية",
     "meanEn": "treasury (White House)",
     "complements": "𓂋 (r) و 𓆓 (ḏ)",
@@ -681,6 +681,6 @@
       "trans": "pr-ḥḏ",
       "mean": "الخزانة الملكية"
     },
-    "note": "المصطلح الإداري التاريخي لخزانة الدولة والضرائب في مصر القديمة."
+    "note": "مصطلح pr-ḥḏ «البيت الأبيض / الخزانة» مركب من علامتين؛ لا يُصنّف كعلامة صوتية رباعية واحدة."
   }
 ]

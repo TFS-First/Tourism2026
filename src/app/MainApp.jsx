@@ -42,7 +42,7 @@ function MainApp() {
     if(activeTab==='grammar') return [{id:'all',label:'جميع الدروس',detail:`${grammarData.length} درس`,children:[]},...grammarData.map(g=>({id:g.id,label:g.titleAr.split(':')[0],detail:g.titleAr.split(':').slice(1).join(':').trim(),children:g.rules.map((r,i)=>({id:r.id || `${g.id}-rule-${i}`,label:r.badgeAr || r.titleAr || r.badgeEn,detail:r.titleEn,anchor:r.id}))}))];
     if(activeTab==='vocab') return vocabularyData.map((g,i)=>({id:`vocab-${i}`,label:g.lesson,detail:`${g.words.length} كلمة`,children:g.words.map((w,j)=>({id:`word-${i}-${j}`,label:w.meanAr || w.meanEn || w.trans,detail:w.trans,anchor:`word-${i}-${j}`}))}));
     if(activeTab==='exercises') return exerciseNavigation();
-    return [{id:'learn-path',label:'مسار الرموز',detail:'بالترتيب خطوة بخطوة',sub:'path',children:[...hieroglyphsData].sort((a,b)=>a.step-b.step).map(h=>({id:`learn-sign-${h.step}`,label:`${h.step}. ${h.soundAr || h.trans}`,detail:h.descAr || h.meaning,anchor:`learn-sign-${h.step}`}))},{id:'learn-grid',label:'جدول الرموز',detail:'كل الرموز في مكان واحد',sub:'grid',children:hieroglyphsData.map(h=>({id:`grid-sign-${h.step}`,label:`${h.step}. ${h.soundAr || h.trans}`,detail:h.descAr || h.meaning,anchor:`grid-sign-${h.step}`}))},{id:'learn-phonograms',label:'العلامات الصوتية',detail:'ثنائية وثلاثية ورباعية الصوت',sub:'phonograms',children:phonogramsData.map(h=>({id:`phonogram-${h.id}`,label:h.trans,detail:h.meanAr || h.typeAr,anchor:`phonogram-${h.id}`}))}];
+    return [{id:'learn-path',label:'مسار الرموز',detail:'بالترتيب خطوة بخطوة',sub:'path',children:[...hieroglyphsData].sort((a,b)=>a.step-b.step).map(h=>({id:`learn-sign-${h.step}`,label:`${h.step}. ${h.soundAr || h.trans}`,detail:h.descAr || h.meaning,anchor:`learn-sign-${h.step}`}))},{id:'learn-grid',label:'جدول الرموز',detail:'كل الرموز في مكان واحد',sub:'grid',children:hieroglyphsData.map(h=>({id:`grid-sign-${h.step}`,label:`${h.step}. ${h.soundAr || h.trans}`,detail:h.descAr || h.meaning,anchor:`grid-sign-${h.step}`}))},{id:'learn-phonograms',label:'العلامات الصوتية',detail:'علامات ثنائية وثلاثية، وكلمات وألقاب',sub:'phonograms',children:phonogramsData.map(h=>({id:`phonogram-${h.id}`,label:h.trans,detail:h.meanAr || h.typeAr,anchor:`phonogram-${h.id}`}))}];
   },[activeTab]);
   const closeContent = () => {setContentOpen(false);};
   const chooseContent = (group,child) => {
@@ -253,6 +253,8 @@ function MainApp() {
                 </button>
               </div>
 
+              <p className="max-w-5xl mx-auto px-4 text-xs text-stone-500 leading-relaxed" dir="rtl">النقحرة: كتابة قيمة العلامات بحروف مثل sḏm، وليست ترجمتها. المقابل العربي تقريب تعليمي للصوت. الجدول يضم مجموعات العلامات الأحادية وأشكالها البديلة؛ العلامات المتعددة مختارات وليست قائمة جاردنر كاملة.</p>
+
               {/* View 1: Timeline Path */}
               {learnSubTab === 'path' && (
                 <div data-nav-target="learn-path" data-content-id="learn-path" className="max-w-5xl mx-auto p-4 md:p-6 mt-2 md:mt-4">
@@ -368,7 +370,7 @@ function MainApp() {
                 {/* Header row: Arabic Sound Pill & Multiple forms indicator */}
                 <div className="flex items-center justify-between border-b border-stone-100 pb-3 mb-4">
                   <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3.5 py-1 rounded-full text-sm font-bold">
-                    <span>المقابل بالعربي: {selectedSign.soundAr}</span>
+                    <span>المقابل العربي التقريبي: {selectedSign.soundAr}</span>
                   </div>
                   {selectedSign.forms && selectedSign.forms.length > 1 && (
                     <span className="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">له أكثر من شكل ({selectedSign.forms.length})</span>

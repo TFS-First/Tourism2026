@@ -735,7 +735,7 @@
             "noteAr": "مخصص الرجل 𓀀 يحدد مهنة الكاتب"
           },
           {
-            "h": "𓎼:𓂋*𓎛*𓄛",
+            "h": "𓎼:𓂋*𓎛*𓇰",
             "trans": "grḥ",
             "meanEn": "Night",
             "meanAr": "ليل",
@@ -906,7 +906,7 @@
             "meanAr": "كتابة، تجريد"
           },
           {
-            "h": "𓏲",
+            "h": "𓍱",
             "meanEn": "rope, tie",
             "meanAr": "حبل، يربط"
           },
@@ -1102,7 +1102,7 @@
         "h": "𓂋:𓐍*𓏛",
         "trans": "rḫ",
         "meanEn": "know, learn",
-        "meanAr": "يعرف، يعلم"
+        "meanAr": "يعرف، يَعلَم"
       },
       {
         "h": "𓐍*𓅓*𓂜",
@@ -1147,7 +1147,7 @@
         "meanAr": "شمس، الإله رع"
       },
       {
-        "h": "𓇋:𓂝*𓎛:𓇹",
+        "h": "𓇋*𓂝*𓎛*𓇹",
         "trans": "ỉʿḥ",
         "meanEn": "moon",
         "meanAr": "قمر"
@@ -1177,7 +1177,7 @@
         "meanAr": "يوم، نهار"
       },
       {
-        "h": "𓎼:𓂋*𓎛*𓄛",
+        "h": "𓎼:𓂋*𓎛*𓇰",
         "trans": "grḥ",
         "meanEn": "night",
         "meanAr": "ليل"
@@ -1255,7 +1255,7 @@
         "meanAr": "ماء"
       },
       {
-        "h": "𓎛:𓏏*𓁐",
+        "h": "𓎛*𓅓*𓏏*𓁐",
         "trans": "ḥmt",
         "meanEn": "wife, woman",
         "meanAr": "زوجة، امرأة"
@@ -1300,10 +1300,10 @@
       "meanAr": "يعرف الإله بتاح هذه الخطة (فعل متعدٍ Transitive)"
     },
     {
-      "h": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
-      "trans": "sḏm sš r bw pn",
-      "meanEn": "The scribe listens to this place.",
-      "meanAr": "يستمع الكاتب لهذا المكان (فعل لازم + r للأماكن)"
+      "h": "𓄔*𓅓 𓊃:𓏏*𓁐 𓏏:𓈖 𓈖 𓏞*𓀀",
+      "trans": "sḏm st tn n sš",
+      "meanEn": "This woman hearkens to the scribe.",
+      "meanAr": "تستمع هذه المرأة إلى الكاتب"
     },
     {
       "h": "𓇋*𓅱 𓊃*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
@@ -1312,7 +1312,7 @@
       "meanAr": "الرجل في قارب (جملة اسمية بظرف مكان)"
     },
     {
-      "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤",
+      "h": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐 𓅓 𓉐:𓏤",
       "trans": "s ḥnʿ st m pr",
       "meanEn": "A man and a woman are in the house.",
       "meanAr": "رجل مع امرأة في البيت (جملة اسمية)"
@@ -1373,11 +1373,11 @@
       "id": 18,
       "lesson": "الدرس الثاني",
       "lessonEn": "Lesson II",
-      "h": "𓋴*𓄔*𓅓 𓏞*𓀀 𓂋 𓃀*𓅱 𓊪:𓈖",
-      "trans": "sḏm sš r bw pn",
-      "meanEn": "The scribe listens to this place.",
-      "meanAr": "يستمع الكاتب لهذا المكان",
-      "hint": "Verb sḏm + subject sš + preposition r + bw pn"
+      "h": "𓄔*𓅓 𓊃:𓏏*𓁐 𓏏:𓈖 𓈖 𓏞*𓀀",
+      "trans": "sḏm st tn n sš",
+      "meanEn": "This woman hearkens to the scribe.",
+      "meanAr": "تستمع هذه المرأة إلى الكاتب",
+      "hint": "Gardiner Exercise II(b)8: sḏm + subject st tn + n + sš (the person listened to)"
     }
   ],
   "quizQuestions": [],
