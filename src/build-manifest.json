@@ -54,6 +54,10 @@
   },
   {
     "kind": "code",
+    "path": "src/components/GrammarLearningGuide.jsx"
+  },
+  {
+    "kind": "code",
     "path": "src/sections/GrammarSection.jsx"
   },
   {

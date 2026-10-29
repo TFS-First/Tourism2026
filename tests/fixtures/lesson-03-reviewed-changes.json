@@ -1,0 +1,570 @@
+{
+  "source": "Gardiner 3rd ed., §§39–40, 67–68, 419–420; reviewed local facsimile. See docs/LESSON_03_REVIEW.md.",
+  "changes": [
+    {
+      "path": [
+        "grammar",
+        "badges",
+        2,
+        "label"
+      ],
+      "before": "Past Tense (الماضي التام)",
+      "after": "Past action — sḏm.n=f (حدث ماضٍ)"
+    },
+    {
+      "path": [
+        "grammar",
+        "learningGuide"
+      ],
+      "added": true,
+      "after": {
+        "title": "افهم الفكرة أولًا، ثم اقرأ القواعد",
+        "intro": "هنثبت نفس الجملة ونغيّر حاجة واحدة كل مرة. الأمثلة التالية للتوضيح من إعداد التطبيق، وليست اقتباسات من جاردنر. كلمة «الخطة» هنا بمعنى التدبير / المشورة (sḫr).",
+        "source": "Gardiner, Egyptian Grammar, 3rd edition: §§39–40 (ص41–43)، §67–68 (ص55–56)، §§419–420 (ص337). أرقام الصفحات المطبوعة. النقطة . تفصل عنصر الصيغة، وعلامة = تفصل الضمير المتصل؛ ليست علامات تُكتب في النص الهيروغليفي.",
+        "steps": [
+          {
+            "title": "١ — معلوم أم مجهول؟ اسأل: مين عمل الفعل؟",
+            "explanation": "في «يسمع الرجلُ الخطةَ»، الرجل هو الذي يسمع. في «تُسمَع الخطةُ»، ركزنا على الخطة ولم نذكر السامع. تغيير المعلوم إلى المجهول لا يغيّر الزمن وحده.",
+            "pairs": [
+              {
+                "label": "معلوم — قراءة تعليمية بالمضارع",
+                "arabic": "يسمع رجلٌ هذه الخطة.",
+                "trans": "sḏm s sḫr pn",
+                "literal": "يسمع رجلٌ هذه الخطة.",
+                "analysis": "sḏm = يسمع • s = رجل • sḫr pn = هذه الخطة. الترتيب: فعل + فاعل + مفعول."
+              },
+              {
+                "label": "مجهول بـ .tw",
+                "arabic": "تُسمَع هذه الخطة.",
+                "trans": "sḏm.tw sḫr pn",
+                "literal": "تُسمَع هذه الخطة.",
+                "analysis": "أضفنا .tw، وأصبح ما يقع عليه الفعل هو الفاعل النحوي للمجهول (نائب الفاعل في الشرح العربي)."
+              }
+            ],
+            "note": "نقرأ sḏm هنا بالمضارع للتدرّب فقط؛ جاردنر §40 يوضح أن الصيغة أوسع من زمن واحد. النقحرة تكتب العلامات الصوتية، ولا تسجل كل الحركات أو النطق القديم كاملًا.",
+            "tabLabel": "١ · معلوم ومجهول"
+          },
+          {
+            "title": "٢ — انقل نفس الجملة إلى حدث ماضٍ",
+            "explanation": "في المثال المثبت البسيط نضيف .n بعد الفعل. وللمجهول في الصيغة نفسها نستخدم .n.tw بهذا الترتيب (§67).",
+            "pairs": [
+              {
+                "label": "معلوم — حدث ماضٍ",
+                "arabic": "سَمِعَ رجلٌ هذه الخطة.",
+                "trans": "sḏm.n s sḫr pn",
+                "literal": "سَمِعَ رجلٌ هذه الخطة.",
+                "analysis": "sḏm + .n + الفاعل s + المفعول sḫr pn."
+              },
+              {
+                "label": "مجهول — حدث ماضٍ",
+                "arabic": "سُمِعَت هذه الخطة.",
+                "trans": "sḏm.n.tw sḫr pn",
+                "literal": "سُمِعَت هذه الخطة.",
+                "analysis": "sḏm + .n + .tw + نائب الفاعل sḫr pn. لا نستبدل .n بواو آليًا."
+              }
+            ],
+            "note": "ومع فعل القول ḏd، نفس المقارنة التعليمية: ḏd s sḫr pn = يقول رجلٌ هذه الخطة؛ ḏd.tw sḫr pn = تُقال هذه الخطة؛ ḏd.n s sḫr pn = قال رجلٌ هذه الخطة؛ ḏd.n.tw sḫr pn = قيلت هذه الخطة. هذه صيغ تدريبية، وترجمتها الزمنية تفترض السياق المبسّط الموضح هنا.",
+            "tabLabel": "٢ · حدث ماضٍ"
+          },
+          {
+            "title": "٣ — «سَمِعَ» و«كان قد سَمِعَ»: هل التصريف مختلف؟",
+            "explanation": "الماضي البسيط: «سمع الرجل الخطة أمس» = حدث وقع في الماضي. الماضي التام: «عندما وصل الكاتب، كان الرجل قد سمع الخطة» = السماع سبق حدثًا آخر في الماضي. المثال العربي لتوضيح ترتيب الحدثين، وليس ترجمة لنص مصري من الكتاب.",
+            "pairs": [
+              {
+                "label": "التصريف مع ضمير",
+                "arabic": "هو سَمِعَ / قد سَمِعَ / كان قد سَمِعَ، حسب السياق.",
+                "trans": "sḏm.n=f",
+                "literal": "الجذع sḏm + عنصر الصيغة .n + الضمير =f (هو).",
+                "analysis": "الكتابة الأساسية هنا واحدة؛ السياق يحدد هل الأنسب heard أو has heard أو had heard (§67). مفيش علامة إضافية ثابتة بنحطها لمجرد ترجمة «كان قد»."
+              },
+              {
+                "label": "المقارنة التي تحفظها أولًا",
+                "arabic": "يسمع ← سَمِعَ؛ وفي المجهول: يُسمَع ← سُمِعَ.",
+                "trans": "sḏm=f → sḏm.n=f | sḏm.tw=f → sḏm.n.tw=f",
+                "literal": "قارن وجود .n، ثم وجود .tw، ثم حدد الفاعل.",
+                "analysis": "مصطلح Perfective ليس مرادفًا آليًا للماضي التام الإنجليزي، وOld Perfective صيغة أخرى؛ لا نخلطها بـ sḏm.n=f."
+              }
+            ],
+            "note": "جاردنر §68 يستعمل ỉw sḏm.n=f كثيرًا في بداية الخبر السردي المستقل. السياق وتركيب الجملة مهمان؛ المقارنة السابقة مدخل للتعلّم وليست جدول أزمنة شاملًا.",
+            "tabLabel": "٣ · الفرق بين الصيغ"
+          },
+          {
+            "title": "٤ — أمثلة موثّقة، ثم أمثلة التطبيق الموجودة",
+            "explanation": "بعد المقارنة البسيطة، اقرأ مثالين من جاردنر. نعرض النقحرة والمعنى بالعربية؛ الأصل الإنجليزي والرسم في الصفحات المشار إليها.",
+            "pairs": [
+              {
+                "label": "جاردنر §39، ص41",
+                "arabic": "يسمع الكاتبُ.",
+                "trans": "sḏm sš",
+                "literal": "فعل + فاعل اسم ظاهر.",
+                "analysis": "ومع الضمير: sḏm=f = هو يسمع. لاحظ أن الضمير يحل محل الفاعل، فلا نضيفه تلقائيًا إلى كل اسم ظاهر."
+              },
+              {
+                "label": "جاردنر §67، ص55",
+                "arabic": "سُمِعَ الصوتُ.",
+                "trans": "sḏm.n.tw ḫrw",
+                "literal": "نموذج للمجهول مع .n.tw في الكتاب نفسه.",
+                "analysis": "رتّب الأجزاء: sḏm + .n + .tw، ثم الاسم ḫrw. هذا شاهد أوضح من افتراض أن المجهول الماضي دائمًا .w."
+              }
+            ],
+            "note": "الأمثلة التالية داخل القواعد محفوظة، مع التصحيحات الموثقة. لا نعدّ كل مثال سابق اقتباسًا حرفيًا من الكتاب ما لم يُذكر له موضع محدد.",
+            "tabLabel": "٤ · أمثلة من الكتاب"
+          }
+        ]
+      }
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        4,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓋴:𓈖 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓋴:𓈖) 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓆑",
+      "after": "𓋴*𓄔*𓅓*𓆑"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓎡",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*𓎡"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        2,
+        "meanAr"
+      ],
+      "before": "أُرسِل الخادم بواسطة الوزير",
+      "after": "يُرسَل الخادم بواسطة الوزير"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        3,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        4,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "indicatorAr"
+      ],
+      "before": "يصاغ بإلحاق .tw بعد الفعل، وفي الماضي .w",
+      "after": "المجهول بـ .tw؛ وللماضي يمكن استعمال .n.tw (§67)"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓅱:𓆑",
+      "after": "𓋴*𓄔*𓅓*𓆑"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "mean"
+      ],
+      "before": "He was heard",
+      "after": "he was / is heard — passive reading from context"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "trans"
+      ],
+      "before": "sḏm.w=f",
+      "after": "sḏm=f (passive)"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "label"
+      ],
+      "before": "Past Passive (.w)",
+      "after": "Separate passive sḏm=f (§§419–420)"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "text"
+      ],
+      "before": "In past passive, morpheme '.w' (𓅱) is used",
+      "after": "A distinct passive form: .w may occur before a noun, but is not written before suffix pronouns in Middle Egyptian. Its tense depends on context."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "descEn"
+      ],
+      "before": "When the actual agent (the doer) of a passive verb is named, it is strictly introduced by the preposition 'ỉn' (𓇋𓈖) meaning 'by':",
+      "after": "A named agent is normally introduced by ỉn (by); Gardiner §39 also records rarer ḫr."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "summaryAr"
+      ],
+      "before": "المبني للمعلوم يقوم فيه الفاعل بالفعل. والمبني للمجهول يصاغ بإضافة .tw، وإذا ذُكر الفاعل الحقيقي يسبق بـ ỉn.",
+      "after": "من طرق بناء المجهول إضافة .tw. وإذا ذُكر القائم بالفعل يسبق عادةً بـ ỉn؛ ويذكر جاردنر استعمالًا أندر لـ ḫr. وتوجد صيغة مجهول أخرى تُدرس منفصلة (§§419–424)."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "summaryEn"
+      ],
+      "before": "Active Voice indicates the subject performs the action. Passive Voice is formed with morpheme '.tw'. When the agent (doer) is expressed, it is strictly introduced by 'ỉn' ('by').",
+      "after": "The .tw passive is one passive construction. A named agent is normally introduced by ỉn; Gardiner §39 also notes rarer ḫr. A separate passive sḏm=f is discussed in §§419–424."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "badgeAr"
+      ],
+      "before": "صيغة الماضي التام",
+      "after": "حدث ماضٍ"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "badgeEn"
+      ],
+      "before": "Past / Perfective",
+      "after": "Past action: sḏm.n=f"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓈖:𓆑",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑)"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "descEn"
+      ],
+      "before": "Denotes a completed action in the past. Corresponds in English to:",
+      "after": "In affirmative past contexts, translation depends on the surrounding sentence; this is not a separate Egyptian conjugation for each English tense."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "indicatorAr"
+      ],
+      "before": "المقابل الإنجليزي: Past Simple أو Present Perfect",
+      "after": "سمع / قد سمع / كان قد سمع: يحددها السياق"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓈖:𓆑",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑)"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "summaryAr"
+      ],
+      "before": "تُقحم اللاحقة .n بين جذع الفعل والفاعل للدلالة على حدث ماضٍ وتام (الماضي البسيط أو المضارع التام).",
+      "after": "نضيف .n بعد جذع الفعل وقبل الفاعل. في الجمل المثبتة تُترجم غالبًا: سمع / قد سمع / كان قد سمع، بحسب السياق؛ وليست ثلاثة تصريفات مختلفة. راجع جاردنر §67، ص55–56."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "summaryEn"
+      ],
+      "before": "Formed by inserting the morpheme '.n' between verb stem and subject to indicate completed past action (Past Simple or Present Perfect).",
+      "after": "Insert .n after the verb stem and before its subject. In affirmative past contexts this form may translate as heard, has heard, or had heard; context determines the English tense (Gardiner §67)."
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "titleAr"
+      ],
+      "before": "صيغة الماضي التام: sḏm.n=f",
+      "after": "صيغة sḏm.n=f: حدث ماضٍ، وترجمته حسب السياق"
+    },
+    {
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "titleEn"
+      ],
+      "before": "Rule 3: Past / Perfective Tense (The sḏm.n=f Form)",
+      "after": "Rule 3: The sḏm.n=f Form — Past Action in Context"
+    },
+    {
+      "path": [
+        "typingQuestions",
+        4,
+        "meanAr"
+      ],
+      "before": "سَمِعَ هذا الاسم",
+      "after": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)"
+    }
+  ],
+  "sharedQuizChanges": [
+    {
+      "path": [
+        32,
+        "options",
+        0,
+        "text"
+      ],
+      "before": "Past / Perfective: completed action (الماضي التام: 'He heard')",
+      "after": "Past action in context (حدث ماضٍ: 'He heard / has heard / had heard')"
+    },
+    {
+      "path": [
+        32,
+        "explanation"
+      ],
+      "before": "The 'sḏm.n=f' form indicates past / completed action (صيغة الماضي التام): e.g. sḏm.n=f = 'he heard / has heard'.",
+      "after": "In affirmative past contexts, sḏm.n=f may mean 'he heard / has heard / had heard', depending on context (Gardiner §67). These are translations of the same basic form, not three separate conjugations."
+    }
+  ]
+}

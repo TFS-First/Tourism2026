@@ -2407,7 +2407,7 @@ const grammarData = [{
     "label": "Active vs. Passive (المبني للمعلوم والمجهول)"
   }, {
     "id": "rule-3-3",
-    "label": "Past Tense (الماضي التام)"
+    "label": "Past action — sḏm.n=f (حدث ماضٍ)"
   }],
   "rules": [{
     "id": "rule-3-1",
@@ -2429,11 +2429,11 @@ const grammarData = [{
         "label": "Direct Attachment",
         "text": "Pronoun is attached directly without space or break",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓆑",
+          "h": "𓋴*𓄔*𓅓*𓆑",
           "trans": "sḏm=f",
           "mean": "he hears"
         }, {
-          "h": "𓌳*𓄿:𓄿*𓁹:𓎡",
+          "h": "(𓌳:𓁹)*𓄿*𓄿*𓎡",
           "trans": "m33=k",
           "mean": "you see"
         }]
@@ -2518,14 +2518,14 @@ const grammarData = [{
       "ex": "sḏm=sn (They hear)"
     }],
     "examples": [{
-      "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "h": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
       "trans": "sḏm=f rn pn",
       "meanEn": "He hears this name (Active Voice).",
       "meanAr": "يسمع هذا الاسم (مبني للمعلوم)",
       "noteEn": "Verb (sḏm) + Suffix Pronoun (=f 'he') + Object (rn pn).",
       "noteAr": "فعل + ضمير فاعل =f + مفعول به"
     }, {
-      "h": "𓌳*𓄿:𓄿*𓁹:𓎡 𓅭*𓀀",
+      "h": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
       "trans": "m33=k s3",
       "meanEn": "You (m.) see the son.",
       "meanAr": "ترى الابن",
@@ -2546,7 +2546,7 @@ const grammarData = [{
       "noteEn": "Verb (sḏm) + Suffix (=n 'we') + Object (rn pn).",
       "noteAr": "فعل + ضمير =n + مفعول به"
     }, {
-      "h": "𓌳*𓄿:𓄿*𓁹:𓋴:𓈖 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "h": "(𓌳:𓁹)*𓄿*𓄿*(𓋴:𓈖) 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
       "trans": "m33=sn ỉtrw",
       "meanEn": "They see the river.",
       "meanAr": "يرون النهر",
@@ -2562,8 +2562,8 @@ const grammarData = [{
     "titleEn": "Rule 2: Active vs. Passive Voice & The Agent Preposition 'ỉn'",
     "titleAr": "المبني للمعلوم والمجهول وأداة الفاعل ỉn",
     "formula": "[ Verb ] + [ .tw ] + [ Subject (نائب الفاعل) ] + [ ỉn + Agent (الفاعل الحقيقي) ]",
-    "summaryEn": "Active Voice indicates the subject performs the action. Passive Voice is formed with morpheme '.tw'. When the agent (doer) is expressed, it is strictly introduced by 'ỉn' ('by').",
-    "summaryAr": "المبني للمعلوم يقوم فيه الفاعل بالفعل. والمبني للمجهول يصاغ بإضافة .tw، وإذا ذُكر الفاعل الحقيقي يسبق بـ ỉn.",
+    "summaryEn": "The .tw passive is one passive construction. A named agent is normally introduced by ỉn; Gardiner §39 also notes rarer ḫr. A separate passive sḏm=f is discussed in §§419–424.",
+    "summaryAr": "من طرق بناء المجهول إضافة .tw. وإذا ذُكر القائم بالفعل يسبق عادةً بـ ỉn؛ ويذكر جاردنر استعمالًا أندر لـ ḫr. وتوجد صيغة مجهول أخرى تُدرس منفصلة (§§419–424).",
     "points": [{
       "num": "1",
       "titleEn": "Active Voice (المبني للمعلوم)",
@@ -2573,7 +2573,7 @@ const grammarData = [{
         "label": "Active Form",
         "text": "Subject does the action",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓆑 𓂋:𓈖",
+          "h": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖",
           "trans": "sḏm=f rn",
           "mean": "he hears the name"
         }]
@@ -2590,12 +2590,12 @@ const grammarData = [{
       "num": "2",
       "titleEn": "Forming the Passive Voice with morpheme '.tw' (المبني للمجهول)",
       "descEn": "Formed by appending '.tw' (𓏏𓅱) to the verb: [Verb + .tw + Subject]:",
-      "indicatorAr": "يصاغ بإلحاق .tw بعد الفعل، وفي الماضي .w",
+      "indicatorAr": "المجهول بـ .tw؛ وللماضي يمكن استعمال .n.tw (§67)",
       "subPoints": [{
         "label": "With Noun Subject",
         "text": "Verb + .tw + Noun",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖",
+          "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖",
           "trans": "sḏm.tw rn",
           "mean": "The name is heard"
         }]
@@ -2603,23 +2603,23 @@ const grammarData = [{
         "label": "With Suffix Pronoun",
         "text": "Verb + .tw + Pronoun",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑",
+          "h": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑",
           "trans": "sḏm.tw=f",
           "mean": "He is heard"
         }]
       }, {
-        "label": "Past Passive (.w)",
-        "text": "In past passive, morpheme '.w' (𓅱) is used",
+        "label": "Separate passive sḏm=f (§§419–420)",
+        "text": "A distinct passive form: .w may occur before a noun, but is not written before suffix pronouns in Middle Egyptian. Its tense depends on context.",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓅱:𓆑",
-          "trans": "sḏm.w=f",
-          "mean": "He was heard"
+          "h": "𓋴*𓄔*𓅓*𓆑",
+          "trans": "sḏm=f (passive)",
+          "mean": "he was / is heard — passive reading from context"
         }]
       }]
     }, {
       "num": "3",
       "titleEn": "The Agent with Preposition 'ỉn' (الفاعل الحقيقي مسبوقاً بـ ỉn)",
-      "descEn": "When the actual agent (the doer) of a passive verb is named, it is strictly introduced by the preposition 'ỉn' (𓇋𓈖) meaning 'by':",
+      "descEn": "A named agent is normally introduced by ỉn (by); Gardiner §39 also records rarer ḫr.",
       "indicatorAr": "الفاعل الحقيقي في المجهول يسبق بـ ỉn (بواسطة / من قِبل)",
       "subPoints": [{
         "label": "Formula",
@@ -2640,14 +2640,14 @@ const grammarData = [{
       }]
     }],
     "examples": [{
-      "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖",
       "trans": "sḏm.tw rn",
       "meanEn": "The name is heard (Passive Voice).",
       "meanAr": "يُسمَع الاسم (مبني للمجهول)",
       "noteEn": "Verb (sḏm) + Passive formative (.tw) + Subject (rn).",
       "noteAr": "فعل + لاحقة المجهول .tw + نائب فاعل"
     }, {
-      "h": "𓋴*𓄔*𓅓:𓏏*𓅱:𓆑",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑",
       "trans": "sḏm.tw=f",
       "meanEn": "He is heard (Passive Voice with pronoun).",
       "meanAr": "هو يُسمَع",
@@ -2657,18 +2657,18 @@ const grammarData = [{
       "h": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
       "trans": "h3b.tw b3k ỉn ṯ3ty",
       "meanEn": "The servant is sent by the vizier (Passive with Agent).",
-      "meanAr": "أُرسِل الخادم بواسطة الوزير",
+      "meanAr": "يُرسَل الخادم بواسطة الوزير",
       "noteEn": "Passive verb (h3b.tw) + Subject (b3k) + Agent introduced by ỉn (by the vizier).",
       "noteAr": "مبني للمجهول + نائب فاعل + الفاعل مسبوق بـ ỉn"
     }, {
-      "h": "𓋴*𓄔*𓅓:𓏏*𓅱 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
       "trans": "sḏm.tw rn ỉn s",
       "meanEn": "The name is heard by a man.",
       "meanAr": "يُسمع الاسم بواسطة رجل",
       "noteEn": "Passive verb (sḏm.tw) + Subject (rn) + Agent with ỉn (by a man).",
       "noteAr": "مجهول + نائب فاعل + فاعل مسبوق بـ ỉn"
     }, {
-      "h": "𓌳*𓄿:𓄿*𓁹:𓏏*𓅱 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀",
+      "h": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀",
       "trans": "m33.tw msḥ ỉn sš",
       "meanEn": "The crocodile is seen by the scribe.",
       "meanAr": "يُرى التمساح بواسطة الكاتب",
@@ -2679,13 +2679,13 @@ const grammarData = [{
     "id": "rule-3-3",
     "ruleNum": 3,
     "type": "structured",
-    "badgeEn": "Past / Perfective",
-    "badgeAr": "صيغة الماضي التام",
-    "titleEn": "Rule 3: Past / Perfective Tense (The sḏm.n=f Form)",
-    "titleAr": "صيغة الماضي التام: sḏm.n=f",
+    "badgeEn": "Past action: sḏm.n=f",
+    "badgeAr": "حدث ماضٍ",
+    "titleEn": "Rule 3: The sḏm.n=f Form — Past Action in Context",
+    "titleAr": "صيغة sḏm.n=f: حدث ماضٍ، وترجمته حسب السياق",
     "formula": "[ Verb Stem ] + [ .n ] + [ Subject ]",
-    "summaryEn": "Formed by inserting the morpheme '.n' between verb stem and subject to indicate completed past action (Past Simple or Present Perfect).",
-    "summaryAr": "تُقحم اللاحقة .n بين جذع الفعل والفاعل للدلالة على حدث ماضٍ وتام (الماضي البسيط أو المضارع التام).",
+    "summaryEn": "Insert .n after the verb stem and before its subject. In affirmative past contexts this form may translate as heard, has heard, or had heard; context determines the English tense (Gardiner §67).",
+    "summaryAr": "نضيف .n بعد جذع الفعل وقبل الفاعل. في الجمل المثبتة تُترجم غالبًا: سمع / قد سمع / كان قد سمع، بحسب السياق؛ وليست ثلاثة تصريفات مختلفة. راجع جاردنر §67، ص55–56.",
     "points": [{
       "num": "1",
       "titleEn": "Morphological Formation with '.n'",
@@ -2695,7 +2695,7 @@ const grammarData = [{
         "label": "With Pronoun",
         "text": "Verb + .n + Suffix Pronoun",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓈖:𓆑",
+          "h": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
           "trans": "sḏm.n=f",
           "mean": "he heard"
         }]
@@ -2711,13 +2711,13 @@ const grammarData = [{
     }, {
       "num": "2",
       "titleEn": "Tense & English Equivalents",
-      "descEn": "Denotes a completed action in the past. Corresponds in English to:",
-      "indicatorAr": "المقابل الإنجليزي: Past Simple أو Present Perfect",
+      "descEn": "In affirmative past contexts, translation depends on the surrounding sentence; this is not a separate Egyptian conjugation for each English tense.",
+      "indicatorAr": "سمع / قد سمع / كان قد سمع: يحددها السياق",
       "subPoints": [{
         "label": "Past Simple",
         "text": "Action completed at specific past time",
         "examples": [{
-          "h": "𓋴*𓄔*𓅓:𓈖:𓆑",
+          "h": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
           "trans": "sḏm.n=f",
           "mean": "he heard"
         }]
@@ -2732,7 +2732,7 @@ const grammarData = [{
       }]
     }],
     "examples": [{
-      "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
+      "h": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
       "trans": "sḏm.n=f rn pn",
       "meanEn": "He heard (has heard) this name.",
       "meanAr": "سَمِعَ هذا الاسم",
@@ -2767,7 +2767,85 @@ const grammarData = [{
       "noteEn": "Intransitive verb (d3) + .n + Subject (sš) + Prepositional phrase.",
       "noteAr": "فعل لازم + .n + فاعل + جار ومجرور"
     }]
-  }]
+  }],
+  "learningGuide": {
+    "title": "افهم الفكرة أولًا، ثم اقرأ القواعد",
+    "intro": "هنثبت نفس الجملة ونغيّر حاجة واحدة كل مرة. الأمثلة التالية للتوضيح من إعداد التطبيق، وليست اقتباسات من جاردنر. كلمة «الخطة» هنا بمعنى التدبير / المشورة (sḫr).",
+    "source": "Gardiner, Egyptian Grammar, 3rd edition: §§39–40 (ص41–43)، §67–68 (ص55–56)، §§419–420 (ص337). أرقام الصفحات المطبوعة. النقطة . تفصل عنصر الصيغة، وعلامة = تفصل الضمير المتصل؛ ليست علامات تُكتب في النص الهيروغليفي.",
+    "steps": [{
+      "title": "١ — معلوم أم مجهول؟ اسأل: مين عمل الفعل؟",
+      "explanation": "في «يسمع الرجلُ الخطةَ»، الرجل هو الذي يسمع. في «تُسمَع الخطةُ»، ركزنا على الخطة ولم نذكر السامع. تغيير المعلوم إلى المجهول لا يغيّر الزمن وحده.",
+      "pairs": [{
+        "label": "معلوم — قراءة تعليمية بالمضارع",
+        "arabic": "يسمع رجلٌ هذه الخطة.",
+        "trans": "sḏm s sḫr pn",
+        "literal": "يسمع رجلٌ هذه الخطة.",
+        "analysis": "sḏm = يسمع • s = رجل • sḫr pn = هذه الخطة. الترتيب: فعل + فاعل + مفعول."
+      }, {
+        "label": "مجهول بـ .tw",
+        "arabic": "تُسمَع هذه الخطة.",
+        "trans": "sḏm.tw sḫr pn",
+        "literal": "تُسمَع هذه الخطة.",
+        "analysis": "أضفنا .tw، وأصبح ما يقع عليه الفعل هو الفاعل النحوي للمجهول (نائب الفاعل في الشرح العربي)."
+      }],
+      "note": "نقرأ sḏm هنا بالمضارع للتدرّب فقط؛ جاردنر §40 يوضح أن الصيغة أوسع من زمن واحد. النقحرة تكتب العلامات الصوتية، ولا تسجل كل الحركات أو النطق القديم كاملًا.",
+      "tabLabel": "١ · معلوم ومجهول"
+    }, {
+      "title": "٢ — انقل نفس الجملة إلى حدث ماضٍ",
+      "explanation": "في المثال المثبت البسيط نضيف .n بعد الفعل. وللمجهول في الصيغة نفسها نستخدم .n.tw بهذا الترتيب (§67).",
+      "pairs": [{
+        "label": "معلوم — حدث ماضٍ",
+        "arabic": "سَمِعَ رجلٌ هذه الخطة.",
+        "trans": "sḏm.n s sḫr pn",
+        "literal": "سَمِعَ رجلٌ هذه الخطة.",
+        "analysis": "sḏm + .n + الفاعل s + المفعول sḫr pn."
+      }, {
+        "label": "مجهول — حدث ماضٍ",
+        "arabic": "سُمِعَت هذه الخطة.",
+        "trans": "sḏm.n.tw sḫr pn",
+        "literal": "سُمِعَت هذه الخطة.",
+        "analysis": "sḏm + .n + .tw + نائب الفاعل sḫr pn. لا نستبدل .n بواو آليًا."
+      }],
+      "note": "ومع فعل القول ḏd، نفس المقارنة التعليمية: ḏd s sḫr pn = يقول رجلٌ هذه الخطة؛ ḏd.tw sḫr pn = تُقال هذه الخطة؛ ḏd.n s sḫr pn = قال رجلٌ هذه الخطة؛ ḏd.n.tw sḫr pn = قيلت هذه الخطة. هذه صيغ تدريبية، وترجمتها الزمنية تفترض السياق المبسّط الموضح هنا.",
+      "tabLabel": "٢ · حدث ماضٍ"
+    }, {
+      "title": "٣ — «سَمِعَ» و«كان قد سَمِعَ»: هل التصريف مختلف؟",
+      "explanation": "الماضي البسيط: «سمع الرجل الخطة أمس» = حدث وقع في الماضي. الماضي التام: «عندما وصل الكاتب، كان الرجل قد سمع الخطة» = السماع سبق حدثًا آخر في الماضي. المثال العربي لتوضيح ترتيب الحدثين، وليس ترجمة لنص مصري من الكتاب.",
+      "pairs": [{
+        "label": "التصريف مع ضمير",
+        "arabic": "هو سَمِعَ / قد سَمِعَ / كان قد سَمِعَ، حسب السياق.",
+        "trans": "sḏm.n=f",
+        "literal": "الجذع sḏm + عنصر الصيغة .n + الضمير =f (هو).",
+        "analysis": "الكتابة الأساسية هنا واحدة؛ السياق يحدد هل الأنسب heard أو has heard أو had heard (§67). مفيش علامة إضافية ثابتة بنحطها لمجرد ترجمة «كان قد»."
+      }, {
+        "label": "المقارنة التي تحفظها أولًا",
+        "arabic": "يسمع ← سَمِعَ؛ وفي المجهول: يُسمَع ← سُمِعَ.",
+        "trans": "sḏm=f → sḏm.n=f | sḏm.tw=f → sḏm.n.tw=f",
+        "literal": "قارن وجود .n، ثم وجود .tw، ثم حدد الفاعل.",
+        "analysis": "مصطلح Perfective ليس مرادفًا آليًا للماضي التام الإنجليزي، وOld Perfective صيغة أخرى؛ لا نخلطها بـ sḏm.n=f."
+      }],
+      "note": "جاردنر §68 يستعمل ỉw sḏm.n=f كثيرًا في بداية الخبر السردي المستقل. السياق وتركيب الجملة مهمان؛ المقارنة السابقة مدخل للتعلّم وليست جدول أزمنة شاملًا.",
+      "tabLabel": "٣ · الفرق بين الصيغ"
+    }, {
+      "title": "٤ — أمثلة موثّقة، ثم أمثلة التطبيق الموجودة",
+      "explanation": "بعد المقارنة البسيطة، اقرأ مثالين من جاردنر. نعرض النقحرة والمعنى بالعربية؛ الأصل الإنجليزي والرسم في الصفحات المشار إليها.",
+      "pairs": [{
+        "label": "جاردنر §39، ص41",
+        "arabic": "يسمع الكاتبُ.",
+        "trans": "sḏm sš",
+        "literal": "فعل + فاعل اسم ظاهر.",
+        "analysis": "ومع الضمير: sḏm=f = هو يسمع. لاحظ أن الضمير يحل محل الفاعل، فلا نضيفه تلقائيًا إلى كل اسم ظاهر."
+      }, {
+        "label": "جاردنر §67، ص55",
+        "arabic": "سُمِعَ الصوتُ.",
+        "trans": "sḏm.n.tw ḫrw",
+        "literal": "نموذج للمجهول مع .n.tw في الكتاب نفسه.",
+        "analysis": "رتّب الأجزاء: sḏm + .n + .tw، ثم الاسم ḫrw. هذا شاهد أوضح من افتراض أن المجهول الماضي دائمًا .w."
+      }],
+      "note": "الأمثلة التالية داخل القواعد محفوظة، مع التصحيحات الموثقة. لا نعدّ كل مثال سابق اقتباسًا حرفيًا من الكتاب ما لم يُذكر له موضع محدد.",
+      "tabLabel": "٤ · أمثلة من الكتاب"
+    }]
+  }
 }];
 const vocabularyData = [{
   "lesson": "الدرس الأول",
@@ -3457,7 +3535,7 @@ const typingQuestionsData = [{
   "h": "𓋴*𓄔*𓅓:𓈖:𓆑 𓂋:𓈖 𓊪:𓈖",
   "trans": "sḏm.n=f rn pn",
   "meanEn": "He heard this name.",
-  "meanAr": "سَمِعَ هذا الاسم",
+  "meanAr": "سَمِعَ هذا الاسم (صيغة sḏm.n=f للحدث الماضي)",
   "hint": "Past / Perfective tense: sḏm.n=f + object rn pn"
 }, {
   "id": 24,
@@ -4363,7 +4441,7 @@ const comprehensiveQuizData = [{
   "qAr": "ما هو الزمن الذي تعبر عنه صيغة 'sḏm.n=f' في اللغة المصرية الكلاسيكية؟",
   "options": [{
     "id": "a",
-    "text": "Past / Perfective: completed action (الماضي التام: 'He heard')",
+    "text": "Past action in context (حدث ماضٍ: 'He heard / has heard / had heard')",
     "isCorrect": true
   }, {
     "id": "b",
@@ -4378,7 +4456,7 @@ const comprehensiveQuizData = [{
     "text": "Imperative mood (صيغة الأمر)",
     "isCorrect": false
   }],
-  "explanation": "The 'sḏm.n=f' form indicates past / completed action (صيغة الماضي التام): e.g. sḏm.n=f = 'he heard / has heard'."
+  "explanation": "In affirmative past contexts, sḏm.n=f may mean 'he heard / has heard / had heard', depending on context (Gardiner §67). These are translations of the same basic form, not three separate conjugations."
 }, {
   "id": "g10",
   "category": "grammar",
@@ -5975,6 +6053,65 @@ const IllustrativeExamplesBlock = ({
   })));
 };
 
+// Source: src/components/GrammarLearningGuide.jsx
+// Optional, data-driven introduction: lessons keep their own teaching content.
+const GrammarLearningGuide = ({
+  guide
+}) => {
+  const [step, setStep] = useState(0);
+  const guideId = React.useId();
+  if (!guide?.steps?.length) return null;
+  const current = guide.steps[Math.min(step, guide.steps.length - 1)];
+  return /*#__PURE__*/React.createElement("section", {
+    className: "grammar-guide",
+    dir: "rtl",
+    "aria-label": guide.title
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "grammar-guide-heading"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "grammar-guide-kicker"
+  }, "\u0642\u0628\u0644 \u0627\u0644\u062A\u0641\u0627\u0635\u064A\u0644"), /*#__PURE__*/React.createElement("h3", null, guide.title), /*#__PURE__*/React.createElement("p", null, guide.intro)), /*#__PURE__*/React.createElement("div", {
+    className: "grammar-guide-tabs",
+    role: "group",
+    "aria-label": "\u062E\u0637\u0648\u0627\u062A \u0641\u0647\u0645 \u0627\u0644\u062F\u0631\u0633"
+  }, guide.steps.map((item, i) => /*#__PURE__*/React.createElement("button", {
+    key: i,
+    id: `${guideId}-step-${i}`,
+    "aria-pressed": step === i,
+    "aria-controls": `${guideId}-panel`,
+    onClick: () => setStep(i)
+  }, item.tabLabel || item.title))), /*#__PURE__*/React.createElement("div", {
+    id: `${guideId}-panel`,
+    role: "region",
+    "aria-labelledby": `${guideId}-step-${step}`,
+    className: "grammar-guide-panel"
+  }, /*#__PURE__*/React.createElement("h4", null, current.title), /*#__PURE__*/React.createElement("p", null, current.explanation), /*#__PURE__*/React.createElement("div", {
+    className: "grammar-guide-pairs"
+  }, current.pairs.map((pair, i) => /*#__PURE__*/React.createElement("article", {
+    key: i,
+    className: "grammar-guide-example"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "grammar-guide-label"
+  }, pair.label), /*#__PURE__*/React.createElement("h5", null, pair.arabic), /*#__PURE__*/React.createElement("div", {
+    className: "grammar-guide-trans",
+    dir: "ltr"
+  }, pair.trans), /*#__PURE__*/React.createElement("p", null, pair.literal), /*#__PURE__*/React.createElement("p", {
+    className: "grammar-guide-analysis"
+  }, pair.analysis)))), /*#__PURE__*/React.createElement("p", {
+    className: "grammar-guide-note"
+  }, current.note), /*#__PURE__*/React.createElement("div", {
+    className: "grammar-guide-pagination"
+  }, /*#__PURE__*/React.createElement("button", {
+    disabled: step === 0,
+    onClick: () => setStep(n => n - 1)
+  }, "\u0627\u0644\u062E\u0637\u0648\u0629 \u0627\u0644\u0633\u0627\u0628\u0642\u0629"), /*#__PURE__*/React.createElement("span", null, step + 1, " / ", guide.steps.length), /*#__PURE__*/React.createElement("button", {
+    disabled: step === guide.steps.length - 1,
+    onClick: () => setStep(n => n + 1)
+  }, "\u0627\u0644\u062E\u0637\u0648\u0629 \u0627\u0644\u062A\u0627\u0644\u064A\u0629"))), /*#__PURE__*/React.createElement("details", {
+    className: "grammar-guide-source"
+  }, /*#__PURE__*/React.createElement("summary", null, "\u0627\u0644\u0645\u0635\u062F\u0631 \u0648\u0637\u0631\u064A\u0642\u0629 \u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u0623\u0645\u062B\u0644\u0629"), /*#__PURE__*/React.createElement("p", null, guide.source)));
+};
+
 // Source: src/sections/GrammarSection.jsx
 const GrammarSection = ({
   selectedLessonTab,
@@ -6132,7 +6269,9 @@ const GrammarSection = ({
   }))), expandedLessons[section.id] && /*#__PURE__*/React.createElement("div", {
     className: "p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6 animate-in slide-in-from-top-2 duration-300 bg-stone-50/60",
     dir: "ltr"
-  }, section.rules.map((rule, idx) => {
+  }, section.learningGuide && /*#__PURE__*/React.createElement(GrammarLearningGuide, {
+    guide: section.learningGuide
+  }), section.rules.map((rule, idx) => {
     // Generic Determinatives Grid
     if (rule.type === 'grid') {
       return /*#__PURE__*/React.createElement("div", {

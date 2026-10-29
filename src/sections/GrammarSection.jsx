@@ -113,6 +113,7 @@ const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLesso
           {/* Section Content */}
           {expandedLessons[section.id] && (
             <div className="p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6 animate-in slide-in-from-top-2 duration-300 bg-stone-50/60" dir="ltr">
+              {section.learningGuide && <GrammarLearningGuide guide={section.learningGuide} />}
               {section.rules.map((rule, idx) => {
                 
                 // Generic Determinatives Grid

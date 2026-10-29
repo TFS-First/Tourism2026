@@ -1077,7 +1077,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Past / Perfective: completed action (الماضي التام: 'He heard')",
+        "text": "Past action in context (حدث ماضٍ: 'He heard / has heard / had heard')",
         "isCorrect": true
       },
       {
@@ -1096,7 +1096,7 @@
         "isCorrect": false
       }
     ],
-    "explanation": "The 'sḏm.n=f' form indicates past / completed action (صيغة الماضي التام): e.g. sḏm.n=f = 'he heard / has heard'."
+    "explanation": "In affirmative past contexts, sḏm.n=f may mean 'he heard / has heard / had heard', depending on context (Gardiner §67). These are translations of the same basic form, not three separate conjugations."
   },
   {
     "id": "g10",

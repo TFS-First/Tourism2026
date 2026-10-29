@@ -3,9 +3,15 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { getDatasets,loadLessons,validateLessons,assembleSource,json,sha256,read } from '../scripts/project.mjs';
 const original=json('tests/fixtures/refactor-baseline.json');
-test('the original three lessons and shared content retain every field and Unicode character',()=>{
+test('original lesson content is unchanged except for the explicit source-reviewed lesson-three corrections',()=>{
  const lessons=loadLessons().filter(l=>['lesson1','lesson2','lesson3'].includes(l.id));
- for(const [name,value] of Object.entries(getDatasets(lessons))) assert.equal(sha256(value),original.datasets[name].sha256,name+' differs from the approved content.');
+ // Reverse only the explicit, source-reviewed corrections; never replace the baseline hashes.
+ const reviewed=json('tests/fixtures/lesson-03-reviewed-changes.json');
+ const lesson3=lessons.find(l=>l.id==='lesson3');
+ for(const change of reviewed.changes){let target=lesson3;for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);assert.deepEqual(target[key],change.after,'Reviewed value changed at '+change.path.join('.'));if(change.added)delete target[key];else target[key]=change.before;}
+ const datasets=getDatasets(lessons);
+ for(const change of reviewed.sharedQuizChanges){let target=datasets.comprehensiveQuizData;for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);assert.equal(target[key],change.after);target[key]=change.before;}
+ for(const [name,value] of Object.entries(datasets)) assert.equal(sha256(value),original.datasets[name].sha256,name+' differs from the approved content.');
 });
 test('hieroglyph parser and Arabic/Latin search direction retain their behavior',()=>{
  const context={};vm.createContext(context);vm.runInContext(read('src/lib/hieroglyphs.js')+'\n'+read('src/lib/search.js'),context);
