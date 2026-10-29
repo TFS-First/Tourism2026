@@ -8411,7 +8411,7 @@ function MainApp() {
   const sortedHieroglyphs = [...hieroglyphsData].sort((a, b) => a.step - b.step);
   return /*#__PURE__*/React.createElement("div", {
     dir: "rtl",
-    className: `study-shell min-h-screen text-slate-900 font-sans pb-12 ${quickSearchOpen ? "study-search-open" : ""}`
+    className: `study-shell min-h-screen text-slate-900 font-sans ${selectedSign ? "study-sign-shell" : "pb-12"} ${quickSearchOpen ? "study-search-open" : ""}`
   }, !selectedSign && /*#__PURE__*/React.createElement("header", {
     className: `study-header ${compactNav ? "is-compact" : ""}`
   }, /*#__PURE__*/React.createElement("div", {
@@ -8666,7 +8666,7 @@ function MainApp() {
     activeExTab: exerciseSelection,
     setActiveExTab: setExerciseSelection
   })), selectedSign && /*#__PURE__*/React.createElement("div", {
-    className: "bg-stone-50 min-h-screen"
+    className: "sign-detail-page bg-stone-50"
   }, /*#__PURE__*/React.createElement("header", {
     className: "bg-white border-b border-stone-200 p-4 sticky top-0 z-20 shadow-sm"
   }, /*#__PURE__*/React.createElement("div", {

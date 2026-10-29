@@ -171,7 +171,7 @@ function MainApp() {
   const sortedHieroglyphs = [...hieroglyphsData].sort((a, b) => a.step - b.step);
 
   return (
-    <div dir="rtl" className={`study-shell min-h-screen text-slate-900 font-sans pb-12 ${quickSearchOpen ? "study-search-open" : ""}`}>
+    <div dir="rtl" className={`study-shell min-h-screen text-slate-900 font-sans ${selectedSign ? "study-sign-shell" : "pb-12"} ${quickSearchOpen ? "study-search-open" : ""}`}>
       {!selectedSign && (
         <header className={`study-header ${compactNav ? "is-compact" : ""}`}>
           <div className="study-header-inner">
@@ -354,7 +354,7 @@ function MainApp() {
       )}
 
       {selectedSign && (
-        <div className="bg-stone-50 min-h-screen">
+        <div className="sign-detail-page bg-stone-50">
           <header className="bg-white border-b border-stone-200 p-4 sticky top-0 z-20 shadow-sm">
             <div className="max-w-5xl mx-auto flex items-center justify-between">
               <button onClick={() => { setSelectedSign(null); setActiveDrawingSign(null); }} className="flex items-center gap-2 text-stone-700 hover:bg-stone-200 bg-stone-100 px-4 py-2 rounded-xl font-semibold transition-colors">
