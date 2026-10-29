@@ -100,3 +100,7 @@
 
 /* Sign details own their bottom spacing; the study shell must not add a second footer. */
 .study-shell.study-sign-shell{background:#fafafa;padding-bottom:0}.sign-detail-page{min-height:100vh;min-height:100dvh}
+
+.rule-summary{border:1px solid #d8dfcf;border-right:3px solid #257b80;border-radius:13px;background:#faf9f1;padding:16px 18px;color:#29443f;line-height:1.9;min-width:0}.rule-summary-kicker{font-size:10px;color:#9b713c;font-weight:700}.rule-summary h4{font-size:17px;font-weight:700;margin:3px 0 8px}.rule-summary p{font-size:13px;overflow-wrap:anywhere}.rule-summary-english{text-align:left;border-top:1px solid #e5e5d7;margin-top:12px;padding-top:10px;color:#67796f;font-size:12px}.rule-summary-english p{font-size:12px}.rule-summary-example{display:grid;grid-template-columns:140px minmax(0,1fr);align-items:center;gap:15px;border-top:1px solid #e5e5d7;margin-top:12px;padding-top:12px}.rule-summary-glyph{min-width:0;background:white;border:1px solid #e5e5d7;border-radius:10px}.rule-summary-example b{display:block;text-align:left;font:600 17px/1.7 Georgia,serif;color:#257b80}.rule-summary-example p[dir=ltr]{text-align:left;font-size:12px;color:#67796f}@media(max-width:600px){.rule-summary{padding:13px}.rule-summary-example{grid-template-columns:100px minmax(0,1fr);gap:10px}}
+
+.rule-summary-example{display:flex;flex-direction:column;align-items:stretch}.rule-summary-glyph{width:100%;padding:10px;text-align:center}

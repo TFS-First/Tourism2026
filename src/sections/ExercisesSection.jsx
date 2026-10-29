@@ -18,6 +18,7 @@ const ExercisesSection = ({ activeExTab, setActiveExTab }) => {
                   <div>
                     <span className="text-xl sm:text-2xl font-serif text-amber-700 font-bold block">{item.trans}</span>
                     <span className="text-xs text-stone-500 font-medium">{item.meanEn}</span>
+                    {item.meanAr && <p className="text-sm text-stone-700 mt-2 leading-relaxed" dir="rtl">{item.meanAr}</p>}
                   </div>
                   <button
                     onClick={() => toggleReveal(idx)}
@@ -33,14 +34,17 @@ const ExercisesSection = ({ activeExTab, setActiveExTab }) => {
                   {isRevealed(idx) && (
                     <div className="w-full flex flex-col items-center justify-center p-4 bg-green-50 border border-green-200 rounded-xl mt-2 animate-in fade-in" dir="ltr">
                       <span className="text-xs text-green-900 font-bold mb-2">Model Arrangement:</span>
-                      <HieroglyphBlock code={item.correctH} size="large" />
+                      {item.answerTrans ? <HieroglyphBlock code={item.correctH} size="normal" /> : <HieroglyphBlock code={item.correctH} size="large" />}
+                      {item.answerTrans && <b dir="ltr" className="block text-sm text-green-900 mt-3 break-words">{item.answerTrans}</b>}
+                      {item.answerNote && <p dir="rtl" className="text-xs text-green-900 leading-relaxed mt-2">{item.answerNote}</p>}
                     </div>
                   )}
                 </div>
               </div>
   );
   const renderReadingCard = (item, idx) => (
-              <div key={idx} data-nav-target={`exercise-${activeExTab}-${idx}`} data-content-id={activeExTab} data-content-detail={item.trans} onClick={() => toggleReveal(idx)} className="group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between">
+              <div key={idx} data-nav-target={`exercise-${activeExTab}-${idx}`} data-content-id={activeExTab} data-content-detail={item.trans} onClick={() => toggleReveal(idx)} className={`group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between ${item.sourceLabel && item.h.trim().split(/\s+/).length > 12 ? "md:col-span-2" : ""}`}>
+                {item.sourceLabel && <span className="text-xs text-amber-800 font-bold mb-2" dir="ltr">{item.sourceLabel} · Gardiner</span>}
                 <div className="text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100">
                   <HieroglyphBlock code={item.h} size="large" />
                 </div>
@@ -54,6 +58,7 @@ const ExercisesSection = ({ activeExTab, setActiveExTab }) => {
                         {item.meanAr}
                       </span>
                     )}
+                    {item.noteAr && <p className="text-xs text-stone-600 leading-relaxed mt-2" dir="rtl">{item.noteAr}</p>}
                   </div>
                 ) : (
                   <div className="pt-3 border-t border-dashed border-stone-200 flex items-center justify-center gap-1.5 text-xs text-amber-700 font-bold group-hover:text-amber-800 transition-colors">
@@ -82,15 +87,16 @@ const ExercisesSection = ({ activeExTab, setActiveExTab }) => {
                     {presentation.titleAr}
                   </span>
                 </div>
-                <p className="text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5">
-                  {presentation.description}
+                <p className="text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5" dir={presentation.descriptionAr ? 'rtl' : undefined} style={presentation.descriptionAr ? {textAlign:'right'} : undefined}>
+                  {presentation.descriptionAr || presentation.description}
                 </p>
+                {presentation.descriptionEn && <p className="text-xs text-stone-500 leading-relaxed mt-2" dir="ltr">{presentation.descriptionEn}</p>}
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6">
-            {items.map(presentation.kind === 'drawing' ? renderDrawingCard : renderReadingCard)}
+            {items.map((item, index) => (item.correctH || presentation.kind === 'drawing' ? renderDrawingCard : renderReadingCard)(item, index))}
           </div>
         </div>
       )}

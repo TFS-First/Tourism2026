@@ -28,6 +28,7 @@ const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLesso
     <IllustrativeExamplesBlock examples={examples} />
   );
 
+  const summaries = typeof ruleSummaries === 'undefined' ? {} : ruleSummaries;
   const visibleSections = grammarData.filter(section => 
     selectedLessonTab === 'all' || section.id === selectedLessonTab
   );
@@ -134,6 +135,7 @@ const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLesso
                         <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-0.5 leading-snug">{rule.titleEn}</h3>
                         <h4 className="text-xs sm:text-sm md:text-base font-semibold text-stone-500" dir="rtl">{rule.titleAr}</h4>
                       </div>
+                      {(rule.quickSummary || summaries[rule.id]) && <GrammarRuleSummary summary={rule.quickSummary || summaries[rule.id]} />}
                       {rule.summaryEn && (
                         <p className="text-stone-700 text-xs sm:text-sm md:text-base leading-relaxed bg-amber-50/60 p-2.5 sm:p-3 rounded-xl border border-amber-200/60">
                           {rule.summaryEn}
@@ -177,6 +179,7 @@ const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLesso
                       <h4 className="text-xs sm:text-sm md:text-base font-semibold text-stone-500" dir="rtl">{rule.titleAr}</h4>
                     </div>
 
+                    {(rule.quickSummary || summaries[rule.id]) && <GrammarRuleSummary summary={rule.quickSummary || summaries[rule.id]} />}
                     {rule.learningGuide && <GrammarLearningGuide guide={rule.learningGuide} />}
 
                     {/* Formula Syntax Box (Single or Dual Side-by-Side Cards) */}

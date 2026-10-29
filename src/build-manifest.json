@@ -57,6 +57,15 @@
     "path": "src/components/GrammarLearningGuide.jsx"
   },
   {
+    "kind": "data",
+    "name": "ruleSummaries",
+    "path": "src/data/shared/rule-summaries.json"
+  },
+  {
+    "kind": "code",
+    "path": "src/components/GrammarRuleSummary.jsx"
+  },
+  {
     "kind": "code",
     "path": "src/sections/GrammarSection.jsx"
   },

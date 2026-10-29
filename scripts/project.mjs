@@ -47,7 +47,7 @@ export function assembleSource(lessons=loadLessons()) {
   const lessonDataNames=['grammarData','vocabularyData','exercisesData','typingQuestionsData','comprehensiveQuizData'];
   return json('src/build-manifest.json').map(entry=>{
     if(entry.kind==='code')return '// Source: '+entry.path+'\n'+read(entry.path);
-    if(entry.kind==='data')return `const ${entry.name} = ${JSON.stringify(data[entry.name])};`;
+    if(entry.kind==='data')return `const ${entry.name} = ${JSON.stringify(Object.hasOwn(data,entry.name)?data[entry.name]:json(entry.path))};`;
     if(entry.kind==='lessons')return `const lessonRegistry = ${JSON.stringify(lessons.map(l=>({id:l.id,number:l.number,titleAr:l.titleAr,titleEn:l.titleEn,exercisePresentation:l.exercisePresentation,typingIcon:l.typingIcon})))};\n`+lessonDataNames.map(name=>`const ${name} = ${JSON.stringify(data[name])};`).join('\n');
     throw new Error('Unknown build-manifest entry: '+entry.kind);
   }).join('\n\n');

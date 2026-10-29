@@ -1,0 +1,158 @@
+{
+  "rule-1-1": {
+    "titleAr": "حرف الجر يأتي قبل الاسم",
+    "titleEn": "Preposition + noun",
+    "explanationAr": "ابدأ بحرف الجر، ثم الاسم الذي يوضح المكان أو الجهة أو العلاقة. m قد تعني «في» أو «من» أو «بواسطة» حسب السياق؛ n تُستخدم هنا بمعنى «لـ/إلى» مع الشخص، وr للاتجاه. المعنى يُفهم من الجملة، مش من ترجمة واحدة محفوظة.",
+    "explanationEn": "A preposition precedes its complement. Translate m, n and r according to the relationship and the context.",
+    "example": {
+      "trans": "m pt",
+      "h": "𓅓 𓊪:𓏏*𓇯",
+      "meanAr": "في السماء",
+      "meanEn": "in the sky"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-1-2": {
+    "titleAr": "هذا بعد الاسم، وآخر قبله",
+    "titleEn": "Demonstratives and “other”",
+    "explanationAr": "للقريب: pn مع المذكر وtn مع المؤنث، ويأتيان بعد الاسم: «الاسم + هذا/هذه». أما ky «آخر» وkt «أخرى» فيأتيان قبل الاسم. كلمة «آخر» هنا للتفريق، وليست إشارة إلى شيء بعيد.",
+    "explanationEn": "Postpositive pn / tn mean “this”; prepositive ky / kt mean “other”. Match the gender of the noun.",
+    "example": {
+      "trans": "rn pn",
+      "h": "𓂋:𓈖 𓊪:𓈖",
+      "meanAr": "هذا الاسم",
+      "meanEn": "this name"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-1-3": {
+    "titleAr": "ỉm معناها هناك أو فيه",
+    "titleEn": "The adverb ỉm",
+    "explanationAr": "الكلمة ỉm ظرف، مش اسمًا ولا فعلًا: معناها «هناك/فيه». بعد المبتدأ، تقدر تكمل بها المعنى من غير فعل «يكون» مكتوب؛ زمن الترجمة يعتمد على السياق.",
+    "explanationEn": "Ỉm means “there / therein”. It can serve as an adverbial predicate without an expressed verb “to be”.",
+    "example": {
+      "trans": "ỉm",
+      "h": "𓇋*𓅓",
+      "meanAr": "هناك / فيه",
+      "meanEn": "there / therein"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-1": {
+    "titleAr": "مين؟ موجود فين؟",
+    "titleEn": "Adverbial predicate",
+    "explanationAr": "حدد المبتدأ أولًا، ثم المكان أو الحال الذي يكمل معناه. وجود ỉw يقدّم الجملة في هذه الأمثلة؛ ليس ترجمة حرفية ثابتة لكلمة «هو»، ولا علامة مضارع في كل السياقات.",
+    "explanationEn": "Identify the subject, then its adverbial predicate. Ỉw introduces these statements; it is not a universal present-tense marker.",
+    "example": {
+      "trans": "ỉw s m pr",
+      "h": "𓇋*𓅱 𓊃*𓀀 𓅓 𓉐:𓏤",
+      "meanAr": "الرجل في البيت",
+      "meanEn": "The man is in the house."
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-2": {
+    "titleAr": "ابدأ بالفعل ثم اسأل: مين؟ وإيه؟",
+    "titleEn": "Verb – subject – object",
+    "explanationAr": "الترتيب المعتاد: فعل ثم فاعل ثم مفعول به إن احتاجه الفعل. «يسمع الرجل الخطة»: يسمع = الفعل، الرجل = الفاعل، الخطة = المفعول. الفعل اللازم يكتفي بالفاعل، وقد يتبعه مكان أو اتجاه.",
+    "explanationEn": "The usual order is verb, subject, direct object, then adverbials. Intransitive verbs have no direct object.",
+    "example": {
+      "trans": "sḏm s sḫr",
+      "h": "𓋴*𓄔*𓅓 𓊃*𓀀 𓋴*𓐍:𓂋*𓏛",
+      "meanAr": "يسمع الرجل الخطة",
+      "meanEn": "The man hears the counsel."
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-3": {
+    "titleAr": "علامة كلمة ومعها شرطة",
+    "titleEn": "Word sign and stroke",
+    "explanationAr": "ممكن الرمز الواحد يدل على كلمة كاملة، زي البيت pr. الشرطة الرأسية المصاحبة علامة كتابية تساعد على تمييز هذا الاستعمال؛ لا تضيف حرفًا للنقحرة. وجودها شائع، لكنه مش شرط لازم في كل كتابة.",
+    "explanationEn": "A word sign can stand for a whole word. Its accompanying stroke is not pronounced and is not obligatory in every spelling.",
+    "example": {
+      "trans": "pr",
+      "h": "𓉐:𓏤",
+      "meanAr": "بيت",
+      "meanEn": "house"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-4": {
+    "titleAr": "المخصص يشرح المعنى ولا نقرأه كحرف",
+    "titleEn": "Determinatives / classifiers",
+    "explanationAr": "اقرأ العلامات الصوتية، ثم استخدم المخصص لفهم نوع المعنى: شخص، حركة، مكان، وغيرها. المخصص غالبًا في آخر الكلمة، ولا نضيف له صوتًا في نقحرتها لمجرد ظهوره.",
+    "explanationEn": "A determinative usually follows the phonetic spelling and classifies its meaning. It is not an extra pronounced consonant.",
+    "example": {
+      "trans": "sš",
+      "h": "𓏞*𓀀",
+      "meanAr": "كاتب؛ علامة الرجل مخصص",
+      "meanEn": "scribe; the man sign is a classifier"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-5": {
+    "titleAr": "احفظ فئة المعنى، مش نطقًا للمخصص",
+    "titleEn": "Recognising semantic classes",
+    "explanationAr": "الجدول مجموعة مخصصات تتعلمها بالتدريج. بصّ على وظيفة الرمز في الكلمة: الرجل يدل على فئة الأشخاص، والمشي على الحركة. نفس الرسم قد يؤدي وظيفة أخرى في كلمة أخرى؛ السياق هو الأساس.",
+    "explanationEn": "Learn classifier categories gradually. The function of a sign depends on the word in which it occurs.",
+    "example": {
+      "trans": "sš",
+      "h": "𓏞*𓀀",
+      "meanAr": "كاتب من فئة الأشخاص",
+      "meanEn": "a scribe belongs to the person category"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-6": {
+    "titleAr": "قارن المذكر بالمؤنث",
+    "titleEn": "Gender and feminine .t",
+    "explanationAr": "المؤنث غالبًا ينتهي بـt، مثل s3 «ابن» وs3t «ابنة». مخصص الرجل أو المرأة يوضح المعنى لكنه مش بديلًا عن حرف t. بعض الكلمات مؤنثة بطبيعتها؛ افهم الكلمة كاملة.",
+    "explanationEn": "The feminine commonly ends in .t, as in s3 / s3t. A woman classifier is not a replacement for the consonant t.",
+    "example": {
+      "trans": "s3t",
+      "h": "𓅭*𓏏*𓁐",
+      "meanAr": "ابنة",
+      "meanEn": "daughter"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-3-1": {
+    "titleAr": "جذع الفعل + ضمير الفاعل",
+    "titleEn": "Suffix conjugation",
+    "explanationAr": "في sḏm=f، الجزء sḏm يعني «يسمع»، و=f يحدد الفاعل «هو». علامة = وسيلة حديثة لفصل الضمير في النقحرة، مش رمزًا هيروغليفيًا. الصيغة وحدها لا تعني المضارع دائمًا؛ السياق مهم.",
+    "explanationEn": "In sḏm=f, =f is the suffix subject “he”. The equals sign is a transliteration convention. Context determines the precise temporal interpretation.",
+    "example": {
+      "trans": "sḏm=f",
+      "h": "𓋴*𓄔*𓅓*𓆑",
+      "meanAr": "هو يسمع، بحسب سياق المثال",
+      "meanEn": "he hears, in this teaching context"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-3-2": {
+    "titleAr": "المعلوم: مين عمل؟ المجهول: إيه حصل له؟",
+    "titleEn": "Active and passive",
+    "explanationAr": "في المعلوم نذكر من يفعل: «يسمع الرجل الخطة». في المجهول نركز على ما وقع عليه الفعل: «تُسمع الخطة». من طرق المجهول .tw، وإذا ذُكر القائم بالفعل نستخدم عادةً ỉn. ليست .tw الطريقة الوحيدة.",
+    "explanationEn": "Active clauses foreground the doer. In a .tw passive the affected entity becomes the subject; a named agent is normally introduced by ỉn.",
+    "example": {
+      "trans": "sḏm.tw sḫr pn",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "meanAr": "تُسمع هذه الخطة",
+      "meanEn": "This counsel is heard."
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-3-3": {
+    "titleAr": ".n قبل الفاعل، والزمن الدقيق من السياق",
+    "titleEn": "The sḏm.n=f form",
+    "explanationAr": "قارن sḏm=f مع sḏm.n=f: أضفنا .n بعد جذع الفعل وقبل الفاعل. في السياق الماضي المثبت نفهم «سمع/قد سمع». «كان قد سمع» يحتاج سياقًا يربطه بحدث ماضٍ آخر؛ مش تصريفًا جديدًا بنهاية مختلفة.",
+    "explanationEn": "The .n element precedes the subject. “He heard”, “has heard” and “had heard” can be contextual translations, not three separately inflected Egyptian tenses.",
+    "example": {
+      "trans": "sḏm.n=f",
+      "h": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
+      "meanAr": "سمع / قد سمع، وفق السياق",
+      "meanEn": "he heard / has heard, according to context"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  }
+}

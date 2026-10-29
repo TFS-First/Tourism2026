@@ -17,7 +17,7 @@ test('all four content catalogs render with the current lesson registry',()=>{
 });
 test('forty lessons render through the same exercise template and content drawer',()=>{
  const lessons=structuredClone(loadLessons());
- for(let i=4;i<=40;i++){
+ for(let i=Math.max(...lessons.map(l=>l.number))+1;i<=40;i++){
   const lesson=structuredClone(lessons[0]);lesson.id='lesson'+i;lesson.number=i;lesson.titleAr='الدرس '+i;lesson.titleEn='Lesson '+i;
   lesson.grammar={id:lesson.id,titleAr:lesson.titleAr,titleEn:lesson.titleEn,rules:[],badges:[]};lesson.vocabulary={lesson:lesson.titleAr,lessonEn:lesson.titleEn,words:[]};lesson.typingQuestions=[{...lesson.typingQuestions[0],id:100+i,lesson:lesson.titleAr,lessonEn:lesson.titleEn}];lesson.quizQuestions=[];lesson.exercises=lesson.exercises.slice(0,1);lessons.push(lesson);
  }

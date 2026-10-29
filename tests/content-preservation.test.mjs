@@ -29,7 +29,7 @@ test('hieroglyph parser and Arabic/Latin search direction retain their behavior'
 });
 test('adding forty lessons aggregates data without changing shared renderers or writing into source files',()=>{
  const lessons=structuredClone(loadLessons());
- for(let n=4;n<=40;n++){const original=structuredClone(lessons[0]);const id='lesson'+n;original.id=id;original.number=n;original.titleAr='الدرس '+n;original.titleEn='Lesson '+n;original.grammar={id,titleAr:original.titleAr,titleEn:original.titleEn,rules:[],badges:[]};original.vocabulary={lesson:original.titleAr,lessonEn:original.titleEn,words:[]};original.exercises=[];original.typingQuestions=[];original.quizQuestions=[];lessons.push(original);}
+ for(let n=Math.max(...lessons.map(l=>l.number))+1;n<=40;n++){const original=structuredClone(lessons[0]);const id='lesson'+n;original.id=id;original.number=n;original.titleAr='الدرس '+n;original.titleEn='Lesson '+n;original.grammar={id,titleAr:original.titleAr,titleEn:original.titleEn,rules:[],badges:[]};original.vocabulary={lesson:original.titleAr,lessonEn:original.titleEn,words:[]};original.exercises=[];original.typingQuestions=[];original.quizQuestions=[];lessons.push(original);}
  const datasets=getDatasets(lessons);assert.equal(datasets.grammarData.length,40);assert.equal(datasets.vocabularyData.length,40);assert.equal(Object.keys(datasets.exercisesData).length,40);assert.match(assembleSource(lessons),/lesson40/);
 });
 

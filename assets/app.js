@@ -1031,6 +1031,21 @@ const lessonRegistry = [{
     "icon": "Award"
   },
   "typingIcon": "⚡"
+}, {
+  "id": "lesson4",
+  "number": 4,
+  "titleAr": "الدرس الرابع",
+  "titleEn": "Lesson IV",
+  "exercisePresentation": {
+    "kind": "reading",
+    "titleAr": "الدرس الرابع: قراءة IV(a) ومراجعة وكتابة IV(b)",
+    "titleEn": "Lesson IV: Exercise IV(a), Reading Practice & IV(b)",
+    "description": "٧ أسئلة قراءة IV(a) من المصدر، بعدها ٨ بطاقات مراجعة تعليمية، ثم أسئلة الكتابة والرسم IV(b) التسعة. الحلول نماذج تعليمية؛ قد توجد كتابات صحيحة أخرى. All seven IV(a) and nine IV(b) tasks, plus eight authored reading cards.",
+    "icon": "BookOpen",
+    "descriptionAr": "٧ أسئلة قراءة IV(a) من المصدر، بعدها ٨ بطاقات مراجعة تعليمية، ثم أسئلة الكتابة والرسم IV(b) التسعة. الحلول نماذج تعليمية؛ قد توجد كتابات صحيحة أخرى.",
+    "descriptionEn": "All seven IV(a) and nine IV(b) tasks from Gardiner, pp48–49, plus eight authored reading cards."
+  },
+  "typingIcon": "🌿"
 }];
 const grammarData = [{
   "id": "lesson1",
@@ -2927,6 +2942,675 @@ const grammarData = [{
       }]
     }
   }]
+}, {
+  "id": "lesson4",
+  "titleAr": "الدرس الرابع: الضمائر التابعة والصفات والمقارنة والعلامات المتعددة",
+  "titleEn": "Lesson IV: Dependent Pronouns, Adjectives & Multiconsonantal Signs",
+  "badges": [{
+    "id": "rule-4-1",
+    "label": "العلامات المتعددة · Signs"
+  }, {
+    "id": "rule-4-3",
+    "label": "الضمائر التابعة · Pronouns"
+  }, {
+    "id": "rule-4-8",
+    "label": "الصفات · Adjectives"
+  }, {
+    "id": "rule-4-9",
+    "label": "التعجب · Exclamation"
+  }, {
+    "id": "rule-4-10",
+    "label": "المقارنة · Comparison"
+  }, {
+    "id": "rule-4-12",
+    "label": "لـ/إلى · Dative n"
+  }],
+  "rules": [{
+    "id": "rule-4-1",
+    "ruleNum": 1,
+    "type": "structured",
+    "badgeEn": "Biliterals (§41)",
+    "badgeAr": "علامات ثنائية: صوتان في علامة",
+    "titleEn": "Biliterals (§41)",
+    "titleAr": "علامات ثنائية: صوتان في علامة",
+    "summaryAr": "العلامة الثنائية تمثل حرفين ساكنين، مش حرفين متحركين أو مقطعين. تعلم شكلها وقيمتها معًا. الأشكال النادرة والبدائل مذكورة هنا كما يميزها المصدر؛ لا تبدّل العلامات عشوائيًا في الكلمات.",
+    "examples": [{
+      "h": "𓏇",
+      "trans": "mi",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "علامة mi",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓂟",
+      "trans": "mi",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "شكل mi بذراع يحمل علامة؛ يختلف عن di",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓂝",
+      "trans": "mi",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "شكل أقل دقة لـmi في ملاحظة §41",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓍘",
+      "trans": "ti",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "مدق؛ ti",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓌡",
+      "trans": "wʿ",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "حربة؛ wʿ",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓈍",
+      "trans": "ḫʿ",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "شمس تظهر فوق تل؛ ḫʿ",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓄫",
+      "trans": "3w",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "عمود فقري مع نخاع؛ 3w",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓃛",
+      "trans": "ỉw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "عجل راقد؛ ỉw",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓈗",
+      "trans": "mw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "الماء؛ mw",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓏌",
+      "trans": "nw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "إناء؛ nw، ونادرًا ỉn",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓏎",
+      "trans": "nw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "إناء مع ساقين؛ nw",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓃭",
+      "trans": "rw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "أسد راقد؛ rw",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓄑",
+      "trans": "ḥw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "ناب؛ ḥw، نادر",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓂤",
+      "trans": "ḫw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "ذراع يحمل سوطًا؛ ḫw",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓇓",
+      "trans": "sw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "نبات؛ sw، وكانت šw قديمًا",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓆄",
+      "trans": "šw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "ريشة؛ šw",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓈋",
+      "trans": "ḏw",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "جبل؛ ḏw، ثم dw لاحقًا",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓄏",
+      "trans": "3b",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "قرن؛ 3b",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓎟",
+      "trans": "nb",
+      "meanEn": "Biliteral phonetic value",
+      "meanAr": "سلة؛ nb",
+      "noteAr": "",
+      "noteEn": ""
+    }],
+    "sourceSections": ["41"],
+    "quickSummary": {
+      "titleAr": "علامات ثنائية: صوتان في علامة",
+      "titleEn": "Biliterals (§41)",
+      "explanationAr": "العلامة الثنائية تمثل حرفين ساكنين، مش حرفين متحركين أو مقطعين. تعلم شكلها وقيمتها معًا. الأشكال النادرة والبدائل مذكورة هنا كما يميزها المصدر؛ لا تبدّل العلامات عشوائيًا في الكلمات.",
+      "explanationEn": "A biliteral represents two consonants. Section 41 groups signs by their second consonant; rare readings and historical variants are not interchangeable spellings.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓏇",
+        "trans": "mi",
+        "meanEn": "Biliteral phonetic value",
+        "meanAr": "علامة mi",
+        "noteAr": "",
+        "noteEn": ""
+      }
+    }
+  }, {
+    "id": "rule-4-2",
+    "ruleNum": 2,
+    "type": "structured",
+    "badgeEn": "Triliterals and complements (§42)",
+    "badgeAr": "علامات ثلاثية ومكملات صوتية",
+    "titleEn": "Triliterals and complements (§42)",
+    "titleAr": "علامات ثلاثية ومكملات صوتية",
+    "summaryAr": "علامة واحدة قد تمثل ثلاثة حروف، مثل nfr. العلامات الصوتية الإضافية تؤكد نهاية القراءة، وليست تكرارًا يُنطق مرة ثانية: نقرأ nfr، مش nfr-f-r. وقد تتداخل وظيفة علامة الكلمة ووظيفتها الصوتية حسب السياق.",
+    "examples": [{
+      "h": "𓊢*𓂝",
+      "trans": "ʿḥʿ",
+      "meanEn": "stand up, arise",
+      "meanAr": "يقف / ينهض",
+      "noteAr": "علامة ثلاثية يتبعها مكمل للحرف الثالث."
+    }, {
+      "h": "𓆣*𓂋",
+      "trans": "ḫpr",
+      "meanEn": "become",
+      "meanAr": "يصير / يحدث",
+      "noteAr": "الجعران ḫpr مع مكمل r."
+    }, {
+      "h": "𓄔*𓅓",
+      "trans": "sḏm",
+      "meanEn": "hear",
+      "meanAr": "يسمع",
+      "noteAr": "الأذن sḏm مع مكمل m، ولا نكرر m في النطق."
+    }, {
+      "h": "𓄤*(𓆑:𓂋)",
+      "trans": "nfr",
+      "meanEn": "good / beautiful",
+      "meanAr": "حسن / جميل",
+      "noteAr": "F35 مع f وr: نقرأ القيمة nfr مرة واحدة.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }, {
+      "h": "𓋹*(𓈖:𓐍)",
+      "trans": "ʿnḫ",
+      "meanEn": "live / life",
+      "meanAr": "يحيا / حياة",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓊵*(𓏏:𓊪)",
+      "trans": "ḥtp",
+      "meanEn": "rest / peace",
+      "meanAr": "يستريح / سلام",
+      "noteAr": "",
+      "noteEn": ""
+    }],
+    "sourceSections": ["42"],
+    "quickSummary": {
+      "titleAr": "علامات ثلاثية ومكملات صوتية",
+      "titleEn": "Triliterals and complements (§42)",
+      "explanationAr": "علامة واحدة قد تمثل ثلاثة حروف، مثل nfr. العلامات الصوتية الإضافية تؤكد نهاية القراءة، وليست تكرارًا يُنطق مرة ثانية: نقرأ nfr، مش nfr-f-r. وقد تتداخل وظيفة علامة الكلمة ووظيفتها الصوتية حسب السياق.",
+      "explanationEn": "A triliteral may be followed by its third consonant, or by its second and third consonants. These phonetic complements confirm the reading; they are not read twice.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓄤*(𓆑:𓂋)",
+        "trans": "nfr",
+        "meanEn": "good / beautiful",
+        "meanAr": "حسن / جميل",
+        "noteAr": "F35 مع f وr: نقرأ القيمة nfr مرة واحدة.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-3",
+    "ruleNum": 3,
+    "type": "structured",
+    "badgeEn": "Dependent pronouns (§43)",
+    "badgeAr": "الضمائر التابعة: شكل غير الضمير المتصل",
+    "titleEn": "Dependent pronouns (§43)",
+    "titleAr": "الضمائر التابعة: شكل غير الضمير المتصل",
+    "summaryAr": "الضمير التابع أقل اتصالًا بالكلمة السابقة من الضمير المتصل، لكنه لا يبدأ الجملة في الاستعمال الأساسي هنا. مثل wi «إياي» وsw «إياه». ṯn قد تكون مخاطبة مفردة مؤنثة أو جمعًا، وتساعد الكتابة والسياق على التمييز. ويذكر جاردنر استعمالات متأخرة استثنائية خارج القاعدة التمهيدية.",
+    "examples": [{
+      "h": "𓅱*𓀀",
+      "trans": "wi",
+      "meanEn": "I, me",
+      "meanAr": "أنا / إياي؛ متكلم مفرد",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓍿*𓅱",
+      "trans": "ṯw",
+      "meanEn": "you (m.sg.)",
+      "meanAr": "أنت / إياك؛ مذكر مفرد",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓍿:𓈖",
+      "trans": "ṯn",
+      "meanEn": "you (f.sg.)",
+      "meanAr": "أنتِ / إياكِ؛ مؤنث مفرد",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓇓*𓅱",
+      "trans": "sw",
+      "meanEn": "he, him, it",
+      "meanAr": "هو / إياه؛ مذكر مفرد",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓋴*𓏭",
+      "trans": "sy",
+      "meanEn": "she, her, it",
+      "meanAr": "هي / إياها؛ مؤنث مفرد",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓋴:𓏏",
+      "trans": "st",
+      "meanEn": "it / them; see §46",
+      "meanAr": "إياه / إياهم؛ للاستعمال الخاص في §46",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓈖",
+      "trans": "n",
+      "meanEn": "we, us",
+      "meanAr": "نحن / إيانا",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓍿*𓈖*𓏥",
+      "trans": "ṯn",
+      "meanEn": "you (plural)",
+      "meanAr": "أنتم / إياكم؛ جمع",
+      "noteAr": "",
+      "noteEn": ""
+    }, {
+      "h": "𓋴*𓈖*𓏥",
+      "trans": "sn",
+      "meanEn": "they, them",
+      "meanAr": "هم / إياهم؛ جمع",
+      "noteAr": "",
+      "noteEn": ""
+    }],
+    "sourceSections": ["43"],
+    "quickSummary": {
+      "titleAr": "الضمائر التابعة: شكل غير الضمير المتصل",
+      "titleEn": "Dependent pronouns (§43)",
+      "explanationAr": "الضمير التابع أقل اتصالًا بالكلمة السابقة من الضمير المتصل، لكنه لا يبدأ الجملة في الاستعمال الأساسي هنا. مثل wi «إياي» وsw «إياه». ṯn قد تكون مخاطبة مفردة مؤنثة أو جمعًا، وتساعد الكتابة والسياق على التمييز. ويذكر جاردنر استعمالات متأخرة استثنائية خارج القاعدة التمهيدية.",
+      "explanationEn": "Dependent pronouns are less closely attached than suffix pronouns. In the basic construction they cannot stand first. Gender, number, spelling and context distinguish forms; §43 notes later exceptions.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓅱*𓀀",
+        "trans": "wi",
+        "meanEn": "I, me",
+        "meanAr": "أنا / إياي؛ متكلم مفرد",
+        "noteAr": "",
+        "noteEn": ""
+      }
+    }
+  }, {
+    "id": "rule-4-4",
+    "ruleNum": 4,
+    "type": "structured",
+    "badgeEn": "Three uses (§44)",
+    "badgeAr": "أين نستخدم الضمير التابع؟",
+    "titleEn": "Three uses (§44)",
+    "titleAr": "أين نستخدم الضمير التابع؟",
+    "summaryAr": "١) مفعولًا به بعد الفعل عادةً، عدا المصدر في القاعدة العامة. ٢) بعد أدوات مثل mk «ها/انظر» أو nn أو ntt، وقد يكون مبتدأ لخبر شبه جملة. ٣) بعد خبر وصفي متقدم، مثل «جميل أنت». من الأدوات المذكورة في المصدر: ỉst وmk وnn وntt وnty.",
+    "examples": [{
+      "h": "𓉔*𓄿*𓃀*𓂻*𓎡 𓅱*𓀀",
+      "trans": "h3b=k wi",
+      "meanEn": "You send me.",
+      "meanAr": "أنت ترسلني.",
+      "noteAr": "ضمير الفاعل =k؛ وwi مفعول به، مش =i.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }, {
+      "h": "𓅓*𓎡 𓅱*𓀀 𓎛*(𓈖:𓂝)*𓎡",
+      "trans": "mk wi ḥnʿ=k",
+      "meanEn": "Behold, I am with you.",
+      "meanAr": "ها أنا معك.",
+      "noteAr": "مثال تعليمي مبني على §44؛ الضمير بعد mk، ثم خبر شبه جملة.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }, {
+      "h": "𓄤*(𓆑:𓂋) 𓍿*𓅱 𓎛*(𓈖:𓂝)*𓇋",
+      "trans": "nfr ṯw ḥnʿ=i",
+      "meanEn": "You are happy with me.",
+      "meanAr": "أنت سعيد معي.",
+      "noteAr": "الصفة خبر متقدم، والضمير التابع فاعلها النحوي؛ المصدر يكتب ṯw هنا.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["44"],
+    "quickSummary": {
+      "titleAr": "أين نستخدم الضمير التابع؟",
+      "titleEn": "Three uses (§44)",
+      "explanationAr": "١) مفعولًا به بعد الفعل عادةً، عدا المصدر في القاعدة العامة. ٢) بعد أدوات مثل mk «ها/انظر» أو nn أو ntt، وقد يكون مبتدأ لخبر شبه جملة. ٣) بعد خبر وصفي متقدم، مثل «جميل أنت». من الأدوات المذكورة في المصدر: ỉst وmk وnn وntt وnty.",
+      "explanationEn": "Dependent pronouns serve as verbal objects (normally not after infinitives), follow certain particles, or function as subjects after adjectival predicates. The source names ỉst, mk, nn, ntt and nty among these introducers.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓉔*𓄿*𓃀*𓂻*𓎡 𓅱*𓀀",
+        "trans": "h3b=k wi",
+        "meanEn": "You send me.",
+        "meanAr": "أنت ترسلني.",
+        "noteAr": "ضمير الفاعل =k؛ وwi مفعول به، مش =i.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-5",
+    "ruleNum": 5,
+    "type": "structured",
+    "badgeEn": "Reflexive use (§45)",
+    "badgeAr": "نفسي ونفسه: المعنى الانعكاسي",
+    "titleEn": "Reflexive use (§45)",
+    "titleAr": "نفسي ونفسه: المعنى الانعكاسي",
+    "summaryAr": "نفس الضمير التابع ممكن يشير إلى صاحب الفعل نفسه. الفكرة في العلاقة بين الفاعل والمفعول: «أنا وضعتني» نفهمها «وضعت نفسي». لا توجد هنا علامة جديدة مستقلة تعني «نفس».",
+    "examples": [{
+      "h": "𓂋*𓏙*𓈖*𓇋 𓅱*𓀀 𓁷 𓐍*𓏏*𓇋",
+      "trans": "rdi.n=i wi ḥr ḫt=i",
+      "meanEn": "I placed myself on my belly.",
+      "meanAr": "وضعتُ نفسي على بطني.",
+      "noteAr": "الضمير wi يعود إلى فاعل الجملة =i؛ معنى انعكاسي في §45.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["45"],
+    "quickSummary": {
+      "titleAr": "نفسي ونفسه: المعنى الانعكاسي",
+      "titleEn": "Reflexive use (§45)",
+      "explanationAr": "نفس الضمير التابع ممكن يشير إلى صاحب الفعل نفسه. الفكرة في العلاقة بين الفاعل والمفعول: «أنا وضعتني» نفهمها «وضعت نفسي». لا توجد هنا علامة جديدة مستقلة تعني «نفس».",
+      "explanationEn": "A dependent pronoun can refer back to the subject, producing a reflexive meaning without a separate word “self”.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓂋*𓏙*𓈖*𓇋 𓅱*𓀀 𓁷 𓐍*𓏏*𓇋",
+        "trans": "rdi.n=i wi ḥr ḫt=i",
+        "meanEn": "I placed myself on my belly.",
+        "meanAr": "وضعتُ نفسي على بطني.",
+        "noteAr": "الضمير wi يعود إلى فاعل الجملة =i؛ معنى انعكاسي في §45.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-6",
+    "ruleNum": 6,
+    "type": "structured",
+    "badgeEn": "Special uses of st (§46)",
+    "badgeAr": "st: إياه أو إياهم بحسب السياق",
+    "titleEn": "Special uses of st (§46)",
+    "titleAr": "st: إياه أو إياهم بحسب السياق",
+    "summaryAr": "st صيغة قديمة مؤنثة تخصصت في استعمالات، منها الإشارة إلى «الأمر/الشيء» أو إلى الجمع «هم». تظهر مفعولًا، أو بعد أدوات §44، أو فاعلًا بعد خبر وصفي. ما نحصرهاش في ترجمة «هي» فقط.",
+    "examples": [{
+      "h": "𓋴*𓄔*𓅓 𓋴:𓏏",
+      "trans": "sḏm st",
+      "meanEn": "hear it / them",
+      "meanAr": "يسمعه / يسمعهم، حسب السياق",
+      "noteAr": "مثال تعليمي قصير على المفعول؛ ليس اقتباس جملة بعينها.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["46"],
+    "quickSummary": {
+      "titleAr": "st: إياه أو إياهم بحسب السياق",
+      "titleEn": "Special uses of st (§46)",
+      "explanationAr": "st صيغة قديمة مؤنثة تخصصت في استعمالات، منها الإشارة إلى «الأمر/الشيء» أو إلى الجمع «هم». تظهر مفعولًا، أو بعد أدوات §44، أو فاعلًا بعد خبر وصفي. ما نحصرهاش في ترجمة «هي» فقط.",
+      "explanationEn": "St is used especially for neuter “it” and plural “them”, as object, after particles, or as subject after an adjectival predicate.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓋴*𓄔*𓅓 𓋴:𓏏",
+        "trans": "sḏm st",
+        "meanEn": "hear it / them",
+        "meanAr": "يسمعه / يسمعهم، حسب السياق",
+        "noteAr": "مثال تعليمي قصير على المفعول؛ ليس اقتباس جملة بعينها.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-7",
+    "ruleNum": 7,
+    "type": "structured",
+    "badgeEn": "Indefinite tw (§47)",
+    "badgeAr": "ṯw المخاطب مختلف عن tw غير المحدد",
+    "titleEn": "Indefinite tw (§47)",
+    "titleAr": "ṯw المخاطب مختلف عن tw غير المحدد",
+    "summaryAr": "ṯw «أنت» ضمير تابع للمخاطب، أما tw «واحد/المرء» فضمير غير محدد. كتابة بعض الأشكال المتأخرة تتشابه؛ نفرق بالتركيب والمعنى. وقد يُستخدم tw مع الفعل في تراكيب تُترجم للمجهول؛ ارجع لشرح الدرس الثالث. الضمير غير المحدد tw يعامل نحويًا معاملة المذكر في القاعدة المذكورة.",
+    "examples": [{
+      "h": "𓅓*𓎡 𓏏*𓅱 𓆓*𓂧*𓏏*𓅱",
+      "trans": "mk tw ḏd=tw",
+      "meanEn": "Behold, one says.",
+      "meanAr": "ها هو المرء يقول / ها قد قيل.",
+      "noteAr": "§47: tw غير محدد، وليس ضمير مخاطب «أنت».",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["47"],
+    "quickSummary": {
+      "titleAr": "ṯw المخاطب مختلف عن tw غير المحدد",
+      "titleEn": "Indefinite tw (§47)",
+      "explanationAr": "ṯw «أنت» ضمير تابع للمخاطب، أما tw «واحد/المرء» فضمير غير محدد. كتابة بعض الأشكال المتأخرة تتشابه؛ نفرق بالتركيب والمعنى. وقد يُستخدم tw مع الفعل في تراكيب تُترجم للمجهول؛ ارجع لشرح الدرس الثالث. الضمير غير المحدد tw يعامل نحويًا معاملة المذكر في القاعدة المذكورة.",
+      "explanationEn": "Distinguish dependent ṯw “you” from indefinite tw “one”. Later spellings can overlap. Indefinite tw is also associated with passive constructions. Indefinite tw is syntactically masculine in the construction discussed.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓅓*𓎡 𓏏*𓅱 𓆓*𓂧*𓏏*𓅱",
+        "trans": "mk tw ḏd=tw",
+        "meanEn": "Behold, one says.",
+        "meanAr": "ها هو المرء يقول / ها قد قيل.",
+        "noteAr": "§47: tw غير محدد، وليس ضمير مخاطب «أنت».",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-8",
+    "ruleNum": 8,
+    "type": "structured",
+    "badgeEn": "Three uses of adjectives (§48)",
+    "badgeAr": "الصفة: نعت أو خبر أو اسم",
+    "titleEn": "Three uses of adjectives (§48)",
+    "titleAr": "الصفة: نعت أو خبر أو اسم",
+    "summaryAr": "لو الصفة نعت تأتي بعد الاسم وتطابقه في النوع والعدد؛ أسماء الإشارة وnb «كل» تسبق النعت بعد الاسم. لو الصفة خبرًا، تتقدم على المبتدأ وتبقى بصيغتها غير المتغيرة هنا. ولو استعملناها اسمًا، يساعد المخصص على فهم المقصود. nb «كل» قد تُحذف من كتابتها علامة التأنيث أو الجمع. وky/kt «آخر/أخرى» تسبق الاسم، بعكس النعت المعتاد.",
+    "examples": [{
+      "h": "𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓃀*𓇋*𓈖*𓅪",
+      "trans": "sḫr pn bin",
+      "meanEn": "this bad counsel",
+      "meanAr": "هذه الخطة السيئة",
+      "noteAr": "الاسم ثم اسم الإشارة ثم الصفة؛ §48.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }, {
+      "h": "𓄤*(𓆑:𓂋) 𓄣:𓏤*𓇋",
+      "trans": "nfr ỉb=i",
+      "meanEn": "My heart is happy.",
+      "meanAr": "قلبي سعيد.",
+      "noteAr": "الخبر الوصفي يسبق المبتدأ ولا يطابقه في النوع والعدد هنا.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }, {
+      "h": "𓄤*(𓆑:𓂋)*𓏏*𓁐",
+      "trans": "nfrt",
+      "meanEn": "a beautiful woman",
+      "meanAr": "امرأة جميلة",
+      "noteAr": "الصفة مستعملة اسمًا، ومخصص المرأة يوضح المقصود؛ §48.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["48"],
+    "quickSummary": {
+      "titleAr": "الصفة: نعت أو خبر أو اسم",
+      "titleEn": "Three uses of adjectives (§48)",
+      "explanationAr": "لو الصفة نعت تأتي بعد الاسم وتطابقه في النوع والعدد؛ أسماء الإشارة وnb «كل» تسبق النعت بعد الاسم. لو الصفة خبرًا، تتقدم على المبتدأ وتبقى بصيغتها غير المتغيرة هنا. ولو استعملناها اسمًا، يساعد المخصص على فهم المقصود. nb «كل» قد تُحذف من كتابتها علامة التأنيث أو الجمع. وky/kt «آخر/أخرى» تسبق الاسم، بعكس النعت المعتاد.",
+      "explanationEn": "As epithet an adjective follows and agrees with its noun. As predicate it precedes its subject and is invariable. As a noun it commonly takes a suitable determinative. With nb, plural and often feminine endings can be omitted in writing. Ky / kt “other” precedes the noun, unlike an ordinary attributive adjective.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓃀*𓇋*𓈖*𓅪",
+        "trans": "sḫr pn bin",
+        "meanEn": "this bad counsel",
+        "meanAr": "هذه الخطة السيئة",
+        "noteAr": "الاسم ثم اسم الإشارة ثم الصفة؛ §48.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-9",
+    "ruleNum": 9,
+    "type": "structured",
+    "badgeEn": "Exclamation (§49)",
+    "badgeAr": "التعجب بالنهاية .wy",
+    "titleEn": "Exclamation (§49)",
+    "titleAr": "التعجب بالنهاية .wy",
+    "summaryAr": "لما يكون الوصف خبرًا، قد تُضاف .wy لتعطي معنى التعجب: «ما أجمل…!». ما تخلطش .wy هنا بالضمير wi أو نهاية جمع ثابتة في كل موضع.",
+    "examples": [{
+      "h": "𓄤*(𓆑:𓂋)*𓅱*𓏭 𓉐:𓏤 𓊪:𓈖",
+      "trans": "nfr.wy pr pn",
+      "meanEn": "How beautiful is this house!",
+      "meanAr": "ما أجمل هذا البيت!",
+      "noteAr": "النهاية .wy للتعجب هنا، مش ضمير =wi «إياي».",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["49"],
+    "quickSummary": {
+      "titleAr": "التعجب بالنهاية .wy",
+      "titleEn": "Exclamation (§49)",
+      "explanationAr": "لما يكون الوصف خبرًا، قد تُضاف .wy لتعطي معنى التعجب: «ما أجمل…!». ما تخلطش .wy هنا بالضمير wi أو نهاية جمع ثابتة في كل موضع.",
+      "explanationEn": "An adjectival predicate may take .wy for exclamatory force. This ending is not the dependent pronoun wi.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓄤*(𓆑:𓂋)*𓅱*𓏭 𓉐:𓏤 𓊪:𓈖",
+        "trans": "nfr.wy pr pn",
+        "meanEn": "How beautiful is this house!",
+        "meanAr": "ما أجمل هذا البيت!",
+        "noteAr": "النهاية .wy للتعجب هنا، مش ضمير =wi «إياي».",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-10",
+    "ruleNum": 10,
+    "type": "structured",
+    "badgeEn": "Comparison with r (§50)",
+    "badgeAr": "المقارنة باستخدام r",
+    "titleEn": "Comparison with r (§50)",
+    "titleAr": "المقارنة باستخدام r",
+    "summaryAr": "مفيش صيغة صرفية خاصة مثل «أجمل» في العربية؛ نستخدم الصفة، ثم r وما نقارن به. لذلك nfr … r … معناها «أجمل من…» حسب السياق، وr لا تُترجم هنا «إلى».",
+    "examples": [{
+      "h": "𓄤*(𓆑:𓂋) 𓋴*𓏭 𓂋 𓅭*𓏏*𓁐*𓋴",
+      "trans": "nfr sy r s3t=s",
+      "meanEn": "She is more beautiful than her daughter.",
+      "meanAr": "هي أجمل من ابنتها.",
+      "noteAr": "نموذج تعليمي لإجابة IV(b)4: الصفة ثم الضمير؛ r يوضح المقارنة.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["50"],
+    "quickSummary": {
+      "titleAr": "المقارنة باستخدام r",
+      "titleEn": "Comparison with r (§50)",
+      "explanationAr": "مفيش صيغة صرفية خاصة مثل «أجمل» في العربية؛ نستخدم الصفة، ثم r وما نقارن به. لذلك nfr … r … معناها «أجمل من…» حسب السياق، وr لا تُترجم هنا «إلى».",
+      "explanationEn": "Egyptian uses the preposition r to express comparison; the adjective has no special comparative inflection.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓄤*(𓆑:𓂋) 𓋴*𓏭 𓂋 𓅭*𓏏*𓁐*𓋴",
+        "trans": "nfr sy r s3t=s",
+        "meanEn": "She is more beautiful than her daughter.",
+        "meanAr": "هي أجمل من ابنتها.",
+        "noteAr": "نموذج تعليمي لإجابة IV(b)4: الصفة ثم الضمير؛ r يوضح المقارنة.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-11",
+    "ruleNum": 11,
+    "type": "structured",
+    "badgeEn": "Neuter sense (§51)",
+    "badgeAr": "المعنى المحايد يُعبّر عنه بالمؤنث",
+    "titleEn": "Neuter sense (§51)",
+    "titleAr": "المعنى المحايد يُعبّر عنه بالمؤنث",
+    "summaryAr": "المصرية هنا لا تحتاج جنسًا ثالثًا مستقلًا للـ«شيء» أو المعنى المجرد؛ قد تستخدم المؤنث. مثال ḏwt «شر/أمر سيئ». وst يُستخدم كذلك للأمر أو الشيء؛ لا نفترض أن المقصود امرأة لمجرد التأنيث.",
+    "examples": [{
+      "h": "𓈋*𓅱*𓏏*𓅪",
+      "trans": "ḏwt",
+      "meanEn": "evil / an evil thing",
+      "meanAr": "شر / أمر سيئ",
+      "noteAr": "التأنيث يستعمل للتعبير عن معنى مجرد غير عاقل؛ §51.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["51"],
+    "quickSummary": {
+      "titleAr": "المعنى المحايد يُعبّر عنه بالمؤنث",
+      "titleEn": "Neuter sense (§51)",
+      "explanationAr": "المصرية هنا لا تحتاج جنسًا ثالثًا مستقلًا للـ«شيء» أو المعنى المجرد؛ قد تستخدم المؤنث. مثال ḏwt «شر/أمر سيئ». وst يُستخدم كذلك للأمر أو الشيء؛ لا نفترض أن المقصود امرأة لمجرد التأنيث.",
+      "explanationEn": "The feminine can express English neuter “it / thing” or an abstract sense. Compare ḏwt “evil” and special st.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓈋*𓅱*𓏏*𓅪",
+        "trans": "ḏwt",
+        "meanEn": "evil / an evil thing",
+        "meanAr": "شر / أمر سيئ",
+        "noteAr": "التأنيث يستعمل للتعبير عن معنى مجرد غير عاقل؛ §51.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }, {
+    "id": "rule-4-12",
+    "ruleNum": 12,
+    "type": "structured",
+    "badgeEn": "Dative n (§52)",
+    "badgeAr": "لـ/إلى: n قبل الاسم أو الضمير",
+    "titleEn": "Dative n (§52)",
+    "titleAr": "لـ/إلى: n قبل الاسم أو الضمير",
+    "summaryAr": "لبيان المستفيد أو الجهة التي تتلقى القول أو الإرسال، نستخدم n بمعنى «لـ/إلى». قبل الضمير نكتب n=… في النقحرة. فرّق بين n حرف الجر و=n ضمير «نحن»؛ مكانها في الجملة يحدد الوظيفة.",
+    "examples": [{
+      "h": "𓆓*𓂧*𓈖 𓈖*𓍿*𓈖*𓏥",
+      "trans": "ḏd=n n=ṯn",
+      "meanEn": "We speak to you (plural).",
+      "meanAr": "نحن نتكلم إليكم.",
+      "noteAr": "=n الأولى فاعل «نحن»؛ n الثانية حرف الجر «إلى»، ثم =ṯn ضمير جمع.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }, {
+      "h": "𓉔*𓄿*𓃀*𓂻*𓎡 𓏞*𓀀 𓈖 𓎟*𓎡",
+      "trans": "h3b=k sš n nb=k",
+      "meanEn": "You send the scribe to your lord.",
+      "meanAr": "ترسل الكاتب إلى سيدك.",
+      "noteAr": "§52: المرسل إليه يأتي بعد n.",
+      "noteEn": "Teaching analysis / normalized spelling."
+    }],
+    "sourceSections": ["52"],
+    "quickSummary": {
+      "titleAr": "لـ/إلى: n قبل الاسم أو الضمير",
+      "titleEn": "Dative n (§52)",
+      "explanationAr": "لبيان المستفيد أو الجهة التي تتلقى القول أو الإرسال، نستخدم n بمعنى «لـ/إلى». قبل الضمير نكتب n=… في النقحرة. فرّق بين n حرف الجر و=n ضمير «نحن»؛ مكانها في الجملة يحدد الوظيفة.",
+      "explanationEn": "Use n “to / for” for the dative. A suffix pronoun follows the preposition; distinguish prepositional n from suffix =n “we / our”.",
+      "source": "Gardiner, Egyptian Grammar, 3rd ed., pp44–49 (§§41–52). Teaching paraphrase, not a verbatim quotation.",
+      "example": {
+        "h": "𓆓*𓂧*𓈖 𓈖*𓍿*𓈖*𓏥",
+        "trans": "ḏd=n n=ṯn",
+        "meanEn": "We speak to you (plural).",
+        "meanAr": "نحن نتكلم إليكم.",
+        "noteAr": "=n الأولى فاعل «نحن»؛ n الثانية حرف الجر «إلى»، ثم =ṯn ضمير جمع.",
+        "noteEn": "Teaching analysis / normalized spelling."
+      }
+    }
+  }]
 }];
 const vocabularyData = [{
   "lesson": "الدرس الأول",
@@ -3285,6 +3969,120 @@ const vocabularyData = [{
     "meanEn": "in; with; from",
     "meanAr": "في، بـ، من (حرف جر)"
   }]
+}, {
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "words": [{
+    "h": "𓏙",
+    "trans": "di",
+    "meanEn": "give, place",
+    "meanAr": "يعطي، يضع"
+  }, {
+    "h": "𓂋*𓏙",
+    "trans": "rdi",
+    "meanEn": "give, place (variant form)",
+    "meanAr": "يعطي، يضع؛ صيغة بديلة"
+  }, {
+    "h": "𓋹*(𓈖:𓐍)",
+    "trans": "ʿnḫ",
+    "meanEn": "live; life",
+    "meanAr": "يحيا؛ حياة"
+  }, {
+    "h": "𓊵*(𓏏:𓊪)",
+    "trans": "ḥtp",
+    "meanEn": "rest; become at peace; set (of the sun); peace",
+    "meanAr": "يستريح، يهدأ؛ يغرب (للشمس)؛ سلام"
+  }, {
+    "h": "𓊢*𓂝",
+    "trans": "ʿḥʿ",
+    "meanEn": "stand up, arise",
+    "meanAr": "يقف، ينهض"
+  }, {
+    "h": "𓈍*𓂝",
+    "trans": "ḫʿ",
+    "meanEn": "appear, shine (of the sun, gods or king)",
+    "meanAr": "يظهر، يشرق؛ للشمس أو الإله أو الملك"
+  }, {
+    "h": "𓋴*𓐍*𓄿*𓀁",
+    "trans": "sḫ3",
+    "meanEn": "remember",
+    "meanAr": "يتذكر"
+  }, {
+    "h": "𓄤*(𓆑:𓂋)",
+    "trans": "nfr",
+    "meanEn": "good, beautiful, happy",
+    "meanAr": "حسن، جميل، سعيد"
+  }, {
+    "h": "𓃀*𓇋*𓈖*𓅪",
+    "trans": "bin",
+    "meanEn": "bad, miserable",
+    "meanAr": "سيئ، بائس"
+  }, {
+    "h": "𓈋*𓅱*𓅪",
+    "trans": "ḏw",
+    "meanEn": "evil, sad",
+    "meanAr": "شرير، سيئ، حزين"
+  }, {
+    "h": "𓆈*(𓏥)",
+    "trans": "ʿš3",
+    "meanEn": "plentiful, rich, many",
+    "meanAr": "وفير، كثير، غني"
+  }, {
+    "h": "𓉻*𓄿:𓏤",
+    "trans": "ʿ3",
+    "meanEn": "great, large",
+    "meanAr": "عظيم، كبير"
+  }, {
+    "h": "𓇋*(𓈎:𓂋)*𓏛",
+    "trans": "ỉqr",
+    "meanEn": "excellent",
+    "meanAr": "ممتاز، بارع"
+  }, {
+    "h": "𓆄*𓅱*𓅪",
+    "trans": "šw",
+    "meanEn": "empty, free (m: of / from)",
+    "meanAr": "خالٍ؛ متحرر من، مع m"
+  }, {
+    "h": "𓄣:𓏤",
+    "trans": "ỉb",
+    "meanEn": "heart, wish",
+    "meanAr": "قلب، رغبة"
+  }, {
+    "h": "𓎟*𓀀",
+    "trans": "nb",
+    "meanEn": "lord, master",
+    "meanAr": "سيد، رب"
+  }, {
+    "h": "𓎟",
+    "trans": "nb",
+    "meanEn": "every, any, all",
+    "meanAr": "كل، أي، جميع"
+  }, {
+    "h": "𓈗",
+    "trans": "mw",
+    "meanEn": "water",
+    "meanAr": "ماء"
+  }, {
+    "h": "𓐍*𓂋*𓂧*𓀔",
+    "trans": "ḫrd",
+    "meanEn": "child",
+    "meanAr": "طفل"
+  }, {
+    "h": "𓇋*𓏏*𓇋*𓇋*𓀰",
+    "trans": "ỉty",
+    "meanEn": "sovereign, monarch",
+    "meanAr": "ملك، حاكم"
+  }, {
+    "h": "𓏇*𓇋",
+    "trans": "mi",
+    "meanEn": "like",
+    "meanAr": "مثل، كـ"
+  }, {
+    "h": "𓏇*(𓏏:𓏏)*𓏛",
+    "trans": "mitt",
+    "meanEn": "likeness; m mitt: likewise",
+    "meanAr": "شَبَه؛ m mitt: كذلك، بالمثل"
+  }]
 }];
 const exercisesData = {
   "lesson1": [{
@@ -3409,6 +4207,199 @@ const exercisesData = {
     "trans": "m33.tw pt ỉn s",
     "meanEn": "The sky is seen by a man.",
     "meanAr": "تُرى السماء بواسطة رجل (Passive with Agent ỉn)"
+  }],
+  "lesson4": [{
+    "h": "𓄤*(𓆑:𓂋) 𓅭*𓀀 𓄔*𓅓*𓆑 𓈖 𓇋*𓏏*𓀀*𓆑 𓇋*𓅱*𓆑 𓅓 𓐍*𓂋*𓂧*𓀔 𓏙*𓆑 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓅓 𓄣:𓏤*𓆑 𓋴*𓐍*𓄿*𓀁*𓆑 𓇓*𓅱 𓂋*𓂝*𓇳 𓎟 𓅓*𓎡 𓏏*𓅱 𓆓*𓂧*𓏏*𓅱 𓂋*𓆑 𓆄*𓅱*𓅪 𓇓*𓅱 𓅓 𓈋*𓅱*𓏏*𓅪 𓎟*𓏏",
+    "trans": "nfr s3 sḏm=f n ỉt=f ỉw=f m ḫrd di=f sḫr pn m ỉb=f sḫ3=f sw rʿ nb mk tw ḏd.tw r=f šw sw m ḏwt nbt",
+    "meanEn": "A good son listens to his father in childhood, keeps this advice in his heart and recalls it daily. People say of him that he is free of all wrongdoing.",
+    "meanAr": "الابن يكون صالحًا إذا أصغى إلى أبيه وهو طفل، ووضع هذه النصيحة في قلبه وتذكرها كل يوم؛ ويُقال عنه إنه بريء من كل شر.",
+    "noteAr": "IV(a)1: قسّم الجملة: nfr s3؛ ثم شروط/تفاصيل sḏm=f وỉw=f…؛ ثم القول mk tw…؛ ثم خبره šw sw… . sw بعد sḫ3=f يعود على النصيحة.",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)1"
+  }, {
+    "h": "𓈍*𓂝 𓂋*𓂝*𓇳 𓅓 𓈌*𓏏 𓅱*𓃀*𓈖*𓇳*𓆑 𓅓 𓊪:𓏏*𓇯 𓄤*(𓆑:𓂋) 𓄣:𓏤 𓎟 (𓌳:𓁹)*𓄿*𓄿*𓋴*𓈖*𓏥 𓇓*𓅱",
+    "trans": "ḫʿ rʿ m 3ḫt wbn=f m pt nfr ỉb nb m33=sn sw",
+    "meanEn": "The sun rises at the horizon and shines in the sky; every heart rejoices at seeing it.",
+    "meanAr": "تظهر الشمس في الأفق وتشرق في السماء؛ ويسعد كل قلب عندما يراها.",
+    "noteAr": "IV(a)2: الضمير =sn جمع رغم ỉb nb «كل قلب»؛ معنى موزع على الجميع. خبري nfr قبل المبتدأ ỉb nb.",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)2"
+  }, {
+    "h": "𓃀*𓇋*𓈖*𓅪*𓅱*𓏭 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘) 𓆄*𓅱*𓅪 𓅓 𓈗",
+    "trans": "bin.wy ỉtrw šw m mw",
+    "meanEn": "How miserable is a river that has no water!",
+    "meanAr": "ما أسوأ نهرًا خاليًا من الماء!",
+    "noteAr": "IV(a)3: .wy للتعجب؛ šw m «خالٍ من». لا تترجم m هنا «في».",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)3"
+  }, {
+    "h": "𓆓*𓂧*𓎡 𓋴:𓏏 𓈖 𓇋*𓏏*𓇋*𓇋*𓀰 𓇋*𓐍 𓆓*𓂧*𓆑 𓈖 𓃀*𓄿*𓎡*𓀀*𓆑 𓅓 𓏇*(𓏏:𓏏)*𓏛",
+    "trans": "ḏd=k st n ỉty ỉḫ ḏd=f n b3k=f m mitt",
+    "meanEn": "If you tell the king, he will in turn tell his servant.",
+    "meanAr": "إذا قلت ذلك للملك، فسيقول هو لخادمه بالمثل.",
+    "noteAr": "IV(a)4: st مفعول، n للمتلقي؛ وm mitt «بالمثل». ỉḫ تربط النتيجة هنا.",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)4"
+  }, {
+    "h": "𓉻*𓄿:𓏤*𓅱*𓏭 𓉐:𓏤*𓎡 𓆈*(𓏥) 𓇓*𓅱 𓅓 𓐍:𓏏 𓎟*𓏏 𓄤*(𓆑:𓂋)*𓏏",
+    "trans": "ʿ3.wy pr=k ʿš3 sw m ḫt nbt nfrt",
+    "meanEn": "How large your house is! It contains an abundance of fine things.",
+    "meanAr": "ما أعظم بيتك! إنه زاخر بكل شيء جميل.",
+    "noteAr": "IV(a)5: ʿ3.wy تعجب؛ ʿš3 خبر وsw مبتدأ تابع. nbt قبل النعت nfrt؛ وكلاهما مؤنث مع ḫt.",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)5"
+  }, {
+    "h": "𓐍*𓅓*𓂜*𓆑 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓇋*(𓈎:𓂋)*𓏛",
+    "trans": "ḫm=f sḫr pn ỉqr",
+    "meanEn": "He is unaware of this excellent advice.",
+    "meanAr": "هو لا يعرف هذه الخطة الممتازة.",
+    "noteAr": "IV(a)6: ḫm فعل معناه «لا يعرف/يجهل»، وليس علامة نفي منفصلة. الترتيب: فعل، فاعل، مفعول ثم إشارة ثم نعت.",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)6"
+  }, {
+    "h": "𓉔*𓄿*𓃀*𓂻*𓋴*𓈖*𓏥 𓂧*𓊪:𓏏*𓊛 𓂋 𓊖*𓏏:𓏤 𓍑*𓄿*𓊛*𓆑 𓍿*𓅱 𓇋*𓅓*𓋴",
+    "trans": "h3b=sn dpt r nỉwt ḏ3=f ṯw ỉm=s",
+    "meanEn": "They send a boat to the city to take you across in it.",
+    "meanAr": "يرسلون قاربًا إلى المدينة ليعبر بك فيه.",
+    "noteAr": "IV(a)7: ṯw ضمير المفعول «إياك». =f فاعل ḏ3؛ و=s في ỉm=s يعود على dpt المؤنثة. لا نخلط جنس كلمة «قارب» العربية بجنس الكلمة المصرية.",
+    "source": "Gardiner, Egyptian Grammar, 3rd ed., pp48–49, IV(a); Unicode spelling normalized. Meaning cross-checked with Mark-Jan Nederhof’s academic exercise key, not a claim that the key is Gardiner’s own.",
+    "sourceLabel": "IV(a)7"
+  }, {
+    "h": "𓉔*𓄿*𓃀*𓂻*𓎡 𓅱*𓀀",
+    "trans": "h3b=k wi",
+    "meanEn": "You send me.",
+    "meanAr": "أنت ترسلني.",
+    "noteAr": "ضمير الفاعل =k؛ وwi مفعول به، مش =i.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓅓*𓎡 𓅱*𓀀 𓎛*(𓈖:𓂝)*𓎡",
+    "trans": "mk wi ḥnʿ=k",
+    "meanEn": "Behold, I am with you.",
+    "meanAr": "ها أنا معك.",
+    "noteAr": "مثال تعليمي مبني على §44؛ الضمير بعد mk، ثم خبر شبه جملة.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓄤*(𓆑:𓂋) 𓍿*𓅱 𓎛*(𓈖:𓂝)*𓇋",
+    "trans": "nfr ṯw ḥnʿ=i",
+    "meanEn": "You are happy with me.",
+    "meanAr": "أنت سعيد معي.",
+    "noteAr": "الصفة خبر متقدم، والضمير التابع فاعلها النحوي؛ المصدر يكتب ṯw هنا.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓃀*𓇋*𓈖*𓅪",
+    "trans": "sḫr pn bin",
+    "meanEn": "this bad counsel",
+    "meanAr": "هذه الخطة السيئة",
+    "noteAr": "الاسم ثم اسم الإشارة ثم الصفة؛ §48.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓄤*(𓆑:𓂋) 𓄣:𓏤*𓇋",
+    "trans": "nfr ỉb=i",
+    "meanEn": "My heart is happy.",
+    "meanAr": "قلبي سعيد.",
+    "noteAr": "الخبر الوصفي يسبق المبتدأ ولا يطابقه في النوع والعدد هنا.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓄤*(𓆑:𓂋)*𓅱*𓏭 𓉐:𓏤 𓊪:𓈖",
+    "trans": "nfr.wy pr pn",
+    "meanEn": "How beautiful is this house!",
+    "meanAr": "ما أجمل هذا البيت!",
+    "noteAr": "النهاية .wy للتعجب هنا، مش ضمير =wi «إياي».",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓄤*(𓆑:𓂋) 𓋴*𓏭 𓂋 𓅭*𓏏*𓁐*𓋴",
+    "trans": "nfr sy r s3t=s",
+    "meanEn": "She is more beautiful than her daughter.",
+    "meanAr": "هي أجمل من ابنتها.",
+    "noteAr": "نموذج تعليمي لإجابة IV(b)4: الصفة ثم الضمير؛ r يوضح المقارنة.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "h": "𓆓*𓂧*𓈖 𓈖*𓍿*𓈖*𓏥",
+    "trans": "ḏd=n n=ṯn",
+    "meanEn": "We speak to you (plural).",
+    "meanAr": "نحن نتكلم إليكم.",
+    "noteAr": "=n الأولى فاعل «نحن»؛ n الثانية حرف الجر «إلى»، ثم =ṯn ضمير جمع.",
+    "noteEn": "Teaching analysis / normalized spelling.",
+    "source": "Authored practice based on Gardiner §§43–52; not a transcription of Exercise IV(a)."
+  }, {
+    "correctH": "𓄤*(𓆑:𓂋)*𓅱*𓏭 𓉐:𓏤*𓎡 𓊪:𓈖 𓅓*𓎡 𓋴:𓏏 𓅓 𓁷*𓇋 𓏇*𓇋 𓊪:𓏏*𓇯",
+    "trans": "IV(b)1",
+    "meanEn": "How beautiful is this your house! Behold, it is in my sight like heaven.",
+    "meanAr": "ما أجمل بيتك هذا! ها هو في نظري مثل السماء.",
+    "answerTrans": "nfr.wy pr=k pn mk st m ḥr=i mi pt",
+    "answerNote": "التعجب .wy؛ ثم mk وst؛ وm ḥr=i حرفيًا في وجهي/نظري.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)1; normalized teaching model."
+  }, {
+    "correctH": "𓊵*(𓏏:𓊪) 𓂋*𓂝*𓇳 𓅓 𓋹*(𓈖:𓐍) 𓂋*𓂝*𓇳 𓎟",
+    "trans": "IV(b)2",
+    "meanEn": "The sun sets in life every day.",
+    "meanAr": "تغرب الشمس في حياة كل يوم.",
+    "answerTrans": "ḥtp rʿ m ʿnḫ rʿ nb",
+    "answerNote": "تعبير m ʿnḫ تقليدي، ومعناه المحتمل الغروب بكامل الحيوية؛ الحاشية في ص49.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)2; normalized teaching model."
+  }, {
+    "correctH": "𓅓*𓎡 𓍿:𓈖 𓎛*(𓈖:𓂝)*𓇋 𓅓 𓃀*𓄿*𓎡*𓏏*𓁐",
+    "trans": "IV(b)3",
+    "meanEn": "Behold, you are with me as a maid-servant.",
+    "meanAr": "ها أنتِ معي بوصفك خادمة.",
+    "answerTrans": "mk ṯn ḥnʿ=i m b3kt",
+    "answerNote": "المخاطبة مؤنثة، لذلك ṯn؛ وm لإسناد الدور «بوصفك خادمة».",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)3; normalized teaching model."
+  }, {
+    "correctH": "𓄤*(𓆑:𓂋) 𓋴*𓏭 𓂋 𓅭*𓏏*𓁐*𓋴",
+    "trans": "IV(b)4",
+    "meanEn": "She is more beautiful than her daughter.",
+    "meanAr": "هي أجمل من ابنتها.",
+    "answerTrans": "nfr sy r s3t=s",
+    "answerNote": "المقارنة بـr؛ sy مبتدأ تابع بعد الخبر الوصفي nfr.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)4; normalized teaching model."
+  }, {
+    "correctH": "𓈋*𓅱*𓏏*𓅪 𓅓 𓍯*𓏏*𓈐 𓎟*𓏏",
+    "trans": "IV(b)5",
+    "meanEn": "Evil is on every side (literally: road).",
+    "meanAr": "الشر في كل جانب؛ حرفيًا: في كل طريق.",
+    "answerTrans": "ḏwt m w3t nbt",
+    "answerNote": "ḏwt اسم مجرد مؤنث؛ nbt تصف w3t المؤنثة.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)5; normalized teaching model."
+  }, {
+    "correctH": "𓇋*𓐍 𓊢*𓂝*𓈖 𓆓*𓂧*𓈖 𓈖 𓎟*𓈖 𓄤*(𓆑:𓂋)",
+    "trans": "IV(b)6",
+    "meanEn": "Then we will stand up and speak to our good lord.",
+    "meanAr": "إذن سننهض ونتكلم إلى سيدنا الطيب.",
+    "answerTrans": "ỉḫ ʿḥʿ=n ḏd=n n nb=n nfr",
+    "answerNote": "ỉḫ للنتيجة/التطلع هنا؛ لا تضف .n إلى جذع الفعل لمجرد أن الترجمة مستقبل.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)6; normalized teaching model."
+  }, {
+    "correctH": "𓊃*𓀀 𓎟 𓅓 𓂋*𓈙*𓅱*𓏏*𓏛 𓋴*𓄔*𓅓*𓋴*𓈖*𓏥 𓋴:𓏏",
+    "trans": "IV(b)7",
+    "meanEn": "Every man is in joy when he hears it (literally: they hear it).",
+    "meanAr": "كل رجل في فرح عندما يسمع ذلك؛ والضمير المصري حرفيًا جمع «هم».",
+    "answerTrans": "s nb m ršwt sḏm=sn st",
+    "answerNote": "الفاعل موزع s nb «كل رجل»؛ الكتاب ينبه إلى جمع الضمير في sḏm=sn.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)7; normalized teaching model."
+  }, {
+    "correctH": "𓉔*𓄿*𓂻*𓎡 𓅓 𓊵*(𓏏:𓊪) 𓂋 𓊖*𓏏:𓏤 𓏏:𓈖",
+    "trans": "IV(b)8",
+    "meanEn": "May you go down in peace to this city.",
+    "meanAr": "ليتك تنزل بسلام إلى هذه المدينة.",
+    "answerTrans": "h3=k m ḥtp r nỉwt tn",
+    "answerNote": "صيغة الفعل هنا دعاء/تمنٍّ بالسياق؛ tn تتبع الاسم المؤنث.",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)8; normalized teaching model."
+  }, {
+    "correctH": "𓇋*(𓈎:𓂋)*𓏛*𓅱*𓏭 𓋴*𓐍:𓂋*𓏛*𓎡 𓊪:𓈖 𓁷 𓄣:𓏤*𓇋 𓇋*𓏏*𓇋*𓇋*𓀰 𓎟*𓇋",
+    "trans": "IV(b)9",
+    "meanEn": "How excellent is this your counsel in my heart, O sovereign, my lord!",
+    "meanAr": "ما أروع خطتك هذه في قلبي، أيها الملك، يا سيدي!",
+    "answerTrans": "ỉqr.wy sḫr=k pn ḥr ỉb=i ỉty nb=i",
+    "answerNote": "ḥr حرفيًا «على»؛ وỉty nb=i نداء بلا اختراع رمز لكلمة «يا».",
+    "source": "Gardiner, 3rd ed., p49, Exercise IV(b)9; normalized teaching model."
   }]
 };
 const typingQuestionsData = [{
@@ -3636,6 +4627,166 @@ const typingQuestionsData = [{
   "meanEn": "The scribe has known this counsel.",
   "meanAr": "عَلِمَ الكاتب هذه الخطة",
   "hint": "Past / Perfect tense: rḫ.n + subject sš + object sḫr pn"
+}, {
+  "id": 401,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓄤*(𓆑:𓂋)*𓅱*𓏭 𓉐:𓏤*𓎡 𓊪:𓈖 𓅓*𓎡 𓋴:𓏏 𓅓 𓁷*𓇋 𓏇*𓇋 𓊪:𓏏*𓇯",
+  "trans": "nfr.wy pr=k pn mk st m ḥr=i mi pt",
+  "meanEn": "How beautiful is this your house! Behold, it is in my sight like heaven.",
+  "meanAr": "ما أجمل بيتك هذا! ها هو في نظري مثل السماء.",
+  "hint": "التعجب .wy؛ ثم mk وst؛ وm ḥr=i حرفيًا في وجهي/نظري.",
+  "source": "IV(b)1"
+}, {
+  "id": 402,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓊵*(𓏏:𓊪) 𓂋*𓂝*𓇳 𓅓 𓋹*(𓈖:𓐍) 𓂋*𓂝*𓇳 𓎟",
+  "trans": "ḥtp rʿ m ʿnḫ rʿ nb",
+  "meanEn": "The sun sets in life every day.",
+  "meanAr": "تغرب الشمس في حياة كل يوم.",
+  "hint": "تعبير m ʿnḫ تقليدي، ومعناه المحتمل الغروب بكامل الحيوية؛ الحاشية في ص49.",
+  "source": "IV(b)2"
+}, {
+  "id": 403,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓅓*𓎡 𓍿:𓈖 𓎛*(𓈖:𓂝)*𓇋 𓅓 𓃀*𓄿*𓎡*𓏏*𓁐",
+  "trans": "mk ṯn ḥnʿ=i m b3kt",
+  "meanEn": "Behold, you are with me as a maid-servant.",
+  "meanAr": "ها أنتِ معي بوصفك خادمة.",
+  "hint": "المخاطبة مؤنثة، لذلك ṯn؛ وm لإسناد الدور «بوصفك خادمة».",
+  "source": "IV(b)3"
+}, {
+  "id": 404,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓄤*(𓆑:𓂋) 𓋴*𓏭 𓂋 𓅭*𓏏*𓁐*𓋴",
+  "trans": "nfr sy r s3t=s",
+  "meanEn": "She is more beautiful than her daughter.",
+  "meanAr": "هي أجمل من ابنتها.",
+  "hint": "المقارنة بـr؛ sy مبتدأ تابع بعد الخبر الوصفي nfr.",
+  "source": "IV(b)4"
+}, {
+  "id": 405,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓈋*𓅱*𓏏*𓅪 𓅓 𓍯*𓏏*𓈐 𓎟*𓏏",
+  "trans": "ḏwt m w3t nbt",
+  "meanEn": "Evil is on every side (literally: road).",
+  "meanAr": "الشر في كل جانب؛ حرفيًا: في كل طريق.",
+  "hint": "ḏwt اسم مجرد مؤنث؛ nbt تصف w3t المؤنثة.",
+  "source": "IV(b)5"
+}, {
+  "id": 406,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓇋*𓐍 𓊢*𓂝*𓈖 𓆓*𓂧*𓈖 𓈖 𓎟*𓈖 𓄤*(𓆑:𓂋)",
+  "trans": "ỉḫ ʿḥʿ=n ḏd=n n nb=n nfr",
+  "meanEn": "Then we will stand up and speak to our good lord.",
+  "meanAr": "إذن سننهض ونتكلم إلى سيدنا الطيب.",
+  "hint": "ỉḫ للنتيجة/التطلع هنا؛ لا تضف .n إلى جذع الفعل لمجرد أن الترجمة مستقبل.",
+  "source": "IV(b)6"
+}, {
+  "id": 407,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓊃*𓀀 𓎟 𓅓 𓂋*𓈙*𓅱*𓏏*𓏛 𓋴*𓄔*𓅓*𓋴*𓈖*𓏥 𓋴:𓏏",
+  "trans": "s nb m ršwt sḏm=sn st",
+  "meanEn": "Every man is in joy when he hears it (literally: they hear it).",
+  "meanAr": "كل رجل في فرح عندما يسمع ذلك؛ والضمير المصري حرفيًا جمع «هم».",
+  "hint": "الفاعل موزع s nb «كل رجل»؛ الكتاب ينبه إلى جمع الضمير في sḏm=sn.",
+  "source": "IV(b)7"
+}, {
+  "id": 408,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓉔*𓄿*𓂻*𓎡 𓅓 𓊵*(𓏏:𓊪) 𓂋 𓊖*𓏏:𓏤 𓏏:𓈖",
+  "trans": "h3=k m ḥtp r nỉwt tn",
+  "meanEn": "May you go down in peace to this city.",
+  "meanAr": "ليتك تنزل بسلام إلى هذه المدينة.",
+  "hint": "صيغة الفعل هنا دعاء/تمنٍّ بالسياق؛ tn تتبع الاسم المؤنث.",
+  "source": "IV(b)8"
+}, {
+  "id": 409,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓇋*(𓈎:𓂋)*𓏛*𓅱*𓏭 𓋴*𓐍:𓂋*𓏛*𓎡 𓊪:𓈖 𓁷 𓄣:𓏤*𓇋 𓇋*𓏏*𓇋*𓇋*𓀰 𓎟*𓇋",
+  "trans": "ỉqr.wy sḫr=k pn ḥr ỉb=i ỉty nb=i",
+  "meanEn": "How excellent is this your counsel in my heart, O sovereign, my lord!",
+  "meanAr": "ما أروع خطتك هذه في قلبي، أيها الملك، يا سيدي!",
+  "hint": "ḥr حرفيًا «على»؛ وỉty nb=i نداء بلا اختراع رمز لكلمة «يا».",
+  "source": "IV(b)9"
+}, {
+  "id": 411,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓄤*(𓆑:𓂋) 𓅭*𓀀 𓄔*𓅓*𓆑 𓈖 𓇋*𓏏*𓀀*𓆑 𓇋*𓅱*𓆑 𓅓 𓐍*𓂋*𓂧*𓀔 𓏙*𓆑 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓅓 𓄣:𓏤*𓆑 𓋴*𓐍*𓄿*𓀁*𓆑 𓇓*𓅱 𓂋*𓂝*𓇳 𓎟 𓅓*𓎡 𓏏*𓅱 𓆓*𓂧*𓏏*𓅱 𓂋*𓆑 𓆄*𓅱*𓅪 𓇓*𓅱 𓅓 𓈋*𓅱*𓏏*𓅪 𓎟*𓏏",
+  "trans": "nfr s3 sḏm=f n ỉt=f ỉw=f m ḫrd di=f sḫr pn m ỉb=f sḫ3=f sw rʿ nb mk tw ḏd.tw r=f šw sw m ḏwt nbt",
+  "meanEn": "A good son listens to his father in childhood, keeps this advice in his heart and recalls it daily. People say of him that he is free of all wrongdoing.",
+  "meanAr": "الابن يكون صالحًا إذا أصغى إلى أبيه وهو طفل، ووضع هذه النصيحة في قلبه وتذكرها كل يوم؛ ويُقال عنه إنه بريء من كل شر.",
+  "hint": "IV(a)1: قسّم الجملة: nfr s3؛ ثم شروط/تفاصيل sḏm=f وỉw=f…؛ ثم القول mk tw…؛ ثم خبره šw sw… . sw بعد sḫ3=f يعود على النصيحة.",
+  "source": "IV(a)1"
+}, {
+  "id": 412,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓈍*𓂝 𓂋*𓂝*𓇳 𓅓 𓈌*𓏏 𓅱*𓃀*𓈖*𓇳*𓆑 𓅓 𓊪:𓏏*𓇯 𓄤*(𓆑:𓂋) 𓄣:𓏤 𓎟 (𓌳:𓁹)*𓄿*𓄿*𓋴*𓈖*𓏥 𓇓*𓅱",
+  "trans": "ḫʿ rʿ m 3ḫt wbn=f m pt nfr ỉb nb m33=sn sw",
+  "meanEn": "The sun rises at the horizon and shines in the sky; every heart rejoices at seeing it.",
+  "meanAr": "تظهر الشمس في الأفق وتشرق في السماء؛ ويسعد كل قلب عندما يراها.",
+  "hint": "IV(a)2: الضمير =sn جمع رغم ỉb nb «كل قلب»؛ معنى موزع على الجميع. خبري nfr قبل المبتدأ ỉb nb.",
+  "source": "IV(a)2"
+}, {
+  "id": 413,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓃀*𓇋*𓈖*𓅪*𓅱*𓏭 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘) 𓆄*𓅱*𓅪 𓅓 𓈗",
+  "trans": "bin.wy ỉtrw šw m mw",
+  "meanEn": "How miserable is a river that has no water!",
+  "meanAr": "ما أسوأ نهرًا خاليًا من الماء!",
+  "hint": "IV(a)3: .wy للتعجب؛ šw m «خالٍ من». لا تترجم m هنا «في».",
+  "source": "IV(a)3"
+}, {
+  "id": 414,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓆓*𓂧*𓎡 𓋴:𓏏 𓈖 𓇋*𓏏*𓇋*𓇋*𓀰 𓇋*𓐍 𓆓*𓂧*𓆑 𓈖 𓃀*𓄿*𓎡*𓀀*𓆑 𓅓 𓏇*(𓏏:𓏏)*𓏛",
+  "trans": "ḏd=k st n ỉty ỉḫ ḏd=f n b3k=f m mitt",
+  "meanEn": "If you tell the king, he will in turn tell his servant.",
+  "meanAr": "إذا قلت ذلك للملك، فسيقول هو لخادمه بالمثل.",
+  "hint": "IV(a)4: st مفعول، n للمتلقي؛ وm mitt «بالمثل». ỉḫ تربط النتيجة هنا.",
+  "source": "IV(a)4"
+}, {
+  "id": 415,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓉻*𓄿:𓏤*𓅱*𓏭 𓉐:𓏤*𓎡 𓆈*(𓏥) 𓇓*𓅱 𓅓 𓐍:𓏏 𓎟*𓏏 𓄤*(𓆑:𓂋)*𓏏",
+  "trans": "ʿ3.wy pr=k ʿš3 sw m ḫt nbt nfrt",
+  "meanEn": "How large your house is! It contains an abundance of fine things.",
+  "meanAr": "ما أعظم بيتك! إنه زاخر بكل شيء جميل.",
+  "hint": "IV(a)5: ʿ3.wy تعجب؛ ʿš3 خبر وsw مبتدأ تابع. nbt قبل النعت nfrt؛ وكلاهما مؤنث مع ḫt.",
+  "source": "IV(a)5"
+}, {
+  "id": 416,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓐍*𓅓*𓂜*𓆑 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖 𓇋*(𓈎:𓂋)*𓏛",
+  "trans": "ḫm=f sḫr pn ỉqr",
+  "meanEn": "He is unaware of this excellent advice.",
+  "meanAr": "هو لا يعرف هذه الخطة الممتازة.",
+  "hint": "IV(a)6: ḫm فعل معناه «لا يعرف/يجهل»، وليس علامة نفي منفصلة. الترتيب: فعل، فاعل، مفعول ثم إشارة ثم نعت.",
+  "source": "IV(a)6"
+}, {
+  "id": 417,
+  "lesson": "الدرس الرابع",
+  "lessonEn": "Lesson IV",
+  "h": "𓉔*𓄿*𓃀*𓂻*𓋴*𓈖*𓏥 𓂧*𓊪:𓏏*𓊛 𓂋 𓊖*𓏏:𓏤 𓍑*𓄿*𓊛*𓆑 𓍿*𓅱 𓇋*𓅓*𓋴",
+  "trans": "h3b=sn dpt r nỉwt ḏ3=f ṯw ỉm=s",
+  "meanEn": "They send a boat to the city to take you across in it.",
+  "meanAr": "يرسلون قاربًا إلى المدينة ليعبر بك فيه.",
+  "hint": "IV(a)7: ṯw ضمير المفعول «إياك». =f فاعل ḏ3؛ و=s في ỉm=s يعود على dpt المؤنثة. لا نخلط جنس كلمة «قارب» العربية بجنس الكلمة المصرية.",
+  "source": "IV(a)7"
 }];
 const comprehensiveQuizData = [{
   "id": "a1",
@@ -4625,6 +5776,318 @@ const comprehensiveQuizData = [{
     "isCorrect": false
   }],
   "explanation": "The adverb 'ỉm' means 'there' or 'therein' (هناك / فيه) and functions as predicate: e.g. ỉw s ỉm = 'a man is there'."
+}, {
+  "id": "l4-g1",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "ما وظيفة wi في h3b=k wi؟",
+  "qEn": "What is wi in h3b=k wi?",
+  "options": [{
+    "id": "a",
+    "text": "مفعول به: إياي",
+    "isCorrect": true
+  }, {
+    "id": "b",
+    "text": "فاعل متصل: هو",
+    "isCorrect": false
+  }, {
+    "id": "c",
+    "text": "حرف جر",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "صفة مؤنثة",
+    "isCorrect": false
+  }],
+  "explanation": "=k هو الفاعل؛ wi الضمير التابع للمفعول."
+}, {
+  "id": "l4-g2",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "بعد mk نستخدم عادةً هنا أي شكل؟",
+  "qEn": "Which pronoun follows mk in this construction?",
+  "options": [{
+    "id": "a",
+    "text": "الضمير التابع",
+    "isCorrect": true
+  }, {
+    "id": "b",
+    "text": "ضمير الفاعل المتصل وحده",
+    "isCorrect": false
+  }, {
+    "id": "c",
+    "text": "علامة التأنيث .t",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "اسم إشارة فقط",
+    "isCorrect": false
+  }],
+  "explanation": "mk wi: ها أنا؛ §44."
+}, {
+  "id": "l4-g3",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "هل نقرأ f وr مرتين بعد علامة nfr؟",
+  "qEn": "Are the phonetic complements in nfr read twice?",
+  "options": [{
+    "id": "a",
+    "text": "نعم: nfrfr",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "لا: نقرأ nfr",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "نقرأ fr فقط",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "لا تُقرأ الكلمة",
+    "isCorrect": false
+  }],
+  "explanation": "المكمل الصوتي يؤكد القراءة ولا يضاعف حروفها؛ §42."
+}, {
+  "id": "l4-g4",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "أين تأتي الصفة النعت؟",
+  "qEn": "Where does an attributive adjective normally occur?",
+  "options": [{
+    "id": "a",
+    "text": "قبل الاسم دائمًا",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "بعد الاسم وتطابقه",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "في بداية كل جملة",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "بعد حرف جر فقط",
+    "isCorrect": false
+  }],
+  "explanation": "§48: النعت يتبع الاسم ويطابقه في النوع والعدد."
+}, {
+  "id": "l4-g5",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "في nfr ỉb=i، ما وظيفة nfr؟",
+  "qEn": "What is nfr in nfr ỉb=i?",
+  "options": [{
+    "id": "a",
+    "text": "خبر وصفي متقدم",
+    "isCorrect": true
+  }, {
+    "id": "b",
+    "text": "فعل ماضٍ",
+    "isCorrect": false
+  }, {
+    "id": "c",
+    "text": "ضمير تابع",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "مفعول به",
+    "isCorrect": false
+  }],
+  "explanation": "المعنى قلبي سعيد؛ الصفة خبر يسبق المبتدأ."
+}, {
+  "id": "l4-g6",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "ما معنى .wy في nfr.wy pr pn؟",
+  "qEn": "What does .wy express here?",
+  "options": [{
+    "id": "a",
+    "text": "إياي",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "جمع مؤنث",
+    "isCorrect": false
+  }, {
+    "id": "c",
+    "text": "التعجب",
+    "isCorrect": true
+  }, {
+    "id": "d",
+    "text": "ماضٍ تام",
+    "isCorrect": false
+  }],
+  "explanation": "ما أجمل هذا البيت! §49."
+}, {
+  "id": "l4-g7",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "r في nfr sy r s3t=s تعبر عن إيه؟",
+  "qEn": "What does r mark in this comparison?",
+  "options": [{
+    "id": "a",
+    "text": "نفي",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "مقارنة: من",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "ملكية",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "مجهول",
+    "isCorrect": false
+  }],
+  "explanation": "المقارنة بـr، من غير تصريف خاص للصفة؛ §50."
+}, {
+  "id": "l4-g8",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "هل st تعني «هي» فقط؟",
+  "qEn": "Does st only mean “she”?",
+  "options": [{
+    "id": "a",
+    "text": "نعم دائمًا",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "لا؛ قد تشير إلى الشيء أو الجمع",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "تعني أنا فقط",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "حرف جر",
+    "isCorrect": false
+  }],
+  "explanation": "§46 يبين استعمال st للمعنى المحايد وللجمع."
+}, {
+  "id": "l4-g9",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "في ḏd=n n=ṯn، ما n الثانية؟",
+  "qEn": "What is the second n in ḏd=n n=ṯn?",
+  "options": [{
+    "id": "a",
+    "text": "فاعل نحن",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "حرف جر: إلى",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "نهاية مؤنث",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "علامة جمع",
+    "isCorrect": false
+  }],
+  "explanation": "=n الأولى الفاعل؛ n=ṯn إلى أنتم = إليكم."
+}, {
+  "id": "l4-g10",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "ḏwt «شر» مثال على ماذا؟",
+  "qEn": "What does ḏwt “evil” illustrate?",
+  "options": [{
+    "id": "a",
+    "text": "صيغة مستقبل",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "التأنيث للتعبير عن معنى محايد/مجرد",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "ضمير متصل",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "اسم إشارة",
+    "isCorrect": false
+  }],
+  "explanation": "§51: المعنى المحايد يُعبّر عنه بالمؤنث."
+}, {
+  "id": "l4-g11",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "ṯw المخاطب وtw غير المحدد؟",
+  "qEn": "Are dependent ṯw and indefinite tw identical in function?",
+  "options": [{
+    "id": "a",
+    "text": "نفس الوظيفة دائمًا",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "مختلفان، والسياق يفرق بين الأشكال المتشابهة",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "كلاهما فعل",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "كلاهما نعت",
+    "isCorrect": false
+  }],
+  "explanation": "§47 يميز ضمير المخاطب عن tw «المرء»."
+}, {
+  "id": "l4-g12",
+  "category": "grammar",
+  "categoryLabel": "Lesson IV Grammar (قواعد الدرس الرابع)",
+  "categoryLabelEn": "Lesson IV Grammar",
+  "categoryLabelAr": "قواعد الدرس الرابع",
+  "qAr": "في rdi.n=i wi، wi يعود على مين؟",
+  "qEn": "Who does wi refer to in rdi.n=i wi?",
+  "options": [{
+    "id": "a",
+    "text": "شخص آخر فقط",
+    "isCorrect": false
+  }, {
+    "id": "b",
+    "text": "فاعل الجملة نفسه",
+    "isCorrect": true
+  }, {
+    "id": "c",
+    "text": "مكان",
+    "isCorrect": false
+  }, {
+    "id": "d",
+    "text": "مخصص",
+    "isCorrect": false
+  }],
+  "explanation": "هذا استعمال انعكاسي: وضعت نفسي؛ §45."
 }];
 const phonogramsData = [{
   "id": "bi_pr",
@@ -6184,6 +7647,190 @@ const GrammarLearningGuide = ({
     className: "grammar-guide-source"
   }, /*#__PURE__*/React.createElement("summary", null, "\u0627\u0644\u0645\u0635\u062F\u0631 \u0648\u0637\u0631\u064A\u0642\u0629 \u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u0623\u0645\u062B\u0644\u0629"), /*#__PURE__*/React.createElement("p", null, guide.source)));
 };
+const ruleSummaries = {
+  "rule-1-1": {
+    "titleAr": "حرف الجر يأتي قبل الاسم",
+    "titleEn": "Preposition + noun",
+    "explanationAr": "ابدأ بحرف الجر، ثم الاسم الذي يوضح المكان أو الجهة أو العلاقة. m قد تعني «في» أو «من» أو «بواسطة» حسب السياق؛ n تُستخدم هنا بمعنى «لـ/إلى» مع الشخص، وr للاتجاه. المعنى يُفهم من الجملة، مش من ترجمة واحدة محفوظة.",
+    "explanationEn": "A preposition precedes its complement. Translate m, n and r according to the relationship and the context.",
+    "example": {
+      "trans": "m pt",
+      "h": "𓅓 𓊪:𓏏*𓇯",
+      "meanAr": "في السماء",
+      "meanEn": "in the sky"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-1-2": {
+    "titleAr": "هذا بعد الاسم، وآخر قبله",
+    "titleEn": "Demonstratives and “other”",
+    "explanationAr": "للقريب: pn مع المذكر وtn مع المؤنث، ويأتيان بعد الاسم: «الاسم + هذا/هذه». أما ky «آخر» وkt «أخرى» فيأتيان قبل الاسم. كلمة «آخر» هنا للتفريق، وليست إشارة إلى شيء بعيد.",
+    "explanationEn": "Postpositive pn / tn mean “this”; prepositive ky / kt mean “other”. Match the gender of the noun.",
+    "example": {
+      "trans": "rn pn",
+      "h": "𓂋:𓈖 𓊪:𓈖",
+      "meanAr": "هذا الاسم",
+      "meanEn": "this name"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-1-3": {
+    "titleAr": "ỉm معناها هناك أو فيه",
+    "titleEn": "The adverb ỉm",
+    "explanationAr": "الكلمة ỉm ظرف، مش اسمًا ولا فعلًا: معناها «هناك/فيه». بعد المبتدأ، تقدر تكمل بها المعنى من غير فعل «يكون» مكتوب؛ زمن الترجمة يعتمد على السياق.",
+    "explanationEn": "Ỉm means “there / therein”. It can serve as an adverbial predicate without an expressed verb “to be”.",
+    "example": {
+      "trans": "ỉm",
+      "h": "𓇋*𓅓",
+      "meanAr": "هناك / فيه",
+      "meanEn": "there / therein"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-1": {
+    "titleAr": "مين؟ موجود فين؟",
+    "titleEn": "Adverbial predicate",
+    "explanationAr": "حدد المبتدأ أولًا، ثم المكان أو الحال الذي يكمل معناه. وجود ỉw يقدّم الجملة في هذه الأمثلة؛ ليس ترجمة حرفية ثابتة لكلمة «هو»، ولا علامة مضارع في كل السياقات.",
+    "explanationEn": "Identify the subject, then its adverbial predicate. Ỉw introduces these statements; it is not a universal present-tense marker.",
+    "example": {
+      "trans": "ỉw s m pr",
+      "h": "𓇋*𓅱 𓊃*𓀀 𓅓 𓉐:𓏤",
+      "meanAr": "الرجل في البيت",
+      "meanEn": "The man is in the house."
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-2": {
+    "titleAr": "ابدأ بالفعل ثم اسأل: مين؟ وإيه؟",
+    "titleEn": "Verb – subject – object",
+    "explanationAr": "الترتيب المعتاد: فعل ثم فاعل ثم مفعول به إن احتاجه الفعل. «يسمع الرجل الخطة»: يسمع = الفعل، الرجل = الفاعل، الخطة = المفعول. الفعل اللازم يكتفي بالفاعل، وقد يتبعه مكان أو اتجاه.",
+    "explanationEn": "The usual order is verb, subject, direct object, then adverbials. Intransitive verbs have no direct object.",
+    "example": {
+      "trans": "sḏm s sḫr",
+      "h": "𓋴*𓄔*𓅓 𓊃*𓀀 𓋴*𓐍:𓂋*𓏛",
+      "meanAr": "يسمع الرجل الخطة",
+      "meanEn": "The man hears the counsel."
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-3": {
+    "titleAr": "علامة كلمة ومعها شرطة",
+    "titleEn": "Word sign and stroke",
+    "explanationAr": "ممكن الرمز الواحد يدل على كلمة كاملة، زي البيت pr. الشرطة الرأسية المصاحبة علامة كتابية تساعد على تمييز هذا الاستعمال؛ لا تضيف حرفًا للنقحرة. وجودها شائع، لكنه مش شرط لازم في كل كتابة.",
+    "explanationEn": "A word sign can stand for a whole word. Its accompanying stroke is not pronounced and is not obligatory in every spelling.",
+    "example": {
+      "trans": "pr",
+      "h": "𓉐:𓏤",
+      "meanAr": "بيت",
+      "meanEn": "house"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-4": {
+    "titleAr": "المخصص يشرح المعنى ولا نقرأه كحرف",
+    "titleEn": "Determinatives / classifiers",
+    "explanationAr": "اقرأ العلامات الصوتية، ثم استخدم المخصص لفهم نوع المعنى: شخص، حركة، مكان، وغيرها. المخصص غالبًا في آخر الكلمة، ولا نضيف له صوتًا في نقحرتها لمجرد ظهوره.",
+    "explanationEn": "A determinative usually follows the phonetic spelling and classifies its meaning. It is not an extra pronounced consonant.",
+    "example": {
+      "trans": "sš",
+      "h": "𓏞*𓀀",
+      "meanAr": "كاتب؛ علامة الرجل مخصص",
+      "meanEn": "scribe; the man sign is a classifier"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-5": {
+    "titleAr": "احفظ فئة المعنى، مش نطقًا للمخصص",
+    "titleEn": "Recognising semantic classes",
+    "explanationAr": "الجدول مجموعة مخصصات تتعلمها بالتدريج. بصّ على وظيفة الرمز في الكلمة: الرجل يدل على فئة الأشخاص، والمشي على الحركة. نفس الرسم قد يؤدي وظيفة أخرى في كلمة أخرى؛ السياق هو الأساس.",
+    "explanationEn": "Learn classifier categories gradually. The function of a sign depends on the word in which it occurs.",
+    "example": {
+      "trans": "sš",
+      "h": "𓏞*𓀀",
+      "meanAr": "كاتب من فئة الأشخاص",
+      "meanEn": "a scribe belongs to the person category"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-2-6": {
+    "titleAr": "قارن المذكر بالمؤنث",
+    "titleEn": "Gender and feminine .t",
+    "explanationAr": "المؤنث غالبًا ينتهي بـt، مثل s3 «ابن» وs3t «ابنة». مخصص الرجل أو المرأة يوضح المعنى لكنه مش بديلًا عن حرف t. بعض الكلمات مؤنثة بطبيعتها؛ افهم الكلمة كاملة.",
+    "explanationEn": "The feminine commonly ends in .t, as in s3 / s3t. A woman classifier is not a replacement for the consonant t.",
+    "example": {
+      "trans": "s3t",
+      "h": "𓅭*𓏏*𓁐",
+      "meanAr": "ابنة",
+      "meanEn": "daughter"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-3-1": {
+    "titleAr": "جذع الفعل + ضمير الفاعل",
+    "titleEn": "Suffix conjugation",
+    "explanationAr": "في sḏm=f، الجزء sḏm يعني «يسمع»، و=f يحدد الفاعل «هو». علامة = وسيلة حديثة لفصل الضمير في النقحرة، مش رمزًا هيروغليفيًا. الصيغة وحدها لا تعني المضارع دائمًا؛ السياق مهم.",
+    "explanationEn": "In sḏm=f, =f is the suffix subject “he”. The equals sign is a transliteration convention. Context determines the precise temporal interpretation.",
+    "example": {
+      "trans": "sḏm=f",
+      "h": "𓋴*𓄔*𓅓*𓆑",
+      "meanAr": "هو يسمع، بحسب سياق المثال",
+      "meanEn": "he hears, in this teaching context"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-3-2": {
+    "titleAr": "المعلوم: مين عمل؟ المجهول: إيه حصل له؟",
+    "titleEn": "Active and passive",
+    "explanationAr": "في المعلوم نذكر من يفعل: «يسمع الرجل الخطة». في المجهول نركز على ما وقع عليه الفعل: «تُسمع الخطة». من طرق المجهول .tw، وإذا ذُكر القائم بالفعل نستخدم عادةً ỉn. ليست .tw الطريقة الوحيدة.",
+    "explanationEn": "Active clauses foreground the doer. In a .tw passive the affected entity becomes the subject; a named agent is normally introduced by ỉn.",
+    "example": {
+      "trans": "sḏm.tw sḫr pn",
+      "h": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "meanAr": "تُسمع هذه الخطة",
+      "meanEn": "This counsel is heard."
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  },
+  "rule-3-3": {
+    "titleAr": ".n قبل الفاعل، والزمن الدقيق من السياق",
+    "titleEn": "The sḏm.n=f form",
+    "explanationAr": "قارن sḏm=f مع sḏm.n=f: أضفنا .n بعد جذع الفعل وقبل الفاعل. في السياق الماضي المثبت نفهم «سمع/قد سمع». «كان قد سمع» يحتاج سياقًا يربطه بحدث ماضٍ آخر؛ مش تصريفًا جديدًا بنهاية مختلفة.",
+    "explanationEn": "The .n element precedes the subject. “He heard”, “has heard” and “had heard” can be contextual translations, not three separately inflected Egyptian tenses.",
+    "example": {
+      "trans": "sḏm.n=f",
+      "h": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
+      "meanAr": "سمع / قد سمع، وفق السياق",
+      "meanEn": "he heard / has heard, according to context"
+    },
+    "source": "Gardiner, Egyptian Grammar, 3rd ed.; teaching summary of the existing rule, not a quotation."
+  }
+};
+
+// Source: src/components/GrammarRuleSummary.jsx
+const GrammarRuleSummary = ({
+  summary
+}) => /*#__PURE__*/React.createElement("section", {
+  className: "rule-summary",
+  dir: "rtl",
+  "aria-label": `ملخص القاعدة: ${summary.titleAr}`
+}, /*#__PURE__*/React.createElement("span", {
+  className: "rule-summary-kicker"
+}, "\u062E\u0644\u0627\u0635\u0629 \u0627\u0644\u0642\u0627\u0639\u062F\u0629 \xB7 Rule summary"), /*#__PURE__*/React.createElement("h4", null, summary.titleAr), /*#__PURE__*/React.createElement("p", null, summary.explanationAr), /*#__PURE__*/React.createElement("div", {
+  className: "rule-summary-english",
+  dir: "ltr"
+}, /*#__PURE__*/React.createElement("b", null, summary.titleEn), /*#__PURE__*/React.createElement("p", null, summary.explanationEn)), summary.example && /*#__PURE__*/React.createElement("div", {
+  className: "rule-summary-example"
+}, /*#__PURE__*/React.createElement("div", {
+  className: "rule-summary-glyph"
+}, /*#__PURE__*/React.createElement(HieroglyphBlock, {
+  code: summary.example.h,
+  size: "normal",
+  boxed: false
+})), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", {
+  dir: "ltr"
+}, summary.example.trans), /*#__PURE__*/React.createElement("p", null, summary.example.meanAr), /*#__PURE__*/React.createElement("p", {
+  dir: "ltr"
+}, summary.example.meanEn))));
 
 // Source: src/sections/GrammarSection.jsx
 const GrammarSection = ({
@@ -6227,6 +7874,7 @@ const GrammarSection = ({
   const renderExamples = examples => /*#__PURE__*/React.createElement(IllustrativeExamplesBlock, {
     examples: examples
   });
+  const summaries = typeof ruleSummaries === 'undefined' ? {} : ruleSummaries;
   const visibleSections = grammarData.filter(section => selectedLessonTab === 'all' || section.id === selectedLessonTab);
   return /*#__PURE__*/React.createElement("div", {
     className: "max-w-5xl mx-auto p-2.5 sm:p-4 md:p-6 space-y-4 sm:space-y-5 mt-2 sm:mt-4"
@@ -6368,7 +8016,9 @@ const GrammarSection = ({
       }, rule.titleEn), /*#__PURE__*/React.createElement("h4", {
         className: "text-xs sm:text-sm md:text-base font-semibold text-stone-500",
         dir: "rtl"
-      }, rule.titleAr)), rule.summaryEn && /*#__PURE__*/React.createElement("p", {
+      }, rule.titleAr)), (rule.quickSummary || summaries[rule.id]) && /*#__PURE__*/React.createElement(GrammarRuleSummary, {
+        summary: rule.quickSummary || summaries[rule.id]
+      }), rule.summaryEn && /*#__PURE__*/React.createElement("p", {
         className: "text-stone-700 text-xs sm:text-sm md:text-base leading-relaxed bg-amber-50/60 p-2.5 sm:p-3 rounded-xl border border-amber-200/60"
       }, rule.summaryEn), /*#__PURE__*/React.createElement("div", {
         className: "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5 sm:gap-3 md:gap-4 pt-1"
@@ -6411,7 +8061,9 @@ const GrammarSection = ({
     }, rule.titleEn), /*#__PURE__*/React.createElement("h4", {
       className: "text-xs sm:text-sm md:text-base font-semibold text-stone-500",
       dir: "rtl"
-    }, rule.titleAr)), rule.learningGuide && /*#__PURE__*/React.createElement(GrammarLearningGuide, {
+    }, rule.titleAr)), (rule.quickSummary || summaries[rule.id]) && /*#__PURE__*/React.createElement(GrammarRuleSummary, {
+      summary: rule.quickSummary || summaries[rule.id]
+    }), rule.learningGuide && /*#__PURE__*/React.createElement(GrammarLearningGuide, {
       guide: rule.learningGuide
     }), rule.formulas ? /*#__PURE__*/React.createElement("div", {
       className: "grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5"
@@ -7059,7 +8711,10 @@ const ExercisesSection = ({
     className: "text-xl sm:text-2xl font-serif text-amber-700 font-bold block"
   }, item.trans), /*#__PURE__*/React.createElement("span", {
     className: "text-xs text-stone-500 font-medium"
-  }, item.meanEn)), /*#__PURE__*/React.createElement("button", {
+  }, item.meanEn), item.meanAr && /*#__PURE__*/React.createElement("p", {
+    className: "text-sm text-stone-700 mt-2 leading-relaxed",
+    dir: "rtl"
+  }, item.meanAr)), /*#__PURE__*/React.createElement("button", {
     onClick: () => toggleReveal(idx),
     className: "flex items-center gap-1.5 px-3 py-1 bg-amber-50 border border-amber-200 text-amber-800 rounded-xl font-bold text-xs hover:bg-amber-100 transition-colors"
   }, /*#__PURE__*/React.createElement(Icon, {
@@ -7076,18 +8731,30 @@ const ExercisesSection = ({
     dir: "ltr"
   }, /*#__PURE__*/React.createElement("span", {
     className: "text-xs text-green-900 font-bold mb-2"
-  }, "Model Arrangement:"), /*#__PURE__*/React.createElement(HieroglyphBlock, {
+  }, "Model Arrangement:"), item.answerTrans ? /*#__PURE__*/React.createElement(HieroglyphBlock, {
+    code: item.correctH,
+    size: "normal"
+  }) : /*#__PURE__*/React.createElement(HieroglyphBlock, {
     code: item.correctH,
     size: "large"
-  }))));
+  }), item.answerTrans && /*#__PURE__*/React.createElement("b", {
+    dir: "ltr",
+    className: "block text-sm text-green-900 mt-3 break-words"
+  }, item.answerTrans), item.answerNote && /*#__PURE__*/React.createElement("p", {
+    dir: "rtl",
+    className: "text-xs text-green-900 leading-relaxed mt-2"
+  }, item.answerNote))));
   const renderReadingCard = (item, idx) => /*#__PURE__*/React.createElement("div", {
     key: idx,
     "data-nav-target": `exercise-${activeExTab}-${idx}`,
     "data-content-id": activeExTab,
     "data-content-detail": item.trans,
     onClick: () => toggleReveal(idx),
-    className: "group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between"
-  }, /*#__PURE__*/React.createElement("div", {
+    className: `group bg-white border border-stone-200 hover:border-amber-400 hover:shadow-md transition-all rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm cursor-pointer relative overflow-hidden flex flex-col justify-between ${item.sourceLabel && item.h.trim().split(/\s+/).length > 12 ? "md:col-span-2" : ""}`
+  }, item.sourceLabel && /*#__PURE__*/React.createElement("span", {
+    className: "text-xs text-amber-800 font-bold mb-2",
+    dir: "ltr"
+  }, item.sourceLabel, " \xB7 Gardiner"), /*#__PURE__*/React.createElement("div", {
     className: "text-center mb-3 sm:mb-4 py-3 flex items-center justify-center min-h-[64px] sm:min-h-[72px] bg-stone-50/70 rounded-xl border border-stone-100"
   }, /*#__PURE__*/React.createElement(HieroglyphBlock, {
     code: item.h,
@@ -7102,7 +8769,10 @@ const ExercisesSection = ({
   }, item.meanEn || item.mean), item.meanAr && /*#__PURE__*/React.createElement("span", {
     className: "text-xs sm:text-sm text-stone-600 bg-amber-50/80 border border-amber-200/60 px-3 py-1 rounded-xl font-medium mt-0.5",
     dir: "rtl"
-  }, item.meanAr)) : /*#__PURE__*/React.createElement("div", {
+  }, item.meanAr), item.noteAr && /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-stone-600 leading-relaxed mt-2",
+    dir: "rtl"
+  }, item.noteAr)) : /*#__PURE__*/React.createElement("div", {
     className: "pt-3 border-t border-dashed border-stone-200 flex items-center justify-center gap-1.5 text-xs text-amber-700 font-bold group-hover:text-amber-800 transition-colors"
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "Eye",
@@ -7149,10 +8819,17 @@ const ExercisesSection = ({
     className: "text-xs font-semibold text-amber-800 self-start sm:self-auto bg-amber-100/70 px-2 py-0.5 rounded-md",
     dir: "rtl"
   }, presentation.titleAr)), /*#__PURE__*/React.createElement("p", {
-    className: "text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5"
-  }, presentation.description)))), /*#__PURE__*/React.createElement("div", {
+    className: "text-stone-600 text-xs sm:text-sm leading-relaxed mt-1.5",
+    dir: presentation.descriptionAr ? 'rtl' : undefined,
+    style: presentation.descriptionAr ? {
+      textAlign: 'right'
+    } : undefined
+  }, presentation.descriptionAr || presentation.description), presentation.descriptionEn && /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-stone-500 leading-relaxed mt-2",
+    dir: "ltr"
+  }, presentation.descriptionEn)))), /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 md:gap-6"
-  }, items.map(presentation.kind === 'drawing' ? renderDrawingCard : renderReadingCard))), activeExTab === 'typing' && /*#__PURE__*/React.createElement("div", {
+  }, items.map((item, index) => (item.correctH || presentation.kind === 'drawing' ? renderDrawingCard : renderReadingCard)(item, index)))), activeExTab === 'typing' && /*#__PURE__*/React.createElement("div", {
     "data-nav-target": "exercise-typing",
     "data-content-id": "typing"
   }, /*#__PURE__*/React.createElement(TypingExercise, null)), activeExTab === 'quiz' && /*#__PURE__*/React.createElement("div", {
