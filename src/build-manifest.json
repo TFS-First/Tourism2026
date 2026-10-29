@@ -94,6 +94,10 @@
   },
   {
     "kind": "code",
+    "path": "src/components/SignPicker.jsx"
+  },
+  {
+    "kind": "code",
     "path": "src/app/MainApp.jsx"
   },
   {

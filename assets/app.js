@@ -8018,6 +8018,82 @@ const ContentDrawer = ({
   }, "\u0627\u062E\u062A\u0627\u0631 \u0645\u0643\u0627\u0646\u0643\u2026 \u0648\u0643\u0645\u0651\u0644 \u0631\u062D\u0644\u062A\u0643."));
 };
 
+// Source: src/components/SignPicker.jsx
+const SignPicker = ({
+  signs,
+  selected,
+  onChoose
+}) => {
+  const [open, setOpen] = useState(false);
+  const dialogRef = useRef(null);
+  useEffect(() => {
+    if (!open) return;
+    const dialog = dialogRef.current;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    dialog.showModal();
+    dialog.querySelector('[aria-current="true"]')?.focus();
+    return () => {
+      dialog.close();
+      document.body.style.overflow = previous;
+    };
+  }, [open]);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("button", {
+    className: "sign-picker-trigger",
+    "aria-haspopup": "dialog",
+    "aria-expanded": open,
+    onClick: () => setOpen(true)
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "Layers",
+    size: 18
+  }), /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u0631\u0645\u0648\u0632"), /*#__PURE__*/React.createElement("small", null, selected.step, " / ", signs.length), /*#__PURE__*/React.createElement(Icon, {
+    name: "ChevronDown",
+    size: 15
+  })), /*#__PURE__*/React.createElement("dialog", {
+    ref: dialogRef,
+    className: "sign-picker",
+    "aria-labelledby": "sign-picker-title",
+    dir: "rtl",
+    onCancel: e => {
+      e.preventDefault();
+      setOpen(false);
+    },
+    onClick: e => {
+      if (e.target === e.currentTarget) {
+        const r = e.currentTarget.getBoundingClientRect();
+        if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) setOpen(false);
+      }
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "sign-picker-heading"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", null, "\u0643\u0645\u0651\u0644 \u0631\u062D\u0644\u062A\u0643 \u0628\u064A\u0646 \u0627\u0644\u0639\u0644\u0627\u0645\u0627\u062A"), /*#__PURE__*/React.createElement("h2", {
+    id: "sign-picker-title"
+  }, "\u0627\u062E\u062A\u0631 \u0627\u0644\u0631\u0645\u0632")), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setOpen(false),
+    "aria-label": "\u0625\u063A\u0644\u0627\u0642 \u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0631\u0645\u0648\u0632"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "X",
+    size: 20
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "sign-picker-grid"
+  }, signs.map(sign => /*#__PURE__*/React.createElement("button", {
+    key: sign.step,
+    "aria-current": selected.step === sign.step ? 'true' : undefined,
+    "aria-label": `الرمز ${sign.step}: ${sign.descAr || sign.meaning} (${sign.trans})`,
+    onClick: () => {
+      setOpen(false);
+      onChoose(sign);
+    }
+  }, /*#__PURE__*/React.createElement("small", null, sign.step), /*#__PURE__*/React.createElement("span", {
+    className: "sign-picker-glyph",
+    dir: "ltr"
+  }, sign.h), /*#__PURE__*/React.createElement("b", {
+    dir: "ltr"
+  }, sign.trans)))), /*#__PURE__*/React.createElement("p", {
+    className: "sign-picker-foot"
+  }, "\u0627\u062E\u062A\u0627\u0631 \u0623\u064A \u0631\u0645\u0632 \u0644\u0639\u0631\u0636 \u0634\u0631\u062D\u0647 \u0648\u0623\u0645\u062B\u0644\u062A\u0647 \u0648\u0627\u0644\u062A\u062F\u0631\u0651\u0628 \u0639\u0644\u0649 \u0631\u0633\u0645\u0647.")));
+};
+
 // Source: src/app/MainApp.jsx
 function MainApp() {
   const getInitialTab = () => {
@@ -8047,6 +8123,8 @@ function MainApp() {
   const [showLanding, setShowLanding] = useState(getInitialShowLanding);
   const [selectedSign, setSelectedSign] = useState(null);
   const [activeDrawingSign, setActiveDrawingSign] = useState(null);
+  const orderedSigns = useMemo(() => [...hieroglyphsData].sort((a, b) => a.step - b.step), []);
+  const selectedSignIndex = orderedSigns.findIndex(sign => sign.step === selectedSign?.step);
   const [activeTab, setActiveTab] = useState(getInitialTab);
   const [learnSubTab, setLearnSubTab] = useState('path');
   const [contentOpen, setContentOpen] = useState(false);
@@ -8470,7 +8548,8 @@ function MainApp() {
   }, activeTab === 'learn' && /*#__PURE__*/React.createElement("div", {
     className: "space-y-4"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-wrap justify-center gap-1.5 sm:gap-3 max-w-3xl mx-auto px-2 sm:px-4 mt-3 sm:mt-5",
+    className: "learn-view-tabs",
+    "aria-label": "\u0637\u0631\u0642 \u0639\u0631\u0636 \u0627\u0644\u0631\u0645\u0648\u0632",
     dir: "rtl"
   }, /*#__PURE__*/React.createElement("button", {
     onClick: () => setLearnSubTab('path'),
@@ -8601,9 +8680,11 @@ function MainApp() {
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "ArrowRight",
     size: 20
-  }), " \u0631\u062C\u0648\u0639"), /*#__PURE__*/React.createElement("span", {
-    className: "text-sm font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full"
-  }, "\u0627\u0644\u0631\u0645\u0632 ", selectedSign.step))), /*#__PURE__*/React.createElement("main", {
+  }), " \u0631\u062C\u0648\u0639"), /*#__PURE__*/React.createElement(SignPicker, {
+    signs: orderedSigns,
+    selected: selectedSign,
+    onChoose: handleSelectSign
+  }))), /*#__PURE__*/React.createElement("main", {
     className: "max-w-5xl mx-auto p-4 md:p-6 mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start"
   }, /*#__PURE__*/React.createElement("div", {
     className: "lg:col-span-7 space-y-6"
@@ -8697,8 +8778,28 @@ function MainApp() {
   }, "\u0627\u0631\u0633\u0645 \u0628\u064A\u062F\u0643 \u0623\u0648 \u0628\u0627\u0644\u0642\u0644\u0645")), /*#__PURE__*/React.createElement("div", {
     className: "mb-4"
   }, /*#__PURE__*/React.createElement(DrawingPad, {
+    key: selectedSign.step,
     sign: activeDrawingSign || selectedSign.h
-  }))))));
+  })))), /*#__PURE__*/React.createElement("nav", {
+    className: "sign-pagination",
+    "aria-label": "\u0627\u0644\u062A\u0646\u0642\u0644 \u0628\u064A\u0646 \u0627\u0644\u0631\u0645\u0648\u0632",
+    dir: "rtl"
+  }, /*#__PURE__*/React.createElement("button", {
+    disabled: selectedSignIndex <= 0,
+    onClick: () => handleSelectSign(orderedSigns[selectedSignIndex - 1])
+  }, /*#__PURE__*/React.createElement(Icon, {
+    name: "ArrowRight",
+    size: 18,
+    className: "rotate-180"
+  }), /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u0633\u0627\u0628\u0642")), /*#__PURE__*/React.createElement("span", {
+    "aria-live": "polite"
+  }, selectedSignIndex + 1, " \u0645\u0646 ", orderedSigns.length), /*#__PURE__*/React.createElement("button", {
+    disabled: selectedSignIndex >= orderedSigns.length - 1,
+    onClick: () => handleSelectSign(orderedSigns[selectedSignIndex + 1])
+  }, /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u062A\u0627\u0644\u064A"), /*#__PURE__*/React.createElement(Icon, {
+    name: "ArrowRight",
+    size: 18
+  })))));
 }
 
 // Source: src/components/ErrorBoundary.jsx

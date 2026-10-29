@@ -28,6 +28,8 @@ function MainApp() {
   const [showLanding, setShowLanding] = useState(getInitialShowLanding);
   const [selectedSign, setSelectedSign] = useState(null);
   const [activeDrawingSign, setActiveDrawingSign] = useState(null);
+  const orderedSigns = useMemo(() => [...hieroglyphsData].sort((a,b)=>a.step-b.step), []);
+  const selectedSignIndex = orderedSigns.findIndex(sign => sign.step === selectedSign?.step);
   const [activeTab, setActiveTab] = useState(getInitialTab);
   const [learnSubTab, setLearnSubTab] = useState('path');
   const [contentOpen,setContentOpen] = useState(false);
@@ -217,7 +219,7 @@ function MainApp() {
           {activeTab === 'learn' && (
             <div className="space-y-4">
               {/* Secondary Sub-navigation pills */}
-              <div className="flex flex-wrap justify-center gap-1.5 sm:gap-3 max-w-3xl mx-auto px-2 sm:px-4 mt-3 sm:mt-5" dir="rtl">
+              <div className="learn-view-tabs" aria-label="طرق عرض الرموز" dir="rtl">
                 <button
                   onClick={() => setLearnSubTab('path')}
                   className={`py-1.5 sm:py-2 px-2.5 sm:px-3.5 rounded-xl font-bold text-xs sm:text-sm transition-all ${
@@ -358,7 +360,7 @@ function MainApp() {
               <button onClick={() => { setSelectedSign(null); setActiveDrawingSign(null); }} className="flex items-center gap-2 text-stone-700 hover:bg-stone-200 bg-stone-100 px-4 py-2 rounded-xl font-semibold transition-colors">
                 <Icon name="ArrowRight" size={20} /> رجوع
               </button>
-              <span className="text-sm font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full">الرمز {selectedSign.step}</span>
+              <SignPicker signs={orderedSigns} selected={selectedSign} onChoose={handleSelectSign} />
             </div>
           </header>
 
@@ -465,10 +467,15 @@ function MainApp() {
                 </span>
               </div>
               <div className="mb-4">
-                <DrawingPad sign={activeDrawingSign || selectedSign.h} />
+                <DrawingPad key={selectedSign.step} sign={activeDrawingSign || selectedSign.h} />
               </div>
             </div>
           </main>
+          <nav className="sign-pagination" aria-label="التنقل بين الرموز" dir="rtl">
+            <button disabled={selectedSignIndex <= 0} onClick={() => handleSelectSign(orderedSigns[selectedSignIndex - 1])}><Icon name="ArrowRight" size={18} className="rotate-180"/><span>السابق</span></button>
+            <span aria-live="polite">{selectedSignIndex + 1} من {orderedSigns.length}</span>
+            <button disabled={selectedSignIndex >= orderedSigns.length - 1} onClick={() => handleSelectSign(orderedSigns[selectedSignIndex + 1])}><span>التالي</span><Icon name="ArrowRight" size={18}/></button>
+          </nav>
         </div>
       )}
     </div>
