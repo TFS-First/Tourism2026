@@ -330,12 +330,12 @@
                     "mean": "hear"
                   },
                   {
-                    "h": "𓌳*𓄿:𓄿*𓁹",
+                    "h": "(𓌳:𓁹)*𓄿*𓄿",
                     "trans": "m33",
                     "mean": "see"
                   },
                   {
-                    "h": "𓉔:𓄿*𓃀*𓂻",
+                    "h": "𓉔*𓄿*𓃀*𓂻",
                     "trans": "h3b",
                     "mean": "send"
                   }
@@ -508,7 +508,7 @@
             "noteAr": "فعل لازم + فاعل + جار ومجرور"
           },
           {
-            "h": "𓌳*𓄿:𓄿*𓁹 𓅭*𓀀 𓇋:𓏏*𓀀",
+            "h": "(𓌳:𓁹)*𓄿*𓄿 𓅭*𓀀 𓇋:𓏏*𓀀",
             "trans": "m33 s3 ỉt",
             "meanEn": "The son sees the father (Transitive Verb).",
             "meanAr": "يرى الابنُ الأبَ",
@@ -516,7 +516,7 @@
             "noteAr": "فعل متعدٍ + فاعل + مفعول به"
           },
           {
-            "h": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛:𓈖*𓂝 𓅭*𓀀:𓆑",
+            "h": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛*(𓈖:𓂝) 𓅭*𓀀:𓆑",
             "trans": "rš ỉt ḥnʿ s3=f",
             "meanEn": "The father rejoices with his son (Intransitive Verb).",
             "meanAr": "يفرح الأب مع ابنه",
@@ -801,7 +801,7 @@
             "meanAr": "يأكل، يتحدث"
           },
           {
-            "h": "𓀐",
+            "h": "𓀉",
             "meanEn": "weary, weak",
             "meanAr": "متعب، ضعيف"
           },
@@ -841,7 +841,7 @@
             "meanAr": "يمشي، يجري"
           },
           {
-            "h": "𓅆",
+            "h": "𓅬",
             "meanEn": "bird, insect",
             "meanAr": "طائر، حشرة"
           },

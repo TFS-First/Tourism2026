@@ -3,8 +3,11 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { getDatasets,loadLessons,validateLessons,assembleSource,json,sha256,read } from '../scripts/project.mjs';
 const original=json('tests/fixtures/refactor-baseline.json');
-test('original lesson content is unchanged except for the explicit source-reviewed lesson-three corrections',()=>{
+test('original content is unchanged outside the explicit source-reviewed grammar corrections',()=>{
  const lessons=loadLessons().filter(l=>['lesson1','lesson2','lesson3'].includes(l.id));
+ // Undo the later inline-guide / glyph review before checking the earlier approved review.
+ const glyphReview=json('tests/fixtures/grammar-glyph-review.json');
+ for(const change of glyphReview.changes){let target=lessons.find(l=>l.id===change.lessonId);for(const key of change.path.slice(0,-1))target=target[key];const key=change.path.at(-1);if(change.removed){assert.equal(Object.hasOwn(target,key),false);target[key]=change.before;}else{assert.deepEqual(target[key],change.after,'Reviewed value changed at '+change.path.join('.'));if(change.added)delete target[key];else target[key]=change.before;}}
  // Reverse only the explicit, source-reviewed corrections; never replace the baseline hashes.
  const reviewed=json('tests/fixtures/lesson-03-reviewed-changes.json');
  const lesson3=lessons.find(l=>l.id==='lesson3');

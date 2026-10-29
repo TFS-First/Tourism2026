@@ -1,0 +1,4424 @@
+{
+  "baselineCommit": "3950137",
+  "scope": "All existing grammar h fields; layout and two source-confirmed determinative mismatches. Not a claim of verbatim philological attestation for every composed sentence.",
+  "reviewedEntries": 207,
+  "correctedEntries": 22,
+  "audit": [
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "m pt",
+      "before": "𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "m dpt",
+      "before": "𓅓 𓂧*𓊪:𓏏*𓊛",
+      "after": "𓅓 𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "m ḫt tn",
+      "before": "𓅓 𓐍:𓏏 𓏏:𓈖",
+      "after": "𓅓 𓐍:𓏏 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "m bw pn",
+      "before": "𓅓 𓃀*𓅱 𓊪:𓈖",
+      "after": "𓅓 𓃀*𓅱 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "n s",
+      "before": "𓈖 𓊃*𓀀",
+      "after": "𓈖 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "n Ptḥ",
+      "before": "𓈖 𓊪:𓏏*𓎛",
+      "after": "𓈖 𓊪:𓏏*𓎛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "n ỉt",
+      "before": "𓈖 𓇋*𓏏*𓀀",
+      "after": "𓈖 𓇋*𓏏*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "n st",
+      "before": "𓈖 𓊃:𓏏*𓁐",
+      "after": "𓈖 𓊃:𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "r š",
+      "before": "𓂋 𓈙:𓈘",
+      "after": "𓂋 𓈙:𓈘",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "r pt",
+      "before": "𓂋 𓊪:𓏏*𓇯",
+      "after": "𓂋 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        2,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "r bw pn",
+      "before": "𓂋 𓃀*𓅱 𓊪:𓈖",
+      "after": "𓂋 𓃀*𓅱 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        3,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "s ḥnʿ st",
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐",
+      "status": "corrected",
+      "references": [
+        "§21 vocabulary, p30: tall flax beside water over forearm"
+      ]
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        3,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ ḥnʿ ỉʿḥ",
+      "before": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+      "after": "𓂋:𓂝*𓇳 𓎛*(𓈖:𓂝) 𓇋*𓂝*𓎛*𓇹",
+      "status": "corrected",
+      "references": [
+        "§21 vocabulary, p30: tall flax beside water over forearm",
+        "§20, p29: moon word, reed and flax not stacked into two tall columns"
+      ]
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        4,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "n s",
+      "before": "𓈖 𓊃*𓀀",
+      "after": "𓈖 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        4,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "n Ptḥ",
+      "before": "𓈖 𓊪:𓏏*𓎛",
+      "after": "𓈖 𓊪:𓏏*𓎛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        4,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "r š",
+      "before": "𓂋 𓈙:𓈘",
+      "after": "𓂋 𓈙:𓈘",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        4,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "r pt",
+      "before": "𓂋 𓊪:𓏏*𓇯",
+      "after": "𓂋 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "m pt",
+      "before": "𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "m dpt",
+      "before": "𓅓 𓂧*𓊪:𓏏*𓊛",
+      "after": "𓅓 𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "n s",
+      "before": "𓈖 𓊃*𓀀",
+      "after": "𓈖 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "n Ptḥ",
+      "before": "𓈖 𓊪:𓏏*𓎛",
+      "after": "𓈖 𓊪:𓏏*𓎛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "r š",
+      "before": "𓂋 𓈙:𓈘",
+      "after": "𓂋 𓈙:𓈘",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        5,
+        "h"
+      ],
+      "transliteration": "r pt",
+      "before": "𓂋 𓊪:𓏏*𓇯",
+      "after": "𓂋 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        6,
+        "h"
+      ],
+      "transliteration": "s ḥnʿ st",
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐",
+      "status": "corrected",
+      "references": [
+        "§21 vocabulary, p30: tall flax beside water over forearm"
+      ]
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        7,
+        "h"
+      ],
+      "transliteration": "rʿ ḥnʿ ỉʿḥ",
+      "before": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+      "after": "𓂋:𓂝*𓇳 𓎛*(𓈖:𓂝) 𓇋*𓂝*𓎛*𓇹",
+      "status": "corrected",
+      "references": [
+        "§21 vocabulary, p30: tall flax beside water over forearm",
+        "§20, p29: moon word, reed and flax not stacked into two tall columns"
+      ]
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rn pn",
+      "before": "𓂋:𓈖 𓊪:𓈖",
+      "after": "𓂋:𓈖 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "s pn",
+      "before": "𓊃*𓀀 𓊪:𓈖",
+      "after": "𓊃*𓀀 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḫr pn",
+      "before": "𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "after": "𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "pt tn",
+      "before": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "after": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "ḫt tn",
+      "before": "𓐍:𓏏 𓏏:𓈖",
+      "after": "𓐍:𓏏 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "dpt tn",
+      "before": "𓂧*𓊪:𓏏*𓊛 𓏏:𓈖",
+      "after": "𓂧*𓊪:𓏏*𓊛 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ky bw",
+      "before": "𓎡*𓇌 𓃀*𓅱",
+      "after": "𓎡*𓇌 𓃀*𓅱",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "ky s",
+      "before": "𓎡*𓇌 𓊃*𓀀",
+      "after": "𓎡*𓇌 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ky rn",
+      "before": "𓎡*𓇌 𓂋:𓈖",
+      "after": "𓎡*𓇌 𓂋:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "kt ḫt",
+      "before": "𓎡:𓏏 𓐍:𓏏",
+      "after": "𓎡:𓏏 𓐍:𓏏",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "kt st",
+      "before": "𓎡:𓏏 𓊃:𓏏*𓁐",
+      "after": "𓎡:𓏏 𓊃:𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "kt dpt",
+      "before": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "after": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        4,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rn pn",
+      "before": "𓂋:𓈖 𓊪:𓈖",
+      "after": "𓂋:𓈖 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        4,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "pt tn",
+      "before": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "after": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        4,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ky bw",
+      "before": "𓎡*𓇌 𓃀*𓅱",
+      "after": "𓎡*𓇌 𓃀*𓅱",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        4,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "kt ḫt",
+      "before": "𓎡:𓏏 𓐍:𓏏",
+      "after": "𓎡:𓏏 𓐍:𓏏",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rn pn",
+      "before": "𓂋:𓈖 𓊪:𓈖",
+      "after": "𓂋:𓈖 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "s pn",
+      "before": "𓊃*𓀀 𓊪:𓈖",
+      "after": "𓊃*𓀀 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "pt tn",
+      "before": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "after": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "ḫt tn",
+      "before": "𓐍:𓏏 𓏏:𓈖",
+      "after": "𓐍:𓏏 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "ky bw",
+      "before": "𓎡*𓇌 𓃀*𓅱",
+      "after": "𓎡*𓇌 𓃀*𓅱",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        5,
+        "h"
+      ],
+      "transliteration": "ky s",
+      "before": "𓎡*𓇌 𓊃*𓀀",
+      "after": "𓎡*𓇌 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        6,
+        "h"
+      ],
+      "transliteration": "kt ḫt",
+      "before": "𓎡:𓏏 𓐍:𓏏",
+      "after": "𓎡:𓏏 𓐍:𓏏",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        7,
+        "h"
+      ],
+      "transliteration": "kt dpt",
+      "before": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "after": "𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ỉm",
+      "before": "𓇋*𓅓",
+      "after": "𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ỉm",
+      "before": "𓇋*𓅓",
+      "after": "𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "s ỉm",
+      "before": "𓊃*𓀀 𓇋*𓅓",
+      "after": "𓊃*𓀀 𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ ỉm",
+      "before": "𓂋:𓂝*𓇳 𓇋*𓅓",
+      "after": "𓂋:𓂝*𓇳 𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "s ỉm",
+      "before": "𓊃*𓀀 𓇋*𓅓",
+      "after": "𓊃*𓀀 𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "rʿ ỉm",
+      "before": "𓂋:𓂝*𓇳 𓇋*𓅓",
+      "after": "𓂋:𓂝*𓇳 𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "sš ỉm",
+      "before": "𓏞*𓀀 𓇋*𓅓",
+      "after": "𓏞*𓀀 𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ",
+      "before": "𓂋:𓂝*𓇳",
+      "after": "𓂋:𓂝*𓇳",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "sš",
+      "before": "𓏞*𓀀",
+      "after": "𓏞*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "m pt",
+      "before": "𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "ỉm",
+      "before": "𓇋*𓅓",
+      "after": "𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ m pt",
+      "before": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ m pt",
+      "before": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ m pt",
+      "before": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        1,
+        "subPoints",
+        3,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ m pt",
+      "before": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ỉw rʿ m pt",
+      "before": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        2,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ỉw sš m nỉwt",
+      "before": "𓇋*𓅱 𓏞*𓀀 𓅓 𓊖:(𓏏*𓏤)",
+      "after": "𓇋*𓅱 𓏞*𓀀 𓅓 𓊖:(𓏏*𓏤)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ m pt",
+      "before": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "ỉw rʿ m pt",
+      "before": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓇋*𓅱 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "ỉw sš m nỉwt",
+      "before": "𓇋*𓅱 𓏞*𓀀 𓅓 𓊖:(𓏏*𓏤)",
+      "after": "𓇋*𓅱 𓏞*𓀀 𓅓 𓊖:(𓏏*𓏤)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "rʿ ỉm",
+      "before": "𓂋:𓂝*𓇳 𓇋*𓅓",
+      "after": "𓂋:𓂝*𓇳 𓇋*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "ỉw dpt m š",
+      "before": "𓇋*𓅱 𓂧*𓊪:𓏏*𓊛 𓅓 𓈙:𓈘",
+      "after": "𓇋*𓅱 𓂧*𓊪:𓏏*𓊛 𓅓 𓈙:𓈘",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        5,
+        "h"
+      ],
+      "transliteration": "ỉw s m pr",
+      "before": "𓇋*𓅱 𓊃*𓀀 𓅓 𓉐:𓏤",
+      "after": "𓇋*𓅱 𓊃*𓀀 𓅓 𓉐:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rḫ",
+      "before": "𓂋:𓐍*𓏛",
+      "after": "𓂋:𓐍*𓏛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "sḏm",
+      "before": "𓋴*𓄔*𓅓",
+      "after": "𓋴*𓄔*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "wbn",
+      "before": "𓅱*𓃀*𓈖:𓇳",
+      "after": "𓅱*𓃀*𓈖:𓇳",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sš",
+      "before": "𓏞*𓀀",
+      "after": "𓏞*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "rʿ",
+      "before": "𓂋:𓂝*𓇳",
+      "after": "𓂋:𓂝*𓇳",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḫr",
+      "before": "𓋴*𓐍:𓂋*𓏛",
+      "after": "𓋴*𓐍:𓂋*𓏛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        2,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "rn",
+      "before": "𓂋:𓈖",
+      "after": "𓂋:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        3,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "m hrw pn",
+      "before": "𓅓 𓉔:𓂋*𓅱:𓇳 𓊪:𓈖",
+      "after": "𓅓 𓉔:𓂋*𓅱:𓇳 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        3,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "m pt",
+      "before": "𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rḫ",
+      "before": "𓂋:𓐍*𓏛",
+      "after": "𓂋:𓐍*𓏛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "sḏm",
+      "before": "𓋴*𓄔*𓅓",
+      "after": "𓋴*𓄔*𓅓",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "m33",
+      "before": "𓌳*𓄿:𓄿*𓁹",
+      "after": "(𓌳:𓁹)*𓄿*𓄿",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary: mꜣꜣ, two adjacent vultures"
+      ]
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "h3b",
+      "before": "𓉔:𓄿*𓃀*𓂻",
+      "after": "𓉔*𓄿*𓃀*𓂻",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary: hꜣb, reed shelter beside vulture"
+      ]
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rḫ sš sḫr",
+      "before": "𓂋:𓐍*𓏛 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛",
+      "after": "𓂋:𓐍*𓏛 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn",
+      "before": "𓅱*𓃀*𓈖:𓇳",
+      "after": "𓅱*𓃀*𓈖:𓇳",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "h3",
+      "before": "𓉔*𓄿*𓂻",
+      "after": "𓉔*𓄿*𓂻",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "d3",
+      "before": "𓍑*𓄿*𓊛",
+      "after": "𓍑*𓄿*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "rš",
+      "before": "𓂋:𓈙*𓀠",
+      "after": "𓂋:𓈙*𓀠",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        3,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        4,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        3,
+        "subPoints",
+        5,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rḫ sš sḫr m hrw pn",
+      "before": "𓂋:𓐍*𓏛 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓅓 𓉔:𓂋*𓅱:𓇳 𓊪:𓈖",
+      "after": "𓂋:𓐍*𓏛 𓏞*𓀀 𓋴*𓐍:𓂋*𓏛 𓅓 𓉔:𓂋*𓅱:𓇳 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "sḏm s pn rn pn",
+      "before": "𓋴*𓄔*𓅓 𓊃*𓀀 𓊪:𓈖 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓 𓊃*𓀀 𓊪:𓈖 𓂋:𓈖 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "wbn rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "h3 sš m kt dpt",
+      "before": "𓉔*𓄿*𓂻 𓏞*𓀀 𓅓 𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "after": "𓉔*𓄿*𓂻 𓏞*𓀀 𓅓 𓎡:𓏏 𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "m33 s3 ỉt",
+      "before": "𓌳*𓄿:𓄿*𓁹 𓅭*𓀀 𓇋:𓏏*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿 𓅭*𓀀 𓇋:𓏏*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary: mꜣꜣ, two adjacent vultures"
+      ]
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        5,
+        "h"
+      ],
+      "transliteration": "rš ỉt ḥnʿ s3=f",
+      "before": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛:𓈖*𓂝 𓅭*𓀀:𓆑",
+      "after": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛*(𓈖:𓂝) 𓅭*𓀀:𓆑",
+      "status": "corrected",
+      "references": [
+        "§21 vocabulary, p30: tall flax beside water over forearm"
+      ]
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ",
+      "before": "𓇳:𓏤",
+      "after": "𓇳:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "pr",
+      "before": "𓉐:𓏤",
+      "after": "𓉐:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "r",
+      "before": "𓂋:𓏤",
+      "after": "𓂋:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "t3",
+      "before": "𓇿:𓏤",
+      "after": "𓇿:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "r",
+      "before": "𓂋:𓏤",
+      "after": "𓂋:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "nỉwt",
+      "before": "𓊖:(𓏏*𓏤)",
+      "after": "𓊖:(𓏏*𓏤)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "rʿ",
+      "before": "𓇳:𓏤",
+      "after": "𓇳:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "pr",
+      "before": "𓉐:𓏤",
+      "after": "𓉐:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "nỉwt",
+      "before": "𓊖:(𓏏*𓏤)",
+      "after": "𓊖:(𓏏*𓏤)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "r",
+      "before": "𓂋:𓏤",
+      "after": "𓂋:𓏤",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sš",
+      "before": "𓏞*𓀀",
+      "after": "𓏞*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "dpt",
+      "before": "𓂧*𓊪:𓏏*𓊛",
+      "after": "𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wỉ3",
+      "before": "𓅱*𓇋*𓄿*𓊛",
+      "after": "𓅱*𓇋*𓄿*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wỉ3",
+      "before": "𓅱*𓇋*𓄿*𓊛",
+      "after": "𓅱*𓇋*𓄿*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "dpt",
+      "before": "𓂧*𓊪:𓏏*𓊛",
+      "after": "𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "sš",
+      "before": "𓏞*𓀀",
+      "after": "𓏞*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        3,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "grḥ",
+      "before": "𓎼:𓂋*𓎛*𓄛",
+      "after": "𓎼:𓂋*𓎛*𓄛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        0,
+        "h"
+      ],
+      "transliteration": "man, person",
+      "before": "𓀀",
+      "after": "𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        1,
+        "h"
+      ],
+      "transliteration": "woman",
+      "before": "𓁐",
+      "after": "𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        2,
+        "h"
+      ],
+      "transliteration": "people",
+      "before": "𓀀𓁐𓏥",
+      "after": "𓀀𓁐𓏥",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        3,
+        "h"
+      ],
+      "transliteration": "child, young",
+      "before": "𓀔",
+      "after": "𓀔",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        4,
+        "h"
+      ],
+      "transliteration": "old man",
+      "before": "𓀗",
+      "after": "𓀗",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        5,
+        "h"
+      ],
+      "transliteration": "official, noble",
+      "before": "𓀙",
+      "after": "𓀙",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        6,
+        "h"
+      ],
+      "transliteration": "god, king",
+      "before": "𓀭",
+      "after": "𓀭",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        7,
+        "h"
+      ],
+      "transliteration": "praise, supplicate",
+      "before": "𓀢",
+      "after": "𓀢",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        8,
+        "h"
+      ],
+      "transliteration": "eat, drink, speak",
+      "before": "𓀁",
+      "after": "𓀁",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        9,
+        "h"
+      ],
+      "transliteration": "weary, weak",
+      "before": "𓀐",
+      "after": "𓀉",
+      "status": "corrected",
+      "references": [
+        "§24 p32: weary/weak uses A7, not fallen enemy A14"
+      ]
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        10,
+        "h"
+      ],
+      "transliteration": "lie down, death",
+      "before": "𓁀",
+      "after": "𓁀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        11,
+        "h"
+      ],
+      "transliteration": "head, nod",
+      "before": "𓁶",
+      "after": "𓁶",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        12,
+        "h"
+      ],
+      "transliteration": "eye, see",
+      "before": "𓁹",
+      "after": "𓁹",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        13,
+        "h"
+      ],
+      "transliteration": "ear, hear",
+      "before": "𓄔",
+      "after": "𓄔",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        14,
+        "h"
+      ],
+      "transliteration": "force, effort",
+      "before": "𓂡",
+      "after": "𓂡",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        15,
+        "h"
+      ],
+      "transliteration": "leg, foot",
+      "before": "𓂾",
+      "after": "𓂾",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        16,
+        "h"
+      ],
+      "transliteration": "walk, run",
+      "before": "𓂻",
+      "after": "𓂻",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        17,
+        "h"
+      ],
+      "transliteration": "bird, insect",
+      "before": "𓅆",
+      "after": "𓅬",
+      "status": "corrected",
+      "references": [
+        "§24 p32: bird/insect generic determinative G38, not divine falcon G7"
+      ]
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        18,
+        "h"
+      ],
+      "transliteration": "small, bad, poor",
+      "before": "𓅪",
+      "after": "𓅪",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        19,
+        "h"
+      ],
+      "transliteration": "fish",
+      "before": "𓆝",
+      "after": "𓆝",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        20,
+        "h"
+      ],
+      "transliteration": "snake, worm",
+      "before": "𓆙",
+      "after": "𓆙",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        21,
+        "h"
+      ],
+      "transliteration": "tree",
+      "before": "𓆭",
+      "after": "𓆭",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        22,
+        "h"
+      ],
+      "transliteration": "earth, land",
+      "before": "𓈇",
+      "after": "𓈇",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        23,
+        "h"
+      ],
+      "transliteration": "canal, river",
+      "before": "𓈘",
+      "after": "𓈘",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        24,
+        "h"
+      ],
+      "transliteration": "water, liquid",
+      "before": "𓈗",
+      "after": "𓈗",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        25,
+        "h"
+      ],
+      "transliteration": "house, building",
+      "before": "𓉐",
+      "after": "𓉐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        26,
+        "h"
+      ],
+      "transliteration": "town, village",
+      "before": "𓊖",
+      "after": "𓊖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        27,
+        "h"
+      ],
+      "transliteration": "boat, sail",
+      "before": "𓊛",
+      "after": "𓊛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        28,
+        "h"
+      ],
+      "transliteration": "fire, cook",
+      "before": "𓊮",
+      "after": "𓊮",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        29,
+        "h"
+      ],
+      "transliteration": "write, abstract idea",
+      "before": "𓏛",
+      "after": "𓏛",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        30,
+        "h"
+      ],
+      "transliteration": "rope, tie",
+      "before": "𓏲",
+      "after": "𓏲",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        31,
+        "h"
+      ],
+      "transliteration": "cloth, garment",
+      "before": "𓋳",
+      "after": "𓋳",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        32,
+        "h"
+      ],
+      "transliteration": "foreign land",
+      "before": "𓌙",
+      "after": "𓌙",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        33,
+        "h"
+      ],
+      "transliteration": "wind, breathe",
+      "before": "𓊡",
+      "after": "𓊡",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "s",
+      "before": "𓊃*𓀀",
+      "after": "𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "s3",
+      "before": "𓅭*𓀀",
+      "after": "𓅭*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "rn",
+      "before": "𓂋:𓈖",
+      "after": "𓂋:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "s pn",
+      "before": "𓊃*𓀀 𓊪:𓈖",
+      "after": "𓊃*𓀀 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "ky s",
+      "before": "𓎡*𓇌 𓊃*𓀀",
+      "after": "𓎡*𓇌 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "st",
+      "before": "𓊃:𓏏*𓁐",
+      "after": "𓊃:𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "s3t",
+      "before": "𓅭:𓏏*𓁐",
+      "after": "𓅭:𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "nỉwt",
+      "before": "𓊖:(𓏏*𓏤)",
+      "after": "𓊖:(𓏏*𓏤)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "pt tn",
+      "before": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "after": "𓊪:𓏏*𓇯 𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "kt ḫt",
+      "before": "𓎡:𓏏 𓐍:𓏏",
+      "after": "𓎡:𓏏 𓐍:𓏏",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "s",
+      "before": "𓊃*𓀀",
+      "after": "𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "st",
+      "before": "𓊃:𓏏*𓁐",
+      "after": "𓊃:𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "s3",
+      "before": "𓅭*𓀀",
+      "after": "𓅭*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "s3t",
+      "before": "𓅭:𓏏*𓁐",
+      "after": "𓅭:𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "b3k",
+      "before": "𓃀*𓄿:𓎡*𓀀",
+      "after": "𓃀*𓄿:𓎡*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        5,
+        "examples",
+        5,
+        "h"
+      ],
+      "transliteration": "b3kt",
+      "before": "𓃀*𓄿:𓎡*𓏏*𓁐",
+      "after": "𓃀*𓄿:𓎡*𓏏*𓁐",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm=f",
+      "before": "𓋴*𓄔*𓅓*𓆑",
+      "after": "𓋴*𓄔*𓅓*𓆑",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "m33=k",
+      "before": "(𓌳:𓁹)*𓄿*𓄿*𓎡",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*𓎡",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "h3b=s",
+      "before": "𓉔:𓄿*𓃀*𓂻:𓋴",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓋴",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §39: hꜣb signs and suffix stand beside the vulture"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        0,
+        "h"
+      ],
+      "transliteration": "=ỉ",
+      "before": "𓀀",
+      "after": "𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        1,
+        "h"
+      ],
+      "transliteration": "=k",
+      "before": "𓎡",
+      "after": "𓎡",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        2,
+        "h"
+      ],
+      "transliteration": "=ṯ",
+      "before": "𓍿",
+      "after": "𓍿",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        3,
+        "h"
+      ],
+      "transliteration": "=f",
+      "before": "𓆑",
+      "after": "𓆑",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        4,
+        "h"
+      ],
+      "transliteration": "=s",
+      "before": "𓋴",
+      "after": "𓋴",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        5,
+        "h"
+      ],
+      "transliteration": "=n",
+      "before": "𓈖",
+      "after": "𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        6,
+        "h"
+      ],
+      "transliteration": "=tn",
+      "before": "𓏏:𓈖",
+      "after": "𓏏:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "pronounsTable",
+        7,
+        "h"
+      ],
+      "transliteration": "=sn",
+      "before": "𓋴:𓈖",
+      "after": "𓋴:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm=f rn pn",
+      "before": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "m33=k s3",
+      "before": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*𓎡 𓅭*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "h3b=s b3k",
+      "before": "𓉔:𓄿*𓃀*𓂻:𓋴 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓋴 𓃀*𓄿:𓎡*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §39: hꜣb signs and suffix stand beside the vulture"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "sḏm=n rn pn",
+      "before": "𓋴*𓄔*𓅓:𓈖 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓈖 𓂋:𓈖 𓊪:𓈖",
+      "status": "corrected",
+      "references": [
+        "§39 paradigm p42: owl and suffix n adjacent"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "m33=sn ỉtrw",
+      "before": "(𓌳:𓁹)*𓄿*𓄿*(𓋴:𓈖) 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓋴:𓈖) 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary: ỉtrw, reed beside t/r group and quail"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm=f rn",
+      "before": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓆑 𓂋:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "h3b ṯ3ty b3k",
+      "before": "𓉔:𓄿*𓃀*𓂻 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary: hꜣb, reed shelter beside vulture"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm.tw rn",
+      "before": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm.tw=f",
+      "before": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm=f (passive)",
+      "before": "𓋴*𓄔*𓅓*𓆑",
+      "after": "𓋴*𓄔*𓅓*𓆑",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "h3b.tw b3k ỉn ṯ3ty",
+      "before": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §39: hꜣb followed by the .tw group"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "ỉn",
+      "before": "𓇋*𓈖",
+      "after": "𓇋*𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm.tw rn",
+      "before": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "sḏm.tw=f",
+      "before": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱)*𓆑",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "h3b.tw b3k ỉn ṯ3ty",
+      "before": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §39: hꜣb followed by the .tw group"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "sḏm.tw rn ỉn s",
+      "before": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "after": "𓋴*𓄔*𓅓*(𓏏:𓅱) 𓂋:𓈖 𓇋*𓈖 𓊃*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "m33.tw msḥ ỉn sš",
+      "before": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓏏:𓅱) 𓅓*𓋴*𓎛*𓆊 𓇋*𓈖 𓏞*𓀀",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm.n=f",
+      "before": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "h3b.n ṯ3ty b3k",
+      "before": "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §67: hꜣb followed by .n"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm.n=f",
+      "before": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑)",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "wbn.n rʿ",
+      "before": "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳",
+      "after": "𓅱*𓃀*(𓈖:𓇳)*𓈖 𓂋:𓂝*𓇳",
+      "status": "corrected",
+      "references": [
+        "p30 wbn + §67: .n after stem/determinative, not inside n+n+sun column"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        0,
+        "h"
+      ],
+      "transliteration": "sḏm.n=f rn pn",
+      "before": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*(𓈖:𓆑) 𓂋:𓈖 𓊪:𓈖",
+      "status": "no-layout-change",
+      "references": []
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        1,
+        "h"
+      ],
+      "transliteration": "h3b.n ṯ3ty b3k",
+      "before": "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §67: hꜣb followed by .n"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        2,
+        "h"
+      ],
+      "transliteration": "wbn.n rʿ m pt",
+      "before": "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*(𓈖:𓇳)*𓈖 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "status": "corrected",
+      "references": [
+        "p30 wbn + §67: .n after stem/determinative, not inside n+n+sun column"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        3,
+        "h"
+      ],
+      "transliteration": "m33.n=n s3t",
+      "before": "𓌳*𓄿:𓄿*𓈖:𓈖 𓅭:𓏏*𓁐",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓈖:𓈖) 𓅭:𓏏*𓁐",
+      "status": "corrected",
+      "references": [
+        "p43 vocabulary + §67: restore eye in mꜣꜣ and keep birds side by side"
+      ]
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        4,
+        "h"
+      ],
+      "transliteration": "d3.n sš m dpt",
+      "before": "𓍑*𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
+      "after": "𓍑*𓄿*𓈖 𓏞*𓀀 𓅓 𓂧*𓊪:𓏏*𓊛",
+      "status": "no-layout-change",
+      "references": []
+    }
+  ],
+  "changes": [
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        6,
+        "h"
+      ],
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐"
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        7,
+        "h"
+      ],
+      "before": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+      "after": "𓂋:𓂝*𓇳 𓎛*(𓈖:𓂝) 𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        3,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+      "after": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐"
+    },
+    {
+      "lessonId": "lesson1",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        3,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+      "after": "𓂋:𓂝*𓇳 𓎛*(𓈖:𓂝) 𓇋*𓂝*𓎛*𓇹"
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        4,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹 𓅭*𓀀 𓇋:𓏏*𓀀",
+      "after": "(𓌳:𓁹)*𓄿*𓄿 𓅭*𓀀 𓇋:𓏏*𓀀"
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        5,
+        "h"
+      ],
+      "before": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛:𓈖*𓂝 𓅭*𓀀:𓆑",
+      "after": "𓂋:𓈙*𓀠 𓇋:𓏏*𓀀 𓎛*(𓈖:𓂝) 𓅭*𓀀:𓆑"
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓁹",
+      "after": "(𓌳:𓁹)*𓄿*𓄿"
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        1,
+        "subPoints",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻",
+      "after": "𓉔*𓄿*𓃀*𓂻"
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        9,
+        "h"
+      ],
+      "before": "𓀐",
+      "after": "𓀉"
+    },
+    {
+      "lessonId": "lesson2",
+      "path": [
+        "grammar",
+        "rules",
+        4,
+        "items",
+        17,
+        "h"
+      ],
+      "before": "𓅆",
+      "after": "𓅬"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "learningGuide"
+      ],
+      "removed": true,
+      "before": {
+        "title": "افهم الفكرة أولًا، ثم اقرأ القواعد",
+        "intro": "هنثبت نفس الجملة ونغيّر حاجة واحدة كل مرة. الأمثلة التالية للتوضيح من إعداد التطبيق، وليست اقتباسات من جاردنر. كلمة «الخطة» هنا بمعنى التدبير / المشورة (sḫr).",
+        "source": "Gardiner, Egyptian Grammar, 3rd edition: §§39–40 (ص41–43)، §67–68 (ص55–56)، §§419–420 (ص337). أرقام الصفحات المطبوعة. النقطة . تفصل عنصر الصيغة، وعلامة = تفصل الضمير المتصل؛ ليست علامات تُكتب في النص الهيروغليفي.",
+        "steps": [
+          {
+            "title": "١ — معلوم أم مجهول؟ اسأل: مين عمل الفعل؟",
+            "explanation": "في «يسمع الرجلُ الخطةَ»، الرجل هو الذي يسمع. في «تُسمَع الخطةُ»، ركزنا على الخطة ولم نذكر السامع. تغيير المعلوم إلى المجهول لا يغيّر الزمن وحده.",
+            "pairs": [
+              {
+                "label": "معلوم — قراءة تعليمية بالمضارع",
+                "arabic": "يسمع رجلٌ هذه الخطة.",
+                "trans": "sḏm s sḫr pn",
+                "literal": "يسمع رجلٌ هذه الخطة.",
+                "analysis": "sḏm = يسمع • s = رجل • sḫr pn = هذه الخطة. الترتيب: فعل + فاعل + مفعول."
+              },
+              {
+                "label": "مجهول بـ .tw",
+                "arabic": "تُسمَع هذه الخطة.",
+                "trans": "sḏm.tw sḫr pn",
+                "literal": "تُسمَع هذه الخطة.",
+                "analysis": "أضفنا .tw، وأصبح ما يقع عليه الفعل هو الفاعل النحوي للمجهول (نائب الفاعل في الشرح العربي)."
+              }
+            ],
+            "note": "نقرأ sḏm هنا بالمضارع للتدرّب فقط؛ جاردنر §40 يوضح أن الصيغة أوسع من زمن واحد. النقحرة تكتب العلامات الصوتية، ولا تسجل كل الحركات أو النطق القديم كاملًا.",
+            "tabLabel": "١ · معلوم ومجهول"
+          },
+          {
+            "title": "٢ — انقل نفس الجملة إلى حدث ماضٍ",
+            "explanation": "في المثال المثبت البسيط نضيف .n بعد الفعل. وللمجهول في الصيغة نفسها نستخدم .n.tw بهذا الترتيب (§67).",
+            "pairs": [
+              {
+                "label": "معلوم — حدث ماضٍ",
+                "arabic": "سَمِعَ رجلٌ هذه الخطة.",
+                "trans": "sḏm.n s sḫr pn",
+                "literal": "سَمِعَ رجلٌ هذه الخطة.",
+                "analysis": "sḏm + .n + الفاعل s + المفعول sḫr pn."
+              },
+              {
+                "label": "مجهول — حدث ماضٍ",
+                "arabic": "سُمِعَت هذه الخطة.",
+                "trans": "sḏm.n.tw sḫr pn",
+                "literal": "سُمِعَت هذه الخطة.",
+                "analysis": "sḏm + .n + .tw + نائب الفاعل sḫr pn. لا نستبدل .n بواو آليًا."
+              }
+            ],
+            "note": "ومع فعل القول ḏd، نفس المقارنة التعليمية: ḏd s sḫr pn = يقول رجلٌ هذه الخطة؛ ḏd.tw sḫr pn = تُقال هذه الخطة؛ ḏd.n s sḫr pn = قال رجلٌ هذه الخطة؛ ḏd.n.tw sḫr pn = قيلت هذه الخطة. هذه صيغ تدريبية، وترجمتها الزمنية تفترض السياق المبسّط الموضح هنا.",
+            "tabLabel": "٢ · حدث ماضٍ"
+          },
+          {
+            "title": "٣ — «سَمِعَ» و«كان قد سَمِعَ»: هل التصريف مختلف؟",
+            "explanation": "الماضي البسيط: «سمع الرجل الخطة أمس» = حدث وقع في الماضي. الماضي التام: «عندما وصل الكاتب، كان الرجل قد سمع الخطة» = السماع سبق حدثًا آخر في الماضي. المثال العربي لتوضيح ترتيب الحدثين، وليس ترجمة لنص مصري من الكتاب.",
+            "pairs": [
+              {
+                "label": "التصريف مع ضمير",
+                "arabic": "هو سَمِعَ / قد سَمِعَ / كان قد سَمِعَ، حسب السياق.",
+                "trans": "sḏm.n=f",
+                "literal": "الجذع sḏm + عنصر الصيغة .n + الضمير =f (هو).",
+                "analysis": "الكتابة الأساسية هنا واحدة؛ السياق يحدد هل الأنسب heard أو has heard أو had heard (§67). مفيش علامة إضافية ثابتة بنحطها لمجرد ترجمة «كان قد»."
+              },
+              {
+                "label": "المقارنة التي تحفظها أولًا",
+                "arabic": "يسمع ← سَمِعَ؛ وفي المجهول: يُسمَع ← سُمِعَ.",
+                "trans": "sḏm=f → sḏm.n=f | sḏm.tw=f → sḏm.n.tw=f",
+                "literal": "قارن وجود .n، ثم وجود .tw، ثم حدد الفاعل.",
+                "analysis": "مصطلح Perfective ليس مرادفًا آليًا للماضي التام الإنجليزي، وOld Perfective صيغة أخرى؛ لا نخلطها بـ sḏm.n=f."
+              }
+            ],
+            "note": "جاردنر §68 يستعمل ỉw sḏm.n=f كثيرًا في بداية الخبر السردي المستقل. السياق وتركيب الجملة مهمان؛ المقارنة السابقة مدخل للتعلّم وليست جدول أزمنة شاملًا.",
+            "tabLabel": "٣ · الفرق بين الصيغ"
+          },
+          {
+            "title": "٤ — أمثلة موثّقة، ثم أمثلة التطبيق الموجودة",
+            "explanation": "بعد المقارنة البسيطة، اقرأ مثالين من جاردنر. نعرض النقحرة والمعنى بالعربية؛ الأصل الإنجليزي والرسم في الصفحات المشار إليها.",
+            "pairs": [
+              {
+                "label": "جاردنر §39، ص41",
+                "arabic": "يسمع الكاتبُ.",
+                "trans": "sḏm sš",
+                "literal": "فعل + فاعل اسم ظاهر.",
+                "analysis": "ومع الضمير: sḏm=f = هو يسمع. لاحظ أن الضمير يحل محل الفاعل، فلا نضيفه تلقائيًا إلى كل اسم ظاهر."
+              },
+              {
+                "label": "جاردنر §67، ص55",
+                "arabic": "سُمِعَ الصوتُ.",
+                "trans": "sḏm.n.tw ḫrw",
+                "literal": "نموذج للمجهول مع .n.tw في الكتاب نفسه.",
+                "analysis": "رتّب الأجزاء: sḏm + .n + .tw، ثم الاسم ḫrw. هذا شاهد أوضح من افتراض أن المجهول الماضي دائمًا .w."
+              }
+            ],
+            "note": "الأمثلة التالية داخل القواعد محفوظة، مع التصحيحات الموثقة. لا نعدّ كل مثال سابق اقتباسًا حرفيًا من الكتاب ما لم يُذكر له موضع محدد.",
+            "tabLabel": "٤ · أمثلة من الكتاب"
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        2,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓋴 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓋴 𓃀*𓄿:𓎡*𓀀"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        3,
+        "h"
+      ],
+      "before": "𓋴*𓄔*𓅓:𓈖 𓂋:𓈖 𓊪:𓈖",
+      "after": "𓋴*𓄔*𓅓*𓈖 𓂋:𓈖 𓊪:𓈖"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "examples",
+        4,
+        "h"
+      ],
+      "before": "(𓌳:𓁹)*𓄿*𓄿*(𓋴:𓈖) 𓇋:𓏏*𓂋:𓅱*(𓈘:𓈘:𓈘)",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓋴:𓈖) 𓇋*(𓏏:𓂋)*𓅱*(𓈘:𓈘:𓈘)"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "learningGuide"
+      ],
+      "added": true,
+      "after": {
+        "title": "ابدأ من هنا: الفعل، ثم الفاعل",
+        "intro": "اقرأ الرموز مع النقحرة والمعنى. النموذجان هنا من جاردنر §39، ص41، قبل الدخول في جدول الضمائر.",
+        "source": "Gardiner, Egyptian Grammar, 3rd edition: §§39–40 (ص41–43)، §67–68 (ص55–56)، §§419–420 (ص337). أرقام الصفحات المطبوعة. النقطة . تفصل عنصر الصيغة، وعلامة = تفصل الضمير المتصل؛ ليست علامات تُكتب في النص الهيروغليفي.",
+        "steps": [
+          {
+            "title": "فاعل ظاهر أم ضمير؟",
+            "tabLabel": "الفعل والفاعل",
+            "explanation": "الفعل sḏm معناه «يسمع». بعده إما اسم يحدد مَن يسمع، أو ضمير متصل يقوم مقامه.",
+            "pairs": [
+              {
+                "label": "الفاعل اسم ظاهر",
+                "h": "𓄔*𓅓 𓏞*𓀀",
+                "trans": "sḏm sš",
+                "arabic": "يسمع الكاتبُ.",
+                "literal": "sḏm = يسمع • sš = الكاتب.",
+                "analysis": "مثال جاردنر §39. اقرأ الفعل أولًا، ثم الفاعل."
+              },
+              {
+                "label": "الفاعل ضمير متصل",
+                "h": "𓄔*𓅓*𓆑",
+                "trans": "sḏm=f",
+                "arabic": "هو يسمع.",
+                "literal": "=f = هو.",
+                "analysis": "مثال جاردنر §39. الضمير هنا هو الفاعل؛ لا نضيف معه فاعلًا اسميًا لنفس الدور."
+              }
+            ],
+            "note": "النقحرة تكتب قيمة العلامات، وليست نطقًا مسجلًا كاملًا. تُقرأ sḏm بالمضارع هنا للتمهيد؛ السياق قد يغيّر الترجمة (§40)."
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        0,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓋴",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓋴"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "examples",
+        2,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "learningGuide"
+      ],
+      "added": true,
+      "after": {
+        "title": "افهم المعلوم والمجهول بمثالين بسيطين",
+        "intro": "هنثبت نفس الجملة ونغيّر حاجة واحدة كل مرة. الأمثلة التالية للتوضيح من إعداد التطبيق، وليست اقتباسات من جاردنر. كلمة «الخطة» هنا بمعنى التدبير / المشورة (sḫr).",
+        "source": "Gardiner, Egyptian Grammar, 3rd edition: §§39–40 (ص41–43)، §67–68 (ص55–56)، §§419–420 (ص337). أرقام الصفحات المطبوعة. النقطة . تفصل عنصر الصيغة، وعلامة = تفصل الضمير المتصل؛ ليست علامات تُكتب في النص الهيروغليفي.",
+        "steps": [
+          {
+            "title": "المعلوم والمجهول: اسأل مين عمل الفعل؟",
+            "explanation": "في «يسمع الرجلُ الخطةَ»، الرجل هو الذي يسمع. في «تُسمَع الخطةُ»، ركزنا على الخطة ولم نذكر السامع. تغيير المعلوم إلى المجهول لا يغيّر الزمن وحده.",
+            "pairs": [
+              {
+                "label": "معلوم — قراءة تعليمية بالمضارع",
+                "arabic": "يسمع رجلٌ هذه الخطة.",
+                "trans": "sḏm s sḫr pn",
+                "literal": "يسمع رجلٌ هذه الخطة.",
+                "analysis": "sḏm = يسمع • s = رجل • sḫr pn = هذه الخطة. الترتيب: فعل + فاعل + مفعول.",
+                "h": "𓄔*𓅓 𓊃*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖"
+              },
+              {
+                "label": "مجهول بـ .tw",
+                "arabic": "تُسمَع هذه الخطة.",
+                "trans": "sḏm.tw sḫr pn",
+                "literal": "تُسمَع هذه الخطة.",
+                "analysis": "أضفنا .tw، وأصبح ما يقع عليه الفعل هو الفاعل النحوي للمجهول (نائب الفاعل في الشرح العربي).",
+                "h": "𓄔*𓅓*(𓏏:𓅱) 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖"
+              }
+            ],
+            "note": "نقرأ sḏm هنا بالمضارع للتدرّب فقط؛ جاردنر §40 يوضح أن الصيغة أوسع من زمن واحد. النقحرة تكتب العلامات الصوتية، ولا تسجل كل الحركات أو النطق القديم كاملًا.",
+            "tabLabel": "يسمع ← تُسمَع"
+          },
+          {
+            "title": "نفس الفكرة مع فعل القول",
+            "explanation": "نغيّر الفعل فقط من «يسمع» إلى «يقول»، ونحتفظ بنفس فكرة المعلوم والمجهول. الجمل تعليمية من إعداد التطبيق وليست اقتباسات.",
+            "pairs": [
+              {
+                "label": "معلوم",
+                "h": "𓆓:𓂧 𓊃*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+                "arabic": "يقول رجلٌ هذه الخطة.",
+                "trans": "ḏd s sḫr pn",
+                "literal": "ḏd = يقول • s = رجل • sḫr pn = هذه الخطة.",
+                "analysis": "الفعل ثم الفاعل ثم المفعول به."
+              },
+              {
+                "label": "مجهول بـ .tw",
+                "h": "𓆓:𓂧*(𓏏:𓅱) 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+                "arabic": "تُقال هذه الخطة.",
+                "trans": "ḏd.tw sḫr pn",
+                "literal": "ḏd + .tw، ثم الخطة التي يقع عليها القول.",
+                "analysis": "لم نذكر القائل. تغيير المعلوم إلى المجهول لا يغيّر الزمن وحده."
+              }
+            ],
+            "note": "تهجئات الكلمات مأخوذة من نماذج جاردنر، وتجميعها في هاتين الجملتين للتدريب. علامة .tw جزء من بناء المجهول، وليست ترجمة لكلمة «الآن».",
+            "tabLabel": "يقول ← تُقال"
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        1,
+        "points",
+        2,
+        "subPoints",
+        0,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓏏*𓅱 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*(𓏏:𓅱) 𓃀*𓄿:𓎡*𓀀 𓇋*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        1,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        2,
+        "h"
+      ],
+      "before": "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯",
+      "after": "𓅱*𓃀*(𓈖:𓇳)*𓈖 𓂋:𓂝*𓇳 𓅓 𓊪:𓏏*𓇯"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "examples",
+        3,
+        "h"
+      ],
+      "before": "𓌳*𓄿:𓄿*𓈖:𓈖 𓅭:𓏏*𓁐",
+      "after": "(𓌳:𓁹)*𓄿*𓄿*(𓈖:𓈖) 𓅭:𓏏*𓁐"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "learningGuide"
+      ],
+      "added": true,
+      "after": {
+        "title": "الماضي خطوة بخطوة: اقرأ الرموز ثم قارن",
+        "intro": "هنثبت نفس الجملة ونغيّر حاجة واحدة كل مرة. الأمثلة التالية للتوضيح من إعداد التطبيق، وليست اقتباسات من جاردنر. كلمة «الخطة» هنا بمعنى التدبير / المشورة (sḫr).",
+        "source": "Gardiner, Egyptian Grammar, 3rd edition: §§39–40 (ص41–43)، §67–68 (ص55–56)، §§419–420 (ص337). أرقام الصفحات المطبوعة. النقطة . تفصل عنصر الصيغة، وعلامة = تفصل الضمير المتصل؛ ليست علامات تُكتب في النص الهيروغليفي.",
+        "steps": [
+          {
+            "title": "حدث ماضٍ: سَمِعَ ← سُمِعَت",
+            "explanation": "في المثال المثبت البسيط نضيف .n بعد الفعل. وللمجهول في الصيغة نفسها نستخدم .n.tw بهذا الترتيب (§67).",
+            "pairs": [
+              {
+                "label": "معلوم — حدث ماضٍ",
+                "arabic": "سَمِعَ رجلٌ هذه الخطة.",
+                "trans": "sḏm.n s sḫr pn",
+                "literal": "سَمِعَ رجلٌ هذه الخطة.",
+                "analysis": "sḏm + .n + الفاعل s + المفعول sḫr pn.",
+                "h": "𓄔*𓅓*𓈖 𓊃*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖"
+              },
+              {
+                "label": "مجهول — حدث ماضٍ",
+                "arabic": "سُمِعَت هذه الخطة.",
+                "trans": "sḏm.n.tw sḫr pn",
+                "literal": "سُمِعَت هذه الخطة.",
+                "analysis": "sḏm + .n + .tw + نائب الفاعل sḫr pn. لا نستبدل .n بواو آليًا.",
+                "h": "𓄔*𓅓*𓈖*(𓏏:𓅱) 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖"
+              }
+            ],
+            "note": "معلوم: الفاعل يقوم بالفعل. مجهول: الفعل يقع على نائب الفاعل. راقب .n و.tw بدل حفظ الترجمة وحدها.",
+            "tabLabel": "سَمِعَ ← سُمِعَت"
+          },
+          {
+            "title": "الماضي مع فعل القول",
+            "explanation": "نضيف .n بعد جذع الفعل. في المجهول نضيف .tw بعد .n؛ لاحظ الرموز وأماكن الإضافات.",
+            "pairs": [
+              {
+                "label": "معلوم",
+                "h": "𓆓:𓂧*𓈖 𓊃*𓀀 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+                "arabic": "قال رجلٌ هذه الخطة.",
+                "trans": "ḏd.n s sḫr pn",
+                "literal": "ḏd + .n، ثم الفاعل، ثم المفعول.",
+                "analysis": "وجود .n هو الفرق الذي نركز عليه في هذا المثال المثبت."
+              },
+              {
+                "label": "مجهول بـ .tw",
+                "h": "𓆓:𓂧*𓈖*(𓏏:𓅱) 𓋴*𓐍:𓂋*𓏛 𓊪:𓈖",
+                "arabic": "قيلت هذه الخطة.",
+                "trans": "ḏd.n.tw sḫr pn",
+                "literal": "ḏd + .n + .tw، ثم نائب الفاعل.",
+                "analysis": "نفس معنى الماضي في السياق التعليمي، لكن البناء مجهول."
+              }
+            ],
+            "note": "الجملتان للتدريب على البناء وفق §67، وليستا نقلًا حرفيًا من الكتاب.",
+            "tabLabel": "قال ← قيلت"
+          },
+          {
+            "title": "سَمِعَ أم كان قد سَمِعَ؟",
+            "explanation": "الماضي البسيط: «سمع الرجل الخطة أمس» = حدث وقع في الماضي. الماضي التام: «عندما وصل الكاتب، كان الرجل قد سمع الخطة» = السماع سبق حدثًا آخر في الماضي. المثال العربي لتوضيح ترتيب الحدثين، وليس ترجمة لنص مصري من الكتاب.",
+            "pairs": [
+              {
+                "label": "التصريف مع ضمير",
+                "arabic": "هو سَمِعَ / قد سَمِعَ / كان قد سَمِعَ، حسب السياق.",
+                "trans": "sḏm.n=f",
+                "literal": "الجذع sḏm + عنصر الصيغة .n + الضمير =f (هو).",
+                "analysis": "الكتابة الأساسية هنا واحدة؛ السياق يحدد هل الأنسب heard أو has heard أو had heard (§67). مفيش علامة إضافية ثابتة بنحطها لمجرد ترجمة «كان قد».",
+                "h": "𓄔*𓅓*(𓈖:𓆑)"
+              },
+              {
+                "label": "المقارنة التي تحفظها أولًا",
+                "arabic": "يسمع ← سَمِعَ؛ وفي المجهول: يُسمَع ← سُمِعَ.",
+                "trans": "sḏm=f → sḏm.n=f",
+                "literal": "في الرسم: هو يسمع ← هو سَمِعَ، في سياق المقارنة المبسطة.",
+                "analysis": "في المجهول: sḏm.tw=f → sḏm.n.tw=f. مصطلح Perfective ليس مرادفًا آليًا للماضي التام الإنجليزي، وOld Perfective صيغة أخرى.",
+                "h": "𓄔*𓅓*𓆑 𓄔*𓅓*(𓈖:𓆑)"
+              }
+            ],
+            "note": "جاردنر §68 يستعمل ỉw sḏm.n=f كثيرًا في بداية الخبر السردي المستقل. السياق وتركيب الجملة مهمان؛ المقارنة السابقة مدخل للتعلّم وليست جدول أزمنة شاملًا.",
+            "tabLabel": "البسيط والتام"
+          },
+          {
+            "title": "مثال جاردنر على المجهول الماضي",
+            "explanation": "في §67، ص55، يعطي جاردنر المثال التالي. اقرأ .n ثم .tw قبل كلمة الصوت.",
+            "pairs": [
+              {
+                "label": "جاردنر §67، ص55",
+                "arabic": "سُمِعَ الصوتُ.",
+                "trans": "sḏm.n.tw ḫrw",
+                "literal": "نموذج للمجهول مع .n.tw في الكتاب نفسه.",
+                "analysis": "رتّب الأجزاء: sḏm + .n + .tw، ثم الاسم ḫrw. هذا شاهد أوضح من افتراض أن المجهول الماضي دائمًا .w.",
+                "h": "𓄔*𓅓*𓈖*(𓏏:𓅱) 𓊤*𓅱*𓀁"
+              }
+            ],
+            "note": "الأمثلة التالية داخل القواعد محفوظة، مع التصحيحات الموثقة. لا نعدّ كل مثال سابق اقتباسًا حرفيًا من الكتاب ما لم يُذكر له موضع محدد.",
+            "tabLabel": "من الكتاب"
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        0,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓉔:𓄿*𓃀*𓂻:𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀",
+      "after": "𓉔*𓄿*𓃀*𓂻*𓈖 𓍿*𓄿*𓏏:𓇌*𓀀 𓃀*𓄿:𓎡*𓀀"
+    },
+    {
+      "lessonId": "lesson3",
+      "path": [
+        "grammar",
+        "rules",
+        2,
+        "points",
+        1,
+        "subPoints",
+        1,
+        "examples",
+        0,
+        "h"
+      ],
+      "before": "𓅱*𓃀*𓈖:𓈖:𓇳 𓂋:𓂝*𓇳",
+      "after": "𓅱*𓃀*(𓈖:𓇳)*𓈖 𓂋:𓂝*𓇳"
+    }
+  ]
+}

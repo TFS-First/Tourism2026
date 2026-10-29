@@ -166,7 +166,7 @@
                 "text": "together with, along with",
                 "examples": [
                   {
-                    "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+                    "h": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐",
                     "trans": "s ḥnʿ st",
                     "mean": "a man with a woman"
                   }
@@ -177,7 +177,7 @@
                 "text": "and (joining nouns)",
                 "examples": [
                   {
-                    "h": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+                    "h": "𓂋:𓂝*𓇳 𓎛*(𓈖:𓂝) 𓇋*𓂝*𓎛*𓇹",
                     "trans": "rʿ ḥnʿ ỉʿḥ",
                     "mean": "sun and moon"
                   }
@@ -276,7 +276,7 @@
             "noteAr": "حرف الجر r للأماكن"
           },
           {
-            "h": "𓊃*𓀀 𓎛:𓈖*𓂝 𓊃:𓏏*𓁐",
+            "h": "𓊃*𓀀 𓎛*(𓈖:𓂝) 𓊃:𓏏*𓁐",
             "trans": "s ḥnʿ st",
             "meanEn": "A man together with a woman",
             "meanAr": "رجل مع امرأة",
@@ -284,7 +284,7 @@
             "noteAr": "ḥnʿ يربط اسمين بمعنى مع"
           },
           {
-            "h": "𓂋:𓂝*𓇳 𓎛:𓈖*𓂝 𓇋:𓂝*𓎛:𓇹",
+            "h": "𓂋:𓂝*𓇳 𓎛*(𓈖:𓂝) 𓇋*𓂝*𓎛*𓇹",
             "trans": "rʿ ḥnʿ ỉʿḥ",
             "meanEn": "The sun together with the moon",
             "meanAr": "الشمس بصحبة القمر",

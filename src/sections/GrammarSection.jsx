@@ -113,7 +113,6 @@ const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLesso
           {/* Section Content */}
           {expandedLessons[section.id] && (
             <div className="p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6 animate-in slide-in-from-top-2 duration-300 bg-stone-50/60" dir="ltr">
-              {section.learningGuide && <GrammarLearningGuide guide={section.learningGuide} />}
               {section.rules.map((rule, idx) => {
                 
                 // Generic Determinatives Grid
@@ -177,6 +176,8 @@ const GrammarSection = ({ selectedLessonTab, setSelectedLessonTab, expandedLesso
                       <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-0.5 leading-snug">{rule.titleEn}</h3>
                       <h4 className="text-xs sm:text-sm md:text-base font-semibold text-stone-500" dir="rtl">{rule.titleAr}</h4>
                     </div>
+
+                    {rule.learningGuide && <GrammarLearningGuide guide={rule.learningGuide} />}
 
                     {/* Formula Syntax Box (Single or Dual Side-by-Side Cards) */}
                     {rule.formulas ? (
