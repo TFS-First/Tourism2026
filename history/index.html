@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تاريخ وحضارة مصر القديمة — سياحة 2026</title>
+  <meta name="description" content="تطبيق تاريخ وحضارة مصر القديمة - لدفعة سياحة وإرشاد 2026. إعداد فارس محمد." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#233e3b',
+            teal: {
+              600: '#227b82',
+              700: '#1b676d',
+              800: '#144c51',
+            },
+            sand: {
+              400: '#c5a36b',
+              500: '#b3884e',
+              600: '#9b7949',
+            },
+            papyrus: {
+              50: '#faf5e9',
+              100: '#f5ecd6',
+              200: '#ebd9b4',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            hieroglyph: ['"Noto Sans Egyptian Hieroglyphs"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --ink: #233e3b;
+      --teal: #227b82;
+      --sand: #b3884e;
+      --nile-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201250%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M130%2040%20C230%200%20300%2065%20400%2035%20S610%204%20710%2043%20S870%2013%20933%20105%20S962%20260%20933%20355%20S1000%20510%20965%20625%20S922%20765%20955%20870%20S970%201050%20883%201110%20S735%201190%20625%201165%20S450%201250%20335%201205%20S170%201215%2090%201130%20S50%20970%2030%20865%20S85%20700%2044%20590%20S18%20420%2053%20315%20S30%2085%20130%2040%20Z%22%2F%3E%3C%2Fsvg%3E");
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #faf5e9;
+      color: var(--ink);
+      overflow-x: clip;
+    }
+    h1, h2, h3, h4, h5, h6,
+    .hero-title, .hero-title * {
+      line-height: 1.75 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.0 !important;
+    }
+    .hieroglyph-font {
+      font-family: '"Noto Sans Egyptian Hieroglyphs"', sans-serif;
+    }
+    .nile-mask-art {
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+      -webkit-mask-image: var(--nile-mask);
+      mask-image: var(--nile-mask);
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(34, 123, 130, 0.2);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <!-- Top Navigation matching Ancient Egyptian App Bar -->
+  <header class="max-w-[1400px] w-full mx-auto px-6 lg:px-16 py-6 flex items-center justify-between gap-6 border-b border-[#ad8b5025]">
+    <a href="#" class="flex items-center gap-3 text-right group">
+      <span class="text-4xl text-teal-600 leading-none group-hover:scale-105 transition-transform">🏛️</span>
+      <div>
+        <b class="text-xl font-bold block text-slate-800 leading-tight">تاريخ وحضارة مصر القديمة</b>
+        <small class="text-[10px] tracking-[3px] text-[#9b7949] uppercase block mt-0.5 font-semibold">ANCIENT EGYPTIAN HISTORY</small>
+      </div>
+    </a>
+
+    <!-- Navigation links -->
+    <nav class="hidden md:flex items-center gap-6 text-sm text-[#65726b] font-semibold">
+      <a href="#lectures" class="hover:text-teal-600 transition">فهرس المحاضرات</a>
+      <a href="../index.html" class="hover:text-teal-600 transition flex items-center gap-1">
+        <span class="hieroglyph-font">𓆣</span>
+        <span>المصرية القديمة</span>
+      </a>
+    </nav>
+
+    <!-- Prominent Back to Portal Hub CTA -->
+    <a href="../portal.html" class="inline-flex items-center gap-2 border border-[#b89a674f] px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-[#6d593a] bg-white/60 hover:bg-white hover:text-teal-700 shadow-sm transition">
+      <span>🏛️</span>
+      <span>بوابة سياحة 2026 الرئيسية</span>
+      <span>←</span>
+    </a>
+  </header>
+
+  <!-- Hero Main Section matching LandingHero.jsx -->
+  <main class="max-w-[1400px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center px-6 lg:px-16 py-12 lg:py-16">
+    
+    <!-- Hero Copy -->
+    <div class="space-y-6 text-right">
+      
+      <div class="inline-flex items-center gap-2 text-xs font-bold text-[#997640] before:content-[''] before:w-7 before:h-[1px] before:bg-[#b89155]">
+        من صلب التاريخ… يُكتب الخلود
+      </div>
+
+      <h1 class="hero-title text-2xl sm:text-4xl lg:text-[44px] font-black tracking-normal text-slate-900 mb-6">
+        <span class="block mb-2 sm:mb-3">حضارة صنعت التاريخ.</span>
+        <span class="block text-teal-700 pb-1">وحكايتها تبدأ من أول خطوة.</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-[#65726b] leading-[2.2] max-w-xl">
+        اكتشف مسيرة أعظم أمة على وجه الأرض، من خطى الإنسان الأولى على ضفاف النيل والتحول نحو الزراعة، إلى القوائم الملكية الخالدة، ومصادر دراسة التاريخ، وصياغة أول وحدة سياسية في العالم.
+      </p>
+
+      <div class="flex items-center flex-wrap gap-4 pt-2">
+        <a href="#lectures" class="bg-[#277d80] hover:bg-[#1f686e] text-[#fff9ed] inline-flex items-center gap-4 px-8 py-3.5 rounded-lg text-base font-bold shadow-md hover:-translate-y-0.5 transition">
+          <span>ابدأ رحلة التاريخ</span>
+          <span>←</span>
+        </a>
+
+        <a href="lecture-01.html" class="text-sm font-bold text-[#7d715e] border-b border-[#bbaa8c] pb-0.5 hover:text-teal-700 transition">
+          المحاضرة التأسيسية
+        </a>
+      </div>
+
+      <div class="text-xs text-[#8b9487] flex items-center gap-2 pt-2">
+        <span class="text-[#b69155]">✧</span>
+        <span>مرجعك الأكاديمي الشامل في الكلية وسوق الإرشاد السياحي.</span>
+      </div>
+
+    </div>
+
+    <!-- Hero Art with Mask -->
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div class="relative w-full max-w-[480px]">
+        <img src="../assets/nile-hero.webp" 
+             alt="رسمة فرعونية بنهر النيل والمعابد" 
+             class="w-full nile-mask-art block shadow-2xl" />
+      </div>
+      <div class="text-xs text-[#927545] flex items-center gap-2 font-bold">
+        <span class="text-teal-600 text-lg">𓋹</span>
+        <span>تاريخ وادي النيل… شريان المدنية الخالد</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lectures Section (The 3 Modules) -->
+  <section id="lectures" class="max-w-[1280px] w-full mx-auto px-6 lg:px-16 py-12 border-t border-[#b7a67e40]">
+    
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <span class="text-xs font-bold text-[#9b7949] tracking-wider uppercase block">المحاضرات الدراسية المعتمدة</span>
+        <h2 class="text-2xl font-black text-slate-800">منهج مادة تاريخ وحضارة مصر القديمة</h2>
+      </div>
+      <span class="text-xs font-bold bg-white border border-[#b7a67e40] text-teal-800 px-3 py-1.5 rounded-full">
+        ٤ محاضرات مكتملة في ملفات مستقلة
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Lecture 1 -->
+      <a href="lecture-01.html" class="bg-white rounded-2xl p-6 border border-[#b7a67e40] shadow-sm card-hover flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-lg">
+              ١
+            </span>
+            <span class="text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full">
+              المحاضرة التمهيدية
+            </span>
+          </div>
+
+          <h3 class="text-lg font-black text-slate-900 group-hover:text-teal-600 transition mb-2">
+            البيئة والإنسان والحضارة في وادي النيل
+          </h3>
+          <p class="text-xs text-[#65726b] leading-relaxed mb-4">
+            جدلية البيئة والإنسان، مدرسة الجغرافيا التاريخية، السمات الحاكمة، عبقرية النهر، والتغير المناخي والتركز الديموغرافي والثورة الزراعية.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-teal-700">
+          <span>دخول المحاضرة الأولى</span>
+          <span class="group-hover:translate-x-[-3px] transition-transform">←</span>
+        </div>
+      </a>
+
+      <!-- Lecture 2 -->
+      <a href="lecture-02.html" class="bg-white rounded-2xl p-6 border border-[#b7a67e40] shadow-sm card-hover flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-teal-100 text-teal-900 flex items-center justify-center font-bold text-lg">
+              ٢
+            </span>
+            <span class="text-[11px] font-bold bg-teal-50 text-teal-800 border border-teal-200 px-2 py-0.5 rounded-full">
+              الفصل الأول
+            </span>
+          </div>
+
+          <h3 class="text-lg font-black text-slate-900 group-hover:text-teal-600 transition mb-2">
+            مصادر دراسة التاريخ والحضارة المصرية
+          </h3>
+          <p class="text-xs text-[#65726b] leading-relaxed mb-4">
+            الآثار وتطور التدوين، القوائم الملكية الخمس الكبرى (باليرمو، الكرنك، أبيدوس، سقارة، وتورين)، والمؤرخون الكلاسيكيون (مانيتون، هيرودوت، ديودور).
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-teal-700">
+          <span>دخول المحاضرة الثانية</span>
+          <span class="group-hover:translate-x-[-3px] transition-transform">←</span>
+        </div>
+      </a>
+
+      <!-- Lecture 3 -->
+      <a href="lecture-03.html" class="bg-white rounded-2xl p-6 border border-[#b7a67e40] shadow-sm card-hover flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-lg">
+              ٣
+            </span>
+            <span class="text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full">
+              الفصل الثاني
+            </span>
+          </div>
+
+          <h3 class="text-lg font-black text-slate-900 group-hover:text-teal-600 transition mb-2">
+            عصور ما قبل التاريخ وعصر ما قبل الأسرات
+          </h3>
+          <p class="text-xs text-[#65726b] leading-relaxed mb-4">
+            الحجري القديم والوسيط، الانقلاب النيوليتي وحضارات الفيوم ومرمدة والعمري ودير تاسا، العصر النحاسي والبداري، وحضارات نقادة الثلاث.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-teal-700">
+          <span>دخول المحاضرة الثالثة</span>
+          <span class="group-hover:translate-x-[-3px] transition-transform">←</span>
+        </div>
+      </a>
+
+      <!-- Lecture 4 -->
+      <a href="lecture-04.html" class="bg-white rounded-2xl p-6 border border-[#b7a67e40] shadow-sm card-hover flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-lg">
+              ٤
+            </span>
+            <span class="text-[11px] font-bold bg-teal-50 text-teal-800 border border-teal-200 px-2 py-0.5 rounded-full">
+              المبحث الثاني
+            </span>
+          </div>
+
+          <h3 class="text-lg font-black text-slate-900 group-hover:text-teal-600 transition mb-2">
+            العصر العتيق: توحيد القطرين والدولة المركزية
+          </h3>
+          <p class="text-xs text-[#65726b] leading-relaxed mb-4">
+            المراحل الثماني لتوحيد البلاد، نعرمر ولوحته الخالدة وتأسيس منف، ملوك الأسرة الأولى (جر، جت، دن)، وأزمات الأسرة الثانية وخع سخموي والملكة ني ماعت حب.
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-teal-700">
+          <span>دخول المحاضرة الرابعة</span>
+          <span class="group-hover:translate-x-[-3px] transition-transform">←</span>
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Footer with Centered Name Credit -->
+  <footer class="max-w-[1280px] w-full mx-auto px-6 lg:px-16 py-8 border-t border-[#b7a67e40] flex flex-col items-center justify-center gap-4 text-center">
+    
+    <div class="flex flex-col items-center justify-center gap-1" aria-label="فارس محمد — Fares Mohamed">
+      <b class="text-base font-bold text-slate-800">فارس محمد</b>
+      <small class="text-xs font-serif tracking-[2px] text-[#a5824b] uppercase" lang="en" dir="ltr">Fares Mohamed</small>
+    </div>
+
+    <div class="text-[11px] text-[#a0a18f] flex flex-wrap items-center justify-center gap-4">
+      <span>تاريخ وحضارة مصر القديمة — إرث يُقرأ، ومجد يتجدد.</span>
+      <span>•</span>
+      <a href="../portal.html" class="text-teal-700 font-bold hover:underline">بوابة سياحة 2026</a>
+      <span>•</span>
+      <span class="tracking-wider uppercase font-serif">ROOTED IN EGYPT. MADE FOR YOU.</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>

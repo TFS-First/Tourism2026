@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المحاضرة الأولى: تمهيد — البيئة والإنسان والحضارة في وادي النيل | سياحة 2026</title>
+  <meta name="description" content="المحاضرة التأسيسية: جدلية البيئة والإنسان، عبقرية نهر النيل، السمات الحاكمة، والثورة الزراعية. مادة تاريخ وحضارة مصر القديمة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nile: {
+              50: '#f0f9f9',
+              100: '#d7efef',
+              600: '#1e757c',
+              700: '#185f65',
+              800: '#144c51',
+              900: '#0e3437',
+            },
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebd9b4',
+              400: '#d8bd85',
+              500: '#c5a360',
+              800: '#644e27',
+              900: '#413217',
+            },
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            hieroglyph: ['"Noto Sans Egyptian Hieroglyphs"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #faf5eb;
+      color: #243532;
+    }
+    h1, h2, h3, h4, h5, h6,
+    .hero-title, .hero-title * {
+      line-height: 1.75 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.0 !important;
+    }
+    .hieroglyph-font {
+      font-family: '"Noto Sans Egyptian Hieroglyphs"', sans-serif;
+    }
+    .teal-gradient {
+      background: linear-gradient(135deg, #185f65 0%, #237e86 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(24, 95, 101, 0.15);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(12px);
+      background-color: rgba(250, 245, 235, 0.94);
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #c5a360; border-radius: 4px; }
+  </style>
+</head>
+<body class="selection:bg-nile-100 selection:text-nile-900 min-h-screen flex flex-col">
+
+  <!-- Top Announcement with Direct Back to Hub Link -->
+  <aside aria-label="شريط تنقل المنصة" class="bg-nile-900 text-papyrus-100 px-4 py-2 text-xs border-b border-nile-700">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Back to Portal Hub -->
+      <a href="../portal.html" class="flex items-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-slate-900 px-3 py-1 rounded-full font-black transition">
+        <span>←</span>
+        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
+      </a>
+
+      <!-- Quick Switcher to Index and Egyptian Language -->
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
+          <span>📖</span>
+          <span>فهرس محاضرات الحضارة</span>
+        </a>
+        <a href="../index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
+          <span class="hieroglyph-font">𓆣</span>
+          <span>تطبيق المصرية القديمة</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
+      
+      <!-- Subject & Lecture Title -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group text-right">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl teal-gradient flex items-center justify-center text-white shadow-md text-xl sm:text-2xl flex-shrink-0 group-hover:scale-105 transition-transform">
+          🏛️
+        </div>
+        <div class="space-y-0.5">
+          <span class="text-[10px] sm:text-xs font-bold text-nile-700 tracking-wider block">تاريخ وحضارة مصر القديمة</span>
+          <h1 class="text-xs sm:text-base md:text-lg font-black text-slate-800 leading-snug">المحاضرة ١: التمهيد والبيئة والإنسان</h1>
+        </div>
+      </a>
+
+      <!-- Quick Sections Nav -->
+      <nav class="hidden lg:flex items-center gap-1 text-sm font-semibold text-slate-600">
+        <a href="#dialectic" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">جدلية البيئة والإنسان</a>
+        <a href="#traits" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">السمات الحاكمة</a>
+        <a href="#nile-genius" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">عبقرية النيل</a>
+        <a href="#climate-migration" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">النزوح المناخي</a>
+        <a href="#neolithic-rev" class="px-3 py-2 rounded-lg bg-amber-50 text-amber-900 border border-amber-300 font-bold hover:bg-amber-100 transition-colors">🌾 الثورة الزراعية</a>
+        <a href="#guide-insights" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">مفاهيم المرشد</a>
+        <a href="#quiz" class="px-3 py-2 rounded-lg bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition-colors flex items-center gap-1.5">
+          <span>🎯</span>
+          <span>اختبر فهمك</span>
+        </a>
+      </nav>
+
+      <!-- Action & Search -->
+      <div class="flex items-center gap-2">
+        <button onclick="toggleSearch()" class="p-2.5 rounded-xl border border-papyrus-300 text-slate-600 hover:bg-papyrus-200 hover:text-nile-700 transition-colors flex items-center gap-2 text-sm font-medium">
+          <span>🔍</span>
+          <span class="hidden sm:inline">بحث سريع</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Search Bar (Collapsible) -->
+    <div id="searchBar" class="hidden border-t border-papyrus-300 bg-papyrus-100/95 px-4 py-3">
+      <div class="max-w-3xl mx-auto relative">
+        <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="ابحث في أي مفهوم، نظرية، عصر جيولوجي، أو مقارنة في المحاضرة..." 
+               class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-papyrus-400 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-nile-600 focus:border-transparent placeholder-slate-400" />
+        <span class="absolute right-3.5 top-3 text-slate-400">🔍</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden py-14 sm:py-20 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-papyrus-50 to-papyrus-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-300/80 text-amber-900 px-3.5 py-1.5 rounded-full text-xs font-bold mb-6">
+          <span>✨</span>
+          <span>المحاضرة الافتتاحية • تمهيد تأسيسي</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+          <span>كلية السياحة والفنادق</span>
+        </div>
+
+        <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal mb-6">
+          <span class="block mb-2 sm:mb-3">البيئة والإنسان والحضارة</span>
+          <span class="block text-transparent bg-clip-text bg-gradient-to-l from-nile-700 via-nile-600 to-amber-700 pb-1">
+            في وادي النيل الخالد
+          </span>
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-700 leading-relaxed mb-8">
+          كيف تفاعل صانع الحضارة مع عبقرية النهر؟ دراسة أكاديمية شاملة لصياغة المكان والزمان، جدلية البيئة والإنسان، السمات الحاكمة لتاريخ مصر، والانتقال العظيم من جمع الغذاء إلى الثورة الزراعية.
+        </p>
+
+        <!-- Fast Stats / Pillar Badges (Clickable Jump Links) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          <a href="#dialectic" class="bg-white/80 backdrop-blur-sm p-3.5 rounded-xl border border-papyrus-300 card-hover block">
+            <span class="text-xl block mb-1">🧭</span>
+            <span class="text-xs text-slate-500 font-semibold block">المنهج العلمي</span>
+            <span class="text-sm font-bold text-nile-800">الجغرافيا التاريخية</span>
+          </a>
+          <a href="#traits" class="bg-white/80 backdrop-blur-sm p-3.5 rounded-xl border border-papyrus-300 card-hover block">
+            <span class="text-xl block mb-1">⏳</span>
+            <span class="text-xs text-slate-500 font-semibold block">السمات الحاكمة</span>
+            <span class="text-sm font-bold text-nile-800">القِدم والاستمرار</span>
+          </a>
+          <a href="#nile-genius" class="bg-white/80 backdrop-blur-sm p-3.5 rounded-xl border border-papyrus-300 card-hover block">
+            <span class="text-xl block mb-1">🌊</span>
+            <span class="text-xs text-slate-500 font-semibold block">المفارقة الكبرى</span>
+            <span class="text-sm font-bold text-nile-800">حداثة النهر وعراقة الإنسان</span>
+          </a>
+          <a href="#neolithic-rev" class="bg-amber-100/90 backdrop-blur-sm p-3.5 rounded-xl border-2 border-amber-400 card-hover block shadow-sm">
+            <span class="text-xl block mb-1">🌾</span>
+            <span class="text-xs text-amber-800 font-semibold block">النقلة التاريخية</span>
+            <span class="text-sm font-bold text-amber-950">الثورة الزراعية ←</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Course Quick Navigation Rail -->
+  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky top-20 z-40 px-4 py-2.5 overflow-x-auto">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
+      <div class="flex items-center gap-2">
+        <span class="text-amber-700">📖 محاور الدرس:</span>
+        <a href="#dialectic" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">١. جدلية البيئة والإنسان</a>
+        <a href="#traits" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٢. السمات الحاكمة</a>
+        <a href="#comparison" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٣. مقارنة الحضارات</a>
+        <a href="#nile-genius" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٤. عبقرية النيل وتفرده</a>
+        <a href="#climate-migration" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٥. الجفاف والنزوح العظيم</a>
+        <a href="#neolithic-rev" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition bg-amber-50 text-amber-900 border border-amber-300 font-bold">🌾 ٦. الثورة الزراعية</a>
+        <a href="#guide-insights" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٧. مفاهيم المرشد</a>
+      </div>
+      <a href="#quiz" class="text-nile-700 hover:text-nile-900 underline font-extrabold">الذهاب للاختبار ←</a>
+    </div>
+  </div>
+
+  <!-- Main Content Layout -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- ==================== المحور الأول: جدلية البيئة والإنسان ==================== -->
+    <section id="dialectic" class="scroll-mt-36">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg teal-gradient text-white flex items-center justify-center font-bold text-lg shadow">
+          ١
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">المحور الأول</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">جدلية البيئة والإنسان (صياغة المكان والزمان)</h3>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-nile-800 to-nile-900 text-white rounded-2xl p-6 sm:p-8 shadow-md mb-8 border border-nile-700 relative overflow-hidden">
+        <p class="text-lg sm:text-xl font-medium leading-relaxed mb-4 text-papyrus-100">
+          «ترتبط نشأة المجتمع وتاريخه في أرض مصر ارتباطاً وثيقاً بمعطيات البيئة الجغرافية؛ ففي حوض النيل الأدنى تجلت واحدة من أقدم وأعظم حضارات العالم البشري. إن الملحمة التاريخية التي شُيّدت على هذه الأرض لا يمكن قراءتها بمعزل عن التلاحم الفريد بين الموقع الجغرافي والإنسان.»
+        </p>
+        <div class="flex items-center gap-2 text-xs text-amber-300 font-semibold">
+          <span>✦</span>
+          <span>الركيزة الأساسية: الحضارة ليست جغرافيا بحتة، وليست بشراً بمعزل عن بيئتهم، بل هي ثمرة التلاحم.</span>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <h4 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+          <span>⚖️</span>
+          <span>تباين رؤى الباحثين حول القوة المحركة لتاريخ المجتمع المصري:</span>
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Direction 1 -->
+          <div class="bg-white rounded-2xl p-6 border-2 border-emerald-200 shadow-sm card-hover relative flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold mb-3">
+                <span>🌍</span>
+                <span>الاتجاه الأول • علماء الجغرافيا</span>
+              </div>
+              <h5 class="text-xl font-black text-slate-800 mb-2">أنصار الحتمية الجغرافية</h5>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                يرى أصحاب هذا الرأي أن <strong class="text-emerald-900">البيئة الطبيعية هي صاحبة الفضل الأول</strong> في نشأة الحضارة المصرية:
+              </p>
+              <ul class="text-sm text-slate-700 space-y-2 mb-4 pr-4 list-disc marker:text-emerald-600">
+                <li>مصر في نظرهم هي <span class="font-bold text-emerald-800">"هبة النيل"</span> بمعناها الحرفي.</li>
+                <li>مقومات الحضارة الأساسية تستند حصراً إلى هذه البيئة الخصبة والمياه المنسابة.</li>
+                <li>لوﻻ هذا المهد الجغرافي الصالح لما قامت لمصر قائمة، ولا كان لأهلها ذلك الأثر الخالد في سجلات التاريخ.</li>
+              </ul>
+            </div>
+            <div class="bg-emerald-50 rounded-xl p-3 border border-emerald-200 text-xs text-emerald-800 font-medium">
+              💡 <strong>جوهر الرأي:</strong> الطبيعة تصنع الإنسان وتفرض عليه مساره وتملي عليه حضارته.
+            </div>
+          </div>
+
+          <!-- Direction 2 -->
+          <div class="bg-white rounded-2xl p-6 border-2 border-amber-200 shadow-sm card-hover relative flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-1.5 bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-bold mb-3">
+                <span>👥</span>
+                <span>الاتجاه الثاني • المؤرخون وعلماء الاجتماع</span>
+              </div>
+              <h5 class="text-xl font-black text-slate-800 mb-2">المنظور التاريخي والاجتماعي</h5>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                يتبنى هذا الفريق رؤية مغايرة تماماً، تعتبر البيئة مجرد أرضية وظّفها البشر:
+              </p>
+              <ul class="text-sm text-slate-700 space-y-2 mb-4 pr-4 list-disc marker:text-amber-600">
+                <li>البيئة لم تكن سوى <span class="font-bold text-amber-800">"المسرح"</span> الذي وظّفه الإنسان واستغله لصالحه.</li>
+                <li>العبرة بالبشر الذين تعاقبت أجيالهم على خشبة هذا المسرح؛ فأجاد بعضهم أداء دوره الحضاري، بينما أخفق البعض الآخر.</li>
+                <li>هذا الإخفاق والإجادة هو التفسير الحقيقي <strong class="text-amber-900">لتفاوت وتأرجح فترات القوة والضعف</strong> عبر التاريخ، رغم ثبات الطبيعة.</li>
+              </ul>
+            </div>
+            <div class="bg-amber-50 rounded-xl p-3 border border-amber-200 text-xs text-amber-800 font-medium">
+              💡 <strong>جوهر الرأي:</strong> الإنسان هو البطل الفاعل، والبيئة مجرد مسرح خامل ينتظر من يحركه.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Synthesis -->
+      <div class="bg-gradient-to-br from-papyrus-100 to-papyrus-200 border-2 border-papyrus-400 rounded-2xl p-6 sm:p-8 shadow">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-2xl">🧭</span>
+          <div>
+            <span class="text-xs font-extrabold text-nile-700 uppercase tracking-wide">المنهجية العلمية المتبعة والمعتمدة</span>
+            <h4 class="text-xl sm:text-2xl font-black text-slate-900">طريق الوسط: منهج «الجغرافيا التاريخية»</h4>
+          </div>
+        </div>
+
+        <p class="text-sm sm:text-base text-slate-800 leading-relaxed mb-6">
+          بعيداً عن المفاضلة المطلقة بين كلا الاتجاهين، اتخذ البحث الأكاديمي طريقاً وسطاً ومقاربة شاملة تستند إلى مبادئ <strong>"الجغرافيا التاريخية"</strong>؛ حيث يدرس هذا الحقل المعرفي العلاقة بين الإنسان وبيئته بوصفها:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-white rounded-xl p-4 border border-papyrus-300 text-center">
+            <span class="text-2xl block mb-1">🔄</span>
+            <b class="text-slate-800 text-sm block mb-1">علاقة تأثير متبادل</b>
+            <span class="text-xs text-slate-600">البيئة والإنسان كل منهما يشكّل الآخر ويصوغه عبر الزمن.</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-papyrus-300 text-center">
+            <span class="text-2xl block mb-1">⚡</span>
+            <b class="text-slate-800 text-sm block mb-1">تفاعل ديناميكي مستمر</b>
+            <span class="text-xs text-slate-600">التاريخ المصري ثمرة تفاعل مستمر بين جهود الإنسان ومؤثرات بيئته.</span>
+          </div>
+          <div class="bg-white rounded-xl p-4 border border-papyrus-300 text-center">
+            <span class="text-2xl block mb-1">⚖️</span>
+            <b class="text-slate-800 text-sm block mb-1">تكامل الأدوار</b>
+            <span class="text-xs text-slate-600">للبيئة حقها <span class="font-bold text-nile-700">كمُحفّز</span>، وللإنسان حقه <span class="font-bold text-amber-700">كصانع للحضارة</span>.</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== المحور الثاني: السمات الحاكمة ==================== -->
+    <section id="traits" class="scroll-mt-36">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg teal-gradient text-white flex items-center justify-center font-bold text-lg shadow">
+          ٢
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">المحور الثاني</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">السمات الحاكمة لتاريخ المجتمع المصري</h3>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        
+        <div class="bg-white rounded-2xl p-6 border border-papyrus-300 shadow-sm card-hover">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl p-3 bg-amber-100 rounded-xl text-amber-800">⏳</span>
+            <div>
+              <span class="text-xs font-bold text-amber-700">الظاهرة الأولى</span>
+              <h4 class="text-xl font-black text-slate-800">ظاهرة القِدم (العراقة)</h4>
+            </div>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed mb-4">
+            تُجمع الدراسات الأكاديمية على أن أرض مصر تُعد من أقدم مواطن الحضارة التاريخية على وجه الأرض، بل لعلها <strong>الأسبق في إرساء العديد من النظم المدنية والإدارية</strong>.
+          </p>
+          <div class="bg-papyrus-100 p-4 rounded-xl text-xs sm:text-sm text-slate-700 space-y-2 border border-papyrus-300">
+            <p>• تمتد الجذور إلى أزمان سحيقة قبل فجر التاريخ (العصر الحجري القديم).</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-papyrus-300 shadow-sm card-hover">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl p-3 bg-nile-100 rounded-xl text-nile-800">🔄</span>
+            <div>
+              <span class="text-xs font-bold text-nile-700">الظاهرة الثانية</span>
+              <h4 class="text-xl font-black text-slate-800">ظاهرة الاستمرار (الديمومة والتجدد)</h4>
+            </div>
+          </div>
+          <p class="text-sm text-slate-700 leading-relaxed mb-4">
+            يُعد التاريخ المصري من <strong>أطول التواريخ البشرية المتصلة دون انقطاع</strong>، ويمتاز بقدرة إعجازية على النهوض وتجديد دمائه بعد كل كبوة.
+          </p>
+          <div class="bg-papyrus-100 p-4 rounded-xl text-xs sm:text-sm text-slate-700 space-y-2 border border-papyrus-300">
+            <p>• فترات الضعف (الانتقال الأول، الانتقال الثاني، الاضمحلال) جزء يسير من عمر الحضارة المديد.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Comparative Analysis -->
+      <div id="comparison" class="bg-white rounded-2xl p-6 sm:p-8 border-2 border-nile-200 shadow-sm">
+        <h4 class="text-xl font-black text-slate-800 mb-4 flex items-center gap-2">
+          <span>🌐</span>
+          <span>مقارنة تحليلية: عبقرية الاستمرار المصري في ميزان الحضارات</span>
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bold text-slate-800 text-sm">بلاد اليونان القديمة</span>
+              <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded font-bold">اندثار وانقطاع</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              ازدهرت حضارة عريقة، لكنها <strong>اندثرت وانقطعت صلتها بواقعها</strong> ولم تحافظ على نمطها المتصل.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bold text-slate-800 text-sm">بلاد الرافدين (العراق)</span>
+              <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">انقطاعات حادة</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              تعاقبت حضارات منفصلة (سومرية، أكادية، بابلية، آشورية)، وتخللتها <strong>انقطاعات حادة وتغيرات جذرية</strong>.
+            </p>
+          </div>
+
+          <div class="bg-emerald-50 p-5 rounded-xl border-2 border-emerald-300">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bold text-emerald-900 text-sm">وادي النيل (مصر)</span>
+              <span class="text-xs bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded font-bold">اتصال دائم وتجدد</span>
+            </div>
+            <p class="text-xs sm:text-sm text-emerald-800 leading-relaxed">
+              ظلت <strong>القرية المصرية ونمط الحياة الزراعية متماسكاً دون انقطاع</strong> منذ العصر الحجري الحديث وحتى اليوم.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== المحور الثالث: عبقرية نهر النيل ==================== -->
+    <section id="nile-genius" class="scroll-mt-36">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg teal-gradient text-white flex items-center justify-center font-bold text-lg shadow">
+          ٣
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">المحور الثالث</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">نهر النيل وأثره في تكوين الحضارة المصرية (عبقرية النهر)</h3>
+        </div>
+      </div>
+
+      <!-- The Grand Paradox -->
+      <div class="bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 rounded-2xl p-6 sm:p-8 border-2 border-amber-300 mb-8 shadow-sm">
+        <h4 class="text-xl sm:text-2xl font-black text-amber-900 mb-3 flex items-center gap-2">
+          <span>⚡</span>
+          <span>المفارقة الكبرى: حداثة النهر الجيولوجية وعراقة الحضارة</span>
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
+          <div class="bg-white p-5 rounded-xl border border-amber-200">
+            <span class="text-xs font-bold text-amber-800 block mb-1">الوجه الجيولوجي الأول:</span>
+            <b class="text-base text-slate-900 block mb-2">حداثة التكوين الطبيعي لنهر النيل</b>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              يُعد نهر النيل — جيولوجياً — من <strong>أحدث أنهار العالم الكبرى تكويناً</strong> في الزمن الجيولوجي الرابع (البلايستوسين / Pleistocene).
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-amber-200">
+            <span class="text-xs font-bold text-amber-800 block mb-1">الوجه البشري الثاني:</span>
+            <b class="text-base text-slate-900 block mb-2">عراقة الاستقرار البشري والحضاري</b>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              رغم حداثة النهر الجيولوجية، كانت أرض واديه <strong>مهداً لأقدم وأعرق الحضارات البشرية المستقرة</strong> وأسبقها في الاستقرار الزراعي.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unique Features -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        <h4 class="text-xl font-bold text-slate-800 flex items-center gap-2">
+          <span>🌍</span>
+          <span>التفرد الجغرافي والمناخي لنهر النيل</span>
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-papyrus-50 p-5 rounded-xl border border-papyrus-200">
+            <b class="text-sm font-bold text-slate-800 block mb-2">١. الاستقامة والامتداد الطولي النادر</b>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              أكثر من 6000 كم في اتجاه طولي نادر واستثنائي من الجنوب مباشرة إلى الشمال.
+            </p>
+          </div>
+          <div class="bg-papyrus-50 p-5 rounded-xl border border-papyrus-200">
+            <b class="text-sm font-bold text-slate-800 block mb-2">٢. اختراق النطاقات المناخية المتباينة</b>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              يقطع النيل 6 أقاليم مناخية: من المنطقة الاستوائية المرتفعة، فالأخاديد، فحوض بحر الغزال، والروافد الحبشية، ثم الصحراء الحارة بالسودان ومصر، وصولاً للبحر المتوسط.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== المحور الرابع: التحول المناخي والنزوح ==================== -->
+    <section id="climate-migration" class="scroll-mt-48">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg teal-gradient text-white flex items-center justify-center font-bold text-lg shadow">
+          ٤
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">المحور الرابع</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">التغير المناخي والتركز الديموغرافي (من الصحراء إلى الوادي)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-papyrus-300 shadow-sm mb-8">
+        <h4 class="text-xl font-bold text-slate-900 mb-3">النزوح من الهضاب إلى الوادي وإنقاذ الحياة البشرية</h4>
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
+          خلال العصر الحجري القديم الأعلى (Upper Paleolithic)، تراجعت الأمطار وجفت الهضاب، فهجرت الحيوانات المراعي الجافة نحو قاع الوادي، فتبعها الإنسان واستقر على الضفاف في أول دور من أدوار <strong>«التركز الديموغرافي الإقليمي»</strong> وانصهار الشخصية المصرية.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-700">
+          <div class="bg-papyrus-50 p-4 rounded-xl border border-papyrus-200">
+            <b class="text-slate-900 block mb-1">١. تراجع الأمطار:</b>
+            جفاف تدريجي للصحاري وإفقار الغطاء النباتي بالهضاب.
+          </div>
+          <div class="bg-papyrus-50 p-4 rounded-xl border border-papyrus-200">
+            <b class="text-slate-900 block mb-1">٢. هجرة الحيوانات:</b>
+            هجر المراعي نحو حواف وقاع الوادي طلباً للمياه والنبات.
+          </div>
+          <div class="bg-papyrus-50 p-4 rounded-xl border border-papyrus-200">
+            <b class="text-slate-900 block mb-1">٣. استجابة الإنسان:</b>
+            اتباع خطى الحيوان والاستقرار على الضفاف والدلتا.
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== المحور الخامس: الثورة الزراعية الخالدة ==================== -->
+    <section id="neolithic-rev" class="scroll-mt-48">
+      <div id="agriculture" class="scroll-mt-48"></div>
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold text-2xl shadow-md">
+          🌾
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">المحور الخامس • القفزة الكبرى</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">التمهيد للثورة الزراعية الخالدة (العصر الحجري الحديث)</h3>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-3xl p-6 sm:p-8 shadow-sm mb-8 space-y-6">
+        
+        <p class="text-sm sm:text-base text-slate-800 leading-relaxed">
+          لم يكن هذا التركز المكاني حول النهر مجرد عملية نجاة من الجفاف، بل كان الممهد الحقيقي لأعظم قفزة في تاريخ البشرية، والتي ظهرت ثمارها جلية في <strong>العصر الحجري الحديث (قرب نهاية الألفية السادسة قبل الميلاد)</strong>:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="bg-white p-5 rounded-2xl border border-amber-200 shadow-sm flex items-start gap-3">
+            <span class="text-3xl">🌱</span>
+            <div>
+              <b class="text-base text-slate-900 block mb-1">استنبات البذور (الزراعة)</b>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                في ظل هذا الاستقرار الإجباري على ضفاف النيل، تعلم الإنسان المصري أخيراً كيف يستنبت بذور النباتات في التربة الخصبة.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-amber-200 shadow-sm flex items-start gap-3">
+            <span class="text-3xl">🐂</span>
+            <div>
+              <b class="text-base text-slate-900 block mb-1">استئناس وتربية الحيوان</b>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                تعلم كيف يستأنس الحيوانات ويربيها للاستفادة من ألبانها ولحومها وقوتها في العمل الحقلي بدلاً من مطاردتها بالصيد.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Historic Transition Banner -->
+        <div class="bg-gradient-to-r from-amber-600 via-amber-700 to-amber-800 text-white p-6 rounded-2xl text-center shadow-md">
+          <span class="text-xs text-amber-200 uppercase tracking-widest block mb-1 font-extrabold">التحول التاريخي الجوهري</span>
+          <h4 class="text-xl sm:text-2xl font-black mb-3">
+            الانتقال من مرحلة «جمع الغذاء» إلى مرحلة «إنتاج الغذاء»
+          </h4>
+          <p class="text-xs sm:text-sm text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            واضعاً بذلك اللبنة الأولى في بناء صرح الحضارة المصرية العظيمة؛ فالزراعة استوجبت الاستقرار، والاستقرار أنشأ القرى، والقرى استدعت تنظيماً لإدارة المياه والفيضان فكانت النظم الإدارية والمدنية الأولى في العالم.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== المحور السادس: دليل ومفاهيم المرشد السياحي ==================== -->
+    <section id="guide-insights" class="scroll-mt-48">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg teal-gradient text-white flex items-center justify-center font-bold text-lg shadow">
+          ٦
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">المحور المهني</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">مذكرة المرشد السياحي الميدانية</h3>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white p-5 rounded-xl border border-papyrus-300 card-hover">
+          <span class="text-xs font-bold text-nile-700 block mb-1">مصطلح جيولوجي</span>
+          <b class="text-slate-900 text-base block mb-1">البلايستوسين (Pleistocene)</b>
+          <p class="text-xs text-slate-600 leading-relaxed">العصر الجيولوجي الرابع الذي تشكل فيه حوض النيل بشبكته الحالية وتدفق طمي إثيوبيا.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-papyrus-300 card-hover">
+          <span class="text-xs font-bold text-nile-700 block mb-1">مفهوم تفاعلي</span>
+          <b class="text-slate-900 text-base block mb-1">هبة النيل والمصريين</b>
+          <p class="text-xs text-slate-600 leading-relaxed">النيل وحده لا يصنع حضارة دون مجهود الإنسان في حفر الترع وإقامة السدود وتنظيم الري.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-papyrus-300 card-hover">
+          <span class="text-xs font-bold text-nile-700 block mb-1">نقلة اقتصادية</span>
+          <b class="text-slate-900 text-base block mb-1">الثورة النيوليتية (الزراعية)</b>
+          <p class="text-xs text-slate-600 leading-relaxed">الانتقال الجوهري من مجتمع لاقط وصياد إلى مجتمع منتج ومزارع مستقر.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== المحور السادس: بنك الأسئلة والاختبار التفاعلي ==================== -->
+    <section id="quiz" class="scroll-mt-36">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg bg-amber-600 text-white flex items-center justify-center font-bold text-lg shadow">
+          🎯
+        </div>
+        <div>
+          <span class="text-xs font-bold text-amber-700 tracking-wider uppercase block">التقييم الذاتي للدفعة</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">بنك الأسئلة واختبار الفهم التفاعلي</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-papyrus-300 shadow-lg">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-papyrus-200 mb-8">
+          <div>
+            <h4 class="text-lg font-bold text-slate-900">اختبر استيعابك لمحاضرة التمهيد (٦ أسئلة دقيقة)</h4>
+            <p class="text-xs text-slate-500">اختر الإجابة الصحيحة لتكتشف الشرح والتعليل العلمي فوراً.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="quizScore" class="bg-amber-100 text-amber-900 px-3 py-1.5 rounded-full text-xs font-extrabold border border-amber-300">
+              النتيجة: ٠ / ٦
+            </span>
+            <button onclick="resetQuiz()" class="text-xs text-slate-500 hover:text-nile-700 underline font-semibold">
+              إعادة الاختبار
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-6" id="quizContainer">
+          
+          <!-- Q1 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-nile-100 text-nile-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الأول</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو التفسير الذي يتبناه أصحاب «المنظور التاريخي والاجتماعي» لتفاوت فترات القوة والضعف في مصر؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) جفاف نهر النيل وتغير معدلات فيضانه.</button>
+              <button onclick="checkAnswer(this, 1, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) تعاقب الأجيال على "مسرح" البيئة؛ فأجاد بعضهم دوره وأخفق البعض الآخر.</button>
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) تغير الموقع الجغرافي للبلاد.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-nile-100 text-nile-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثاني</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو حقل المعرفة الذي يدرس العلاقة بين الإنسان وبيئته بوصفها «علاقة تأثير متبادل وتفاعل ديناميكي»؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) الجيولوجيا الطبيعية الصرفة.</button>
+              <button onclick="checkAnswer(this, 2, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) الجغرافيا التاريخية (Historical Geography).</button>
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) علم الآثار الوصفي.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-nile-100 text-nile-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثالث</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هي «المفارقة الكبرى» المتعلقة بنهر النيل والحضارة المصرية؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) تدفق مياهه من الشمال إلى الجنوب.</button>
+              <button onclick="checkAnswer(this, 3, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) حداثة النهر الجيولوجية البحتة مقابل عراقة وأقدمية الاستقرار البشري في واديه.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) انقطاع الفيضان في العصر الحجري الحديث.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Bottom Navigation Rail to Next Lecture -->
+    <div class="pt-8 border-t border-papyrus-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="text-xs font-bold text-slate-600 hover:text-nile-800 flex items-center gap-1">
+        <span>→</span>
+        <span>العودة لفهرس المحاضرات</span>
+      </a>
+
+      <a href="lecture-02.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl teal-gradient text-white font-bold text-sm shadow hover:opacity-95 transition group">
+        <span>الانتقال إلى المحاضرة الثانية: مصادر دراسة التاريخ والحضارة</span>
+        <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-papyrus-200 mt-20 border-t-2 border-amber-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2">
+        <span>🏛️</span>
+        <span class="font-bold text-white">تاريخ وحضارة مصر القديمة • المحاضرة الأولى</span>
+      </div>
+      <div class="text-slate-400">
+        <a href="../portal.html" class="text-amber-400 hover:underline">بوابة سياحة 2026</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSearch() {
+      const bar = document.getElementById('searchBar');
+      bar.classList.toggle('hidden');
+      if (!bar.classList.contains('hidden')) document.getElementById('searchInput').focus();
+    }
+    function handleSearch(q) {
+      q = q.trim().toLowerCase();
+      const sections = document.querySelectorAll('main section');
+      if (!q) { sections.forEach(s => s.classList.remove('opacity-25', 'ring-2', 'ring-amber-500')); return; }
+      sections.forEach(s => {
+        if (s.innerText.toLowerCase().includes(q)) {
+          s.classList.remove('opacity-25');
+          s.classList.add('ring-2', 'ring-amber-500', 'rounded-3xl');
+        } else {
+          s.classList.add('opacity-25');
+          s.classList.remove('ring-2', 'ring-amber-500', 'rounded-3xl');
+        }
+      });
+    }
+    let score = 0;
+    const explanations = {
+      1: "صحيح! يرى المؤرخون أن الطبيعة مجرد مسرح، وأن صعود وهبوط الحضارة يرجع إلى أداء البشر أنفسهم.",
+      2: "صحيح! الجغرافيا التاريخية تدرس التأثير المتبادل والتفاعل الديناميكي بين الإنسان وبيئته.",
+      3: "صحيح! المفارقة الكبرى هي حداثة تكوين النهر الجيولوجي مقابل عراقة وأقدمية الاستقرار البشري في واديه."
+    };
+    function checkAnswer(btn, qNum, isCorrect) {
+      const parent = btn.closest('.quiz-item');
+      if (parent.dataset.answered === 'true') return;
+      parent.dataset.answered = 'true';
+      const options = parent.querySelectorAll('.quiz-option');
+      const expBox = parent.querySelector('.explanation');
+      options.forEach(opt => opt.classList.add('pointer-events-none', 'opacity-60'));
+      btn.classList.remove('opacity-60');
+      if (isCorrect) {
+        btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-bold');
+        expBox.className = "explanation mt-3 p-3 rounded-xl text-xs bg-emerald-50 border border-emerald-300 text-emerald-900 font-medium block";
+        expBox.innerHTML = `✅ <strong>إجابة صحيحة!</strong> ${explanations[qNum]}`;
+        score++;
+      } else {
+        btn.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-900', 'font-bold');
+        expBox.className = "explanation mt-3 p-3 rounded-xl text-xs bg-amber-50 border border-amber-300 text-slate-800 block";
+        expBox.innerHTML = `❌ <strong>إجابة غير دقيقة.</strong> الشرح العلمي: ${explanations[qNum]}`;
+      }
+      document.getElementById('quizScore').innerText = `النتيجة: ${score} / ٣`;
+    }
+    function resetQuiz() {
+      score = 0;
+      document.getElementById('quizScore').innerText = `النتيجة: ٠ / ٣`;
+      document.querySelectorAll('.quiz-item').forEach(item => {
+        item.dataset.answered = 'false';
+        item.querySelectorAll('.quiz-option').forEach(opt => {
+          opt.className = "quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition";
+        });
+        const expBox = item.querySelector('.explanation');
+        expBox.className = "explanation hidden mt-3 p-3 rounded-xl text-xs";
+        expBox.innerHTML = '';
+      });
+    }
+  </script>
+</body>
+</html>
