@@ -279,7 +279,16 @@
         "soundAr"
       ],
       "before": "خ (خفيفة)",
-      "after": "خ مرققة (تقريب تعليمي)"
+      "after": "غ"
+    },
+    {
+      "file": "src/data/shared/hieroglyphs.json",
+      "path": [
+        21,
+        "soundAr"
+      ],
+      "before": "تش",
+      "after": "ث"
     },
     {
       "file": "src/data/shared/hieroglyphs.json",
@@ -1089,6 +1098,17 @@
       ],
       "before": "ما هو النطق الصوتي (Transliteration) لرمز طائر العقاب المصري (𓄿)؟",
       "after": "ما هو النقحرة (القيمة الصوتية المكتوبة) لرمز النسر المصري (𓄿)؟"
+    },
+    {
+      "file": "src/data/shared/comprehensive-quiz.json",
+      "path": [
+        8,
+        "options",
+        1,
+        "text"
+      ],
+      "before": "ẖ (Palatal fricative / خاء مرققة)",
+      "after": "ẖ (حرف الغين / غ)"
     },
     {
       "file": "src/data/shared/comprehensive-quiz.json",

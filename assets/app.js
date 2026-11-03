@@ -808,7 +808,7 @@ const hieroglyphsData = [{
   "h": "𓄡",
   "gardiner": "F32",
   "trans": "ẖ",
-  "soundAr": "خ مرققة (تقريب تعليمي)",
+  "soundAr": "غ",
   "descAr": "بطن حيوان",
   "descEn": "Animal's belly",
   "step": 19,
@@ -948,7 +948,7 @@ const hieroglyphsData = [{
   "h": "𓍿",
   "gardiner": "V13",
   "trans": "ṯ",
-  "soundAr": "تش",
+  "soundAr": "ث",
   "descAr": "حبل ربط",
   "descEn": "Tethering rope",
   "step": 23,
@@ -5029,7 +5029,7 @@ const comprehensiveQuizData = [{
     "isCorrect": true
   }, {
     "id": "b",
-    "text": "ẖ (Palatal fricative / خاء مرققة)",
+    "text": "ẖ (حرف الغين / غ)",
     "isCorrect": false
   }, {
     "id": "c",
@@ -7755,7 +7755,7 @@ const ruleSummaries = {
   "rule-2-6": {
     "titleAr": "قارن المذكر بالمؤنث",
     "titleEn": "Gender and feminine .t",
-    "explanationAr": "المؤنث غالبًا ينتهي بـt، مثل s3 «ابن» وs3t «ابنة». مخصص الرجل أو المرأة يوضح المعنى لكنه مش بديلًا عن حرف t. بعض الكلمات مؤنثة بطبيعتها؛ افهم الكلمة كاملة.",
+    "explanationAr": "ينتهي المؤنث غالبًا بحرف t؛ قارن مثلاً المذكر s3 «ابن» بالمؤنث منه s3t «ابنة». مخصص الرجل أو المرأة يوضح المعنى لكنه مش بديلًا عن حرف t. بعض الكلمات مؤنثة بطبيعتها؛ افهم الكلمة كاملة.",
     "explanationEn": "The feminine commonly ends in .t, as in s3 / s3t. A woman classifier is not a replacement for the consonant t.",
     "example": {
       "trans": "s3t",
