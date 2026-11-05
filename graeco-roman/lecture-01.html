@@ -74,9 +74,12 @@
   <style>
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #fcf9f2;
       color: #1e293b;
     }
@@ -115,88 +118,57 @@
       border-color: #3b82f6;
       box-shadow: 0 6px 16px -4px rgba(59, 130, 246, 0.15);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #b8862d; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-hellenic-100 selection:text-hellenic-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement Navigation Bar -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-hellenic-950 text-papyrus-100 px-4 py-2 text-xs border-b border-hellenic-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
       
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-bronze-400 hover:bg-bronze-300 text-slate-950 px-3 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
-      </a>
-
-      <!-- Quick Switcher to Other Subjects -->
-      <div class="flex items-center gap-2 flex-wrap">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>🏛️</span>
-          <span>فهرس العصر اليوناني الروماني</span>
-        </a>
-        <a href="../history/index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>📜</span>
-          <span>تاريخ وحضارة مصر القديمة</span>
-        </a>
-        <a href="../index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span class="font-hieroglyph">𓆣</span>
-          <span>اللغة المصرية القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Main Navigation Header -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
-      
-      <!-- Subject & Lecture Title -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group text-right">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl greek-gradient flex items-center justify-center text-white shadow-md text-xl sm:text-2xl flex-shrink-0 group-hover:scale-105 transition-transform border border-amber-300/30">
-          🏛️
-        </div>
-        <div class="space-y-0.5">
-          <span class="text-[10px] sm:text-xs font-bold text-hellenic-700 tracking-wider block">تاريخ مصر اليونانية الرومانية (1)</span>
-          <h1 class="text-xs sm:text-base md:text-lg font-black text-slate-800 leading-snug">المحاضرة ١: الحضارة اليونانية وأصولها</h1>
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">🏛️</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ مصر اليونانية والرومانية</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]" dir="ltr" style="text-align: left;">GRAECO-ROMAN EGYPTIAN HISTORY</small>
         </div>
       </a>
 
-      <!-- Quick Sections Nav -->
-      <nav class="hidden xl:flex items-center gap-1 text-xs font-bold text-slate-600">
-        <a href="#vocabulary" class="px-2.5 py-1.5 rounded-lg bg-amber-50 text-amber-900 border border-amber-300 hover:bg-amber-100 transition">📖 قاموس الكلمات</a>
-        <a href="#identity" class="px-2.5 py-1.5 rounded-lg hover:text-hellenic-700 hover:bg-papyrus-200 transition">١. الهوية والاسم</a>
-        <a href="#mycenaean" class="px-2.5 py-1.5 rounded-lg hover:text-hellenic-700 hover:bg-papyrus-200 transition">٢. ميسينا والظلمات</a>
-        <a href="#tribes" class="px-2.5 py-1.5 rounded-lg hover:text-hellenic-700 hover:bg-papyrus-200 transition">٣. الأيونيون والدوريون</a>
-        <a href="#orders" class="px-2.5 py-1.5 rounded-lg hover:text-hellenic-700 hover:bg-papyrus-200 transition">٤. الطرز المعمارية</a>
-        <a href="#religion" class="px-2.5 py-1.5 rounded-lg hover:text-hellenic-700 hover:bg-papyrus-200 transition">٥. آلهة أوليمبوس</a>
-        <a href="#periods" class="px-2.5 py-1.5 rounded-lg hover:text-hellenic-700 hover:bg-papyrus-200 transition">٦. العصور التاريخية</a>
-        <a href="#quiz" class="px-3 py-1.5 rounded-lg bg-hellenic-700 text-white hover:bg-hellenic-800 transition flex items-center gap-1">
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>🎯</span>
           <span>اختبر فهمك</span>
         </a>
       </nav>
 
-      <!-- Action & Search -->
-      <div class="flex items-center gap-2">
-        <button onclick="toggleSearch()" class="p-2.5 rounded-xl border border-papyrus-300 text-slate-700 hover:bg-papyrus-200 hover:text-hellenic-700 transition flex items-center gap-2 text-xs sm:text-sm font-bold">
-          <span>🔍</span>
-          <span class="hidden sm:inline">بحث سريع</span>
-        </button>
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
       </div>
     </div>
-
-    <!-- Quick Search Bar (Collapsible) -->
-    <div id="searchBar" class="hidden border-t border-papyrus-300 bg-papyrus-100/95 px-4 py-3">
-      <div class="max-w-3xl mx-auto relative">
-        <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="ابحث في أي مصطلح، اسم إله، طراز معماري، تاريخ، أو كلمة إنجليزية..." 
-               class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-papyrus-400 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-hellenic-600 focus:border-transparent placeholder-slate-400" />
-        <span class="absolute right-3.5 top-3 text-slate-400">🔍</span>
-      </div>
-    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="index.html">فهرس المادة</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس المرشد</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
   </header>
 
   <!-- Hero Banner -->
@@ -288,50 +260,41 @@
     </div>
   </section>
 
-  <!-- Sticky Course Quick Navigation Rail -->
-  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky top-20 z-40 px-4 py-2.5 overflow-x-auto">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
-      <div class="flex items-center gap-2">
-        <span class="text-amber-800">📌 محاور المحاضرة الأولى:</span>
-        <a href="#vocabulary" class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition">📖 قاموس الكلمات</a>
-        <a href="#identity" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-hellenic-700 transition">١. الهوية والاسم ولفظ Barbaros</a>
-        <a href="#mycenaean" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-hellenic-700 transition">٢. الحضارة الميسينية وعصر الظلمات</a>
-        <a href="#tribes" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-hellenic-700 transition">٣. الأيونيون والدوريون</a>
-        <a href="#orders" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-hellenic-700 transition">٤. الطرز المعمارية (الأعمدة)</a>
-        <a href="#religion" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-hellenic-700 transition">٥. العقيدة وآلهة أوليمبوس</a>
-        <a href="#periods" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-hellenic-700 transition">٦. فترات التاريخ اليوناني</a>
-      </div>
-      <a href="#quiz" class="text-hellenic-700 hover:text-hellenic-900 underline font-black">الذهاب للاختبار التفاعلي ←</a>
-    </div>
-  </div>
-
   <!-- Main Content Layout -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
     <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
-    <section id="vocabulary" class="scroll-mt-36">
-      
-      <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-black text-lg shadow">
-            📖
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
           </div>
-          <div>
-            <span class="text-xs font-bold text-amber-800 tracking-wider uppercase block">GUIDE VOCABULARY & GLOSSARY</span>
-            <h3 class="text-2xl font-black text-slate-800">قاموس المرشد السياحي: الكلمات والمصطلحات التخصصية</h3>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 border-amber-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
           </div>
-        </div>
-        <span class="text-xs bg-amber-100 text-amber-900 border border-amber-300 px-3 py-1 rounded-full font-bold">
-          مفردات المحاضرة الأولى ص 8 - 14
-        </span>
-      </div>
+        </summary>
 
-      <div class="bg-amber-50/60 border-2 border-amber-300 rounded-3xl p-6 sm:p-8">
-        <p class="text-sm text-slate-700 mb-6 leading-relaxed">
-          💡 <strong>تنبيه للمرشد السياحي:</strong> هذه الكلمات تم استخراجها مباشرة من المرجع الأكاديمي، وتتكرر دائماً في أسئلة الامتحانات والمصطلحات الإرشادية. تم تزويد كل مصطلح بنطقه ومعناه الدقيق وتوظيفه السياقي:
-        </p>
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
           <!-- Vocab 1 -->
           <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
@@ -478,7 +441,8 @@
           </div>
 
         </div>
-      </div>
+        </div>
+      </details>
     </section>
 
     <!-- ==================== المحور الأول: هوية اليونان القديمة ومصطلح Barbaros ==================== -->
@@ -528,15 +492,24 @@
       </div>
 
       <!-- Storytelling Explanation Box requested by user -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           تخيل أنك مواطن يوناني يعيش في أثينا قبل 2500 عام؛ كان الإغريق يشعرون بفوقية ثقافية واعتزاز لا مثيل له بلغتهم وفلسفتهم وشعرهم. ولأنهم لم يكونوا يفهمون لغات الشعوب الأخرى كالمصريين أو الفرس، كانت تبدو لهم كل اللغات الأجنبية كأنها ثرثرة متكررة على وزن «بار... بار... بار»! ومن هنا ابتكروا كلمة «بارباروس». وحتى عندما كان المصريون أعظم حضارة على وجه الأرض بعمارتهم وعلومهم، أطلق عليهم الإغريق هذا اللفظ من منظور لغوي فقط وليس انتقاصاً من حضارتهم. وعندما احتل الرومان بلادهم لاحقاً، أخذوا هذا المصطلح وحولوه في اللاتينية إلى المعنى السلبي الذي نعرفه اليوم (الهمجية والتوحش).
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -594,15 +567,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           حضارة ميسينا هذه هي صاحبة أساطير حرب طروادة وقصة حصان طروادة الشهيرة التي كتبها الشاعر هوميروس في الإلياذة! كان ملوك ميسينا يعيشون في قلاع صخرية جبارة تسمى القصور المحصنة. لكن فجأة حوالي عام 1200 ق.م، ضرب البحر المتوسط طوفان بشري غامض ومرعب عُرف بـ «شعوب البحر» (وهم نفس الغزاة الذين تصدى لهم الملك المصري رمسيس الثالث في مصر بحراً وبراً). أحرقت هذه الشعوب قلاع ميسينا وسوتها بالأرض، مما تسبب في انهيار اقتصادي شامل وسقوط اليونان في نوم عميق وفقر وعزلة تامة استمرت 4 قرون كاملة سميت «العصر المظلم» حتى عاد اليونانيون للبناء من جديد.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -715,15 +697,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           هذا الانقسام بين الأيونيين والدوريين هو مفتاح فهم تاريخ اليونان بأكمله! أثينا (الأيونية) كانت أشبه بنيويورك أو باريس القديمة؛ موانئ تجارية مفتوحة على العالم، وفلاسفة يجادلون في الأسواق مثل سقراط، ومسارح وموسيقى. أما إسبرطة (الدورية) فكانت معسكراً عسكرياً مغلقاً لا يعرف الرفاهية؛ يؤخذ الطفل في سن السابعة من أمه ليتعلم القتال والتحمل، ولا قيمة للفرد إلا كجندي يدافع عن الدولة! هذا التنافس الشرس بين الثقافتين هو الذي فجّر لاحقاً «حرب البيلوبونيز» الشهيرة التي أنهكت اليونان ومهدت الطريق لظهور مقدونيا بقيادة فيليب الثاني وابنه الإسكندر الأكبر.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -816,15 +807,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           الأعمدة في العمارة الكلاسيكية لم تكن مجرد أحجار ترفع الأسقف، بل كانت تعبيراً بصرياً عن فلسفة كل مجتمع! عمود الدوري البسيط الخشن يشبه الرجل المحارب الإسبرطي القوي بلا تكلف. وعمود الأيوني الرشيق ذو الحلزونات يشبه السيدة الأنيقة أو لفافة الشعر اليونانية ويعكس رقة وفلسفة أثينا وجزر إيجة. أما الطراز الكورنثي، فتقول الأسطورة إن مهندساً رأى سلة نذور وضعت على قبر فتاة صغيرة ونبت حولها نبات الأكانثوس البري والتفت أوراقه حول السلة، فاستوحى منها هذا التاج فائق الجمال! ولأن الرومان كانوا يعشقون العظمة والإبهار البصري، جعلوا التاج الكورنثي أيقونتهم الرسمية التي ستراها في كل آثار العصر الروماني بمصر.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -1011,15 +1011,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           على عكس الآلهة المصرية التي كانت تمثل في هيئات مركبة (رأس صقر أو أنوبيس رأس ابن آوى)، تخيل اليونانيون آلهتهم بشراً كاملين تماماً، يأكلون ويشربون ويغارون ويتشاجرون ويعشقون، لكن الفارق الوحيد هو أنهم يمتلكون «قوى خارقة وخلوداً لا ينتهي»! والأهم للمرشد السياحي: أن عبادة الآلهة في اليونان لم تكن طقساً فردياً في غرف مغلقة، بل كانت واجباً وطنياً مجتمعياً يُقام على مذابح مكشوفة أمام المعابد بحضور كل أبناء المدينة. هذا المفهوم سيندمج لاحقاً في مصر عندما يأتي بطليموس الأول ويخلق الإله المزدوج «سيرابيس» الذي يجمع ملامح زيوس وهاديس اليونانيين مع أوزوريس وآبيس المصريين!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -1147,20 +1156,30 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           تأمل هذه الرحلة التاريخية المدهشة: اليونان بدأت كجماعات رعوية متواضعة، بنت حضارة ميسينا الذهبية ثم هوت إلى هاوية الفقر والعزلة التامة في العصر المظلم لمدة 400 سنة. لكن من قلب هذا الركام، اشتعلت شرارة الإبداع في العصر العتيق من خلال الفنون والرسم على الفخار، لتنفجر بعدها في العصر الكلاسيكي بأعظم عقول الفلسفة والديمقراطية في أثينا وبسالة الجند في إسبرطة. وحينما أنهكت الحروب الأهلية اليونانيين، جاء مقدوني عبقري اسمه الإسكندر الأكبر نقل الثقافة اليونانية من حدود مدنها الضيقة إلى قلب مصر والشرق في «العصر الهيلينستي»، لتولد الإسكندرية أعظم عواصم العالم القديم!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
     <!-- ==================== بنك الأسئلة التفاعلي الشامل ==================== -->
     <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       
       <div class="flex items-center justify-between mb-6">
         <div class="flex items-center gap-3">
@@ -1461,6 +1480,7 @@
         </form>
 
       </div>
+    </div></details>
     </section>
 
     <!-- Navigation Footer to Next Lecture -->
@@ -1584,5 +1604,6 @@
       document.getElementById('scoreText').innerText = 'أجب عن الأسئلة واضغط «تصحيح الاختبار»';
     }
   </script>
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

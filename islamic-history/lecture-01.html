@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المحاضرة الأولى: أحوال مصر قبيل الفتح الإسلامي (العصر البيزنطي) — التاريخ والحضارة الإسلامية | سياحة 2026</title>
+  <meta name="description" content="المحاضرة الأولى: مفهوم الحضارة، الدولة البيزنطية، والأحوال الاقتصادية والسياسية والعسكرية والاجتماعية والدينية لمصر قبيل الفتح الإسلامي. مقرر التاريخ والحضارة الإسلامية." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            islamic: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            crescent: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebd9b4',
+              400: '#d8bd85',
+              500: '#c5a360',
+              800: '#644e27',
+              900: '#413217',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            cinzel: ['Cinzel', 'serif'],
+            amiri: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      background-color: #faf6f0;
+      color: #1e293b;
+    }
+    .hero-title, .hero-title * {
+      line-height: 1.65 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.05 !important;
+    }
+    .islamic-gradient {
+      background: linear-gradient(135deg, #064e3b 0%, #15803d 50%, #b45309 100%);
+    }
+    .crescent-gradient {
+      background: linear-gradient(135deg, #78350f 0%, #d97706 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(6, 78, 59, 0.2);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(14px);
+      background-color: rgba(250, 246, 240, 0.95);
+    }
+    :root {
+      --header-h: 5.5rem;
+    }
+    .sticky-rail {
+      position: sticky;
+      top: var(--header-h, 5.5rem);
+      z-index: 40;
+    }
+    .story-box {
+      border-right: 4px solid #15803d;
+      background: linear-gradient(to left, #fffdfa, #f2fbf5);
+    }
+    .vocab-card {
+      transition: all 0.2s ease;
+    }
+    .vocab-card:hover {
+      background-color: #ffffff;
+      border-color: #15803d;
+      box-shadow: 0 6px 16px -4px rgba(21, 128, 61, 0.2);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #15803d; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
+</head>
+<body class="selection:bg-islamic-100 selection:text-islamic-950 min-h-screen flex flex-col">
+
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">🕌</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">التاريخ والحضارة الإسلامية</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">ISLAMIC HISTORY & CIVILIZATION</small>
+        </div>
+      </a>
+
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>🎯</span>
+          <span>اختبر فهمك</span>
+        </a>
+      </nav>
+
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🕌</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
+      </div>
+    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="index.html">فهرس المادة</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس المرشد</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden py-12 sm:py-16 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-white to-papyrus-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Academic Accreditation Card -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-6 border-b border-papyrus-200">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-islamic-900 text-amber-300 flex items-center justify-center font-bold text-lg shadow">
+            🕌
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-500 block">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</span>
+            <span class="text-sm font-extrabold text-islamic-950">مقرر: التاريخ والحضارة الإسلامية</span>
+          </div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-300 text-emerald-900 px-3 py-1 rounded-full text-xs font-extrabold">
+          <span>✨</span>
+          <span>المحاضرة 1 من 13: تأسيس المدخل التاريخي</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 text-right space-y-4">
+          <span class="text-xs font-black text-crescent-700 tracking-widest uppercase block font-cinzel">EGYPT PRIOR TO THE ISLAMIC CONQUEST</span>
+          
+          <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal">
+            <span class="block mb-2">أحوال مصر فى ظل الحكم البيزنطى</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-l from-islamic-800 via-islamic-600 to-crescent-700 pb-1">
+              قبيل الفتح العربي الإسلامي: الاقتصاد، السياسة، المجتمع، والصراع الديني
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+            المرجع الأكاديمي الشامل للمرشد السياحي: كيف عاشت مصر قرون الحكم البيزنطي كـ «سلة خبز» تخضع لجباية قاسية ونظام حماية إقطاعي؟ لماذا بُني حصن بابليون في هذا الموقع العبقري؟ وما هي جذور الانشقاق المذهبي في مجمع خلقدونية وبطش المقوقس التي جعلت نفوس المصريين مهيأة لطي صفحة بيزنطة واستقبال جيش الفتح العربي؟
+          </p>
+
+          <!-- Jump Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-center">
+            <a href="#vocabulary" class="bg-emerald-50 p-3 rounded-xl border border-emerald-200 card-hover block">
+              <span class="text-lg block mb-0.5">📖</span>
+              <span class="text-[11px] text-emerald-800 font-semibold block">المفردات الصعبة</span>
+              <span class="text-xs font-black text-emerald-950">قاموس المرشد (16 مصطلحاً)</span>
+            </a>
+            <a href="#economy" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">🌾</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">سلة الخبز</span>
+              <span class="text-xs font-black text-islamic-800">الضرائب ونظام الحماية</span>
+            </a>
+            <a href="#politics-military" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">🏰</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">العمارة العسكرية</span>
+              <span class="text-xs font-black text-islamic-800">عبقرية موقع بابليون</span>
+            </a>
+            <a href="#quiz" class="bg-islamic-50 p-3 rounded-xl border border-islamic-200 card-hover block">
+              <span class="text-lg block mb-0.5">🎯</span>
+              <span class="text-[11px] text-islamic-700 font-semibold block">التطبيق الميداني</span>
+              <span class="text-xs font-black text-islamic-900">بنك الأسئلة والتقييم ←</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col items-center justify-center">
+          <div class="bg-gradient-to-tr from-islamic-950 to-islamic-800 p-6 rounded-3xl text-white shadow-xl border-2 border-amber-300/40 w-full max-w-sm text-center">
+            <span class="text-3xl mb-2 block">📜</span>
+            <h3 class="text-lg font-black font-cinzel text-amber-300 mb-1">BYZANTINE EGYPT</h3>
+            <p class="text-xs text-islamic-200 mb-4">قسم الإرشاد السياحي — الفصل الأول</p>
+            <div class="text-right text-xs space-y-2 bg-islamic-950/60 p-3.5 rounded-xl border border-islamic-700">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">عناصر الحضارة:</span>
+                <span class="font-bold text-amber-300">٤ عناصر رئيسية</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">أقسام مصر الإدارية:</span>
+                <span class="font-bold text-amber-300">٥ أقاليم كبرى (الدوق)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">محور الصراع المذهبي:</span>
+                <span class="font-bold text-amber-300">مجمع خلقدونية 451م</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Main Content Layout -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- ==================== سيناريو المرشد السياحي بالإنجليزية ==================== -->
+    <!-- ==================== سيناريو المرشد السياحي بالإنجليزية (مطوي افتراضياً) ==================== -->
+    <section id="guide-briefing" class="scroll-mt-48" dir="ltr" style="text-align: left;">
+      <details class="course-fold"><summary>للاستزادة: شرح المرشد السياحي بالإنجليزية</summary><div class="course-fold-body">
+      <details class="group bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white rounded-3xl p-5 sm:p-7 shadow-xl border-2 border-amber-500/40 mb-8 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none text-left" dir="ltr">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl shadow flex-shrink-0">🎙️</span>
+            <div style="text-align: left;">
+              <span class="text-[10px] sm:text-xs text-amber-300 font-bold tracking-widest uppercase block">TOUR GUIDE SPOKEN SCRIPT</span>
+              <h4 class="text-sm sm:text-base font-bold text-white leading-snug">How to Explain Byzantine Egypt to Tourists in English</h4>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full border border-amber-400/30 hidden sm:inline-block">Click to Expand</span>
+            <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-5 border-t border-slate-700/80 mt-4 space-y-4 font-sans text-left leading-relaxed text-xs sm:text-sm text-slate-200" dir="ltr" style="text-align: left;">
+          <p>
+            "Ladies and gentlemen, to truly understand the Islamic opening of Egypt in 641 AD, we must step back into the dark final chapters of Byzantine rule. For over three centuries, Egypt was regarded not as an autonomous nation, but strictly as the <strong class="text-amber-300">'Granary of the Byzantine Empire'</strong> (or the imperial breadbasket), stripped of its abundant wheat harvest to feed Constantinople."
+          </p>
+<p>
+            "The native Egyptians—the Copts—suffered dual oppression: devastating fiscal extortion under corrupt tax farmers, and ruthless religious persecution following the <strong class="text-amber-300">Council of Chalcedon in 451 AD</strong>. While the Byzantine crown enforced the <strong class="text-amber-300">Melkite (Dyophysite)</strong> doctrine, Egyptian Christians adamantly preserved their <strong class="text-amber-300">Monophysite (Miaphysite)</strong> faith under the Coptic Patriarch Benjamin I, who spent over a decade hiding in desert caves. When Arab troops under General Amr ibn al-Aas arrived at the colossal gates of <strong class="text-amber-300">Babylon Fortress</strong>, Egyptian society was not losing freedom; they were finally escaping Byzantine tyranny."
+          </p>
+        </div>
+      </details>
+    </div></details>
+    </section>
+
+    <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-emerald-50 via-papyrus-100 to-emerald-50 border-2 border-emerald-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-emerald-700 text-white flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-emerald-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-emerald-200 text-emerald-950 border-emerald-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-emerald-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
+
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
+
+          <div id="vocab-accordion-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <!-- Vocab 1 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">سلة خبز الإمبراطورية</h4>
+              </div>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">الشحنة السعيدة</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Granary of Empire</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈɡrænəri əv ði ˈɛmpaɪər/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> الوصف الاقتصادي لمصر خلال العصرين الروماني والبيزنطي، حيث كانت تصدّر سنوياً ملايين الأرداب من القمح لإطعام سكان القسطنطينية وروما مجاناً.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 2 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">نظام الحماية</h4>
+              </div>
+              <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">إقطاع بيزنطي</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Patronage System</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈpeɪtrənɪdʒ ˈsɪstəm/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> النظام الذي لجأ إليه الفلاحون المصريون للتنازل عن أراضيهم للأمراء والأشراف لحمايتهم من بطش جباة الضرائب البيزنطيين، فتحولوا من مالكين إلى أقنان.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 3 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">أقنان الأرض</h4>
+              </div>
+              <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">عبودية الأرض</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Serfs / Coloni</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/sɜːrfs / kəˈloʊnaɪ/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> المزارعون المقيدون بالأرض إقطاعياً؛ لا يملكون بيعها أو مغادرتها، ويُباعون مع الأرض، وهي الحالة المزرية التي هبط إليها معظم الفلاحين المصريين.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 4 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">المسؤولية الجماعية</h4>
+              </div>
+              <span class="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">جباية قسرية</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Collective Liability</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/kəˈlɛktɪv ˌlaɪəˈbɪləti/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> نظام جباية بيزنطي متعسف يُلزم أهل القرية مجتمعين بدفع ضرائب أي فلاح هارب أو متوفٍ، وفلاحة أرضه بالقوة لمنع نقص الإيراد الإمبراطوري.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 5 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">حرب الزراع (البوكولية)</h4>
+              </div>
+              <span class="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">ثورة الدلتا (172م)</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Bucolic War</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/bjuːˈkɒlɪk wɔːr/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> ثورة شعبية مسلحة كبرى قادها الرعاة والفلاحون المصريون في مستنقعات الدلتا ضد عسف الرومان في عهد ماركوس أوريليوس، وهددت الإسكندرية قبل قمعها.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 6 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">الدوق (حاكم الإقليم)</h4>
+              </div>
+              <span class="text-[10px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">رتبة بيزنطية</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Dux / Dukes</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/djuːks / djuːk/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> رتبة عسكرية وسياسية بيزنطية تُطلق على الحاكم الإقليمي لأحد أقاليم مصر الخمسة، وكان يجمع في يده كافة السلطات العسكرية والمدنية والقضائية والشرطية.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 7 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">حصن بابليون</h4>
+              </div>
+              <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full inline-block mt-1">مصر القديمة</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Babylon Fortress</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈbæbɪlən ˈfɔːrtrɪs/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> الحصن العسكري الروماني العظيم في مصر القديمة؛ شيده تراجان عند رأس الدلتا ليشرف على تلاقي الوجهين البحري والقبلي ويحمي البوابة الشرقية والنيل.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 8 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">تقويم الشهداء</h4>
+              </div>
+              <span class="text-[10px] bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">التقويم القبطي (284م)</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Era of Martyrs</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈɪərə əv ˈmɑːrtərz/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> بداية التقويم القبطي المعتمد حتى اليوم، اختارته الكنيسة القبطية تخليداً لأرواح آلاف الشهداء الذين أعدمهم الإمبراطور دقلديانوس في ذروة الاضطهاد.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 9 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">مجمع خلقدونية</h4>
+              </div>
+              <span class="text-[10px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">الانشقاق الكنسي (451م)</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Council of Chalcedon</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈkaʊnsəl əv kælˈsiːdən/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> المجمع الكنسي الرابع الذي تسبب في الانشقاق الأعظم؛ أقر مذهب الطبيعتين للمسيح، ونفى بابا الإسكندرية ديسقورس، مما فجّر صراعاً وطنياً بين المصريين وبيزنطة.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 10 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">المذهب المونوفيزيتي</h4>
+              </div>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">عقيدة الأقباط</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Monophysitism</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/məˈnɒfɪsaɪˌtɪzəm/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> العقيدة اللاهوتية القبطية الأرثوذكسية التي تؤمن بـ «طبيعة واحدة متجسدة لله الكلمة» (لاهوت وناسوت متحدان بغير اختلاط ولا امتزاج ولا تغيير).
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 11 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">الملكانيون</h4>
+              </div>
+              <span class="text-[10px] bg-slate-100 text-slate-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">مذهب الإمبراطور</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Melkites (Royalists)</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈmɛlkaɪts/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> لقب أطلقه أقباط مصر على أتباع كنيسة القسطنطينية ومذهب الإمبراطور (الملك) البيزنطي، الذين تمسكوا بمذهب الطبيعتين المنفصلتين للسيد المسيح.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 12 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">المقوقس (قيرس)</h4>
+              </div>
+              <span class="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">الحاكم البيزنطي</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Al-Muqawqis</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈsaɪrəs/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي:</strong> بطريرك الملكانيين المعين من هرقل عام 631م وحاكم مصر المدني والديني، مارس إرهاباً دموياً ضد الأقباط لأكثر من 10 سنوات لإجبارهم على مذهب الدولة.
+            </p>
+          </div>
+        </details>
+
+      </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ==================== المحور الأول: مفهوم مصطلح الحضارة ==================== -->
+    <section id="concepts" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ١
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">FOUNDATIONAL DEFINITION</span>
+          <h3 class="text-2xl font-black text-slate-900">مفهوم مصطلح «الحضارة» وعناصرها الأربعة</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">📜</span>
+            <h4>تعريف مصطلح «الحضارة» في المنهج الأكاديمي المعتمد:</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+              <strong>الحضارة:</strong> هي إنجازات الإنسان عبر الزمن، سواء كانت إنجازات مادية (كالعمارة، والسدود، والمنشآت، والمخترعات) أو فكرية (كالفلسفة، والآداب، والعلوم، والشرائع)، وتتحدد دائماً بالمكان الجغرافي الذي احتواها وتفاعل معها الإنسان.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-base font-bold text-slate-800 mb-4">عناصر الحضارة الأربعة الأساسية:</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <div class="bg-papyrus-50 p-4 rounded-2xl border border-papyrus-200">
+              <span class="text-2xl block mb-2">⚖️</span>
+              <b class="text-islamic-900 text-sm block mb-1">١. النظام السياسي</b>
+              <p class="text-xs text-slate-600 leading-relaxed">وجود سلطة حاكمة وقوانين تنظم علاقات الأفراد، وتحفظ الأمن الداخلي والخارجي وتدير مرافق الدولة.</p>
+            </div>
+
+            <div class="bg-papyrus-50 p-4 rounded-2xl border border-papyrus-200">
+              <span class="text-2xl block mb-2">🌾</span>
+              <b class="text-islamic-900 text-sm block mb-1">٢. الموارد الاقتصادية</b>
+              <p class="text-xs text-slate-600 leading-relaxed">وفرة مصادر الإنتاج كالزراعة الخصبة، والمياه، والتجارة، والمناجم التي توفر فائضاً للمعيشة والبناء.</p>
+            </div>
+
+            <div class="bg-papyrus-50 p-4 rounded-2xl border border-papyrus-200">
+              <span class="text-2xl block mb-2">📜</span>
+              <b class="text-islamic-900 text-sm block mb-1">٣. التقاليد والقيم الخلقية</b>
+              <p class="text-xs text-slate-600 leading-relaxed">المنظومة الأخلاقية والدينية والأعراف الاجتماعية التي تحكم ضمير المجتمع وتمنحه تماسكه الروحي.</p>
+            </div>
+
+            <div class="bg-papyrus-50 p-4 rounded-2xl border border-papyrus-200">
+              <span class="text-2xl block mb-2">🎨</span>
+              <b class="text-islamic-900 text-sm block mb-1">٤. العلوم والفنون</b>
+              <p class="text-xs text-slate-600 leading-relaxed">الابتكار المعماري، والرسم، والطب، والفلك، والتدوين، وكل ما يرتقي بالوجدان والإنتاج المعرفي للأمة.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثاني: الدولة البيزنطية ومسمياتها ==================== -->
+    <section id="byzantine-names" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٢
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">BYZANTINE HISTORICAL IDENTITY</span>
+          <h3 class="text-2xl font-black text-slate-900">الدولة البيزنطية ومسمياتها التاريخية الثلاثة</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm">
+        <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+          عُرفت هذه الإمبراطورية بثلاثة مسميات رئيسية في المصادر الكلاسيكية والعربية والتاريخية، ولها دلالات سياسية وجغرافية هامة يجب على المرشد توضيحها للسياح:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+            <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-md mb-2 inline-block">التسمية الأولى</span>
+            <h4 class="text-base font-black text-slate-900 mb-2">الدولة الرومانية الشرقية</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              أحد المسميات الرسمية التي عُرفت بها الدولة؛ إذ أنها الامتداد الشرقي للإمبراطورية الرومانية بعد انقسامها عام 395م بين ولدي ثيودوسيوس: أركاديوس (الشرق) وهونوريوس (الغرب).
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-200">
+            <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-md mb-2 inline-block">التسمية الثانية</span>
+            <h4 class="text-base font-black text-slate-900 mb-2">دولة الروم (المصادر العربية)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              الاسم الذي أطلقه العرب والمسلمون عليها في مصادرهم التاريخية وكتاباتهم، وهو الاسم المذكور في القرآن الكريم في مطلع سورة الروم: <em>﴿غُلِبَتِ الرُّومُ فِي أَدْنَى الْأَرْضِ﴾</em>.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200">
+            <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md mb-2 inline-block">التسمية الثالثة</span>
+            <h4 class="text-base font-black text-slate-900 mb-2">الدولة البيزنطية (Byzantine)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              أُطلق هذا الاسم نسبة إلى موقع عاصمتها القديم الذي كان قرية إغريقية تُعرف بـ «بيزنطة» (Byzantium)، والتي أسس فيها الإمبراطور <strong>قسطنطين الأكبر</strong> عاصمته الجديدة عام 330م وسماها «القسطنطينية» نسبة إليه.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Academic Maps from Dr. Ramadan's slides -->
+        <div class="mt-8 pt-6 border-t border-papyrus-200">
+          <span class="text-xs font-bold text-islamic-800 uppercase tracking-wider block font-cinzel mb-4">
+            🗺️ الخرائط التاريخية المعتمدة للمقرر:
+          </span>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-papyrus-50 p-4 rounded-2xl border border-papyrus-300 text-center space-y-2">
+              <img src="images/byzantine-roman-map-400ad.jpg" alt="خريطة الإمبراطورية الرومانية المنقسمة 400م" class="w-full rounded-xl shadow-sm border border-slate-200 object-cover max-h-72" />
+              <p class="text-xs font-bold text-slate-700">
+                خريطة الإمبراطورية الرومانية المنقسمة (400 م): الإمبراطورية الشرقية (بيزنطة بالوردي) والإمبراطورية الغربية (بالأصفر).
+              </p>
+            </div>
+            <div class="bg-papyrus-50 p-4 rounded-2xl border border-papyrus-300 text-center space-y-2">
+              <img src="images/middle-east-600ad-map.jpg" alt="خريطة الشرق الأوسط 0-600 بعد الميلاد" class="w-full rounded-xl shadow-sm border border-slate-200 object-cover max-h-72" />
+              <p class="text-xs font-bold text-slate-700">
+                خريطة الشرق الأوسط (0-600 م): حدود إمبراطورية الروم الشرقية في مواجهة الدولة الفارسية الساسانية وبحر القلزم.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثالث: الأحوال الاقتصادية ==================== -->
+    <section id="economy" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-crescent-600 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٣
+        </div>
+        <div>
+          <span class="text-xs font-bold text-crescent-800 uppercase tracking-wider block font-cinzel">ECONOMIC STATUS & EXPLOITATION</span>
+          <h3 class="text-2xl font-black text-slate-900">أولاً: الأحوال الاقتصادية فى مصر أثناء العصر البيزنطى</h3>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        
+        <!-- Points 1, 2, 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🌾</span>
+              <h4 class="text-base font-black text-islamic-900">١. مكانة مصر: «سلة الخبز»</h4>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              كانت مصر تُعد «سلة الخبز» ومخزناً ضخماً للغلال والمؤن للدولة البيزنطية، وخاصة <strong>محصول القمح</strong>. وكانت شحنات القمح السنوية المعروفة بـ (Embole) تُنقل إجبارياً من ميناء الإسكندرية لتأمين إطعام بلاط وجيوش القسطنطينية دون مقابل حقيقي للمصريين.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🛡️</span>
+              <h4 class="text-base font-black text-islamic-900">٢. الأعباء وظهور «نظام الحماية»</h4>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              فرضت بيزنطة ضرائب باهظة وخانقة على كواهل الفلاحين، بينما أُعفي منها كبار الملاك البيزنطيون. أدى تعسف الجباية إلى تذمر الفلاحين ولجوئهم للأمراء الإقطاعيين لحمايتهم في ما عُرف بـ <strong>نظام الحماية (Patronage)</strong>. وبمرور الوقت، فقد الفلاحون ملكية أراضيهم وتحولوا إلى <strong>(أرقاء) أقنان (Serfs)</strong> مقيدين بالأرض.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🏰</span>
+              <h4 class="text-base font-black text-islamic-900">٣. التحول إلى النظام الإقطاعي</h4>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              أصبحت مصر تخضع لنظام شبيه تماماً بـ <strong>النظام الإقطاعي الأوروبي</strong>؛ إذ وُزعت الإقطاعات الزراعية والضياع الشاسعة بين عدد محدود من الأسر الغنية القوية (مثل أسرة أبيون Apion في البهنسا)، التي امتلكت سجونا وجيوشا خاصة وجباة خاصين بها.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Points 4, 5, 6 Detailed Banner -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+          
+          <div>
+            <h4 class="text-base font-black text-red-900 flex items-center gap-2 mb-3">
+              <span>⚠️</span>
+              <span>٤. التعسف الروماني ونظام جباية الضرائب:</span>
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-700">
+              <div class="bg-red-50/70 p-4 rounded-xl border border-red-200">
+                <b class="text-red-950 block mb-1">المزاد العام للضرائب:</b>
+                طُرحت جباية الضرائب في مزاد عام لمن يتعهد بتوريد المبلغ الأكبر، ليقوم «الملتزمون» بتحصيلها بأبشع وسائل التعذيب والابتزاز حتى تناقص عدد السكان وفرّ الأهالي من قراهم.
+              </div>
+              <div class="bg-red-50/70 p-4 rounded-xl border border-red-200">
+                <b class="text-red-950 block mb-1">ظاهرة المسؤولية الجماعية:</b>
+                عند هروب أو اختفاء أحد دافعي الضرائب بسبب العجز، كان يُلزم جيرانه وزملاؤه في القرية بسداد حصته وفلاحة أرضه كرهاً!
+              </div>
+              <div class="bg-red-50/70 p-4 rounded-xl border border-red-200">
+                <b class="text-red-950 block mb-1">شمولية الضرائب المتعسفة:</b>
+                فُرضت ضرائب خانقة شملت كل شيء: الأشخاص (ضريبة الرؤوس Poll Tax)، الممتلكات، الماشية، الصناعات والحرف، والأراضي.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-papyrus-200 grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div>
+              <h4 class="text-base font-black text-slate-900 mb-2">٥. ردود فعل المصريين والتدهور الاقتصادي:</h4>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
+                <li>قيام ثورات شعبية متعددة، أشهرها <strong>«حرب الزراع»</strong> أو <strong>«الحرب البوكولية» (Bucolic War)</strong> في عهد الإمبراطور ماركوس أوريليوس، وقد قمعها الرومان بالقوة والبطش.</li>
+                <li>ترك وهجر آلاف المصريين لمتاجرهم ومزارعهم ومصانعهم هرباً من الجباة.</li>
+                <li>ترتب على ذلك كساد التجارة، تأخر الزراعة، تراجع الصناعة، إهمال صيانة الترع وجسور الري، وفقدان الأمن وتفشي السلب.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-base font-black text-slate-900 mb-2">٦. التقسيم الإداري الخماسي للبلاد:</h4>
+              <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+                قُسّمت مصر إلى <strong>5 أقسام إدارية كبرى</strong> مما أضعف سلطة الدولة المركزية وفكك الترابط الاقتصادي بين الأقاليم:
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs font-bold">
+                <span class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-lg border border-emerald-300">١. الإسكندرية</span>
+                <span class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-lg border border-emerald-300">٢. شرق الدلتا</span>
+                <span class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-lg border border-emerald-300">٣. غرب الدلتا</span>
+                <span class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-lg border border-emerald-300">٤. مصر الوسطى</span>
+                <span class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-lg border border-emerald-300">٥. مصر العليا (الصعيد)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الرابع: الأحوال السياسية والعسكرية وحصن بابليون ==================== -->
+    <section id="politics-military" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٤
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">POLITICAL & MILITARY STRUCTURE</span>
+          <h3 class="text-2xl font-black text-slate-900">ثانياً: الأحوال السياسية والعسكرية فى مصر ودراسة حصن بابليون</h3>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-papyrus-300 shadow-sm space-y-3">
+            <h4 class="text-base font-black text-islamic-900 flex items-center gap-2">
+              <span>🏛️</span>
+              <span>١. طبيعة الحكم البيزنطي لمصر:</span>
+            </h4>
+            <ul class="text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
+              <li>كانت مصر <strong>خاضعة مباشرة لإمبراطور القسطنطينية</strong> (خلافاً لمعظم المقاطعات التي كانت تتبع مجلس الشيوخ).</li>
+              <li>اتسم الحكم بأنه مباشر، مستبد، وقائم على القهر العسكري ويدار بواسطة حاكم يعينه الإمبراطور.</li>
+              <li>كان الحضور السياسي ضعيفاً، فانعدم التوازن بين الحكم المركزي والشعب المصري.</li>
+              <li>اقتصر مظهر السيادة الوحيد على وجود مراكز عسكرية بالحاميات والمدن لتأمين جباية الضرائب.</li>
+              <li>أدت صراعات ومؤامرات البلاط البيزنطي إلى مضايقات مستمرة واستنزاف لأموال المصريين.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-papyrus-300 shadow-sm space-y-3">
+            <h4 class="text-base font-black text-islamic-900 flex items-center gap-2">
+              <span>⚔️</span>
+              <span>٢. التنظيم العسكري وسلطة «الدوق»:</span>
+            </h4>
+            <ul class="text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
+              <li>أبقت بيزنطة حامية عسكرية قوامها <strong>30 ألف جندي</strong> (ثلاث فرق Legions وقوات مساعدة) لإخضاع البلاد.</li>
+              <li>حُكم كل إقليم من الأقاليم الخمسة بواسطة أمير يُعرف بـ <strong>«الدوق» (Dux)</strong>، وكان مستقلاً تقريباً في إقليمه.</li>
+              <li>جمع الدوق في يديه جميع السلطات: <strong>المدنية، العسكرية، القضائية، والشرطية</strong>.</li>
+              <li>أصبح لكل إقليم جيشه الخاص التابع للدوق، والذي ضم مصريين بعد تغير السياسة التي كانت تمنع تجنيدهم، لكنهم كانوا يفتقدون للولاء لبيزنطة.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-papyrus-300 shadow-sm space-y-3">
+          <h4 class="text-base font-black text-islamic-900 flex items-center gap-2">
+            <span>🛡️</span>
+            <span>٣. أداء الجيش البيزنطي وتدهور كفاءته:</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            قلّ الاهتمام بالتدريب العسكري والانضباط الصارم، واتخذ جنود الجيش لأنفسهم مهناً أخرى كـ <strong>الزراعة والتجارة</strong> إلى جانب مهنة الحرب، مما أفقدهم الروح القتالية. وانحصرت مهام الجيش في:
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-bold text-center pt-2">
+            <span class="bg-papyrus-100 p-2.5 rounded-xl border border-papyrus-300 text-slate-800">مساعدة الموظفين في أعمالهم</span>
+            <span class="bg-papyrus-100 p-2.5 rounded-xl border border-papyrus-300 text-slate-800">القضاء على قطاع الطرق</span>
+            <span class="bg-papyrus-100 p-2.5 rounded-xl border border-papyrus-300 text-slate-800">إخماد الثورات الدينية</span>
+            <span class="bg-papyrus-100 p-2.5 rounded-xl border border-papyrus-300 text-slate-800">الاشتراك في جباية الضرائب بالقوة</span>
+          </div>
+        </div>
+
+        <!-- Detailed Architectural and Strategic Spotlight on Babylon Fortress -->
+        <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center gap-3">
+              <span class="text-3xl">🏰</span>
+              <div>
+                <span class="text-xs font-bold text-amber-800 uppercase tracking-widest block font-cinzel">ARCHAEOLOGICAL & STRATEGIC STUDY</span>
+                <h4 class="text-xl font-black text-amber-950">٤. حصن بابليون (Babylon Fortress) بمصر القديمة</h4>
+              </div>
+            </div>
+            <span class="text-xs bg-amber-200 text-amber-900 font-extrabold px-3 py-1 rounded-full border border-amber-400">
+              المقر الميداني للمرشد السياحي
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            
+            <div class="lg:col-span-8 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
+              <p>
+                <strong>الهدف من بنائه:</strong> شُيّد الحصن ليكون مركز الحماية العسكرية الرومانية وحصن الدفاع الأول للبوابة الشرقية لمصر. بناه الإمبراطور <strong>تراجان</strong> (Trajan) حوالي عام 98–117م، وجدده الإمبراطور أركاديوس.
+              </p>
+              <p>
+                <strong>عبقرية اختيار الموقع الجغرافي:</strong> اختير موقعه الاستراتيجي بعناية فائقة؛ لأنه <strong>يتوسط مصر تماماً بين الوجه البحري (الدلتا) والوجه القبلي (الصعيد)</strong>، ويتحكم في رأس خليج تراجان (القناة الواصلة بين النيل والبحر الأحمر). هذا الموقع العبقري منح الحامية الرومانية القدرة على:
+              </p>
+              <ul class="list-disc list-inside space-y-1.5 pr-2">
+                <li>السيطرة والتحرك العسكري السريع لإخماد أي ثورة تندلع سواء في شمال البلاد أو جنوبها.</li>
+                <li>التحكم في الملاحة النهرية وحركة التجارة وجباية المكوس بين الصعيد والدلتا.</li>
+                <li>تأمين خط الدفاع الداخلي قبل الوصول إلى العاصمة الإسكندرية.</li>
+              </ul>
+              <div class="bg-white/90 p-3.5 rounded-xl border border-amber-300 text-xs text-amber-950 font-medium">
+                💡 <strong>معلومة للمرشد السياحي:</strong> أطلال برجي حصن بابليون ما تزال قائمة حتى اليوم في مجمع الأديان بمصر القديمة، وشُيدت فوق أبراجه الجنوبية أشهر كنائس العالم: <strong>«الكنيسة المعلقة» (The Hanging Church)</strong>، وبجواره المتحف القبطي وكنيسة أبي سرجة.
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col items-center justify-center space-y-2">
+              <div class="bg-white p-2.5 rounded-2xl border border-amber-300 shadow-md w-full max-w-xs">
+                <img src="images/babylon-fortress-tower.jpg" alt="برج حصن بابليون الروماني المستدير بمصر القديمة" class="w-full rounded-xl object-cover shadow-inner" />
+                <div class="text-[11px] text-center font-bold text-amber-950 mt-2">
+                  صورة أثرية للبرج الروماني لحصن بابليون
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الخامس: الأحوال الاجتماعية ==================== -->
+    <section id="social" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-crescent-600 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٥
+        </div>
+        <div>
+          <span class="text-xs font-bold text-crescent-800 uppercase tracking-wider block font-cinzel">SOCIAL HIERARCHY & CLASS EXCLUSION</span>
+          <h3 class="text-2xl font-black text-slate-900">ثالثاً: الأحوال الاجتماعية فى مصر أثناء العصر البيزنطى</h3>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded-md inline-block">١. النظرة الاستعلائية</span>
+          <h4 class="text-base font-black text-slate-900">معاملة الشعب كمغلوب مقهور</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            عاملت روما وبيزنطة شعب مصر كأنه شعب مغلوب مقهور لا حقوق له؛ مجرد أداة إنتاجية لدفع الضرائب وتوفير الغلال للبلاط الإمبراطوري.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-md inline-block">٢. التمييز الطبقي</span>
+          <h4 class="text-base font-black text-slate-900">امتيازات خاصة للأجانب</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            مُنح التجار اليونانيون واليهود امتيازات وحصانات مالية وتجارية وقضائية واسعة داخل مصر على حساب التجار والمواطنين المصريين أصحاب الأرض.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded-md inline-block">٣. القمع الأمني</span>
+          <h4 class="text-base font-black text-slate-900">حظر حيازة السلاح (عقوبة الإعدام)</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            حُظر على المصريين قطعياً حمل السلاح أو اقتناؤه حتى لحماية أنفسهم، وكانت عقوبة حيازة أي سلاح تصل إلى <strong>الإعدام الفوري</strong> خوفاً من ثوراتهم.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-2 lg:col-span-2">
+          <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-md inline-block">٤. عزلة العاصمة</span>
+          <h4 class="text-base font-black text-slate-900">مكانة الإسكندرية (مدينة أجنبية باذخة)</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            كانت الإسكندرية بمثابة مدينة يونانية أجنبية منفصلة عن مصر (Alexandria ad Aegyptum)، وعُرفت بالبذخ والترف الفاحش للطبقات الحاكمة، لدرجة أن توجه أي مصري من الريف إليها كان يُعد <strong>رحيلاً عن البلاد وخروجاً منها</strong> لشدة التباين الثقافي والطبقي!
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-papyrus-300 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded-md inline-block">٥. الإقطاع والأجراء</span>
+          <h4 class="text-base font-black text-slate-900">تحول الفلاح إلى أجير وقن</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            تحولت باقي أقاليم مصر إلى ضياع إقطاعية زراعية تتقاسم السلطة والملكيات فيها أسر غنية متنفذة، بينما تحول الفلاح المصري صاحب التاريخ إلى مجرد أجير كادح محروم.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور السادس: الأحوال الدينية ومجمع خلقدونية ==================== -->
+    <section id="religion" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٦
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">ECCLESIASTICAL HISTORY & SCHISMS</span>
+          <h3 class="text-2xl font-black text-slate-900">رابعاً: الأحوال الدينية فى مصر أثناء العصر البيزنطى</h3>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        
+        <!-- Timeline Steps 1 & 2 -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+          
+          <div class="border-b border-papyrus-200 pb-6">
+            <h4 class="text-base font-black text-slate-900 mb-2 flex items-center gap-2">
+              <span>✝️</span>
+              <span>١. انتشار المسيحية وبداية الاضطهاد الوثني:</span>
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              دخلت المسيحية مصر في القرن الأول الميلادي على يد القديس مرقس الرسول وازدهرت بحلول القرن الثاني. وقد تعرض المسيحيون لاضطهاد شديد وممنهج من الأباطرة الوثنيين، وأبرزهم:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                <b class="text-slate-900 block mb-1">سفيروس (202م):</b>
+                شن حملة اضطهاد واسعة وأصدر مرسوماً يحرم التحول للمسيحية تحت طائلة العقوبات القاسية.
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                <b class="text-slate-900 block mb-1">ديكيوس (250م):</b>
+                ألزم جميع المصريين بتقديم القرابين للآلهة الوثنية وأصدر شهادات وثنية بذلك، وعذب كل من رفض.
+              </div>
+              <div class="p-3.5 rounded-xl bg-red-50 border border-red-200">
+                <b class="text-red-950 block mb-1">دقلديانوس (284-305م):</b>
+                بلغ الاضطهاد أقصى ذروته الدامية؛ هُدمت الكنائس واستشهد الآلاف، فاتخذت الكنيسة القبطية بداية حكمه (284م) بداية لـ <strong>«تقويم الشهداء»</strong>.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-base font-black text-slate-900 mb-2 flex items-center gap-2">
+              <span>🏛️</span>
+              <span>٢. الاعتراف بالمسيحية وتحولها لدين رسمي:</span>
+            </h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
+              <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                <b class="text-emerald-950 block mb-1">قسطنطين الأول (323–337م):</b>
+                اعترف بالمسيحية كدين مسموح به في الإمبراطورية بعد إصدار مرسوم ميلانو الشهير عام 313م وأنهى عصر الاضطهاد الوثني.
+              </div>
+              <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                <b class="text-emerald-950 block mb-1">تيودوسيوس الأول (379–395م):</b>
+                جعل المسيحية الدين الرسمي الوحيد للدولة، وحرّم الوثنية نهائياً وأغلق معابدها (391–392م)، مما أنهى العبادات الفرعونية والرومانية القديمة.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- The Great Schism: Council of Chalcedon -->
+        <div class="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-300 rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">⚡</span>
+            <div>
+              <span class="text-xs font-bold text-red-800 uppercase tracking-widest block font-cinzel">THE GREAT ECCLESIASTICAL RIFT</span>
+              <h4 class="text-xl font-black text-red-950">٣. الخلاف المذهبي ومجمع خلقدونية (451م)</h4>
+            </div>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            ظهر نزاع لاهوتي عميق حول <strong>طبيعة السيد المسيح</strong> قسّم العالم المسيحي إلى معسكرين متصارعين:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div class="bg-white p-4 rounded-2xl border border-red-200 shadow-sm">
+              <b class="text-emerald-800 text-sm block mb-1">الكنيسة المصرية (اليعاقبة / الأقباط الأرثوذكس):</b>
+              نادت بالمذهب <strong>المونوفيزيتي (Monophysitism)</strong>: أي الإيمان بـ «طبيعة واحدة» إلهية متجسدة للسيد المسيح، واعتبرت ذلك حماية للتوحيد الإلهي.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-red-200 shadow-sm">
+              <b class="text-blue-800 text-sm block mb-1">كنيسة القسطنطينية (الملكانيين أتباع الإمبراطور):</b>
+              نادت بـ «طبيعتين» منفصلتين للمسيح (طبيعة إلهية وأخرى بشرية ناسوتية).
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">⚖️</span>
+            <h4>مجمع خلقدونية (451م) وتحول الخلاف الديني إلى نزاع قومي وسياسي:</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            
+          
+            <p>
+              عقد الإمبراطور مرقيان <strong>مجمع خلقدونية (451م)</strong> الذي فرض مذهب الطبيعتين، وكفّر مذهب الطبيعة الواحدة، وتم <strong>نفي البابا ديسقورس بطريرك الإسكندرية</strong>.
+            </p>
+            <p class="font-bold text-red-900">
+              📌 النتيجة: تحول الخلاف الديني في مصر إلى «نزاع قومي وسياسي» عارم؛ ورفض المصريون قرارات المجمع واعتبروا كنيسة بيزنطة استعماراً غريباً، فانفصلت كنيسة الإسكندرية الوطنية نهائياً.
+            </p>
+          
+        
+          </div>
+        </div>
+        </div>
+
+        <!-- Persian Invasion, Mono Thelma, and Cyrus Terror -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-2">
+              <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md inline-block">٤. الغزو الفارسي والعودة</span>
+              <h5 class="text-sm font-black text-slate-900">الفرس واستعادة هرقل</h5>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                ساند المصريون هرقل ضد فوكاس (610م). ثم غزا الفرس الساسانيون مصر (616–629م) ونعم المصريون خلال حكمهم بحرية دينية تحت قيادة البطريرك الأنبا بنيامين الأول، قبل أن يطردهم هرقل سنة 629م.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-2">
+              <span class="text-xs font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded-md inline-block">٥. مرسوم توفيقي فاشل</span>
+              <h5 class="text-sm font-black text-slate-900">مرسوم صورة توفيق (Mono Thelma)</h5>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                أصدر هرقل مرسوماً يعرف بالمونوثيليتية ينص على أن للمسيح «إرادة واحدة وفعل واحد» لتوحيد صفوف الإمبراطورية، إلا أن أقباط مصر رفضوه رفضاً قاطعاً لتمسكهم بعقيدتهم الأرثوذكسية.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-red-50 border border-red-200 space-y-2">
+              <span class="text-xs font-bold text-red-800 bg-red-100 px-2 py-0.5 rounded-md inline-block">٦. عشرية الإرهاب الأسود</span>
+              <h5 class="text-sm font-black text-slate-900">حكم المقوقس (قيرس) 631م</h5>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                عيّن هرقل قيرس حاكماً سياسياً وبطريركاً، فأذاق المصريين صنوف الإرهاب والتعذيب لأكثر من 10 سنوات لإجبارهم على مذهب الدولة، واضطر البطريرك بنيامين للهرب والاختفاء في الصحراء حتى دخول العرب.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Final Historical Result matching Slide 14 -->
+          <div class="bg-emerald-900 text-white p-6 rounded-2xl space-y-2">
+            <h4 class="text-base font-black text-amber-300 flex items-center gap-2">
+              <span>🌟</span>
+              <span>النتيجة التاريخية الكبرى (خلاصة المحاضرة الأولى):</span>
+            </h4>
+            <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed">
+              ثبت أغلب المصريين على عقيدتهم ورَفَضوا مذهب الدولة البيزنطية، <strong>وانفصمت مصر تماماً من الناحية الروحية والقومية والوجدانية عن الدولة البيزنطية</strong>، مما هيّأ أذهان المصريين لاستقبال الفتح العربي الإسلامي والتطلع إليه كمنقذ للتخلص من الظلم والاستبداد البيزنطي.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور السابع: بنك الأسئلة والاختبار التفاعلي ==================== -->
+    <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg bg-islamic-700 text-white flex items-center justify-center font-bold text-lg shadow">
+          🎯
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 tracking-wider uppercase block font-cinzel">ACADEMIC SELF-ASSESSMENT</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">بنك الأسئلة واختبار الفهم التفاعلي</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-papyrus-300 shadow-lg">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-papyrus-200 mb-8">
+          <div>
+            <h4 class="text-lg font-bold text-slate-900">اختبر استيعابك لمحاضرة العصر البيزنطي (٧ أسئلة دقيقة)</h4>
+            <p class="text-xs text-slate-500">اختر الإجابة الصحيحة لتكتشف التعليل الأكاديمي والتوظيف الإرشادي فوراً.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="quizScore" class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-full text-xs font-extrabold border border-emerald-300">
+              النتيجة: ٠ / ٧
+            </span>
+            <button onclick="resetQuiz()" class="text-xs text-slate-500 hover:text-islamic-700 underline font-semibold">
+              إعادة الاختبار
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-6" id="quizContainer">
+          
+          <!-- Q1 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الأول</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو الدافع الاقتصادي الأبرز الذي جعل بيزنطة تتمسك بالسيطرة على مصر كـ «سلة الخبز»؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) استخراج الذهب والزمرد من الصحراء الشرقية.</button>
+              <button onclick="checkAnswer(this, 1, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) تأمين محصول القمح وإرسال الشحنة السعيدة السنوية لإطعام القسطنطينية.</button>
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) السيطرة على تجارة التوابل القادمة من الهند فقط.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثاني</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">إلى ماذا أدى تفشي «نظام الحماية» (Patronage) في ريف مصر البيزنطي؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) ازدهار ملكية الفلاحين الصغار وزيادة مواردهم المالية.</button>
+              <button onclick="checkAnswer(this, 2, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) فقدان الفلاحين لملكية أراضيهم لصالح الأمراء وتحولهم إلى أقنان (أرقاء) تابعين للإقطاع.</button>
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) إلغاء نظام الضرائب الإمبراطوري تماماً.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثالث</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو السبب العسكري الاستراتيجي الحاسم لاختيار موقع «حصن بابليون» في مصر القديمة؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) قربه من مناجم النحاس في سيناء.</button>
+              <button onclick="checkAnswer(this, 3, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) توسطه الجغرافي بين الوجهين البحري والقبلي مما سهل السيطرة على أي ثورة بالشمال أو الجنوب.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) قربه المباشر من ساحل البحر الأبيض المتوسط.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الرابع</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">لماذا اتخذت الكنيسة القبطية عام 284م بداية لـ «تقويم الشهداء»؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) لأنه العام الذي اعترف فيه قسطنطين بالمسيحية ديناً مسموحاً به.</button>
+              <button onclick="checkAnswer(this, 4, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) لأنه وافق اعتلاء الإمبراطور دقلديانوس العرش وبداية أشرس موجات الاضطهاد في تاريخ مصر.</button>
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) لأنه عام انعقاد مجمع خلقدونية المسكوني.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الخامس</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو الموقف اللاهوتي الذي تمسكت به الكنيسة القبطية في مجمع خلقدونية (451م)؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) مذهب الطبيعتين المنفصلتين (الملكاني).</button>
+              <button onclick="checkAnswer(this, 5, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) المذهب المونوفيزيتي (طبيعة واحدة متجسدة لله الكلمة).</button>
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) العودة للعبادات الوثنية القديمة.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال السادس</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو اللقب الإداري الذي حَمله حاكم كل إقليم من أقاليم مصر الخمسة في العصر البيزنطي؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 6, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) الدوق (Dux) وكان يجمع كافة السلطات العسكرية والمدنية والقضائية.</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) الباشا العثماني.</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) القنصل التجاري العام.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-islamic-100 text-islamic-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال السابع</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">كيف تعامل البطريرك القبطي الأنبا بنيامين الأول مع بطش المقوقس (قيرس)؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) خضع لمذهب الدولة البيزنطية ووقع على قرارات مجمع خلقدونية.</button>
+              <button onclick="checkAnswer(this, 7, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) اضطر للهرب والتخفي في صحراء وأديرة مصر لأكثر من 13 عاماً حتى أَمّنه عمرو بن العاص.</button>
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) غادر مصر نهائياً واستقر في القسطنطينية.</button>
+            </div>
+            <div class="explanation hidden mt-3 p-3 rounded-xl text-xs leading-relaxed"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div></details>
+    </section>
+
+    <!-- Bottom Navigation Rail to Next Lecture -->
+    <div class="pt-8 border-t border-papyrus-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <a href="index.html" class="text-xs font-bold text-slate-600 hover:text-islamic-800 flex items-center gap-1">
+        <span>→</span>
+        <span>العودة لفهرس محاضرات التاريخ الإسلامي</span>
+      </a>
+
+      <a href="lecture-02.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl islamic-gradient text-white font-bold text-sm shadow hover:opacity-95 transition group">
+        <span>الانتقال إلى المحاضرة الثانية: الفتح العربي الإسلامي لمصر</span>
+        <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-papyrus-200 mt-20 border-t-2 border-emerald-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2">
+        <span>🕌</span>
+        <span class="font-bold text-white">التاريخ والحضارة الإسلامية • المحاضرة الأولى</span>
+      </div>
+      <div class="text-slate-400">
+        <a href="../portal.html" class="text-amber-400 hover:underline">بوابة سياحة 2026</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function syncStickyOffset() {
+      const header = document.querySelector('header');
+      if (header) {
+        const h = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-h', Math.round(h) + 'px');
+      }
+    }
+    window.addEventListener('resize', syncStickyOffset);
+    window.addEventListener('scroll', syncStickyOffset, { passive: true });
+    document.addEventListener('DOMContentLoaded', syncStickyOffset);
+    setTimeout(syncStickyOffset, 50);
+    setTimeout(syncStickyOffset, 300);
+
+    function toggleAllDetails(parentSelector, open) {
+      const container = document.querySelector(parentSelector);
+      if (!container) return;
+      const allDetails = container.querySelectorAll('details');
+      allDetails.forEach(d => d.open = open);
+    }
+
+    function toggleSearch() {
+      const bar = document.getElementById('searchBar');
+      bar.classList.toggle('hidden');
+      if (!bar.classList.contains('hidden')) document.getElementById('searchInput').focus();
+      setTimeout(syncStickyOffset, 50);
+    }
+    function handleSearch(q) {
+      q = q.trim().toLowerCase();
+      const sections = document.querySelectorAll('main section');
+      if (!q) { sections.forEach(s => s.classList.remove('opacity-25', 'ring-2', 'ring-emerald-500')); return; }
+      sections.forEach(s => {
+        if (s.innerText.toLowerCase().includes(q)) {
+          s.classList.remove('opacity-25');
+          s.classList.add('ring-2', 'ring-emerald-500', 'rounded-3xl');
+        } else {
+          s.classList.add('opacity-25');
+          s.classList.remove('ring-2', 'ring-emerald-500', 'rounded-3xl');
+        }
+      });
+    }
+
+    let score = 0;
+    const explanations = {
+      1: "صحيح! كانت مصر تمد القسطنطينية سنوياً بشحنة القمح الإمبراطورية (الشحنة السعيدة) لتأمين الخبز لجيوش وبلاط الإمبراطورية.",
+      2: "صحيح! أدى نظام الحماية إلى تنازل الفلاحين عن أراضيهم للأشراف والأمراء هرباً من الجباية، وتحولهم تدريجياً إلى أقنان محرومين.",
+      3: "صحيح! يقع حصن بابليون في النقطة المفصلية التي تربط الوجه البحري بالقبلي عند رأس الدلتا، مما أتاح السيطرة على مصر كلها وإخماد أي ثورات.",
+      4: "صحيح! عام 284م هو عام ارتقاء دقلديانوس للعرش، والذي شهد أعتى حملة اضطهاد وقتل للمسيحيين في مصر.",
+      5: "صحيح! نادت الكنيسة المصرية بالمذهب المونوفيزيتي (طبيعة واحدة للمسيح)، ورفضت مذهب الطبيعتين الذي أقره مجمع خلقدونية.",
+      6: "صحيح! حمل حاكم كل إقليم لقب «الدوق»، وكان يجمع في يده كافة السلطات الأربع: المدنية، العسكرية، القضائية، والشرطية.",
+      7: "صحيح! اختفى البطريرك بنيامين الأول في أديرة ومغارات الصحراء 13 عاماً، حتى دخل عمرو بن العاص مصر وأصدر أماناً عاماً له وأعاده لكرسيه."
+    };
+
+    function checkAnswer(btn, qNum, isCorrect) {
+      const parent = btn.closest('.quiz-item');
+      if (parent.dataset.answered === 'true') return;
+      parent.dataset.answered = 'true';
+      const options = parent.querySelectorAll('.quiz-option');
+      const expBox = parent.querySelector('.explanation');
+      
+      options.forEach(opt => {
+        opt.disabled = true;
+        opt.classList.remove('hover:bg-papyrus-100');
+      });
+
+      if (isCorrect) {
+        btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'font-bold');
+        expBox.classList.remove('hidden');
+        expBox.classList.add('bg-emerald-50', 'text-emerald-900', 'border', 'border-emerald-300');
+        expBox.innerHTML = `✅ ${explanations[qNum]}`;
+        score++;
+      } else {
+        btn.classList.add('bg-red-100', 'border-red-500', 'text-red-950', 'font-bold');
+        expBox.classList.remove('hidden');
+        expBox.classList.add('bg-red-50', 'text-red-900', 'border', 'border-red-300');
+        expBox.innerHTML = `❌ إجابة غير دقيقة. ${explanations[qNum]}`;
+      }
+      document.getElementById('quizScore').innerText = `النتيجة: ${score} / 7`;
+    }
+
+    function resetQuiz() {
+      score = 0;
+      document.getElementById('quizScore').innerText = `النتيجة: 0 / 7`;
+      const items = document.querySelectorAll('.quiz-item');
+      items.forEach(item => {
+        item.dataset.answered = 'false';
+        const options = item.querySelectorAll('.quiz-option');
+        options.forEach(opt => {
+          opt.disabled = false;
+          opt.classList.remove('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'bg-red-100', 'border-red-500', 'text-red-950', 'font-bold');
+          opt.classList.add('hover:bg-papyrus-100');
+        });
+        const expBox = item.querySelector('.explanation');
+        expBox.classList.add('hidden');
+        expBox.innerHTML = '';
+      });
+    }
+  </script>
+
+  <script src="../assets/course-ui.js" defer></script>
+</body>
+</html>

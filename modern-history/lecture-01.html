@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المحاضرة ١: السيطرة العثمانية على مصر ونهاية دولة المماليك — تاريخ مصر الحديث — سياحة 2026</title>
+  <meta name="description" content="المحاضرة الأولى من مقرر تاريخ مصر الحديث والمعاصر (المستوى الرابع) - قسم الإرشاد السياحي. مصر قبيل الحكم العثماني، المماليك البحرية والبرجية، معركة مرج دابق 1516م، والريدانية 1517م." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com/3.4.17">
+  function toggleAllDetails(containerSelector, open) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+    container.querySelectorAll('details').forEach(d => {
+      d.open = open;
+    });
+  }
+
+</script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+              950: '#4c0519',
+            },
+            imperial: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebd9b4',
+              400: '#d8bd85',
+              500: '#c5a360',
+              800: '#644e27',
+              900: '#413217',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            cinzel: ['Cinzel', 'serif'],
+            amiri: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      background-color: #faf6f2;
+      color: #1e293b;
+    }
+    .hero-title, .hero-title * {
+      line-height: 1.65 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.05 !important;
+    }
+    .royal-gradient {
+      background: linear-gradient(135deg, #881337 0%, #be123c 50%, #b45309 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(136, 19, 55, 0.2);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(14px);
+      background-color: rgba(250, 246, 242, 0.95);
+    }
+    :root {
+      --header-h: 5.5rem;
+    }
+    .sticky-rail {
+      position: sticky;
+      top: var(--header-h, 5.5rem);
+      z-index: 40;
+    }
+    .story-box {
+      background: #ffffff;
+      border-right: 4px solid #be123c;
+    }
+    .vocab-card {
+      transition: all 0.2s ease;
+    }
+    .vocab-card:hover {
+      background-color: #ffffff;
+      border-color: #be123c;
+      box-shadow: 0 6px 16px -4px rgba(190, 18, 60, 0.2);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #be123c; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
+</head>
+<body class="selection:bg-royal-100 selection:text-royal-950 min-h-screen flex flex-col">
+
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">👑</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ مصر الحديث والمعاصر</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">MODERN & CONTEMPORARY EGYPT</small>
+        </div>
+      </a>
+
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>🎯</span>
+          <span>اختبر فهمك</span>
+        </a>
+      </nav>
+
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>👑</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
+      </div>
+    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="index.html">فهرس المادة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس المرشد</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden py-12 sm:py-16 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-white to-papyrus-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Academic Accreditation Card -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-6 border-b border-papyrus-200">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-royal-900 text-amber-300 flex items-center justify-center font-bold text-lg shadow">
+            👑
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-500 block">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</span>
+            <span class="text-sm font-extrabold text-royal-950">مقرر: تاريخ مصر الحديث والمعاصر</span>
+          </div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-300 text-amber-900 px-3.5 py-1.5 rounded-full text-xs font-extrabold">
+          <span>⚔️</span>
+          <span>المحاضرة ١: السيطرة العثمانية على مصر (1516–1517م)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 text-right space-y-4">
+          <span class="text-xs font-black text-imperial-700 tracking-widest uppercase block font-cinzel">THE OTTOMAN CONQUEST OF EGYPT (1517)</span>
+          
+          <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal">
+            <span class="block mb-2">السيطرة العثمانية على مصر</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-l from-royal-800 via-royal-600 to-imperial-700 pb-1">
+              مصر قبيل الحكم العثماني، مرج دابق، والريدانية وسقوط المماليك
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+            المنهج الأكاديمي المعتمد تشريح أحوال مصر في عهد المماليك البحرية والبرجية، طبيعة الحكم الفوضوي والصراع بين الطوائف، الأسباب الاقتصادية والاستراتيجية والسياسية الستة لضم مصر والشام، الصدام العثماني في مرج دابق 1516م، وملحمة الريدانية وشنق طومان باي على باب زويلة عام 1517م.
+          </p>
+
+          <!-- Jump Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-center">
+            <a href="#vocabulary" class="bg-rose-50 p-3 rounded-xl border border-rose-200 card-hover block">
+              <span class="text-lg block mb-0.5">📖</span>
+              <span class="text-[11px] text-rose-800 font-semibold block">المفردات التخصصية</span>
+              <span class="text-xs font-black text-rose-950">قاموس المرشد (12 مصطلحاً)</span>
+            </a>
+            <a href="#mamluk-state" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">🏰</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">دولة المماليك</span>
+              <span class="text-xs font-black text-royal-800">البحرية والبرجية</span>
+            </a>
+            <a href="#marj-dabiq" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">⚔️</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">معركة الشام</span>
+              <span class="text-xs font-black text-royal-800">مرج دابق 1516م</span>
+            </a>
+            <a href="#ridaniya-conquest" class="bg-royal-50 p-3 rounded-xl border border-royal-200 card-hover block">
+              <span class="text-lg block mb-0.5">👑</span>
+              <span class="text-[11px] text-royal-700 font-semibold block">معركة مصر</span>
+              <span class="text-xs font-black text-royal-900">الريدانية وباب زويلة ←</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col items-center justify-center">
+          <div class="bg-gradient-to-tr from-royal-950 to-royal-800 p-6 rounded-3xl text-white shadow-xl border-2 border-amber-300/40 w-full max-w-sm text-center">
+            <img src="images/sultan-selim-first.jpg" alt="السلطان سليم الأول" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-amber-400 shadow-lg">
+            <h3 class="text-lg font-black font-cinzel text-amber-300 mb-1">SULTAN SELIM I</h3>
+            <p class="text-xs text-royal-200 mb-4">فاتح مصر وخادم الحرمين الشريفين (1517م)</p>
+            <div class="text-right text-xs space-y-2 bg-royal-950/60 p-3.5 rounded-xl border border-royal-700">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">المستوى الأكاديمي:</span>
+                <span class="font-bold text-amber-300">الفرقة الرابعة إرشاد سياحي</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">معركة مرج دابق:</span>
+                <span class="font-bold text-amber-300">أغسطس 1516م</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">معركة الريدانية:</span>
+                <span class="font-bold text-amber-300">23-26 يناير 1517م</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">نهاية المماليك:</span>
+                <span class="font-bold text-amber-300">شنق طومان باي (إبريل 1517)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Main Content Layout -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- ==================== سيناريو المرشد السياحي بالإنجليزية ==================== -->
+    <!-- ==================== سيناريو المرشد السياحي بالإنجليزية (مطوي افتراضياً) ==================== -->
+    <section id="guide-briefing" class="scroll-mt-48" dir="ltr" style="text-align: left;">
+      <details class="course-fold"><summary>للاستزادة: شرح المرشد السياحي بالإنجليزية</summary><div class="course-fold-body">
+      <details class="group bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white rounded-3xl p-5 sm:p-7 shadow-xl border-2 border-amber-500/40 mb-8 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none text-left" dir="ltr">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl shadow flex-shrink-0">🎙️</span>
+            <div style="text-align: left;">
+              <span class="text-[10px] sm:text-xs text-amber-300 font-bold tracking-widest uppercase block">TOUR GUIDE SPOKEN SCRIPT</span>
+              <h4 class="text-sm sm:text-base font-bold text-white leading-snug">Explaining the Ottoman Conquest & The Fall of the Mamluks to Foreign Guests</h4>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full border border-amber-400/30 hidden sm:inline-block">Click to Expand</span>
+            <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-5 border-t border-slate-700/80 mt-4 space-y-4 font-sans text-left leading-relaxed text-xs sm:text-sm text-slate-200" dir="ltr" style="text-align: left;">
+          <p>
+            "Distinguished guests, standing before the colossal twin minarets of <strong class="text-amber-300">Bab Zuweila</strong> in Historic Cairo, we look upon the very gate where the medieval Sultanate of Egypt met its dramatic end. For over two and a half centuries—from 1250 to 1517 AD—Egypt was ruled by the <strong class="text-amber-300">Mamluks</strong>, an extraordinary warrior-caste originally imported as enslaved Turkic and Circassian youths who ascended to sovereign power, divided between the <strong class="text-amber-300">Bahri Mamluks</strong> stationed on Roda Island and the <strong class="text-amber-300">Burji Mamluks</strong> garrisoned within the towers of Saladin’s Citadel."
+          </p>
+<p>
+            "By the early 16th century, a rising titan reshaped the Islamic world: the <strong class="text-amber-300">Ottoman Empire</strong> under <strong class="text-amber-300">Sultan Selim I</strong> ('The Grim'). Armed with disciplined Janissary infantry and cutting-edge field artillery, Selim crushed the Safavids at Chaldiran in 1514, routed Sultan Qansuh al-Ghawri at the <strong class="text-amber-300">Battle of Marj Dabiq</strong> in 1516, and crossed the treacherous Sinai desert into Cairo."
+          </p>
+<p>
+            "On January 23, 1517, at the <strong class="text-amber-300">Battle of Ridaniya</strong> (modern Abbasiya), Egypt’s valiant last sultan, <strong class="text-amber-300">Al-Ashraf Tuman Bay</strong>, launched a desperate cavalry counter-charge with Venetian cannons, but was betrayed by Bedouin allies. In April 1517, Tuman Bay was hanged at Bab Zuweila amidst public weeping. Egypt ceased to be an empire's heartland and became an Ottoman province, while Selim claimed the title of <strong class="text-amber-300">'Servant of the Two Holy Sanctuaries'</strong> in Mecca and Medina."
+          </p>
+        </div>
+      </details>
+    </div></details>
+    </section>
+
+    <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-rose-50 via-papyrus-100 to-rose-50 border-2 border-rose-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-royal-700 text-white flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-rose-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-rose-200 text-rose-950 border-rose-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-rose-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
+
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
+
+          <div id="vocab-accordion" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          <!-- Vocab 1 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">المماليك البحرية</h4>
+                </div>
+                <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">المماليك البحرية</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Bahri Mamluks</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈbɑːhri ˈmæmluːks/ (1250–1382 AD)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>سلاطين المماليك من أصل تركي قفجاقي؛ سموا بالبحرية لأن معسكراتهم كانت بجزيرة الروضة بنهر النيل، أولهم أيبك وآخرهم برقوق (25 سلطاناً).
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 2 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">المماليك البرجية</h4>
+                </div>
+                <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">المماليك البرجية</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Burji Mamluks</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈbʊrdʒi ˈmæmluːks/ (1382–1517 AD)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>سلاطين الشراكسة الذين اتخذوا من أبراج قلعة الجبل بالقاهرة مقراً لهم؛ أولهم الظاهر برقوق وآخرهم طومان باي (24 سلطاناً).
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 3 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">معركة مرج دابق</h4>
+                </div>
+                <span class="text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">معركة مرج دابق</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Battle of Marj Dabiq</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈbætl əv mɑːrdʒ dɑːbɪk/ (1516 AD)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>المعركة الفاصلة شمال حلب؛ انتصر فيها سليم الأول على قنصوه الغوري بفضل المدفعية الحديثة وخيانة خاير بك، وبها سقطت الشام بيده.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 4 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">معركة الريدانية</h4>
+                </div>
+                <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">معركة الريدانية</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Battle of Ridaniya</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈbætl əv rɪdɑːˈniːjə/ (Jan 1517 AD)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>معركة حاسمة بالعباسية عند مشارف القاهرة؛ هزم فيها سليم الأول السلطان طومان باي ودخل العاصمة وأنهى استقلال الدولة المملوكية.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 5 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">السلطان طومان باي</h4>
+                </div>
+                <span class="text-[10px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">السلطان طومان باي</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Sultan Tuman Bay</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/tuːmɑːn baɪ/ (Al-Ashraf)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>آخر سلاطين المماليك الشراكسة؛ قاد المقاومة الشعبية وقتال الشوارع بالقاهرة، سلمه شيخ بدو البحيرة غدراً فشُنق على باب زويلة.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 6 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">السلطان سليم الأول</h4>
+                </div>
+                <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">السلطان سليم الأول</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Sultan Selim I (The Grim)</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/sʊlˈtɑːn sɛˈliːm/ (Yavuz)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>تاسع سلاطين بني عثمان؛ فتح الشام ومصر والحجاز، وأعلن نفسه «خادماً للحرمين الشريفين» ونقل الخلافة الإسلامية للآستانة.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 7 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">باب زويلة</h4>
+                </div>
+                <span class="text-[10px] bg-slate-100 text-slate-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">باب زويلة</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Bab Zuweila</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/bɑːb zʊˈweɪlə/ (South Gate)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>البوابة الجنوبية الشهيرة لسور القاهرة الفاطمي؛ علقت عليها رؤوس رسل هولاكو المغول، وشُنق على قوسها طومان باي عام 1517م.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 8 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">معركة جالديران</h4>
+                </div>
+                <span class="text-[10px] bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">معركة جالديران</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Battle of Chaldiran</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈtʃɑːldɪrɑːn/ (1514 AD)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>المعركة التي سحق فيها سليم الأول جيش الشاه إسماعيل الصفوي، واختل بها توازن القوى بالشرق الأدنى مما عجل بصدامه مع المماليك.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 9 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">خادم الحرمين الشريفين</h4>
+                </div>
+                <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">خادم الحرمين الشريفين</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Servant of the Two Sanctuaries</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈsɜːrvənt əv ðə tuː ˈsæŋktʃuɛriz/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>اللقب الديني السيادي الأرفع الذي اتخذه سليم الأول في الجامع الأموي بدمشق عام 1516م بعد خضوع الحجاز له، وأصبح لقباً لسلاطين آل عثمان.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 10 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">الأمير جم</h4>
+                </div>
+                <span class="text-[10px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">الأمير جم</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Prince Cem (Jem Sultan)</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/dʒɛm sʊlˈtɑːn/ (1481 AD)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>شقيق السلطان بايزيد الذي نافسه على العرش ولجأ للسلطان المملوكي قايتباي في مصر؛ حمايته شكلت أحد بؤر التوتر التاريخية بين الدولتين.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 11 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">الصدر الأعظم سنان باشا</h4>
+                </div>
+                <span class="text-[10px] bg-slate-100 text-slate-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">الصدر الأعظم سنان باشا</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Grand Vizier Sinan Pasha</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/sɪˈnɑːn pɑːˈʃɑː/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>قائد طلائع الجيش العثماني؛ هزم المماليك عند خان يونس بغزة، وقُتل في معركة الريدانية أثناء محاولة طومان باي الفدائية لاغتيال سليم.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 12 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">رسوم التجارة الترانزيت</h4>
+                </div>
+                <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">رسوم التجارة الترانزيت</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Transit Customs & Dues</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈtrænsɪt ˈkʌstəmz/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>الرسوم والضرائب الهائلة التي كان يجنيها المماليك من تجارة التوابل والحرير القادمة من الهند عبر البحر الأحمر وموانئ مصر نحو أوروبا.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ==================== المحور الأول: مصر قبيل الحكم العثماني ==================== -->
+    <section id="mamluk-state" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ١
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">EGYPT BEFORE OTTOMAN RULE</span>
+          <h3 class="text-2xl font-black text-slate-900">أولاً: مصر قُبيل الحكم العثماني — دولتا المماليك البحرية والبرجية</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">🏰</span>
+            <h4>أصل المماليك ونشأة دولتهم في مصر والشام:</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            
+          
+          <p>
+            كانت مصر قُبيل دخولها تحت الحكم العثماني خاضعة لحكم <strong>المماليك</strong>؛ والمماليك في أصلهم هم مجموعة من <em>«الأتراك»</em> الذين أصبحوا أرقاء نتيجة للأسر في الحروب، أو الشراء من أسواق النخاسة على يد سلاطين الدولة الأيوبية، وتدريبهم على الفروسية والقتال.
+          </p>
+          <p>
+            وقد مرت دولة المماليك بمرحلتين تاريخيتين رئيسيتين استمرتا قرنين ونصف من الزمان:
+          </p>
+        
+        
+          </div>
+        </div>
+
+        <!-- مرحلتا المماليك -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="p-5 rounded-2xl bg-blue-50/70 border-2 border-blue-200 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-lg bg-blue-700 text-white flex items-center justify-center font-bold text-sm">١</span>
+              <span class="text-xs font-bold text-blue-900 bg-blue-100 px-3 py-1 rounded-full">1250 – 1382م (١٣٢ عاماً)</span>
+            </div>
+            <h4 class="text-base font-black text-blue-950">مرحلة دولة المماليك البحرية:</h4>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              سُموا بـ <strong>«البحرية»</strong> لأن معسكراتهم وثكناتهم الحربية كانت مقامة في <strong>جزيرة الروضة وسط نهر النيل</strong> (بحر النيل).
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1 list-disc list-inside">
+              <li><strong>أول سلاطينها:</strong> المعز عز الدين أيبك (1250–1257م) الذي تزوج شجرة الدر.</li>
+              <li><strong>آخر سلاطينها:</strong> السلطان الصالح حاجي / برقوق (1382م).</li>
+              <li><strong>عدد سلاطينها:</strong> 25 سلطاناً (بينهم قطز والظاهر بيبرس وقلاوون والناصر محمد).</li>
+            </ul>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-amber-50/70 border-2 border-amber-200 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-lg bg-amber-700 text-white flex items-center justify-center font-bold text-sm">٢</span>
+              <span class="text-xs font-bold text-amber-900 bg-amber-100 px-3 py-1 rounded-full">1382 – 1517م (١٣٥ عاماً)</span>
+            </div>
+            <h4 class="text-base font-black text-amber-950">مرحلة دولة المماليك البرجية (الشراكسة):</h4>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              سُموا بـ <strong>«البرجية»</strong> نسبة لمحل إقامتهم وثكناتهم في <strong>أبراج قلعة الجبل (قلعة صلاح الدين) بالقاهرة</strong>.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1 list-disc list-inside">
+              <li><strong>أول سلاطينها:</strong> السلطان الظاهر سيف الدين برقوق بن أنس (1382–1398م).</li>
+              <li><strong>آخر سلاطينها:</strong> السلطان الأشرف <strong>طومان باي (1517م)</strong>.</li>
+              <li><strong>عدد سلاطينها:</strong> 24 سلطاناً (انتهت بقتل طومان باي على يد سليم الأول وإلحاق مصر بآل عثمان).</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- حكم المماليك: الفوضى والنزاع مع الصورة -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <div class="flex flex-col lg:flex-row gap-6 items-center">
+            
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+              <img src="images/mamluks-warriors.jpg" alt="فرسان المماليك في مصر" class="rounded-2xl shadow-md border border-slate-200 max-h-80 object-cover w-full bg-slate-50">
+              <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (١): فرسان وأمراء المماليك وطبيعة تكوينهم العسكري (وثيقة تاريخية)</span>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <h4 class="text-base font-black text-royal-900">طبيعة حكم المماليك: الفوضى والدسائس والعزلة:</h4>
+              <p>
+                كان حكم المماليك في معظمه حكماً فوضوياً اتسم بالدسائس والفتن؛ إذ كانوا منقسمين شيعاً وأحزاباً ينتسبون إلى سلاطينهم (مثل: <strong>الأشرفيون، الظاهريون، المؤيدون...</strong>). وكانوا في نزاع دموي مستمر بصدد كل تولية جديدة، فذهب الأمن وتفشى الجهل وتوقفت حركة العمران.
+              </p>
+              <p>
+                <strong>عزلة المماليك عن الشعب:</strong> كان تكوين دولتهم تكويناً شاذاً؛ فلم يندمجوا مع الأهالي لأسباب سياسية واقتصادية، إذ كانوا يخشون الاندماج في الشعب حتى لا يضيع المقوم الأساسي لامتيازاتهم العسكرية والطبقية.
+              </p>
+              <div class="bg-amber-50 p-3 rounded-xl border border-amber-200 text-xs text-amber-950">
+                <strong>توزيع السلطة:</strong> السلطة الحقيقية كانت في أيدي أمراء المماليك، والسلطان أحدهم أو أقواهم. وكان المماليك يعينون الخليفة العباسي الشكلي وقضاة المذاهب الأربعة (الحنفي، والمالكي، والشافعي، والحنبلي)، مع ترك بعض الوظائف الإدارية للمتضلعين في علوم اللغة والدين من رعاياهم المصريين.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثاني: نشأة الدولة العثمانية ==================== -->
+    <section id="ottoman-rise" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٢
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">EMERGENCE OF THE OTTOMAN EMPIRE</span>
+          <h3 class="text-2xl font-black text-slate-900">ثانياً: نشأة الدولة العثمانية وتوسعها في الأناضول والبلقان</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="flex flex-col lg:flex-row gap-6 items-center">
+          
+          <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+            <h4 class="text-base font-black text-royal-900">الأصول والبدايات في بلاد الأناضول:</h4>
+            <p>
+              يعود أصل العثمانيين إلى قبائل تركية فرت من بلاد آسيا الوسطى أمام زحف جحافل المغول. وقد اعتنق جدهم <strong>عثمان بن أرطغرل بن سليمان شاه</strong> الإسلام، واستوطن هو وأتباعه شمال غربي الأناضول، ونجح في تأسيس إمارة ودولة تنسب إليه في أوائل القرن الرابع عشر الميلادي.
+            </p>
+            <p>
+              توسعت الدولة تدريجياً في البلقان والأناضول على حساب ما تبقى من أملاك البيزنطيين ودول الصقالبة وإمارات اللاتين والإمارات التركية المجاورة.
+            </p>
+            <p>
+              ورغم توقف التوسع لفترة وجيزة عقب كارثة غارة <strong>تيمورلنك</strong> على الأناضول (أوائل القرن 15م)، استعادت الدولة قوتها وبلغت مطلع القرن السادس عشر الميلادي وهي القوة المهيمنة الكبرى في البلقان والأناضول، مستهدفة فرض الوحدة والاستقرار في أرجاء الشرق الأدنى.
+            </p>
+          </div>
+
+          <div class="w-full lg:w-1/2 flex flex-col items-center">
+            <img src="images/ottoman-expansion-routes.jpg" alt="خريطة التوسع العثماني وأهم المعارك" class="rounded-2xl shadow-md border border-slate-200 max-h-80 object-contain w-full bg-slate-50">
+            <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (٢): خريطة معارك وتوسعات الدولة العثمانية (وثيقة تاريخية)</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثالث: أسباب ضم مصر والشام ==================== -->
+    <section id="annexation-causes" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-imperial-700 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٣
+        </div>
+        <div>
+          <span class="text-xs font-bold text-imperial-800 uppercase tracking-wider block font-cinzel">SIX CAUSES OF CONQUEST</span>
+          <h3 class="text-2xl font-black text-slate-900">ثالثاً: أسباب ضم العثمانيين لمصر والشام (الأسباب الستة)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          دفعت العثمانيين ستة أسباب استراتيجية وسياسية واقتصادية لضم مصر والشام وإنهاء دولة المماليك:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-sm">
+          
+          <!-- Cause 1 -->
+          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+            <span class="font-bold text-amber-900 block text-xs bg-amber-100 px-2 py-0.5 rounded-full w-fit">١. الناحية الاقتصادية</span>
+            <p class="text-slate-600 leading-relaxed text-xs">
+              كان العثمانيون يسيطرون على طرق التجارة البرية إلى آسيا الصغرى والبحر الأسود، بينما كان المماليك يسيطرون على ممر التجارة العالمية العابرة من الشرق الأقصى والهند عبر البحر الأحمر والموانئ المصرية وسواحل الشام، فتطلع العثمانيون للرسوم الجمركية الهائلة التي يجنيها المماليك.
+            </p>
+          </div>
+
+          <!-- Cause 2 -->
+          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+            <span class="font-bold text-amber-900 block text-xs bg-amber-100 px-2 py-0.5 rounded-full w-fit">٢. الناحية الاستراتيجية</span>
+            <p class="text-slate-600 leading-relaxed text-xs">
+              كانت السيطرة على سواحل مصر والشام حيوية لمصالح الدولة العثمانية البحرية وتأمين نفوذها في حوض البحر الأبيض المتوسط والمراكز والجزر الاستراتيجية فيه.
+            </p>
+          </div>
+
+          <!-- Cause 3 -->
+          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+            <span class="font-bold text-amber-900 block text-xs bg-amber-100 px-2 py-0.5 rounded-full w-fit">٣. الناحية السياسية والزعامة</span>
+            <p class="text-slate-600 leading-relaxed text-xs">
+              ابتلاع سلطنة المماليك وما تشتمل عليه من مدن مقدسة في الحجاز (مكة والمدينة) وفلسطين (القدس)، يُظهر السلطان العثماني بمظهر رئيس العالم الإسلامي، والمسيطر على أماكن حج المسيحيين في فلسطين.
+            </p>
+          </div>
+
+          <!-- Cause 4 -->
+          <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 space-y-2">
+            <span class="font-bold text-rose-900 block text-xs bg-rose-100 px-2 py-0.5 rounded-full w-fit">٤. تجاور مناطق النفوذ</span>
+            <p class="text-slate-600 leading-relaxed text-xs">
+              ساهم تجاور حدود الدولتين في مناطق الشرق الأدنى والشاطئ الشرقي للمتوسط في إشعال الرغبة في الصدام؛ لا سيما وأن العثمانيين جُبلوا منذ نشأتهم على حب التوسع الإمبراطوري.
+            </p>
+          </div>
+
+          <!-- Cause 5 -->
+          <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 space-y-2">
+            <span class="font-bold text-rose-900 block text-xs bg-rose-100 px-2 py-0.5 rounded-full w-fit">٥. سياسة إيواء المتمردين (الأمير جم)</span>
+            <p class="text-slate-600 leading-relaxed text-xs">
+              إيواء المماليك لخصوم السلاطين، كما حدث مع <strong>الأمير جم</strong> شقيق السلطان بايزيد بعد هزيمته في موقعة أوكي (1481م)؛ حيث وفّر له السلطان قايتباي الحماية بمصر وأمده بالمال والسلاح لقتال أخيه قبل فراره لأوروبا ومقتله.
+            </p>
+          </div>
+
+          <!-- Cause 6 -->
+          <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 space-y-2">
+            <span class="font-bold text-rose-900 block text-xs bg-rose-100 px-2 py-0.5 rounded-full w-fit">٦. التواطؤ مع الفرس الصفويين</span>
+            <p class="text-slate-600 leading-relaxed text-xs">
+              عدم وقوف المماليك مع العثمانيين ضد الصفويين؛ بل وإجراء مفاوضات سرية بين الغوري والشاه إسماعيل الصفوي، ومحاولة إعاقة المؤن، وخروج الغوري للشام. غير أن سليم سحق الصفويين في <strong>جالديران 1514م</strong> ثم التفت للمماليك.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الرابع: معركة مرج دابق ==================== -->
+    <section id="marj-dabiq" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٤
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">CONQUEST OF SYRIA — MARJ DABIQ (1516)</span>
+          <h3 class="text-2xl font-black text-slate-900">رابعاً: ضم الشام — معركة مرج دابق الحاسمة (أغسطس 1516م)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="flex flex-col lg:flex-row gap-6 items-center">
+          
+          <div class="w-full lg:w-1/2 flex flex-col items-center">
+            <img src="images/battle-of-marj-dabiq.jpg" alt="معركة مرج دابق 1516" class="rounded-2xl shadow-md border border-slate-200 max-h-80 object-cover w-full bg-slate-50">
+            <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (٣): معركة مرج دابق وصدام الفرسان مع المدفعية (وثيقة تاريخية)</span>
+          </div>
+
+          <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+            <h4 class="text-base font-black text-royal-900">أسباب انتصار العثمانيين وانهيار المماليك:</h4>
+            <p>
+              التقى الجيشان في سهل <strong>مرج دابق</strong> (شمال حلب) في <strong>أغسطس 1516م</strong>. وحقق العثمانيون نصراً ساحقاً بفضل:
+            </p>
+            <ul class="space-y-1.5 list-disc list-inside text-slate-700">
+              <li><strong>التفوق العسكري والمدفعية:</strong> توافر فرق المدفعية الحديثة والبنادق النارية التي ناسبت حجم الجيش.</li>
+              <li><strong>دقة التنظيم والانضباط:</strong> خضوع الجيش العثماني لقيادة موحدة حازمة تحت إمرة سليم الأول.</li>
+              <li><strong>الخيانة والتفكك المملوكي:</strong> الخيانة التي دبت في صفوف المماليك (انحياز خاير بك نائب حلب للعثمانيين)، والتنافر الشديد بين طوائف المماليك وعدم ثقتهم بأوامر السلطان قنصوه الغوري الذي سقط صريعاً في المعركة.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- نتائج مرج دابق -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <h4 class="text-base font-black text-royal-900 mb-3">نتائج معركة مرج دابق:</h4>
+          <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">⚔️</span>
+            <h4>نتائج معركة مرج دابق الحاسمة (أغسطس 1516م):</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            
+            <p>
+              لم تكن مرج دابق مجرد انتصار موضعي، بل كانت <strong>معركة حاسمة قررت مصير دولة المماليك وأحلت مكانها الدولة العثمانية في زعامة العالم الإسلامي</strong>.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-2">
+              <div class="bg-papyrus-100 p-3 rounded-xl border border-papyrus-300">
+                <b>سقوط المدن السورية:</b> استولى سليم على حماة وحمص ودخل دمشق في سبتمبر 1516م وخُطب باسمه في الصلاة.
+              </div>
+              <div class="bg-amber-100 p-3 rounded-xl border border-amber-300 font-bold text-amber-950">
+                <b>لقب خادم الحرمين:</b> نُودي بسليم الأول في دمشق رسمياً «خادماً للحرمين الشريفين».
+              </div>
+              <div class="bg-papyrus-100 p-3 rounded-xl border border-papyrus-300">
+                <b>وفود الطاعة:</b> وفد عليه أمراء سوريا ولبنان مقدمين فروض الولاء فأعطاهم الأمان وثبتهم في أملاكهم.
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الخامس: ضم مصر ومعركة الريدانية ==================== -->
+    <section id="ridaniya-conquest" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٥
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">CONQUEST OF EGYPT — BATTLE OF RIDANIYA (1517)</span>
+          <h3 class="text-2xl font-black text-slate-900">خامساً: ضم مصر — معركة الريدانية واستشهاد طومان باي (1517م)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-8">
+        
+        <!-- المفاوضات ومحاذير سليم -->
+        <div class="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <h4 class="text-base font-black text-royal-900">١. كتاب سليم إلى طومان باي ومحاذير الزحف على مصر:</h4>
+          <p>
+            أرسل السلطان سليم كتاباً شديد اللهجة إلى <strong>السلطان الأشرف طومان باي</strong> (الملك الصالح وخليفة الغوري) يطلب الاعتراف بالسيادة العثمانية، وأن تُسك العملة باسم سليم، وأن يكون نائباً له في حكم مصر حتى غزة.
+          </p>
+          <p>
+            <strong>رد طومان باي:</strong> كان من المستحيل على دولة عريقة كمصر التسليم؛ فرفض طومان باي الشروط، وقَتل وفد التفاوض، وبذل وسعه لتنظيم الدفاع، واشترى بنادق ومدافع حديثة من <em>أهل البندقية</em>، وحاول إقامة خط دفاع عند الصالحية.
+          </p>
+          
+          <div class="p-4 bg-blue-50 rounded-2xl border border-blue-200 text-blue-950 space-y-1">
+            <b>محاذير السلطان سليم قبل دخول مصر:</b>
+            <p class="text-xs text-slate-700">
+              كان لدى سليم مخاوف جسيمة: مخاطر اجتياز صحراء سيناء الشاسعة وتعرض خطوط مواصلاته للقطع، وتوقعه مقاومة ضارية ومستميتة من المماليك لاعتبارهم مصر مركز ثقلهم وآخر معاقل وجودهم.
+            </p>
+          </div>
+        </div>
+
+        <!-- معركة خان يونس والريدانية مع الصورة -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <div class="flex flex-col lg:flex-row gap-6 items-center">
+            
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+              <img src="images/battle-of-ridaniya.jpg" alt="معركة الريدانية 1517" class="rounded-2xl shadow-md border border-slate-200 max-h-80 object-cover w-full bg-slate-50">
+              <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (٤): ملحمة معركة الريدانية والاشتباك عند العباسية (وثيقة تاريخية)</span>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <h4 class="text-base font-black text-royal-900">٢. الزحف والاشتباك في معركة الريدانية:</h4>
+              <p>
+                قرر سليم التقدم بعد استسلام القدس ويافا وغزة. وتغلبت طلائع العثمانيين بقيادة الصدر الأعظم <strong>سنان باشا</strong> على حملة مملوكية عند خان يونس بمساعدة بدو سيناء، مما أرهب بدو الشرقية فقدموا ولاءهم لسليم.
+              </p>
+              <p>
+                وفي صحراء <strong>الريدانية (العباسية بالقاهرة)</strong>، اصطدم الجيشان في <strong>23 يناير 1517م</strong>؛ التف العثمانيون حول مدافع طومان باي الثابتة وفاجأوه من الخلف بفضل مدافعهم المتحركة، فهُزم المماليك ودخل العثمانيون القاهرة في <strong>26 يناير 1517م</strong>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- قتال الشوارع ونهاية طومان باي -->
+        <div class="border-t border-papyrus-200 pt-6 space-y-4">
+          <h4 class="text-base font-black text-royal-900">٣. حرب الشوارع واستشهاد طومان باي على باب زويلة:</h4>
+          <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">👑</span>
+            <h4>حرب الشوارع واستشهاد طومان باي على باب زويلة (إبريل 1517م):</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            
+          
+            <p>
+              خاض طومان باي والمصريون <strong>حرب شوارع دامية</strong> ضد جيش سليم داخل أحياء القاهرة استمرت عدة أيام كبدت العثمانيين خسائر فادحة وقُتل فيها سنان باشا.
+            </p>
+            <p>
+              عندما رأى طومان باي قبول العرض السابق بالنيابة، رفض سليم بعدما أحسن استخدام الأمراء المماليك المنشقين المنضمين لجيشه. فلجأ طومان باي إلى <strong>شيخ بدو البحيرة (حسن بن مرعي)</strong> الذي حلف له على المصحف بحمايته، لكنه غدر به وسلمه لسليم الأول.
+            </p>
+            <div class="bg-rose-50 p-4 rounded-xl border-2 border-rose-300 text-rose-950 font-bold">
+              🕌 <strong>مشهد باب زويلة الخالد (إبريل 1517م):</strong> أمر السلطان سليم بشنق طومان باي على <strong>باب زويلة</strong>، وقرأ طومان باي الفاتحة ثلاثاً مع جموع الشعب المحتشد قبل إعدامه، وبموته انتهت دولة المماليك وصارت مصر ولاية عثمانية، وإن ظل المماليك يديرون الأقاليم كتابعين للباب العالي.
+            
+        
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور السادس: بنك الأسئلة والاختبار التفاعلي ==================== -->
+    <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg bg-royal-700 text-white flex items-center justify-center font-bold text-lg shadow">
+          🎯
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 tracking-wider uppercase block font-cinzel">ACADEMIC SELF-ASSESSMENT</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">بنك الأسئلة واختبار الفهم التفاعلي</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-papyrus-300 shadow-lg">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-papyrus-200 mb-8">
+          <div>
+            <h4 class="text-lg font-bold text-slate-900">اختبر استيعابك للمحاضرة الأولى (٧ أسئلة تخصصية دقيقة)</h4>
+            <p class="text-xs text-slate-500">اختر الإجابة الصحيحة لتكتشف التعليل التاريخي والإرشادي فوراً.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="quizScore" class="bg-rose-100 text-rose-900 px-3 py-1.5 rounded-full text-xs font-extrabold border border-rose-300">
+              النتيجة: ٠ / ٧
+            </span>
+            <button onclick="resetQuiz()" class="text-xs text-slate-500 hover:text-royal-700 underline font-semibold">
+              إعادة الاختبار
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-6" id="quizContainer">
+          
+          <!-- Q1 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الأول</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">لماذا سُمي سلاطين المرحلة الأولى من دولة المماليك (1250–1382م) بـ «المماليك البحرية»؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) لأنهم كانوا يمتلكون أضخم أسطول بحري في البحر المتوسط.</button>
+              <button onclick="checkAnswer(this, 1, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) لأن معسكراتهم وثكناتهم كانت مقامة بجزيرة الروضة وسط نهر النيل (بحر النيل).</button>
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) لأن أصلهم يعود إلى قراصنة البحار الأوروبية.</button>
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) لأنهم أتوا إلى الإسكندرية عبر البحر الأحمر.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثاني</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">من هو أول سلاطين دولة المماليك البرجية، ومن كان آخر سلاطينها؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) أولهم المعز أيبك وآخرهم قنصوه الغوري.</button>
+              <button onclick="checkAnswer(this, 2, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) أولهم الظاهر سيف الدين برقوق (1382م) وآخرهم الأشرف طومان باي (1517م).</button>
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) أولهم الظاهر بيبرس وآخرهم خاير بك.</button>
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) أولهم قايتباي وآخرهم سليم الأول.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثالث</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو الدافع الاقتصادي الأبرز الذي جعل العثمانيين يتطلعون للسيطرة على مصر وسواحل الشام؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 3, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) التطلع للرسوم والجمارك التي كان المماليك يحصلون عليها من مرور تجارة الشرق الأقصى والهند عبر البحر الأحمر والموانئ المصرية.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) الاستيلاء على مناجم الذهب في جبال الألب.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) إغلاق مضيق البوسفور أمام التجارة الأوروبية.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) تمويل زراعة التبغ في بلاد البلقان.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الرابع</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">من هو الأمير العثماني الهارب الذي آواه السلطان المملوكي قايتباي بمصر وأمده بالمال لقتال أخيه؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) الأمير سليمان القانوني.</button>
+              <button onclick="checkAnswer(this, 4, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) الأمير جم (شقيق السلطان بايزيد بعد هزيمته في موقعة أوكي 1481م).</button>
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) الأمير مصطفى بن سليمان شاه.</button>
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) الصدر الأعظم سنان باشا.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الخامس</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو اللقب الديني السيادي الذي نُودي به السلطان سليم الأول في دمشق عقب معركة مرج دابق (1516م)؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) قيصر الروم واليونان.</button>
+              <button onclick="checkAnswer(this, 5, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) خادماً للحرمين الشريفين (في مكة والمدينة).</button>
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) سلطان البحرين وخاقان النهرين.</button>
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) أمير المؤمنين في آسيا الوسطى.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال السادس</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">من أين اشترى السلطان طومان باي البنادق والمدافع الحديثة لتجهيز خط دفاع مصر قبل الريدانية؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 6, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) من تجار أهل البندقية (Venice).</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) من مصانع الإمبراطورية الروسية.</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) من مسبك القلعة المملوكي في دمشق.</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) من موانئ البرتغال بعد معركة ديو.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال السابع</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">أين وكيف انتهت حياة السلطان طومان باي آخر سلاطين دولة المماليك في إبريل 1517م؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) مات غرقاً في نهر النيل أثناء محاولته الهروب لجزيرة الروضة.</button>
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) قُتل في ميدان معركة الريدانية بقذيفة مدفع عثماني.</button>
+              <button onclick="checkAnswer(this, 7, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) غدر به شيخ بدو البحيرة فسلمه لسليم الأول الذي أمر بشنقه على باب زويلة بالقاهرة.</button>
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) نُفي إلى إسطنبول وعاش هناك حتى وفاته.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div></details>
+    </section>
+
+    <!-- Navigation Footer Next / Prev -->
+    <nav aria-label="تنقل المحاضرات" class="border-t border-papyrus-300 pt-8 pb-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <a href="index.html" class="p-4 rounded-2xl bg-white border border-papyrus-300 shadow-sm hover:border-royal-400 transition flex items-center gap-4 text-right">
+          <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-xl flex-shrink-0 text-slate-700">
+            ←
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-400 block">الفهرس العام</span>
+            <span class="text-sm font-black text-slate-800 block">فهرس محاضرات تاريخ مصر الحديث</span>
+            <span class="text-[11px] text-royal-700 font-medium">مقرر المستوى الرابع — قسم الإرشاد السياحي</span>
+          </div>
+        </a>
+
+        <a href="lecture-02.html" class="p-4 rounded-2xl bg-white border border-papyrus-300 shadow-sm hover:border-royal-400 transition flex items-center justify-between gap-4 text-right">
+          <div>
+            <span class="text-xs font-bold text-royal-600 block">المحاضرة التالية</span>
+            <span class="text-sm font-black text-slate-800 block">المحاضرة ٢: أحوال مصر أثناء الحكم العثماني</span>
+            <span class="text-[11px] text-royal-700 font-medium">قانون نامة مصر، الأوجاقات السبعة، والجمود الفكري</span>
+          </div>
+          <div class="w-12 h-12 rounded-xl royal-gradient text-white flex items-center justify-center text-xl flex-shrink-0">
+            →
+          </div>
+        </a>
+
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-royal-950 text-white border-t border-royal-800 py-8 px-4 mt-16 text-center text-xs space-y-3">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span>👑</span>
+        <span class="font-bold text-white">تاريخ مصر الحديث والمعاصر • المستوى الرابع • قسم الإرشاد السياحي</span>
+      </div>
+      <div class="text-slate-400">
+        <a href="../portal.html" class="text-amber-400 hover:underline">بوابة سياحة 2026</a> • قسم الإرشاد السياحي
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function syncStickyOffset() {
+      const header = document.querySelector('header');
+      if (header) {
+        const h = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-h', Math.round(h) + 'px');
+      }
+    }
+    window.addEventListener('resize', syncStickyOffset);
+    window.addEventListener('scroll', syncStickyOffset, { passive: true });
+    document.addEventListener('DOMContentLoaded', syncStickyOffset);
+    setTimeout(syncStickyOffset, 50);
+    setTimeout(syncStickyOffset, 300);
+
+    function toggleSearch() {
+      const bar = document.getElementById('searchBar');
+      bar.classList.toggle('hidden');
+      if (!bar.classList.contains('hidden')) document.getElementById('searchInput').focus();
+      setTimeout(syncStickyOffset, 50);
+    }
+
+    function handleSearch(q) {
+      q = q.trim().toLowerCase();
+      const sections = document.querySelectorAll('main section');
+      if (!q) { sections.forEach(s => s.classList.remove('opacity-25', 'ring-2', 'ring-royal-500')); return; }
+      sections.forEach(s => {
+        if (s.innerText.toLowerCase().includes(q)) {
+          s.classList.remove('opacity-25');
+          s.classList.add('ring-2', 'ring-royal-500', 'rounded-3xl');
+        } else {
+          s.classList.add('opacity-25');
+          s.classList.remove('ring-2', 'ring-royal-500');
+        }
+      });
+    }
+
+    let correctCount = 0;
+    const feedbacks = {
+      1: {
+        true: 'إجابة صحيحة! سُمي المماليك البحرية بهذا الاسم لأن معسكراتهم وثكناتهم الحربية كانت مقامة بجزيرة الروضة وسط نهر النيل (بحر النيل).',
+        false: 'غير صحيح؛ التسمية تعود لإقامتهم في جزيرة الروضة وسط نهر النيل الذي كان يسميه العامة «بحر النيل».'
+      },
+      2: {
+        true: 'إجابة صحيحة! أول سلاطين المماليك البرجية هو الظاهر برقوق (1382م)، وآخرهم هو السلطان الشهيد طومان باي (1517م) الذي انتهت بقتله دولة المماليك.',
+        false: 'غير صحيح؛ أول سلاطين البرجية هو الظاهر برقوق وآخرهم طومان باي الذي شنق في الريدانية/باب زويلة عام 1517م.'
+      },
+      3: {
+        true: 'إجابة صحيحة! تطلع العثمانيون للرسوم والجمارك الهائلة التي كان المماليك يجبونها من تجارة التوابل والحرير العابرة لموانئ مصر وسواحل الشام.',
+        false: 'غير صحيح؛ الدافع الاقتصادي الأبرز كان الاستيلاء على رسوم وجبايات تجارة الترانزيت العالمية بين الهند وأوروبا عبر مصر والشام.'
+      },
+      4: {
+        true: 'إجابة صحيحة! استضاف السلطان قايتباي بمصر الأمير جم شقيق بايزيد بعد هزيمته في موقعة أوكي 1481م وأمده بالمساعدات مما وتر العلاقات العثمانية المملوكية.',
+        false: 'غير صحيح؛ الأمير جم هو شقيق السلطان بايزيد الذي نازعه العرش ولجأ لقايتباي بمصر.'
+      },
+      5: {
+        true: 'إجابة صحيحة! نُودي بسليم الأول في دمشق «خادماً للحرمين الشريفين» في سبتمبر 1516م بعد حسم معركة مرج دابق.',
+        false: 'غير صحيح؛ اللقب السيادي الأرفع كان «خادماً للحرمين الشريفين» وتلقب به في دمشق.'
+      },
+      6: {
+        true: 'إجابة صحيحة! اشترى طومان باي بنادق ومدافع حديثة من تجار أهل البندقية الإيطالية لتجهيز دفاعات مصر.',
+        false: 'غير صحيح؛ اشترى طومان باي المدافع والأسلحة النارية من تجار «أهل البندقية» (Venice).'
+      },
+      7: {
+        true: 'إجابة صحيحة! لجأ طومان باي لشيخ بدو البحيرة فغدر به وسلمه لسليم الأول، الذي أمر بشنقه على باب زويلة في إبريل 1517م، وزالت بذلك دولة المماليك.',
+        false: 'غير صحيح؛ سلمه شيخ بدو البحيرة غدراً، وشُنق على باب زويلة بالقاهرة في إبريل 1517م.'
+      }
+    };
+
+    function checkAnswer(btn, qNum, isCorrect) {
+      const parent = btn.closest('.quiz-item');
+      if (parent.dataset.answered === 'true') return;
+      parent.dataset.answered = 'true';
+
+      const options = parent.querySelectorAll('.quiz-option');
+      options.forEach(opt => opt.disabled = true);
+
+      const feedback = parent.querySelector('.quiz-feedback');
+      feedback.classList.remove('hidden');
+
+      if (isCorrect) {
+        btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'font-bold');
+        feedback.classList.add('bg-emerald-50', 'border', 'border-emerald-200', 'text-emerald-900');
+        feedback.textContent = '✨ ' + feedbacks[qNum].true;
+        correctCount++;
+      } else {
+        btn.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-950', 'font-bold');
+        feedback.classList.add('bg-rose-50', 'border', 'border-rose-200', 'text-rose-900');
+        feedback.textContent = '❌ ' + feedbacks[qNum].false;
+      }
+
+      document.getElementById('quizScore').textContent = `النتيجة: ${correctCount} / 7`;
+    }
+
+    function resetQuiz() {
+      correctCount = 0;
+      document.getElementById('quizScore').textContent = 'النتيجة: ٠ / ٧';
+      const items = document.querySelectorAll('.quiz-item');
+      items.forEach(item => {
+        item.dataset.answered = 'false';
+        const options = item.querySelectorAll('.quiz-option');
+        options.forEach(opt => {
+          opt.disabled = false;
+          opt.classList.remove('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'bg-rose-100', 'border-rose-500', 'text-rose-950', 'font-bold');
+        });
+        const feedback = item.querySelector('.quiz-feedback');
+        feedback.classList.add('hidden');
+        feedback.classList.remove('bg-emerald-50', 'border', 'border-emerald-200', 'text-emerald-900', 'bg-rose-50', 'border-rose-200', 'text-rose-900');
+      });
+    }
+  </script>
+  <script src="../assets/course-ui.js" defer></script>
+</body>
+</html>

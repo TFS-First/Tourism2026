@@ -48,6 +48,8 @@
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background: #faf5e9;
       color: var(--ink);
       overflow-x: clip;
@@ -81,34 +83,21 @@
       box-shadow: 0 16px 30px -10px rgba(34, 123, 130, 0.2);
     }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
   <!-- Top Navigation matching Ancient Egyptian App Bar -->
-  <header class="max-w-[1400px] w-full mx-auto px-6 lg:px-16 py-6 flex items-center justify-between gap-6 border-b border-[#ad8b5025]">
-    <a href="#" class="flex items-center gap-3 text-right group">
-      <span class="text-4xl text-teal-600 leading-none group-hover:scale-105 transition-transform">🏛️</span>
-      <div>
-        <b class="text-xl font-bold block text-slate-800 leading-tight">تاريخ وحضارة مصر القديمة</b>
-        <small class="text-[10px] tracking-[3px] text-[#9b7949] uppercase block mt-0.5 font-semibold">ANCIENT EGYPTIAN HISTORY</small>
-      </div>
-    </a>
-
-    <!-- Navigation links -->
-    <nav class="hidden md:flex items-center gap-6 text-sm text-[#65726b] font-semibold">
-      <a href="#lectures" class="hover:text-teal-600 transition">فهرس المحاضرات</a>
-      <a href="../index.html" class="hover:text-teal-600 transition flex items-center gap-1">
-        <span class="hieroglyph-font">𓆣</span>
-        <span>المصرية القديمة</span>
+  <header class="course-header bg-[#faf5e9] border-b border-[#ad8b5025]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2 min-w-0 text-right">
+        <span class="text-2xl sm:text-3xl" aria-hidden="true">🏛️</span>
+        <span class="min-w-0"><b class="block text-sm sm:text-base text-slate-800">تاريخ وحضارة مصر القديمة</b><small class="block text-[10px] text-[#9b7949]" dir="ltr">ANCIENT EGYPTIAN HISTORY</small></span>
       </a>
-    </nav>
-
-    <!-- Prominent Back to Portal Hub CTA -->
-    <a href="../portal.html" class="inline-flex items-center gap-2 border border-[#b89a674f] px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-[#6d593a] bg-white/60 hover:bg-white hover:text-teal-700 shadow-sm transition">
-      <span>🏛️</span>
-      <span>بوابة سياحة 2026 الرئيسية</span>
-      <span>←</span>
-    </a>
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]"><a href="#lectures">فهرس المحاضرات</a></nav>
+      <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white shadow-sm"><span>🏛️</span><span class="hidden sm:inline">بوابة سياحة 2026</span><span>←</span></a>
+    </div>
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المادة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور المادة</span><a href="#lectures">فهرس المحاضرات</a></nav></details>
   </header>
 
   <!-- Hero Main Section matching LandingHero.jsx -->
@@ -151,7 +140,7 @@
     <!-- Hero Art with Mask -->
     <div class="flex flex-col items-center justify-center gap-4">
       <div class="relative w-full max-w-[480px]">
-        <img src="../assets/nile-hero.webp" 
+        <img src="../assets/ancient-history-hero.webp" srcset="../assets/ancient-history-hero-640.webp 640w, ../assets/ancient-history-hero.webp 1122w" sizes="(max-width: 1023px) min(100vw - 3rem, 480px), 40vw" width="1122" height="1402" loading="eager" fetchpriority="high" 
              alt="رسمة فرعونية بنهر النيل والمعابد" 
              class="w-full nile-mask-art block shadow-2xl" />
       </div>
@@ -304,5 +293,6 @@
 
   </footer>
 
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

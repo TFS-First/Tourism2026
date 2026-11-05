@@ -70,9 +70,12 @@
   <style>
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #fcf9f2;
       color: #1e293b;
     }
@@ -114,47 +117,20 @@
       border-color: #d97706;
       box-shadow: 0 6px 16px -4px rgba(217, 119, 6, 0.2);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #b8862d; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-ptolemy-100 selection:text-ptolemy-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement Navigation Bar -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-hellenic-950 text-papyrus-100 px-4 py-2 text-xs border-b border-hellenic-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-bronze-400 hover:bg-bronze-300 text-slate-950 px-3 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
-      </a>
-
-      <!-- Quick Switcher to Other Subjects -->
-      <div class="flex items-center gap-2 flex-wrap">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>🏛️</span>
-          <span>فهرس العصر اليوناني الروماني</span>
-        </a>
-        <a href="lecture-09.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>⏮️</span>
-          <span>المحاضرة ٩ (بطليموس السادس والثامن)</span>
-        </a>
-        <a href="lecture-11.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-purple-900 px-3 py-1 rounded-full border border-purple-700 font-bold">
-          <span>⏭️</span>
-          <span>المحاضرة ١١ (كليوباترا السابعة)</span>
-        </a>
-        <a href="../history/index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>📜</span>
-          <span>تاريخ وحضارة مصر القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
+  
 
   <!-- Main Navigation Header (Dynamic padding to prevent sticky collisions) -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
+  <header class="course-header sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
       
       <!-- Subject & Lecture Title -->
@@ -193,6 +169,8 @@
       </div>
 
     </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="index.html">فهرس المادة</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#overview">نظرة عامة</a><a href="#vocabulary">قاموس المصطلحات</a><a href="#ptolemy9">بطليموس التاسوع لاثيروس</a><a href="#ptolemy10">بطليموس العاشر والتابوت الذهبي</a><a href="#ptolemy11">مأساة برينيكي الـ 19 يوماً</a><a href="#auletes">أوليتيس والفيالق الرومانية</a><a href="#edfu">صرح معبد إدفو</a><a href="#quiz">بنك الأسئلة</a></nav></details>
   </header>
 
   <!-- Hero Section -->
@@ -287,31 +265,37 @@
   </section>
 
   <!-- Vocabulary Section (COLLAPSIBLE as requested by user to prevent crowding) -->
-  <section id="vocabulary" class="py-10 bg-papyrus-50 border-b border-papyrus-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-6">
-        <span class="text-xs font-black text-ptolemy-600 uppercase tracking-widest block mb-1">GUIDE VOCABULARY & GLOSSARY</span>
-        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-3">
-          📖 قاموس الكلمات الصعبة والمصطلحات الأكاديمية للإرشاد السياحي
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          استخرجنا لك هنا كافة المصطلحات والكلمات اللاتينية واليونانية والتاريخية الواردة في صفحات المحاضرة (64–72)، مع النطق الصوتي الدقيق والشرح الأكاديمي والمدلول الذي تحتاجه في شرحك كمرشد سياحي مرخص.
-        </p>
-      </div>
+  <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 border-amber-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
 
-      <!-- Collapsible Toggle Button -->
-      <div class="flex justify-center mb-4">
-        <button id="vocabToggleBtn" onclick="toggleVocabSection()" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl font-black text-sm sm:text-base bg-gradient-to-r from-amber-700 via-ptolemy-600 to-amber-800 hover:from-amber-800 hover:to-ptolemy-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 border border-amber-400/40">
-          <span id="vocabToggleIcon" class="text-lg">👁️</span>
-          <span id="vocabToggleText">عرض قاموس المصطلحات (١٤ مصطلحاً متخصصاً)</span>
-          <span id="vocabToggleChevron" class="text-xs bg-white/20 rounded-full px-2 py-0.5">▼</span>
-        </button>
-      </div>
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
 
-      <!-- Container: Hidden by default -->
-      <div id="vocabContainer" class="hidden mt-8 transition-all duration-300 ease-in-out">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
           <!-- Term 1 -->
           <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
@@ -332,272 +316,9 @@
               📚 وردت في ص 64 بالكتاب الجامعي
             </div>
           </div>
-
-          <!-- Term 2 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full border border-amber-300">
-                  لقب ملكي شهير
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ɔːˈliːtiːz/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">AULETES</h3>
-              <div class="font-extrabold text-amber-800 text-sm mb-2">أوليتيس (الزمار / عازف الفلوت)</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                لقب بطليموس الثاني عشر لشغفه البالغ بالعزف على آلة الفلوت (Aulos) ومشاركته في المسابقات الموسيقية الشعبية مهملاً شؤون الحكم وإدارة الدولة.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 68 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 3 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full border border-amber-300">
-                  تأليه ملكي
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˈniːɒs ˌdaɪ.əˈnaɪsəs/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">NEOS DIONYSOS</h3>
-              <div class="font-extrabold text-amber-800 text-sm mb-2">ديونيسوس الجديد</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                اللقب الرسمي المختار لبطليموس الثاني عشر، تشبهاً بالإله الإغريقي ديونيسوس (باخوس) إله الخمر والنشوة والموسيقى والاحتفالات الصاخبة.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 68 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 4 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-blue-100 text-blue-900 px-2 py-0.5 rounded-full border border-blue-300">
-                  قانون ديني
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/raɪt ɒv əˈsaɪləm/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">RIGHT OF ASYLUM</h3>
-              <div class="font-extrabold text-blue-800 text-sm mb-2">حق اللجوء للمعبد (الحصانة الدينية)</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                تقليد مقدّس يمنح الحماية لمن يلجأ إلى حرم المعبد؛ وقد انتهكته كليوباترا تريفينا حينما أمرت جنودها باقتحام معبد أرتميس وسحل أختها وقتلها.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 64 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 5 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-red-100 text-red-900 px-2 py-0.5 rounded-full border border-red-300">
-                  خطيئة تدنيس أثرية
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˈɡoʊldən ˈkɒfɪn/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">GOLDEN COFFIN OF ALEXANDER</h3>
-              <div class="font-extrabold text-red-800 text-sm mb-2">التابوت الذهبي للإسكندر الأكبر</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                التابوت المصنوع من الذهب الخالص لمدفن الإسكندر بمقبرة السوما بالإسكندرية؛ والذي سرقه بطليموس العاشر وصهره لدفع رواتب المرتزقة.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 65 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 6 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-purple-100 text-purple-900 px-2 py-0.5 rounded-full border border-purple-300">
-                  أثر بديل
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ɡlɑːs ˈkɒfɪn/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">GLASS COFFIN</h3>
-              <div class="font-extrabold text-purple-800 text-sm mb-2">التابوت الزجاجي البديل</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                التابوت الزجاجي الذي وضعه بطليموس العاشر مكان التابوت الذهبي المسروق، مما أشعل ثورة عارمة لأهل الإسكندرية انتهت بهروبه وغرقه.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 65 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 7 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded-full border border-emerald-300">
-                  نظام حكم
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˌkoʊˈriːdʒənt/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">CO-REGENT</h3>
-              <div class="font-extrabold text-emerald-800 text-sm mb-2">شريك في العرش / حاكم مشارك</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                نظام اقتسام الحكم رسمياً بين الملك وابنته (مثل بطليموس التاسع مع برينيكي الثالثة، وبطليموس الثاني عشر مع كليوباترا السابعة).
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 66 و 70 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 8 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full border border-amber-300">
-                  صفة وراثية
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˌɪlɪˈdʒɪtɪmət sʌn/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">ILLEGITIMATE SON</h3>
-              <div class="font-extrabold text-amber-800 text-sm mb-2">ابن غير شرعي (من جارية/محظية)</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                أصل بطليموس الثاني عشر كابن غير شرعي لبطليموس التاسع من أم غير ملكية؛ وهو السند الذي استغلته روما لتهديد شرعية جلوسه على عرش مصر.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 68 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 9 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-rose-100 text-rose-900 px-2 py-0.5 rounded-full border border-rose-300">
-                  مؤامرة سياسية
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˈrəʊmən ˈsɛnɪt wɪl/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">ROMAN WILL RUMOR</h3>
-              <div class="font-extrabold text-rose-800 text-sm mb-2">شائعة الوصية الرومانية</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                ادعاء مجلس الشيوخ الروماني بوجود وصية سرية تركها بطليموس الحادي عشر يورث فيها أرض مصر كاملة لروما، مما فتح باب الابتزاز المالي.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 68 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 10 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full border border-amber-300">
-                  اقتصاد وموازين
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/braɪbz & ˈtælənts/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">BRIBES & TALENTS</h3>
-              <div class="font-extrabold text-amber-800 text-sm mb-2">الرشى والوزنات الذهبية</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                الأموال الطائلة التي استنزفها بطليموس الثاني عشر عبر زيادة الضرائب على المصريين، ودفع 6,000 وزنة ذهبية (Talents) لقيصر لشراء اعتراف روما.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 68–69 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 11 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-indigo-100 text-indigo-900 px-2 py-0.5 rounded-full border border-indigo-300">
-                  منصب عسكري روماني
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˈrəʊmən proʊˈkɒnsəl/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">ROMAN PROCONSUL</h3>
-              <div class="font-extrabold text-indigo-800 text-sm mb-2">الحاكم الإقليمي العام لروما</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                القائد الروماني أولوس غابينيوس في سوريا، الذي تلقى رشوة خيالية وأرسل فيالق روما لغزو مصر واستعادة عرش بطليموس الثاني عشر بالقوة.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 69 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 12 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full border border-amber-300">
-                  نقش فرعوني أيقوني
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˈsmaɪtɪŋ ðiː ˈɛnəmiz/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">SMITING THE ENEMIES</h3>
-              <div class="font-extrabold text-amber-800 text-sm mb-2">منظر قمع وضرب الأعداء بالدبوس</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                المشهد الملكي التقليدي المنقوش بحجم ضخم على واجهة صرح معبد إدفو؛ يظهر فيه أوليتيس ممسكاً بالأعداء من نواصيهم أمام حورس وحتحور.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 70–71 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 13 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-teal-100 text-teal-900 px-2 py-0.5 rounded-full border border-teal-300">
-                  عمارة معابد
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ɡreɪt ˈpaɪlɒn ɒv ˈɛdfuː/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">PYLON OF EDFU</h3>
-              <div class="font-extrabold text-teal-800 text-sm mb-2">صرح معبد إدفو العظيم</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                الصرح الضخم بارتفاع 36 متراً الذي أكمل بناءه ونقوشه الملك بطليموس الثاني عشر، ويعد من أروع وأكمل الصروح المعمارية الباقية في مصر.
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 70–71 بالكتاب الجامعي
-            </div>
-          </div>
-
-          <!-- Term 14 -->
-          <div class="bg-white rounded-2xl p-4 border border-papyrus-300 shadow-sm vocab-card flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start gap-2 mb-2">
-                <span class="text-[10px] font-black bg-stone-100 text-stone-900 px-2 py-0.5 rounded-full border border-stone-300">
-                  قانون دولي
-                </span>
-                <span class="text-xs font-mono text-slate-400 ltr-text">/ˈliːɡəl ˈɡɑːrdiən/</span>
-              </div>
-              <h3 class="font-black text-slate-900 text-base mb-1 font-cinzel ltr-text text-left">LEGAL GUARDIAN</h3>
-              <div class="font-extrabold text-stone-800 text-sm mb-2">الوصي القانوني المعتمد</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                تعيين القائد الروماني الشهير بومبي ومجلس الشيوخ الروماني كأوصياء قانونيين على أبناء أوليتيس القصر (كليوباترا السابعة وبطليموس الثالث عشر).
-              </p>
-            </div>
-            <div class="mt-3 pt-2 border-t border-papyrus-200 text-[11px] text-slate-500 font-bold">
-              📚 وردت في ص 70 و 73 بالكتاب الجامعي
-            </div>
-          </div>
-
         </div>
-      </div>
-
-    </div>
-  </section>
+      </details>
+    </section>
 
   <!-- Main Content Sections: Parallel Academic Grid & Story Narrative -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full space-y-16">
@@ -687,15 +408,24 @@
       </div>
 
       <!-- Historical Narrative Story Box -->
-      <div class="story-box rounded-2xl p-5 border-r-4 border-amber-600 shadow-sm">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm mb-2">
-          <span>📜</span>
-          <span>التاريخ كقصة ممتعة للمرشد السياحي: دراما الشقيقتين في معبد أرتميس</span>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: التاريخ كقصة ممتعة للمرشد السياحي: دراما الشقيقتين في معبد أرتميس</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           تخيّل مأساة الملكة المصرية كليوباترا الرابعة: طردتها أمها الجاحدة من حضن زوجها المحب، فذهبت إلى بلاد الشام لتجمع جيشاً تعود به إلى الإسكندرية، لكن القدر قادها إلى مواجهة أختها الشقيقة «تريفينا». وحينما لجأت كليوباترا الرابعة إلى المعبد المقدس مستجيرة بآلهة الصيد أرتميس، لم يرحمها حقد أختها، فقطع الجنود أيديها وهي متمسكة بالمذبح وسحلوها جثة هامدة! دارت عجلة الزمن سريعاً، ليقع الزوج القاتل وزوجته الحاقدة في قبضة أرمل كليوباترا الرابعة، فأذاق تريفينا نفس المصير، في واحدة من أكثر قصص الانتقام إثارة في العالم الهيلينستي القديم!
         </p>
-      </div>
+        </div>
+      </details>
 
       <!-- Image 1 from Textbook: Ptolemy IX Relief at Edfu Temple -->
       <div class="bg-white rounded-3xl p-5 border border-papyrus-300 shadow-sm">
@@ -807,15 +537,24 @@
       </div>
 
       <!-- Historical Narrative Story Box -->
-      <div class="story-box rounded-2xl p-5 border-r-4 border-amber-600 shadow-sm">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm mb-2">
-          <span>📜</span>
-          <span>التاريخ كقصة ممتعة للمرشد السياحي: عندما صهر الملك ذهب الإسكندر!</span>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: التاريخ كقصة ممتعة للمرشد السياحي: عندما صهر الملك ذهب الإسكندر!</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           كان جسد الإسكندر الأكبر يرقد بسلام لأكثر من قرنين داخل تابوت من الذهب الخالص يزن مئات الكيلوجرامات تحت قبة ضريحه الشهير، ويُزار كأقدس مزار إمبراطوري في العالم القديم. لكن بطليموس العاشر المفلس، المحاط بسيوف المرتزقة المطالبين برواتبهم، ارتكب المحظور: دخل الضريح ليلاً، ونزع الجثمان النبيل، وصهر التابوت الذهبي إلى عملات نقدية، واستبدله بتابوت من الزجاج الشفاف! لم يغفر له السكندريون هذا التدنيس قط، فكانت ثورتهم بمثابة طوفان بشري ألقى به في قاع البحر غريقاً منبوذاً!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -904,15 +643,24 @@
       </div>
 
       <!-- Historical Narrative Story Box -->
-      <div class="story-box rounded-2xl p-5 border-r-4 border-amber-600 shadow-sm">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm mb-2">
-          <span>📜</span>
-          <span>التاريخ كقصة ممتعة للمرشد السياحي: 19 يوماً أنهت سلالة شرعية!</span>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: التاريخ كقصة ممتعة للمرشد السياحي: 19 يوماً أنهت سلالة شرعية!</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           كانت الملكة برينيكي الثالثة أيقونة السلام والمحبة لدى أهل الإسكندرية؛ وحينما عاد الشاب بطليموس الحادي عشر مدعوماً من روما وتزوجها، اعتقد الجميع أن الاستقرار عاد أخيراً. لكن طمعه الأعمى ورغبته في الاستبداد دفعاه لقتل العروس المحبوبة بعد 19 يوماً فقط! لم ينتظر السكندريون محاكمة، بل اقتحم الحرس والمواطنون مخدع الملك وسحلوه إلى ساحة الألعاب الرياضية ومزقوه بأيديهم إرباً، مسدلين الستار على آخر سليل شرعي مباشر للبطالمة، لتجد مصر نفسها وجهاً لوجه أمام خطر الغزو الروماني المباشر!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -1010,15 +758,24 @@
       </div>
 
       <!-- Historical Narrative Story Box -->
-      <div class="story-box rounded-2xl p-5 border-r-4 border-amber-600 shadow-sm">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm mb-2">
-          <span>📜</span>
-          <span>التاريخ كقصة ممتعة للمرشد السياحي: الزمار الذي باع بلاده ليحكم فوق جثة ابنته!</span>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: التاريخ كقصة ممتعة للمرشد السياحي: الزمار الذي باع بلاده ليحكم فوق جثة ابنته!</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           كان بطليموس الثاني عشر مهووساً بالفلوت ومسابقات العزف، غير مبالٍ بآلام شعبه. وحينما هددته روما بوثيقة وصية وهمية، حوّل مصر إلى منجم ذهب يدفع منه رشى خرافية لأقطاب روما (6000 وزنة ذهبية لقيصر وبومبي). وعندما ثار شعبه وخلعوه وعينوا ابنته برينيكي، لم يتردد في الذهاب صاغراً لروما، واستئجار الجيش الروماني بحراب الفيالق التي اقتحمت الدلتا وسفكت دماء المصريين، ليدخل الإسكندرية محمولاً على أكتاف الرومان، وأول قرار يتخذه هو قطع رأس ابنته برينيكي ليرتدي تاجه الملطخ بالدماء والديون!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -1101,15 +858,24 @@
       </div>
 
       <!-- Historical Narrative Story Box -->
-      <div class="story-box rounded-2xl p-5 border-r-4 border-amber-600 shadow-sm">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm mb-2">
-          <span>📜</span>
-          <span>التاريخ كقصة ممتعة للمرشد السياحي: تناقض الصخر... الملك الذليل يرسم نفسه بطلاً خارقاً!</span>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: التاريخ كقصة ممتعة للمرشد السياحي: تناقض الصخر... الملك الذليل يرسم نفسه بطلاً خارقاً!</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           حينما تقف مع فوجك السياحي أمام صرح معبد إدفو الشاهق، سترى أوليتيس مرسوماً بحجم أسطوري وهو يرفع دبوس القتال ليحطم رؤوس أعدائه الأسرى أمام الإله حورس، كأنه تحتمس الثالث أو رمسيس الثاني في أوج مجدهما! ولكن ما تكشفه الوثائق التاريخية للمرشد السياحي هو المفارقة الصادمة: فهذا الملك "الخارق" على جدران إدفو كان في الواقع ملكاً مديوناً، يرتجف أمام روما، دفع آخر درهم في خزائن بلاده رشى لقيصر، وأوصى في ورقة موته بأن تضع روما يدها كوصي على طفليه، مسلماً شعلة العرش لابنته الداهية كليوباترا السابعة!
         </p>
-      </div>
+        </div>
+      </details>
 
       <!-- Images Grid from Textbook: Edfu Pylon & Smiting Enemies -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1162,6 +928,7 @@
 
     <!-- ================= SECTION 6: INTERACTIVE 10-QUESTION QUIZ ================= -->
     <section id="quiz" class="scroll-mt-24 pt-8">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       <div class="bg-gradient-to-br from-papyrus-100 via-white to-papyrus-200 rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-ptolemy-300 shadow-xl">
         
         <div class="text-center max-w-2xl mx-auto mb-8">
@@ -1422,6 +1189,7 @@
         </form>
 
       </div>
+    </div></details>
     </section>
 
   </main>
@@ -1553,5 +1321,6 @@
       document.getElementById('scoreText').innerText = 'أجب عن الأسئلة واضغط «تصحيح الاختبار»';
     }
   </script>
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

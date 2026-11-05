@@ -44,9 +44,12 @@
   <style>
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #faf5eb;
       color: #243532;
     }
@@ -74,83 +77,72 @@
       backdrop-filter: blur(12px);
       background-color: rgba(250, 245, 235, 0.94);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    .story-box {
+      border-right: 4px solid #b8862d;
+      background: linear-gradient(to left, #fffdfa, #f8f3e8);
+    }
+    .vocab-card {
+      transition: all 0.2s ease;
+    }
+    .vocab-card:hover {
+      background-color: #ffffff;
+      border-color: #d97706;
+      box-shadow: 0 6px 16px -4px rgba(217, 119, 6, 0.15);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #c5a360; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-nile-100 selection:text-nile-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement with Direct Back to Hub Link -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-nile-900 text-papyrus-100 px-4 py-2 text-xs border-b border-nile-700">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
       
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-slate-900 px-3 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">🏛️</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ وحضارة مصر القديمة</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]" dir="ltr" style="text-align: left;">ANCIENT EGYPTIAN CIVILIZATION</small>
+        </div>
       </a>
 
-      <!-- Quick Switcher to Index and Egyptian Language -->
-      <div class="flex items-center gap-2">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#glossary" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>📖</span>
-          <span>فهرس محاضرات الحضارة</span>
+          <span>قاموس المرشد</span>
         </a>
-        <a href="../index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
-          <span class="hieroglyph-font">𓆣</span>
-          <span>تطبيق المصرية القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Main Navigation Header -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
-      
-      <!-- Subject & Lecture Title -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group text-right">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl teal-gradient flex items-center justify-center text-white shadow-md text-xl sm:text-2xl flex-shrink-0 group-hover:scale-105 transition-transform">
-          🏛️
-        </div>
-        <div class="space-y-0.5">
-          <span class="text-[10px] sm:text-xs font-bold text-nile-700 tracking-wider block">تاريخ وحضارة مصر القديمة</span>
-          <h1 class="text-xs sm:text-base md:text-lg font-black text-slate-800 leading-snug">المحاضرة ١: التمهيد والبيئة والإنسان</h1>
-        </div>
-      </a>
-
-      <!-- Quick Sections Nav -->
-      <nav class="hidden lg:flex items-center gap-1 text-sm font-semibold text-slate-600">
-        <a href="#dialectic" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">جدلية البيئة والإنسان</a>
-        <a href="#traits" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">السمات الحاكمة</a>
-        <a href="#nile-genius" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">عبقرية النيل</a>
-        <a href="#climate-migration" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">النزوح المناخي</a>
-        <a href="#neolithic-rev" class="px-3 py-2 rounded-lg bg-amber-50 text-amber-900 border border-amber-300 font-bold hover:bg-amber-100 transition-colors">🌾 الثورة الزراعية</a>
-        <a href="#guide-insights" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">مفاهيم المرشد</a>
-        <a href="#quiz" class="px-3 py-2 rounded-lg bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition-colors flex items-center gap-1.5">
+        <a href="#dialectic" class="hover:text-teal-700 transition">جدلية البيئة</a>
+        <a href="#nile-genius" class="hover:text-teal-700 transition">عبقرية النيل</a>
+        <a href="#neolithic-rev" class="hover:text-teal-700 transition">الثورة الزراعية</a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>🎯</span>
           <span>اختبر فهمك</span>
         </a>
       </nav>
 
-      <!-- Action & Search -->
-      <div class="flex items-center gap-2">
-        <button onclick="toggleSearch()" class="p-2.5 rounded-xl border border-papyrus-300 text-slate-600 hover:bg-papyrus-200 hover:text-nile-700 transition-colors flex items-center gap-2 text-sm font-medium">
-          <span>🔍</span>
-          <span class="hidden sm:inline">بحث سريع</span>
-        </button>
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
       </div>
     </div>
-
-    <!-- Quick Search Bar (Collapsible) -->
-    <div id="searchBar" class="hidden border-t border-papyrus-300 bg-papyrus-100/95 px-4 py-3">
-      <div class="max-w-3xl mx-auto relative">
-        <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="ابحث في أي مفهوم، نظرية، عصر جيولوجي، أو مقارنة في المحاضرة..." 
-               class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-papyrus-400 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-nile-600 focus:border-transparent placeholder-slate-400" />
-        <span class="absolute right-3.5 top-3 text-slate-400">🔍</span>
-      </div>
-    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="index.html">فهرس المادة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#glossary">📖 قاموس المرشد</a><a href="#dialectic">جدلية البيئة</a><a href="#nile-genius">عبقرية النيل</a><a href="#neolithic-rev">الثورة الزراعية</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
   </header>
 
   <!-- Hero Banner -->
@@ -204,26 +196,103 @@
   </section>
 
   <!-- Sticky Course Quick Navigation Rail -->
-  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky top-20 z-40 px-4 py-2.5 overflow-x-auto">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
-      <div class="flex items-center gap-2">
-        <span class="text-amber-700">📖 محاور الدرس:</span>
-        <a href="#dialectic" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">١. جدلية البيئة والإنسان</a>
-        <a href="#traits" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٢. السمات الحاكمة</a>
-        <a href="#comparison" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٣. مقارنة الحضارات</a>
-        <a href="#nile-genius" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٤. عبقرية النيل وتفرده</a>
-        <a href="#climate-migration" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٥. الجفاف والنزوح العظيم</a>
-        <a href="#neolithic-rev" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition bg-amber-50 text-amber-900 border border-amber-300 font-bold">🌾 ٦. الثورة الزراعية</a>
-        <a href="#guide-insights" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٧. مفاهيم المرشد</a>
-      </div>
-      <a href="#quiz" class="text-nile-700 hover:text-nile-900 underline font-extrabold">الذهاب للاختبار ←</a>
-    </div>
-  </div>
+  
 
   <!-- Main Content Layout -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
     <!-- ==================== المحور الأول: جدلية البيئة والإنسان ==================== -->
+    <!-- ==================== قاموس المصطلحات الإنجليزية للمرشد السياحي (مطوي افتراضياً) ==================== -->
+    <section id="glossary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                المصطلحات الإنجليزية والتخصصية للمحاضرة الأولى (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 px-3 py-1.5 rounded-full border border-amber-300 hidden sm:inline-block">
+              ٢١ مصطلحاً إرشادياً
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
+
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المفاهيم الجغرافية والبيئية تشكل الركيزة الأساسية لشرح نشأة مصر القديمة أمام المجموعات السياحية:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+            
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Environmental Determinism</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">الحتمية البيئية</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ɪnˌvaɪ.rənˈmen.təl dɪˈtɜː.mɪ.nɪ.zəm/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">النظرية القائلة بأن البيئة الطبيعية تصوغ مصير الشعوب، وهو مفهوم نقده علماء المصريات لأن الإنسان المصري صانع الحضارة.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Possibilism / Interaction</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">الإمكانية البيئية</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈpɒs.ɪ.bɪ.lɪ.zəm/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">المذهب الأكاديمي المعتمد: تقدم الطبيعة إمكانات وتحديات، وعبقرية الإنسان تكمن في استثمارها وتطويعها.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Nile Inundation (Akhet)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">فيضان النيل (آخت)</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/naɪl ˌɪn.ʌnˈdeɪ.ʃən/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">الفصل الأول في التقويم الزراعي المصري (يوليو إلى أكتوبر) حين تغمر المياه التربة محملة بطمي الخصوبة.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Alluvial Soil / Kemet</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">التربة الفيضية (كِمِت)</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/əˈluː.vi.əl sɔɪl/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">الغرين الأسود الخصب المترسب على الضفتين، ومنه اشتقت كلمة «كمت» (الأرض السوداء) كاسم رسمي لمصر تمييزاً لها عن الصحراء.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Neolithic Revolution</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">الثورة النيوليثية</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˌniː.əʊˈlɪθ.ɪk ˌrev.əˈluː.ʃən/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">الانقلاب الاقتصادي الأكبر: تحول الإنسان من مستهلك متجول يلتقط الثمار إلى منتج مستقر يزرع الحبوب ويستأنس الماشية.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Basin Irrigation</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">ري الحياض الطبيعي</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈbeɪ.sən ˌɪr.ɪˈɡeɪ.ʃən/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">الابتكار الهندسي الفرعوني العبقري: تقسيم الوادي إلى أحواض ترابية كبرى تحبس مياه الفيضان لتتشبع الأرض بالماء والطمي.</p>
+            </div>
+
+          </div>
+        </div>
+      </details>
+    </section>
+
     <section id="dialectic" class="scroll-mt-36">
       
       <div class="flex items-center gap-3 mb-6">
@@ -485,6 +554,38 @@
           </div>
         </div>
       </div>
+<!-- Storytelling Box: Nile & Egyptian Struggle (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: افهم التاريخ كقصة — كيف روّض المصري أطول أنهار الأرض بدلاً من الاستسلام له؟</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">اضغط للتفاصيل</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm sm:text-base text-slate-800 leading-relaxed">
+            عندما وصل الإنسان الأول إلى ضفاف وادي النيل، لم يجد جنة ناعمة جاهزة للاستقبال، بل وجد مستنقعاً شاسعاً مليئاً بالتماسيح وأفراس النهر والأحراش الموحلة وفيضاناً هادراً يجتاح كل شيء صيفاً! 
+            العبقرية المصرية تجلت في قرار المواجهة: نزل الإنسان إلى المستنقع، شق المصارف، وصنع أول شبكة سدود حوضية في العالم تحبس ماء الطمي وتروض الوحش النهري ليتحول إلى شريان حياة يطعم الملايين.
+          </p>
+
+          <div class="bg-white/90 p-4 sm:p-5 rounded-xl border border-amber-300 text-xs sm:text-sm space-y-3" dir="ltr" style="text-align: left;">
+            <div class="flex items-center gap-2 font-bold text-amber-900" style="text-align: left;">
+              <span>🎙️</span>
+              <span>Tour Guide Speaking Script (Taming the Nile):</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed font-sans italic" style="text-align: left;">
+              "Herodotus famously called Egypt 'the gift of the Nile', but that is only half the truth! When early settlers arrived, the Nile Valley was an untamed, perilous marsh teeming with crocodiles and torrential annual floods. It was the unrelenting labor, hydraulic engineering, and mathematical planning of the ancient Egyptians that converted this raw wilderness into the cradle of world civilization."
+            </p>
+            <div class="pt-2 border-t border-amber-200 text-slate-700 text-xs" dir="rtl" style="text-align: right;">
+              <strong>ترجمة ومفاهيم للمرشد:</strong> النيل لم يكن جنة جاهزة بل مستنقعاً متوحشاً روضه المصريون بالهندسة والسدود، فالحضارة ثمرة كفاح الإرادة الإنسانية وليست مجرد هبة طبيعية.
+            </div>
+          </div>
+        </div>
+      </details>
 
     </section>
 
@@ -616,6 +717,7 @@
 
     <!-- ==================== المحور السادس: بنك الأسئلة والاختبار التفاعلي ==================== -->
     <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       
       <div class="flex items-center gap-3 mb-6">
         <div class="w-10 h-10 rounded-lg bg-amber-600 text-white flex items-center justify-center font-bold text-lg shadow">
@@ -686,6 +788,7 @@
 
       </div>
 
+    </div></details>
     </section>
 
     <!-- Bottom Navigation Rail to Next Lecture -->
@@ -776,5 +879,6 @@
       });
     }
   </script>
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

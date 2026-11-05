@@ -73,9 +73,12 @@
   <style>
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #fcf9f2;
       color: #1e293b;
     }
@@ -111,87 +114,57 @@
       border-color: #d97706;
       box-shadow: 0 6px 16px -4px rgba(217, 119, 6, 0.2);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #b8862d; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-amber-100 selection:text-amber-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement Navigation Bar -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-hellenic-950 text-papyrus-100 px-4 py-2 text-xs border-b border-hellenic-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
       
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-bronze-400 hover:bg-bronze-300 text-slate-950 px-3 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
-      </a>
-
-      <!-- Quick Switcher to Other Subjects -->
-      <div class="flex items-center gap-2 flex-wrap">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>🏛️</span>
-          <span>فهرس العصر اليوناني الروماني</span>
-        </a>
-        <a href="lecture-03.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>⏮️</span>
-          <span>المحاضرة ٣ (الإسكندر وتأسيس الإسكندرية)</span>
-        </a>
-        <a href="../history/index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>📜</span>
-          <span>تاريخ وحضارة مصر القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Main Navigation Header (Adjusted with generous padding to prevent overlap) -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
-      
-      <!-- Subject & Lecture Title -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group text-right">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl ptolemy-gradient flex items-center justify-center text-white shadow-md text-xl sm:text-2xl flex-shrink-0 group-hover:scale-105 transition-transform border border-amber-300/40">
-          👑
-        </div>
-        <div class="space-y-0.5">
-          <span class="text-[10px] sm:text-xs font-bold text-amber-800 tracking-wider block">تاريخ مصر اليونانية الرومانية (1)</span>
-          <h1 class="text-xs sm:text-base md:text-lg font-black text-slate-800 leading-snug">المحاضرة ٤: بطليموس الأول وتأسيس دولة البطالمة</h1>
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">🏛️</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ مصر اليونانية والرومانية</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]" dir="ltr" style="text-align: left;">GRAECO-ROMAN EGYPTIAN HISTORY</small>
         </div>
       </a>
 
-      <!-- Quick Sections Nav -->
-      <nav class="hidden xl:flex items-center gap-1 text-xs font-bold text-slate-600">
-        <a href="#vocabulary" class="px-2.5 py-1.5 rounded-lg bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100 transition">📖 قاموس الكلمات</a>
-        <a href="#background" class="px-2.5 py-1.5 rounded-lg hover:text-amber-800 hover:bg-papyrus-200 transition">١. الأصول وتصفية كليومينس</a>
-        <a href="#perdiccas-war" class="px-2.5 py-1.5 rounded-lg hover:text-amber-800 hover:bg-papyrus-200 transition">٢. ضم برقة ومصرع بيرديكاس</a>
-        <a href="#marriages" class="px-2.5 py-1.5 rounded-lg hover:text-amber-800 hover:bg-papyrus-200 transition">٣. الزيجات وصراع العرش</a>
-        <a href="#achievements" class="px-2.5 py-1.5 rounded-lg hover:text-amber-800 hover:bg-papyrus-200 transition">٤. الاقتصاد والمكتبة والموسيون</a>
-        <a href="#serapis" class="px-2.5 py-1.5 rounded-lg hover:text-amber-800 hover:bg-papyrus-200 transition">٥. عبادة سيرابيس والسرابيوم</a>
-        <a href="#quiz" class="px-3 py-1.5 rounded-lg bg-amber-700 text-white hover:bg-amber-800 transition flex items-center gap-1 font-black">
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>🎯</span>
           <span>اختبر فهمك</span>
         </a>
       </nav>
 
-      <!-- Action & Search -->
-      <div class="flex items-center gap-2">
-        <button onclick="toggleSearch()" class="p-2.5 rounded-xl border border-papyrus-300 text-slate-700 hover:bg-papyrus-200 hover:text-amber-800 transition flex items-center gap-2 text-xs sm:text-sm font-bold">
-          <span>🔍</span>
-          <span class="hidden sm:inline">بحث سريع</span>
-        </button>
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
       </div>
     </div>
-
-    <!-- Quick Search Bar (Collapsible) -->
-    <div id="searchBar" class="hidden border-t border-papyrus-300 bg-papyrus-100/95 px-4 py-3">
-      <div class="max-w-3xl mx-auto relative">
-        <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="ابحث في أي مصطلح، كليومينس، سيرابيس، بيرديكاس، برنيكي، أو كلمة إنجليزية..." 
-               class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-papyrus-400 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent placeholder-slate-400" />
-        <span class="absolute right-3.5 top-3 text-slate-400">🔍</span>
-      </div>
-    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="index.html">فهرس المادة</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس المرشد</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
   </header>
 
   <!-- Hero Banner -->
@@ -285,52 +258,41 @@
     </div>
   </section>
 
-  <!-- Sticky Course Quick Navigation Rail -->
-  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky top-20 z-40 px-4 py-2.5 overflow-x-auto">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
-      <div class="flex items-center gap-2">
-        <span class="text-amber-800">📌 محاور المحاضرة الرابعة:</span>
-        <a href="#vocabulary" class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition">📖 قاموس الكلمات</a>
-        <a href="#background" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-amber-800 transition">١. الأصول والولاية وتصفية كليومينس</a>
-        <a href="#perdiccas-war" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-amber-800 transition">٢. ضم برقة ومصرع بيرديكاس</a>
-        <a href="#marriages" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-amber-800 transition">٣. الزيجات الثلاث وبرنيكي الأولى</a>
-        <a href="#achievements" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-amber-800 transition">٤. الإصلاح الاقتصادي والمكتبة</a>
-        <a href="#serapis" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-amber-800 transition">٥. عبادة سيرابيس ومعبد السرابيوم</a>
-      </div>
-      <a href="#quiz" class="text-amber-800 hover:text-amber-950 underline font-black">الذهاب للاختبار التفاعلي ←</a>
-    </div>
-  </div>
-
   <!-- Main Content Layout -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
     <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
-    <section id="vocabulary" class="scroll-mt-36 space-y-4">
-      
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-amber-300 pb-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-amber-700 text-white flex items-center justify-center font-black text-lg shadow">
-            📖
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
           </div>
-          <div>
-            <span class="text-xs font-bold text-amber-800 tracking-wider uppercase block">GUIDE VOCABULARY & GLOSSARY</span>
-            <h3 class="text-xl sm:text-2xl font-black text-slate-800">قاموس المرشد السياحي: كلمات ومصطلحات المحاضرة الرابعة</h3>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 border-amber-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
           </div>
-        </div>
-        <button onclick="toggleVocabSection()" id="vocabToggleBtn" class="flex items-center gap-2 bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-4 py-2.5 rounded-2xl text-xs font-black shadow-md hover:shadow-lg transition-all duration-300 border border-amber-400/40 cursor-pointer self-start sm:self-auto">
-          <span id="vocabToggleIcon" class="text-sm">👁️</span>
-          <span id="vocabToggleText">عرض قاموس المصطلحات (ص 30 - 34)</span>
-          <span id="vocabToggleChevron" class="text-[10px] transition-transform duration-300">▼</span>
-        </button>
-      </div>
+        </summary>
 
-      <div id="vocabContainer" class="hidden transition-all duration-300">
-        <div class="bg-amber-50/60 border-2 border-amber-200 rounded-3xl p-6 sm:p-8">
-        <p class="text-sm text-slate-700 mb-6 leading-relaxed">
-          💡 <strong>تنبيه للمرشد السياحي:</strong> استخرجنا لك أدق المصطلحات التاريخية والسياسية الواردة في نص المحاضرة الرابعة بكتاب الدكتورة مرفت ماهر أمين؛ وهي مواضع أسئلة أساسية في امتحانات الكلية:
-        </p>
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
           <!-- Vocab 1 -->
           <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
@@ -477,8 +439,8 @@
           </div>
 
         </div>
-      </div>
-      </div>
+        </div>
+      </details>
     </section>
 
     <!-- ==================== المحور الأول: الأصول وتصفية كليومينس ==================== -->
@@ -543,15 +505,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كان الوصي بيرديكاس في بابل يظن أنه يتخلص من بطليموس الذكي بنفيه إلى مصر بجيش هزيل لا يتجاوز ألفي مقاتل وقليل من المال، تاركاً إياه في مواجهة كليومينس المصرفي الثري المحنك. لكن بطليموس أثبت أنه ثعلب سياسي بارع؛ أول ما فعله هو استعادة تماثيل الآلهة المصرية التي سرقها الفرس منذ قرون، فاستقبله الكهنة والمصريون كبطل قومي! ثم استغل غضب الشعب على كليومينس، فقبض عليه وأعدمه ووضع يده على خزانة أسطورية بها 8000 وزنة ذهب (وهي ثروة تكفي لشراء جيوش العالم القديم بأكمله). وحين أرسل له بيرديكاس يطالبه بإرسال أموال مصر إلى بابل، رد عليه بطليموس بتجاهل تام؛ فبدأت طبول الحرب بين الجانبين!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -614,15 +585,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كان نهر النيل أعظم حليف لبطليموس! ارتكب بيرديكاس خطأً استراتيجياً قاتلاً حين جاء لغزو مصر في ذروة موسم الفيضان؛ وعندما حاول إجبار جنوده على خوض النهر بالقرب من منف عند حصن الجمال، جرفت مياه النيل الهادرة آلاف الجنود والتهمتهم التماسيح أمام أعين زملائهم العاجزين! تحول معسكر بيرديكاس إلى مأتم وغضب عارم، فدخل عليه قادة فرسانه خيمته ليلاً ومزقوه بالسيوف. وفي الصباح، جاءوا إلى بطليموس وعرضوا عليه أن يتولى هو الوصاية على الإمبراطورية ويقود الجيش؛ لكن بطليموس كان يعلم أن من يحاول حكم إمبراطورية الإسكندر المترامية سيُقتل حتماً، فرفض العرش الإمبراطوري بذكاء وفضّل أن يظل ملكاً هادئاً مستقراً على عرش مصر وبرقة!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -740,15 +720,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كانت الملكة برنيكي الأولى أعظم داهية نسائية في بداية العصر البطلمي! دخلت القصر كوصيفة بسيطة ترافق الملكة يوريديكي، لكنها بسحرها وذكائها استطاعت أن تأسر عقل وقلب الملك بطليموس الأول. ولم تكتفِ بأن تصبح الملكة الأولى والزوجة الأثيرة، بل استطاعت بحنكة استثنائية أن تقنع بطليموس بعزل ابنه البكر الشرس «كيراونوس» من ولاية العهد، ونقل العرش والتاج بالكامل إلى ابنها الصغير المحبوب «بطليموس الثاني فيلادلفوس»، مؤسسةً بذلك لأعظم عصور الازدهار الثقافي في مصر البطلمية!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -847,15 +836,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كان بطليموس يعلم أن السيف وحده لا يحمي العرش؛ فالإمبراطورية تحتاج إلى مال وعلم وعقيدة. لذا أسس نظام احتكار محكم؛ كانت الدولة هي المشتري الوحيد لمحصول الزيوت والكتان والبردي والمسؤولة عن تصنيعها، مما ضخ ملايين الدنانير الذهبية في خزينة الإسكندرية. ولم ينسَ جانب القوة العسكرية، فمنح الجنود المتقاعدين من اليونان مساحات أراضٍ واسعة في الفيوم والدلتا ليستقروا فيها وعائلاتهم ليكونوا جيش احتياط دائم. وتوج ذلك بأعظم صرح علمي في التاريخ: «المكتبة والموسيون» حيث وفر للعلماء سكناً وراتباً وكتباً نادرة، فجذب أعظم عقول الأرض إلى مصر!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -956,20 +954,30 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-amber-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كانت المشكلة الكبرى أمام بطليموس هي: كيف يحكم شعبين مختلفين في كل شيء؟ المصريون ينفرون من آلهة اليونان العارية، واليونانيون يسخرون من آلهة المصريين ذات الرؤوس الحيوانية! فجمع بطليموس كاهناً مصرياً مفكراً (مانيتون السمنودي) وفيلسوفاً يونانياً أثينياً (تيموثيوس)، وطلب منهما تصميماً عبقرياً لمعبود يرضي الطرفين. أخذوا أوزوريس وآبيس (أوزورابيس) معبود الموت والبعث المحبوب في منف، وألبسوه رداءً إغريقياً ولحية مهيبة تشبه زيوس وهاديس، وتوجوا رأسه بمكيال القمح. وحين نظر المصري إلى التمثال في معبد السرابيوم قال: "هذا حامينا أوزوريس!"، وحين نظر اليوناني قال: "هذا زيوس العظيم!". بهذه العبقرية اللاهوتية، صنع بطليموس سلاماً مجتمعياً مكّن أسرته من حكم مصر لثلاثة قرون متصلة!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
     <!-- ==================== بنك الأسئلة التفاعلي الشامل ==================== -->
     <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       
       <div class="flex items-center justify-between mb-6">
         <div class="flex items-center gap-3">
@@ -1270,6 +1278,7 @@
         </form>
 
       </div>
+    </div></details>
     </section>
 
     <!-- Navigation Footer to Next Lecture -->
@@ -1421,5 +1430,6 @@
       document.getElementById('scoreText').innerText = 'أجب عن الأسئلة واضغط «تصحيح الاختبار»';
     }
   </script>
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

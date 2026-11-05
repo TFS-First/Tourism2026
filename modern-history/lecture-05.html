@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المحاضرة ٥: مصر من المقاومة حتى رحيل الحملة الفرنسية — تاريخ مصر الحديث — سياحة 2026</title>
+  <meta name="description" content="المحاضرة الخامسة من مقرر تاريخ مصر الحديث والمعاصر (المستوى الرابع) - قسم الإرشاد السياحي. ثورات القاهرة الأولى والثانية، ملاحم بولاق والأزهر، رحيل الحملة، وضياع حجر رشيد." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com/3.4.17">
+  function toggleAllDetails(containerSelector, open) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+    container.querySelectorAll('details').forEach(d => {
+      d.open = open;
+    });
+  }
+
+</script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+              950: '#4c0519',
+            },
+            imperial: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebd9b4',
+              400: '#d8bd85',
+              500: '#c5a360',
+              800: '#644e27',
+              900: '#413217',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            cinzel: ['Cinzel', 'serif'],
+            amiri: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      background-color: #faf6f2;
+      color: #1e293b;
+    }
+    .hero-title, .hero-title * {
+      line-height: 1.65 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.05 !important;
+    }
+    .royal-gradient {
+      background: linear-gradient(135deg, #881337 0%, #be123c 50%, #b45309 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(136, 19, 55, 0.2);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(14px);
+      background-color: rgba(250, 246, 242, 0.95);
+    }
+    :root {
+      --header-h: 5.5rem;
+    }
+    .sticky-rail {
+      position: sticky;
+      top: var(--header-h, 5.5rem);
+      z-index: 40;
+    }
+    .story-box {
+      background: #ffffff;
+      border-right: 4px solid #be123c;
+    }
+    .vocab-card {
+      transition: all 0.2s ease;
+    }
+    .vocab-card:hover {
+      background-color: #ffffff;
+      border-color: #be123c;
+      box-shadow: 0 6px 16px -4px rgba(190, 18, 60, 0.2);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #be123c; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
+</head>
+<body class="selection:bg-royal-100 selection:text-royal-950 min-h-screen flex flex-col">
+
+  
+
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">👑</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ مصر الحديث والمعاصر</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">MODERN & CONTEMPORARY EGYPT</small>
+        </div>
+      </a>
+
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>🎯</span>
+          <span>اختبر فهمك</span>
+        </a>
+      </nav>
+
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>👑</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
+      </div>
+    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="index.html">فهرس المادة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس المرشد</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden py-12 sm:py-16 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-white to-papyrus-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Academic Accreditation Card -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-6 border-b border-papyrus-200">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-royal-900 text-amber-300 flex items-center justify-center font-bold text-lg shadow">
+            👑
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-500 block">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</span>
+            <span class="text-sm font-extrabold text-royal-950">مقرر: تاريخ مصر الحديث والمعاصر</span>
+          </div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 bg-rose-100 border border-rose-300 text-rose-900 px-3.5 py-1.5 rounded-full text-xs font-extrabold">
+          <span>✨</span>
+          <span>المحاضرة الخامسة: من المقاومة الشعبية حتى رحيل الحملة (1798–1801م)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 text-right space-y-4">
+          <span class="text-xs font-black text-imperial-700 tracking-widest uppercase block font-cinzel">EGYPT: FROM RESISTANCE TO EXPULSION</span>
+          
+          <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal">
+            <span class="block mb-2">مصر من المقاومة حتى رحيل الحملة</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-l from-royal-800 via-royal-600 to-imperial-700 pb-1">
+              ثورتا القاهرة، ملاحم بولاق والأزهر، استسلام مينو، وضياع حجر رشيد
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+            دراسة تاريخية شاملة لانتفاضة الشعب المصري في ثورة القاهرة الأولى ومقتل الحاكم الفرنسي ديبوي، ملحمة ثورة القاهرة الثانية وصمود بولاق ومصانع البارود بالخرنفش، شق كليبر للصفوف واغتياله على يد سليمان الحلبي، وصولاً إلى الأخطاء العسكرية لمينو في معركة كانوب، وتوقيع اتفاقيات الجلاء وضياع حجر رشيد لصالح بريطانيا.
+          </p>
+
+          <!-- Jump Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-center">
+            <a href="#vocabulary" class="bg-rose-50 p-3 rounded-xl border border-rose-200 card-hover block">
+              <span class="text-lg block mb-0.5">📖</span>
+              <span class="text-[11px] text-rose-800 font-semibold block">المفردات التخصصية</span>
+              <span class="text-xs font-black text-rose-950">قاموس المرشد (12 مصطلحاً)</span>
+            </a>
+            <a href="#first-revolt" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">⚔️</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">الأزهر وبولاق</span>
+              <span class="text-xs font-black text-royal-800">ثورتا القاهرة (١ و ٢)</span>
+            </a>
+            <a href="#menou-canopus" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">🛡️</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">المعركة الفاصلة</span>
+              <span class="text-xs font-black text-royal-800">معركة كانوب 1801م</span>
+            </a>
+            <a href="#capitulation-rosetta" class="bg-royal-50 p-3 rounded-xl border border-royal-200 card-hover block">
+              <span class="text-lg block mb-0.5">🪨</span>
+              <span class="text-[11px] text-royal-700 font-semibold block">الحدث الأثري</span>
+              <span class="text-xs font-black text-royal-900">مصادرة حجر رشيد ←</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col items-center justify-center">
+          <div class="bg-gradient-to-tr from-royal-950 to-royal-800 p-6 rounded-3xl text-white shadow-xl border-2 border-amber-300/40 w-full max-w-sm text-center">
+            <span class="text-3xl mb-2 block">🪨</span>
+            <h3 class="text-lg font-black font-cinzel text-amber-300 mb-1">ROSETTA STONE</h3>
+            <p class="text-xs text-royal-200 mb-4">وثيقة استسلام الإسكندرية — أغسطس 1801م</p>
+            <div class="text-right text-xs space-y-2 bg-royal-950/60 p-3.5 rounded-xl border border-royal-700">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">المستوى الأكاديمي:</span>
+                <span class="font-bold text-amber-300">الفرقة الرابعة إرشاد سياحي</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">ثورة القاهرة الأولى:</span>
+                <span class="font-bold text-amber-300">21 أكتوبر 1798م</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">ثورة القاهرة الثانية:</span>
+                <span class="font-bold text-amber-300">20 مارس 1800م</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">جلاء آخر جندي فرنسي:</span>
+                <span class="font-bold text-amber-300">سبتمبر 1801م</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Main Content Layout -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- ==================== سيناريو المرشد السياحي بالإنجليزية ==================== -->
+    <!-- ==================== سيناريو المرشد السياحي بالإنجليزية (مطوي افتراضياً) ==================== -->
+    <section id="guide-briefing" class="scroll-mt-48" dir="ltr" style="text-align: left;">
+      <details class="course-fold"><summary>للاستزادة: شرح المرشد السياحي بالإنجليزية</summary><div class="course-fold-body">
+      <details class="group bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white rounded-3xl p-5 sm:p-7 shadow-xl border-2 border-amber-500/40 mb-8 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none text-left" dir="ltr">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl shadow flex-shrink-0">🎙️</span>
+            <div style="text-align: left;">
+              <span class="text-[10px] sm:text-xs text-amber-300 font-bold tracking-widest uppercase block">TOUR GUIDE SPOKEN SCRIPT</span>
+              <h4 class="text-sm sm:text-base font-bold text-white leading-snug">Explaining Cairo's Popular Resistance & The Expulsion of the French</h4>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full border border-amber-400/30 hidden sm:inline-block">Click to Expand</span>
+            <span class="text-amber-300 font-bold text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-5 border-t border-slate-700/80 mt-4 space-y-4 font-sans text-left leading-relaxed text-xs sm:text-sm text-slate-200" dir="ltr" style="text-align: left;">
+          <p>
+            "Distinguished guests, walking through the historic alleys of <strong class="text-amber-300">Al-Azhar</strong> and the old riverside port of <strong class="text-amber-300">Bulaq</strong>, we are walking on sacred ground of Egyptian resistance. In October 1798, outraged by heavy taxation and the demolition of urban gates and historic mosques, Cairo erupted in the <strong class="text-amber-300">First Cairo Revolt</strong>. Al-Azhar Mosque served as the command center. The French military governor, General Dupuy, was killed alongside 200 French soldiers. Napoleon retaliated with extreme brutality: his artillery bombarded the minarets from the Citadel and Mokattam hills, and French cavalry galloped right into the sacred courtyards of Al-Azhar."
+          </p>
+<p>
+            "Eighteen months later, in March 1800, under Kléber's command, the <strong class="text-amber-300">Second Cairo Revolt</strong> broke out in Bulaq, led by the charismatic merchant leader <strong class="text-amber-300">Sayyid Omar Makram</strong> and Mostafa El-Beshtili. Egyptians melted iron from mosques to manufacture homemade cannons and set up gunpowder mills in Al-Khoronfosh. Kléber mercilessly burned the entire neighborhood of Bulaq to the ground. Yet his triumph was short-lived: on June 14, 1800, a Syrian theology student named <strong class="text-amber-300">Suleiman al-Halabi</strong> assassinated him in the Ezbekiyeh gardens."
+          </p>
+<p>
+            "By 1801, under the inept leadership of General Menou, a combined British and Ottoman offensive crushed the French at the <strong class="text-amber-300">Battle of Canopus (Alexandria)</strong>. Under the terms of French capitulation, the British seized all French archaeological treasures—most notably the <strong class="text-amber-300">Rosetta Stone</strong>—shipping them to London, while the last French soldier departed Egyptian soil in September 1801."
+          </p>
+        </div>
+      </details>
+    </div></details>
+    </section>
+
+    <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-rose-50 via-papyrus-100 to-rose-50 border-2 border-rose-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-royal-700 text-white flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-rose-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-rose-200 text-rose-950 border-rose-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-rose-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
+
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
+
+          <div id="vocab-accordion" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          <!-- Vocab 1 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">ثورة القاهرة الأولى</h4>
+                </div>
+                <span class="text-[10px] bg-red-100 text-red-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">ثورة القاهرة الأولى</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">First Cairo Revolt</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/fɜːrst ˈkaɪroʊ rɪˈvoʊlt/ (Oct 1798)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>انتفاضة شعبية كبرى قادها الأزهر الشريف؛ قُتل فيها حاكم القاهرة ديبوي وياور نابليون سولكوسكي، وقصف نابليون الأزهر واقتحمه بالخيول.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 2 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">ثورة القاهرة الثانية</h4>
+                </div>
+                <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">ثورة القاهرة الثانية</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Second Cairo Revolt</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈsɛkənd ˈkaɪroʊ rɪˈvoʊlt/ (Mar 1800)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>اندلعت من حي بولاق بزعامة عمر مكرم ومصطفى البشتيلي إثر فشل اتفاقية العريش وهزيمة العثمانيين بعين شمس؛ صمدت شهراً ودمر كليبر بولاق.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 3 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">اتفاقية العريش</h4>
+                </div>
+                <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">اتفاقية العريش</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Convention of El-Arish</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/kənˈvɛnʃən əv ɛl-əˈriːʃ/ (Jan 1800)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>اتفاق بين كليبر والدولة العثمانية برعاية الإنجليزي سيدني سميث للجلاء بسلاحهم خلال 3 أشهر، وأفشلها تعنت اللورد كيث البريطاني.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 4 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">موقعة عين شمس</h4>
+                </div>
+                <span class="text-[10px] bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">موقعة عين شمس</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Battle of Heliopolis</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈbætl əv ˌhiːliˈɒpəlɪs/ (20 Mar 1800)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>معركة خاطفة هزم فيها كليبر الجيش العثماني الزاحف وأجبره على الفرار للشام بعد رفض كيث شروط العريش.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 5 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">سليمان الحلبي</h4>
+                </div>
+                <span class="text-[10px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">سليمان الحلبي</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Suleiman al-Halabi</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/suːleɪˈmɑːn æl-hæləˈbiː/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>طالب أزهري سوري اغتال الجنرال كليبر بطعنة خنجر في حديقة قصره بالأزبكية في 14 يونيو 1800م انتقاماً لتدمير حي بولاق.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 6 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">معركة كانوب (الإسكندرية)</h4>
+                </div>
+                <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">معركة كانوب (الإسكندرية)</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Battle of Canopus</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈbætl əv kəˈnoʊpəs/ (21 Mar 1801)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>المعركة البرية الفاصلة عند باب شرقي بالإسكندرية؛ هزم فيها الحلف البريطاني العثماني الجنرال مينو وقضى على الوجود الفرنسي.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 7 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">الجنرال مينو</h4>
+                </div>
+                <span class="text-[10px] bg-slate-100 text-slate-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">الجنرال مينو</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">General Menou</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ʒeneˈʁal məˈnu/ (Abdullah Menou)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>القائد الثالث للحملة؛ أعلن إسلامه وتزوج من رشيد، ارتكب خطأً عسكرياً فادحاً بتشتيت قواته لأربعة أقسام مما سهل هزيمته وحصاره.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 8 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">الإنكشارية</h4>
+                </div>
+                <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">الإنكشارية</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Janissaries</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈdʒænɪsəriːz/ (Ottoman Elite)</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>قوات النخبة العثمانية (6000 مقاتل) التي وصلت لدعم الإنجليز واستولت على رشيد والرحمانية وقطعت اتصال القاهرة بالإسكندرية.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 9 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">الجنرال بليار</h4>
+                </div>
+                <span class="text-[10px] bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">الجنرال بليار</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">General Belliard</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ʒeneˈʁal bɛljaʁ/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>قائد القوات الفرنسية في القاهرة؛ حوصر بين إمبابة والبر الشرقي فوقع اتفاقية جلاء القاهرة في 27 يونيو 1801م وغادر بنصف الجيش.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 10 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">مصادرة الآثار وحجر رشيد</h4>
+                </div>
+                <span class="text-[10px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">مصادرة الآثار وحجر رشيد</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Confiscation of Antiquities</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˌkɒnfɪsˈkeɪʃən əv ænˈtɪkwɪtiz/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>البند القسري في اتفاقية استسلام الإسكندرية (أغسطس 1801م) الذي أصر به الإنجليز على مصادرة حجر رشيد وآثار المجمع العلمي كغنائم حرب.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 11 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">مصانع بارود الخرنفش</h4>
+                </div>
+                <span class="text-[10px] bg-slate-100 text-slate-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">مصانع بارود الخرنفش</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Gunpowder Mills of Khoronfosh</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈɡʌnpaʊdər mɪlz/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>ورش التصنيع العسكري السرية التي أقامها ثوار القاهرة بحي الخرنفش لصهر حديد المساجد والدكاكين وصنع القنابل وإصلاح المدافع.
+              </p>
+            </div>
+          </details>
+
+          <!-- Vocab 12 -->
+          <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-royal-500">
+            <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+              <!-- Right: Arabic Term -->
+              <div class="text-right">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-royal-600 flex-shrink-0"></span>
+                  <h4 class="font-bold text-slate-900 text-sm sm:text-base">أبواب الحارات والدروب</h4>
+                </div>
+                <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold inline-block mt-1">أبواب الحارات والدروب</span>
+              </div>
+              <!-- Left: English Term + Phonetic + Arrow -->
+              <div class="text-left flex items-center gap-2.5" dir="ltr">
+                <div>
+                  <span class="font-cinzel font-bold text-royal-900 text-xs sm:text-sm block">Quarter Gates</span>
+                  <span class="text-[10px] text-slate-400 font-mono block">/ˈkwɔːrtər ɡeɪts/</span>
+                </div>
+                <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-rose-100 text-slate-500 group-open:text-rose-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+              </div>
+            </summary>
+            <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+              <p class="text-xs text-slate-700 leading-relaxed">
+                <strong class="text-royal-900 font-bold">المعنى السياقي للمرشد:</strong>الأبواب الخشبية التاريخية التي كانت تغلق الحارات ليلاً لحماية الأهالي؛ هدمها الفرنسيون لتسهيل اقتحام المنازل مما فجر الثورة الأولى.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ==================== المحور الأول: ثورة القاهرة الأولى ==================== -->
+    <section id="first-revolt" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ١
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">FIRST CAIRO REVOLT (OCTOBER 1798)</span>
+          <h3 class="text-2xl font-black text-slate-900">أولاً: المقاومة الشعبية — ثورة القاهرة الأولى (أكتوبر 1798م)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <!-- أسباب الثورة -->
+        <div>
+          <h4 class="text-lg font-black text-royal-900 mb-3 flex items-center gap-2">
+            <span>🔥</span>
+            <span>١. أسباب اندلاع الثورة (أثناء معارك إخضاع الصعيد):</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+            خلال انشغال القوات الفرنسية في معارك إخضاع صعيد مصر ضد المقاومة الوطنية وبقايا المماليك، انفجر بركان الغضب الشعبي في العاصمة للأسباب الآتية:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div class="p-4 rounded-2xl bg-rose-50/60 border border-rose-200 space-y-2">
+              <span class="text-xs font-bold text-royal-800 bg-rose-100 px-2.5 py-0.5 rounded-full inline-block">أ. فرض ضرائب فادحة</span>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                فرض نابليون ضرائب مالية باهظة وقاسية خاصة على <strong>فئة التجار</strong>، وهو ما ناقض تماماً منشوراته ووعوده التي قطعها عند قدومه بإنصاف المصريين من مظالم المماليك، فكان هذا العامل المحرك الأكبر للغضب.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-rose-50/60 border border-rose-200 space-y-2">
+              <span class="text-xs font-bold text-royal-800 bg-rose-100 px-2.5 py-0.5 rounded-full inline-block">ب. انتهاك الحرمات والممتلكات</span>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                قامت فرق التفتيش الفرنسية باقتحام البيوت وتفتيش الدكاكين بحثاً عن الأموال المخفية، وأقدمت على <strong>هدم أبواب الحارات والدروب التاريخية</strong> لتسهيل اقتحام الجنود لمطاردة عناصر المقاومة الوطنية.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-rose-50/60 border border-rose-200 space-y-2">
+              <span class="text-xs font-bold text-royal-800 bg-rose-100 px-2.5 py-0.5 rounded-full inline-block">ج. التغيير العمراني القسري</span>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                أقدم الفرنسيون على <strong>هدم كثير من المباني والآثار والمساجد</strong> بحجة تحصين القاهرة. ولما كان العبء الضريبي الأكبر قد وقع على التجار والملاك وأصحاب الحرف، فقد أمدوا الثورة بالمال والسلاح لضمان استمرارها.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- الأزهر وقيادة الثورة -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <h4 class="text-lg font-black text-royal-900 mb-3 flex items-center gap-2">
+            <span>🕌</span>
+            <span>٢. قيادة الأزهر الشريف وانطلاق الشرارة (21 أكتوبر 1798م):</span>
+          </h4>
+          <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">🕌</span>
+            <h4>وقائع ثورة القاهرة الأولى ودور الأزهر الشريف (أكتوبر 1798م):</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            
+          
+            <p>
+              قاد علماء ومشايخ <strong>الأزهر الشريف</strong> الثورة ونظموا قبول المتطوعين وتجهيزهم بالسلاح. وكانت الدعوة تتردد على ألسنة الأهالي حتى جاءت الضرائب الجديدة فزادت أعداد الناقمين وسرت الروح إلى الملاك والتجار.
+            </p>
+            <p>
+              في يوم <strong>21 أكتوبر 1798م</strong>، قرر دعاة الثورة إغلاق الدكاكين وحشد أصحاب الصنائع والذهاب لمركز القيادة العامة للاحتجاج. وتوافد الفلاحون من القرى والأقاليم، وسادت حالة من الغضب المسلح، واتخذ الثوار من <strong>الجامع الأزهر الشريف مقراً رسمياً للقيادة</strong>.
+            </p>
+            <div class="bg-red-50 p-4 rounded-xl border border-red-200 text-red-950 font-bold flex items-center justify-between flex-wrap gap-2">
+              <span>خسائر اليوم الأول:</span>
+              <span>مقتل حاكم القاهرة الفرنسي <strong>«الجنرال ديبوي» (Dupuy)</strong> ومعه نحو 200 جندي فرنسي، واستشهاد نحو 2,000 من المصريين.</span>
+            
+        
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <!-- رد الفعل الفرنسي والقمع -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-papyrus-200 pt-6">
+          
+          <div class="space-y-3">
+            <h4 class="text-base font-black text-slate-900 flex items-center gap-2">
+              <span>💣</span>
+              <span>٣. رد الفعل الفرنسي العسكري:</span>
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              أعلن نابليون بونابرت النفير العام، ونصب مدافعه على <strong>هضبة المقطم</strong> وداخل <strong>قلعة صلاح الدين</strong> وعند مداخل الشوارع الرئيسة لضرب الجامع الأزهر والأحياء الثائرة.
+            </p>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              فتح الثوار أبواب القاهرة لاستقبال المدد القادم من الأقاليم متسلحين بالعصي والرماح؛ فحاصر نابليون الضواحي لعزل العاصمة، وحاول الثوار مهاجمة القلعة والمقطم لكن فارق التسليح حسم الموقف. وشهدت المواجهة مقتل الكولونيل <strong>«سولكوسكي»</strong> ياور نابليون الخاص، فحزن عليه بونابرت حزناً شديداً.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="text-base font-black text-slate-900 flex items-center gap-2">
+              <span>⚔️</span>
+              <span>٤. القمع وانتهاء الثورة وتدنيس الأزهر:</span>
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              انحصر الثوار داخل حي الأزهر وفشلت وساطة المشايخ، فأمر نابليون بالقصف المدفعي المباشر على الجامع الشريف والأحياء المحيطة به، مما أحدث دماراً هائلاً واضطر الثوار لطلب الهدنة.
+            </p>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>تدنيس الجامع الأزهر:</strong> انتهت المفاوضات بإلقاء السلاح، فاقتحم الجنود الفرنسيون الأزهر بخيولهم وعسكروا في باحاته ومزقوا المصاحف، مما أهاج الشعور الديني في العالمين الإسلامي والعربي.
+            </p>
+            <div class="p-3 bg-amber-50 rounded-xl border border-amber-200 text-amber-900 text-xs">
+              <strong>إعدام قادة الثورة:</strong> تم القبض على قادة الثورة وإعدامهم، وعلى رأسهم: <em>الشيخ أحمد الشرقاوي، سليمان الجوسقي، عبد الوهاب الشبراوي، إسماعيل البراوي، ويوسف المصيلحي</em>.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثاني: ثورة القاهرة الثانية ==================== -->
+    <section id="second-revolt" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٢
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">SECOND CAIRO REVOLT (MARCH - APRIL 1800)</span>
+          <h3 class="text-2xl font-black text-slate-900">ثانياً: ثورة القاهرة الثانية (مارس – أبريل 1800م)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <!-- أسباب ثورة القاهرة الثانية -->
+        <div>
+          <h4 class="text-lg font-black text-royal-900 mb-3 flex items-center gap-2">
+            <span>📜</span>
+            <span>١. أسباب الثورة وظروفها الإقليمية:</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+            اندلعت ثورة القاهرة الثانية في <strong>20 مارس 1800م</strong>، بعد انتقال القيادة من بونابرت (الذي فر سراً لفرنسا) إلى خليفته الجنرال <strong>«كليبر»</strong>:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+            
+            <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+              <span class="font-bold text-amber-900 block text-xs">01. فشل اتفاقية العريش (24 يناير 1800م)</span>
+              <p class="text-slate-600 leading-relaxed text-xs">
+                كان كليبر راغباً في الرحيل لتناقص قواته وحصار السواحل، ففاوض الدولة العثمانية والوسيط الإنجليزي <strong>سيدني سميث</strong> لتوقيع «اتفاقية العريش» لجلاء الفرنسيين بكامل أسلحتهم على نفقة العثمانيين خلال ثلاثة أشهر.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+              <span class="font-bold text-amber-900 block text-xs">02. التدخل البريطاني وتعنت لورد كيث</span>
+              <p class="text-slate-600 leading-relaxed text-xs">
+                بينما بدأ الفرنسيون بإخلاء المواقع، وصلت رسالة قائد الأسطول البريطاني <strong>«اللورد كيث»</strong> برفض الاتفاقية، مصراً على أن يستسلم الفرنسيون كـ <em>«أسرى حرب بلا سلاح»</em>. اعتبر كليبر ذلك إهانة عسكرية فأعلن الحرب وانتصر في موقعة <strong>«عين شمس» (20 مارس 1800م)</strong>.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+              <span class="font-bold text-amber-900 block text-xs">03. استغلال الانشغال العسكري</span>
+              <p class="text-slate-600 leading-relaxed text-xs">
+                استغل المصريون خروج كليبر بجيشه لقتال العثمانيين، مدفوعين بالرغبة في التحرر التام، لا سيما بعد انتشار شائعة قوية بهزيمة الفرنسيين في عين شمس، فاندلعت الثورة في قلب العاصمة.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- اندلاع الثورة وملاحم بولاق مع الصورة -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <div class="flex flex-col lg:flex-row gap-6 items-center">
+            
+            <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <h4 class="text-lg font-black text-royal-900 flex items-center gap-2">
+                <span>⚓</span>
+                <span>٢. اندلاع الثورة من حي بولاق والمقاومة الشعبية:</span>
+              </h4>
+              <p>
+                انطلقت شرارة الثورة من ميناء النيل بحي <strong>بولاق</strong>، وتزعمها كبار العلماء والتجار: <strong>السيد عمر مكرم</strong>، الشيخ الجوهري، السيد أحمد المحروقي، والزعيم الشعبي <strong>مصطفى البشتيلي</strong>.
+              </p>
+              <p>
+                هاجم الثوار المعسكر الفرنسي بالأزبكية مستخدمين المدافع العثمانية والمدافع المدفونة ببيوت المماليك. وأقاموا <strong>مصانع للبارود في حي الخرنفش</strong> وصهروا حديد المساجد والحوانيت لصنع القنابل، وشيدوا المتاريس وبثوا العيون لكشف خطط المحتل، بينما تولى كبار التجار إمداد الثوار بالمؤن والأغذية.
+              </p>
+            </div>
+
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+              <img src="images/cairo-revolt-bulaq.jpg" alt="ثورة القاهرة ومقاومة بولاق" class="rounded-2xl shadow-md border border-slate-200 max-h-72 object-cover w-full bg-slate-50">
+              <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (١): ملاحم الصمود الشعبي في القاهرة وبولاق (وثيقة تاريخية)</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثالث: سياسة كليبر واغتياله ==================== -->
+    <section id="kleber-policy" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-imperial-700 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٣
+        </div>
+        <div>
+          <span class="text-xs font-bold text-imperial-800 uppercase tracking-wider block font-cinzel">KLÉBER'S DIPLOMACY & ASSASSINATION</span>
+          <h3 class="text-2xl font-black text-slate-900">ثالثاً: سياسة كليبر في شق الصف والتحالفات واغتياله</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+            <span class="text-xs font-bold text-slate-700 bg-slate-200 px-2 py-0.5 rounded-md inline-block">شق الصف الوطني</span>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              رغم اتفاق المصريين والعثمانيين والمماليك، نجح كليبر في شق الصف؛ ففتح المفاوضات مع العثمانيين وأقنعهم بالكف عن القتال بعد إطلاعهم على هزيمة جيشهم في عين شمس وفرارهم للشام.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-2">
+            <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md inline-block">تحييد الوجه القبلي</span>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              توصل الفرنسيون لاتفاق تاريخي مع زعيم المماليك <strong>«مراد بك»</strong>، الذي آثر مصلحته الشخصية وتصالح مع الفرنسيين مقابل منحه ولاية وحكم الصعيد.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-red-50 border border-red-200 space-y-2">
+            <span class="text-xs font-bold text-red-800 bg-red-100 px-2 py-0.5 rounded-md inline-block">المواجهة المنفردة</span>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              أخرج كليبر العثمانيين والمماليك من الصراع وأخضع الوجه البحري بالقوة، ليبقى أهالي القاهرة بمفردهم في مواجهة آلة الحرب الفرنسية المدمرة.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- تدمير بولاق واغتيال كليبر -->
+        <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm my-6 space-y-3 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">🔥</span>
+            <h4>ملحمة ثورة القاهرة الثانية، صمود بولاق، واغتيال كليبر (1800م):</h4>
+          </div>
+          <div class="space-y-3 text-slate-800 text-sm sm:text-base leading-relaxed">
+            
+          
+          <h4 class="font-bold text-royal-900 text-base">حريق حي بولاق واغتيال كليبر:</h4>
+          <p>
+            صب كليبر مدافع حصاره بوحشية على أحياء القاهرة، ولجأ الفرنسيون إلى إضرام النيران في المناطق الآهلة بالسكان وإحراق أحياء بأكملها، حيث <strong>دُمّر حي بولاق تماماً وسُوّي بالأرض</strong>.
+          </p>
+          <p>
+            اضطر زعماء الشعب لبذل مساعيهم لحقن الدماء، فعُقد اتفاق في <strong>21 أبريل 1800م</strong> تضمن جلاء العثمانيين والمماليك وعفو كليبر العام عن الأهالي (وهو العفو الذي نقضه كليبر لاحقاً بالتنكيل وفرض غرامات قاسية).
+          </p>
+          <div class="bg-royal-50 p-4 rounded-xl border border-royal-200 text-royal-950 font-bold">
+            🗡️ <strong>نهاية كليبر:</strong> تحطمت أحلام كليبر في البقاء بمصر؛ ففي ظهيرة <strong>14 يونيو 1800م</strong>، وبينما كان يسير في حديقة قصره بالأزبكية، باغته الشاب السوري الأزهري <strong>سليمان الحلبي</strong> بطعنة سكين أودت بحياته فوراً.
+          
+        
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الرابع: قيادة مينو ومعركة كانوب ==================== -->
+    <section id="menou-canopus" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-royal-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٤
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 uppercase tracking-wider block font-cinzel">MENOU'S LEADERSHIP & THE BATTLE OF CANOPUS</span>
+          <h3 class="text-2xl font-black text-slate-900">رابعاً: رحيل الحملة — قيادة "مينو" ومعركة كانوب (1801م)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <h4 class="text-base font-black text-royal-900">١. قيادة "مينو" للحملة والخطأ العسكري الفادح:</h4>
+          <p>
+            بمقتل كليبر، انتقلت قيادة الجيش إلى الجنرال <strong>«مينو»</strong>، ولم يكن مينو محنكاً عسكرياً كسابقيه (بونابرت وكليبر) إذ لم يسبق له قيادة الجيوش أو كسب موقعة قط. فاغتنمت بريطانيا هذا الضعف وتحالفت مع الدولة العثمانية لإعداد زحف عسكري مشترك لإخراج الفرنسيين.
+          </p>
+          <p>
+            أبحرت الحملة البريطانية وسفن المدفعية العثمانية لترسو على شواطئ <strong>خليج أبي قير في أوائل مارس 1801م</strong>، واشتبكوا مع الفرنسيين في معركة <strong>«سيدي جابر»</strong> وانتصر الحليفان وبدأ التقدم للإسكندرية.
+          </p>
+          
+          <!-- مينو وأقسامه الأربعة -->
+          <div class="bg-rose-50 p-4 rounded-2xl border border-rose-200">
+            <b class="text-royal-950 block mb-2">خطأ مينو العسكري: تشتيت الجيش إلى ٤ أقسام رئيسية بدلاً من تركيز القوات:</b>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+              <div class="bg-white p-3 rounded-xl border border-rose-200">
+                <span class="font-bold text-royal-900 block">القسم الأول</span>
+                قوات الإسكندرية بقيادة مينو لمواجهة الأسطول البريطاني.
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-rose-200">
+                <span class="font-bold text-royal-900 block">القسم الثاني</span>
+                قوات القاهرة بقيادة الجنرال <strong>بليار</strong> للدفاع عن العاصمة.
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-rose-200">
+                <span class="font-bold text-royal-900 block">القسم الثالث</span>
+                قوات بلبيس لتأمين طريق الشرق ومواجهة الصدر الأعظم برياً.
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-rose-200">
+                <span class="font-bold text-royal-900 block">القسم الرابع</span>
+                قوات دمياط لتأمين السواحل الشمالية الشرقية.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- معركة كانوب الفاصلة مع الصورة -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <div class="flex flex-col lg:flex-row gap-6 items-center">
+            
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+              <img src="images/battle-of-canopus.jpg" alt="معركة كانوب الإسكندرية 1801" class="rounded-2xl shadow-md border border-slate-200 max-h-72 object-cover w-full bg-slate-50">
+              <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (٢): معركة كانوب الفاصلة عند أسوار الإسكندرية (وثيقة تاريخية)</span>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <h4 class="text-base font-black text-royal-900">٢. معركة كانوب (معركة الإسكندرية — 21 مارس 1801م):</h4>
+              <p>
+                التقى الجيشان الفرنسي والبريطاني عند <strong>«كانوب»</strong> في 21 مارس 1801م؛ وهي المعركة الفاصلة التي أجهزت على الوجود الفرنسي. مُني الفرنسيون بهزيمة منكرة وتراجعوا ليتحصنوا خلف أسوار الإسكندرية عند منطقة <strong>باب شرقي</strong>.
+              </p>
+              <p>
+                فتح هذا الانتصار الطريق لتوغل الإنجليز، ودعم الموقف وصول <strong>6 آلاف جندي من الإنكشارية</strong> العثمانية، فاستولوا على رشيد والرحمانية، مما <strong>قطع صلة الوصل تماماً بين قوات القاهرة ومينو المحاصر بالإسكندرية</strong>. وفي منتصف مايو هُزمت قوات بلبيس وتراجعت للقاهرة، وسقطت دمياط والبرلس.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الخامس: جلاء القاهرة وضياع حجر رشيد ==================== -->
+    <section id="capitulation-rosetta" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-imperial-700 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٥
+        </div>
+        <div>
+          <span class="text-xs font-bold text-imperial-800 uppercase tracking-wider block font-cinzel">FINAL CAPITULATION & LOSS OF THE ROSETTA STONE</span>
+          <h3 class="text-2xl font-black text-slate-900">خامساً: الزحف على القاهرة، استسلام مينو، وضياع حجر رشيد</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-8">
+        
+        <!-- الزحف نحو القاهرة -->
+        <div class="flex flex-col lg:flex-row gap-6 items-center">
+          
+          <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+            <h4 class="text-base font-black text-royal-900">١. الزحف نحو القاهرة وانكسار التحالف المملوكي:</h4>
+            <p>
+              واصل الجيش الإنجليزي تقدمه بالبر الغربي للنيل حتى بلغ إمبابة، بينما عسكر الجيش العثماني بالبر الشرقي قبالته لتضييق الخناق على القاهرة.
+            </p>
+            <p>
+              وفي هذه الأثناء، توفي <strong>«مراد بك»</strong> (حليف الفرنسيين منذ اتفاقه مع كليبر)، ففقد الفرنسيون حليفاً محلياً أمن لهم جبهة الصعيد. وعندما أدرك مماليك مراد بك اقتراب نهاية الفرنسيين، حسموا موقفهم وانحازوا للإنجليز، متجردين من آخر أوراقهم السياسية.
+            </p>
+            <div class="p-3 bg-amber-50 rounded-xl border border-amber-200 text-xs text-amber-950 font-bold">
+              📜 <strong>اتفاقية جلاء القاهرة (27 يونيو 1801م):</strong> أدرك الجنرال بليار حرج موقفه، فوقع وثيقة الجلاء بكامل الأسلحة والأمتعة إلى فرنسا على نفقة الحلفاء. وفي مشهد تراجيدي بالديوان، تليت رسالة "المسيو ستيف" مدافعاً عن نيات بونابرت متمنياً أن يكون الفراق «إلى حين»! وأبحرت سفنهم بنصف الجيش في أوائل أغسطس.
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 flex flex-col items-center">
+            <img src="images/march-to-cairo-1801.jpg" alt="الزحف نحو القاهرة 1801" class="rounded-2xl shadow-md border border-slate-200 max-h-72 object-cover w-full bg-slate-50">
+            <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (٣): تطويق القاهرة والزحف أمام الأهرامات (وثيقة تاريخية)</span>
+          </div>
+
+        </div>
+
+        <!-- استسلام مينو وضياع حجر رشيد -->
+        <div class="border-t border-papyrus-200 pt-6">
+          <div class="flex flex-col lg:flex-row gap-6 items-center">
+            
+            <div class="w-full lg:w-1/2 flex flex-col items-center">
+              <img src="images/rosetta-stone-alexandria.jpg" alt="حجر رشيد وضياعه لصالح بريطانيا" class="rounded-2xl shadow-md border border-slate-200 max-h-80 object-contain w-full bg-slate-900 p-2">
+              <span class="text-[11px] text-slate-500 mt-2 font-mono">شكل (٤): حجر رشيد المستولى عليه في الإسكندرية (وثيقة تاريخية)</span>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <h4 class="text-base font-black text-royal-900">٢. استسلام مينو وضياع حجر رشيد (31 أغسطس 1801م):</h4>
+              <p>
+                كان مينو بالإسكندرية معزولاً لا يعلم ما جرى بالقاهرة؛ وعندما علم اعتبر تسليم بليار تفريطاً بالشرف العسكري، لكنه لم يصمد وأذعن للتسليم بشروط أسوأ في <strong>31 أغسطس 1801م</strong>، شملت تسليم الأسطول والمدافع والذخائر.
+              </p>
+              <div class="bg-rose-50 p-4 rounded-2xl border-2 border-rose-300 text-rose-950 font-bold space-y-1">
+                <span class="text-base">🪨 مصادرة حجر رشيد وآثار المجمع العلمي:</span>
+                <p class="text-xs font-normal text-slate-700">
+                  أصر القائد البريطاني على مصادرة كافة الآثار والمخطوطات التي بحوزة المجمع العلمي الفرنسي، وفي مقدمتها <strong>«حجر رشيد»</strong>، بحجة أنها ملك لشعب مصر، ثم قام بنقلها مباشرة إلى لندن كـ <em>«غنائم حرب»</em> استقرت بالمتحف البريطاني.
+                </p>
+              </div>
+              <p class="font-bold text-royal-950 text-xs">
+                وبذلك غادر آخر جندي فرنسي الأراضي المصرية في <strong>سبتمبر 1801م</strong>، مسدلاً الستار على ثلاث سنوات من الاحتلال والمقاومة وصدمة الحداثة.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور السادس: بنك الأسئلة والاختبار التفاعلي ==================== -->
+    <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg bg-royal-700 text-white flex items-center justify-center font-bold text-lg shadow">
+          🎯
+        </div>
+        <div>
+          <span class="text-xs font-bold text-royal-700 tracking-wider uppercase block font-cinzel">ACADEMIC SELF-ASSESSMENT</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-800">بنك الأسئلة واختبار الفهم التفاعلي</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-papyrus-300 shadow-lg">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-papyrus-200 mb-8">
+          <div>
+            <h4 class="text-lg font-bold text-slate-900">اختبر استيعابك للمحاضرة الأولى (٧ أسئلة تخصصية دقيقة)</h4>
+            <p class="text-xs text-slate-500">اختر الإجابة الصحيحة لتكتشف التعليل التاريخي والإرشادي فوراً.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="quizScore" class="bg-rose-100 text-rose-900 px-3 py-1.5 rounded-full text-xs font-extrabold border border-rose-300">
+              النتيجة: ٠ / ٧
+            </span>
+            <button onclick="resetQuiz()" class="text-xs text-slate-500 hover:text-royal-700 underline font-semibold">
+              إعادة الاختبار
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-6" id="quizContainer">
+          
+          <!-- Q1 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الأول</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">من هو حاكم القاهرة الفرنسي الذي قُتل في اليوم الأول لثورة القاهرة الأولى (21 أكتوبر 1798م)؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) الكولونيل سولكوسكي ياور نابليون.</button>
+              <button onclick="checkAnswer(this, 1, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) الجنرال ديبوي (Dupuy) ومعه نحو مائتي جندي فرنسي.</button>
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) الجنرال كليبر قائد جيش الشرق.</button>
+              <button onclick="checkAnswer(this, 1, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) الجنرال بليار قائد حامية القاهرة.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثاني</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو السبب الذي فجّر الغضب وأفشل «اتفاقية العريش» الموقعة في 24 يناير 1800م؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) رفض العثمانيين تمويل نفقات نقل الجيش الفرنسي.</button>
+              <button onclick="checkAnswer(this, 2, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) تعنت اللورد كيث قائد الأسطول البريطاني وإصراره على تسليم الفرنسيين كـ «أسرى حرب بلا سلاح».</button>
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) اغتيال كليبر على يد سليمان الحلبي قبل بدء الإخلاء.</button>
+              <button onclick="checkAnswer(this, 2, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) اشتعال ثورة بولاق ومحاصرة معسكر الأزبكية.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الثالث</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">أين أقام ثوار القاهرة في ثورة القاهرة الثانية ورشهم السرية لصناعة البارود وإصلاح المدافع؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) في صحن الجامع الأزهر الشريف.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) داخل قلعة صلاح الدين الأيوبي.</button>
+              <button onclick="checkAnswer(this, 3, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) في حي الخرنفش بالقاهرة.</button>
+              <button onclick="checkAnswer(this, 3, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) في بساتين جزيرة الروضة.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الرابع</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">كيف استطاع كليبر شق الصف الوطني وعزل أهالي القاهرة خلال ثورة القاهرة الثانية؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 4, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) عقد اتفاقاً منفرداً مع زعيم المماليك مراد بك مقابل حكم الصعيد وإقناع العثمانيين بالكف عن القتال بعد هزيمة عين شمس.</button>
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) الإفراج عن المعتقلين الأزهريين وإلغاء الضرائب بالكامل.</button>
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) تسليم قيادة الجيش للزعيم عمر مكرم.</button>
+              <button onclick="checkAnswer(this, 4, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) التحالف مع إنجلترا ضد الدولة العثمانية.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال الخامس</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما هو الخطأ العسكري الفادح الذي ارتكبه الجنرال «مينو» عند الإنزال الإنجليزي في خليج أبي قير عام 1801م؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) الانسحاب الفوري إلى بلاد الشام.</button>
+              <button onclick="checkAnswer(this, 5, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) تشتيت قواته إلى أربعة أقسام (الإسكندرية، القاهرة، بلبيس، دمياط) بدلاً من تركيزها في مواجهة الإنزال.</button>
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) إحراق الأسطول الفرنسي في ميناء الإسكندرية بنفسه.</button>
+              <button onclick="checkAnswer(this, 5, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) تسليم حجر رشيد للإنكشارية العثمانية.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال السادس</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما اسم المعركة الفاصلة التي دارت في 21 مارس 1801م وأجهزت تماماً على الوجود الفرنسي في مصر؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) معركة إمبابة (الأهرام).</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) موقعة عين شمس البرية.</button>
+              <button onclick="checkAnswer(this, 6, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) معركة كانوب (معركة الإسكندرية عند باب شرقي).</button>
+              <button onclick="checkAnswer(this, 6, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) معركة الرحمانية النهرية.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="quiz-item p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200" data-answered="false">
+            <span class="inline-block bg-royal-100 text-royal-800 text-xs font-bold px-2.5 py-0.5 rounded-md mb-2">السؤال السابع</span>
+            <h5 class="text-base font-bold text-slate-800 mb-3">ما الحجة التي تذرع بها القائد البريطاني لمصادرة حجر رشيد وآثار المجمع العلمي من مينو في استسلام الإسكندرية؟</h5>
+            <div class="space-y-2 text-sm text-slate-700">
+              <button onclick="checkAnswer(this, 7, true)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">أ) تذرع بأنها ملك لشعب مصر، فصادرها ونقلها كغنائم حرب إلى بريطانيا.</button>
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ب) ادعى أن الحجر مزيف ولا قيمة تاريخية له.</button>
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">ج) أصر على أن الحجر ملك شخصي لنابليون بونابرت.</button>
+              <button onclick="checkAnswer(this, 7, false)" class="quiz-option w-full text-right p-3 rounded-xl border border-papyrus-300 bg-white hover:bg-papyrus-100 transition">د) طلب استبدال الحجر بمدافع وسفن الأسطول الفرنسي.</button>
+            </div>
+            <div class="quiz-feedback hidden mt-3 p-3 rounded-xl text-xs font-bold"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div></details>
+    </section>
+
+    <!-- Navigation Footer Next / Prev -->
+    <nav aria-label="تنقل المحاضرات" class="border-t border-papyrus-300 pt-8 pb-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <a href="lecture-04.html" class="p-4 rounded-2xl bg-white border border-papyrus-300 shadow-sm hover:border-royal-400 transition flex items-center gap-4 text-right">
+          <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-xl flex-shrink-0 text-slate-700">
+            ←
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-400 block">المحاضرة السابقة</span>
+            <span class="text-sm font-black text-slate-800 block">المحاضرة ٤: الحملة الفرنسية في مصر (1798–1801م)</span>
+            <span class="text-[11px] text-royal-700 font-medium">أسباب الغزو، معارك شبراخيت وإمبابة، ومقاومة الصعيد</span>
+          </div>
+        </a>
+
+        <a href="index.html" class="p-4 rounded-2xl bg-white border border-papyrus-300 shadow-sm hover:border-royal-400 transition flex items-center justify-between gap-4 text-right">
+          <div>
+            <span class="text-xs font-bold text-royal-600 block">الفهرس العام</span>
+            <span class="text-sm font-black text-slate-800 block">فهرس محاضرات تاريخ مصر الحديث</span>
+            <span class="text-[11px] text-royal-700 font-medium">متابعة كافة المحاضرات والمقررات الدراسية</span>
+          </div>
+          <div class="w-12 h-12 rounded-xl royal-gradient text-white flex items-center justify-center text-xl flex-shrink-0">
+            👑
+          </div>
+        </a>
+
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-royal-950 text-white border-t border-royal-800 py-8 px-4 mt-16 text-center text-xs space-y-3">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span>👑</span>
+        <span class="font-bold text-white">تاريخ مصر الحديث والمعاصر • المستوى الرابع • قسم الإرشاد السياحي</span>
+      </div>
+      <div class="text-slate-400">
+        <a href="../portal.html" class="text-amber-400 hover:underline">بوابة سياحة 2026</a> • قسم الإرشاد السياحي
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function syncStickyOffset() {
+      const header = document.querySelector('header');
+      if (header) {
+        const h = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-h', Math.round(h) + 'px');
+      }
+    }
+    window.addEventListener('resize', syncStickyOffset);
+    window.addEventListener('scroll', syncStickyOffset, { passive: true });
+    document.addEventListener('DOMContentLoaded', syncStickyOffset);
+    setTimeout(syncStickyOffset, 50);
+    setTimeout(syncStickyOffset, 300);
+
+    function toggleSearch() {
+      const bar = document.getElementById('searchBar');
+      bar.classList.toggle('hidden');
+      if (!bar.classList.contains('hidden')) document.getElementById('searchInput').focus();
+      setTimeout(syncStickyOffset, 50);
+    }
+
+    function handleSearch(q) {
+      q = q.trim().toLowerCase();
+      const sections = document.querySelectorAll('main section');
+      if (!q) { sections.forEach(s => s.classList.remove('opacity-25', 'ring-2', 'ring-royal-500')); return; }
+      sections.forEach(s => {
+        if (s.innerText.toLowerCase().includes(q)) {
+          s.classList.remove('opacity-25');
+          s.classList.add('ring-2', 'ring-royal-500', 'rounded-3xl');
+        } else {
+          s.classList.add('opacity-25');
+          s.classList.remove('ring-2', 'ring-royal-500');
+        }
+      });
+    }
+
+    let correctCount = 0;
+    const feedbacks = {
+      1: {
+        true: 'إجابة صحيحة! قُتل حاكم القاهرة الفرنسي الجنرال ديبوي ومعه نحو 200 جندي فرنسي في اليوم الأول لثورة القاهرة الأولى (21 أكتوبر 1798م)، واستشهد نحو 2,000 مصري.',
+        false: 'غير صحيح؛ حاكم القاهرة الفرنسي كان الجنرال ديبوي (Dupuy) وقُتل في اليوم الأول للثورة، بينما سولكوسكي كان ياور نابليون وقُتل في هجوم لاحق.'
+      },
+      2: {
+        true: 'إجابة صحيحة! تعنت قائد الأسطول البريطاني اللورد كيث وطلبه تسليم الفرنسيين كـ «أسرى حرب بلا سلاح» اعتبره كليبر إهانة، فألغى العريش وأعلن الحرب وخاض موقعة عين شمس.',
+        false: 'غير صحيح؛ السبب الحاسم كان رسالة اللورد كيث البريطاني الرافضة لاتفاقية العريش وإصراره على استسلام الفرنسيين كأسرى حرب مجردين من السلاح.'
+      },
+      3: {
+        true: 'إجابة صحيحة! أقام ثوار القاهرة مصانع سرية للبارود في حي الخرنفش، وصهروا حديد المساجد والدكاكين لصنع القنابل وإصلاح المدافع.',
+        false: 'غير صحيح؛ أنشأ الثوار مصانع البارود وورش الصيانة في حي «الخرنفش» بالقاهرة.'
+      },
+      4: {
+        true: 'إجابة صحيحة! نجح كليبر في شق الصف بعقد اتفاق مع مراد بك زعيم المماليك مقابل حكم الصعيد، وإقناع العثمانيين بالتوقف بعد هزيمة عين شمس ليستفرد بأهالي القاهرة.',
+        false: 'غير صحيح؛ تكتيك كليبر اعتمد على تحييد مراد بك بمنحه ولاية الصعيد وإقناع العثمانيين بالكف عن القتال.'
+      },
+      5: {
+        true: 'إجابة صحيحة! ارتكب مينو خطأً عسكرياً فادحاً بتشتيت قواته إلى أربعة أقسام (الإسكندرية، القاهرة، بلبيس، دمياط) بدلاً من تركيزها في نقطة الإنزال بأبي قير.',
+        false: 'غير صحيح؛ الخطأ العسكري الأبرز لمينو كان تشتيت قوات الجيش لأربعة أقسام منعزلة مما سهل تطويقها والقضاء عليها.'
+      },
+      6: {
+        true: 'إجابة صحيحة! معركة كانوب (معركة الإسكندرية 21 مارس 1801م) هي المعركة الفاصلة التي تراجع إثرها الفرنسيون خلف أسوار باب شرقي، ثم قطعت الإنكشارية صلتهم بالقاهرة.',
+        false: 'غير صحيح؛ المعركة الفاصلة كانت معركة «كانوب» (الإسكندرية) في 21 مارس 1801م.'
+      },
+      7: {
+        true: 'إجابة صحيحة! تذرع القائد الإنجليزي بأن حجر رشيد وآثار المجمع العلمي ملك لشعب مصر، ثم صادرها ونقلها إلى إنجلترا كغنائم حرب استقرت في المتحف البريطاني.',
+        false: 'غير صحيح؛ تذرع الإنجليز بأن الآثار ملك لشعب مصر وصادروها كغنائم حرب واستقرت في لندن.'
+      }
+    };
+
+    function checkAnswer(btn, qNum, isCorrect) {
+      const parent = btn.closest('.quiz-item');
+      if (parent.dataset.answered === 'true') return;
+      parent.dataset.answered = 'true';
+
+      const options = parent.querySelectorAll('.quiz-option');
+      options.forEach(opt => opt.disabled = true);
+
+      const feedback = parent.querySelector('.quiz-feedback');
+      feedback.classList.remove('hidden');
+
+      if (isCorrect) {
+        btn.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'font-bold');
+        feedback.classList.add('bg-emerald-50', 'border', 'border-emerald-200', 'text-emerald-900');
+        feedback.textContent = '✨ ' + feedbacks[qNum].true;
+        correctCount++;
+      } else {
+        btn.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-950', 'font-bold');
+        feedback.classList.add('bg-rose-50', 'border', 'border-rose-200', 'text-rose-900');
+        feedback.textContent = '❌ ' + feedbacks[qNum].false;
+      }
+
+      document.getElementById('quizScore').textContent = `النتيجة: ${correctCount} / 7`;
+    }
+
+    function resetQuiz() {
+      correctCount = 0;
+      document.getElementById('quizScore').textContent = 'النتيجة: ٠ / ٧';
+      const items = document.querySelectorAll('.quiz-item');
+      items.forEach(item => {
+        item.dataset.answered = 'false';
+        const options = item.querySelectorAll('.quiz-option');
+        options.forEach(opt => {
+          opt.disabled = false;
+          opt.classList.remove('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'bg-rose-100', 'border-rose-500', 'text-rose-950', 'font-bold');
+        });
+        const feedback = item.querySelector('.quiz-feedback');
+        feedback.classList.add('hidden');
+        feedback.classList.remove('bg-emerald-50', 'border', 'border-emerald-200', 'text-emerald-900', 'bg-rose-50', 'border-rose-200', 'text-rose-900');
+      });
+    }
+  </script>
+  <script src="../assets/course-ui.js" defer></script>
+</body>
+</html>

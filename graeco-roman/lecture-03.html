@@ -68,9 +68,12 @@
   <style>
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #fcf9f2;
       color: #1e293b;
     }
@@ -109,87 +112,57 @@
       border-color: #0284c7;
       box-shadow: 0 6px 16px -4px rgba(2, 132, 199, 0.2);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #0369a1; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-blue-100 selection:text-blue-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement Navigation Bar -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-hellenic-950 text-papyrus-100 px-4 py-2 text-xs border-b border-hellenic-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
       
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-bronze-400 hover:bg-bronze-300 text-slate-950 px-3 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
-      </a>
-
-      <!-- Quick Switcher to Other Subjects -->
-      <div class="flex items-center gap-2 flex-wrap">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>🏛️</span>
-          <span>فهرس العصر اليوناني الروماني</span>
-        </a>
-        <a href="lecture-02.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>⏮️</span>
-          <span>المحاضرة ٢ (فيليب الثاني)</span>
-        </a>
-        <a href="../history/index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>📜</span>
-          <span>تاريخ وحضارة مصر القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Main Navigation Header (Adjusted with generous padding to prevent overlap) -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
-      
-      <!-- Subject & Lecture Title -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group text-right">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl alexandria-gradient flex items-center justify-center text-white shadow-md text-xl sm:text-2xl flex-shrink-0 group-hover:scale-105 transition-transform border border-amber-300/40">
-          🌊
-        </div>
-        <div class="space-y-0.5">
-          <span class="text-[10px] sm:text-xs font-bold text-alexandria-600 tracking-wider block">تاريخ مصر اليونانية الرومانية (1)</span>
-          <h1 class="text-xs sm:text-base md:text-lg font-black text-slate-800 leading-snug">المحاضرة ٣: الإسكندر وتأسيس الإسكندرية</h1>
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">🏛️</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ مصر اليونانية والرومانية</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]" dir="ltr" style="text-align: left;">GRAECO-ROMAN EGYPTIAN HISTORY</small>
         </div>
       </a>
 
-      <!-- Quick Sections Nav -->
-      <nav class="hidden xl:flex items-center gap-1 text-xs font-bold text-slate-600">
-        <a href="#vocabulary" class="px-2.5 py-1.5 rounded-lg bg-blue-50 text-blue-900 border border-blue-200 hover:bg-blue-100 transition">📖 قاموس الكلمات</a>
-        <a href="#early-campaigns" class="px-2.5 py-1.5 rounded-lg hover:text-alexandria-700 hover:bg-papyrus-200 transition">١. العرش وحروب الشرق</a>
-        <a href="#egypt-entry" class="px-2.5 py-1.5 rounded-lg hover:text-alexandria-700 hover:bg-papyrus-200 transition">٢. دخول مصر ومنف وسيوة</a>
-        <a href="#alexandria-foundation" class="px-2.5 py-1.5 rounded-lg hover:text-alexandria-700 hover:bg-papyrus-200 transition">٣. تخطيط الإسكندرية والموانئ</a>
-        <a href="#death-babylon" class="px-2.5 py-1.5 rounded-lg hover:text-alexandria-700 hover:bg-papyrus-200 transition">٤. وفاة بابل ومؤتمر التقسيم</a>
-        <a href="#monuments" class="px-2.5 py-1.5 rounded-lg hover:text-alexandria-700 hover:bg-papyrus-200 transition">٥. معرض الآثار والنقوش</a>
-        <a href="#quiz" class="px-3 py-1.5 rounded-lg bg-alexandria-700 text-white hover:bg-alexandria-800 transition flex items-center gap-1 font-black">
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>🎯</span>
           <span>اختبر فهمك</span>
         </a>
       </nav>
 
-      <!-- Action & Search -->
-      <div class="flex items-center gap-2">
-        <button onclick="toggleSearch()" class="p-2.5 rounded-xl border border-papyrus-300 text-slate-700 hover:bg-papyrus-200 hover:text-alexandria-700 transition flex items-center gap-2 text-xs sm:text-sm font-bold">
-          <span>🔍</span>
-          <span class="hidden sm:inline">بحث سريع</span>
-        </button>
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
       </div>
     </div>
-
-    <!-- Quick Search Bar (Collapsible) -->
-    <div id="searchBar" class="hidden border-t border-papyrus-300 bg-papyrus-100/95 px-4 py-3">
-      <div class="max-w-3xl mx-auto relative">
-        <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="ابحث في أي مصطلح، راقودة، دينوقراطيس، سيوة، بابل، أو كلمة إنجليزية..." 
-               class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-papyrus-400 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-alexandria-600 focus:border-transparent placeholder-slate-400" />
-        <span class="absolute right-3.5 top-3 text-slate-400">🔍</span>
-      </div>
-    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="index.html">فهرس المادة</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس المرشد</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
   </header>
 
   <!-- Hero Banner -->
@@ -283,49 +256,41 @@
     </div>
   </section>
 
-  <!-- Sticky Course Quick Navigation Rail -->
-  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky top-20 z-40 px-4 py-2.5 overflow-x-auto">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
-      <div class="flex items-center gap-2">
-        <span class="text-alexandria-700">📌 محاور المحاضرة الثالثة:</span>
-        <a href="#vocabulary" class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-900 border border-blue-300 hover:bg-blue-200 transition">📖 قاموس الكلمات</a>
-        <a href="#early-campaigns" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-alexandria-700 transition">١. العرش وحروب الشرق</a>
-        <a href="#egypt-entry" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-alexandria-700 transition">٢. دخول مصر وتتويج منف وسيوة</a>
-        <a href="#alexandria-foundation" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-alexandria-700 transition">٣. تخطيط الإسكندرية والموانئ</a>
-        <a href="#death-babylon" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-alexandria-700 transition">٤. الوفاة في بابل ومؤتمر 323 ق.م</a>
-        <a href="#monuments" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-alexandria-700 transition">٥. شواهد الآثار والنقوش</a>
-      </div>
-      <a href="#quiz" class="text-alexandria-700 hover:text-alexandria-900 underline font-black">الذهاب للاختبار التفاعلي ←</a>
-    </div>
-  </div>
-
   <!-- Main Content Layout -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
     <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
-    <section id="vocabulary" class="scroll-mt-36">
-      
-      <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-alexandria-700 text-white flex items-center justify-center font-black text-lg shadow">
-            📖
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
           </div>
-          <div>
-            <span class="text-xs font-bold text-alexandria-700 tracking-wider uppercase block">GUIDE VOCABULARY & GLOSSARY</span>
-            <h3 class="text-2xl font-black text-slate-800">قاموس المرشد السياحي: كلمات ومصطلحات المحاضرة الثالثة</h3>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 border-amber-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
           </div>
-        </div>
-        <span class="text-xs bg-blue-100 text-blue-900 border border-blue-300 px-3 py-1 rounded-full font-bold">
-          مفردات الصفحات ص 18 - 22
-        </span>
-      </div>
+        </summary>
 
-      <div class="bg-blue-50/50 border-2 border-blue-200 rounded-3xl p-6 sm:p-8">
-        <p class="text-sm text-slate-700 mb-6 leading-relaxed">
-          💡 <strong>تنبيه للمرشد السياحي:</strong> استخرجنا لك أدق المصطلحات التاريخية والجغرافية الواردة في نص المحاضرة الثالثة بكتاب الدكتورة مرفت ماهر أمين؛ احفظها جيداً لاختبارات الكلية والشرح الميداني للسائحين:
-        </p>
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
           <!-- Vocab 1 -->
           <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
@@ -472,7 +437,8 @@
           </div>
 
         </div>
-      </div>
+        </div>
+      </details>
     </section>
 
     <!-- ==================== المحور الأول: العرش وحروب الشرق ==================== -->
@@ -534,15 +500,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-alexandria-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           عندما اغتيل فيليب، ظن قادة اليونان في أثينا وطيبة أن العرش ذهب إلى "مجرد فتى غر" في العشرين من عمره، فأطلقوا النكات وقالوا إن الصبي لن يصمد أسبوعاً واحداً! وحين انتشرت إشاعة خاطئة بأنه قُتل في الشمال، هللت مدينة طيبة وأعلنت الثورة. لكن الإسكندر فاجأهم بسرعة تحرك خيالية قطعت 300 ميل من الجبال الوعرة في 14 يوماً فقط! وقف أمام أسوار طيبة ودمّرها تدميراً كاملاً ليعطي درساً مرعباً لكل بلاد اليونان، لكن احترامه للفن جعله يصدر أمراً صارماً: "لا تلمسوا منزل الشاعر بندار، ولا تهدموا معبد الإله أبوللو". وبعد أن أمّن ظهره في اليونان، التفت نحو الشرق ليبتلع إمبراطورية الفرس الشاسعة في معركتين حاسمتين جعلتا الطريق إلى مصر مفتوحاً على مصراعيه.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -603,15 +578,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-alexandria-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كان الفرس قد ارتكبوا جرائم لا تُنسى في حق المصريين؛ أهانوا الديانة المصرية، وذبح ملكهم قمبيز العجل المقدس آبيس ونهبوا المعابد، لذلك كان كره المصريين للفرس يفوق الوصف. وحين دخل الإسكندر مصر، تصرف بذكاء سياسي نادر تعلمه من أرسطو؛ لم يأتِ كغازٍ متغطرس، بل ذهب إلى منف وسجد للآلهة المصرية وقدم القرابين للعجل آبيس نفسه! ثم خاض رحلة محفوفة بالمخاطر عبر الصحراء الغربية القاحلة حتى وصل واحة سيوة. وتقول كتب التاريخ إن عاصفة رملية كادت تهلك الجيش لكن طيوراً وغرباناً هدتهم للطريق! وعندما دخل قدس أقداس معبد آمون، خاطبه الكاهن بلقب «ابن آمون»، وهي اللحظة التاريخية الفارقة التي جعلت المصريين يتقبلون حكمه كفرعون ابن إله وليس كمحتل أجنبي.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -769,15 +753,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-alexandria-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           كان الإسكندر يحلم بمدينة لا تشبه أي مدينة أخرى؛ ميناء يربط بين الشرق الأسطوري وحضارة اليونان. حين وقف عند شاطئ قرية راقودة الصغيرة، وجد شريطاً أرضياً رائعاً يفصل بين مياه البحر الصافية ومياه بحيرة مريوط العذبة. لم يكن معه طباشير لتخطيط الشوارع، فأمر جنوده بإحضار أكياس من دقيق القمح والشعير، ورسم بنفسه خطوط شوارع المدينة العريضة على الرمال! وفجأة هبطت أسراب ضخمة من الطيور من البحر وأكلت كل حبوب الدقيق؛ فخاف الجنود واعتبروها شؤماً، لكن كاهن الإسكندر ابتسم وقال له: «هذه أعظم بشارة يا مولاي؛ مدينتك ستكون مصدر الغذاء والعلم الذي ستطير إليه شعوب الأرض كافة!» وهكذا ولدت الإسكندرية كأعظم حاضرة للعلم والفكر في التاريخ.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -844,15 +837,24 @@
       </div>
 
       <!-- Storytelling Explanation Box -->
-      <div class="story-box p-6 rounded-2xl shadow-sm mb-6">
-        <div class="flex items-center gap-2 mb-2 text-alexandria-900 font-black text-sm">
-          <span>📜</span>
-          <span>الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
-        </div>
-        <p class="text-sm text-slate-800 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة):</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm text-slate-800 leading-relaxed">
           حين كان الإسكندر يحتضر على فراش الموت في بابل، تحلق حوله قادته الكبار وسألوه بلهفة: «لمن تترك إمبراطوريتك العظيمة يا ملك الملوك؟» فهمس بكلمته الأخيرة الخالدة: «للأقوى (To the strongest)!» وفور أن لفظ أنفاسه، انقض قادته السبعة كالنسور على ممتلكات الإمبراطورية. وكان أذكاهم جميعاً هو صديق طفولته وحارسه الشخصي «بطليموس بن لاجوس»؛ بينما كان القادة يتقاتلون على الأراضي الشاسعة في آسيا ومقدونيا، وضع بطليموس عينه على جائزة واحدة فقط: «مصر» بنيلها الخصيب وموقعها الحصين وبحرها وثرواتها. وفوق ذلك، في المحاضرة القادمة سنرى كيف خطف بطليموس جثمان الإسكندر نفسه أثناء نقله إلى مقدونيا وأتى به إلى مصر ليدفنه في الإسكندرية، ليمنح مملكته الجديدة قدسية وشرعية لا تُنازع!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -928,6 +930,7 @@
 
     <!-- ==================== بنك الأسئلة التفاعلي الشامل ==================== -->
     <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       
       <div class="flex items-center justify-between mb-6">
         <div class="flex items-center gap-3">
@@ -1228,6 +1231,7 @@
         </form>
 
       </div>
+    </div></details>
     </section>
 
     <!-- Navigation Footer to Next Lecture -->
@@ -1350,5 +1354,6 @@
       document.getElementById('scoreText').innerText = 'أجب عن الأسئلة واضغط «تصحيح الاختبار»';
     }
   </script>
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

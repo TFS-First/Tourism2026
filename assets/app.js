@@ -9435,48 +9435,7 @@ const LandingHero = ({
 }) => /*#__PURE__*/React.createElement("div", {
   className: "nile-welcome",
   dir: "rtl"
-}, /*#__PURE__*/React.createElement("aside", {
-  style: {
-    background: '#144c51',
-    color: '#fff9ed',
-    padding: '8px 24px',
-    fontSize: '12px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    gap: '8px',
-    borderBottom: '1px solid #1e757c'
-  }
-}, /*#__PURE__*/React.createElement("div", {
-  style: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '6px'
-  }
-}, /*#__PURE__*/React.createElement("span", {
-  style: {
-    width: '8px',
-    height: '8px',
-    borderRadius: '50%',
-    background: '#f59e0b',
-    display: 'inline-block'
-  }
-}), /*#__PURE__*/React.createElement("b", null, "\u0633\u064A\u0627\u062D\u0629 2026 \u2022 \u0645\u0627\u062F\u0629 \u0627\u0644\u0644\u063A\u0629 \u0627\u0644\u0645\u0635\u0631\u064A\u0629 \u0627\u0644\u0642\u062F\u064A\u0645\u0629")), /*#__PURE__*/React.createElement("a", {
-  href: "portal.html",
-  style: {
-    color: '#fef3c7',
-    fontWeight: 'bold',
-    textDecoration: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '6px',
-    background: '#0e3437',
-    padding: '4px 12px',
-    borderRadius: '50px',
-    border: '1px solid #1e757c'
-  }
-}, /*#__PURE__*/React.createElement("span", null, "\uD83C\uDFDB\uFE0F"), /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u0639\u0648\u062F\u0629 \u0644\u0644\u0628\u0648\u0627\u0628\u0629 \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629 \u0648\u0627\u062E\u062A\u064A\u0627\u0631 \u0645\u0627\u062F\u0629 \u0623\u062E\u0631\u0649 \u2190"))), /*#__PURE__*/React.createElement("style", null, `.nile-welcome{--nile-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201250%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M130%2040%20C230%200%20300%2065%20400%2035%20S610%204%20710%2043%20S870%2013%20933%20105%20S962%20260%20933%20355%20S1000%20510%20965%20625%20S922%20765%20955%20870%20S970%201050%20883%201110%20S735%201190%20625%201165%20S450%201250%20335%201205%20S170%201215%2090%201130%20S50%20970%2030%20865%20S85%20700%2044%20590%20S18%20420%2053%20315%20S30%2085%20130%2040%20Z%22%2F%3E%3C%2Fsvg%3E")}
+}, /*#__PURE__*/React.createElement("style", null, `.nile-welcome{--nile-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201250%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M130%2040%20C230%200%20300%2065%20400%2035%20S610%204%20710%2043%20S870%2013%20933%20105%20S962%20260%20933%20355%20S1000%20510%20965%20625%20S922%20765%20955%20870%20S970%201050%20883%201110%20S735%201190%20625%201165%20S450%201250%20335%201205%20S170%201215%2090%201130%20S50%20970%2030%20865%20S85%20700%2044%20590%20S18%20420%2053%20315%20S30%2085%20130%2040%20Z%22%2F%3E%3C%2Fsvg%3E")}
 .nile-welcome{--ink:#233e3b;--teal:#227b82;--sand:#b3884e;min-height:100vh;background:#faf5e9;color:var(--ink);overflow-x:clip}
 .nile-welcome *{box-sizing:border-box}.nile-welcome button{touch-action:manipulation}.nile-nav{max-width:1400px;margin:auto;padding:25px clamp(24px,4.5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #ad8b5025}.nile-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;text-align:right}.nile-brand>span{font-size:40px;color:var(--teal);line-height:1}.nile-brand b{display:block;font-size:20px}.nile-brand small{font-size:9px;letter-spacing:3px;color:#9b7949;display:block;margin-top:3px}.nile-links{display:flex;gap:clamp(16px,2.2vw,32px);font-size:12px}.nile-links button{color:#65726b;min-height:44px}.nile-links button:hover{color:var(--teal)}.nile-nav-cta{border:1px solid #b89a674f!important;padding:10px 20px;border-radius:50px;font-size:12px;color:#6d593a;flex-shrink:0;min-height:44px}
 .nile-main{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,76px);align-items:center;padding:44px clamp(24px,4.5vw,64px) 36px;isolation:isolate}.nile-copy{min-width:0;padding:16px 0}.nile-kicker{display:flex;align-items:center;gap:10px;color:#997640;font-size:12px;line-height:1.8}.nile-kicker:before{content:'';width:27px;height:1px;background:#b89155;flex-shrink:0}.nile-copy h1{font-size:clamp(36px,4.25vw,60px);font-weight:700;line-height:1.65;letter-spacing:-1.4px;margin:22px 0;overflow-wrap:normal}.nile-copy h1 span{color:var(--teal);text-decoration:underline;text-decoration-color:#c5a36b;text-decoration-thickness:1px;text-underline-offset:14px}.nile-description{font-size:15px;color:#768078;line-height:2.3;max-width:410px}.nile-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px 24px;margin:32px 0 23px}.nile-start{background:#277d80;color:#fff9ed;display:flex;align-items:center;justify-content:center;gap:36px;border:1px solid #277d80;border-radius:7px;padding:15px 28px;font-size:15px;min-height:52px;box-shadow:0 8px 0 -4px #1b535321;transition:transform .2s,background .2s;white-space:nowrap}.nile-start:hover{background:#1f686e;transform:translateY(-2px)}.nile-sample{font-size:12px;color:#7d715e;border-bottom:1px solid #bbaa8c;min-height:44px}.nile-note{font-size:11px;line-height:2;color:#8b9487;display:flex;align-items:baseline;gap:8px}.nile-note span{color:#b69155}

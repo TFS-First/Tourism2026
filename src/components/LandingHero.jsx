@@ -1,15 +1,5 @@
 const LandingHero = ({ onStart, onSelectTab }) => (
   <div className="nile-welcome" dir="rtl">
-    <aside style={{background:'#144c51',color:'#fff9ed',padding:'8px 24px',fontSize:'12px',display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:'8px',borderBottom:'1px solid #1e757c'}}>
-      <div style={{display:'flex',alignItems:'center',gap:'6px'}}>
-        <span style={{width:'8px',height:'8px',borderRadius:'50%',background:'#f59e0b',display:'inline-block'}}></span>
-        <b>سياحة 2026 • مادة اللغة المصرية القديمة</b>
-      </div>
-      <a href="portal.html" style={{color:'#fef3c7',fontWeight:'bold',textDecoration:'none',display:'inline-flex',alignItems:'center',gap:'6px',background:'#0e3437',padding:'4px 12px',borderRadius:'50px',border:'1px solid #1e757c'}}>
-        <span>🏛️</span>
-        <span>العودة للبوابة الرئيسية واختيار مادة أخرى ←</span>
-      </a>
-    </aside>
     <style>{`.nile-welcome{--nile-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201250%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M130%2040%20C230%200%20300%2065%20400%2035%20S610%204%20710%2043%20S870%2013%20933%20105%20S962%20260%20933%20355%20S1000%20510%20965%20625%20S922%20765%20955%20870%20S970%201050%20883%201110%20S735%201190%20625%201165%20S450%201250%20335%201205%20S170%201215%2090%201130%20S50%20970%2030%20865%20S85%20700%2044%20590%20S18%20420%2053%20315%20S30%2085%20130%2040%20Z%22%2F%3E%3C%2Fsvg%3E")}
 .nile-welcome{--ink:#233e3b;--teal:#227b82;--sand:#b3884e;min-height:100vh;background:#faf5e9;color:var(--ink);overflow-x:clip}
 .nile-welcome *{box-sizing:border-box}.nile-welcome button{touch-action:manipulation}.nile-nav{max-width:1400px;margin:auto;padding:25px clamp(24px,4.5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #ad8b5025}.nile-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;text-align:right}.nile-brand>span{font-size:40px;color:var(--teal);line-height:1}.nile-brand b{display:block;font-size:20px}.nile-brand small{font-size:9px;letter-spacing:3px;color:#9b7949;display:block;margin-top:3px}.nile-links{display:flex;gap:clamp(16px,2.2vw,32px);font-size:12px}.nile-links button{color:#65726b;min-height:44px}.nile-links button:hover{color:var(--teal)}.nile-nav-cta{border:1px solid #b89a674f!important;padding:10px 20px;border-radius:50px;font-size:12px;color:#6d593a;flex-shrink:0;min-height:44px}

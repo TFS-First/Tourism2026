@@ -70,9 +70,12 @@
   <style>
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #fcf9f2;
       color: #1e293b;
     }
@@ -114,43 +117,20 @@
       border-color: #d97706;
       box-shadow: 0 6px 16px -4px rgba(217, 119, 6, 0.2);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #b8862d; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-ptolemy-100 selection:text-ptolemy-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement Navigation Bar -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-hellenic-950 text-papyrus-100 px-4 py-2 text-xs border-b border-hellenic-800">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-bronze-400 hover:bg-bronze-300 text-slate-950 px-3 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
-      </a>
-
-      <!-- Quick Switcher to Other Subjects -->
-      <div class="flex items-center gap-2 flex-wrap">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>🏛️</span>
-          <span>فهرس العصر اليوناني الروماني</span>
-        </a>
-        <a href="lecture-06.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>⏮️</span>
-          <span>المحاضرة ٦ (بطليموس الثالث إيورجيتس)</span>
-        </a>
-        <a href="../history/index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-hellenic-900 px-3 py-1 rounded-full border border-hellenic-700">
-          <span>📜</span>
-          <span>تاريخ وحضارة مصر القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
+  
 
   <!-- Main Navigation Header (Dynamic padding to prevent sticky collisions) -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
+  <header class="course-header sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
       
       <!-- Subject & Lecture Title -->
@@ -189,6 +169,8 @@
         </a>
       </div>
     </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="index.html">فهرس المادة</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#vocabulary">📖 قاموس الكلمات</a><a href="#court-murders">١. العرش ومؤامرات البلاط</a><a href="#war-recruitment">٢. الحرب وتجنيد المصريين</a><a href="#battle-raphia">٣. ملحمة معركة رفح 217 ق.م</a><a href="#dividing-line">٤. الخط الفاصل وثورة طيبة</a><a href="#monuments-gallery">🖼️ المعرض الأثري</a><a href="#quiz">🎯 اختبار المحاضرة</a></nav></details>
   </header>
 
   <!-- Hero Section -->
@@ -292,34 +274,37 @@
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full space-y-16">
 
     <!-- ==================== VOCABULARY GUIDE SECTION (COLLAPSIBLE AS REQUESTED) ==================== -->
-    <section id="vocabulary" class="scroll-mt-24 space-y-4">
-      
-      <!-- Interactive Toggle Header -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-2 border-amber-300 pb-4">
-        <div>
-          <span class="text-xs font-black text-amber-700 uppercase tracking-widest block mb-1">GUIDE VOCABULARY & GLOSSARY</span>
-          <h3 class="text-xl sm:text-2xl font-black text-slate-900 flex items-center gap-2">
-            <span>📖</span>
-            <span>قاموس الكلمات الصعبة والمصطلحات الأكاديمية للإرشاد السياحي</span>
-          </h3>
-        </div>
-        
-        <!-- Toggle Icon & Button to keep screen uncluttered -->
-        <button onclick="toggleVocabSection()" id="vocabToggleBtn" class="flex items-center gap-2 bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-4 py-2.5 rounded-2xl text-xs font-black shadow-md hover:shadow-lg transition-all duration-300 border border-amber-400/40 cursor-pointer self-start sm:self-auto">
-          <span id="vocabToggleIcon" class="text-sm">👁️</span>
-          <span id="vocabToggleText">عرض قاموس المصطلحات (١٤ مصطلحاً)</span>
-          <span id="vocabToggleChevron" class="text-[10px] transition-transform duration-300">▼</span>
-        </button>
-      </div>
+    <!-- ==================== قاموس الكلمات والمصطلحات (مطوي افتراضياً) ==================== -->
+    <section id="vocabulary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300 mb-8">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5 text-right">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black text-slate-900">
+                قاموس ومصطلحات المحاضرة للمرشد (اضغط هنا لفتح / طي القاموس)
+              </h3>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 border-amber-300 px-3 py-1.5 rounded-full border hidden sm:inline-block">
+              قاموس ثنائي اللغة
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
 
-      <!-- Collapsible Container (Hidden by default to prevent screen crowding) -->
-      <div id="vocabContainer" class="hidden transition-all duration-300 space-y-4 pt-2">
-        
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed bg-amber-50/70 p-3.5 rounded-xl border border-amber-200">
-          استخرجنا لك هنا كافة المصطلحات الأكاديمية والكلمات التاريخية الواردة في صفحات المحاضرة (48–51)، مع النطق الصوتي والترجمة والمدلول الإرشادي اللازم لامتحاناتك الميدانية والجامعية:
-        </p>
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات والكلمات مستخرجة من المنهج الأكاديمي المعتمد، ومزودة بالنطق الصوتي والمعنى السياقي للمرشد:
+          </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
           <!-- Word 1 -->
           <div class="vocab-card bg-white p-4 rounded-2xl border border-papyrus-300 shadow-sm space-y-2">
@@ -532,8 +517,8 @@
           </div>
 
         </div>
-      </div>
-
+        </div>
+      </details>
     </section>
 
     <!-- ==================== PART 1: COURT INTRIGUES & PALACE MURDERS ==================== -->
@@ -623,15 +608,25 @@
       </div>
 
       <!-- Story Narrative Box -->
-      <div class="story-box p-5 rounded-2xl shadow-sm space-y-2">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
-          <span>☠️</span>
-          <h4>حكاية للتاريخ والإرشاد: سم في قصر الإسكندرية وسقوط الملكة صاحبة «خصلة النجوم»!</h4>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: ☠️
+          حكاية للتاريخ والإرشاد: سم في قصر الإسكندرية وسقوط الملكة صاحبة «خصلة النجوم»!</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           الملكة برنيكي الثانية، التي خلدت الأساطير خصلات شعرها الذهبية في عنان السماء، لم تكن لتتصور أن نهايتها ستكون كأساً مسموماً يقدمه لها ابنها البكر بطليموس الرابع! حين رأت برنيكي ابنها غارقاً في الليالي الماجنة مع أغاثوكليا، بينما وزيره سوسيفيوس ينهب ثروات البلاد، خشيت على عرش السلالة وقررت تنصيب ابنها الثاني ماجاس، وكان شاباً فارساً شجاعاً. لكن عيون سوسيفيوس كانت تملأ أروقة القصر؛ فوشى بها إلى الملك الضعيف موهماً إياه بأن حياته في خطر، فصدر الأمر المشؤوم: دُس السم للملكة الأم في طعامها، واقتُحم حمام الأمير ماجاس وسُكب عليه ماء يغلي حتى لفظ أنفاسه! خلا البلاط للمحظية والوزير الفاسد، لكن ثمن هذه الخيانة كاد يكلف مصر استقلالها أمام زحف السلوقيين.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -717,15 +712,25 @@
       </div>
 
       <!-- Story Narrative Box -->
-      <div class="story-box p-5 rounded-2xl shadow-sm space-y-2">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
-          <span>🛡️</span>
-          <h4>حكاية للتاريخ والإرشاد: كيف خدع سوسيفيوس إمبراطور آسيا وصنع جيش الفلاحين المسلح؟</h4>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: 🛡️
+          حكاية للتاريخ والإرشاد: كيف خدع سوسيفيوس إمبراطور آسيا وصنع جيش الفلاحين المسلح؟</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           كان ملوك البطالمة يخشون تسليح المصريين أكثر من خشيتهم لأعدائهم الخارجيين؛ فكان الجيش حكراً على المقدونيين والإغريق، بينما الفلاح المصري يكدح ويدفع الضرائب فقط. لكن عندما وقف أنطيوخوس الثالث بجيشه الجرار على أبواب سيناء، وجد سوسيفيوس خزائن الإسكندرية خاوية من المرتزقة والفرسان. فاستغل دهاءه الدبلوماسي وأرسل مبعوثين يتجادلون مع أنطيوخوس حول بنود معاهدة وهمية طوال شهور الشتاء، بينما كان في ضواحي الإسكندرية ينزع الفأس من يد الفلاح الصعيدي والبحراوي ويضع مكانه رمح الساريسا المقدوني بطول 6 أمتار! تدرب 20 ألف شاب مصري على انضباط كتائب الفالنج الحديدية ليتحولوا في أشهر معدودة إلى الصخرة الصلبة التي حطمت أحلام السلوقيين في رمال رفح.
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -811,15 +816,25 @@
       </div>
 
       <!-- Story Narrative Box -->
-      <div class="story-box p-5 rounded-2xl shadow-sm space-y-2">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
-          <span>🐘</span>
-          <h4>حكاية للتاريخ والإرشاد: صدام العمالقة عند رفح.. والفالنج المصري الذي صدم إمبراطور الشام</h4>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: 🐘
+          حكاية للتاريخ والإرشاد: صدام العمالقة عند رفح.. والفالنج المصري الذي صدم إمبراطور الشام</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           في صباح 22 يونيو 217 ق.م، ارتجت رمال رفح تحت وطأة أكثر من 175 فيلاً حربياً و110 آلاف جندي! بدأت المعركة بذعر الفيلة الإفريقية لبطليموس وتقهقر جناحه الأيسر، وظن أنطيوخوس الثالث أنه كسب المعركة فاندفع في ملاحقة الفرسان الهاربين. لكن في قلب المعركة، حدث ما لم يتوقعه أحد؛ امتطت الملكة الشابة أرسينوي الثالثة صهوة جوادها وشعرها يتطاير بين الصفوف، تناشد الجنود بالدفاع عن شرف نسائهم وأطفالهم وأرض مصر. فتقدمت كتائب الفالنج المكونة من 20 ألف فلاح مصري، مشبوكة الرماح كجدار حديدي لا يُخترق! صدمت الكتائب المصرية قلب الجيش السلوقي ومزقته شر ممزق، وحين عاد أنطيوخوس من مطاردته، وجد جيشه قد تشتت ودُمر قلبه، تاركاً آلاف القتلى في الرمال لتسجل مصر أعظم انتصاراتها في الشرق!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -896,15 +911,25 @@
       </div>
 
       <!-- Story Narrative Box -->
-      <div class="story-box p-5 rounded-2xl shadow-sm space-y-2">
-        <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
-          <span>🔥</span>
-          <h4>حكاية للتاريخ والإرشاد: كيف فجرت دماء رفح بركان الثورة الوطنية في طيبة والصعيد؟</h4>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <!-- Storytelling Box (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: 🔥
+          حكاية للتاريخ والإرشاد: كيف فجرت دماء رفح بركان الثورة الوطنية في طيبة والصعيد؟</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
           حين سكتت مدافع السيوف في رفح، نظر المقاتلون المصريون العائدون إلى قراهم وقالوا لبعضهم: «لقد فر فرسان مقدونيا وهرب أنطيوخوس أمام رماحنا نحن! فلماذا يحكمنا غرباء يفرضون الضرائب ويهينون عقائدنا؟». لم يعد الفلاح المصري هو ذلك الرعية الخاضعة؛ بل تحول إلى مقاتل مدرب يملك السلاح والثقة. وسرعان ما اشتعلت نار الثورة في طيبة، وطرد المصريون الحكام اليونانيين ونصبوا ملكاً مصرياً وطنياً يُدعى «حور ونفر» كفرعون شرعي لمصر العليا، فكانت معركة رفح سلاحاً ذا حدين: أنقذت عرش بطليموس الرابع لأعوام قليلة، لكنها غرست بذرة الثورة الوطنية التي حطمت أركان الهيمنة الإغريقية في مصر إلى الأبد!
         </p>
-      </div>
+        </div>
+      </details>
 
     </section>
 
@@ -1006,6 +1031,7 @@
 
     <!-- ==================== INTERACTIVE QUIZ ==================== -->
     <section id="quiz" class="scroll-mt-24 space-y-8 bg-white p-6 sm:p-10 rounded-3xl border-2 border-amber-300 shadow-xl">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-papyrus-200 pb-6">
         <div>
@@ -1330,6 +1356,7 @@
         </p>
       </div>
 
+    </div></details>
     </section>
 
     <!-- Bottom Navigation between Lectures -->
@@ -1467,5 +1494,6 @@
       document.getElementById('scoreText').innerText = 'أجب عن الأسئلة واضغط «تصحيح الاختبار»';
     }
   </script>
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>

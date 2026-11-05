@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تاريخ مصر الحديث والمعاصر — سياحة 2026</title>
+  <meta name="description" content="مقرر تاريخ مصر الحديث والمعاصر - قسم الإرشاد السياحي بكلية السياحة والفنادق جامعة 6 أكتوبر. إعداد منصة سياحة 2026 لدفعة الإرشاد السياحي." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+              950: '#4c0519',
+            },
+            imperial: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebd9b4',
+              400: '#d8bd85',
+              500: '#c5a360',
+              800: '#644e27',
+              900: '#413217',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            cinzel: ['Cinzel', 'serif'],
+            amiri: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      background-color: #faf6f2;
+      color: #1e293b;
+    }
+    .hero-title, .hero-title * {
+      line-height: 1.65 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.05 !important;
+    }
+    .royal-gradient {
+      background: linear-gradient(135deg, #881337 0%, #be123c 50%, #b45309 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(136, 19, 55, 0.2);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(14px);
+      background-color: rgba(250, 246, 242, 0.95);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #be123c; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
+</head>
+<body class="selection:bg-royal-100 selection:text-royal-950 min-h-screen flex flex-col justify-between">
+
+  <!-- Unified Navigation Header -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5 sm:gap-3 text-right">
+        <span class="text-3xl leading-none">👑</span>
+        <div>
+          <h1 class="text-sm sm:text-base md:text-lg font-bold block text-slate-800 leading-tight">تاريخ مصر الحديث والمعاصر</h1>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">MODERN & CONTEMPORARY EGYPT</small>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-5 text-xs sm:text-sm text-[#65726b] font-semibold">
+        <a href="#syllabus" class="hover:text-rose-700 transition">أجندة المحاضرات</a>
+        <a href="lecture-01.html" class="hover:text-rose-700 transition">المحاضرة الأولى</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-rose-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026 الرئيسية</span>
+          <span>←</span>
+        </a>
+      </div>
+    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="index.html">فهرس المادة</a><span class="course-axis-title">محاور المادة</span><a href="#syllabus">أجندة المحاضرات</a></nav></details>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="relative overflow-hidden py-12 sm:py-16 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-white to-papyrus-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Academic Accreditation Card -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-papyrus-200">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-royal-900 text-amber-300 flex items-center justify-center font-bold text-lg shadow">
+              👑
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 block">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</span>
+              <span class="text-sm font-extrabold text-royal-950">مقرر: تاريخ مصر الحديث والمعاصر (المستوى الرابع)</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 bg-royal-100 border border-royal-300 text-royal-900 px-3.5 py-1.5 rounded-full text-xs font-extrabold">
+            <span class="w-2 h-2 rounded-full bg-royal-600 animate-pulse"></span>
+            <span>المستوى الرابع — المقاومة الشعبية وبناء الدولة الحديثة</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 text-right space-y-4">
+            <span class="text-xs font-black text-imperial-700 tracking-widest uppercase block font-cinzel">THE MAKING OF MODERN EGYPT</span>
+            
+            <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal">
+              <span class="block mb-2">من نهاية دولة المماليك إلى نهضة محمد علي</span>
+              <span class="block text-transparent bg-clip-text bg-gradient-to-l from-royal-800 via-royal-600 to-imperial-700 pb-1">
+                صدمة الحداثة، وقناة السويس، وتاريخ القصور الخديوية والمملكة
+              </span>
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+              يبدأ المقرر بأحوال مصر تحت حكم المماليك وصعود الدولة العثمانية، ثم يتناول السيطرة العثمانية، والحملة الفرنسية، والتحولات التي مهّدت لصعود محمد علي وبناء الدولة الحديثة. ويمتد إلى عصر الخديوي إسماعيل وقناة السويس والحركة الوطنية، مع ربط الأحداث بالمواقع والآثار التي يشرحها المرشد السياحي.
+            </p>
+
+            <div class="flex flex-wrap gap-3 pt-3">
+              <a href="lecture-01.html" class="px-6 py-3 rounded-xl bg-royal-800 hover:bg-royal-900 text-white font-bold text-sm shadow transition flex items-center gap-2">
+                <span>ابدأ بالمحاضرة الأولى (السيطرة العثمانية)</span>
+                <span>←</span>
+              </a>
+              <a href="#syllabus" class="px-5 py-3 rounded-xl bg-papyrus-200 hover:bg-papyrus-300 text-slate-800 font-bold text-sm transition">
+                استعرض محتوى المقرر ↓
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col items-center justify-center">
+            <img class="course-hero-art" src="../assets/modern-history-hero.webp" srcset="../assets/modern-history-hero-640.webp 640w, ../assets/modern-history-hero.webp 1122w" sizes="(max-width: 1023px) min(100vw - 2rem, 480px), 40vw" width="1122" height="1402" loading="eager" fetchpriority="high" alt="القاهرة في القرن التاسع عشر وقلعة محمد علي">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- English Tour Guide Briefing Section -->
+    <section id="guide-overview" class="py-12 bg-white border-b border-papyrus-300">
+      <details class="course-fold"><summary>للاستزادة: ملخص المرشد السياحي بالإنجليزية</summary><div class="course-fold-body">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-rose-50/70 border-2 border-rose-300 rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🌍</span>
+            <div>
+              <span class="text-xs font-bold text-rose-800 uppercase tracking-wider block font-cinzel">TOUR GUIDE EXECUTIVE BRIEFING IN ENGLISH</span>
+              <h3 class="text-xl font-black text-slate-900 font-cinzel" dir="ltr">Modern Egypt: Bridging History & Guided Sightseeing</h3>
+            </div>
+          </div>
+          
+          <div class="text-sm text-slate-700 leading-relaxed space-y-3" dir="ltr">
+            <p>
+              For foreign tourists visiting Cairo and Alexandria, <strong>Modern Egyptian History</strong> is ubiquitous—visible in the grand Belle Époque boulevards of Downtown Cairo, the majestic halls of <strong>Abdeen Palace</strong>, the <strong>Manial Palace</strong> of Prince Mohamed Ali Tewfik, the <strong>Citadel's Alabaster Mosque</strong>, and the legendary waters of the <strong>Suez Canal</strong>.
+            </p>
+            <p>
+              The course opens with Mamluk Egypt and the Ottoman conquest of 1516–1517, then follows Ottoman rule, the French expedition of 1798, and the rise of <strong>Muhammad Ali Pasha (1805–1848)</strong>. Later topics connect state building, the Suez Canal, and the national movement to the historic places that visitors encounter today.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div></details>
+    </section>
+
+    <!-- Full Syllabus Section -->
+    <section id="syllabus" class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="text-xs font-bold text-imperial-700 tracking-wider uppercase block font-cinzel">ACADEMIC MODULES</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900">محاضرات مقرر تاريخ مصر الحديث والمعاصر</h3>
+          <p class="text-xs text-slate-500 mt-1">منهج قسم الإرشاد السياحي المعتمد بجامعة 6 أكتوبر</p>
+        </div>
+        <span class="text-xs bg-royal-100 text-royal-900 border border-royal-300 px-3 py-1 rounded-full font-bold">
+          ٨ محاور رئيسية شاملة
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Lecture 1: Available -->
+        <a href="lecture-01.html" class="group bg-white rounded-3xl p-6 border-2 border-rose-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-rose-50 select-none group-hover:scale-105 transition-transform pointer-events-none">🏰</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ١
+              </span>
+              <span class="text-xs font-extrabold bg-rose-100 text-rose-900 px-3 py-1 rounded-full border border-rose-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span>
+                <span>المحاضرة الأولى مكتملة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-rose-700 block mb-1">المحاضرة الأولى</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-rose-800 transition-colors">السيطرة العثمانية على مصر وسقوط المماليك (1516–1517م)</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">THE OTTOMAN CONQUEST & FALL OF THE MAMLUKS</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              مصر قبيل العثمانيين، المماليك البحرية والبرجية، أسباب الضم الستة، معركة مرج دابق بالشام، معركة الريدانية واستشهاد طومان باي على باب زويلة.
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🏰 المماليك</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚔️ مرج دابق 1516</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">👑 الريدانية 1517</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">📖 قاموس المرشد</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-700 group-hover:text-rose-900">
+            <span>دخول المحاضرة الأولى</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 2: Available -->
+        <a href="lecture-02.html" class="group bg-white rounded-3xl p-6 border-2 border-rose-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-rose-50 select-none group-hover:scale-105 transition-transform pointer-events-none">⚖️</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ٢
+              </span>
+              <span class="text-xs font-extrabold bg-rose-100 text-rose-900 px-3 py-1 rounded-full border border-rose-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span>
+                <span>المحاضرة مكتملة ومتاحة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-rose-700 block mb-1">المحاضرة الثانية</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-rose-800 transition-colors">أحوال مصر أثناء الحكم العثماني (النظم والمجتمع والفكر)</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">EGYPT UNDER OTTOMAN RULE: GOVERNANCE & SOCIETY</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              الوالي والديوان وقانون نامة 1525م، الأوجاقات السبعة للحامية، تدهور الزراعة والصناعة وترحيل الحرفيين، هرم الطبقات الثلاث، وأعلام التأريخ (ابن إياس، الجبرتي، والزبيدي).
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚖️ قانون نامة 1525</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚔️ الأوجاقات السبعة</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">👥 هرم الطبقات</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">📚 الجبرتي وابن إياس</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-700 group-hover:text-rose-900">
+            <span>دخول المحاضرة الثانية</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 3: Available -->
+        <a href="lecture-03.html" class="group bg-white rounded-3xl p-6 border-2 border-rose-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-rose-50 select-none group-hover:scale-105 transition-transform pointer-events-none">⚔️</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ٣
+              </span>
+              <span class="text-xs font-extrabold bg-rose-100 text-rose-900 px-3 py-1 rounded-full border border-rose-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span>
+                <span>المحاضرة مكتملة ومتاحة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-rose-700 block mb-1">المحاضرة الثالثة</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-rose-800 transition-colors">حركة علي بك الكبير الاستقلالية (1768–1773م)</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">ALI BEY AL-KABIR'S INDEPENDENCE BID</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              مشيخة البلد، كسر قبائل الهوارة والشيخ همام، طرد الباشا، ضم الحجاز والشام، التحالف مع أسطول روسيا، وخيانة أبو الدهب ومعركة الصالحية.
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚔️ شيخ البلد</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🏰 الشيخ همام</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🕋 ضم الحجاز</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🩸 معركة الصالحية</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-700 group-hover:text-rose-900">
+            <span>دخول المحاضرة الثالثة</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 4: Available -->
+        <a href="lecture-04.html" class="group bg-white rounded-3xl p-6 border-2 border-rose-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-rose-50 select-none group-hover:scale-105 transition-transform pointer-events-none">🇫🇷</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ٤
+              </span>
+              <span class="text-xs font-extrabold bg-rose-100 text-rose-900 px-3 py-1 rounded-full border border-rose-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span>
+                <span>المحاضرة مكتملة ومتاحة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-rose-700 block mb-1">المحاضرة الرابعة</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-rose-800 transition-colors">الحملة الفرنسية في مصر (1798–1801م)</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">THE FRENCH EXPEDITION: INVASION & RESISTANCE</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              أوضاع ما قبل الحملة، أسباب الغزو الستة، من الفكرة إلى التنفيذ، إنزال الإسكندرية واستشهاد محمد كريم، شبراخيت وإمبابة، كارثة أبي قير، وصمود الصعيد لعشرة أشهر.
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🇫🇷 جيش الشرق</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚔️ محمد كريم</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">💥 معركة إمبابة</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚓ نيلسون وأبي قير</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⛰️ مقاومة الصعيد</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-700 group-hover:text-rose-900">
+            <span>دخول المحاضرة الرابعة</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 5: Available -->
+        <a href="lecture-05.html" class="group bg-white rounded-3xl p-6 border-2 border-rose-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-rose-50 select-none group-hover:scale-105 transition-transform pointer-events-none">📜</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ٥
+              </span>
+              <span class="text-xs font-extrabold bg-rose-100 text-rose-900 px-3 py-1 rounded-full border border-rose-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span>
+                <span>المحاضرة مكتملة ومتاحة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-rose-700 block mb-1">المحاضرة الخامسة</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-rose-800 transition-colors">مصر من المقاومة الشعبية حتى رحيل الحملة (1798–1801م)</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">POPULAR RESISTANCE & EXPULSION OF THE FRENCH</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              ثورتا القاهرة (الأزهر وبولاق)، مقتل ديبوي وسولكوسكي، اتفاقية العريش وموقعة عين شمس، تدمير بولاق واغتيال كليبر، قيادة مينو ومعركة كانوب 1801م، وضياع حجر رشيد.
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🕌 ثورة الأزهر</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚓ ملحمة بولاق</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">⚔️ معركة كانوب</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🪨 مصادرة حجر رشيد</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-700 group-hover:text-rose-900">
+            <span>دخول المحاضرة الخامسة</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 6 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٦</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">المحاضرة السادسة</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">الحركة الوطنية</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">مصطفى كامل ومحمد فريد ومقاومة الاحتلال</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              تأسيس جريدة اللواء والحزب الوطني، حادثة دنشواي 1906م وإقالة اللورد كرومر، ونضال محمد فريد ودور الحركة الطلابية والعمالية.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 7 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٧</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">المحاضرة السابعة</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">الليبرالية والاستقلال</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">ثورة 1919 والمملكة المصرية ودستور 1923</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              سعد زغلول والوفد المصري، الوحدة الوطنية وهلال مع صليب، تصريح 28 فبراير 1922، وإعلان استقلال مصر وتتويج الملك فؤاد الأول.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 8 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٨</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">المحاضرة الثامنة</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المعالم والقصور</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">معالم وقصور مصر الحديثة في مسار الإرشاد</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              قصر عابدين، قصر المنيل، قصر محمد علي بشبرا، قصر البارون إمبان، متحف المركبات الملكية، ومتحف الخزف الإسلامي.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-papyrus-200 border-t-2 border-rose-600 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2">
+        <span>👑</span>
+        <span class="font-bold text-white">تاريخ مصر الحديث والمعاصر • منصة سياحة 2026</span>
+      </div>
+      <div class="text-slate-400">
+        <a href="../portal.html" class="text-amber-400 hover:underline">بوابة سياحة 2026 الرئيسية</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/course-ui.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التاريخ والحضارة الإسلامية — سياحة 2026</title>
+  <meta name="description" content="مقرر التاريخ والحضارة الإسلامية - قسم الإرشاد السياحي بكلية السياحة والفنادق جامعة 6 أكتوبر." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            islamic: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            crescent: {
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebd9b4',
+              400: '#d8bd85',
+              500: '#c5a360',
+              800: '#644e27',
+              900: '#413217',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            cinzel: ['Cinzel', 'serif'],
+            amiri: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
+      background-color: #faf6f0;
+      color: #1e293b;
+    }
+    .hero-title, .hero-title * {
+      line-height: 1.65 !important;
+    }
+    p, .leading-relaxed {
+      line-height: 2.05 !important;
+    }
+    .islamic-gradient {
+      background: linear-gradient(135deg, #064e3b 0%, #15803d 50%, #b45309 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(6, 78, 59, 0.2);
+    }
+    .sticky-nav {
+      backdrop-filter: blur(14px);
+      background-color: rgba(250, 246, 240, 0.95);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #15803d; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
+</head>
+<body class="selection:bg-islamic-100 selection:text-islamic-950 min-h-screen flex flex-col justify-between">
+
+  <!-- Unified Navigation Header -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5 sm:gap-3 text-right">
+        <span class="text-3xl leading-none">🕌</span>
+        <div>
+          <h1 class="text-sm sm:text-base md:text-lg font-bold block text-slate-800 leading-tight">التاريخ والحضارة الإسلامية</h1>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">ISLAMIC HISTORY & CIVILIZATION</small>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-5 text-xs sm:text-sm text-[#65726b] font-semibold">
+        <a href="#syllabus" class="hover:text-emerald-700 transition">أجندة المحاضرات</a>
+        <a href="lecture-01.html" class="hover:text-emerald-700 transition">المحاضرة الأولى</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-emerald-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026 الرئيسية</span>
+          <span>←</span>
+        </a>
+      </div>
+    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="index.html">فهرس المادة</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور المادة</span><a href="#syllabus">أجندة المحاضرات</a></nav></details>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="relative overflow-hidden py-12 sm:py-16 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-white to-papyrus-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Academic Accreditation Card -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-papyrus-200">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-islamic-900 text-amber-300 flex items-center justify-center font-bold text-lg shadow">
+              🕌
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 block">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</span>
+              <span class="text-sm font-extrabold text-islamic-950">مقرر: التاريخ والحضارة الإسلامية</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 bg-islamic-100 border border-islamic-300 text-islamic-900 px-3.5 py-1.5 rounded-full text-xs font-extrabold">
+            <span class="w-2 h-2 rounded-full bg-islamic-600 animate-pulse"></span>
+            <span>العام الجامعي 2026 / 2027م — الفصل الدراسي الأول</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 text-right space-y-4">
+            <span class="text-xs font-black text-crescent-700 tracking-widest uppercase block font-cinzel">CHRONICLES OF ISLAMIC EGYPT</span>
+            
+            <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal">
+              <span class="block mb-2">من حصن بابليون إلى درة الشرق الإسـلامي</span>
+              <span class="block text-transparent bg-clip-text bg-gradient-to-l from-islamic-800 via-islamic-600 to-crescent-700 pb-1">
+                التحول الحضاري، والفتوحات، والعواصم الأربع، ودول الخلافة
+              </span>
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+              دراسة تاريخية وأثرية متخصصة ومفصلة لطلبة الإرشاد السياحي: كيف تحولت مصر من سلة خبز للإمبراطورية البيزنطية وساحة للاضطهاد الديني والمذهبي إلى قلب العالم الإسلامي النابض؟ نشأة الفسطاط، العسكر، القطائع، والقاهرة الفاطمية؛ دراسة منشآت الأيوبيين والمماليك، مدعمة بقاموس مصطلحات المرشد السياحي باللغة الإنجليزية، وتطبيقات عملية على المزارات الميدانية وبنوك أسئلة تفاعلية.
+            </p>
+
+            <div class="flex flex-wrap gap-3 pt-3">
+              <a href="lecture-01.html" class="px-6 py-3 rounded-xl bg-islamic-800 hover:bg-islamic-900 text-white font-bold text-sm shadow transition flex items-center gap-2">
+                <span>ابدأ بالمحاضرة الأولى (العصر البيزنطي)</span>
+                <span>←</span>
+              </a>
+              <a href="lecture-02.html" class="px-6 py-3 rounded-xl bg-white border border-islamic-300 text-islamic-900 hover:bg-islamic-50 font-bold text-sm shadow-sm transition flex items-center gap-2">
+                <span>المحاضرة الثانية (الفتح الإسلامي)</span>
+                <span>←</span>
+              </a>
+              <a href="#syllabus" class="px-5 py-3 rounded-xl bg-papyrus-200 hover:bg-papyrus-300 text-slate-800 font-bold text-sm transition">
+                استعرض محتوى المقرر (١٣ محاضرة) ↓
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col items-center justify-center">
+            <img class="course-hero-art" src="../assets/islamic-history-hero.webp" srcset="../assets/islamic-history-hero-640.webp 640w, ../assets/islamic-history-hero.webp 1122w" sizes="(max-width: 1023px) min(100vw - 2rem, 480px), 40vw" width="1122" height="1402" loading="eager" fetchpriority="high" alt="عمارة القاهرة الإسلامية ونهر النيل">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- English Tour Guide Briefing Section -->
+    <section id="guide-overview" class="py-12 bg-white border-b border-papyrus-300">
+      <details class="course-fold"><summary>للاستزادة: ملخص المرشد السياحي بالإنجليزية</summary><div class="course-fold-body">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-emerald-50/70 border-2 border-emerald-300 rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🌍</span>
+            <div>
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider block font-cinzel">TOUR GUIDE EXECUTIVE BRIEFING IN ENGLISH</span>
+              <h3 class="text-xl font-black text-slate-900 font-cinzel" dir="ltr">Islamic Egypt: Why It Matters for International Guiding</h3>
+            </div>
+          </div>
+          
+          <div class="text-sm text-slate-700 leading-relaxed space-y-3" dir="ltr">
+            <p>
+              When presenting <strong>Islamic Egypt</strong> to international travelers, you are not merely narrating chronological dynasties; you are unravelling the pivotal bridge between Classical Antiquity and the Medieval Middle East. For centuries, Egypt functioned as the <em>Granary of the Roman and Byzantine Empires</em>, burdened with punitive taxes and torn by deep theological schisms between the native Egyptian Coptic Orthodox Church (Monophysite) and the imperial Byzantine authorities (Melkites).
+            </p>
+            <p>
+              The arrival of the Arab-Muslim forces led by <strong>Amr ibn al-Aas (639–641 AD)</strong>, culminating in the siege of <strong>Babylon Fortress</strong> (in today's Coptic Cairo) and the surrender of Alexandria under the <strong>Treaty of Alexandria</strong>, transformed Egypt's demographic, linguistic, and urban landscape forever. Over consecutive epochs—from the Umayyads, Abbasids, and Tulunids, through the golden artistic age of the Fatimids, the military prowess of the Ayyubids and Mamluks, to the Ottoman administration—Egypt emerged as the undisputed political and cultural capital of Islamic art, monumental architecture, and trade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div></details>
+    </section>
+
+    <!-- Full Syllabus Section -->
+    <section id="syllabus" class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="text-xs font-bold text-crescent-700 tracking-wider uppercase block font-cinzel">COURSE ROADMAP & SCHEDULE</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900">أجندة محاضرات مقرر التاريخ والحضارة الإسلامية</h3>
+          <p class="text-xs text-slate-500 mt-1">تطابق الخطة المعتمدة في كلية السياحة والفنادق جامعة 6 أكتوبر — قسم الإرشاد السياحي</p>
+        </div>
+        <span class="text-xs bg-islamic-100 text-islamic-900 border border-islamic-300 px-3 py-1 rounded-full font-bold">
+          ١٣ محاضرة / ٢٦ ساعة
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Lecture 1: Available -->
+        <a href="lecture-01.html" class="group bg-white rounded-3xl p-6 border-2 border-emerald-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-emerald-50 select-none group-hover:scale-105 transition-transform pointer-events-none">🏛️</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ١
+              </span>
+              <span class="text-xs font-extrabold bg-emerald-100 text-emerald-900 px-3 py-1 rounded-full border border-emerald-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span>المحاضرة مكتملة ومتاحة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-emerald-700 block mb-1">المحاضرة الأولى</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-emerald-800 transition-colors">أحوال مصر قبيل الفتح الإسلامي (العصر البيزنطي)</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">EGYPT UNDER BYZANTINE RULE</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              مفهوم الحضارة وعناصرها، مسميات الدولة البيزنطية، الأوضاع الاقتصادية وسلة الخبز والضرائب ونظام الحماية، الأوضاع السياسية والعسكرية والدوق، دراسة حصن بابليون، الأوضاع الاجتماعية، والأوضاع الدينية ومجمع خلقدونية وبطش المقوقس.
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🌾 سلة الخبز</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🏰 حصن بابليون</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">✝️ مجمع خلقدونية</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">📖 قاموس المرشد</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700 group-hover:text-emerald-900">
+            <span>دخول المحاضرة الأولى</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 2: Available -->
+        <a href="lecture-02.html" class="group bg-white rounded-3xl p-6 border-2 border-emerald-300 shadow-sm card-hover flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -left-6 -bottom-6 text-9xl text-emerald-50 select-none group-hover:scale-105 transition-transform pointer-events-none">⚔️</div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-2xl font-bold shadow-inner">
+                ٢
+              </span>
+              <span class="text-xs font-extrabold bg-emerald-100 text-emerald-900 px-3 py-1 rounded-full border border-emerald-300 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span>المحاضرة مكتملة ومتاحة ✨</span>
+              </span>
+            </div>
+
+            <span class="text-xs font-bold text-emerald-700 block mb-1">المحاضرة الثانية</span>
+            <h4 class="text-lg font-black text-slate-900 mb-2 group-hover:text-emerald-800 transition-colors">الفتح العربي لمصر وأهم المظاهر الحضارية</h4>
+            <p class="text-[11px] font-cinzel text-slate-400 mb-3 tracking-wider" dir="ltr">THE ARAB CONQUEST OF EGYPT</p>
+            
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              أسباب فتح مصر الاستراتيجية والاقتصادية والدينية، مشاورات الجابية، خط سير الحملة (العريش، الفرما، بلبيس، أم دنين، عين شمس، حصار بابليون)، صلح الإسكندرية بشروطه التسعة، ومحاولة مانويل ورد عمرو بن العاص.
+            </p>
+
+            <div class="flex flex-wrap gap-1 text-[11px] font-medium text-slate-600 mb-5">
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🗺️ خط سير الفتح</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">📜 صلح الإسكندرية</span>
+              <span class="bg-papyrus-100 px-2 py-0.5 rounded-md">🏛️ تأسيس الفسطاط</span>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700 group-hover:text-emerald-900">
+            <span>دخول المحاضرة الثانية</span>
+            <span class="group-hover:translate-x-[-4px] transition-transform">←</span>
+          </div>
+        </a>
+
+        <!-- Lecture 3 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٣</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع الثالث</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة الثالثة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">تاريخ مصر خلال عصر الدولة الأموية</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              ولاية عبد العزيز بن مروان، تعريب الدواوين، تخطيط حلوان كأول منتجع استشفائي، والعمارة الأموية ومقاييس النيل.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 4 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٤</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع الرابع</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة الرابعة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">تاريخ مصر خلال عصر الدولة العباسية</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              تأسيس العسكر كعاصمة ثانية، مقياس النيل بالروضة (أحمد بن طولون / المتوكل)، ثورات البشموريين، ونظام الولاة.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 5 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٥</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع الخامس</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة الخامسة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">عصر الدولة الطولونية في مصر</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              أحمد بن طولون والاستقلال الاقتصادي، تأسيس القطائع كعاصمة ثالثة، جامع ابن طولون وعمارة المئذنة الملوية والبيمارستان.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 6 -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٦</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع السادس</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة السادسة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">عصر الدولة الأخشيدية في مصر</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              محمد بن طغج الإخشيد، أصل لقب الإخشيد، كافور الإخشيدي وإدارة شؤون مصر والشام، والتصدي للهجمات الفاطمية الأولى.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 7 & 8: Fatimid -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٧-٨</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع ٧ و٨</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة السابعة والثامنة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">عصر الدولة الفاطمية وتأسيس القاهرة</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              جوهر الصقلي والمعز لدين الله، تأسيس القاهرة والجامع الأزهر، أسوار وبوابات بدر الجمالي (زويلة، الفتوح، النصر)، وعمارة المساجد الفاطمية.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 9 & 10: Ayyubid -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">٩-١٠</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع ٩ و١٠</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة التاسعة والعاشرة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">عصر الدولة الأيوبية وقلعة الجبل</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              صلاح الدين الأيوبي وإنهاء الفاطميين، بناء قلعة الجبل وبئر يوسف، تخطيط أسوار القاهرة الكبرى، وظهور نظام المدارس السنية.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 11 & 12: Mamluk -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">١١-١٢</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع ١١ و١٢</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة الحادية عشرة والثانية عشرة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">عصر المماليك البحرية والبرجية</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              شجرة الدر وقطز والظاهر بيبرس، قلاوون والناصر محمد والسلطان حسن والغوري وقايتباي، أعظم روائع العمارة الإسلامية في العالم وشارع المعز.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+        <!-- Lecture 13: Ottoman -->
+        <div class="bg-white/80 rounded-3xl p-6 border border-papyrus-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-papyrus-100 text-slate-700 flex items-center justify-center text-xl font-bold">١٣</span>
+              <span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">الأسبوع الثالث عشر</span>
+            </div>
+            <span class="text-xs font-bold text-slate-500 block mb-1">المحاضرة الثالثة عشرة</span>
+            <h4 class="text-base font-black text-slate-800 mb-2">عصر الدولة العثمانية وأهم المظاهر الحضارية</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              معركة الريدانية ومصر إيالة عثمانية، نظام الباشوات والإنكشارية، أسبلة ووكالات خان الخليلي، ومنازل القاهرة والرشيد العثمانية.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-slate-400">قيد التحديث الأسبوعي</div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-papyrus-200 border-t-2 border-emerald-600 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2">
+        <span>🕌</span>
+        <span class="font-bold text-white">التاريخ والحضارة الإسلامية • منصة سياحة 2026</span>
+      </div>
+      <div class="text-slate-400">
+        <a href="../portal.html" class="text-amber-400 hover:underline">بوابة سياحة 2026 الرئيسية</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/course-ui.js" defer></script>
+</body>
+</html>

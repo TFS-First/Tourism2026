@@ -47,9 +47,12 @@
     }
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     body {
       font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      max-width: 100vw;
       background-color: #faf5eb;
       color: #243532;
     }
@@ -80,87 +83,79 @@
       backdrop-filter: blur(12px);
       background-color: rgba(250, 245, 235, 0.94);
     }
-    ::-webkit-scrollbar { width: 8px; }
+    :root {
+      --header-h: 5.5rem;
+    }
+    .sticky-rail {
+      position: sticky;
+      top: var(--header-h, 5.5rem);
+      z-index: 40;
+    }
+    .story-box {
+      border-right: 4px solid #b8862d;
+      background: linear-gradient(to left, #fffdfa, #f8f3e8);
+    }
+    .vocab-card {
+      transition: all 0.2s ease;
+    }
+    .vocab-card:hover {
+      background-color: #ffffff;
+      border-color: #d97706;
+      box-shadow: 0 6px 16px -4px rgba(217, 119, 6, 0.15);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
     ::-webkit-scrollbar-track { background: #faf5ea; }
     ::-webkit-scrollbar-thumb { background: #c5a360; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
 </head>
 <body class="selection:bg-nile-100 selection:text-nile-900 min-h-screen flex flex-col">
 
-  <!-- Top Announcement with Direct Back to Hub Link -->
-  <aside aria-label="شريط تنقل المنصة" class="bg-nile-900 text-papyrus-100 px-4 py-2 text-xs border-b border-nile-700">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <!-- Unified Luxury Navigation Header (Matching Ancient Egyptian App) -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
       
-      <!-- Back to Portal Hub -->
-      <a href="../portal.html" class="flex items-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-slate-900 px-3.5 py-1 rounded-full font-black transition">
-        <span>←</span>
-        <span>العودة إلى بوابة سياحة 2026 الرئيسية</span>
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">👑</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">تاريخ وحضارة مصر القديمة</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">ANCIENT EGYPTIAN CIVILIZATION</small>
+        </div>
       </a>
 
-      <!-- Quick Switcher to Index, Other Lectures and Egyptian Language -->
-      <div class="flex items-center gap-2">
-        <a href="index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#glossary" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>📖</span>
-          <span>فهرس محاضرات الحضارة</span>
+          <span>قاموس المرشد</span>
         </a>
-        <a href="lecture-03.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
-          <span>🏺</span>
-          <span>المحاضرة الثالثة</span>
-        </a>
-        <a href="../index.html" class="hover:text-amber-300 transition-colors flex items-center gap-1 bg-nile-800 px-3 py-1 rounded-full border border-nile-600">
-          <span class="hieroglyph-font">𓆣</span>
-          <span>تطبيق المصرية القديمة</span>
-        </a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Main Navigation Header -->
-  <header class="sticky top-0 z-50 sticky-nav border-b border-papyrus-300 shadow-sm transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 min-h-[4.25rem] flex items-center justify-between gap-3 sm:gap-4">
-      
-      <!-- Subject & Lecture Title -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group text-right">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl teal-gradient flex items-center justify-center text-white shadow-md text-xl sm:text-2xl flex-shrink-0 group-hover:scale-105 transition-transform">
-          👑
-        </div>
-        <div class="space-y-0.5">
-          <span class="text-[10px] sm:text-xs font-bold text-nile-700 tracking-wider block">تاريخ وحضارة مصر القديمة</span>
-          <h1 class="text-xs sm:text-base md:text-lg font-black text-slate-800 leading-snug">المبحث الثاني: العصر العتيق وتوحيد القطرين</h1>
-        </div>
-      </a>
-
-      <!-- Quick Sections Nav -->
-      <nav class="hidden lg:flex items-center gap-1 text-sm font-semibold text-slate-600">
-        <a href="#stages" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">مراحل التوحيد (٨)</a>
-        <a href="#narmer" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">نعرمر والأسرة الأولى</a>
-        <a href="#narmer-palette" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">لوحة نعرمر</a>
-        <a href="#dynasty-1-kings" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">ملوك الأسرة (جر، جت، دن)</a>
-        <a href="#dynasty-2" class="px-3 py-2 rounded-lg hover:text-nile-700 hover:bg-papyrus-200 transition-colors">الأسرة الثانية</a>
-        <a href="#khasekhemwy" class="px-3 py-2 rounded-lg bg-amber-50 text-amber-900 border border-amber-300 font-bold hover:bg-amber-100 transition-colors">خع سخموي</a>
-        <a href="#quiz" class="px-3 py-2 rounded-lg bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition-colors flex items-center gap-1.5">
+        <a href="#stages" class="hover:text-teal-700 transition">مراحل التوحيد</a>
+        <a href="#narmer-palette" class="hover:text-teal-700 transition">لوحة نعرمر</a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
           <span>🎯</span>
           <span>اختبر فهمك</span>
         </a>
       </nav>
 
-      <!-- Action & Search -->
-      <div class="flex items-center gap-2">
-        <button onclick="toggleSearch()" class="p-2.5 rounded-xl border border-papyrus-300 text-slate-600 hover:bg-papyrus-200 hover:text-nile-700 transition-colors flex items-center gap-2 text-sm font-medium">
-          <span>🔍</span>
-          <span class="hidden sm:inline">بحث سريع</span>
-        </button>
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>📜</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
       </div>
     </div>
-
-    <!-- Quick Search Bar (Collapsible) -->
-    <div id="searchBar" class="hidden border-t border-papyrus-300 bg-papyrus-100/95 px-4 py-3">
-      <div class="max-w-3xl mx-auto relative">
-        <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="ابحث عن نعرمر، لوحة نعرمر، منف، جر، سكين تورنتو، جت، دن، نيسو-بيتي، الحب-سد، حتب سخموي، خع سخموي، أو ني ماعت حب..." 
-               class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-papyrus-400 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-nile-600 focus:border-transparent placeholder-slate-400" />
-        <span class="absolute right-3.5 top-3 text-slate-400">🔍</span>
-      </div>
-    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="index.html">فهرس المادة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../islamic-history/index.html">التاريخ الإسلامي</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور الدرس</span><a href="#glossary">📖 قاموس المرشد</a><a href="#stages">مراحل التوحيد</a><a href="#narmer-palette">لوحة نعرمر</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
   </header>
 
   <!-- Hero Banner -->
@@ -213,26 +208,263 @@
     </div>
   </section>
 
-  <!-- Sticky Course Quick Navigation Rail -->
-  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky top-20 z-40 px-4 py-2.5 overflow-x-auto">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
-      <div class="flex items-center gap-2">
-        <span class="text-amber-700">📖 محاور الدرس:</span>
-        <a href="#stages" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">١. مراحل التوحيد الثماني</a>
-        <a href="#kingdoms-table" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٢. مقارنة مملكتي الشمال والجنوب</a>
-        <a href="#narmer" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٣. الملك نعرمر وتأسيس منف</a>
-        <a href="#narmer-palette" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٤. لوحة نعرمر الأثرية</a>
-        <a href="#dynasty-1-kings" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٥. ملوك الأسرة الأولى (جر، جت، دن)</a>
-        <a href="#dynasty-2" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٦. الأسرة الثانية وتحديات الانقسام</a>
-        <a href="#khasekhemwy" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition bg-amber-50 text-amber-900 border border-amber-300 font-bold">٧. خع سخموي والملكة ني ماعت حب</a>
-        <a href="#guide-insights" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-nile-700 transition">٨. مفاهيم المرشد</a>
-      </div>
-      <a href="#quiz" class="text-nile-700 hover:text-nile-900 underline font-extrabold">الذهاب للاختبار ←</a>
-    </div>
-  </div>
+  
 
   <!-- Main Content Layout -->
   <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- ==================== قاموس المصطلحات الإنجليزية للمرشد السياحي (مطوي افتراضياً) ==================== -->
+    <section id="glossary" class="scroll-mt-48">
+      <details class="group bg-gradient-to-r from-amber-50 via-papyrus-100 to-amber-50 border-2 border-amber-300 rounded-3xl p-5 sm:p-6 shadow-sm transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+              📖
+            </div>
+            <div>
+              <span class="text-xs text-amber-800 font-bold tracking-wider block font-sans" dir="ltr" style="text-align: left;">TOUR GUIDE BILINGUAL GLOSSARY</span>
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">
+                المصطلحات الإنجليزية والتخصصية للمحاضرة الرابعة (اضغط هنا لفتح / طي القاموس)
+              </h3>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black bg-amber-200 text-amber-950 px-3 py-1.5 rounded-full border border-amber-300">
+              ٢٤ مصطلحاً إرشادياً
+            </span>
+            <span class="text-amber-800 font-black text-xl transition-transform duration-300 group-open:rotate-180">
+              ▼
+            </span>
+          </div>
+        </summary>
+
+        <div class="pt-6 border-t border-amber-200/80 mt-5 space-y-5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            💡 <strong>تنبيه للمرشد السياحي:</strong> هذه المصطلحات التخصصية مستخرجة ومصممة لمساعدتك على شرح تاريخ العصر العتيق ولوحة نعرمر أمام الأفواج السياحية الأجنبية بكل ثقة ولغة إنجليزية رفيعة وموثوقة:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+            
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Archaic Period</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">العصر العتيق</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ɑːrˈkeɪ.ɪk ˈpɪə.ri.əd/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">يُطلق أيضاً عليه <em>Early Dynastic Period</em> (عصر فجر الأسرات: الأسرتان ١ و ٢).</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Unification of the Two Lands</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">توحيد القطرين</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˌjuː.nɪ.fɪˈkeɪ.ʃən əv ðə tuː lændz/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">توحيد مصر العليا (Upper Egypt) ومصر السفلى (Lower Egypt) في دولة مركزية واحدة.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Narmer Palette</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">لوحة نعرمر</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈnɑːr.mər ˈpæl.ət/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">صلاية نعرمر التذكارية الخالدة بالمتحف المصري بالتحرير المكتشفة في الكوم الأحمر.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">The White Crown (Hedjet)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">التاج الأبيض</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ðə waɪt kraʊn (ˈhɛdʒ.ɪt)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">تاج الصعيد المخروطي الأسطواني، رمز المعبودة نخبت ومدينة نخب.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">The Red Crown (Deshret)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">التاج الأحمر</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ðə rɛd kraʊn (ˈdɛʃ.rɪt)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">تاج الدلتا بشكله الحلزوني المرتفع، رمز المعبودة وادجت ومدينة بوتو.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">The Double Crown (Pschent)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">التاج المزدوج</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ðə ˈdʌb.əl kraʊn (skhɛm.tiː)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">اندماج التاجين الأبيض والأحمر معاً للتعبير عن السيادة المطلقة على كامل القطرين.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Memphis (Ineb-Hedj)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">منف (الجدار الأبيض)</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈmɛm.fɪs (ɪˈnɛb hɛdʒ)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">أول عاصمة مركزية موحدة أسسها نعرمر في نقطة الوسط الاستراتيجية بين الدلتا والصعيد.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Hierakonpolis (Nekhen)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">هيراكونبوليس (نخن)</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˌhaɪ.ərəˌkɒnˈpɒl.ɪs (nɛˈxɛn)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">موقع الكوم الأحمر شمال إدفو؛ العاصمة السياسية لمملكة الجنوب ومكان كشف صلاية نعرمر.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Thinis / This</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">ثِني / طينة</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈθaɪ.nɪs/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">مدينة الأجداد وموطن حكام الأسرتين الأولى والثانية (قرية البربا بمركز جرجا - سوهاج).</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Serekh</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">السرخ الملكي</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/sɛˈrɛx/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">إطار مستطيل يمثل واجهة القصر الملكي المزخرفة يكتب بداخلها اسم حورس الحاكم.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Djer Flint Knife</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">سكين الملك جر</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/dʒɛər flɪnt naɪf/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">السكين المنحني الذهبي الفاخر بمتحف تورنتو بكندا الدال على دقة تصنيع عصر الأسرة الأولى.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Louvre Stela of Djet</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">لوحة الملك جت</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈluːv.rə ˈstiː.lə əv dʒɛt/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">تحفة النحت البارز في متحف اللوفر بباريس التي تجمع اسم الكوبرا وصقر حورس الأسطوري.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Nsw-Bity Title</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">لقب نيسو - بيتي</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/nɪˈsuː ˈbiː.ti/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">«ملك مصر العليا والسفلى» (نبات السُّعد ونحلة الشمال) ابتكره الملك دِن واستمّر لآلاف السنين.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Sed Festival (Heb-Sed)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">عيد الحب - سد</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/sɛd ˈfɛs.tɪ.vəl (hɛb sɛd)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">اليوبيل الملكي الثلاثيني لتجديد طاقة وحيوية الملك لحكم البلاد بعد مرور 30 عاماً.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Royal Census / Survey</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">أول تعداد وإحصاء</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈrɔɪ.əl ˈsɛn.səs/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">أول إحصاء دقيق لموارد الدولة والمناجم والأراضي والماشية في التاريخ في عهد الملك دِن.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Abu Rawash Boat</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">مركب أبو رواش</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈæbuː ræˈwɑːʃ boʊt/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">المركب الجنائزي الخشبي (11 لوحاً) المكتشف بمصطبة 6 الذي يثبت رسوخ عقيدة العالم الآخر.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Cenotaph (Symbolic Tomb)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">المقبرة الرمزية</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈsɛn.ə.tɑːf/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">مقبرة شرفية للتبرك بجوار أوزير في أبيدوس بينما كان الدفن الفعلي يتم في سقارة قرب منف.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Hotepsekhemwy</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">حتب سخموي</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/hoʊˌtɛp.sɛˈxɛm.wiː/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">مؤسس الأسرة الثانية؛ ومعنى اسمه «القوتان تهدأن» في دلالة على إخماد صراعات وفتن العرش.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Bubastis Earthquake</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">زلزال بوباستيس</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/bjuːˈbæs.tɪs ˈɜːrθ.kweɪk/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">انشقاق تل بسطة الجيولوجي المأساوي المذكور عند مانيتون الذي أيدته الدراسات الحديثة.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Cult of Ra (Nebra)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">عقيدة إله الشمس رع</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/kʌlt əv rɑː/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">أول ظهور لاسم إله الشمس «رع» في الأسماء الملكية المصرية في عهد الملك «نب رع».</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Apis Sacred Bull</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">العجل أبيس المقدس</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈeɪ.pɪs ˈseɪ.krɪd bʊl/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">بداية التقنين الرسمي لتأليه وعبادة العجول المقدسة بمنف في عهد الملك نب رع (كا-كاو).</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Khasekhemwy</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">خع سخموي</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/xɑːˌsɛˈxɛm.wiː/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">«القوتان تظهران / تشرقان»؛ موحد مصر للمرة الثانية وقامع تمرد الشماليين (الليبيين).</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Besh (The Rebels)</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">كلمة «بِش» (الثوار)</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/bɛʃ (ðə ˈrɛb.əlz)/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">الكلمة الهيروغليفية المنقوشة في حلقة المعبودة نخبت للإشارة لقمع ثوار الشمال.</p>
+            </div>
+
+            <div class="vocab-card p-4 rounded-2xl border border-papyrus-300 bg-white shadow-sm">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-nile-800 text-sm" dir="ltr">Queen Nimaathap</span>
+                <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">الملكة ني ماعت حب</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-1" dir="ltr">/ˈkwiːn niːˌmɑː.ætˈhæp/</p>
+              <p class="text-xs text-slate-700 leading-relaxed">«الأم الملكية» وجسر الانتقال التاريخي المقدس إلى ملوك الأسرة الثالثة والدولة القديمة (أم زوسر).</p>
+            </div>
+
+          </div>
+        </div>
+      </details>
+    </section>
 
     <!-- ==================== المحور الأول: مراحل توحيد البلاد الثماني ==================== -->
     <section id="stages" class="scroll-mt-48">
@@ -448,13 +680,49 @@
               </tr>
               <tr>
                 <td class="p-3.5 sm:p-4 font-bold bg-papyrus-100 text-slate-900">الشعار النباتي</td>
-                <td class="p-3.5 sm:p-4">نبات «البردي» (محيت) 𓇅</td>
-                <td class="p-3.5 sm:p-4">نبات «اللوتس» / نبات «السُّعد» (سو) 𓇓</td>
+                <td class="p-3.5 sm:p-4">نبات «البردي» (محيت / Papyrus) 𓇅</td>
+                <td class="p-3.5 sm:p-4">نبات «اللوتس» / نبات «السُّعد» (سو / Sedge) 𓇓</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+
+      <!-- Storytelling Box: The Tale Behind the Eight Stages -->
+      <!-- Storytelling Box: The Tale Behind the Eight Stages (Collapsible) -->
+      <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm mt-6 mb-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: افهم التاريخ كقصة — كيف بدأت رحلة الألف ميل نحو أول دولة موحدة؟</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">اضغط للتفاصيل</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <p class="text-sm sm:text-base text-slate-800 leading-relaxed">
+            تخيل مصر قبل عام 3100 ق.م: لم تكن هناك خريطة واحدة تجمع الوادي والدلتا، بل كان الشماليون يعيشون في مستنقعات الدلتا الخصبة المفتوحة على البحر والتجارة، يقدسون البردي والنحلة، بينما كان الجنوبيون في الصعيد يعيشون بين ضفتي النهر المحاصرتين بالصحراء، مجتمعاً صارماً مقاتلاً يقدس الصقر وأنثى النسر. 
+            وعندما تقرأ أسطورة الصراع بين «أوزير» رب الشمال والزراعة، و«ست» رب الجنوب والصحراء، فأنت في الحقيقة تقرأ أول صراع سياسي وعسكري مسلح في تاريخ مصر! حاولت الدلتا توحيد مصر أولاً وعسكرت في «أون» (عين شمس)، لكن الصعيد تمرد وانفصل. 
+            وهنا ظهرت عبقرية ملوك مدينة «طينة» (سوهاج)؛ إذ أدركوا أن الوحدة لا يمكن أن تتحقق بالقوة العسكرية وحدها، بل تحتاج إلى عقيدة سياسية ودينية تدمج التاجين، وتصنع عاصمة وسطية جديدة لا تحسب على الشمال ولا على الجنوب، وهو ما أنجزه القائد الأسطوري نعرمر!
+          </p>
+
+          <!-- Tour Guide English Speaking Script -->
+          <div class="bg-white/90 p-4 sm:p-5 rounded-xl border border-amber-300 text-xs sm:text-sm space-y-3" dir="ltr">
+            <div class="flex items-center gap-2 font-bold text-amber-900">
+              <span>🎙️</span>
+              <span>Tour Guide Speaking Script (How to tell this story to foreign tourists):</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed font-sans italic">
+              "Ladies and gentlemen, before 3100 BC, Egypt was not one single nation. It was split into two completely distinct realms: the agricultural, water-rich Lower Egypt in the north, and the rugged, hunting-based Upper Egypt in the south. The famous mythological battle between Osiris and Seth actually echoes these early political civil wars! The genius of the early Egyptian kings was that they realized peace could only be achieved by uniting both symbols: the White Crown of the South and the Red Crown of the North, giving birth to the very first nation-state in human history."
+            </p>
+            <div class="pt-2 border-t border-amber-200 text-slate-700 text-xs" dir="rtl">
+              <strong>ترجمة ومفاهيم للمرشد:</strong> النزاع الأسطوري بين أوزير وست يعكس الصراع السياسي الفعلي بين الشمال والجنوب، والعبقرية تجسدت في دمج التاج الأبيض والتاج الأحمر وتأسيس أول دولة وطنية مركزية في تاريخ البشرية.
+            </div>
+          </div>
+        </div>
+      </details>
 
     </section>
 
@@ -572,6 +840,44 @@
           </div>
 
         </div>
+
+        <!-- Storytelling Box: The Narmer Drama & The Palette -->
+        <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة): سر مقمعة نعرمر ولماذا صُنعت منف؟</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <span class="text-xs font-bold bg-amber-200 text-amber-900 px-3 py-1 rounded-full">
+              حكاية نعرمر للمرشد
+            </span>
+          </div>
+
+          <p class="text-sm sm:text-base text-slate-800 leading-relaxed">
+            عندما تقف أمام صلاية نعرمر، لا تنظر إليها كقطعة حجرية صامتة، بل تخيلها «شاشة سينمائية» من حجر الشيست الأخضر تحكي قصة ملحمة حقيقية! 
+            كان نعرمر حاكماً عسكرياً عبقرياً وسياسياً من الطراز الأول؛ رأى أن الشماليين بعد هزيمتهم لن يتقبلوا أن تحكمهم عاصمة جنوبية نائية في أقصى الصعيد مثل «نخن»، ورأى أن الجنوبيين أيضاً لن يرضوا بأن تنتقل العاصمة إلى «بوتو» في الدلتا. 
+            فماذا فعل؟ نزل بجيشه ومهندسيه إلى رأس الدلتا، حيث يلتقي الصعيد بالدلتا، وقام بردم فرع قديم للنيل وأسس أول مدينة إدارية كوزموبوليتانية في التاريخ أطلق عليها «إنب-حدج» (الجدار الأبيض) والتي سماها الإغريق لاحقاً «منف» (Memphis). 
+            وعلى الصلاية، صوّر نفسه لأول مرة في التاريخ وهو يرتدي التاج الأبيض تارة، والتاج الأحمر تارة أخرى، موصلاً رسالة لكل مصري: «أنا لست غازياً أجنبياً، بل أنا ملك الصعيد وابن الدلتا معاً، وحامي حمى الآلهة».
+          </p>
+
+          <!-- Tour Guide English Speaking Script -->
+          <div class="bg-white/90 p-4 sm:p-5 rounded-xl border border-amber-300 text-xs sm:text-sm space-y-2" dir="ltr">
+            <div class="flex items-center gap-2 font-bold text-amber-900">
+              <span>🎙️</span>
+              <span>Tour Guide Speaking Script (How to explain the Narmer Palette in the Egyptian Museum):</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed font-sans italic">
+              "Look closely at this 5,000-year-old masterpiece, the Narmer Palette (c. 3100 BC). It is universally recognized as the 'Birth Certificate of Unified Egypt'. Notice the dual imagery: on the reverse side, King Narmer wears the White Bowling-pin Crown of Upper Egypt, smiting a northern captive. But when you walk around to the obverse side, Narmer proudly parades wearing the Red Crown of Lower Egypt! He didn't just conquer the north; he married into northern royal lines, adopted their sacred symbols, and founded the neutral capital of Memphis right between the two realms. That is why Egyptian civilization lasted for over three millennia without losing its core identity."
+            </p>
+          </div>
+        </div>
+      </details>
 
       </div>
 
@@ -764,6 +1070,45 @@
           </div>
         </div>
 
+        <!-- Storytelling Box: The Golden Age of Dynasty 1 -->
+        <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm my-6 transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+          <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+            <span>📜</span>
+            <span>استزادة للمرشد: الحكاية من وراء الحدث (افهم التاريخ كقصة): كيف تحولت مصر في عهد ملوك الأسرة الأولى إلى دولة نظام وإبداع؟</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">حكاية تاريخية</span>
+            <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+          </div>
+        </summary>
+        <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+          <span class="text-xs font-bold bg-amber-200 text-amber-900 px-3 py-1 rounded-full">
+              روائع ملوك الأسرة الأولى
+            </span>
+          </div>
+
+          <p class="text-sm sm:text-base text-slate-800 leading-relaxed">
+            بعدما استقرت الوحدة مع نعرمر، بدأ ملوك الأسرة الأولى أعظم تجربة بناء مؤسسي عرفها الإنسان: 
+            جاء الملك «جر» الطبيب العبقري الذي صمم قصر منف ودشن كتب التشريح وأرسل بعثات التجارة إلى كنعان وفلسطين. 
+            ثم تبعه الملك «جت» صاحب الذوق الرفيع الذي نرى لوحته في اللوفر اليوم فنعجب بدقة ريش الصقر وجلد الكوبرا التي تبدو كأنها نُحتت أمس! 
+            ثم بلغت الدولة ذروتها مع الملك «دِن» (وديمو)؛ هذا الملك كان إدارياً من طراز نادر، أدرك أن إدارة دولة تمتد لمئات الكيلومترات تحتاج إلى «بيانات وأرقام»، فأجرى أول تعداد اقتصادي في التاريخ لكل بقرة وشجرة ومنجم. 
+            ولكي يحفظ هيبة الملك، أعلن نفسه رسمياً «نيسو-بيتي» (ملك نبات السعد ونحلة الشمال)، وهو اللقب الذي سيظل ينقشه رمسيس الثاني وتوت عنخ آمون بعده بألفي عام!
+          </p>
+
+          <!-- Tour Guide English Speaking Script -->
+          <div class="bg-white/90 p-4 sm:p-5 rounded-xl border border-amber-300 text-xs sm:text-sm space-y-2" dir="ltr">
+            <div class="flex items-center gap-2 font-bold text-amber-900">
+              <span>🎙️</span>
+              <span>Tour Guide Speaking Script (Explaining the First Dynasty Kings to Tourists):</span>
+            </div>
+            <p class="text-slate-700 leading-relaxed font-sans italic">
+              "When you observe the artifacts of the First Dynasty—from the exquisite gold-covered flint knife of King Djer to the sublime cobra stela of King Djet in the Louvre—you witness an unprecedented cultural explosion. But the true administrative mastermind was King Den (c. 2970 BC). Den conducted the very first economic and demographic census in human history! Furthermore, he introduced the immortal dual title 'Nsw-Bity' (King of the Sedge and the Bee), symbolizing the cosmic equilibrium between Upper and Lower Egypt that every Pharaoh sworn to maintain."
+            </p>
+          </div>
+        </div>
+      </details>
+
       </div>
 
     </section>
@@ -896,6 +1241,43 @@
           </div>
         </div>
 
+        <!-- Storytelling Box: The Reconciliation & Queen Nimaathap -->
+        <!-- Storytelling Box: The Reconciliation & Queen Nimaathap (Collapsible) -->
+        <details class="story-box group p-5 sm:p-6 rounded-2xl shadow-sm mt-6 mb-6 transition-all duration-300">
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <div class="flex items-center gap-2.5 text-amber-900 font-black text-sm sm:text-base">
+              <span>📜</span>
+              <span>استزادة للمرشد: افهم التاريخ كقصة — كيف تصالحت القوتان وكيف فتحت ملكة باب عصر الأهرامات؟</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-[11px] font-bold bg-amber-200 text-amber-900 px-2.5 py-1 rounded-full">اضغط للتفاصيل</span>
+              <span class="text-amber-800 font-black text-sm transition-transform duration-300 group-open:rotate-180">▼</span>
+            </div>
+          </summary>
+          <div class="pt-4 border-t border-amber-200/70 mt-3 space-y-4">
+            <p class="text-sm sm:text-base text-slate-800 leading-relaxed">
+              في أواخر الأسرة الثانية، اشتعلت نيران الفتنة المذهبية والسياسية مجدداً بين الشمال والجنوب، لدرجة أن أحد الملوك (بر إيب سن) أزال صقر حورس عن تاجه ووضع بدلاً منه حيوان «ست» رمز الجنوب والصحراء! 
+              كادت مصر أن تنزلق إلى حرب أهلية لا تنتهي، حتى ظهر البطل الجنوبي «خع سخم» (القوة تظهر). خاض معارك طاحنة ضد ثوار الشمال وغارات الليبيين على أطراف الدلتا وسحق التمرد. 
+              لكنه تصرف كحكيم وليس كمنتقم: غيّر اسمه فوراً إلى صيغة المثنى «خع سخموي» (القوتان تظهران معاً)، ووضع صقر حورس وحيوان ست يتعانقان فوق سرخه الملكي لأول وآخر مرة في التاريخ! 
+              ثم تَمّم هذا الصلح التاريخي بزواجه من الأميرة الشمالية الجليلة «ني ماعت حب». هذا الزواج المبارك أنهى حقبة الفتن وأنجب العبقري الملك «زوسر»، فصارت ني ماعت حب «أم ملوك الأسرة الثالثة» وباب الانتقال المجيد نحو عصر الأهرامات الخالد!
+            </p>
+
+            <!-- Tour Guide English Speaking Script -->
+            <div class="bg-white/90 p-4 sm:p-5 rounded-xl border border-amber-300 text-xs sm:text-sm space-y-3" dir="ltr">
+              <div class="flex items-center gap-2 font-bold text-amber-900">
+                <span>🎙️</span>
+                <span>Tour Guide Speaking Script (Reconciliation & The Birth of the Old Kingdom):</span>
+              </div>
+              <p class="text-slate-700 leading-relaxed font-sans italic">
+                "By the end of the Second Dynasty, Egypt was on the brink of collapse due to severe religious civil strife between the followers of Horus and Seth. Then came the extraordinary warrior-king Khasekhemwy (c. 2686 BC). After crushing the rebellion, he performed a stroke of political genius: he changed his name to 'The Two Powers Arise', placing both Horus and Seth crowning his royal Serekh! He then sealed this grand national reconciliation by marrying the northern royal heiress, Queen Nimaathap. She became the revered 'Royal Mother' of King Djoser, creating the direct bridge that led Egypt from the Archaic struggles directly into the golden Pyramid Age!"
+              </p>
+              <div class="pt-2 border-t border-amber-200 text-slate-700 text-xs" dir="rtl">
+                <strong>ترجمة ومفاهيم للمرشد:</strong> الملك خع سخموي عالج الفتنة المذهبية بحكمة سياسية نادرة، فوضع حورس وست معاً على سرخه وتزوج الأميرة ني ماعت حب، لينجبا الملك زوسر ويبدآ عصر بناة الأهرامات.
+              </div>
+            </div>
+          </div>
+        </details>
+
       </div>
 
     </section>
@@ -953,6 +1335,7 @@
 
     <!-- ==================== المحور السابع: بنك الأسئلة والاختبار التفاعلي ==================== -->
     <section id="quiz" class="scroll-mt-48">
+      <details class="course-fold"><summary>افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
       
       <div class="flex items-center gap-3 mb-6">
         <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-900 flex items-center justify-center font-bold text-2xl shadow-md">
@@ -991,6 +1374,7 @@
 
       </div>
 
+    </div></details>
     </section>
 
     <!-- Bottom Navigation Rail (Next & Prev Lecture) -->
@@ -1039,12 +1423,26 @@
 
   <!-- Interactive Search & Quiz Scripts -->
   <script>
+    function syncStickyOffset() {
+      const header = document.querySelector('header');
+      if (header) {
+        const h = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-h', Math.round(h) + 'px');
+      }
+    }
+    window.addEventListener('resize', syncStickyOffset);
+    window.addEventListener('scroll', syncStickyOffset, { passive: true });
+    document.addEventListener('DOMContentLoaded', syncStickyOffset);
+    setTimeout(syncStickyOffset, 50);
+    setTimeout(syncStickyOffset, 300);
+
     function toggleSearch() {
       const bar = document.getElementById('searchBar');
       bar.classList.toggle('hidden');
       if (!bar.classList.contains('hidden')) {
         document.getElementById('searchInput').focus();
       }
+      setTimeout(syncStickyOffset, 50);
     }
 
     function handleSearch(query) {
@@ -1213,5 +1611,6 @@
     });
   </script>
 
+  <script src="../assets/course-ui.js" defer></script>
 </body>
 </html>
