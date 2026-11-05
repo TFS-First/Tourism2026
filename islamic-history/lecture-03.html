@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المحاضرة الثالثة: عصر الولاة والدولة الأموية في مصر وأهم المظاهر الحضارية — التاريخ والحضارة الإسلامية | سياحة 2026</title>
+  <meta name="description" content="المحاضرة الثالثة: عصر الولاة في مصر، تأسيس الفسطاط وجامع عمرو، معركة ذات الصواري 655م، نظم الحكم والإدارة (الوالي، الشرطة، القضاء، والبريد)، تعريب الدواوين، وسقوط الأمويين في أبوصير. قسم الإرشاد السياحي." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;800;900&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            papyrus: {
+              50: '#fdfbf7',
+              100: '#faf5ea',
+              200: '#f4ebd4',
+              300: '#ebdcb8',
+              400: '#dfc795',
+              500: '#d1b072',
+            },
+            islamic: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            crescent: {
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            amiri: ['Amiri', 'serif'],
+            cinzel: ['Cinzel', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #faf5ea;
+      color: #1e293b;
+    }
+    .hero-title {
+      font-family: 'Amiri', serif;
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -6px rgba(5, 46, 22, 0.12);
+    }
+    .sticky-rail {
+      position: sticky;
+      top: var(--header-h, 5.5rem);
+      z-index: 40;
+    }
+    .vocab-card {
+      transition: all 0.2s ease;
+    }
+    .vocab-card:hover {
+      background-color: #ffffff;
+      border-color: #15803d;
+      box-shadow: 0 6px 16px -4px rgba(21, 128, 61, 0.2);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 0px; }
+    ::-webkit-scrollbar:horizontal { height: 0px !important; display: none !important; }
+    ::-webkit-scrollbar-thumb:horizontal { display: none !important; }
+    ::-webkit-scrollbar-track { background: #faf5ea; }
+    ::-webkit-scrollbar-thumb { background: #15803d; border-radius: 4px; }
+  </style>
+  <link rel="stylesheet" href="../assets/course-ui.css">
+</head>
+<body class="selection:bg-islamic-100 selection:text-islamic-950 min-h-screen flex flex-col">
+
+  <!-- Unified Navigation Header -->
+  <header class="course-header sticky top-0 z-50 bg-[#faf5ea]/90 backdrop-blur-md border-b border-[#ad8b5025] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Right (RTL) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 text-right group flex-shrink-0">
+        <span class="text-2xl sm:text-3xl leading-none group-hover:scale-105 transition-transform">🕌</span>
+        <div>
+          <b class="text-sm sm:text-base font-bold block text-slate-800 leading-tight">التاريخ والحضارة الإسلامية</b>
+          <small class="text-[9px] sm:text-[10px] tracking-[2px] uppercase block mt-0.5 font-semibold text-[#9b7949]">ISLAMIC HISTORY & CIVILIZATION</small>
+        </div>
+      </a>
+
+      <!-- Center Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-[#65726b]">
+        <a href="index.html" class="hover:text-teal-700 transition">فهرس المحاضرات</a>
+        <a href="#vocabulary" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>📖</span>
+          <span>قاموس المرشد</span>
+        </a>
+        <a href="#fustat-monuments" class="hover:text-teal-700 transition">الفسطاط وجامع عمرو</a>
+        <a href="#dhat-al-sawari" class="hover:text-teal-700 transition">ذات الصواري</a>
+        <a href="#administration-systems" class="hover:text-teal-700 transition">نظم الحكم والإدارة</a>
+        <a href="#quiz" class="hover:text-teal-700 transition flex items-center gap-1">
+          <span>🎯</span>
+          <span>اختبر فهمك</span>
+        </a>
+      </nav>
+
+      <!-- Left Actions (Pill Buttons) -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 border border-[#b89a674f] px-3 py-1.5 rounded-full text-xs font-bold text-slate-700 bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🕌</span>
+          <span>فهرس المادة</span>
+        </a>
+        <a href="../portal.html" class="inline-flex items-center gap-1.5 border border-[#b89a674f] px-3.5 py-1.5 rounded-full text-xs font-bold text-[#6d593a] bg-white/70 hover:bg-white hover:text-teal-700 shadow-sm transition">
+          <span>🏛️</span>
+          <span class="hidden sm:inline">بوابة سياحة 2026</span>
+          <span>←</span>
+        </a>
+      </div>
+    </div>
+  
+    <details class="course-mobile-nav"><summary>تنقل بين المواد والمحاضرات</summary><nav class="course-mobile-nav-links" aria-label="تنقل المواد"><a href="../portal.html">بوابة المواد</a><a href="../index.html">اللغة المصرية القديمة</a><a href="index.html">فهرس المحاضرات</a><a href="../history/index.html">تاريخ مصر القديمة</a><a href="../graeco-roman/index.html">اليوناني والروماني</a><a href="../modern-history/index.html">مصر الحديثة</a><span class="course-axis-title">محاور المحاضرة الثالثة</span><a href="#guide-briefing">🎙️ إرشاد إنجليزي</a><a href="#vocabulary">📖 قاموس المرشد</a><a href="#fustat-monuments">🏛️ الفسطاط والمسجد</a><a href="#dhat-al-sawari">⛵ ذات الصواري</a><a href="#administration-systems">⚖️ نظم الحكم والإدارة</a><a href="#quiz">🎯 اختبر فهمك</a></nav></details>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden py-12 sm:py-16 border-b border-papyrus-300 bg-gradient-to-b from-papyrus-100 via-white to-papyrus-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Academic Accreditation Card -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-6 border-b border-papyrus-200">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-islamic-900 text-amber-300 flex items-center justify-center font-bold text-lg shadow">
+            📜
+          </div>
+          <div>
+            <span class="text-xs font-bold text-slate-500 block">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</span>
+            <span class="text-sm font-extrabold text-islamic-950">مقرر: التاريخ والحضارة الإسلامية</span>
+          </div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-300 text-emerald-900 px-3.5 py-1.5 rounded-full text-xs font-extrabold">
+          <span>✨</span>
+          <span>المحاضرة ٣ من ١٣: عصر الولاة والدولة الأموية في مصر</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 text-right space-y-4">
+          <span class="text-xs font-black text-crescent-700 tracking-widest uppercase block font-cinzel">THE GOVERNORS & EARLY CALIPHATE ERA IN EGYPT (641–750 AD)</span>
+          
+          <h2 class="hero-title text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-normal">
+            <span class="block mb-2">عصر الولاة والدولة الأموية في مصر</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-l from-islamic-800 via-islamic-600 to-crescent-700 pb-1">
+              المظاهر الحضارية، معركة ذات الصواري، ونظم الحكم والإدارة
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl">
+            دراسة أكاديمية وتطبيقية شاملة لمرحلة التأسيس الإداري والحضاري في مصر الإسلامية: كيف تم اختطاط مدينة الفسطاط وتشييد جامع عمرو بن العاص؟ تفاصيل معركة ذات الصواري البحرية عام 655م، الحكمة الإدارية في الإبقاء على النظم السابقة وتعريب الدواوين، واختصاصات مناصب الحكم الكبرى: الوالي، صاحب الشرطة، القضاء، وصاحب البريد، وصولاً إلى سقوط الأمويين في معركة الزاب وأبوصير.
+          </p>
+
+          <!-- Jump Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-center">
+            <a href="#vocabulary" class="bg-emerald-50 p-3 rounded-xl border border-emerald-200 card-hover block">
+              <span class="text-lg block mb-0.5">📖</span>
+              <span class="text-[11px] text-emerald-800 font-semibold block">المفردات التخصصية</span>
+              <span class="text-xs font-black text-emerald-950">قاموس المرشد (12 مصطلحاً)</span>
+            </a>
+            <a href="#fustat-monuments" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">🏛️</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">العمارة والمدن</span>
+              <span class="text-xs font-black text-islamic-800">الفسطاط وجامع عمرو</span>
+            </a>
+            <a href="#dhat-al-sawari" class="bg-white p-3 rounded-xl border border-papyrus-300 card-hover block">
+              <span class="text-lg block mb-0.5">⛵</span>
+              <span class="text-[11px] text-slate-500 font-semibold block">الملحمة البحرية</span>
+              <span class="text-xs font-black text-islamic-800">ذات الصواري 655م</span>
+            </a>
+            <a href="#quiz" class="bg-islamic-50 p-3 rounded-xl border border-islamic-200 card-hover block">
+              <span class="text-lg block mb-0.5">🎯</span>
+              <span class="text-[11px] text-islamic-700 font-semibold block">التطبيق الميداني</span>
+              <span class="text-xs font-black text-islamic-900">بنك الأسئلة والتقييم ←</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col items-center justify-center">
+          <div class="bg-gradient-to-tr from-islamic-950 to-islamic-800 p-6 rounded-3xl text-white shadow-xl border-2 border-amber-300/40 w-full max-w-sm text-center">
+            <span class="text-3xl mb-2 block">⚖️</span>
+            <h3 class="text-lg font-black font-cinzel text-amber-300 mb-1">GOVERNANCE & MONUMENTS</h3>
+            <p class="text-xs text-islamic-200 mb-4">قسم الإرشاد السياحي — المحاضرة 3</p>
+            <div class="text-right text-xs space-y-2 bg-islamic-950/60 p-3.5 rounded-xl border border-islamic-700">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">تأسيس الفسطاط:</span>
+                <span class="font-bold text-amber-300">20–21 هـ / 641–642 م</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">معركة ذات الصواري:</span>
+                <span class="font-bold text-amber-300">34 هـ / 655 م (أول نصر بحري)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">أول قاضٍ في مصر:</span>
+                <span class="font-bold text-amber-300">عثمان بن قيس (23 هـ / 644 م)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">تعريب الدواوين:</span>
+                <span class="font-bold text-amber-300">عبد الملك بن مروان وولده</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Course Quick Navigation Rail -->
+  <div class="bg-papyrus-200 border-b border-papyrus-300 sticky-rail px-4 py-2.5 overflow-x-auto shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-bold text-slate-700 min-w-max">
+      <div class="flex items-center gap-2">
+        <span class="text-emerald-800">📌 محاور المحاضرة الثالثة:</span>
+        <a href="#guide-briefing" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">English Briefing</a>
+        <a href="#vocabulary" class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-300 hover:bg-emerald-200 transition">📖 قاموس المرشد</a>
+        <a href="#rashidun-governors" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">١. ولاة الخلفاء الراشدين</a>
+        <a href="#fustat-monuments" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">٢. الفسطاط وجامع عمرو</a>
+        <a href="#dhat-al-sawari" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">٣. ملحمة ذات الصواري</a>
+        <a href="#administration-systems" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">٤. نظم الحكم والإدارة والوالي</a>
+        <a href="#subordinate-officials" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">٥. الشرطة والقضاء والبريد</a>
+        <a href="#umayyad-abbasid-transition" class="px-2.5 py-1 rounded-md hover:bg-white hover:text-islamic-700 transition">٦. الانتقال للعباسيين والعسكر</a>
+      </div>
+      <a href="#quiz" class="text-islamic-700 hover:text-islamic-900 underline font-black">الذهاب للاختبار التفاعلي ←</a>
+    </div>
+  </div>
+
+  <!-- Main Content Layout -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- ==================== سيناريو المرشد السياحي بالإنجليزية ==================== -->
+    <section id="guide-briefing" class="scroll-mt-36" dir="ltr">
+      <details class="course-fold"><summary dir="rtl">للاستزادة: شرح المرشد السياحي بالإنجليزية</summary><div class="course-fold-body">
+      <div class="bg-gradient-to-br from-emerald-950 via-islamic-900 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-emerald-600/40 text-left">
+        <div class="flex items-center gap-3 mb-5 border-b border-emerald-800/60 pb-4">
+          <div class="w-10 h-10 rounded-xl bg-emerald-800 text-amber-300 flex items-center justify-center text-xl shadow flex-shrink-0">
+            🎙️
+          </div>
+          <div>
+            <span class="text-xs text-amber-300 font-cinzel font-bold tracking-widest uppercase block">TOUR GUIDE SPOKEN NARRATIVE</span>
+            <h3 class="text-base sm:text-xl font-bold font-cinzel text-white">Explaining Early Islamic Governance, Al-Fustat & Key Monuments to Foreign Tourists</h3>
+          </div>
+        </div>
+        
+        <div class="text-xs sm:text-sm text-slate-200 leading-loose space-y-4 font-sans text-left">
+          <p>
+            "Distinguished guests, welcome to Historic Old Cairo. Following the capitulation of Babylon Fortress in 641 AD, General <strong class="text-amber-300">Amr ibn al-Aas</strong> chose not to establish his capital in Alexandria on the Mediterranean coast, following Caliph Umar's strict strategic doctrine: no vast bodies of water should separate the provincial capital from Medina. Thus, right beside Babylon, he founded <strong class="text-amber-300">Al-Fustat</strong>—the very first Islamic capital of Egypt and Africa."
+          </p>
+          <p>
+            "At the heart of the new city arose the historic <strong class="text-amber-300">Mosque of Amr ibn al-Aas</strong>, affectionately known down through the centuries as <em>'Taj al-Jawami'</em> (The Crown of Mosques). Initially a humble rectangular structure built of mudbrick, palm trunks, and thatch, it was not merely a house of worship; it was the legislative assembly, university, and supreme courthouse where Egypt’s first appointed Islamic judge, <strong class="text-amber-300">Uthman ibn Qays</strong>, administered justice beginning in 644 AD."
+          </p>
+          <p>
+            "In naval warfare, Egypt stunned the medieval world in 655 AD at the momentous <strong class="text-amber-300">Battle of the Masts (Dhat al-Sawari)</strong>. Operating from the shipyards of Alexandria and the Nile Delta, the Egyptian fleet under Governor <strong class="text-amber-300">Abdallah ibn Abi Sarh</strong> defeated Emperor Constans II’s colossal armada of nearly 1,000 Byzantine warships, shattering imperial naval hegemony across the Eastern Mediterranean for generations."
+          </p>
+          <p>
+            "Administratively, early Muslim rulers exhibited remarkable pragmatism: rather than dismantling native institutions, they retained existing financial registries in Coptic and Greek until the monumental <strong class="text-amber-300">Arabization of the Diwans</strong> under Umayyad Caliph Abd al-Malik ibn Marwan. Provincial governance relied on four interconnected pillars: the <strong class="text-amber-300">Vali (Governor)</strong> in Dar al-Imara, the <strong class="text-amber-300">Sahib al-Shurta (Chief of Police)</strong> divided into Upper and Lower jurisdictions, the independent <strong class="text-amber-300">Qadi (Judge)</strong>, and the <strong class="text-amber-300">Sahib al-Barid (Postmaster & Intelligence Bureau)</strong> who transmitted urgent missives along courier routes linking Fustat directly to Damascus and later Baghdad."
+          </p>
+        </div>
+      </div>
+    </div></details>
+    </section>
+
+    <!-- ==================== قاموس الكلمات الصعبة والمصطلحات ==================== -->
+    <section id="vocabulary" class="scroll-mt-36 space-y-6">
+      <details class="course-fold"><summary dir="rtl">افتح قاموس ومصطلحات الدرس</summary><div class="course-fold-body">
+      
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-papyrus-300 pb-4">
+        <div class="flex items-center gap-3 text-right">
+          <div class="w-10 h-10 rounded-xl bg-crescent-600 text-white flex items-center justify-center font-black text-lg shadow">
+            📖
+          </div>
+          <div>
+            <span class="text-xs font-bold text-crescent-800 tracking-wider uppercase block font-cinzel">TOUR GUIDE VOCABULARY & GLOSSARY</span>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-800">قاموس المرشد السياحي: مصطلحات عصر الولاة والدولة الأموية</h3>
+            <p class="text-xs text-slate-500 mt-0.5">اضغط على أي بطاقة لعرض الشرح السياقي للمرشد • الإنجليزي يساراً والعربي يميناً</p>
+          </div>
+        </div>
+        
+        <!-- Accordion Controls -->
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="toggleAllDetails('#vocab-accordion', true)" class="px-3 py-1.5 rounded-lg bg-white border border-papyrus-300 text-slate-700 hover:bg-emerald-50 hover:text-emerald-800 text-xs font-bold transition shadow-sm">
+            فتح الكل
+          </button>
+          <button type="button" onclick="toggleAllDetails('#vocab-accordion', false)" class="px-3 py-1.5 rounded-lg bg-white border border-papyrus-300 text-slate-700 hover:bg-emerald-50 hover:text-emerald-800 text-xs font-bold transition shadow-sm">
+            طي الكل
+          </button>
+        </div>
+      </div>
+
+      <div id="vocab-accordion" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <!-- Vocab 1 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">مدينة الفسطاط</h4>
+              </div>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">العاصمة الأولى (21 هـ)</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Al-Fustat</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/æl fʊsˈtɑːt/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> أول عاصمة إسلامية لمصر وإفريقيا، أسسها عمرو بن العاص شمال حصن بابليون عام 641م؛ أصل اسمها يعود لقصة خيمة عمرو وحمامة السلام، أو الكلمة الإغريقية Fossatum بمعنى المعسكر المحصن.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 2 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">جامع عمرو بن العاص</h4>
+              </div>
+              <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">تاج الجوامع (21 هـ)</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Mosque of Amr</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/mɒsk əv ˈæmr/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> أول مسجد أقيم في مصر وإفريقيا، لُقب بـ «تاج الجوامع» والجامع العتيق؛ كان مركزاً للحكم ومقراً لمجالس القضاء والتعليم الديني قبل تأسيس الأزهر بثلاثة قرون.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 3 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">معركة ذات الصواري</h4>
+              </div>
+              <span class="text-[10px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">34 هـ / 655 م</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Battle of the Masts</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈbætl əv ðə mɑːsts/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> أول معركة بحرية كبرى في تاريخ الإسلام وأول نصر بالمتوسط منذ معركة أكتيوم (31 ق.م)؛ هزم فيها أسطول والي مصر عبد الله بن أبي السرح أسطول الإمبراطور البيزنطي قنسطانز الثاني.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 4 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">دار الإمارة</h4>
+              </div>
+              <span class="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">مقر الحكم بالفسطاط</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Dar al-Imara</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/dɑːr æl ɪˈmɑːrə/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> قصر ومقر إقامة الوالي وإدارة شؤون البلاد، شيده عمرو بن العاص إلى الشمال الشرقي من مسجده الجامع بالفسطاط.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 5 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">أمير الصلاة</h4>
+              </div>
+              <span class="text-[10px] bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">المهام الدينية للوالي</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Amir al-Salah</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/æˈmɪər æsˤ-sˤɑˈlɑːh/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> اللقب الذي كان يُطلق على والي مصر حين يجمع بين الإدارة السياسية وإمامة المسلمين في صلاة الجمع والأعياد والخطابة بنفسه.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 6 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">صاحب الشرطة</h4>
+              </div>
+              <span class="text-[10px] bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">الأمن والقضاء والنيابة</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Sahib al-Shurta</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/sˤɑːħɪb æʃ-ˈʃʊrtˤə/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> قائد جهاز الأمن الداخلي والنائب المباشر للوالي؛ تولى المنصب 150 شخصاً حتى عهد ابن طولون، وقُسم لاحقاً إلى شرطة عليا (العسكر) وشرطة سفلى (الفسطاط).
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 7 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-teal-500 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">تعريب الدواوين</h4>
+              </div>
+              <span class="text-[10px] bg-teal-100 text-teal-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">التحول اللغوي والإداري</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Diwan Arabization</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˌærəbaɪˈzeɪʃən/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> القرار السيادي الأموي بنقل لغة السجلات الحكومية والمالية من القبطية واليونانية إلى اللغة العربية الفصحى على يد عبد الملك بن مروان وابنه الوليد.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 8 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-600 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">مدينة العسكر</h4>
+              </div>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">العاصمة الثانية (133 هـ)</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Al-Askar</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/æl æsˈkɑːr/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> العاصمة الإسلامية الثانية لمصر، أسسها القائد صالح بن علي سنة 750م شمال الفسطاط لمعسكرات الجيش العباسي وقصر الإمارة الجديد.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 9 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-600 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">صاحب البريد</h4>
+              </div>
+              <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">الاتصالات والاستخبارات</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Sahib al-Barid</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/sˤɑːħɪb æl baˈriːd/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> رئيس شبكة البريد الحكومي؛ أنشأه معاوية لسرعة نقل الأوامر، وتطور في العصر العباسي إلى جهاز استطلاع أمني يرفع تقارير سرية عن الولاة للخليفة.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 10 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-cyan-600 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">مقياس النيل بالروضة</h4>
+              </div>
+              <span class="text-[10px] bg-cyan-100 text-cyan-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">247 هـ / 861 م</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Roda Nilometer</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/naɪˈlɒmɪtər/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> أقدم أثر إسلامي باقٍ على حالته الأصلية في مصر؛ شُيّد في جزيرة الروضة بأمر الخليفة العباسي المتوكل لقياس فيضان النيل وتقدير الضرائب الزراعية بدقة هندسية.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 11 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-600 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">معركة الزاب الكبير</h4>
+              </div>
+              <span class="text-[10px] bg-red-100 text-red-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">132 هـ / 750 م</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Battle of the Zab</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/ˈbætl əv ðə zɑːb/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> المعركة الفاصلة شمال العراق التي هزم فيها العباسيون بقيادة عبد الله بن علي آخر جيوش بني أمية (100 ألف مقاتل)، وفرّ إثرها مروان بن محمد إلى مصر.
+            </p>
+          </div>
+        </details>
+
+        <!-- Vocab 12 -->
+        <details class="group bg-white rounded-2xl border border-papyrus-300 shadow-sm overflow-hidden transition-all duration-200 hover:border-emerald-500">
+          <summary class="p-4 cursor-pointer list-none flex items-center justify-between gap-3 select-none">
+            <div class="text-right">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-600 flex-shrink-0"></span>
+                <h4 class="font-bold text-slate-900 text-sm sm:text-base">مروان بن محمد (الجعدي)</h4>
+              </div>
+              <span class="text-[10px] bg-slate-100 text-slate-800 font-bold px-2 py-0.5 rounded-full inline-block mt-1">آخر خلفاء بني أمية</span>
+            </div>
+            <div class="text-left flex items-center gap-2.5" dir="ltr">
+              <div>
+                <span class="font-cinzel font-bold text-islamic-800 text-xs sm:text-sm block">Marwan II</span>
+                <span class="text-[10px] text-slate-400 font-mono block">/mærˈwɑːn/</span>
+              </div>
+              <span class="w-6 h-6 rounded-full bg-papyrus-100 group-open:bg-emerald-100 text-slate-500 group-open:text-emerald-800 flex items-center justify-center text-[10px] transition-transform duration-200 group-open:rotate-180 flex-shrink-0">▼</span>
+            </div>
+          </summary>
+          <div class="px-4 pb-4 pt-2 border-t border-papyrus-200 bg-papyrus-50/60 text-right">
+            <p class="text-xs text-slate-700 leading-relaxed">
+              <strong class="text-emerald-900 font-bold">المعنى السياقي للمرشد:</strong> الرابع عشر والأخير من خلفاء بني أمية؛ حاول بعد الزاب اتخاذ مصر معقلاً للمقاومة، فتعقبه العباسيون وقُتل في كنيسة بلدة أبوصير بالفيوم عام 750م.
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div></details>
+    </section>
+
+    <!-- ==================== المحور الأول: عصر الولاة في عهد الخلفاء الراشدين ==================== -->
+    <section id="rashidun-governors" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ١
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">RASHIDUN GOVERNORS (641–661 AD)</span>
+          <h3 class="text-2xl font-black text-slate-900">أولاً: عصر الولاة في عهد الخلفاء الراشدين ومراحل الحكم</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          عقب إتمام الفتح، خضعت مصر لإشراف مباشر من مقر الخلافة في المدينة المنورة. وشهد العصر الراشدي تعاقب عدد من كبار الصحابة على حكم مصر وفق متطلبات كل مرحلة سياسية وعسكرية:
+        </p>
+
+        <!-- Governors Timeline Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <!-- Period 1: Umar ibn al-Khattab -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border-2 border-emerald-300 space-y-3">
+            <div class="flex items-center justify-between border-b border-papyrus-200 pb-2">
+              <span class="text-xs font-black text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-full">الخليفة عمر بن الخطاب</span>
+              <span class="text-[11px] font-mono text-slate-500 font-bold">634–644م</span>
+            </div>
+            <h4 class="font-extrabold text-slate-900 text-base">عمرو بن العاص (الفترة الأولى: 640–646م)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              فاتح مصر، ومؤسس مدينة الفسطاط وجامعها العتيق، وحافر خليج أمير المؤمنين لربط النيل بالبحر الأحمر. تولى إدارة البلاد بنجاح حتى وفاته الأولى من الولاية في عهد عثمان.
+            </p>
+          </div>
+
+          <!-- Period 2: Uthman ibn Affan -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border-2 border-blue-300 space-y-3">
+            <div class="flex items-center justify-between border-b border-papyrus-200 pb-2">
+              <span class="text-xs font-black text-blue-800 bg-blue-100 px-2.5 py-1 rounded-full">الخليفة عثمان بن عفان</span>
+              <span class="text-[11px] font-mono text-slate-500 font-bold">644–656م</span>
+            </div>
+            <h4 class="font-extrabold text-slate-900 text-base">عبد الله بن سعد بن أبي السرح (646–656م)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              تولى الإدارة المالية أولاً ثم جمعت له ولاية مصر كاملة؛ شهد عهده طفرة في بناء الأسطول الإسلامي، والفتوحات البحرية بالمتوسط، وتحقيق نصر <strong>«ذات الصواري 655م»</strong>.
+            </p>
+          </div>
+
+          <!-- Period 3: Ali ibn Abi Talib -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border-2 border-amber-300 space-y-3">
+            <div class="flex items-center justify-between border-b border-papyrus-200 pb-2">
+              <span class="text-xs font-black text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">الخليفة علي بن أبي طالب</span>
+              <span class="text-[11px] font-mono text-slate-500 font-bold">656–661م</span>
+            </div>
+            <h4 class="font-extrabold text-slate-900 text-base">ولاة مرحلة الاضطراب والفتنة:</h4>
+            <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+              <li><strong>محمد بن أبي حذيفة (656–657م):</strong> استولى على الحكم في أواخر عهد عثمان وسط الاضطرابات.</li>
+              <li><strong>قيس بن سعد بن عبادة (657م):</strong> اتسمت سياسته بالحكمة واللين البالغ مع أهل مصر.</li>
+              <li><strong>الأشتر مالك بن الحارث:</strong> توفي في طريقه لمصر (ديسمبر 657م).</li>
+              <li><strong>محمد بن أبي بكر الصديق (658م):</strong> آخر ولاة الإمام علي على مصر.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Open Core Curriculum Box: Period 2 of Amr ibn al-Aas -->
+        <div class="bg-gradient-to-l from-amber-50/80 via-white to-amber-50/80 border-2 border-amber-300/80 p-5 sm:p-6 rounded-2xl shadow-sm space-y-4 text-right">
+          <div class="flex items-center gap-2.5 text-slate-900 font-black text-base sm:text-lg border-b border-amber-200/80 pb-2.5">
+            <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold shadow-sm">👑</span>
+            <h4>عمرو بن العاص (الفترة الثانية: 658 – 661م) وأهم ما قام به:</h4>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            عاد عمرو بن العاص لحكم مصر عقب اتفاقه مع معاوية بن أبي سفيان، وتميزت فترته الثانية بتنظيم شامل لشؤون الولاية وفق المهام السيادية السبع المنصوص عليها أكاديمياً:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1 text-xs">
+            <div class="bg-white p-3 rounded-xl border border-amber-200 font-semibold text-slate-800">
+              <span class="text-emerald-700 font-bold block mb-0.5">١. تدبير الجيوش:</span>
+              النظر في شؤون الجند، ترتيب النواحي العسكرية، وتقدير الأعطيات والأرزاق.
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200 font-semibold text-slate-800">
+              <span class="text-emerald-700 font-bold block mb-0.5">٢. ولاية القضاء:</span>
+              النظر في الأحكام والمظالم وتقليد القضاة والحكام المحليين في الأقاليم.
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200 font-semibold text-slate-800">
+              <span class="text-emerald-700 font-bold block mb-0.5">٣. جباية الخراج:</span>
+              إعطاء الصدقات، تعيين العمال والجباة، وتوزيع المستحق منها على مستحقيه.
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200 font-semibold text-slate-800">
+              <span class="text-emerald-700 font-bold block mb-0.5">٤. حماية الدين:</span>
+              صيانة العقيدة والذود عن الحريم وتأمين الاستقرار الداخلي.
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200 font-semibold text-slate-800">
+              <span class="text-emerald-700 font-bold block mb-0.5">٥. إقامة الحدود:</span>
+              تطبيق أحكام الشريعة في حدود الله وصيانة حقوق الآدميين من الاعتداء.
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200 font-semibold text-slate-800">
+              <span class="text-emerald-700 font-bold block mb-0.5">٦ و ٧. الإمامة وتسيير الحجاج:</span>
+              إمامة صلوات الجمع والأعياد بنفسه أو بالاستخلاف، ورعاية قوافل الحج السنوية.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثاني: المظاهر الحضارية الأولى (الفسطاط وجامع عمرو) ==================== -->
+    <section id="fustat-monuments" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٢
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">URBANIZATION & FIRST MONUMENTS</span>
+          <h3 class="text-2xl font-black text-slate-900">ثانياً: المظاهر الحضارية في عصر الولاة — تأسيس الفسطاط وجامع عمرو</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <div class="lg:col-span-7 space-y-4 text-right">
+            <h4 class="text-lg font-black text-islamic-950">١. تأسيس مدينة الفسطاط وأسباب تسميتها:</h4>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              أنشأ عمرو بن العاص مدينة الفسطاط بالقرب من حصن بابليون مباشرة لتكون معسكراً وعاصمة لمصر. وتعددت الروايات والآراء التاريخية حول سبب تسمية «الفسطاط» على ثلاثة أوجه أكاديمية معتمدة:
+            </p>
+
+            <div class="space-y-3 pt-1">
+              <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1">
+                <b class="text-emerald-950 text-sm block">أ) رواية فرخ الحمامة (الخيمة الكبرى):</b>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                  عندما حل المسلمون خيامهم حول حصن بابليون لاستئناف الزحف نحو الإسكندرية، اكتشفوا أن حمامة قد باضت في أعلى خيمة (فسطاط) عمرو بن العاص؛ فأمر بإبقاء الخيمة قائمة إكراماً لها حتى أفرخت. فلما عاد الجيش منتصراً سألوا: أين ننزل؟ فقيل: "عند الفسطاط"، فسميت المدينة بذلك.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-papyrus-100 border border-papyrus-300 space-y-1">
+                <b class="text-slate-900 text-sm block">ب) الأصل الإغريقي اللاتيني (Fossatum):</b>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                  يرى فريق من كبار المؤرخين أن كلمة فسطاط مشتقة من اللفظ الإغريقي اللاتيني <em>Fossatum</em> ومعناها «المدينة المحصنة» أو «المعسكر المحاط بخندق»، وهو الوصف الدقيق لمعسكرات الجيوش الرومانية والبيزنطية.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-papyrus-100 border border-papyrus-300 space-y-1">
+                <b class="text-slate-900 text-sm block">ج) الأصل اللغوي العربي:</b>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                  يرى فريق ثالث أن «الفسطاط» لفظ عربي أصيل في لسان العرب يعني «البيت من الشّعر» أو الخيمة الضخمة، أو مجتمع الناس والمدينة التي يجتمع فيها الحاكم وجنده.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mosque of Amr Card -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-gradient-to-tr from-islamic-950 to-islamic-900 p-6 rounded-3xl text-white shadow-xl border-2 border-amber-300/40 text-right space-y-3">
+              <div class="flex items-center justify-between border-b border-islamic-800 pb-2">
+                <span class="text-2xl">🕌</span>
+                <span class="text-xs font-bold text-amber-300 font-mono">21 هـ / 641–642 م</span>
+              </div>
+              <h4 class="text-lg font-black text-amber-300 font-cinzel">جامع عمرو بن العاص (تاج الجوامع)</h4>
+              <p class="text-xs text-slate-200 leading-relaxed">
+                أنشأه عمرو بن العاص فور فراغه من فتح الإسكندرية؛ وهو أول مسجد شُيّد في مصر وإفريقيا قاطبة. بلغ طوله الأصلي 50 ذراعاً في عرض 30 ذراعاً، بسقف منخفض من جريد النخل وأعمدة من جذوع النخيل، بدون مئذنة أو محراب مجوف في تخطيطه البدائي.
+              </p>
+              <div class="bg-islamic-950/70 p-3.5 rounded-xl border border-islamic-700 text-xs space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-300">مكانة المسجد:</span>
+                  <span class="text-amber-300 font-bold">تاج الجوامع والجامع العتيق</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-300">الموقع التاريخي:</span>
+                  <span class="text-amber-300 font-bold">قلب الفسطاط (مصر القديمة)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-300">أول توسعة كبرى:</span>
+                  <span class="text-amber-300 font-bold">مسلمة بن مخلد (53 هـ)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الثالث: ملحمة معركة ذات الصواري ==================== -->
+    <section id="dhat-al-sawari" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٣
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">BATTLE OF THE MASTS (655 AD)</span>
+          <h3 class="text-2xl font-black text-slate-900">ثالثاً: معركة ذات الصواري البحرية (٣٤ هـ / ٦٥٥ م)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          تُعد معركة ذات الصواري أول صدام بحري ملحمي يخوضه المسلمون في مياه البحر الأبيض المتوسط، ونقطة تحول استراتيجية ألغت الأسطورة البيزنطية كقوة بحرية لا تُقهر:
+        </p>
+
+        <!-- Battle Narrative Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-2">
+            <span class="text-2xl block">👑</span>
+            <b class="text-slate-900 text-sm block">١. الحملة البيزنطية الضخمة</b>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              خرج الإمبراطور البيزنطي <strong>قنسطانز الثاني</strong> بنفسه على رأس أسطول إمبراطوري يضم ما بين <strong>700 إلى 1000 سفينة</strong> بهدف استرداد الإسكندرية ومصر.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-2">
+            <span class="text-2xl block">⚔️</span>
+            <b class="text-slate-900 text-sm block">٢. الأسطول الإسلامي المصري</b>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              خرج والي مصر <strong>عبد الله بن سعد بن أبي السرح</strong> بأسطول إسلامي حديث النشأة مكون من نحو <strong>200 سفينة</strong> فقط انطلقت من ثغور مصر والشام.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-2">
+            <span class="text-2xl block">⛵</span>
+            <b class="text-slate-900 text-sm block">٣. تكتيك ربط الصواري</b>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              سميت «ذات الصواري» لكثرة صواري السفن؛ وقام المسلمون بربط سفنهم بسفن الروم بالحبال وسلاسل الحديد ليتحول القتال البحري المتلاطم إلى قتال سيوف بري مباشر على الأسطح.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-2">
+            <span class="text-2xl block">🏆</span>
+            <b class="text-slate-900 text-sm block">٤. النتيجة التاريخية الكبرى</b>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              انتصار ساحق للمسلمين، وهروب الإمبراطور قنسطانز جريحاً بعد غرق معظم أسطوله. وهي أول معركة بحرية كبرى يشهدها المتوسط منذ <strong>أكتيوم البحرية (31 ق.م)</strong>.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="bg-emerald-50 border-2 border-emerald-300 p-4 sm:p-5 rounded-2xl text-xs sm:text-sm text-emerald-950 leading-relaxed font-semibold">
+          💡 <strong>النتيجة الاستراتيجية للمرشد:</strong> عقب هذا النصر الباهر، أدرك ولاة مصر ضرورة الحفاظ على السيادة البحرية؛ فأظهر جميع الولاة اللاحقين عناية فائقة بشواطئ مصر وموانئها (الإسكندرية، دمياط، والفرما) وتطوير دور صناعة السفن والأسطول.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الرابع: نظم الحكم والإدارة والوالي ==================== -->
+    <section id="administration-systems" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٤
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">ADMINISTRATIVE PHILOSOPHY & THE GOVERNOR</span>
+          <h3 class="text-2xl font-black text-slate-900">رابعاً: نظم الحكم والإدارة واختصاصات الوالي</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <!-- Administrative Wisdom -->
+        <div class="space-y-3">
+          <h4 class="text-base font-black text-slate-900">١. الحكمة الإدارية العربية في إبقاء النظم القائمة:</h4>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            اقتضت حكمة العرب الإدارية <strong>الإبقاء على نظم الحكم والإدارة والضرائب في البلاد التي فتحوها</strong>، وخاصة أنه لم يكن لديهم في البداية ما يمكن إحلاله محل هذه النظم السائدة المعقدة. فاضطر المسلمون لاتباع النظم الإدارية والمالية السابقة (الرومانية والبيزنطية) في تقسيم الكور والقرى، طالما لم تتعارض مع أحكام الشريعة الإسلامية.
+          </p>
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 font-bold leading-relaxed">
+            📜 <strong>تعريب الدواوين:</strong> ظلت لغة السجلات الرسمية والدواوين في مصر هي القبطية واليونانية طوال نصف قرن، حتى أصدر الخليفة الأموي <strong>عبد الملك بن مروان وولده الوليد</strong> قرارهما التاريخي بتعريب الدواوين بالكامل وتحويل لغة السجلات إلى العربية.
+          </div>
+        </div>
+
+        <!-- The Vali Specifications -->
+        <div class="border-t border-papyrus-200 pt-6 space-y-4">
+          <h4 class="text-base font-black text-slate-900">٢. منصب «الوالي» أو «الأمير» واختصاصاته الأربعة الأساسية:</h4>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            كان الخليفة يعين في مصر حاكماً يُعرف بـ <strong>الوالي أو الأمير</strong>، وكان مقره الرسمي في <strong>دار الإمارة</strong> التي شيدها عمرو بن العاص بالفسطاط. وتمحورت مهام الوالي حول أربعة اختصاصات سيادية:
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-300 space-y-1">
+              <b class="text-islamic-900 block">١. النيابة العامة عن الخليفة:</b>
+              <p class="text-slate-600">ينوب عن الخليفة في حكم مصر وتصريف كافة شؤونها، ويكون مسؤولاً ومحاسباً عن عمله أمام الخليفة مباشرة.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-300 space-y-1">
+              <b class="text-islamic-900 block">٢. الإمامة والخطابة (أمير الصلاة):</b>
+              <p class="text-slate-600">إمامة المسلمين في صلاة الجمع والأعياد وإلقاء الخطب الرسمية التي تعلن سياسات الدولة ومواقفها.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-300 space-y-1">
+              <b class="text-islamic-900 block">٣. القيادة العسكرية:</b>
+              <p class="text-slate-600">قيادة الجيش في أوقات الحروب، وتجريد الحملات التأمينية لحماية ثغور مصر وصد أي عدوان بحري أو بري.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-300 space-y-1">
+              <b class="text-islamic-900 block">٤. الإشراف المالي والخراج:</b>
+              <p class="text-slate-600">الإشراف على بيت المال وجباية الخراج، ثم فُصلت هذه المهمة لاحقاً وأُسندت إلى مسؤول مالي مستقل يُعرف بـ «عامل الخراج» لمنع استئثار الوالي بالأموال.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Statistical Insight -->
+        <div class="bg-islamic-50 border border-islamic-200 p-4 rounded-2xl text-xs sm:text-sm text-islamic-950 space-y-1">
+          <span class="font-black text-islamic-800 block">📊 إحصائية تاريخية هامة (الولاة في العصرين الأموي والعباسي):</span>
+          <p class="leading-relaxed">
+            وصل عدد الولاة العرب على مصر منذ الفتح الإسلامي وحتى نهاية عصر الدولة الأموية (750م) إلى ما يقرب من <strong>32 والياً</strong> (فترة استقرار نسبي أطول). في المقابل، تعاقب على حكم مصر في العصر العباسي حتى استقلال أحمد بن طولون (868م) نحو <strong>78 والياً</strong>! ويعود سبب كثرة تغيير الولاة في العصر العباسي إلى: <strong>(1)</strong> الاضطرابات والفتنة بين الأمين والمأمون، و<strong>(2)</strong> تعمد الخلفاء قِصر مدة الوالي خوفاً من استقلاله بمصر لثروتها وبُعد مقر الخلافة (بغداد وسامراء) عنها.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور الخامس: كبار معاوني الوالي ==================== -->
+    <section id="subordinate-officials" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٥
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">STATE INSTITUTIONS & SENIOR OFFICIALS</span>
+          <h3 class="text-2xl font-black text-slate-900">خامساً: المؤسسات المعاونة للوالي (الشرطة، القضاء، والبريد)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <p class="text-sm text-slate-700 leading-relaxed">
+          اعتمد الوالي في إدارة شؤون مصر على ثلاثة أجهزة وموظفين كبار شكلوا العمود الفقري للدولة:
+        </p>
+
+        <!-- 3 Officials Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          <!-- Official 1: Sahib al-Shurta -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border-2 border-indigo-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-papyrus-200 pb-2">
+              <span class="text-xs font-black text-indigo-900 bg-indigo-100 px-2.5 py-1 rounded-full">١. صاحب الشرطة</span>
+              <span class="text-lg">🛡️</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              كان الوالي ينفرد بتعيين شخص يثق به تماماً من أقاربه لينوب عنه أثناء غيابه في حج أو حرب وفي إمامة الصلاة. أحصى المؤرخ <strong>الكندي</strong> 150 شخصاً تولوا المنصب حتى عصر ابن طولون.
+            </p>
+            <div class="text-xs space-y-1.5 pt-1 text-slate-600">
+              <div><strong>الوظيفة السياسية والأمنية:</strong> منع الجرائم، ملاحقة الجناة، والتحري، وتنفيذ أحكام القضاء.</div>
+              <div><strong>الوظيفة الدينية والأخلاقية:</strong> إقامة الحدود، قمع الفساد، ونشر الفضيلة ومراقبة الآداب.</div>
+              <div><strong>أعمال أخرى:</strong> إطفاء الحرائق، مساعدة جباة الجزية، وتفتيش الدنانير المسكوكة.</div>
+              <div class="font-bold text-indigo-950 pt-1">📌 التقسيم: بعد تأسيس مدينة العسكر (على يد القائد العباسي صالح بن علي)، أنشئت «الشرطة العليا» بالعسكر وظلت شرطة الفسطاط تسمى «الشرطة السفلى».</div>
+            </div>
+          </div>
+
+          <!-- Official 2: The Judiciary / Qadi -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border-2 border-emerald-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-papyrus-200 pb-2">
+              <span class="text-xs font-black text-emerald-900 bg-emerald-100 px-2.5 py-1 rounded-full">٢. القضاة (النظام القضائي)</span>
+              <span class="text-lg">⚖️</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              قام القضاء على الشريعة الإسلامية، بينما كان لأهل الذمة قضاؤهم الخاص إلا إذا احتكموا للقاضي المسلم. واختص الخلفاء بأنفسهم بتعيين القاضي ضماناً لنزاهته واستقلاله عن الوالي.
+            </p>
+            <div class="text-xs space-y-1.5 pt-1 text-slate-600">
+              <div><strong>أول قاضٍ لمصر:</strong> عيّن الخليفة عمر الصحابي <strong>عثمان بن قيس بن أبي العاص (23 هـ / 644م)</strong> كأول قاضٍ لمصر.</div>
+              <div><strong>مقر المحاكمات:</strong> كانت مجالس القضاء تعقد عادة في <strong>جامع عمرو بن العاص</strong> بالفسطاط.</div>
+              <div><strong>أول سجل قضائي:</strong> بدأ القضاء بسيطاً بلا تدوين حتى أُنشئ أول سجل قضائي لتدوين الأحكام في عهد <strong>معاوية بن أبي سفيان</strong>.</div>
+            </div>
+          </div>
+
+          <!-- Official 3: Sahib al-Barid -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border-2 border-amber-200 space-y-3">
+            <div class="flex items-center justify-between border-b border-papyrus-200 pb-2">
+              <span class="text-xs font-black text-amber-900 bg-amber-100 px-2.5 py-1 rounded-full">٣. صاحب البريد</span>
+              <span class="text-lg">🐎</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              أنشأ هذا النظام الأموي <strong>معاوية بن أبي سفيان</strong> لضمان تدفق القرارات والأوامر بين دمشق والأمصار، ثم طوره العباسيون بإقامة محطات واستراحات الخيل لتؤدي كل الطرق إلى بغداد.
+            </p>
+            <div class="text-xs space-y-1.5 pt-1 text-slate-600">
+              <div><strong>الطبيعة الرسمية:</strong> كان نظام البريد مؤسسة حكومية رسمية ذات انضباط صارم.</div>
+              <div><strong>الجهاز الاستخباري:</strong> في العصر العباسي، تحول صاحب البريد إلى عين للخليفة ينقل له سلوكيات الوالي وكبار رجال الدولة.</div>
+              <div><strong>بريد الأقاليم:</strong> كان لوالي مصر أيضاً عامل بريد خاص ينقل له أخبار أقاليم وكور مصر الداخلية.</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور السادس: الانتقال السياسي والعاصمة الثانية ==================== -->
+    <section id="umayyad-abbasid-transition" class="scroll-mt-36 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ٦
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">CALIPHATE SUCCESSION & SECOND CAPITAL</span>
+          <h3 class="text-2xl font-black text-slate-900">سادساً: صلح الحسن، سقوط الأمويين بأبوصير، وتأسيس مدينة العسكر</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <!-- Hasan & Muawiyah reconciliation -->
+        <div class="space-y-3">
+          <h4 class="text-base font-black text-slate-900">١. الخلافة الأموية وصُلح الحسن بن علي (عام الجماعة 41 هـ / 661 م):</h4>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            عقب استشهاد الإمام علي بن أبي طالب، أقبل أهل الكوفة على ابنه <strong>الحسن</strong> فبايعوه بالخلافة؛ لكن الحسن رغب في حقن دماء المسلمين وإعادة توحيد الصفوف بعد سنوات الاقتتال الداخلي. وعلى الرغم من حشده جيشاً ضخماً، آثر الحسن الصلح مع <strong>معاوية بن أبي سفيان</strong> وفق شروط ضمنت وحدة الأمة، فتنازل عن الخلافة لمعاوية وبايعه ودعا جنده للبيعة، فسمي العام <strong>«عام الجماعة»</strong> وبدأت الخلافة الأموية (661–750م) وعاصمتها دمشق واستمرت 91 سنة.
+          </p>
+        </div>
+
+        <!-- Fall of Umayyads & Battle of Abusir -->
+        <div class="border-t border-papyrus-200 pt-6 space-y-3">
+          <h4 class="text-base font-black text-slate-900">٢. معركة الزاب ونهاية مروان بن محمد في مصر (132 هـ / 750 م):</h4>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            في عام 749م انطلقت الدعوة العباسية بخراسان بقيادة أبي مسلم، وبويع أبو العباس السفاح كأول خلفاء بني العباس. وفي عام 132 هـ، دارت المعركة الفاصلة عند <strong>نهر الزاب</strong> بين جيش العباسيين بقيادة عبد الله بن علي وجيش آخر خلفاء بني أمية <strong>مروان بن محمد (الجعدي)</strong> على رأس 100 ألف مقاتل؛ فهُزم مروان وفر هارباً إلى مصر متخذاً إياها قاعدة للمقاومة.
+          </p>
+          <div class="p-4 rounded-2xl bg-rose-50 border-2 border-rose-300 text-xs sm:text-sm text-rose-950 font-bold leading-relaxed">
+            📍 <strong>معركة أبوصير (مصر):</strong> تعقبت القوات العباسية بقيادة <strong>صالح بن علي</strong> مروان بن محمد في مصر حتى حاصرته في بلدة <strong>أبوصير</strong>، ودارت معركة نهائية قُتل فيها مروان وأُرسل رأسه إلى الشام، لتنتهي الخلافة الأموية رسمياً في مصر والمشرق ولم ينجُ من أمراء بني أمية سوى <strong>عبد الرحمن الداخل</strong> الذي فر إلى الأندلس.
+          </div>
+        </div>
+
+        <!-- Abbasid Capital: Al-Askar & Turkish Influx -->
+        <div class="border-t border-papyrus-200 pt-6 space-y-3">
+          <h4 class="text-base font-black text-slate-900">٣. الخلافة العباسية (750–868م): تأسيس «العسكر» وظهور النفوذ التركي:</h4>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            قامت الدولة العباسية على أكتاف الفرس واستعانت بولاة منهم في البداية؛ وكان <strong>صالح بن علي</strong> أول ولاة مصر العباسيين، وهو الذي شيّد <strong>مدينة العسكر</strong> شمال الفسطاط لتكون العاصمة الثانية لمصر الإسلامية وفيها دار الإمارة العباسية والمسجد الجامع.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm pt-2">
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200">
+              <strong class="text-slate-900 block mb-1">آخر والٍ عربي على مصر:</strong>
+              هو <strong>عنبسة بن إسحق (852–856م)</strong>؛ وانتهت بولايته حقبة الولاة العرب الخُلّص في مصر.
+            </div>
+            <div class="p-4 rounded-2xl bg-papyrus-50 border border-papyrus-200">
+              <strong class="text-slate-900 block mb-1">أول الولاة الأتراك:</strong>
+              عقب استعانة المعتصم بالأتراك، تولى <strong>يزيد بن عبد الله التركي (856–867م)</strong> كأول والٍ تركي على مصر، مما مهد لظهور الدولة الطولونية.
+            </div>
+          </div>
+          <div class="p-4 rounded-2xl bg-cyan-50 border border-cyan-300 text-xs sm:text-sm text-cyan-950 font-bold leading-relaxed mt-2">
+            🌊 <strong>مقياس النيل بالروضة (247 هـ / 861 م):</strong> شُيّد هذا الصرح الهندسي المعماري الفذ في جزيرة الروضة بأمر الخليفة العباسي <strong>المتوكل على الله</strong> لتقدير الضرائب بناءً على قياس ارتفاع فيضان النيل سنوياً، وصممه المهندس العبقري أحمد بن محمد الحاسب الفرغاني.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== المحور السابع: بنك الأسئلة والاختبار التفاعلي ==================== -->
+    <section id="quiz" class="scroll-mt-36">
+      <details class="course-fold"><summary dir="rtl">افتح تدريبات وأسئلة الدرس</summary><div class="course-fold-body">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-islamic-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          🎯
+        </div>
+        <div>
+          <span class="text-xs font-bold text-islamic-700 uppercase tracking-wider block font-cinzel">INTERACTIVE KNOWLEDGE TEST</span>
+          <h3 class="text-2xl font-black text-slate-900">سابعاً: اختبر فهمك ومعلوماتك الأكاديمية (٨ أسئلة تدريبية)</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-papyrus-300 shadow-sm space-y-6">
+        
+        <div class="flex items-center justify-between pb-4 border-b border-papyrus-200 text-xs sm:text-sm font-bold text-slate-600">
+          <span>أجب عن الأسئلة التالية لقياس استيعابك للمحاضرة الثالثة:</span>
+          <span id="quiz-score-badge" class="bg-emerald-100 text-emerald-900 px-3 py-1 rounded-full border border-emerald-300 hidden">النتيجة: 0 / 8</span>
+        </div>
+
+        <form id="lecture-quiz" class="space-y-6" onsubmit="return false;">
+          
+          <!-- Q1 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">١. ما هو سبب تسمية مدينة «الفسطاط» بالرواية الشعبية الشائعة عند الفتح؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q1" value="wrong" class="accent-emerald-700" />
+                <span>نسبة إلى معسكر الروم وخندق حصن بابليون</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q1" value="correct" class="accent-emerald-700" />
+                <span>إبقاء خيمة عمرو بن العاص قائمة إكراماً لحمامة باضت وأفرخت في أعلاها</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q1" value="wrong" class="accent-emerald-700" />
+                <span>نسبة إلى سفن الأسطول الإسلامي الراسية بالنيل</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٢. مَن هو قائد الأسطول الإسلامي الذي حقق النصر في معركة ذات الصواري عام 34 هـ / 655 م؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q2" value="wrong" class="accent-emerald-700" />
+                <span>عمرو بن العاص</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q2" value="correct" class="accent-emerald-700" />
+                <span>عبد الله بن سعد بن أبي السرح</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q2" value="wrong" class="accent-emerald-700" />
+                <span>معاوية بن أبي سفيان</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٣. ما الأهمية التاريخية الاستثنائية لمعركة ذات الصواري في التاريخ العسكري؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q3" value="correct" class="accent-emerald-700" />
+                <span>أول معركة بحرية كبرى ينتصر فيها المسلمون وأول صدام بحري ضخم بالمتوسط منذ أكتيوم (31 ق.م)</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q3" value="wrong" class="accent-emerald-700" />
+                <span>المعركة التي دمرت حصن بابليون وأسقطته</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q3" value="wrong" class="accent-emerald-700" />
+                <span>أول معركة استُخدمت فيها النيران الإغريقية من قبل المسلمين</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٤. على يد مَن تم تعريب الدواوين وسجلات الضرائب في مصر وتحويلها للغة العربية؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q4" value="wrong" class="accent-emerald-700" />
+                <span>الخليفة عمر بن الخطاب</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q4" value="correct" class="accent-emerald-700" />
+                <span>الخليفة الأموي عبد الملك بن مروان وابنه الوليد</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q4" value="wrong" class="accent-emerald-700" />
+                <span>الخليفة العباسي أبو جعفر المنصور</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٥. مَن هو أول قاضٍ عيّنه الخليفة عمر بن الخطاب رسمياً على مصر سنة 644 م؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q5" value="correct" class="accent-emerald-700" />
+                <span>عثمان بن قيس بن أبي العاص</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q5" value="wrong" class="accent-emerald-700" />
+                <span>سليم بن عتر التجيبي</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q5" value="wrong" class="accent-emerald-700" />
+                <span>قيس بن سعد بن عبادة</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٦. ما هي الوظيفة الأمنية الخطيرة التي أسندها الخلفاء العباسيون إلى «صاحب البريد»؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q6" value="wrong" class="accent-emerald-700" />
+                <span>جباية أموال الخراج من الفلاحين بالقوة</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q6" value="correct" class="accent-emerald-700" />
+                <span>التجسس ونقل أخبار الولاة وكبار رجال الحكم سراً للخليفة في بغداد</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q6" value="wrong" class="accent-emerald-700" />
+                <span>قيادة الشرطة العليا في مدينة العسكر</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٧. أين لقي مروان بن محمد آخر خلفاء بني أمية مصرعه بعد هروبه إلى مصر سنة 750 م؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q7" value="correct" class="accent-emerald-700" />
+                <span>في بلدة أبوصير بالفيوم / الجيزة</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q7" value="wrong" class="accent-emerald-700" />
+                <span>داخل حصن بابليون بالفسطاط</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q7" value="wrong" class="accent-emerald-700" />
+                <span>في ثغر الإسكندرية أثناء محاولة ركوب البحر</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="p-5 rounded-2xl bg-papyrus-50 border border-papyrus-200 space-y-3">
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">٨. مَن هو مؤسس «مدينة العسكر» كعاصمة ثانية لمصر الإسلامية؟</h4>
+            <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q8" value="wrong" class="accent-emerald-700" />
+                <span>أحمد بن طولون</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q8" value="correct" class="accent-emerald-700" />
+                <span>صالح بن علي العباسي (أول ولاة بني العباس)</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer p-2.5 rounded-xl hover:bg-white transition border border-transparent hover:border-emerald-300">
+                <input type="radio" name="q8" value="wrong" class="accent-emerald-700" />
+                <span>يزيد بن عبد الله التركي</span>
+              </label>
+            </div>
+            <div class="q-feedback hidden text-xs font-bold mt-2 p-2.5 rounded-xl"></div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-4 flex items-center justify-between">
+            <button type="button" onclick="evaluateQuiz()" class="px-6 py-3 rounded-xl bg-islamic-800 hover:bg-islamic-900 text-white font-black text-sm shadow transition flex items-center gap-2">
+              <span>تحقق من الإجابات</span>
+              <span>✓</span>
+            </button>
+            <button type="reset" onclick="resetQuiz()" class="px-4 py-2.5 rounded-xl border border-papyrus-300 bg-white text-slate-600 hover:bg-papyrus-100 font-bold text-xs transition">
+              إعادة تعيين الأسئلة
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </div></details>
+    </section>
+
+    <!-- ==================== التنقل بين المحاضرات ==================== -->
+    <nav aria-label="تنقل المحاضرات" class="border-t border-papyrus-300 pt-8 pb-4">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        
+        <a href="lecture-02.html" class="w-full sm:w-auto p-4 rounded-2xl bg-white border border-papyrus-300 hover:border-emerald-500 card-hover flex items-center gap-3 text-right">
+          <span class="text-2xl">←</span>
+          <div>
+            <span class="text-[11px] text-slate-400 block font-bold">المحاضرة السابقة</span>
+            <span class="text-sm font-black text-slate-900">المحاضرة ٢: الفتح العربي الإسلامي لمصر</span>
+          </div>
+        </a>
+
+        <a href="index.html" class="px-5 py-3 rounded-xl bg-papyrus-100 text-slate-700 hover:bg-papyrus-200 text-xs font-bold transition flex items-center gap-2 border border-papyrus-300">
+          <span>🕌</span>
+          <span>فهرس محاضرات التاريخ الإسلامي</span>
+        </a>
+
+        <div class="w-full sm:w-auto p-4 rounded-2xl bg-papyrus-50/70 border border-papyrus-200 flex items-center gap-3 text-right opacity-70">
+          <div>
+            <span class="text-[11px] text-slate-400 block font-bold">المحاضرة التالية (قيد التحديث)</span>
+            <span class="text-sm font-black text-slate-600">المحاضرة ٤: تاريخ مصر في العصر العباسي</span>
+          </div>
+          <span class="text-2xl">→</span>
+        </div>
+
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-islamic-950 text-slate-300 py-10 border-t border-islamic-800 text-center text-xs space-y-3">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white text-sm">جامعة 6 أكتوبر — كلية السياحة والفنادق — قسم الإرشاد السياحي</p>
+      <p class="text-slate-400">مقرر: التاريخ والحضارة الإسلامية • منصة سياحة 2026 التعليمية التطبيقية</p>
+      <p class="text-[10px] text-slate-500 font-mono">Tourism 2026 Platform • Dedicated to Academic & Field Excellence</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Header Sticky Offset Sync
+    function syncStickyOffset() {
+      const header = document.querySelector('.course-header');
+      if (header) {
+        document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+      }
+    }
+    window.addEventListener('resize', syncStickyOffset);
+    window.addEventListener('load', syncStickyOffset);
+    document.addEventListener('DOMContentLoaded', syncStickyOffset);
+
+    // Accordion Toggle for Glossary
+    function toggleAllDetails(containerSelector, open) {
+      const container = document.querySelector(containerSelector);
+      if (!container) return;
+      container.querySelectorAll('details').forEach(d => {
+        d.open = open;
+      });
+    }
+
+    // Interactive Quiz Evaluator
+    function evaluateQuiz() {
+      const answers = {
+        q1: { val: 'correct', text: 'إبقاء خيمة عمرو بن العاص إكراماً للحمامة وفرخها (الفسطاط).' },
+        q2: { val: 'correct', text: 'والي مصر عبد الله بن سعد بن أبي السرح عام 34 هـ / 655 م.' },
+        q3: { val: 'correct', text: 'أول انتصار بحري إسلامي كبير، وأول معركة بحرية ضخمة بالمتوسط بعد أكتيوم (31 ق.م).' },
+        q4: { val: 'correct', text: 'الخليفة الأموي عبد الملك بن مروان وابنه الوليد بن عبد الملك.' },
+        q5: { val: 'correct', text: 'عثمان بن قيس بن أبي العاص عينه عمر بن الخطاب سنة 23 هـ / 644 م.' },
+        q6: { val: 'correct', text: 'التجسس ونقل أخبار وسلوكيات الولاة وكبار رجال الحكم سراً للخليفة في بغداد.' },
+        q7: { val: 'correct', text: 'في بلدة أبوصير بالفيوم بعد هروبه عقب معركة الزاب سنة 750 م.' },
+        q8: { val: 'correct', text: 'القائد صالح بن علي العباسي أول ولاة بني العباس في مصر سنة 133 هـ.' }
+      };
+
+      let score = 0;
+      const total = Object.keys(answers).length;
+
+      for (const [qName, expected] of Object.entries(answers)) {
+        const selected = document.querySelector(`input[name="${qName}"]:checked`);
+        const qContainer = selected ? selected.closest('.p-5') : document.querySelector(`input[name="${qName}"]`).closest('.p-5');
+        const feedback = qContainer.querySelector('.q-feedback');
+
+        feedback.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-950', 'border-emerald-300', 'bg-rose-100', 'text-rose-950', 'border-rose-300', 'border');
+
+        if (selected && selected.value === expected.val) {
+          score++;
+          feedback.classList.add('bg-emerald-100', 'text-emerald-950', 'border', 'border-emerald-300');
+          feedback.innerHTML = `✓ إجابة صحيحة! أحسنت: ${expected.text}`;
+        } else {
+          feedback.classList.add('bg-rose-100', 'text-rose-950', 'border', 'border-rose-300');
+          feedback.innerHTML = `✗ إجابة غير دقيقة. الإجابة الصحيحة: ${expected.text}`;
+        }
+      }
+
+      const scoreBadge = document.getElementById('quiz-score-badge');
+      scoreBadge.classList.remove('hidden');
+      scoreBadge.textContent = `نتيجتك: ${score} من ${total}`;
+      scoreBadge.className = score >= 6 
+        ? 'bg-emerald-100 text-emerald-900 px-3 py-1 rounded-full border border-emerald-300 font-black'
+        : 'bg-amber-100 text-amber-900 px-3 py-1 rounded-full border border-amber-300 font-black';
+    }
+
+    function resetQuiz() {
+      document.querySelectorAll('.q-feedback').forEach(f => {
+        f.classList.add('hidden');
+        f.innerHTML = '';
+      });
+      const scoreBadge = document.getElementById('quiz-score-badge');
+      scoreBadge.classList.add('hidden');
+    }
+  </script>
+
+  <script src="../assets/course-ui.js" defer></script>
+</body>
+</html>

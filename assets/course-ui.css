@@ -23,7 +23,7 @@ body { overflow-x: clip; }
 .course-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; color: #233e3b; font: 800 clamp(.9rem, 1.8vw, 1.1rem)/1.6 Cairo, sans-serif; }
 .course-fold > summary::-webkit-details-marker { display: none; }
 .course-fold > summary::after { content: 'فتح +'; white-space: nowrap; font-size: .78rem; border: 1px solid #c9b78f; border-radius: 999px; padding: .25rem .75rem; background: white; }
-.course-fold[open] > summary::after { content: 'طي −'; }
+.course-fold[open] > summary::after { content: 'إغلاق'; }
 .course-fold > summary:focus-visible { outline: 2px solid #227b82; outline-offset: -3px; }
 .course-fold-body { padding: .25rem 1.25rem 1.25rem; }
 .course-fold-body > :first-child { margin-top: 0; }
