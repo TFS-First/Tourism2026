@@ -178,7 +178,10 @@ function MainApp() {
             <div className="study-topbar" aria-hidden={compactNav} inert={compactNav ? "" : undefined}>
               <div className="study-identity"><span className="study-emblem" aria-hidden="true">𓆣</span><div><h1>المصرية القديمة</h1><span className="study-wordmark">ANCIENT EGYPTIAN</span></div></div>
               <span className="study-context">رحلتك لفهم لغة الأجداد</span>
-              <button onClick={handleReturnToLanding} className="study-home" title="العودة للواجهة الرئيسية"><Icon name="Home" size={17} /><span>الرئيسية</span><span aria-hidden="true">↗</span></button>
+              <div style={{display:'flex',alignItems:'center',gap:'8px'}}>
+                <a href="./spanish/" className="study-home" title="الانتقال لمراجعة اللغة الإسبانية للامتحان" style={{color:'#92400e',borderColor:'#d97706',background:'#fffbeb',fontWeight:'700',textDecoration:'none'}}><span>🇪🇸</span><span>مراجعة الإسبانية</span><span aria-hidden="true">↗</span></a>
+                <button onClick={handleReturnToLanding} className="study-home" title="العودة للواجهة الرئيسية"><Icon name="Home" size={17} /><span>الرئيسية</span><span aria-hidden="true">↗</span></button>
+              </div>
             </div>
             <div className="study-tab-row">
             <nav className="study-tabs" aria-label="أقسام التطبيق">

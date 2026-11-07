@@ -9465,10 +9465,39 @@ const LandingHero = ({
   onClick: () => onSelectTab('learn')
 }, "\u0627\u0644\u0631\u0645\u0648\u0632 \u0627\u0644\u0647\u064A\u0631\u0648\u063A\u0644\u064A\u0641\u064A\u0629"), /*#__PURE__*/React.createElement("button", {
   onClick: () => onSelectTab('vocab')
-}, "\u0642\u0627\u0645\u0648\u0633 \u0627\u0644\u0643\u0644\u0645\u0627\u062A")), /*#__PURE__*/React.createElement("button", {
+}, "\u0642\u0627\u0645\u0648\u0633 \u0627\u0644\u0643\u0644\u0645\u0627\u062A"), /*#__PURE__*/React.createElement("a", {
+  href: "./spanish/",
+  style: {
+    color: '#b45309',
+    fontWeight: '700',
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '4px'
+  }
+}, /*#__PURE__*/React.createElement("span", null, "\uD83C\uDDEA\uD83C\uDDF8"), /*#__PURE__*/React.createElement("span", null, "\u0645\u0631\u0627\u062C\u0639\u0629 \u0627\u0644\u0625\u0633\u0628\u0627\u0646\u064A\u0629"))), /*#__PURE__*/React.createElement("div", {
+  style: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px'
+  }
+}, /*#__PURE__*/React.createElement("a", {
+  href: "./spanish/",
+  className: "nile-nav-cta",
+  style: {
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px',
+    borderColor: '#d97706',
+    background: '#fffbeb',
+    color: '#92400e',
+    fontWeight: '700'
+  }
+}, /*#__PURE__*/React.createElement("span", null, "\uD83C\uDDEA\uD83C\uDDF8"), /*#__PURE__*/React.createElement("span", null, "\u0645\u0631\u0627\u062C\u0639\u0629 \u0627\u0644\u0625\u0633\u0628\u0627\u0646\u064A\u0629")), /*#__PURE__*/React.createElement("button", {
   className: "nile-nav-cta",
   onClick: onStart
-}, "\u0627\u062F\u062E\u0644 \u0639\u0627\u0644\u0645 \u0627\u0644\u0623\u062C\u062F\u0627\u062F \u2190")), /*#__PURE__*/React.createElement("main", {
+}, "\u0627\u062F\u062E\u0644 \u0639\u0627\u0644\u0645 \u0627\u0644\u0623\u062C\u062F\u0627\u062F \u2190"))), /*#__PURE__*/React.createElement("main", {
   className: "nile-main"
 }, /*#__PURE__*/React.createElement("div", {
   className: "nile-copy"
@@ -10106,7 +10135,26 @@ function MainApp() {
     className: "study-wordmark"
   }, "ANCIENT EGYPTIAN"))), /*#__PURE__*/React.createElement("span", {
     className: "study-context"
-  }, "\u0631\u062D\u0644\u062A\u0643 \u0644\u0641\u0647\u0645 \u0644\u063A\u0629 \u0627\u0644\u0623\u062C\u062F\u0627\u062F"), /*#__PURE__*/React.createElement("button", {
+  }, "\u0631\u062D\u0644\u062A\u0643 \u0644\u0641\u0647\u0645 \u0644\u063A\u0629 \u0627\u0644\u0623\u062C\u062F\u0627\u062F"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '8px'
+    }
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "./spanish/",
+    className: "study-home",
+    title: "\u0627\u0644\u0627\u0646\u062A\u0642\u0627\u0644 \u0644\u0645\u0631\u0627\u062C\u0639\u0629 \u0627\u0644\u0644\u063A\u0629 \u0627\u0644\u0625\u0633\u0628\u0627\u0646\u064A\u0629 \u0644\u0644\u0627\u0645\u062A\u062D\u0627\u0646",
+    style: {
+      color: '#92400e',
+      borderColor: '#d97706',
+      background: '#fffbeb',
+      fontWeight: '700',
+      textDecoration: 'none'
+    }
+  }, /*#__PURE__*/React.createElement("span", null, "\uD83C\uDDEA\uD83C\uDDF8"), /*#__PURE__*/React.createElement("span", null, "\u0645\u0631\u0627\u062C\u0639\u0629 \u0627\u0644\u0625\u0633\u0628\u0627\u0646\u064A\u0629"), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true"
+  }, "\u2197")), /*#__PURE__*/React.createElement("button", {
     onClick: handleReturnToLanding,
     className: "study-home",
     title: "\u0627\u0644\u0639\u0648\u062F\u0629 \u0644\u0644\u0648\u0627\u062C\u0647\u0629 \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629"
@@ -10115,7 +10163,7 @@ function MainApp() {
     size: 17
   }), /*#__PURE__*/React.createElement("span", null, "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629"), /*#__PURE__*/React.createElement("span", {
     "aria-hidden": "true"
-  }, "\u2197"))), /*#__PURE__*/React.createElement("div", {
+  }, "\u2197")))), /*#__PURE__*/React.createElement("div", {
     className: "study-tab-row"
   }, /*#__PURE__*/React.createElement("nav", {
     className: "study-tabs",
